@@ -1,0 +1,124 @@
+body{
+   font-family: "Californian FB", serif;
+}
+.careersSection{
+    background-repeat: no-repeat;
+    background-position: 100% 40%;
+    background-size: cover;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 100vh;
+   color: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+.careersSection .container{
+    margin-bottom: 10rem;
+}
+.careersSection .careerContent h2{
+   font-weight: 600;
+   letter-spacing: 1px;
+   font-size: 2.6rem;
+   margin-bottom: 1.5rem;
+}
+.careersSection .careerContent p{
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    background-color: #0f172194;
+    padding: .8rem 1rem;
+    border-radius: 4px;
+ }
+ @media(max-width: 600px){
+    .careersSection .container{
+        margin-bottom: 5rem;
+    }
+    .careersSection .careerContent h2{
+        font-size: 2rem;
+     }
+     .careersSection .careerContent p{
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: .8rem;
+        margin-bottom: 4rem;
+     }
+ }
+ .careerForm{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem 0rem;
+ }
+ .careerForm img{
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+ }
+ 
+ .careerForm .formInfo h4{
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: .5px;
+    margin-bottom: 1rem;
+ }
+ .careerForm .formInfo p{
+    font-weight: 500;
+    color: #000;
+    letter-spacing: .5px;
+    font-size: .9rem;
+    line-height: 1.4;
+ }
+ .careerForm .formInfo form{
+   display: flex;
+   flex-direction: column;
+   justify-content: left;
+   margin: 1rem auto 0 auto;
+   max-width: 90%;
+ }
+ .careerForm .formInfo form label{
+    text-align: left;
+    margin-bottom: .5rem;
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-size: .95rem;
+  }
+ .careerForm .formInfo form .inputField{
+    border-radius: 4px;
+    padding: .6rem 1rem;
+    outline: none;
+    background-color: #f1f1f1;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: .5px;
+    font-size: .95rem;
+    margin-bottom: 2rem;
+    border: 1px solid #f1f1f1;
+  }
+  .careerForm .formInfo form .inputField:focus{
+    border: 1px solid #f5b402;
+  }
+   .inputField::placeholder{
+   color: #666;
+   letter-spacing: .5px;
+   font-size: .9rem;
+   font-weight: 500;
+  }
+  .inputField:focus::placeholder{
+    color: #f5b402;
+   }
+  .submitBtn input{
+    border: none;
+    outline: none;
+    background-color: #f5b402;
+    padding: .5rem 1rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    border-radius: 4px;
+  }

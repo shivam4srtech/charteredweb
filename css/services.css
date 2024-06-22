@@ -1,0 +1,327 @@
+body{
+    font-family: "Californian FB",serif;
+}
+.banner{
+    background-image: url('../images/homeimg-bg.jpg');
+    background-size: cover;
+    color: #ffffff;
+    text-align: right;
+    height: 75vh;
+}
+#services .container{
+ max-width: 100%;
+}
+#services .first-quarter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #114261cf;
+
+}
+#services .quarter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+}
+#services .quarter .quarterPara{
+    font-size: 1.2rem;
+    letter-spacing: .5px;
+    margin: 1.5rem auto;
+}
+#services .quarter .quarterBtn{
+    display: block;
+    padding: .8rem 2.4rem;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    margin:  auto;
+    text-align: center;
+    letter-spacing: .5px;
+}
+#services #advisory .quarterBtn{
+    border: 3px solid #0079c1;
+    color: #0079c1;
+    background-color: #fff;
+}
+#services .quaterBig {
+    padding: 2rem 6rem;
+}
+
+#services #auditBig{
+    background-color: #0079c1;
+    color: #fff;
+ }
+ #services #taxBig{
+    background-color: #222;
+    color: #fff;
+ }
+ #services #legalBig{
+    background-color: #fffff2;
+ }
+#services .quaterBig ul{
+    list-style-type: square;
+    list-style-type: square;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 380px;
+    margin: 0;
+    max-width: 100%;
+}
+#services #auditBig ul{
+    max-height: 250px;
+}
+#services #taxBig ul{
+    max-height: 250px;
+}
+#services .quaterBig ul li{
+    margin: 10px;
+    height: 52px;
+    line-height: 52px;
+
+}
+#services .quaterBig ul li a{
+   text-decoration: none;
+   cursor: pointer;
+
+}
+#services #advisory{
+    background-color: #f5f3f5;
+}
+#services #audit{
+    background-color: #178ed5;
+    color: #fff;
+}
+#services #tax{
+    background-color: #4d4d4d;
+    color: #fff;
+}
+#services #legal{
+    background-color: #e2e2e2;
+    color: #222;
+}
+#services #audit .quarterBtn{
+    border: 3px solid #0079c1;
+    color: #0079c1;
+    background-color: #fff;
+}
+#services #tax .quarterBtn{
+    border: 3px solid #fff;
+    color: #fff;
+    background-color: #333333;
+}
+#services #legal .quarterBtn{
+    border: 3px solid #0079c1;
+    color: #0079c1;
+    background-color: #fff;
+}
+#services .first-quarter p{
+    text-align: center;
+    margin-top: 1rem;
+
+}
+#services .tab-btn{
+    font-weight: 500;
+    letter-spacing: .5px;
+    font-size: 18px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+}
+#services .tab-pane .serviceHead{
+    font-size: 32px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: .7px;
+}
+#services .due_dillegence_services-head{
+    font-size: 18px;
+    font-weight: 600;
+}
+<<<<<<< HEAD
+
+
+
+
+=======
+#services .servicesBox .key_people_card{
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    cursor: pointer;
+    margin: 15px 0;
+}
+#services .servicesBox .overlay{
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    transition: .5s ease;
+    opacity: 1;
+    color: white;
+    width: 100%;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}
+#services .servicesBox img{
+    display: block;
+    width: 100%;
+}
+#services .servicesBox .name{
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    padding-bottom: 5px;
+}
+#services .servicesBox .post{
+    width: 100%;
+    /* display: none; */
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#services .servicesBox img{
+    max-width: 100%;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+}
+#services .servicesBox h5{
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 600;
+}
+>>>>>>> f967294d4cf6cee3969d5f32d67c82c0bd3c8e43
+.section-title{
+    font-weight: 600;
+    font-size: 2.6rem;
+    letter-spacing: .5px;
+    margin: auto;
+}
+.contact .section-title{
+    font-size: 1.8rem;
+    font-weight:600;
+    letter-spacing: 1.8px;
+    text-align: center;
+    color: #000;
+}
+.contact .section-title::after{
+    content: "";
+    background-color: #000;
+    height: 0.2rem;
+    width: 7rem;
+    display: block;
+    margin: 10px auto;
+  }
+.section-para{
+    color: #000;
+    letter-spacing: .5px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.text-start.nav-link.text-colored.nav-service-item.active{
+    color: #ffffff!important;
+    background-color: #0dcaf0;
+}
+
+#Compliances h4{
+   font-weight: 600;
+   font-size: 1.2rem;
+   margin-bottom: 1rem;
+   display: flex;
+}
+#Compliances h4 span{
+    margin-right: .4rem;
+ }
+ #services_content .banner{
+    padding-top: 0;
+ }
+ #services_content aside h3{
+    letter-spacing: 0.95px;
+    font-weight: 600;
+    background-color:#f5b402;
+    color: white;
+    padding: 15px;
+    font-size: 22px;
+ }
+ #services_content .accordion .accordion-button{
+    border-radius: 0;
+    box-shadow: none;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+ }
+ #services_content .accordion-item{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+ }
+ #services_content .accordion-body{
+    padding-top: 5px;
+ }
+ #services_content .accordion-body ul{
+    line-height: 45px;
+ }
+ #services_content .accordion-body ul li a{
+    color: #000;
+    letter-spacing: 0.6px;
+    font-weight: 800;
+ }
+ #services_content .accordion-body ul li a:hover,#services_content .accordion-body ul li a:active{
+    color: #f5b402;
+ }
+ #services_content .accordion-button::after{
+    content: '\f107';
+    font-family: "Font Awesome 5 Free";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: bold;
+   font-size: 22px;
+   background-image: none;
+
+ }
+ #services_content .aboutTitle{
+    font-size: 18px;
+    /* color: #f5b402; */
+    margin-bottom: 10px;
+    font-weight: 600;
+ }
+@media(max-width:600px){
+    #Compliances h4{
+       font-size: .95rem;
+     }
+}
+@media(max-width:600px){
+    .section-para{
+        font-size: .9rem;
+    }
+}
+@media(max-width: 600px){
+    #services .quaterBig {
+        padding: 2rem 3rem;
+    }
+    #services .quaterBig ul{
+        max-height: 1000px;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    #services .first-quarter {
+       padding: 2rem .5rem;
+    }
+    #services #auditBig ul{
+        max-height: 500px;
+    }
+    #services #taxBig ul{
+        max-height: 500px;
+    }
+    
+}

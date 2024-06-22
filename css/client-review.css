@@ -1,0 +1,142 @@
+.reviewBanner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bannercontent h1{
+    font-weight: 700;
+    color: #222;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+   .bannercontent p{
+    font-weight: 500;
+    color: #222;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+   .bannercontent .writeReview a{
+    color: #fff;
+    background-color: #f5b402;
+    padding: .8rem 2rem;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: .5px;
+    cursor: pointer;
+    border-radius: 1.76rem;
+   }
+  .reviewBanner .banneraImage{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.reviewBanner .banneraImage img{
+    max-width: 100%;
+    width: 100%;
+}
+.reviewBanner{
+    padding-top: 6rem;
+}
+.bannercontent h1 i{
+   color: #f5b402;
+
+  }
+  .bannercontent .writeReview a:hover{
+    background-color: #f5b402ea;
+}
+@media(max-width: 600px){
+    .bannercontent h1{
+        font-size: 1.8rem;
+    }
+    .bannercontent p{
+        font-size: 1rem;
+    }
+}
+.reviewSection{
+    padding: 2rem 0;
+}
+.reviewSection h2{
+   text-align: center;
+   color: #222;
+   font-weight: 600;
+   font-size: 1.8rem;
+   margin-bottom: 1rem;
+}
+.reviewSection h2::after{
+    content: "";
+    border-bottom: 2px solid #2e2e2e;
+    width: 120px;
+    display: block;
+    margin: 10px auto;
+ }
+.reviewSection .paraInspire{
+    text-align: center;
+    color: #222;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    letter-spacing: .5px;
+    line-height: 1.4;
+ }
+ .reviewBox{
+    padding: 2rem 0;
+ }
+ .reviewBox .reviewItems{
+    padding: 1rem;
+    background-color: #fbfbfb;
+    min-height: 24rem;
+    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+    border-radius: 4px;
+    transition: box-shadow .3s ease;
+ }
+ .reviewBox .reviewItems:hover{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    cursor: pointer;
+ }
+ .reviewBox .reviewItems .nameDate{
+    padding-bottom: .5rem;
+    border-bottom: 2px solid  #f5b402;
+    margin-bottom: .5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ } 
+ .reviewBox .reviewItems .nameDate img{
+    border-radius: 50%;
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: .5rem;
+ } 
+ .reviewBox .reviewItems .nameDate p{
+    font-weight: 600;
+    font-size: .95rem;
+    color: #2e2e2e;
+ } 
+ .reviewBox .reviewItems .nameDate span{
+    font-weight: 500;
+    font-size: .8rem;
+    color: #999;
+ }
+ .reviewBox .reviewItems  .reviewtxt{
+    font-weight: 500;
+    font-size: .92rem;
+    color: #2e2e2e;
+    line-height: 1.4;
+   display: -webkit-box;
+   -webkit-line-clamp: 12;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   margin-bottom: .5rem;
+ } 
+ .reviewBox .reviewItems  .stars{
+   color: #f5b402;
+   text-align: center;
+ }  
+ @media(max-width: 768px){
+    .reviewBox .reviewItems{
+        min-height: fit-content;
+     }
+ }      

@@ -1,0 +1,265 @@
+.founderMission{
+    padding: 120px 0;
+}
+.founderMission .small-container {
+    max-width: 1130px;
+    margin-right: auto;
+    width: 100%;
+    padding: 0 15px;
+    margin-left: auto;
+}
+.founderMission .small-container .heading {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 64px;
+    color: #030525;
+}
+.founderMission .small-container .heading .text-orange{
+  color: #f5b402;
+}
+.text-orange{
+    color: #f5b402;
+  }
+.founderMission .small-container .relativeBox{
+   position: relative;
+  }
+  .founderMission .small-container .absoluteBox{
+    position: absolute;
+    --tw-translate-y: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    --tw-translate-x: -50%;
+     z-index: 10;
+     left: 38%;
+     top: 38%;
+   }
+   .founderMission .small-container .absoluteBox svg{
+    display: block;
+   }
+   .founderMission .small-container .founderNote{
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      margin: 0 0 25px;
+      color: #344054;
+      letter-spacing: -.2px;
+   }
+   .founderMission .founderName{
+        font-weight: 600;
+        margin-bottom: 16px;
+        font-size: 20px;
+   }
+   .founderMission .founderImage{
+     object-position: top;
+     object-fit: cover;
+     width: 100%;
+     height: 100%;
+     max-width: 100%;
+    display: block;
+   }
+
+   @media(max-width: 600px){
+    .founderMission{
+            padding-top: 100px;
+        }
+        .founderMission .small-container .heading{
+                font-size: 35px;
+                margin-bottom: 1rem;
+        }
+        .founderMission .small-container .founderNote{
+            font-size: 18px;
+        }
+        .founderMission .founderName {
+            font-size: 16px;
+        }
+   }   
+
+   .ourJourney{
+    padding-top: 180px;
+    padding-bottom: 180px;
+    background-color: rgb(241, 242, 246);
+   }
+   .ourJourney .heading {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 64px;
+    color: #f5b402;
+}
+.ourJourney .journeyBox p{
+    margin: 0 0 25px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 148%;
+    color: #344054;
+    letter-spacing: -.2px;
+}
+.ourJourney .journeyBox p .font-semibold {
+    font-weight: 600;
+}
+.svgImg{
+    position: relative
+}
+.svgImg img{
+    max-width: 100%;
+    object-fit: contain;
+}
+.svgImg .absoluteSvgTop{
+    position: absolute;
+    left: -85px;
+    top: -5%;
+}
+.svgImg .absoluteSvgbottom{
+    position: absolute;
+    right: 0px;
+    bottom: -5%;
+}
+.ourJourney .journeytext{
+    padding-right: 3rem;
+}
+@media(max-width: 600px){
+    .ourJourney .journeytext{
+        padding-right: 0;
+    }
+    .ourJourney{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .ourJourney .heading {
+        font-size: 30px;
+        margin-bottom: 1rem;
+    }
+    
+    .ourJourney .journeyBox p {
+        font-size: 15px;
+    }
+    .founderMission {
+        padding-bottom: 60px;
+    }
+}
+.investor{
+    padding: 120px 0;
+}
+.investor .heading{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 64px;
+    color: #030525;
+}
+/* flipper */
+
+.flip-container {
+    perspective: 1000px;
+    display: inline-block;
+    margin: 20px;
+    width: 100%;
+  }
+
+  .flipper {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+  }
+
+  .flip-container:hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+  .front,
+  .back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .front {
+    background-color: rgb(241, 242, 246);
+    border: 1px solid rgb(241, 242, 246);
+    border-radius: 20px;
+  }
+  .front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .front .logoImg img{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+  }
+
+  .back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+    border: 1px solid rgb(241, 242, 246);
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  .back .logoImg img{
+    border: 1px solid rgb(241, 242, 246);
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+    padding: .1rem;
+  }
+  .back .details p{
+    font-weight: 500;
+    color: #222;
+    margin: .5rem auto;
+    line-height: 1.4;
+    font-size: .9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.back .stars{
+    color: #f5b402;
+}
+
+
+
+/* about */
+.about-hero-main {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-hero-main .hero-bg-video {
+    position: absolute;
+    -o-object-fit: cover;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.about-hero-main .hero-bg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: rgba(28, 8, 82, .65);
+}
+.about-hero-content h1{
+    text-align: center;
+    margin: auto;
+    font-weight: 700;
+    font-size: 72px;
+    position: absolute;
+    overflow: hidden;
+}

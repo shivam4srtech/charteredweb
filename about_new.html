@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CharteredOne: One destination for  all your fintech solutions</title>
+    <link rel="shortcut icon" href="./images/bigaffilogo.jpeg" type="image/x-icon">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ***********************Bootstrap CSS******************************* -->
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <!-- ***********************Google-font*************************** -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <!-- ******************Local Stylesheet************************* -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/about_new.css">
+</head>
+<body>
+    <!-- ==============================Navbar======================================= -->
+    <nav class="autohide customeNav fixed-top">
+        <div class="wrapper">
+          <div class="logo"><a href="./index.html">Chartered<span>ONE</span></a></div>
+          <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn">
+          <ul class="nav-links">
+            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li class="toggle-group">
+                <a href="#" class="desktop-item border_bottom">Company</a>
+                <input type="checkbox" id="showMega">
+                <label for="showMega" class="mobile-item">Company</label>
+                <div class="mega-box">
+                  <div class="megaContent">
+                    <div class="row serviceBox">
+                      <aside class="col-lg-3 md-12 p-4 pt-0">
+                          <nav class="d-flex flex-column">
+                              <a href="#" class="toggle-menuItem active" data-target="companyMenu"> <img src="./images/company.svg" width="40" height="40" alt="">Company</a>
+                              <a href="#" class="toggle-menuItem" data-target="blogMenu"> <img src="./images/blogs.svg" width="40" height="40" alt="">Blogs</a>
+                              <a href="#" class="toggle-menuItem" data-target="podcostMenu"><img src="./images/podcast.svg" width="40" height="40" alt="">Podcost</a>
+                              <a href="#" class="toggle-menuItem" data-target="mediaMenu"><img src="./images/media.svg" width="40" height="40" alt="">Media</a>
+                              <a href="#" class="toggle-menuItem" data-target="careerMenu"><img src="./images/career.svg" width="40" height="40" alt="">Career</a>
+                          </nav>    
+                      </aside>
+                      <div class="col-lg-9 col-md-12">
+                          <div class="tab-content">
+                              <div id="companyMenu" class="toggle-content" style="display: block; margin-left: 2rem;">
+                                  <div class="row">
+                                      <div class="col-12">
+                                        <h4 class="serviceHeading">Company</h4>
+                                        <p class="menuPara">CharteredOne is global accounting &amp; legal consulting firm</p>
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="megaRowItem">
+                                            <a href="#" class="megaRowAnchor">
+                                                <h3>About Us</h3>
+                                                <p>CharteredOne is global accounting &amp; legal consulting firm</p>
+                                            </a>
+                                         </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="megaRowItem">
+                                            <a href="#" class="megaRowAnchor">
+                                                <h3>Contact Us</h3>
+                                                <p>Floor 405, Maheshwari Chambers, Irram Manzil Colony, Punjagutta, Hyderabad, Telangana 500082.</p>
+                                            </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="megaRowItem">
+                                            <a href="#" class="megaRowAnchor">
+                                                <h3>CharteredOne Wiki</h3>
+                                                <p>CharteredOne is emerging global accounting &amp; legal consulting firm.</p>
+                                            </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="megaRowItem">
+                                            <a href="#" class="megaRowAnchor">
+                                                <h3>Partners</h3>
+                                                <p>Let's Create Magic by Empowering Partners To Boost Market Competitiveness</p>
+                                            </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="megaRowItem">
+                                            <a href="#" class="megaRowAnchor">
+                                                <h3>Case Study</h3>
+                                                <p>CharteredOne Labs: Innovating Solutions for Tomorrow's Challenges.</p>
+                                            </a>
+                                        </div>
+                                      </div>
+                                  </div>   
+                              </div>
+                              <!-- ============== -->
+                              <div id="blogMenu" class="toggle-content" style="display: none;">
+                                  <div class="row">
+                                      <div class="col-12">
+                                        <h4 class="serviceHeading">Blog</h4>
+                                        <p class="menuPara">We Update On Latest Trending Topics On Finance & Legal consulting.</p>
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="megaRowItem">
+                                            <a href="#" class="megaRowAnchor">
+                                                <p class="text-center">This is short description of the blogs trading on charteredOne click here to read full story</p>
+                                            </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="megaRowItem">
+                                            <a href="#" class="megaRowAnchor">
+                                                <p class="text-center">This is short description of the blogs trading on charteredOne click here to read full story</p>
+                                            </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="megaRowItem">
+                                            <a href="#" class="megaRowAnchor">
+                                                <p class="text-center">This is short description of the blogs trading on charteredOne click here to read full story</p>
+                                            </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="megaRowItem">
+                                            <a href="#" class="megaRowAnchor">
+                                                <p class="text-center">This is short description of the blogs trading on charteredOne click here to read full story</p>
+                                            </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="megaRowItem">
+                                            <a href="#" class="megaRowAnchor">
+                                                <p class="text-center">This is short description of the blogs trading on charteredOne click here to read full story</p>
+                                            </a>
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-4">
+                                        <div class="megaRowItem">
+                                            <a href="#" class="megaRowAnchor">
+                                                <p class="text-center">This is short description of the blogs trading on charteredOne click here to read full story</p>
+                                            </a>
+                                        </div>
+                                      </div>
+                                  </div>   
+                              </div>
+                              <!-- ============== -->
+                              <div id="podcostMenu" class="toggle-content" style="display: none;">
+                                  <div class="row">
+                                        <div class="col-12 mb-4">
+                                            <h4 class="serviceHeading">Podcast</h4>
+                                            <p class="menuPara">Join CharteredOne Podcast with our experienced consultant</p>
+                                        </div>
+                                        <div class="col-lg-4 mb-3">
+                                            <a class="podcostHeader" href="#">
+                                                <div>
+                                                    <img src="./images/podcostImg.webp" alt="">
+                                                </div>
+                                                <div class="podcostDescriptin">
+                                                    Why zk-Rollups are the Next Big Thing in Ethereum Scaling | EP 15
+                                                </div>
+                                            </a>    
+                                        </div>
+                                        <div class="col-lg-4 mb-3">
+                                            <a class="podcostHeader" href="#">
+                                                <div>
+                                                    <img src="./images/podcostImg.webp" alt="">
+                                                </div>
+                                                <div class="podcostDescriptin">
+                                                    Why zk-Rollups are the Next Big Thing in Ethereum Scaling | EP 15
+                                                </div>
+                                            </a>    
+                                        </div>
+                                        <div class="col-lg-4 mb-3">
+                                            <a class="podcostHeader" href="#">
+                                                <div>
+                                                    <img src="./images/podcostImg.webp" alt="">
+                                                </div>
+                                                <div class="podcostDescriptin">
+                                                    Why zk-Rollups are the Next Big Thing in Ethereum Scaling | EP 15
+                                                </div>
+                                            </a>    
+                                        </div>
+                                  </div>   
+                              </div>
+                              <!-- ============== -->
+                              <div id="mediaMenu" class="toggle-content" style="display: none;">
+                                  <div class="row">
+                                    <div class="col-12 mb-4">
+                                        <h4 class="serviceHeading">Media</h4>
+                                        <p class="menuPara">Know us better through media insights focusing on our achivements</p>
+                                    </div>
+                                    <div class=" col-12 circular">
+                                        <a href="#">
+                                            <h4>Press-Release</h4>
+                                            <p>Get the Latest Blockchain News & Publications Related to Nadcab Labs in Digital Media</p>
+                                        </a>
+                                    </div> 
+                                  </div>   
+                              </div>
+                              <!-- ============== -->  
+                              <div id="careerMenu" class="toggle-content" style="display: none;">
+                                <div class="row">
+                                    <div class="col-12 mb-4">
+                                        <h4 class="serviceHeading">Career</h4>
+                                        <p class="menuPara">Join our dynamic team at charteredOne a leading global accounting and legal consulting firm. </p>
+                                    </div>
+                                    <div class=" col-12 circular">
+                                        <a href="#">
+                                            <h4>Career</h4>
+                                            <p>We are dedicated to delivering exceptional services to our clients worldwide, and we are looking for passionate professionals to help us achieve our mission. Whether you're an experienced expert or a recent graduate, we offer opportunities for growth, professional development, and a chance to make a meaningful impact.</p>
+                                        </a>
+                                    </div>
+                                </div>   
+                              </div>
+                              <!-- ============== -->  
+                          </div>
+                      </div>
+                   </div>
+                  </div>
+                </div>
+            </li>
+            <li class="toggle-group">
+              <a href="#" class="desktop-item border_bottom">Services</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Services</label>
+              <div class="mega-box">
+                <div class="megaContent">
+                  <div class="row serviceBox">
+                    <aside class="col-lg-3 md-12 p-4 pt-0">
+                        <nav class="d-flex flex-column">
+                            <a href="#" class="toggle-menuItem active" data-target="menuItem1">Bussines Setup in India</a>
+                            <a href="#" class="toggle-menuItem" data-target="menuItem2">Compliance</a>
+                            <a href="#" class="toggle-menuItem" data-target="menuItem3">Event Based Compliance</a>
+                            <a href="#" class="toggle-menuItem" data-target="menuItem4">POSH Compliance</a>
+                            <a href="#" class="toggle-menuItem" data-target="menuItem5">International Business Setup</a>
+                        </nav>    
+                    </aside>
+                    <div class="col-lg-9 col-md-12">
+                        <div class="tab-content">
+                            <div id="menuItem1" class="toggle-content" style="display: block; margin-left: 2rem;">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4 class="serviceHeading">Bussines Setup in India</h4>
+                                        <p class="menuPara">Establishing a business in India offers a wealth of opportunities in one of the world's fastest-growing economies. </p>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">Private Limited Company</a></li>
+                                                <li><a href="#">Partnership Firm registration</a></li>
+                                                <li><a href="#">Limited Liability Partnership</a></li>
+                                                <li><a href="#">One Person Company</a></li>
+                                                <li><a href="#">NBFC Registration</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">Proprietorship Registration</a></li>
+                                                <li><a href="#">Section 8 company</a></li>
+                                                <li><a href="#">Society Registartion</a></li>
+                                                <li><a href="#">Nidhi Company</a></li>
+                                                <li><a href="#">IRDA Insurance Marketing Firm</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">NGO Registration</a></li>
+                                                <li><a href="#">Section 8 Microfinance Company</a></li>
+                                                <li><a href="#">Public Limited Company</a></li>
+                                                <li><a href="#">Producer Company</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+                            <!-- ============== -->
+                            <div id="menuItem2" class="toggle-content" style="display: none;">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4 class="serviceHeading">Compliance</h4>
+                                        <p class="menuPara">Ensure your business adheres to all legal and regulatory standards with our comprehensive compliance services. </p>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">Annual Filing</a></li>
+                                                <li><a href="#">Annual Compliance of PVT. LTD. Company</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">Annual Compliance LLP</a></li>
+                                                <li><a href="#">Compliances of section</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">Compliance for Nidhi Company</a></li>
+                                                <li><a href="#">Compiance for NBFC</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+                            <!-- ============== -->
+                            <div id="menuItem3" class="toggle-content" style="display: none;">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4 class="serviceHeading">Event Based Compliance</h4>
+                                        <p class="menuPara">Stay compliant with timely support for specific business events, such as mergers, acquisitions, and regulatory changes. We ensure your business meets all legal requirements seamlessly.</p>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">Director KYC</a></li>
+                                                <li><a href="#">Appointment of Auditor</a></li>
+                                                <li><a href="#">Change in object clause</a></li>
+                                                <li><a href="#">Change in MOA &amp; AOA</a></li>
+                                                <li><a href="#">Change in name Clause</a></li>
+                                                <li><a href="#">Company Closure</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">Change in registered office</a></li>
+                                                <li><a href="#">Removal of Director</a></li>
+                                                <li><a href="#">Appointment &amp; Resiganation of Director</a></li>
+                                                <li><a href="#">Change in Share Capital</a></li>
+                                                <li><a href="#">Change in Director</a></li>
+                                                <li><a href="#">Legal Drafting</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">Appointment of Managing Director</a></li>
+                                                <li><a href="#">Change of Auditor</a></li>
+                                                <li><a href="#">Change in Authorised Capital</a></li>
+                                                <li><a href="#">Change in Name of Company</a></li>
+                                                <li><a href="#">Issue &amp; Transfer of Shares</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                            <!-- ============== -->
+                            <div id="menuItem4" class="toggle-content" style="display: none;">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4 class="serviceHeading">POSH Compliance</h4>
+                                        <p class="menuPara">Ensure a safe and respectful workplace with our POSH (Prevention of Sexual Harassment) compliance services.</p>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">POSH Compliance</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                            <!-- ============== -->  
+                            <div id="menuItem5" class="toggle-content" style="display: none;">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h4 class="serviceHeading">International Business Setup</h4>
+                                        <p class="menuPara">Expand your business globally with our expert international business setup services. We provide end-to-end support for market entry, legal compliance, tax structuring, and regulatory approvals, ensuring a seamless and successful launch in new markets. </p>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">Foreign Company Registration</a></li>
+                                                <li><a href="#">Foreign Subsidiary Company</a></li>
+                                                <li><a href="#">Incorporation in USA</a></li>
+                                                <li><a href="#">Incorporation in UK</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">Incorporation in Singapore</a></li>
+                                                <li><a href="#">Incorporation in Australia</a></li>
+                                                <li><a href="#">Incorporation in Switzerland</a></li>
+                                                <li><a href="#">Incorporation in China</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">Incorporation in Dubai</a></li>
+                                                <li><a href="#">Incorporation in Hongkong</a></li>
+                                                <li><a href="#">Incorporation in Malaysia</a></li>
+                                                <li><a href="#">Incorporation in Netherlands</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>   
+                          </div>
+                          <!-- ============== -->     
+                        </div>
+                    </div>
+                 </div>
+                </div>
+              </div>
+            </li>
+            <li><a href="./news.html" class="border_bottom">Product</a></li>
+            <li><a href="./career.html" class="border_bottom">Resources</a></li>
+            <li class="nav-item d-lg-none"><a class="nav-btn" id="loginBtn" href="./login.html">Login / Sign-up</a></li>
+          </ul>
+          <ul class="signRegister">
+                <li class="nav-item"><a class="nav-btn" id="loginBtn" href="./login.html">Login / Sign-up</a></li>
+          </ul>
+          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+
+  <section class="about-hero-main flex items-center justify-center abs-header">
+        <video src="./images/AccountingLessons.mp4" class="hero-bg-video" autoplay="" muted="" playsinline="" preload="none" loop=""></video>
+        <div class="hero-bg-overlay"></div>
+        <div class="container w-full">
+            <div class="about-hero-content py-5 text-center">
+                <h1 class="mx-auto text-white mb-2"> Helping millions of Indians make smart financial choices</h1>
+            </div>
+        </div>
+  </section>
+  <section class="founderMission">
+    <div class="small-container">
+        <h2 class="heading text-center mb-6"> Founders <span class="text-orange">on a mission</span></h2>
+        <div class="relativeBox">
+            <div class="absoluteBox  d-none d-lg-block"> 
+                <svg width="248" height="232" viewBox="0 0 248 232" fill="none"> 
+                    <path d="m76.74 226.742-.688-122.394a4.057 4.057 0 0 1 1.763-3.369l145.483-99.66c2.683-1.838 6.329.071 6.347 3.323l.688 122.394a4.056 4.056 0 0 1-1.763 3.369l-145.483 99.66c-2.683 1.838-6.329-.071-6.347-3.323Z" fill="#4F2DA7"></path> <path d="m246.822 88.195.271 73.603c.012 3.174-3.161 5.379-6.132 4.261l-73.138-27.51c-3.502-1.318-3.987-6.071-.824-8.072l72.867-46.092c3.013-1.906 6.943.247 6.956 3.81Z" fill="#119A4B"></path> 
+                    <path d="m2.873 177.178 61.91-24.741c2.948-1.178 6.16.961 6.21 4.136l1.1 70.556c.057 3.738-4.178 5.939-7.2 3.742L1.886 185.055c-2.884-2.097-2.325-6.553.988-7.877Z" fill="#FFBD00"></path> 
+                </svg>
+            </div>
+            <div class="row d-flex align-items-center pb-6 flex-md-row-reverse mb-4 mb-md-0">
+                <div class="col-md-6 col-12">
+                    <p class="mb-2 founderNote">
+                        “Our mission from day one has been to make investing and wealth management simple, accessible and trustworthy”
+                    </p>
+                    <p class="founderName"><span class="text-orange d-block">Subramanya S V</span> Co-founder &amp; CEO, Fisdom</p>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="mb-3"> 
+                    <img class="founderImage" src="https://www.fisdom.com/wp-content/themes/theme/assets/img/subramanya-sv.jpg" data-src="https://www.fisdom.com/wp-content/themes/theme/assets/img/subramanya-sv.jpg" alt="" class="w-full h-full object-cover object-top lazyloaded">
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex align-items-center">
+                <div class="col-md-6 col-12">
+                    <p class="mb-2 founderNote"> 
+                        “Our goal is to empower more people to make smart financial decisions regardless of their net worth or level of financial knowledge”
+                    </p>
+                    <p class="founderName"><span class="d-block text-orange">Anand Dalmia </span>Co-founder &amp; CBO, Fisdom</p>
+                </div>
+                <div class="col-md-6 col-12 ">
+                    <div class="mb-3"> 
+                        <img class="founderImage" src="https://www.fisdom.com/wp-content/themes/theme/assets/img/anand-dalmia.jpg" data-src="https://www.fisdom.com/wp-content/themes/theme/assets/img/anand-dalmia.jpg" alt="" class="w-full h-full object-cover object-top lazyloaded">
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- our Journey -->
+<section class="ourJourney relativeBox">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7 col-12 relativeBox journeyBox">
+                <h2 class="heading">Our Story</h2> 
+                <div class="journeytext">
+                    <p> 
+                        In 2015, we incorporated Finwizard technology, the company that runs the brand Fisdom. Investing was a pain in
+                        the back for customers then. It took anywhere between a few days to a couple of weeks just to
+                        complete the
+                        KYC. The difficulty of sieving through the jargon around financial products made it even more
+                        painful.
+                        <br><br>
+                        Most investment companies had someone visit the customer with a bunch of papers and a pen to help
+                        them invest.
+                        These were the days of demonetisation and long before the UPI revolution. The usage of apps for
+                        financial
+                        transactions was limited to e-commerce. Thus, from the very beginning, we had a single goal - to
+                        make
+                        investing as simple, accessible, and trustworthy as possible.<br><br> Since then, while a lot has changed, many things have remained the same. We still see investing as a
+                        complex
+                        activity, everything is jargon-filled, mis-selling is rampant, and personalization at scale is
+                        absent. We at
+                        Fisdom remain stoked about solving these challenges for our customers.<br><br> In 2016, we started with just one product - mutual funds. But we have several firsts to our name. <span class="font-semibold">Fisdom was the first company in India to completely digitize account
+                        opening and KYC process - something which subsequently became the industry standard. Also, we’re the first
+                        company in India to introduce the use of a payment gateway to process mutual fund transactions on the BSE
+                        platform. We were also the first to digitise Pension funds (NPS) completely. Another first for ours was
+                        launching a goal-based
+                        investment solution.</span><br><br> Over the next 3 years, we added insurance, tax filing, and stock broking. Recently, we also added an
+                        HNI wealth management business to serve the mass-affluent and affluent segment of customers.<br><br> Our biggest achievement by far has been convincing large banks to work with us to help their
+                        customers access investment solutions right within their mobile banking apps and in the branches. Today, we
+                        work deeply with 15 national and regional banks where we run their wealth-tech business.
+                    </p> 
+                    <p> 
+                        <span class="hidden-text hidden text-1 readmore-text">
+                        With the Fisdom SDK integrated into the bank's mobile and internet banking apps; we are present
+                        in nearly 50 million phones in India. Today, we serve only one million customers out of those 50 million.
+                        But we’re just getting started. There is still much of the iceberg beneath the surface waiting to be
+                        explored.<br><br> Our tribe of 500+ Fisdomites are even more passionate about our objectives than we were on day
+                        one. Seeing our customers achieve their dreams through investments keeps us excited and wanting to do more.
+                        Indeed, there are a wealth of possibilities. </span> <br> 
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-5  d-none d-md-block">
+                <div class="svgImg">
+                    <div class="absoluteSvgTop"> 
+                        <svg width="74" height="161" viewBox="0 0 74 161" fill="none"> 
+                            <path d="M68.837.768 2.085 27.853A3.181 3.181 0 0 0 .1 30.87l2.714 126.695c.048 2.227 2.312 3.717 4.377 2.879l64.605-26.218a3.18 3.18 0 0 0 1.984-2.962L73.215 3.701c-.01-2.251-2.291-3.78-4.377-2.933Z" fill="#FFBD00"></path> 
+                        </svg>
+                    </div>
+                    <div class="absoluteSvgbottom"> 
+                        <svg width="74" height="190" viewBox="0 0 74 190" fill="none"> 
+                            <path d="M.004 6.493.049 121.73a6 6 0 0 0 1.763 4.246l61.945 61.778c3.783 3.772 10.24 1.092 10.237-4.251L73.95 68.266a6 6 0 0 0-1.763-4.246L10.24 2.242C6.458-1.53 0 1.151.004 6.493Z" fill="#4F2DA7"></path> 
+                        </svg>
+                    </div>
+                    <div class="relative z-10"> 
+                        <img src="https://www.fisdom.com/wp-content/themes/theme/assets/img/our-story-1.jpg"  class="w-full mb-4 lazyloaded"> 
+                        <img src="https://www.fisdom.com/wp-content/themes/theme/assets/img/our-story-2.jpg"  class="w-full lazyloaded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- our investor -->
+<section class="investor">
+   <div class="container">
+        <div class="row">
+            <h2 class="heading text-center">Our Investor</h2>
+        </div>
+        <div class="row">
+                <div class="col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                               <div class="logoImg">
+                                    <img src="https://1000logos.net/wp-content/uploads/2020/09/SpaceX-Logo.png" data-src="https://www.fisdom.com/wp-content/themes/theme/assets/img/saama.png" alt="" class=" ls-is-cached lazyloaded">
+                               </div>
+                            </div>
+                            <div class="back">
+                               <div class="logoImg">
+                                    <img src="https://1000logos.net/wp-content/uploads/2020/09/SpaceX-Logo.png" data-src="https://www.fisdom.com/wp-content/themes/theme/assets/img/saama.png" alt="" class=" ls-is-cached lazyloaded">
+                               </div>
+                               <div class="details">
+                                    <p>
+                                        Fisdom is unique and holistic wealth tech platform whose market leadership is defined by the
+                                        unprecedented success of their partnership model and digital delivery of products. Given
+                                        Quona’s vantage point of backing transformative fintechs across four continents, we are
+                                        delighted to partner with Fisdom.
+                                    </p>
+                               </div>
+                               <div class="stars">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                               <div class="logoImg">
+                                    <img src="https://1000logos.net/wp-content/uploads/2023/03/Google-Pay-logo.png" data-src="https://www.fisdom.com/wp-content/themes/theme/assets/img/saama.png" alt="" class=" ls-is-cached lazyloaded">
+                               </div>
+                            </div>
+                            <div class="back">
+                               <div class="logoImg">
+                                    <img src="https://1000logos.net/wp-content/uploads/2023/03/Google-Pay-logo.png" data-src="https://www.fisdom.com/wp-content/themes/theme/assets/img/saama.png" alt="" class=" ls-is-cached lazyloaded">
+                               </div>
+                               <div class="details">
+                                    <p>
+                                        Fisdom is unique and holistic wealth tech platform whose market leadership is defined by the
+                                        unprecedented success of their partnership model and digital delivery of products. Given
+                                        Quona’s vantage point of backing transformative fintechs across four continents, we are
+                                        delighted to partner with Fisdom.
+
+                                    </p>
+                               </div>
+                               <div class="stars">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="flip-container">
+                        <div class="flipper">
+                            <div class="front">
+                               <div class="logoImg">
+                                    <img src="https://1000logos.net/wp-content/uploads/2021/04/Paypal-logo.png" data-src="https://www.fisdom.com/wp-content/themes/theme/assets/img/saama.png" alt="" class=" ls-is-cached lazyloaded">
+                               </div>
+                            </div>
+                            <div class="back">
+                               <div class="logoImg">
+                                    <img src="https://1000logos.net/wp-content/uploads/2021/04/Paypal-logo.png" data-src="https://www.fisdom.com/wp-content/themes/theme/assets/img/saama.png" alt="" class=" ls-is-cached lazyloaded">
+                               </div>
+                               <div class="details">
+                                    <p>
+                                        Fisdom is unique and holistic wealth tech platform whose market leadership is defined by the
+                                        unprecedented success of their partnership model and digital delivery of products. Given
+                                        Quona’s vantage point of backing transformative fintechs across four continents, we are
+                                        delighted to partner with Fisdom.
+
+                                    </p>
+                               </div>
+                               <div class="stars">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+   </div>
+</section>
+    <!-- ======================Footer=========================================== -->
+    <footer class="footer">
+        <div class="footer-box container">
+            <div class="footer-row row">
+                <div class="footer-col col-md-6 col-lg-3">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="./dashboard/dashboard.html">Dashboard</a></li>
+                        <li><a href="./services.html">our services</a></li>
+                        <li><a href="#000">privacy policy</a></li>
+                        <li><a href="#000">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-6 col-lg-3">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#000">FAQ</a></li>
+                        <li><a href="#000">Payment Status</a></li>
+                        <li><a href="#000">Subscription</a></li>
+                        <li><a href="./contact.html">Write your Query</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-6 col-lg-3">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./blogs.html">Blogs</a></li>
+                        <li><a href="#000">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-6 col-lg-3">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#000"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/Chartered_ONE" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/charteredone" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#000"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="addressBox">
+                        <p class="mb-2">+91 63003 47380</p>
+                        <p>
+                            Floor 405, Maheshwari Chambers, Irram Manzil Colony, Punjagutta, Hyderabad, Telangana 500082.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyRightText mt-2">
+            <a class="navbar-brand" href="./index.html">Chartered<span>ONE</span></a>
+            <p class="mt-3">&copy; 2024 CharteredOne.com | All Right Reserved</p>
+        </div>
+    </footer>
+   
+    <!-- =====================enquiry Model================================= -->
+    <div id="enquiry">
+        <a href="" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquiry</a>
+    </div>
+    <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="text-center">
+                    <h1 class="modal-title" id="exampleModalLabel">Request Call ?</h1>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-2">
+                            <label for="recipient-name" class="col-form-label">Name<span>*</span></label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-2">
+                            <label for="recipient-name" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-2">
+                            <label for="recipient-name" class="col-form-label">Mobile<span>*</span></label>
+                            <input type="text" class="form-control" id="mobile">
+                        </div>
+                        <div class="mb-2">
+                            <label for="message-text" class="col-form-label">Your Message</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="btns">
+                    <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
+                    <a type="button" class="btn sendmsg">Send message</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========================Local Script================================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/navbar.js"></script>
+    <!-- *******************Bootstrap Script ***************-->
+    <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
