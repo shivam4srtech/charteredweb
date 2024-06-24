@@ -144,7 +144,7 @@ nav{
     padding: 25px 20px;
     width: 90%;
     margin: auto;
-    margin-top: 1rem;
+    margin-top: .4rem; 	
     border-radius: 10px;
     box-shadow: 5px 5px 10px #232323;
   }
@@ -419,7 +419,7 @@ nav{
 	color: #232323;
 	font-weight: 600;
 	letter-spacing: .6px;
-	font-size: 1.3rem;
+	font-size: 1.2rem;
 	margin-bottom: .5rem;
   }
   @media(max-width: 991px){
@@ -632,6 +632,9 @@ ul.navbar-nav{
 	padding: .6rem .8rem;
 	display: flex;
     align-items: center;
+	font-size: .9rem;
+    color: #000;
+    font-weight: 500;
 }
 .serviceBox .toggle-menuItem.active{
 	background-color: #eceeef;
@@ -654,7 +657,7 @@ ul.navbar-nav{
 .megaRowItem .megaRowAnchor h3{
 	color: #666;
 	font-weight: 600;
-	font-size: 1rem;
+	font-size: .95rem;
 	margin-bottom: .5rem;
 }
 .megaRowItem .megaRowAnchor h3:hover{
@@ -664,12 +667,12 @@ ul.navbar-nav{
 	color: #887e7e;
 	font-weight: 500;
 	letter-spacing: .5px;
-	font-size: .85rem; 
+	font-size: .8rem; 
 	line-height: 1.4;
 }
 .mega-box .menuPara{
 	color: #887e7e;
-	font-size: .95rem;
+	font-size: .90rem;
 	font-weight: 500;
 }
 #podcostMenu .podcostHeader{
@@ -690,7 +693,7 @@ ul.navbar-nav{
 	color: #887e7e;
 	font-weight: 500;
 	letter-spacing: .5px;
-	font-size: .85rem; 
+	font-size: .8rem; 
 	line-height: 1.4;
 }
 .toggle-content .circular a{
@@ -720,16 +723,19 @@ ul.navbar-nav{
 		display: none;
 	}
 }
+.serviceAnchors ul{
+	margin-bottom: 1rem;
+}
 .serviceAnchors ul li{
-	margin-bottom: .5rem;
+	margin-bottom: .2rem;
 }
 .serviceAnchors ul li a{
 	padding: 0;
 	border-radius: 0px;
 	padding-bottom: .1rem;
-	color: #2e2e2e;
+	color: #887e7e;
 	font-weight: 500;
-	font-size: .9rem;
+	font-size: .75rem;
 }
 .serviceAnchors ul li a:hover{
 	border-bottom: 2px solid #f5b402;
@@ -765,4 +771,37 @@ ul.navbar-nav{
 	.megaContent .serviceBox aside nav{
 		border-radius: 4px;
 	}
+  }
+  .toggle-group .megaServiceLinks{
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	padding: .6rem .9rem;
+	background-color: #f5b40214;
+	border-radius: 4px;
+  }
+  .toggle-group .megaServiceLinks .toggle-menuItem{
+	border-radius: 0px;
+	font-size: .85rem;
+	padding: .1rem .4rem;
+	margin-right: 1.2rem;
+	transition: border-bottom .3s ease;
+	border-bottom: 1px solid transparent;
+	background-color: transparent;
+	margin-bottom: 0;
+  }
+  .toggle-group .megaServiceLinks .toggle-menuItem.active{
+	color: #f5b402;
+	border-bottom: 1px solid #f5b402;
+	transition: 1s ease-in-out;
+  }
+  .toggle-group .megaServiceLinks .toggle-menuItem svg{
+	margin-left: .2rem;
+	fill: #f5b402;
+  }
+  .megaServiceHeading{
+	font-weight: 600;
+	color: #f5b402;
+	font-size: .9rem;
+	margin-bottom: .5rem;
   }
