@@ -3,6 +3,7 @@
 }
 .registrationHeader{
     padding-top: 6rem;
+    padding-bottom: 3rem;
 }
 .registrationHeader .pageTitle{
     color: #2e2e2e;
@@ -11,6 +12,7 @@
 }
 .registrationHeader .imgBox img{
     max-width: 100%;
+    border-radius: 10px;
 }
 .registrationHeader .pageDesc{
     margin-top: 1rem;
@@ -147,11 +149,11 @@
    padding: 2rem  1rem;
    border-radius: 10px;
 }
-.choosePlan h2{
+.pricingPanel h2{
    font-weight: 600;
    color: #2e2e2e;
    font-size: 2rem;
-   margin-bottom: 1rem;
+   margin-bottom: 3rem;
 }
 .choosePlan .planName{
     border-bottom: 2px solid #B8DFE5;  
@@ -303,6 +305,13 @@
  .dcoRequired .container{
     max-width: 1200px;
  }
+ .dcoRequired p{
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: #2e2e2e;
+  font-size: 1.2rem;
+  line-height: 1.4;
+ }
  .dcoRequired h2{
     font-weight: 600;
     color: #2e2e2e;
@@ -318,6 +327,17 @@
     align-items: flex-start;
     justify-content: left;
  }
+ .dcoRequired ol{
+ padding-left: 40px;
+}
+ .dcoRequired ol li{
+  margin-bottom: 1.2rem;
+  font-weight: 500;
+  color: #2e2e2e;
+  font-size: 1rem;
+  list-style-type: decimal;
+  line-height: 1.4;
+}
  .dcoRequired ul li svg{
     margin-right: .5rem;
     fill: #52cc8f;
@@ -565,6 +585,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     color: #2e2e2e;
     letter-spacing: .5px;
     font-size: .96rem;
+    padding-bottom: 0;
 }
 .registrationpProcedure h2{
     font-weight: 600;
@@ -753,7 +774,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
    text-align: center;
    font-weight: 600;
    margin: auto;
-   font-size: 1.8rem;
+   font-size: 2rem;
    color: #2e2e2e;
    margin-bottom: 2rem;
  }
@@ -796,7 +817,12 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   }
   .gauranteed {
     padding: 6rem 0;
-    background-color: #e7f6ff;
+    background-color: #e7f6ff65;
+  }
+  @media(max-width:600px){
+    .gauranteed {
+      padding: 2rem 0;
+    }
   }
   .gauranteed .container{
     max-width: 1200px;
@@ -821,7 +847,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
 .gauranteed .gauranteeBadge p{
     font-weight: 600;
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
 }
 .gauranteed .gauranteeBadge p a{
     text-decoration: underline;
@@ -1436,4 +1462,404 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   .faqs .faqAns .additionalPadding{
     padding-bottom: 2rem;
   }
-  
+  .pricingPanel{
+    padding: 6rem 0;
+    background-color: #f5f2ee;
+  }
+  .pricingPanel .container{
+    max-width: 1200px;
+  }
+ .pricingPanel .pricingBox{
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  border-radius: 8px;
+  border-color: rgba(220, 218, 214, 1);
+  border-style: solid;
+  border-width: 1px;
+  background-color: var(--Color-Neutral-0, #FFF);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative
+}
+ .pricingPanel .pricingTag{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0px 8px 0px 8px;
+  padding: .1rem .4rem .3rem .4rem;
+  background-color: #f5b402;
+  display: block;
+}
+.pricingPanel .showMore{
+  text-align: center;
+  margin-top: 3rem;
+}
+.choosePlan{
+  display: none;
+}
+.pricingPanel .showMore a{
+  background-color: #fff;
+  color: #000;
+  padding: .8rem 2.2rem;
+  letter-spacing: .5px;
+  font-weight: 500;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.12);
+}
+.pricingPanel .advance .pricingTag{
+  background-color: #000;
+}
+ .pricingPanel .pricingTag span{
+ color: #fff;
+ padding: 600;
+ font-size: .85rem;
+ padding: 0;
+ letter-spacing: .4px;
+ text-transform: uppercase;
+ font-weight: 500;
+}
+ .pricingPanel .basic{
+  border-color: rgba(220, 218, 214, 1);
+}
+ .pricingPanel .pro{
+  border-color: #f5b402
+}
+.pricingPanel .advance{
+  border-color: #000
+}
+.pricingPanel .advance .icon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #f5f2ee;
+  padding: .15rem .5rem;
+  border-radius: 5px;
+}
+.pricingPanel .advance .icon span{
+  font-size: .85rem;
+  font-weight: 600;
+  margin-left: .5rem;
+  letter-spacing: .5px;
+}
+ .pricingPanel .row{
+ width: 100%;
+ margin: auto;
+}
+ .pricingPanel .pricingHeading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+ .pricingPanel .pricingHeading h2{
+  color: #000;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+ .pricingPanel .priceValue{
+  margin-bottom: 1rem;
+}
+ .pricingPanel .priceValue span{
+  color: #000;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: .5rem;
+}
+ .pricingPanel .priceValue small{
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #8b8a8b;
+ font-size: .9rem; 
+ letter-spacing: .5px;
+}
+ .pricingPanel .desc{
+ margin-bottom: 1rem;
+}
+ .pricingPanel .desc p{
+  color: #2e2e2e;
+  line-height: 1.4;
+  font-size: 1rem;
+ }
+ .pricingPanel .panelBtn{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+  .pricingPanel .panelBtn button{
+    border: none;
+    outline: none;
+    background-color: #f5b402;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: .8rem 4rem;
+    letter-spacing: .5px;
+    cursor: pointer;
+ }
+  .pricingPanel .panelBtn button:hover{
+  background-color: #f5b402df;
+}
+ .pricingPanel .pricingTerms h3{
+  margin-bottom: 1rem;
+  color: #000;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+ .pricingPanel .pricingTerms ul li{
+  margin-bottom: .6rem;
+  color: #4f5760;
+  font-size: .85rem;
+  font-weight: 500;
+  display: flex;
+  line-height: 1.4;
+}
+ .pricingPanel .pricingTerms img{
+  margin-right: .6rem;
+}
+/* registration steps */
+.registrationSteps{
+  padding: 3rem 0;
+  background-color: #f5f5f5;
+}
+.registrationSteps .container{
+  max-width: 1250px;
+}
+.registrationSteps h2{
+    text-align: center;
+    font-weight: 600;
+    margin: auto;
+    font-size: 1.8rem;
+    color: #2e2e2e;
+    margin-bottom: 2rem;
+}
+.registrationSteps h3{
+  text-align: left;
+  font-weight: 600;
+  margin: auto;
+  font-size: 1.2rem;
+  color: #2e2e2e;
+  margin-bottom: 1rem;
+}
+.registrationSteps ul li{
+ margin-bottom: 1rem;
+}
+.registrationSteps ul li  a{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 1.76rem;
+  padding: .35rem 1rem;
+  background-color: #f5b40213;
+  color: #1b76fd;
+  font-weight: 500;
+  align-items: center;
+  width: 100%;
+ }
+ .registrationSteps .nav-pills {
+  background-color: transparent;
+}
+.registrationSteps .nav-pills ul{
+  width: 100%;
+}
+ .registrationSteps .nav-pills .nav-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 1.76rem;
+  padding: .35rem 1rem;
+  background-color: #f5b40213;
+  color: #1b76fd;
+  font-weight: 500;
+  align-items: center;
+  width: 100%;
+  transition: .3s ease;
+}
+.registrationSteps .nav-pills .nav-link:hover{
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.registrationSteps .nav-pills ul .nav-link.active {
+  background-color: #0c3c63;
+  color: #fff;
+}
+ .registrationSteps ul li span{
+ border-radius: 50%;
+ height: 2rem;
+ width: 2rem;
+ padding: .2rem;
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ margin-right: .5rem;
+ background-color: #f5b402;
+ color: #fff; 
+ font-weight: 600;
+ letter-spacing: .8px;
+ }
+ @media(min-width: 600px){
+  .registrationSteps .docFormat{
+    padding: 0 5rem;
+   }
+ }
+ .registrationSteps .docFormat img{
+  max-width: 100%;
+  object-fit: contain;
+ }
+ .registrationSteps .docFormat .docName{
+  text-align: center;
+  margin-bottom: 1rem;
+ }
+ .registrationSteps .docFormat .docName span{
+  font-weight: 600;
+  color: #2e2e2e;
+  font-size: 1.2rem;
+  display: inline-block;
+  padding: .4rem 1rem;
+  letter-spacing: .5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+ }
+ /*  */
+
+.aboutLLC{
+  padding: 4rem 0;
+  background-color: #f5f2ee;
+}
+.aboutLLC .container{
+ max-width: 1200px;
+}
+.aboutLLC h2{
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  line-height: 1.4  ;
+}
+@media(min-width:991px){
+  .aboutLLC h2{
+    max-width: 800px;
+  }
+}
+.aboutLLC .llcItem{
+ background-color: #fff;
+ border-radius: 16px;
+ padding: 20px;
+ box-shadow: 16px;
+ border: 1px solid 0px 1px 8px 0px rgba(37, 36, 36, 0.04);
+ margin-bottom: 1.5rem;
+}
+.aboutLLC .llcItem h3{
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: left;
+  margin-bottom: 1rem;
+  line-height: 1.4  ;
+}
+.aboutLLC .llcItem p{
+  color: #6E6D6B;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+.aboutLLC .llcItem .llcImg img{
+ max-width: 100%;
+ object-fit: contain;
+ border-radius: 20px;
+}
+@media(max-width:991px){
+  .aboutLLC .llcItem:nth-of-type(2){
+    flex-direction: column-reverse;
+   }
+   .aboutLLC {
+      padding: 4rem 2rem;
+   }
+}
+@media(max-width:500px){
+   .aboutLLC {
+      padding: 4rem 0rem;
+   }
+}
+.startBussines{
+  background-color: rgba(233, 230, 226, 1);
+  padding: 4rem 0;
+}
+.startBussines{
+  background-color: rgba(233, 230, 226, 1);
+  padding: 3rem 0;
+}
+.startBussines h2{
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  line-height: 1.4  ;
+}
+@media(min-width:991px){
+  .startBussines h2{
+    max-width: 800px;
+  }
+}
+.startBussines .startBussinesItem{
+  box-shadow: 0px 4px 12px 0px rgba(37, 36, 36, 0.08);
+  border-color: rgba(233, 230, 226, 1);
+  border-style: solid;
+  border-width: 2px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.startBussines .startBussinesItem .bussinessImg{
+ margin-bottom: 2.6rem;
+}
+.startBussines .startBussinesItem .number{
+  margin-bottom: 1rem;
+ }
+ .startBussines .startBussinesItem .number span{
+  font-weight: 600;
+  font-size: 5rem;
+  letter-spacing: .6px;
+ }
+ .startBussines .startBussinesItem h3{
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #2e2e2e;
+  line-height: 1.4;
+ }
+ .startBussines .startBussinesItem p{
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #6E6D6B;
+  line-height: 1.4;
+ }
