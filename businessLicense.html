@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CharteredOne: One destination for  all your fintech solutions</title>
+    <link rel="shortcut icon" href="./images/bigaffilogo.jpeg" type="image/x-icon">
+     <!-- ***********************************Montserrat********************************** -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+     <!-- *****************************OPENSANS************************ -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- *******************Fontawesome***************************** -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ***********************Bootstrap CSS******************************* -->
+    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <!-- ******************Local Stylesheet************************* -->
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/registration_blog.css">
+</head>
+<body>
+    <!-- ==============================Navbar======================================= -->
+    <nav class="autohide customeNav fixed-top">
+      <div class="wrapper">
+        <div class="logo"><a href="./index.html">Chartered<span>ONE</span></a></div>
+        <input type="radio" name="slider" id="menu-btn">
+        <input type="radio" name="slider" id="close-btn">
+        <ul class="nav-links">
+          <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+          <li class="toggle-group">
+              <a href="#" class="desktop-item border_bottom">Company</a>
+              <input type="checkbox" id="showMega">
+              <label for="showMega" class="mobile-item">Company</label>
+              <div class="mega-box">
+                <div class="megaContent">
+                  <div class="row serviceBox">
+                    <aside class="col-lg-3 md-12 p-4 pt-0">
+                        <nav class="d-flex flex-column">
+                            <a href="#" class="toggle-menuItem active" data-target="companyMenu"> <img src="./images/company.svg" width="40" height="40" alt="">Company</a>
+                            <a href="#" class="toggle-menuItem" data-target="blogMenu"> <img src="./images/blogs.svg" width="40" height="40" alt="">Blogs</a>
+                            <a href="#" class="toggle-menuItem" data-target="podcostMenu"><img src="./images/podcast.svg" width="40" height="40" alt="">Podcost</a>
+                            <a href="#" class="toggle-menuItem" data-target="mediaMenu"><img src="./images/media.svg" width="40" height="40" alt="">Media</a>
+                            <a href="#" class="toggle-menuItem" data-target="careerMenu"><img src="./images/career.svg" width="40" height="40" alt="">Career</a>
+                        </nav>    
+                    </aside>
+                    <div class="col-lg-9 col-md-12">
+                        <div class="tab-content">
+                            <div id="companyMenu" class="toggle-content" style="display: block; margin-left: 2rem;">
+                                <div class="row">
+                                    <div class="col-12">
+                                      <h4 class="serviceHeading">Company</h4>
+                                      <p class="menuPara">CharteredOne is global accounting &amp; legal consulting firm</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div class="megaRowItem">
+                                          <a href="#" class="megaRowAnchor">
+                                              <h3>About Us</h3>
+                                              <p>CharteredOne is global accounting &amp; legal consulting firm</p>
+                                          </a>
+                                       </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div class="megaRowItem">
+                                          <a href="#" class="megaRowAnchor">
+                                              <h3>Contact Us</h3>
+                                              <p>Floor 405, Maheshwari Chambers, Irram Manzil Colony, Punjagutta, Hyderabad, Telangana 500082.</p>
+                                          </a>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div class="megaRowItem">
+                                          <a href="#" class="megaRowAnchor">
+                                              <h3>CharteredOne Wiki</h3>
+                                              <p>CharteredOne is emerging global accounting &amp; legal consulting firm.</p>
+                                          </a>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div class="megaRowItem">
+                                          <a href="#" class="megaRowAnchor">
+                                              <h3>Partners</h3>
+                                              <p>Let's Create Magic by Empowering Partners To Boost Market Competitiveness</p>
+                                          </a>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div class="megaRowItem">
+                                          <a href="#" class="megaRowAnchor">
+                                              <h3>Case Study</h3>
+                                              <p>CharteredOne Labs: Innovating Solutions for Tomorrow's Challenges.</p>
+                                          </a>
+                                      </div>
+                                    </div>
+                                </div>   
+                            </div>
+                            <!-- ============== -->
+                            <div id="blogMenu" class="toggle-content" style="display: none;">
+                                <div class="row">
+                                    <div class="col-12">
+                                      <h4 class="serviceHeading">Blog</h4>
+                                      <p class="menuPara">We Update On Latest Trending Topics On Finance & Legal consulting.</p>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div class="megaRowItem">
+                                          <a href="#" class="megaRowAnchor">
+                                              <p class="text-center">This is short description of the blogs trading on charteredOne click here to read full story</p>
+                                          </a>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div class="megaRowItem">
+                                          <a href="#" class="megaRowAnchor">
+                                              <p class="text-center">This is short description of the blogs trading on charteredOne click here to read full story</p>
+                                          </a>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div class="megaRowItem">
+                                          <a href="#" class="megaRowAnchor">
+                                              <p class="text-center">This is short description of the blogs trading on charteredOne click here to read full story</p>
+                                          </a>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div class="megaRowItem">
+                                          <a href="#" class="megaRowAnchor">
+                                              <p class="text-center">This is short description of the blogs trading on charteredOne click here to read full story</p>
+                                          </a>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div class="megaRowItem">
+                                          <a href="#" class="megaRowAnchor">
+                                              <p class="text-center">This is short description of the blogs trading on charteredOne click here to read full story</p>
+                                          </a>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                      <div class="megaRowItem">
+                                          <a href="#" class="megaRowAnchor">
+                                              <p class="text-center">This is short description of the blogs trading on charteredOne click here to read full story</p>
+                                          </a>
+                                      </div>
+                                    </div>
+                                </div>   
+                            </div>
+                            <!-- ============== -->
+                            <div id="podcostMenu" class="toggle-content" style="display: none;">
+                                <div class="row">
+                                      <div class="col-12 mb-4">
+                                          <h4 class="serviceHeading">Podcast</h4>
+                                          <p class="menuPara">Join CharteredOne Podcast with our experienced consultant</p>
+                                      </div>
+                                      <div class="col-lg-4 mb-3">
+                                          <a class="podcostHeader" href="#">
+                                              <div>
+                                                  <img src="./images/podcostImg.webp" alt="">
+                                              </div>
+                                              <div class="podcostDescriptin">
+                                                  Why zk-Rollups are the Next Big Thing in Ethereum Scaling | EP 15
+                                              </div>
+                                          </a>    
+                                      </div>
+                                      <div class="col-lg-4 mb-3">
+                                          <a class="podcostHeader" href="#">
+                                              <div>
+                                                  <img src="./images/podcostImg.webp" alt="">
+                                              </div>
+                                              <div class="podcostDescriptin">
+                                                  Why zk-Rollups are the Next Big Thing in Ethereum Scaling | EP 15
+                                              </div>
+                                          </a>    
+                                      </div>
+                                      <div class="col-lg-4 mb-3">
+                                          <a class="podcostHeader" href="#">
+                                              <div>
+                                                  <img src="./images/podcostImg.webp" alt="">
+                                              </div>
+                                              <div class="podcostDescriptin">
+                                                  Why zk-Rollups are the Next Big Thing in Ethereum Scaling | EP 15
+                                              </div>
+                                          </a>    
+                                      </div>
+                                </div>   
+                            </div>
+                            <!-- ============== -->
+                            <div id="mediaMenu" class="toggle-content" style="display: none;">
+                                <div class="row">
+                                  <div class="col-12 mb-4">
+                                      <h4 class="serviceHeading">Media</h4>
+                                      <p class="menuPara">Know us better through media insights focusing on our achivements</p>
+                                  </div>
+                                  <div class=" col-12 circular">
+                                      <a href="#">
+                                          <h4>Press-Release</h4>
+                                          <p>Get the Latest Blockchain News & Publications Related to Nadcab Labs in Digital Media</p>
+                                      </a>
+                                  </div> 
+                                </div>   
+                            </div>
+                            <!-- ============== -->  
+                            <div id="careerMenu" class="toggle-content" style="display: none;">
+                              <div class="row">
+                                  <div class="col-12 mb-4">
+                                      <h4 class="serviceHeading">Career</h4>
+                                      <p class="menuPara">Join our dynamic team at charteredOne a leading global accounting and legal consulting firm. </p>
+                                  </div>
+                                  <div class=" col-12 circular">
+                                      <a href="#">
+                                          <h4>Career</h4>
+                                          <p>We are dedicated to delivering exceptional services to our clients worldwide, and we are looking for passionate professionals to help us achieve our mission. Whether you're an experienced expert or a recent graduate, we offer opportunities for growth, professional development, and a chance to make a meaningful impact.</p>
+                                      </a>
+                                  </div>
+                              </div>   
+                            </div>
+                            <!-- ============== -->  
+                        </div>
+                    </div>
+                 </div>
+                </div>
+              </div>
+          </li>
+          <li class="toggle-group">
+            <a href="#" class="desktop-item border_bottom">Services</a>
+            <input type="checkbox" id="showMega">
+            <label for="showMega" class="mobile-item">Services</label>
+            <div class="mega-box">
+              <div class="megaContent">
+                <div class="row serviceBox">
+                  <div class="col-md-12  pb-3 pt-0">
+                      <nav class="d-flex flex-row megaServiceLinks">
+                          <a href="#" class="toggle-menuItem active" data-target="menuItem1">Bussines Setup <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+                          <a href="#" class="toggle-menuItem" data-target="menuItem2">Tax &amp; Audit <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+                          <a href="#" class="toggle-menuItem" data-target="menuItem3">Registration <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+                          <a href="#" class="toggle-menuItem" data-target="menuItem4">Import Export <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+                          <a href="#" class="toggle-menuItem" data-target="menuItem5"> Trademark &amp; IP <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+                          <a href="#" class="toggle-menuItem" data-target="menuItem6"> BIS <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+                          <a href="#" class="toggle-menuItem" data-target="menuItem7"> Others <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+                      </nav>    
+                  </div>
+                  <div class="col-md-12">
+                      <div class="tab-content">
+                          <div id="menuItem1" class="toggle-content" style="display: block;">
+                              <div class="row">
+                                  <div class="col-lg-3 mb-3">
+                                      <h4 class="megaServiceHeading">Bussines Setup in India</h4>
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">Private Limited Company</a></li>
+                                              <li><a href="#">Partnership Firm registration</a></li>
+                                              <li><a href="#">Limited Liability Partnership</a></li>
+                                              <li><a href="#">One Person Company</a></li>
+                                              <li><a href="#">NBFC Registration</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Proprietorship Registration</a></li>
+                                              <li><a href="#">Section 8 company</a></li>
+                                              <li><a href="#">Society Registartion</a></li>
+                                              <li><a href="#">Nidhi Company</a></li>
+                                              <li><a href="#">IRDA Insurance Marketing Firm</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">NGO Registration</a></li>
+                                              <li><a href="#">Section 8 Microfinance Company</a></li>
+                                              <li><a href="#">Public Limited Company</a></li>
+                                              <li><a href="#">Producer Company</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 mb-3">
+                                      <h4 class="megaServiceHeading">Compliance</h4>
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">Annual Filing</a></li>
+                                              <li><a href="#">Annual Compliance of PVT. LTD. Company</a></li>
+                                              <li><a href="#">Annual Compliance LLP</a></li>
+                                              <li><a href="#">Compliances of section</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Compliance for Nidhi Company</a></li>
+                                              <li><a href="#">Compiance for NBFC</a></li>
+                                          </ul>
+                                      </div>
+                                      <h4 class="megaServiceHeading">Event Based Compliance</h4>
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">Director KYC</a></li>
+                                              <li><a href="#">Appointment of Auditor</a></li>
+                                              <li><a href="#">Change in object clause</a></li>
+                                              <li><a href="#">Change in MOA &amp; AOA</a></li>
+                                          </ul>
+                                          <ul> 
+                                              <li><a href="#">Change in name Clause</a></li>
+                                              <li><a href="#">Company Closure</a></li>
+                                              <li><a href="#">Change in registered office</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 mb-3">
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">Removal of Director</a></li>
+                                              <li><a href="#">Appointment &amp; Resiganation of Director</a></li>
+                                              <li><a href="#">Change in Share Capital</a></li>
+                                              <li><a href="#">Change in Director</a></li>
+                                              <li><a href="#">Legal Drafting</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Appointment of Managing Director</a></li>
+                                              <li><a href="#">Change of Auditor</a></li>
+                                              <li><a href="#">Change in Authorised Capital</a></li>
+                                              <li><a href="#">Change in Name of Company</a></li>
+                                              <li><a href="#">Issue &amp; Transfer of Shares</a></li>
+                                          </ul>
+                                      </div>
+                                      <h4 class="megaServiceHeading">POSH Compliance</h4>
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">POSH Compliance</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 mb-3">
+                                      <h4 class="megaServiceHeading">International Business Setup</h4>
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">Foreign Company Registration</a></li>
+                                              <li><a href="#">Foreign Subsidiary Company</a></li>
+                                              <li><a href="#">Incorporation in USA</a></li>
+                                              <li><a href="#">Incorporation in UK</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Incorporation in Singapore</a></li>
+                                              <li><a href="#">Incorporation in Australia</a></li>
+                                              <li><a href="#">Incorporation in Switzerland</a></li>
+                                              <li><a href="#">Incorporation in China</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Incorporation in Dubai</a></li>
+                                              <li><a href="#">Incorporation in Hongkong</a></li>
+                                              <li><a href="#">Incorporation in Malaysia</a></li>
+                                              <li><a href="#">Incorporation in Netherlands</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>   
+                          </div>
+                          <!-- ============== -->
+                          <div id="menuItem2" class="toggle-content" style="display: none;">
+                              <div class="row">
+                                  <div class="col-lg-3 mb-3">
+                                      <h4 class="megaServiceHeading">GST</h4>
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">GST Registration</a></li>
+                                              <li><a href="#">GST Refund</a></li>
+                                              <li><a href="#">GST Notice Reply</a></li>
+                                              <li><a href="#">GST Modification</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 mb-3">
+                                      <h4 class="megaServiceHeading">Tax Filing</h4>
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">GST Return</a></li>
+                                              <li><a href="#">TDS Return</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 mb-3">
+                                      <h4 class="megaServiceHeading">Internal Audit</h4>
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">Hotel Industry</a></li>
+                                              <li><a href="#">Education Industry</a></li>
+                                              <li><a href="#">Retail Industry</a></li>
+                                              <li><a href="#">Non Profit Organisation</a></li>
+                                              <li><a href="#">Healthcare Pharmaceutical Industry</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 mb-3">
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">Finance Sector</a></li>
+                                              <li><a href="#">Telecommunication</a></li>
+                                              <li><a href="#">Entertainment</a></li>
+                                              <li><a href="#">Automobile Industry</a></li>
+                                              <li><a href="#">Software Industry</a></li>
+                                              <li><a href="#">Construction Sector</a></li>
+                                              <li><a href="#">Real Estate</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- ============== -->
+                          <div id="menuItem3" class="toggle-content" style="display: none;">
+                              <div class="row">
+                                  <div class="col-lg-3 mb-3">
+                                      <h4 class="megaServiceHeading">Government Registratons</h4>
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">NSIC Registraton</a></li>
+                                              <li><a href="#">ESI Registraton</a></li>
+                                              <li><a href="#">Barcode Registraton</a></li>
+                                              <li><a href="#">Bed And Breakfast</a></li>
+                                              <li><a href="#">MSME Registraton</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Startup India Registraton</a></li>
+                                              <li><a href="#">Drug licence Registraton</a></li>
+                                              <li><a href="#">Shops and Establishment</a></li>
+                                              <li><a href="#">Registraton PAN Card</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Applicaton EPF</a></li>
+                                              <li><a href="#">Registraton RERA</a></li>
+                                              <li><a href="#">Registraton Design</a></li>
+                                              <li><a href="#">Registraton ISO</a></li>
+                                              <li><a href="#">Certficaton BEE Registraton</a></li>
+                                          </ul>
+                                          <h4 class="megaServiceHeading">Hospitality Business Setup</h4>
+                                          <ul>
+                                              <li><a href="#">Hotel Registration</a></li>
+                                              <li><a href="#">One Star Hotel</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 mb-3">
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">Two Star Hotel</a></li>
+                                              <li><a href="#">Three Star Hotel</a></li>
+                                              <li><a href="#">Four Star Hotel Without Alkohal</a></li>
+                                              <li><a href="#">Four Star Hotel with Alkohal </a></li>
+                                              <li><a href="#">Five Star Hotel without Alkohal</a></li>
+                                              <li><a href="#">Five Star Hotel with Alkohal</a></li>
+                                              <li><a href="#">Five Star Deluxe Hotel</a></li>
+                                              <li><a href="#">Homestay Bed &amp; Breakfast (BnB)</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Paying Guest (PG)</a></li>
+                                              <li><a href="#">Guest House</a></li>
+                                              <li><a href="#">Coffee Cafe Restaurant Registration</a></li>
+                                              <li><a href="#">Fine Dinig Restaurant</a></li>
+                                              <li><a href="#">Casual Dining Restaurant</a></li>
+                                          </ul>
+                                          <h4 class="megaServiceHeading">ZED</h4>
+                                          <ul>
+                                              <li><a href="#">ZED Certficaton</a></li>
+                                              <li><a href="#">ZED Gold Certficate</a></li>
+                                              <li><a href="#">ZED Silver Certficate</a></li>
+                                              <li><a href="#">ZED Bronze Certficate</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 mb-3">
+                                      <div class="serviceAnchors">
+                                          <h4 class="megaServiceHeading">For NGOs</h4>
+                                          <ul>
+                                              <li><a href="#">80G & 12A Registraton </a></li>
+                                              <li><a href="#">NGO Darpan Registraton</a></li>
+                                              <li><a href="#">CSR Registraton</a></li>
+                                              <li><a href="#">CSR Exchange Registraton</a></li>
+                                              <li><a href="#">FCRA Registraton</a></li>
+                                          </ul>
+                                          <h4 class="megaServiceHeading">Factory License</h4>
+                                          <ul>
+                                              <li><a href="#">Factory License Registraton</a></li>
+                                              <li><a href="#">Consent To Operate</a></li>
+                                              <li><a href="#">Consent To Establish</a></li>
+                                          </ul>
+                                          <h4 class="megaServiceHeading">FSSAI</h4>
+                                          <ul>
+                                              <li><a href="#">FSSAI Registraton</a></li>
+                                              <li><a href="#">FSSAI Basic Registraton</a></li>
+                                              <li><a href="#">FSSAI State Licence</a></li>
+                                              <li><a href="#">FSSAI Central licence</a></li>
+                                              <li><a href="#">FSSAI Returns</a></li>
+                                              <li><a href="#">FSSAI Renewal</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3 mb-3">
+                                      <div class="serviceAnchors">
+                                          <h4 class="megaServiceHeading">CDSCO Registraton</h4>
+                                          <ul>
+                                              <li><a href="#">CDSCO Registraton </a></li>
+                                              <li><a href="#">Cosmetcs Cardiovascular</a></li>
+                                              <li><a href="#">Medical Devices</a></li>
+                                              <li><a href="#">Ophthalmic Medical Devices</a></li>
+                                              <li><a href="#">FCRA Registraton</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Pain Management Medical Devices</a></li>
+                                              <li><a href="#">Dermatology Plastc Surgery Devices</a></li>
+                                              <li><a href="#">Drugs Manufacture In India</a></li>
+                                              <li><a href="#">Oncology Medical Devices</a></li>
+                                              <li><a href="#">Radiotherapy Medical Devices</a></li>
+                                              <li><a href="#">Paediatrics Neonatology Defibrillators</a></li>
+                                              <li><a href="#">Glucometer IVD Lab Kits</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">X-Ray Machine</a></li>
+                                              <li><a href="#">Nebulizer Dialysis Machine</a></li>
+                                              <li><a href="#">BP Monitor Organ</a></li>
+                                              <li><a href="#">Preservaton Solutons</a></li>
+                                              <li><a href="#">General Hospital Devices</a></li>
+                                              <li><a href="#">Pacemaker Bone-Marrow Cell</a></li>
+                                              <li><a href="#">Import Cosemetcs</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- ============== -->
+                          <div id="menuItem4" class="toggle-content" style="display: none;">
+                              <div class="row">
+                                  <div class="col-lg-3 mb-3">
+                                      <h4 class="megaServiceHeading">License</h4>
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">IEC Registraton</a></li>
+                                              <li><a href="#">IEC Renewal</a></li>
+                                              <li><a href="#">AD Code Registraton</a></li>
+                                              <li><a href="#">Merchandise Exports from India</a></li>
+                                              <li><a href="#">Service Exports from India</a></li>
+                                              <li><a href="#">FIEO Registraton ICEGATE Registraton</a></li>
+                                              <li><a href="#">Certficate Of Origin WPC Certficate</a></li>
+                                              <li><a href="#">Freight Forwarding Services</a></li>
+                                              <li><a href="#">Halal Certficate</a></li>
+                                              <li><a href="#">Health Certficate</a></li>
+                                          </ul>
+                                          <h4 class="megaServiceHeading">RCMC</h4>
+                                          <ul>
+                                              <li><a href="#">Board Registraton</a></li>
+                                              <li><a href="#">Apeda Registraton</a></li>
+                                              <li><a href="#">Apeda RCAC Registraton</a></li>
+                                              <li><a href="#">MPEDA Registraton</a></li>
+                                              <li><a href="#">WWEPC Registraton</a></li>
+                                              <li><a href="#">Capexil Certficate</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3">
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">Carpet Export Promoton Council</a></li>
+                                              <li><a href="#">Cashew Export Promoton Council</a></li>
+                                              <li><a href="#">Chemexcil Registraton</a></li>
+                                              <li><a href="#">Shefexil Registraton CLE Council of leather export</a></li>
+                                              <li><a href="#">Electronic and Computer SoŌware ESC-EPC</a></li>
+                                              <li><a href="#">Apparel Export Promoton Council</a></li>
+                                              <li><a href="#">SEPC Registraton</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Indian Silk Export Promoton Council</a></li>
+                                              <li><a href="#">Texprocil Registraton</a></li>
+                                              <li><a href="#">Tobacco Board Registraton</a></li>
+                                              <li><a href="#">Pharmexcil Registraton</a></li>
+                                              <li><a href="#">Coconut Board Registraton</a></li>
+                                              <li><a href="#">Coffee Board Registraton</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Coir Board Registraton</a></li>
+                                              <li><a href="#">Spice Board Registraton</a></li>
+                                              <li><a href="#">Tea Board Registraton</a></li>
+                                              <li><a href="#">Rubber Board Registration</a></li>
+                                              <li><a href="#">Engineering Export Promoton Council</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3">
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">EPCES Membership Registration</a></li>
+                                              <li><a href="#">EPCH Membership Registraton</a></li>
+                                              <li><a href="#">GJEPC Registraton</a></li>
+                                              <li><a href="#">Handloom Export Promoton Council</a></li>
+                                              <li><a href="#">IOPEPC Membership Registraton</a></li>
+                                              <li><a href="#">Plastc Export Promoton Council</a></li>
+                                          </ul>
+                                          <h4 class="megaServiceHeading">Trade Agreement</h4>
+                                          <ul>
+                                              <li><a href="#">APTA Certficate Registraton</a></li>
+                                              <li><a href="#">SAPTA Registraton</a></li>
+                                              <li><a href="#">ICPTA Certficate</a></li>
+                                              <li><a href="#">IJCEPA Certficate</a></li>
+                                              <li><a href="#">India Australia Free</a></li>
+                                              <li><a href="#">Trade Agreement</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">ISCECA Certficate</a></li>
+                                              <li><a href="#">IUCEPA Certficate</a></li>
+                                              <li><a href="#">SAFTA license</a></li>
+                                              <li><a href="#">GSP Registraton</a></li>
+                                              <li><a href="#">LMPC Registraton</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3">
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">LMPC for Weight & Measurement</a></li>
+                                              <li><a href="#">Material Safety Data Sheet (MSDS)</a></li>
+                                              <li><a href="#">UN IIP Certficate</a></li>
+                                          </ul>
+                                          <h4 class="megaServiceHeading">Import Monitoring System</h4>
+                                          <ul>
+                                              <li><a href="#">Paper Import Monitoring System</a></li>
+                                              <li><a href="#">Coal Import Monitoring  System</a></li>
+                                              <li><a href="#">Steel Import Monitoring System</a></li>
+                                              <li><a href="#">Aliminium Import Monitoring System</a></li>
+                                              <li><a href="#">Copper Import  Monitoring System</a></li>
+                                              <li><a href="#">Chip Import Monitoring System</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>        
+                          </div>
+                          <!-- ============== -->
+                          <div id="menuItem5" class="toggle-content" style="display: none;">
+                              <div class="row">
+                                  <div class="col-lg-3">
+                                      <h4 class="megaServiceHeading">Trademark</h4>
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">Trademark Registration</a></li>
+                                              <li><a href="#">Trademark Formality Check Fail</a></li>
+                                              <li><a href="#">Trademark Objection Reply</a></li>
+                                              <li><a href="#">Raising Trademark Opposition</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3">
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">TM Opposition Counter Statement</a></li>
+                                              <li><a href="#">Trademark Renewal</a></li>
+                                              <li><a href="#">Trademark Assignment</a></li>
+                                              <li><a href="#">Trademark Hearing</a></li>
+                                              <li><a href="#">Trademark Rectification</a></li>
+                                              <li><a href="#">Trademakr Availbility</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3">
+                                      <div class="serviceAnchors">
+                                          <h4 class="megaServiceHeading">Patent</h4>
+                                          <ul>
+                                              <li><a href="#">Patent Availbility</a></li>
+                                              <li><a href="#">Provisional Patent</a></li>
+                                              <li><a href="#">Patent Complete</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3">
+                                      <div class="serviceAnchors">
+                                          <h4 class="megaServiceHeading">Copyright</h4>
+                                          <ul>
+                                              <li><a href="#">Copyright Registration</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- ============== -->  
+                          <div id="menuItem6" class="toggle-content" style="display: none;">
+                              <div class="row">
+                                  <div class="col-lg-3">
+                                      <h4 class="megaServiceHeading">BIS Registration</h4>
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">BIS Registration Online</a></li>
+                                              <li><a href="#">BIS CRS Registration</a></li>
+                                              <li><a href="#">BIS FMCS Registration</a></li>
+                                              <li><a href="#">ISI Mark Registration</a></li>
+                                          </ul>
+                                          <h4 class="megaServiceHeading">Compulsory Registration Scheme</h4>
+                                          <ul>
+                                              <li><a href="#">Led Lights</a></li>
+                                              <li><a href="#">CCTV Cameras &amp; Recorders</a></li>
+                                              <li><a href="#">Lithius Ion Batteries</a></li>
+                                              <li><a href="#">Mobile &amp; Electronics Devices</a></li>
+                                              <li><a href="#">LED TV</a></li>
+                                              <li><a href="#">Laptop</a></li>
+                                              <li><a href="#">Notebook</a></li>
+                                              <li><a href="#">Plasma TV</a></li>
+                                              <li><a href="#">Scanners</a></li>
+                                              <li><a href="#">LCD TV</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3">
+                                      <div class="serviceAnchors">
+                                          <ul>
+                                              <li><a href="#">Optical Disc Player With Amplifiers</a></li>
+                                              <li><a href="#">Amplifiers</a></li>
+                                              <li><a href="#">Digital Camera</a></li>
+                                              <li><a href="#">Webcam</a></li>
+                                              <li><a href="#">Bluetooth Speakers</a></li>
+                                              <li><a href="#">Wireless Headphone</a></li>
+                                              <li><a href="#">Wireless Earphone</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Led Lighting Chain</a></li>
+                                              <li><a href="#">Wireless Microphone</a></li>
+                                              <li><a href="#">Wireless Keyboard</a></li>
+                                              <li><a href="#">Printers &amp; Plotters</a></li>
+                                              <li><a href="#">Mocrowave Ovens</a></li>
+                                              <li><a href="#">Smart Card Reader</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3">
+                                      <div class="serviceAnchors">
+                                          <h4 class="megaServiceHeading">Foreign Manufacturers Certification Scheme</h4>
+                                          <ul>
+                                              <li><a href="#">Household Appliances</a></li>
+                                              <li><a href="#">Battries</a></li>
+                                              <li><a href="#">Food related Product</a></li>
+                                              <li><a href="#">Oil Pressure Stoves</a></li>
+                                              <li><a href="#">Automobiles Accessories</a></li>
+                                              <li><a href="#">Valves Regulators Cylinders</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Electrical Transformers</a></li>
+                                              <li><a href="#">Electrical Motors</a></li>
+                                              <li><a href="#">Capacitors</a></li>
+                                              <li><a href="#">Kitchen Appliances</a></li>
+                                              <li><a href="#">Domestic Water Heater with LPG</a></li>
+                                              <li><a href="#">Chemical Fertilizers Textiles Polymers</a></li>
+                                              <li><a href="#">AC Components</a></li>
+                                              <li><a href="#">Transparent Float Glass</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-3">
+                                      <div class="serviceAnchors">
+                                          <h4 class="megaServiceHeading">ISI Registration</h4>
+                                          <ul>
+                                              <li><a href="#">Glass</a></li>
+                                              <li><a href="#">Safety Shoes</a></li>
+                                              <li><a href="#">Sports Shoes</a></li>
+                                              <li><a href="#">PPE Shoes</a></li>
+                                              <li><a href="#">Casual Shoes</a></li>
+                                              <li><a href="#">Rubber Hawai Chappal</a></li>
+                                              <li><a href="#">Surgical Gloves</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Safety Gloves</a></li>
+                                              <li><a href="#">ISI For Toys</a></li>
+                                              <li><a href="#">Electronic Toys</a></li>
+                                              <li><a href="#">Non-Electronic Toys</a></li>
+                                              <li><a href="#">Fortified Rice</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- ============== -->
+                          <div id="menuItem7" class="toggle-content" style="display: none;">
+                              <div class="row">
+                                  <div class="col-lg-4">
+                                      <div class="serviceAnchors">
+                                          <h4 class="megaServiceHeading">GeM</h4>
+                                          <ul>
+                                              <li><a href="#">GeM Register</a></li>
+                                              <li><a href="#">GeM Vendor Assesment</a></li>
+                                              <li><a href="#">GeM Portal Retainership</a></li>
+                                              <li><a href="#">Deemed OEM Vendor Assesment</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">Make In India Certification</a></li>
+                                              <li><a href="#">Brand Listing on GeM</a></li>
+                                              <li><a href="#">Vendor Assesment Exemption</a></li>
+                                              <li><a href="#">OEM Panel Registration</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-4">
+                                      <div class="serviceAnchors">
+                                          <h4 class="megaServiceHeading">EPR Registration</h4>
+                                          <ul>
+                                              <li><a href="#">EPR Registration Online</a></li>
+                                              <li><a href="#">EPR for Battery Waste</a></li>
+                                              <li><a href="#">EPR for Plastic Packaging</a></li>
+                                              <li><a href="#">EPR for E-Waste</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">EPR for Tyre Waste</a></li>
+                                              <li><a href="#">EPR Certificate for Importers</a></li>
+                                              <li><a href="#">EPR Registration for Used Oil</a></li>
+                                              <li><a href="#">Make In India Certification</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-4">
+                                      <div class="serviceAnchors">
+                                          <h4 class="megaServiceHeading">Other Services</h4>
+                                          <ul>
+                                              <li><a href="#">Digital Signature Certificate</a></li>
+                                              <li><a href="#">Director Identification Number</a></li>
+                                              <li><a href="#">UAN &amp; PAN Mitchmatch</a></li>
+                                              <li><a href="#">TAN Application</a></li>
+                                              <li><a href="#">Service Exports From India</a></li>
+                                          </ul>
+                                          <ul>
+                                              <li><a href="#">PAN Correction</a></li>
+                                              <li><a href="#">PF &amp; ESI Monthly Payment</a></li>
+                                              <li><a href="#">LWF Return</a></li>
+                                              <li><a href="#">Term Sheet</a></li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- ============== -->
+                      </div>
+                  </div>
+               </div>
+              </div>
+            </div>
+          </li>
+          <li><a href="./news.html" class="border_bottom">Product</a></li>
+          <li><a href="./career.html" class="border_bottom">Resources</a></li>
+          <li class="nav-item d-lg-none"><a class="nav-btn" id="loginBtn" href="./login.html">Login / Sign-up</a></li>
+        </ul>
+        <ul class="signRegister">
+              <li class="nav-item"><a class="nav-btn" id="loginBtn" href="./login.html">Login / Sign-up</a></li>
+        </ul>
+        <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+      </div>
+   </nav>
+    <!--  -->
+    <section class="businessLicense">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h1>
+                    Applying for Business Licenses and Permits
+                </h1>
+                <p>
+                    Below, we discuss what licenses and permits are needed to start a business.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="toc">
+                        <ul>
+                            <li>
+                                <a href="#snnipetOne">What is a business license?</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetTwo">Licensing at the Federal Level</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetThree">Licensing at the State Level</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetFour">Licensing at the Local Level</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetFive">Professional Licenses</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetSix">Other Types of Business Licenses and Permits</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetSeven">Maintaining Your Licensing</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetEight">Special Permits for Home-Based Businesses</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetNine">Licenses and Permits FAQ</a>
+                            </li>
+                        </ul>
+                        <span>scroll for more</span>
+                    </div>
+                    <div class="startNowBtn">
+                        <button>Start Now</button>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="licenseImg">
+                        <img src="./images/licenses-permits.avif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="businessContent">
+        <div class="container">
+            <div class="businessSnepet" id="snnipetOne">
+                <p>
+                    When you register your business, you typically file Articles of Organization or Articles of Incorporation with your Secretary of State. This allows you to legally incorporate your business or form an LLC. However, it doesn’t have anything to do with obtaining the licenses and permits you may need to operate a business within your industry. Most small businesses need a combination of licenses and permits from federal, state, and local agencies. The requirements and fees vary by business activities, location, and government rules.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="gauranteed" id="gauranteed">
+        <div class="container">
+          <div class="gauranteeBadge">
+               <div>
+                  <img src="./images/money-back-gaurantee.png" alt="">
+               </div> 
+               <div>
+                    <p>
+                       Satisfaction guaranteed or get your money-back <a href="#">Learn more.</a>
+                    </p>
+               </div>
+          </div>
+        </div>
+    </section>
+    <section class="businessContent">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 contentIndex">
+                    <h2>Index</h2>
+                    <div class="tableOfContent">
+                        <ul>
+                            <li>
+                                <a href="#snnipetOne">What is a business license?</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetTwo">Licensing at the Federal Level</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetThree">Licensing at the State Level</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetFour">Licensing at the Local Level</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetFive">Professional Licenses</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetSix">Other Types of Business Licenses and Permits</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetSeven">Maintaining Your Licensing</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetEight">Special Permits for Home-Based Businesses</a>
+                            </li>
+                            <li>
+                                <a href="#snnipetNine">Licenses and Permits FAQ</a>
+                            </li>
+                        </ul>
+                        <div class="startBtn">
+                            <button>Start Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="businessSnepet" id="snnipetTwo">
+                        <h2>What is a business license?</h2>
+                        
+                        <p>
+                            When you start a business, there are a lot of tasks to take care of. Obtaining proper licensing is one of those tasks. While there’s an array of permits and licenses that apply only to specific industries, most businesses in the U.S. also require some sort of license. Licenses may be issued at the federal, state, or local level.
+                        </p>
+                        <p>
+                            If you offer a professional service, they might be one of many licenses and permits you need to obtain. Some states and municipalities require you to have a general business license simply to operate. In many locations across the U.S., you’ll need additional licenses and permits for specific business activities.
+                        </p>
+                        <p>
+                            Unfortunately, there isn’t a way to check which licenses and permits you need without doing some research. You should set aside time to research the requirements for your industry, as well as your location. This should be a priority task <a href="#">after your LLC formation.</a>
+                        </p>
+                    </div>
+                    <div class="businessSnepet" id="snnipetThree">
+                        <h2>General Business Licenses</h2>
+                        <p>
+                            Some (not all) states and local governments require you to get a <a href="#">general business license</a> before you can conduct any business at all within their borders, regardless of your industry or entity type (corporation, limited liability company, sole proprietorship, partnership, etc.) These licenses don’t cover specific services that your business might provide, such as healthcare, food service, or professional trades.
+                        </p>
+                        <h2>
+                            Business Licenses vs. Business Registration
+                        </h2>
+                        <p>
+                            There’s a common misconception that if you’ve registered your business, you’re licensed to transact any and all business. It’s important to note that this is not the case. When you register your business, you typically file Articles of Organization (for a limited liability company, or LLC) or Articles of Incorporation (for a corporation) with your Secretary of State (or whatever agency in your state handles business formations). This allows you to legally <a href="#">incorporate your business</a> or <a href="#">form an LLC</a>. However, it doesn’t have anything to do with obtaining the licenses and permits you may need to operate a business within your industry.
+                        </p>
+                    </div>
+                    <div class="businessSnepet docSample">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h2>Document you will get after online Registration Process in Delhi</h2>
+                                <p>
+                                    Some industries require federal licensing to conduct business activities. The particular requirements to obtain federal licenses and permits vary depending on the industry and the issuing agency. If you operate in any of the following industries, check with the issuing agency to determine what licenses or permits you might need.
+                                </p>
+                            </div>
+                            <div class="col-lg-5">
+                                <div>
+                                    <div class="docName">
+                                        <span>Certificate of Incorporation Sample</span>
+                                   </div>
+                                   <div class="imgBox">
+                                    <img src="./images/incorporation-sample.png" alt="">
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="businessSnepet" id="snnipetFour">
+                        <h2>Licensing at the Federal Level</h2>
+                        <p>
+                            Some industries require federal licensing to conduct business activities. The particular requirements to obtain federal licenses and permits vary depending on the industry and the issuing agency. If you operate in any of the following industries, check with the issuing agency to determine what licenses or permits you might need.
+                        </p>
+                        <h2>Agriculture</h2>
+                        <p>
+                            Many agricultural businesses import and transport products over state lines. That can include animals, plants, and a variety of other biological goods. If your company is involved in any of these activities, you likely need to apply for licensing from the U.S. Department of <a href="#">Agriculture</a>.
+                        </p>
+                        <h2>Alcohol</h2>
+                        <p>
+                            Alcohol is a highly regulated industry. Whether you sell, import, manufacture, or are a wholesaler of alcohol, you’ll require a range of permits. When it comes to federal licensing, you’ll want to check with the <a href="#">Alcohol and Tobacco Tax and Trade Bureau</a> to determine which licenses and permits you require.
+                        </p>
+                        <h2>Aviation</h2>
+                        <p>
+                            If you’re in the business of transporting people or products via aircraft, you’ll need to obtain proper licensing from the <a href="#">Federal Aviation Administration.</a> This regulation also applies to businesses that provide aircraft maintenance services.
+                        </p>
+                        <h2>Commercial Fisheries</h2>
+                        <p>
+                            If you harvest fish for sale, barter, or trade, your business is legally considered a commercial fishery. You’ll need to obtain a commercial fishing license from the <a href="#">National Oceanic and Atmospheric Administration Fisheries Service.</a>
+                        </p>
+                        <h2>Firearms, Ammunition, and Explosives</h2>
+                        <p>
+                            Firearms, ammunition, and explosives are another industry that’s highly regulated by the federal government. If your business buys, sells, or imports any of these products, you need to contact the <a href="#">Bureau of Alcohol, Tobacco, Firearms, and Explosives</a> to obtain proper licensing.
+                        </p>
+                        <h2>Fish and Wildlife</h2>
+                        <p>
+                            Wildlife activities, such as hunting and importing or exporting wildlife derivative products, are subject to federal regulations. As such, businesses that engage in these activities need to apply for a license from the <a href="#">U.S. Fish and Wildlife Service</a>.
+                        </p>
+                        <h2>Maritime Transportation</h2>
+                        <p>
+                            Any business that transports people or cargo across water might need to apply for a license from the <a href="#">Federal Maritime Commission</a>. This agency regulates sea freight services to and from the United States.
+                        </p>
+                        <h2>Mining and Drilling</h2>
+                        <p>
+                            Any company that conducts drilling for mineral resources on federal land needs a license from the <a href="#">Bureau of Safety and Environmental Enforcement,</a> which regulates the offshore energy industry.
+                        </p>
+                        <h2>Nuclear Energy</h2>
+                        <p>
+                            If you engage in the distribution or disposal of nuclear materials, you need to obtain licensing from the U.S. Nuclear Regulatory Commission. This agency is responsible for regulating the use of radioactive materials to protect public safety and the environment.
+                        </p>
+                        <h2>
+                            Radio and Television Broadcasting
+                        </h2>
+                        <p>
+                            The <a href="#">Federal Communications Commission</a> requires that all organizations broadcasting information via radio, television, wire, satellite, or cable obtain a license to do so.
+                        </p>
+                    </div>
+                    <div class="businessSnepet" id="snnipetFive">
+                        <h2>Other Types of Business Licenses and Permits</h2>
+                        <p>
+                            In addition to general and professional licenses and permits, your business might also require a variety of other permits, such as:
+                        </p>
+                        <ul>
+                            <li>Zoning permits</li>
+                            <li>Health permits</li>
+                            <li>Environmental permits</li>
+                            <li>Building permits</li>
+                        </ul>
+                        <p>
+                            Which of these permits you need will depend on where you run your business, as well as the products or services you provide. It’s best to check with your city or county office to determine which of these permits might be needed.
+                        </p>
+                    </div>
+                    <div class="businessSnepet" id="snnipetSix">
+                        <h2>Licensing at the State Level</h2>
+                        <p>
+                            On top of obtaining federal licenses, you might also need to obtain licenses from your state, depending on the activities you’re conducting. While the rules are different in each state, you might need a license to conduct the following business activities:
+                        </p>
+                        <ul>
+                            <li>Auctions</li>
+                            <li>Construction</li>
+                            <li>Dry cleaning</li>
+                            <li>Farming</li>
+                            <li>Food service</li>
+                            <li>Retail sales</li>
+                            <li>Hospitality (hotels, motels, etc.)</li>
+                            <li>Vending machines</li>
+                        </ul>
+                        <p>
+                            Some state websites offer a search engine that helps you determine what types of licenses and permits your company will need. However, these lists don’t always include details about federal or local licenses. Therefore, it’s important to make sure you cross-reference any recommendations with information obtained from the <a href="#">Small Business Administration</a>, your county, and your municipality.
+                        </p>
+                        <p>
+                            As mentioned earlier, some states also require you to have a general business license to operate legally. States that require a general business license at the state level include:
+                        </p>
+                        <ul>
+                            <li><a href="#">Alabama</a></li>
+                            <li><a href="#">Alaska</a></li>
+                            <li><a href="#">Washington, D.C.</a></li>
+                            <li><a href="#">Delaware</a></li>
+                            <li><a href="#">Florida</a></li>
+                            <li><a href="#">Michigan</a></li>
+                            <li><a href="#">Minnesota</a></li>
+                            <li><a href="#">Mississippi</a></li>
+                            <li><a href="#">Nevada</a></li>
+                            <li><a href="#">North Dakota</a></li>
+                            <li><a href="#">Oklahoma</a></li>
+                            <li><a href="#">Oregon</a></li>
+                            <li><a href="#">South Carolina</a></li>
+                        </ul>
+                        <p>
+                            It’s important to keep in mind that while your business may be licensed by the state, you might still need additional licenses from your county or municipality. Make sure to conduct thorough research to determine what combination of licenses you might need in your specific location.
+                        </p>
+                    </div>
+                    <div class="businessSnepet" id="snnipetSeven">
+                        <h2>Special Permits for Home-Based Businesses</h2>
+                        <p>
+                            If your business office is located in your home, you could be subject to an array of license and permit requirements. Depending on the regulations in your city and county, that might include:
+                        </p>
+                        <ul>
+                            <li>Home occupation permit</li>
+                            <li>Zoning permit</li>
+                            <li>Fire permit</li>
+                            <li>Sign permit</li>
+                            <li>Special use Permit</li>
+                        </ul>
+                    </div>
+                    <div class="businessSnepet" id="snnipetEight">
+                        <h2>Maintaining Your Licensing</h2>
+                        <p>
+                            Most licenses and permits require regular renewals. Depending on which licenses your business has, that might mean that you’re subject to periodic renewal fees. You may also need to re-submit applications after a certain period of time has lapsed or provide annual reports to your governing agency. Be sure to take note of the requirements of each license and permit you possess.
+                        </p>
+                    </div>
+                    <div class="businessSnepet" id="snnipetNine">
+                        <h2>Conclusion</h2>
+                        <p>
+                            When you’re ready to obtain the correct licenses and permits for your business, try our <a href="#">business license report</a>. Our partners use the data you provide, including your business location, industry, and activities, to identify potential licensing requirements. These partners search federal, state, and local regulations to help ensure that you’ve got all the information you need to get started.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Start Bussiness -->
+    <section class="startBussines">
+        <div class="container">
+            <h2>Use charteredOne to start your business in 3 easy steps</h2>
+            <div class="row">
+              <div class="col-lg-4 mb-3">
+                <div class="startBussinesItem">
+                  <div class="bussinessImg">
+                      <img src="./images/bussiness-1.svg" alt="">
+                  </div>
+                  <div class="number">
+                    <span>01</span>
+                  </div>
+                  <h3>Tell us about your business</h3>
+                  <p>Let us know basic details about your business.</p>
+                </div>
+                <div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3">
+                <div class="startBussinesItem">
+                  <div class="bussinessImg">
+                      <img src="./images/business-2.svg" alt="">
+                  </div>
+                  <div class="number">
+                    <span>02</span>
+                  </div>
+                  <h3>Choose the services you need</h3>
+                  <p>Take your business to the next level with LegalZoom's services.</p>
+                </div>
+                <div>
+
+                </div>
+              </div>
+              <div class="col-lg-4 mb-3">
+                <div class="startBussinesItem">
+                  <div class="bussinessImg">
+                      <img src="./images/business-3.svg" alt="">
+                  </div>
+                  <div class="number">
+                    <span>03</span>
+                  </div>
+                  <h3>Sit back while we make it official</h3>
+                  <p>Let us take care of the rest while you get back to business!</p>
+                </div>
+                <div>
+
+                </div>
+              </div>
+            </div>
+        </div>
+     </section>
+      <!-- FAQs -->
+    <section class="faqs" id="faqs">
+        <div class="container">
+          <h2>FAQs</h2>
+          <p class="sectionPara">
+            Here are some common questions we receive from our customers.
+            If you have any additional questions, please don’t hesitate to contact us.
+          </p>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">How to incorporate a company in Singapore?</div>
+              <div class="accordion-content faqAns">
+                <p>Incorporating a company in Singapore as a local is a relatively straightforward process. All you need is the following:</p>
+                <ul>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                </ul>
+                <p>Incorporating a company in Singapore as a local is a relatively straightforward process. All you need is the following:</p>
+                <ol>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                </ul>
+                <div class="additionalPadding"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">What types of company structures are available for company incorporation in Singapore?</div>
+              <div class="accordion-content faqAns">
+                <p>Incorporating a company in Singapore as a local is a relatively straightforward process. All you need is the following:</p>
+                <ul>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                </ul>
+                <p>Incorporating a company in Singapore as a local is a relatively straightforward process. All you need is the following:</p>
+                <ol>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                </ul>
+                <div class="additionalPadding"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div class="accordion-header">Why should you incorporate a Singapore Private Limited company?</div>
+              <div class="accordion-content faqAns">
+                <p>Incorporating a company in Singapore as a local is a relatively straightforward process. All you need is the following:</p>
+                <ul>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                </ul>
+                <p>Incorporating a company in Singapore as a local is a relatively straightforward process. All you need is the following:</p>
+                <ol>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                </ul>
+                <div class="additionalPadding"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!-- review -->
+     <section class="customerReview" id="customerReview">
+        <div class="container">
+          <h2>What our customers say about us</h2>
+          <div class="row">
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 reviewBox">
+                  <div>
+                      <div class="stars">
+                          <img src="./images/stars.svg" alt="" height="20">
+                      </div>
+                      <p class="clientName">Kai Kono</p>
+                      <p class="clientRole">Owner, Spring Digital</p>
+                      <p class="reviewText">
+                        Very professional, responsive, and setting up a company was extremely seamless. Highly recommend charteredOne to all entrepreneurs and companies setting up in Singapore.
+                      </p>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 reviewBox">
+                <div>
+                    <div class="stars">
+                        <img src="./images/stars.svg" alt="" height="20">
+                    </div>
+                    <p class="clientName">Kai Kono</p>
+                    <p class="clientRole">Owner, Spring Digital</p>
+                    <p class="reviewText">
+                      Very professional, responsive, and setting up a company was extremely seamless. Highly recommend charteredOne to all entrepreneurs and companies setting up in Singapore.
+                    </p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 reviewBox">
+                <div>
+                    <div class="stars">
+                        <img src="./images/stars.svg" alt="" height="20">
+                    </div>
+                    <p class="clientName">Kai Kono</p>
+                    <p class="clientRole">Owner, Spring Digital</p>
+                    <p class="reviewText">
+                      Very professional, responsive, and setting up a company was extremely seamless. Highly recommend charteredOne to all entrepreneurs and companies setting up in Singapore.
+                    </p>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-6 col-12 reviewBox">
+                <div>
+                    <div class="stars">
+                        <img src="./images/stars.svg" alt="" height="20">
+                    </div>
+                    <p class="clientName">Kai Kono</p>
+                    <p class="clientRole">Owner, Spring Digital</p>
+                    <p class="reviewText">
+                      Very professional, responsive, and setting up a company was extremely seamless. Highly recommend charteredOne to all entrepreneurs and companies setting up in Singapore.
+                    </p>
+                </div>
+              </div>
+          </div>
+      </div>
+     </section>
+    <!-- contact-us -->
+    <section class="contactUs">
+      <div class="container">
+        <span class="big-circle"></span>
+        <img src="img/shape.png" class="square" alt="" />
+        <div class="form">
+          <div class="contact-info">
+            <h3 class="title">Let's get in touch</h3>
+            <p class="text">
+              Get expert guidance on business setup, compliance, and international expansion. Contact us today to take your business to the next level.
+            </p>
+  
+            <div class="info">
+              <div class="information">
+                <i class="fas fa-map-marker-alt"></i> &nbsp &nbsp
+  
+                <p>Floor 405, Maheshwari Chambers, Irram Manzil Colony, Punjagutta, Hyderabad, Telangana 500082.</p>
+              </div>
+              <div class="information">
+                <i class="fas fa-envelope"></i> &nbsp &nbsp
+                <p>contact@charteredOne.com</p>
+              </div>
+              <div class="information">
+                <i class="fas fa-phone"></i>&nbsp&nbsp
+                <p>+91 63003 47380</p>
+              </div>
+            </div>
+  
+            <div class="social-media">
+              <p>Connect on Social</p>
+              <div class="social-icons">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-brands fa-x-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="contact-form">
+            <span class="circle one"></span>
+            <span class="circle two"></span>
+  
+            <form action="index.html" autocomplete="off">
+              <h3 class="title">Contact us</h3>
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">First Name</label>
+                <span>First Name</span>
+              </div>
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">Last Name</label>
+                <span>Last Name</span>
+              </div>
+              <div class="input-container">
+                <input type="text" name="name" class="input" />
+                <label for="">Phone Number</label>
+                <span>Phone Number</span>
+              </div>
+              <div class="input-container">
+                <input type="email" name="email" class="input" />
+                <label for="">Email</label>
+                <span>Email</span>
+              </div>
+              <div class="input-container textarea">
+                <textarea name="message" class="input"></textarea>
+                <label for="">Message</label>
+                <span>Message</span>
+              </div>
+              <input type="submit" value="Submit" class="btn" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ======================Footer=========================================== -->
+    <footer class="footer">
+        <div class="footer-box container">
+            <div class="footer-row row">
+                <div class="footer-col col-md-6 col-lg-3">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="./dashboard/dashboard.html">Dashboard</a></li>
+                        <li><a href="./services.html">our services</a></li>
+                        <li><a href="#000">privacy policy</a></li>
+                        <li><a href="#000">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-6 col-lg-3">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#000">FAQ</a></li>
+                        <li><a href="#000">Payment Status</a></li>
+                        <li><a href="#000">Subscription</a></li>
+                        <li><a href="./contact.html">Write your Query</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-6 col-lg-3">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./blogs.html">Blogs</a></li>
+                        <li><a href="#000">News</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-6 col-lg-3">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#000"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/Chartered_ONE" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://instagram.com/charteredone" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#000"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="addressBox">
+                        <p class="mb-2">+91 63003 47380</p>
+                        <p>
+                            Floor 405, Maheshwari Chambers, Irram Manzil Colony, Punjagutta, Hyderabad, Telangana 500082.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyRightText mt-2">
+            <a class="navbar-brand" href="./index.html">Chartered<span>ONE</span></a>
+            <p class="mt-3">&copy; 2024 CharteredOne.com | All Right Reserved</p>
+        </div>
+    </footer>
+    <!-- =====================enquiry Model================================= -->
+    <div id="enquiry">
+        <a href="" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquiry</a>
+    </div>
+    <div class="modal fade" id="enquiryModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="text-center">
+                    <h1 class="modal-title" id="exampleModalLabel">Request Call ?</h1>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-2">
+                            <label for="recipient-name" class="col-form-label">Name<span>*</span></label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="mb-2">
+                            <label for="recipient-name" class="col-form-label">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="mb-2">
+                            <label for="recipient-name" class="col-form-label">Mobile<span>*</span></label>
+                            <input type="text" class="form-control" id="mobile">
+                        </div>
+                        <div class="mb-2">
+                            <label for="message-text" class="col-form-label">Your Message</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="btns">
+                    <a type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</a>
+                    <a type="button" class="btn sendmsg">Send message</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ==========================Local Script================================ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    
+    <script src="./js/navbar.js"></script>
+    <script src="./js/home.js"></script>
+    <!-- *******************Bootstrap Script ***************-->
+    <script>
+      document.getElementById('toggleLink').addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent the default anchor behavior
+
+          var choosePlanSection = document.getElementById('choosePlan');
+          if (choosePlanSection.style.display === 'none' || choosePlanSection.style.display === '') {
+              choosePlanSection.style.display = 'block';
+          } else {
+              choosePlanSection.style.display = 'none';
+          }
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $(".accordion-header").click(function() {
+          $(this).toggleClass("active");
+          var content = $(this).next(".accordion-content");
+    
+          if ($(this).hasClass("active")) {
+            content.css({
+              "height": content.prop('scrollHeight') + "px",
+              "padding-top": "15px",
+              "padding-bottom": "15px"
+            });
+          } else {
+            content.css({
+              "height": 0,
+              "padding-top": 0,
+              "padding-bottom": 0
+            });
+          }
+        });
+      });
+    </script>
+<script>
+  //Contact Us
+      const inputs = document.querySelectorAll(".input");
+
+function focusFunc() {
+  let parent = this.parentNode;
+  parent.classList.add("focus");
+}
+
+function blurFunc() {
+  let parent = this.parentNode;
+  if (this.value == "") {
+    parent.classList.remove("focus");
+  }
+}
+
+inputs.forEach((input) => {
+  input.addEventListener("focus", focusFunc);
+  input.addEventListener("blur", blurFunc);
+});
+
+</script>     
+
+<script>
+  function toggleRow(rowId) {
+      const detailRows = document.querySelectorAll(`tr[data-parent="${rowId}"]`);
+      const mainRow = document.querySelector(`tr[onclick="toggleRow(${rowId})"] .expand-icon`);
+      let isExpanded = false;
+      detailRows.forEach(row => {
+          row.classList.toggle('hidden');
+          if (!row.classList.contains('hidden')) {
+              isExpanded = true;
+          }
+      });
+      mainRow.textContent = isExpanded ? '-' : '+';
+  }
+</script>
+
+</body>
+</html>
