@@ -152,7 +152,7 @@
 .pricingPanel h2{
    font-weight: 600;
    color: #2e2e2e;
-   font-size: 2rem;
+   font-size: 2.4rem;
    margin-bottom: 3rem;
 }
 .choosePlan .planName{
@@ -572,7 +572,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     background-color: #e7f6ff;
 }
 .registrationpProcedure .container{
-    max-width: 1200px;
+    max-width: 1450px;
 }
 .accordion-button:focus {
     box-shadow: none;
@@ -1485,7 +1485,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     padding-bottom: 2rem;
   }
   .pricingPanel{
-    padding: 6rem 0;
+    padding: 3rem 0;
     background-color: #f5f2ee;
   }
   .pricingPanel .container{
@@ -1765,7 +1765,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
  /*  */
 
 .aboutLLC{
-  padding: 4rem 0;
+  padding: 2rem 0;
   background-color: #f5f2ee;
 }
 .aboutLLC .container{
@@ -1974,7 +1974,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
    }
  }
  .businessContent{
-  padding: 1rem 0 3rem 0;
+  padding: 1rem 0;
  }
  .businessContent .container{
  max-width: 1500px;
