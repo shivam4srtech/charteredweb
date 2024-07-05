@@ -89,7 +89,7 @@
     padding: 4rem 0;
 }
 .whyRegistar .container{
-    max-width: 1200px;
+    max-width: 1500px;
 }
 .whyRegistar h1{
     color: #fff;
@@ -144,7 +144,7 @@
     padding: 4rem 0;
 }
 .choosePlan .container{
-   max-width: 1200px;
+   max-width: 1500px;
    border: 2px solid #B8DFE5;
    padding: 2rem  1rem;
    border-radius: 10px;
@@ -256,7 +256,7 @@
    padding: 3rem 0;
 }
 .adService .container{
-    max-width: 1200px;
+    max-width: 1500px;
  }
 .adService h2{
     text-align: center;
@@ -314,7 +314,7 @@
     padding: 3rem 0;
  }
  .dcoRequired .container{
-    max-width: 1200px;
+    max-width: 1500px;
  }
  .dcoRequired p{
   margin-bottom: 1rem;
@@ -631,7 +631,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     padding:  3rem 0;
 }
 .foreignRegistration .container{
-    max-width: 1200px;
+    max-width: 1500px;
 }
 .foreignRegistration h3{
     font-weight: 600;
@@ -696,7 +696,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     background-color: #f8e9e0;
 }
 .checkAvailbility .container{
-    max-width: 1200px;
+    max-width: 1500px;
 }
 .checkAvailbility .checkForm{
     display: flex;
@@ -864,7 +864,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     }
   }
   .gauranteed .container{
-    max-width: 1200px;
+    max-width: 1500px;
   }
   .gauranteed .gauranteeBadge{
     height: 4rem;
@@ -909,7 +909,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     color: #fff;
 }
 .hassleFree .container{
-    max-width: 1200px;
+    max-width: 1500px;
 }
 .hassleFree .hassalHeader h2{
     font-weight: 600;
@@ -959,7 +959,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     padding: 4rem 0 2rem 0;
   }
   .customerReview .container{
-   max-width: 1200px;
+   max-width: 1500px;
   }
   .customerReview h2{
     font-weight: 600;
@@ -1525,7 +1525,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     background-color: #f5f2ee;
   }
   .pricingPanel .container{
-    max-width: 1200px;
+    max-width: 1500px;
   }
  .pricingPanel .pricingBox{
   -webkit-box-align: stretch;
@@ -1711,7 +1711,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   background-color: #f5f5f5;
 }
 .registrationSteps .container{
-  max-width: 1250px;
+  max-width: 1500px;
 }
 .registrationSteps h2{
     text-align: center;
@@ -1813,7 +1813,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   background-color: #f5f2ee;
 }
 .aboutLLC .container{
- max-width: 1200px;
+ max-width: 1500px;
 }
 .aboutLLC h2{
   color: #000;
@@ -1936,7 +1936,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   color: #fff;
 }
 .businessLicense .container{
-  max-width: 1200px;
+  max-width: 1500px;
 }
 .businessLicense h1{
  font-weight: 700;
