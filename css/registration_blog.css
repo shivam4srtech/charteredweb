@@ -649,6 +649,10 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     position: relative;
     padding-left: 25px;
 }
+.foreignRegistration ul li em{
+  font-style: italic;
+  font-weight: 600;
+}
 .foreignRegistration ol{
   padding-left: 25px;
 }
