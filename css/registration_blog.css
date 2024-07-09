@@ -2056,6 +2056,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     color: rgb(49, 66, 89);
     font-weight: 500;
     display: -webkit-box;
+    line-clamp: 1;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -2084,6 +2085,17 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   font-size: 1.1rem;
   margin-bottom: .5rem;
   list-style-type: disc;
+}
+.businessContent .container .businessSnepet ol{
+  padding-left: 20px;
+}
+.businessContent .container .businessSnepet ol li {
+  color: #472515;
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  list-style-type: decimal;
 }
 .businessContent .container .businessSnepet ul li a{
   color: #002FCF;
@@ -2190,4 +2202,55 @@ ol.process-chart > li:nth-of-type(6n+5):after {
 
 .flip-container.flipped .flipper {
   transform: rotateY(180deg);
+}
+.businessSnepet strong{
+  font-weight: 700;
+}
+.businessSnepet table{
+  border: 1px solid #e2e2e2;
+}
+.businessSnepet table tr td{
+  border: 1px solid #e2e2e2;
+}
+.authorBox{
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+}
+.authorBox .container{
+  max-width: 1450px;
+  margin-bottom: 2rem;
+}
+.authorBox .shareSocial{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.authorBox .shareSocial a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .5rem;
+  border-radius: 50%;
+  width: 2.2rem;
+  height: 2.2rem;
+  background-color: #000;
+  color: #fff;
+}
+.authorBox .shareSocial a svg{
+  fill: #fff;
+}
+.authorBox .authorContent .authorName{
+  color: #2e2e2e;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+.authorBox .authorContent .authorDesc{
+  color: #472515;
+  line-height: 1.6;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+section strong{
+  font-weight: 700;
 }
