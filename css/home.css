@@ -256,3 +256,301 @@
   margin-bottom: .5rem;
   line-height: 1.4;
 }
+
+
+
+
+
+
+
+/* Discount banner */
+.container{
+    max-width: 1300px;
+}
+.discoutBanner{
+    padding-top: 50px;
+}
+.discoutBanner img{
+    max-width: 100%;
+    object-fit: contain;
+}
+@media(max-width:600px){
+    .discoutBanner{
+        padding-top: 60px;
+    }
+}
+.whatWeDo{
+    padding: 4rem 0;
+}
+.whatWeDo .container{
+    max-width: 1300px;
+}
+.whatWeDo .sectionDesc h2{
+    font-weight: 600;
+    color: #000;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    line-height: 1.4;
+}
+.whatWeDo .sectionDesc p{
+    font-weight: 500;
+    color: #000;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.8;
+}
+.whatWeDo img{
+   max-width: 100%;
+   object-fit: contain;
+}
+.whatWeDo .rightService{
+    display: flex;
+    flex-direction: column;
+ }
+ .whatWeDo .leftService{
+    display: flex;
+    flex-direction: column;
+ }
+
+
+ .whatWeDo .leftService .destItem{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: row-reverse;
+    margin-bottom: 2rem;
+ }
+ .whatWeDo .leftService .destItem img{
+   width: 200px;
+   height: 100px;
+ }
+
+ .whatWeDo .leftService .destItem h3{
+    font-weight: 600;
+    color: #000;
+    font-size: 1rem;
+   line-height: 2;
+    text-align: right;
+ }
+ .whatWeDo .leftService .destItem p{
+    margin-top: .5rem;
+    margin-bottom: 0;
+    color: #999;
+    text-align: right;
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: .85rem;
+ }
+ .whatWeDo .leftService .destItem .descContent{
+    padding-right: .5rem;
+    width: 400px;
+ }
+
+ .whatWeDo .rightService .destItem{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    margin-bottom: 2rem;
+ }
+ .whatWeDo .rightService .destItem .img img{
+   width: 200px;
+   height: 100px;
+ }
+
+ .whatWeDo .rightService .destItem h3{
+    font-weight: 600;
+    color: #000;
+    font-size: 1rem;
+   line-height: 2;
+    text-align: left;
+ }
+ .whatWeDo .rightService .destItem p{
+    margin-top: .5rem;
+    margin-bottom: 0;
+    color: #999;
+    text-align: left;
+    font-weight: 500;
+    line-height: 1.6;
+    font-size: .85rem;
+ }
+ .whatWeDo .rightService .destItem .descContent{
+    padding-left: .5rem;
+    width: 400px;
+ }
+ /* our software and services */
+ .sectionHeading{
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #000;
+    line-height: 1.4;
+    margin-bottom: 3rem;
+
+ }
+ .ourSoftware{
+    padding: 1rem 0;
+    padding-bottom: 2rem;
+ }
+
+ .ourSoftware .softwareCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px 30px;
+    border-radius: 5px;
+    background-color: #fbfcfe;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    padding-top: 0;
+    max-width: 370px;
+    margin-bottom: 3rem;
+    transition: all .3s ease;
+ }
+ .ourSoftware .softwareCard:hover{
+    background-color: #fef3e153;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+ }
+ .ourSoftware .softwareCard img{
+    max-width: 98%;
+    display: block;
+    margin: auto;
+    max-height: 130px;
+    border-radius: 5px;
+    margin-bottom: .2rem;
+ }
+ .ourSoftware .softwareCard h3{
+   font-weight: 600;
+   color: #2e2e2e;
+   margin-bottom: .8rem;
+   font-size: 1.2rem;
+   text-transform: uppercase;
+   
+ }
+ .ourSoftware .softwareCard p{
+    font-weight: 500;
+    color: rgba(144, 146, 163, 1);
+    font-size: .95rem;
+    line-height: 1.6;
+  }
+  .ourSoftware .exploreMore{
+    margin-top: 2rem;
+  }
+  .ourSoftware .exploreMore a{
+    padding: 1rem 2rem;
+    background-color: #f5b402;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: .5px;
+  }
+  .oneStop{
+    padding: 3rem 0;
+  }
+  .oneStop .container{
+    max-width: 1300px;
+  }
+  .oneStop .container h2{
+    color: rgba(49, 66, 89, 1);
+    font-weight: 700;
+    font-size: 3rem;
+    letter-spacing: .5px;
+    line-height: 1.5;
+  }
+  .oneStop .container span{
+    color: #f5b402;
+  }
+  .flip-container {
+    perspective: 1000px;
+    display: inline-block;
+    margin: 10px 20px;
+    width: 100%;
+  }
+
+  .flipper {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    display: block;
+  }
+.oneStop .destPara{
+    font-weight: 600;
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: rgba(144, 146, 163);
+}
+  .flip-container:hover .flipper {
+    transform: rotateY(180deg);
+  }
+
+  .front,
+  .back {
+    width: 100%;
+    height: 290px;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+
+  .oneStop .front {
+    background-color: rgb(247, 248, 250);
+    border: 1px solid rgb(241, 242, 246);
+    border-radius: 20px;
+  }
+ .oneStop .front {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+  .oneStop .front .flipName{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .oneStop .front .flipName p{
+   font-weight: 700;
+   font-size: 1.8rem;
+   color: rgba(49, 66, 89, 1);
+   line-height: 1.5;
+  }
+  .oneStop .back{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   }
+  .oneStop .back .flipPara p{
+    font-weight: 600;
+    font-size: 1.3rem;
+    color: #fff;
+    line-height: 1.6;
+   }
+   .oneStop .back .flipPara:nth-of-type(2){
+    display: flex;
+    align-items: flex-end;
+   }
+   .oneStop .front .gifi{
+    margin-top: 1rem;
+   }
+  .oneStop .front .gifi img{
+    max-width: 100%;
+    height: 150px;
+   }
+
+  .back {
+    transform: rotateY(180deg);
+    background-color: #fff;
+    border: 1px solid rgb(241, 242, 246);
+    padding: 2rem;
+    border-radius: 20px;
+  }
