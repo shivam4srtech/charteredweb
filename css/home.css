@@ -456,13 +456,13 @@
     max-width: 1300px;
   }
   .oneStop .container h2{
-    color: rgba(49, 66, 89, 1);
+    color: rgb(49, 66, 89);
     font-weight: 700;
     font-size: 3rem;
     letter-spacing: .5px;
     line-height: 1.5;
   }
-  .oneStop .container span{
+  .oneStop h2 span{
     color: #f5b402;
   }
   .flip-container {
@@ -553,4 +553,69 @@
     border: 1px solid rgb(241, 242, 246);
     padding: 2rem;
     border-radius: 20px;
+  }
+  /* professional services */
+  .expertServices{
+    padding: 2rem 0;
+    border: 2px solid red;
+    background-color: #fafafa;
+  }
+  .expertServices h2{
+    font-weight: 700;
+    color: rgb(49, 66, 89);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .expertServices .sectionPara {
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: rgba(144, 146, 163);
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+    margin-bottom: 1.4rem;
+}
+.expertServices .for {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    color: #000;
+}
+@media(min-width:991px){
+    .expertServices .for {
+        padding-left: 2.5rem;
+    }
+}
+.expertServices .expertItem {
+    width: 350px;
+    background-color: #fff;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: .3s ease;
+}
+.expertServices .expertItem img{
+    height: 140px;
+    margin-bottom: .5rem;
+}
+.expertServices .expertItem:hover{
+   background-color: #f0f2fe;
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+.expertServices .expertItem .desc h3{
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #000;
+}
+.expertServices .expertItem .desc p{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: rgba(144, 146, 163);
   }
