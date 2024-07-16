@@ -2007,13 +2007,17 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     outline: none;
     font-size: 1.2rem;
  }
+ .businessLicense .reviewContainer{
+  background-color: #fff;
+  border-radius: 20px;
+ }
  .businessLicense .displayReview{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 1rem;
-  max-width: 800px;
+  max-width: 1200px;
   margin: auto;
   background-color: #fff;
   padding: 20px 30px;

@@ -270,6 +270,9 @@
 .discoutBanner{
     padding-top: 50px;
 }
+.discoutBanner a{
+   display: block;
+}
 .discoutBanner img{
     max-width: 100%;
     object-fit: contain;
@@ -468,7 +471,7 @@
   .flip-container {
     perspective: 1000px;
     display: inline-block;
-    margin: 10px 20px;
+    margin: 10px 0;
     width: 100%;
   }
 
@@ -557,7 +560,6 @@
   /* professional services */
   .expertServices{
     padding: 2rem 0;
-    border: 2px solid red;
     background-color: #fafafa;
   }
   .expertServices h2{
