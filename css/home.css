@@ -648,7 +648,7 @@ color: #575766;
 }
 /* serviceTag */
 .serviceTag{
-padding: 4rem 0 0 0;
+padding: 6rem 0 4rem 0;
 }
 .searchPanel h4{
 font-weight: 600;
@@ -714,7 +714,7 @@ text-align: center;
 margin: 1rem auto;
 }
 .trandingServices a{
-background-color: #f0e9fe;
+background-color: #f5b4021e;
 margin: .5rem;
 padding: .2rem .6rem;
 border-radius: 1.76rem;
@@ -764,7 +764,7 @@ position: relative;
 .recommendation {
 padding: 10px 12px;
 cursor: pointer;
-font-weight: 400;
+font-weight: 400;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 color: #2e2e2e;
 border-bottom: 1px solid #e2e2e2;
 }
@@ -776,4 +776,82 @@ border-radius: 0px 0px 10px 10px;
 }
 .recommendation:hover {
 background: #f0f0f0;
+}     
+
+/* launch company */
+.launchCompany{
+  border: 1px solid red;
+  background: linear-gradient(395deg, rgba(255, 74, 0, .149) 10%, #fffaf8, #fffaf8, #fffaf8, #fffaf8, hsla(45, 95%, 75%, .2) 90%), hsla(35, 58%, 87%, .29);
+  position: relative;
 }
+.launchCompany svg{
+  border: 1px solid red;
+  position: absolute;
+  top: 0;
+}
+.launchCompany svg:nth-of-type(1){
+  left: 0;
+}
+.launchCompany svg:nth-of-type(2){
+  right: 0;
+}
+.launchCompany .launchHeader h2{
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+.launchCompany .launchHeader h2 span{
+  color: #f5b402;
+}
+.launchCompany .launchHeader p{
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+.launchCompany .selectBox{
+ 
+  max-width: 700px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.launchCompany .selectBox .selectItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.launchCompany .selectBox .selectItem select{
+  color: #232323;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 600;
+  appearance: none;
+  padding: 15px 16px;
+  border-radius: 0 500px 500px 0;
+  border: 1px solid #fdc9b7;
+  border-left: none;
+  background: #fff;
+}
+.launchCompany .selectBox .selectItem span{
+  color: #232323;
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 600;
+  appearance: none;
+  padding: 15px 16px;
+  border-radius: 500px 0 0 500px;
+  border: 1px solid #fdc9b7;
+  border-left: none;
+  background: #fff;
+}
+
