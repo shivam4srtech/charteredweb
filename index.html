@@ -32,11 +32,11 @@
     <!-- ==============================Navbar======================================= -->
     <nav class="autohide customeNav fixed-top">
         <div class="wrapper">
-          <div class="logo"><a href="./index.html">Chartered<span>ONE</span></a></div>
+          <div class="logo"><a href="/"><img src="./images/charteredOne-com-logo.png" alt=""></a></div>
           <input type="radio" name="slider" id="menu-btn">
           <input type="radio" name="slider" id="close-btn">
           <ul class="nav-links">
-            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+            <li><label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label></li>
             <li class="toggle-group">
                 <a href="#" class="desktop-item border_bottom">Company</a>
                 <input type="checkbox" id="showMega">
@@ -845,11 +845,63 @@
         </div>
     </nav>
     <!-- ======================= -->
-    <section class="discoutBanner">
+    <!-- <section class="discoutBanner">
         <div>
             <a href="#">
                 <img src="./images/chartered-discount-banner.png" alt="">
             </a>
+        </div>
+    </section> -->
+    <section class="serviceTag">
+        <div class="container">
+            <div class="searchPanel">
+                <div>
+                    <h4>Search for your desired services</h4>
+                </div>
+                <div class="searchContainer">
+                    <form class="search-bussiness">
+                        <input id="pageSearch" class="search-input" type="text" placeholder="" required/>
+                        <button><img src="./images/IconsSearch.svg" alt=""></button>
+                    </form>
+                    <div class="recommendations">
+                        <div class="recommendation">Recommendation 1</div>
+                        <div class="recommendation">Recommendation 2</div>
+                        <div class="recommendation">Recommendation 3</div>
+                        <div class="recommendation">Recommendation 4</div>
+                        <div class="recommendation">Recommendation 5</div>
+                    </div>
+                </div>
+                <div>
+                    <h5 class="trandingSearch">Tranding Searches:</h5>
+                </div>
+                <div class="trandingServices">
+                    <div class="trandingBox">
+                        <a href="#">Insurance Company Registration</a>
+                        <a href="#">NBFC Company Registration</a>
+                        <a href="#">LLP Registration</a>
+                        <a href="#">Trade License</a>
+                    </div>
+                   <div class="trandingBox">
+                       <a href="#">Private Limited Company Registration</a>
+                        <a href="#">FSSAI Registration</a>
+                        <a href="#">Digital Signature Certificate</a>
+                        <a href="#">ISO Registration</a>
+                        <a href="#">Trade License</a>
+                   </div>
+                   <div class="trandingBox">
+                        <a href="#">Appointment of Director</a>
+                        <a href="#">Removal of Director</a>
+                        <a href="#">Pvt. Ltd. Winding up</a>
+                        <a href="#">LLP Winding Up</a>
+                   </div>
+                   <div class="trandingBox">
+                    <a href="#">GST Registration</a>
+                    <a href="#">GST Return Filing</a>
+                    <a href="#">GST Nil Return Filing</a>
+                    <a href="#">GST Modification</a>
+                  </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="whatWeDo">
@@ -1300,6 +1352,8 @@
             </div>
         </div>
      </section>
+
+
     <footer class="footer">
         <div class="footer-box container">
             <div class="footer-row row">
@@ -1389,60 +1443,100 @@
     </div>
     <!-- ==========================Local Script================================ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/navbar.js"></script>
-    <script src="./js/home.js"></script>
     <!-- *******************Bootstrap Script ***************-->
     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
-    
     <script>
-        var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
-        var currentScrollPos = window.pageYOffset;
-          if (prevScrollpos > currentScrollPos) {
-            document.getElementById("navbar").style.top = "0px";
-          } else {
-            document.getElementById("navbar").style.top = "-80px";
-          }
-          prevScrollpos = currentScrollPos;
-        }
-        
-      $('.card-container').slick({
-  dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
-  ]
-});
-	
+             const phrases = [" Chartered accountants", " company secretary", " lawyers", " CA", "lawyer", "CS"]; 
+            let currentIndex = 0;
+            const searchInput = document.getElementById('pageSearch');
+
+            function updatePlaceholder() {
+                const currentPhrase = phrases[currentIndex];
+                let placeholder = "A firm of ";
+                let i = 0;
+                const intervalId = setInterval(function() {
+                placeholder += currentPhrase[i];
+                searchInput.placeholder = placeholder;
+                i++;
+                if (i === currentPhrase.length) {
+                    clearInterval(intervalId);
+                    setTimeout(nextPhrase, 2000); 
+                }
+                }, 200);
+            }
+
+            function nextPhrase() {
+                currentIndex = (currentIndex + 1) % phrases.length;
+                updatePlaceholder();
+            }
+            updatePlaceholder();
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const searchInput = document.querySelector('.search-input');
+          const recommendationsContainer = document.querySelector('.recommendations');
+      
+          const data = [
+            'Insurance Company Registration',
+            'NBFC Company Registration',
+            'LLP Registration',
+            'Trade License',
+            'Private Limited Company Registration',
+            'FSSAI Registration',
+            'Digital Signature Certificate',
+            'ISO Registration',
+            'GST Registration',
+            'GST Return Filing',
+            'GST Nil Return Filing',
+            'Pvt. Ltd. Winding up',
+            'LLP Winding Up'
+          ];
+      
+          searchInput.addEventListener('focus', function() {
+            filterRecommendations(searchInput.value);
+          });
+      
+          searchInput.addEventListener('blur', function() {
+            setTimeout(function() {
+              recommendationsContainer.style.display = 'none';
+            }, 200);
+          });
+      
+          searchInput.addEventListener('input', function() {
+            filterRecommendations(this.value);
+          });
+      
+          function filterRecommendations(keyword) {
+            recommendationsContainer.innerHTML = ''; // Clear previous recommendations
+            if (keyword.trim() === '') {
+              recommendationsContainer.style.display = 'none';
+              return;
+            }
+            const filteredData = data.filter(item => item.toLowerCase().includes(keyword.toLowerCase()));
+            
+            if (filteredData.length > 0) {
+              filteredData.forEach(function(item) {
+                const recommendationItem = document.createElement('div');
+                recommendationItem.className = 'recommendation';
+                recommendationItem.textContent = item;
+                recommendationItem.addEventListener('click', function() {
+                  searchInput.value = this.textContent;
+                  recommendationsContainer.style.display = 'none';
+                });
+                recommendationsContainer.appendChild(recommendationItem);
+              });
+              recommendationsContainer.style.display = 'block';
+            } else {
+              const noResultsItem = document.createElement('div');
+              noResultsItem.className = 'no-results';
+              noResultsItem.textContent = 'No results found';
+              recommendationsContainer.appendChild(noResultsItem);
+              recommendationsContainer.style.display = 'block';
+            }
+          }
+        });
+    </script>
+    
 </body>
 </html>

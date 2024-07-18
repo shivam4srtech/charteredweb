@@ -828,3 +828,7 @@ ul.navbar-nav{
 		min-width: fit-content;
 	}
   }
+  .customeNav .logo a img{
+	 object-fit: contain;
+	 height: 45px;
+  }
