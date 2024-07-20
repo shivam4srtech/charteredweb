@@ -491,7 +491,7 @@ ul.navbar-nav{
     background-color: #24262b ;
 }
 .footer-col .social-links a{
-	display: inline-block;
+	display: inline-flex;
 	height: 40px;
 	width: 40px;
 	background-color: rgba(255,255,255,0.2);
@@ -501,23 +501,31 @@ ul.navbar-nav{
 	border-radius: 50%;
 	color: #ffffff;
 	transition: all 0.5s ease;
+	justify-content: center;
+	align-items: center;
 }
 .footer-col .social-links a:hover{
 	color: #24262b;
-	background-color: #ffffff;
+	background-color: #fff;
+}
+.footer-col .social-links a svg{
+	fill: #fff;
+}
+.footer-col .social-links a:hover svg{
+	fill: #24262b;
 }
 
-.social-links a:nth-of-type(1):hover{
-   color: #0000ff;
+.social-links a:nth-of-type(1):hover svg{
+   fill: #0000ff;
 }
-.social-links a:nth-of-type(2):hover{
-    color: #000;
+.social-links a:nth-of-type(2):hover svg{ 
+    fill: #000;
  }
- .social-links a:nth-of-type(3):hover{
-    color: #962fbf;
+ .social-links a:nth-of-type(3):hover svg{
+    fill: #962fbf;
  }
- .social-links a:nth-of-type(4):hover{
-    color: #0072b1;
+ .social-links a:nth-of-type(4):hover svg{
+    fill: #0072b1;
  }
  @media(max-width:992px){
     .footer-col{

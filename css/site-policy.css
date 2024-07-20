@@ -1,5 +1,9 @@
 .sitePolicy{
-    padding: 2rem 0;
+    padding: 6rem 1rem;
+}
+strong{
+    font-weight: 700;
+    letter-spacing: .5px;
 }
 .sitePolicy .container{
     max-width: 1000px;
@@ -62,12 +66,19 @@
     }
     .sitePolicy p{
         font-size: .9rem;
+        text-align: left;
     }
     .sitePolicy h2{
         font-size: 1.2rem;
+        text-align: left;
     }
     .sitePolicy ul li{
         font-size: .9rem;
+        text-align: left;
+    }
+    .sitePolicy ol li{
+        font-size: .9rem;
+        text-align: left;
     }
     .sitePolicy .col-12{
         padding:  0;
