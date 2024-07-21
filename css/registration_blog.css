@@ -1981,6 +1981,11 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   font-weight: 600;
   letter-spacing: .5px;
   font-size: 1rem;
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
  }
  .businessLicense .toc span{
   color: #fff;
