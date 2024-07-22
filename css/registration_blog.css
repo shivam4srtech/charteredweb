@@ -1966,7 +1966,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   display: none;
   }
  .businessLicense .toc ul li{
-  list-style-type: disc;
+  list-style-type: none;
   margin-bottom: 1rem;
   padding: 8px 16px;
   border-radius: 16px;
@@ -2013,7 +2013,6 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     font-size: 1.2rem;
  }
  .businessLicense .reviewContainer{
-  background-color: #fff;
   border-radius: 20px;
  }
  .businessLicense .displayReview{
@@ -2024,10 +2023,9 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   margin-top: 1rem;
   max-width: 1200px;
   margin: auto;
-  background-color: #fff;
-  padding: 20px 30px;
+  padding: 20px 0px;
   border-radius: 20px;
-  color: #000;
+  color: #fff;
  }
  .businessLicense .displayReview img{
  object-fit: contain;
@@ -2043,7 +2041,16 @@ ol.process-chart > li:nth-of-type(6n+5):after {
  font-size: 1.2rem;
  }
  .businessLicense .displayReview .reviewItem .trustLogo{
-  width: 180px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: 1rem;
+ }
+ .businessLicense .displayReview .reviewItem .trustLogo img{
+  width: 50px;
+  object-fit: contain;
+  height: 50px;
  }
  .businessLicense .displayReview .reviewItem .trustStar{
   margin-bottom: .5rem;
@@ -2052,10 +2059,10 @@ ol.process-chart > li:nth-of-type(6n+5):after {
  }
  .businessLicense .displayReview .reviewItem .trustStar{
   font-weight: 500;
-  color: #000;
+  color: #fff;
  }
  .businessLicense .displayReview .reviewItem .trustStar img{
-  width: 220px;
+  width: 100px;
   margin-right: .5rem;
  }
  .businessLicense .displayReview .reviewItem .verifiedBox{
@@ -2079,21 +2086,25 @@ ol.process-chart > li:nth-of-type(6n+5):after {
  .businessLicense .displayReview .reviewItem .googleLogo{
   display: block;
   margin-bottom: .5rem;
-  width: 200px;
+  width: 120px;
  }
  .businessLicense .displayReview .reviewItem .starIcon img{
-  width: 180px;
+  width: 100px;
  }
  .businessLicense .displayReview .reviewItem .starIcon p{
   margin-top: .5rem;
+  font-size: .8rem;
+  color: #fff;
  }
  .businessLicense .displayReview .reviewItem .excellent{
   font-weight: 500;
-  color: #697474;
-  font-size: 1rem;
+  color: #fff;
+  font-size: .9rem;
   margin-bottom: .5rem;
   display: inline-flex;
   align-items: center;
+  margin-bottom: 0;
+  margin-top: 0;
  }
  .businessLicense .displayReview .reviewItem .excellent small{
   font-weight: 700;
@@ -2179,6 +2190,16 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     padding: 24px 18px !important;
     box-shadow: 0 4px 16px 2px rgba(0, 0, 0, .12);
     margin-bottom: .5rem;
+}
+.businessLicense .container .businessSnepet {
+  background-color: #fafafa;
+  border-radius: 16px;
+  padding: 24px 18px !important;
+  box-shadow: 0 4px 16px 2px rgba(0, 0, 0, .12);
+  margin-bottom: .5rem;
+}
+.businessLicense .container .businessSnepet p{
+ color: #232323;
 }
 .businessContent .container .businessSnepet p{
   color: #472515;

@@ -1,277 +1,10 @@
-body{
-  background-color: #fff !important;
-}
-#main-container{
-  margin: auto;
-}
-.ratingBlock img{
-  width: 20px;
-}
-.ratingBlock span{
-  font-size: 14px;
-  font-weight: 600;
-}
-.ITR_Block button i{
-  transition: 0.1s ease-in;
-}
-.ITR_Block button{
-  cursor: pointer;
-}
-.ITR_Block button:hover i{
-  transform: rotate(90deg);
-}
-.ITR_Block .badge{
-  background: #e7fae4;
-  color: #197e37;
-}
-.box-ItrFile,.box-hire{
-  background: url("https://tax2win.in/assets-new/img/new-theme/service-element1-copy.svg") left bottom no-repeat #5585b6;
-background-size:60%;
-/* position: relative; */
-}
-.box-ItrFile img,.box-hire img{
-  width: 50px;
-}
-.box-hire{
-  background: url("https://tax2win.in/assets-new/img/new-theme/service-element2-copy.svg") right bottom no-repeat #298f01;
-}
-.box-hire h4,.box-ItrFile h4{
-  font-size: 20px;
-}   
-.fileBtn{
-  font-size: 13px;
-}
-.box-ItrFile p,.box-hire p{
-  font-size: 13px;
-}
-.box-hire img {
-  width: 58px;
-}
-.fileItrNowBtn,.bookEcaBtn,.refund-status-btn,.taxExpertsBtn,.benefitBlockBtn{
-border-radius: 70px;
-font-size: 15px;
-font-weight: 500;
-justify-content: center;
-padding: .6rem 1.5rem;
-background: #fff;
-display: inline-flex;
-align-items: center;
-cursor: pointer;
-width: max-content;
-}
-.benefitBlockBtn{
-  background-color: #298f01;
-  color: #fff;
-  
-}
-.fileBtn{
-  border-radius: 70px;
-font-size: 16px;
-font-weight: 500;
-justify-content: center;
-padding: .6rem 4rem;
-display: inline-flex;
-align-items: center;
-}
-.refundStatusBlock div{
-  padding: 20px;
-}
-.itrBlock h6,.refundStatusBlock p{
-  font-size: 16px;
-}
-.itrBlock p{
-  font-size: 13px;
-}
-.taxEfiilingContainer{
-background: #f2fff7;
-padding: 2rem 0 4rem 0;
-}
-.taxEfiilingBlock li{
-width: 48%;
-line-height: 23px;
-}
-.taxEfiilingBlock li b{
-font-size: 19.5px;
-}
-.taxEfiilingBlock li span{
-font-size: 13px;
-}
-.taxEfiilingBlock .read-more-btn{
-font-size: 15px;
-}
-.taxEfiilingBlock .read-more-btn i{
-font-size: 11px;
-border-color: #000!important;
-}
-.we-offer-block .weOfferBlock_bg{
-background-image: linear-gradient(180deg,#eff7fb 0,#f8fafc 100%);
-}
-.TPS_Block{
-margin-top: 15px;
-color: #fff;
-padding: 35px;
-background: url('https://tax2win.in/assets-new/img/new-theme/service-element2.svg') right bottom no-repeat #5585b6;
-position: relative;
-width: 60%;
-margin: .6rem 0;
-}
-.ITNA_Block,.ITR_U-block{
-padding: 35px;
-margin: .6rem 0;
-background: #fff;
-border: 1.5px solid #e7eaee;
-box-shadow: 0 0 40px rgba(0,0,0,.05);
-border-radius: 20px;
-width: 40%;
-}
-.ITR_U-block{
-width: auto;
-height: 100%;
-}
-.ITR_U-block img{
-margin-bottom: 10px;
-}
-.ITR_U-block p{
-font-size: 14px!important;
-line-height: 22px;
-}
-.we-offer-block p{
-font-size: 16px;
-}
-.weOfferBlock_bg .popularServicesHead{
-letter-spacing: 0.5px;
-}
-.weOfferBlock_bg i{
-font-size: 13px;
-}
-.benefitsBox .benefits_block{
-padding: 4rem 0;
-background: url('https://tax2win.in/assets-new/img/new-theme/benefits_element.svg') right bottom no-repeat #edf2f8;
-}
-.incomeTaxBlock .incomeTax_bg,.incomeTaxBlock .box2{
-  border-radius: 12px;
-padding: 1rem;
-border-bottom: solid 1px #ddd;  
-background: #fff;
-}
-.incomeTaxBlock .incomeTax_bg figure img{
-border-radius: 12px;
-margin-bottom: 10px;
-}
-.incomeTaxBlock .incomeTax_bg a,.incomeTaxBlock .itc_guidelines_Block a{
-border-radius: 12px;
-color: #000;
-font-weight: 500;
-font-size: 18px;
-text-decoration: none;
-}
-.incomeTaxBlock .itc_guidelines_Block a{
-background: url('https://tax2win.in/assets-new/img/new-theme/g_ghost_arrow.svg') 25px center no-repeat;
-transition: all .5s;
-border-radius: 12px;
-padding: 0.6rem 1.4rem;
-padding-left: 4rem;
-background-size: 20px;
-display: flex;
-font-size: 16px;
-}
-.FAQs_Block .accordion-header{
-cursor: pointer!important;
-}
-.FAQs_Block button{
-font-family: Poppins, sans-serif;
-box-shadow: none;
-font-size: 1rem;
-font-weight: 600;
-letter-spacing: 0.5px;
-color: #2e3846;
-background-color: transparent!important;
-box-shadow: none!important;
-}
-.FAQs_Block .accordion-body{
-color: #323f50;
-font-size: 14px;
-line-height: 25px;
-padding-top: 0;
-}
-.FAQs_Block .accordion-item{
-border: none;
-}
-.FAQs_Block ul li,.FAQs_Block ol li{
-line-height: 30px;
-font-size: 14px;
-list-style-type: inherit;
-}
-.FAQs_Block p{
-font-size: 15px;
-margin-bottom: 10px;
-}
-.FAQs_Block ul li{
-list-style-type:disc;
-}
-.FAQs_Block ol li{
-list-style-type:numeric;
-}
-.FAQs_Block ul li b{
-font-weight: 700;
-}
-@media(max-width:992px) {
-.ITR_Block .flexBlock{
-  flex-wrap: wrap;
-}
-}
-@media(max-width:768px) {
-.ITNA_Block, .ITR_U-block{
-  width: 100%;
-}
-}
-/* setting Standard */
-.settingStandard{
-background-color: rgba(0, 0, 0, .8);
-color: #fff;
-padding: 3rem 0;
-font-family: 'Montserrat', sans-serif;
-}
-.settingStandard h2{
-color: #fff;
-font-size: 2.6rem;
-font-weight: 600;
-font-family: 'Montserrat', sans-serif;
-margin-bottom: 1rem;
-}
-
-.settingStandard .svgIcon{
-margin-bottom: .8rem;
-text-align: center;
-}
-.settingStandard h3{
-font-weight: 600;
-font-size: 1.8rem;
-text-align: center;
-color: #fff;
-margin-bottom: .8rem;
-}
-.settingStandard p{
-font-weight: 500;
-font-size: 1.2rem;
-text-align: center;
-color: #fff;
-margin-bottom: .5rem;
-line-height: 1.4;
-}
-
-
-
-
-
-
 
 /* Discount banner */
 body{
 background-color: #fff;
 }
 .container{
-max-width: 1300px;
+max-width: 1200px;
 }
 .discoutBanner{
 padding-top: 50px;
@@ -412,7 +145,7 @@ width: 400px;
 /* our software and services */
 .sectionHeading{
 font-weight: 600;
-font-size: 1.8rem;
+font-size: 2.4rem;
 color: #000;
 line-height: 1.4;
 margin-bottom: 3rem;
@@ -1150,7 +883,6 @@ background: #f0f0f0;
   max-width: 1200px;
 }
 .faq h2{
-  border: 2px solid red;
   font-weight: 700;
   letter-spacing: .5px;
   font-size: 2.8rem;
@@ -1174,3 +906,123 @@ background: #f0f0f0;
   line-height: 1.8;
   color: #ADB1BB;
 }
+/* why choose us */
+.whysChooseUs{
+  padding: 2rem 0;
+}
+.whysChooseUs img{
+  object-fit: contain;
+  max-width: 100%;
+  border-radius: 100px;
+}
+.whysChooseUs h2{
+  color: #000;
+  font-weight: 600;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+.whysChooseUs h4{
+  color: #000;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.whysChooseUs p{
+  color: #2e2e2e;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+.whysChooseUs p a{
+  color: #2e2e2e;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.whysChooseUs .hr{
+  height: 6px;
+  background-color: #000;
+}
+@media(max-width:991px){
+  .whysChooseUs img{
+   display: flex;
+   margin: auto;
+   margin-top: 2rem;
+   border-radius: 0;
+  }
+}
+.ourSoftware .serviceImgBox .blockImg{
+  width: 70%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 50px 0 0 50px; 
+}
+.ourSoftware .serviceImgBox{
+  position: relative;
+}
+.ourSoftware .serviceImgBox .serviceCard{
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 5%;
+  width: 300px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  background-color: #fafafa;
+  z-index: 99;
+  padding: 20px;
+}
+.ourSoftware .serviceImgBox .serviceCard img{
+  width: 40px;
+}
+.ourSoftware .serviceImgBox .serviceCard p{
+  font-weight: 600;
+  color: #2e2e2e;
+  font-size: .9rem;
+  margin-top: 2rem;
+}
+.ourSoftware .btnGroup{
+  margin-top: 2rem;
+}
+.ourSoftware .btnGroup a{
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  position: relative;
+  z-index: 0;
+  outline: 0;
+  white-space: nowrap;
+  text-decoration: none;
+  vertical-align: middle;
+  line-height: 28px;
+  letter-spacing: -.4px;
+  font-weight: 600;
+  font-size: 18px;
+  border: 2px solid #c6ccd5;
+  padding: 9px 30px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 3rem;
+  margin-right: 1rem;
+}
+.ourSoftware .btnGroup a:hover{
+ background-color: #c6ccd5;
+}
+.ourSoftware .btnGroup a.activeBtn{
+  background-color: #f5b402;
+  color: #fff;
+  border: 2px solid #f5b402;
+ }
+ .ourSoftware .serviceType .serviceImgBox:nth-of-type(2) h2{
+font-weight: 600;
+margin-bottom: 2rem;
+font-size: 1.6rem;
+line-height: 1.4;
+color: #2e2e2e;
+ }
+ .ourSoftware .serviceType .serviceImgBox:nth-of-type(2) p{
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #2e2e2e;
+  max-width: 500px;
+   }
