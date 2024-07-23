@@ -951,11 +951,21 @@ background: #f0f0f0;
    border-radius: 0;
   }
 }
+.ourSoftware .serviceType{
+  border: 2px solid red;
+  margin-bottom: 1rem;
+}
 .ourSoftware .serviceImgBox .blockImg{
   width: 70%;
   max-height: 400px;
   object-fit: cover;
   border-radius: 50px 0 0 50px; 
+  min-height: 250px;
+}
+@media(min-width:991px){
+  .ourSoftware .serviceImgBox .blockImg{
+    min-height: 400px;
+  }
 }
 .ourSoftware .serviceImgBox{
   position: relative;
@@ -979,6 +989,12 @@ background: #f0f0f0;
   color: #2e2e2e;
   font-size: .9rem;
   margin-top: 2rem;
+}
+@media(max-width:991px){
+  .ourSoftware .serviceImgBox{
+    margin-bottom: 1rem;
+    border: 2px solid red;
+  }
 }
 @media(max-width:550px){
   .ourSoftware .serviceImgBox .serviceCard{
@@ -1017,14 +1033,14 @@ background: #f0f0f0;
   color: #fff;
   border: 2px solid #f5b402;
  }
- .ourSoftware .serviceType .serviceImgBox:nth-of-type(2) h2{
+ .ourSoftware .serviceType .serviceImgBox .serviceHeading{
   font-weight: 600;
   margin-bottom: 2rem;
   font-size: 1.6rem;
   line-height: 1.4;
   color: #2e2e2e;
  }
- .ourSoftware .serviceType .serviceImgBox:nth-of-type(2) p{
+ .ourSoftware .serviceType .serviceImgBox .servicePara{
   font-weight: 500;
   margin-bottom: 2rem;
   font-size: 1rem;

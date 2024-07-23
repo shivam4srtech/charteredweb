@@ -840,3 +840,10 @@ ul.navbar-nav{
 	 object-fit: contain;
 	 height: 25px;
   }
+
+  /* mobile nav */
+  /* @media(max-width:991px){
+	.hideOnMobile li{
+		border: 2px solid red;
+	}
+  } */
