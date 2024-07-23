@@ -980,6 +980,12 @@ background: #f0f0f0;
   font-size: .9rem;
   margin-top: 2rem;
 }
+@media(max-width:550px){
+  .ourSoftware .serviceImgBox .serviceCard{
+    margin-right: 0%;
+    width: 200px;
+  }
+}
 .ourSoftware .btnGroup{
   margin-top: 2rem;
 }
@@ -1012,11 +1018,11 @@ background: #f0f0f0;
   border: 2px solid #f5b402;
  }
  .ourSoftware .serviceType .serviceImgBox:nth-of-type(2) h2{
-font-weight: 600;
-margin-bottom: 2rem;
-font-size: 1.6rem;
-line-height: 1.4;
-color: #2e2e2e;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #2e2e2e;
  }
  .ourSoftware .serviceType .serviceImgBox:nth-of-type(2) p{
   font-weight: 500;
@@ -1025,4 +1031,4 @@ color: #2e2e2e;
   line-height: 1.4;
   color: #2e2e2e;
   max-width: 500px;
-   }
+}

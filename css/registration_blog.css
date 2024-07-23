@@ -2034,6 +2034,9 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   display: flex;
   flex-direction: column;
  }
+ .businessLicense .displayReview .reviewItem:nth-of-type(1){
+  padding-top: .8rem;
+ }
  .businessLicense .displayReview .reviewItem p{
  color: #000;
  margin-top: 1rem;
@@ -2111,12 +2114,18 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   font-size: 1.8rem;
   margin: 0 .5rem;
  }
+ @media(max-width:1100px) and (min-width:991px){
+  .businessLicense .displayReview .reviewItem .excellent {
+    font-size: .75rem;
+  }
+ }
+ @media(max-width:991px){
+  .reviewContainer{
+    max-width: 500px;
+    margin: auto;
+  }
+ }
  @media(max-width:540px){
-  .businessLicense .displayReview{
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-   }
    .businessLicense .displayReview .reviewItem{
     justify-content: left;
     width: 100%;
@@ -2127,6 +2136,9 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   }
   .businessLicense {
     padding: 4rem 0 3rem 0;
+  }
+  .businessLicense .displayReview .reviewItem .excellent {
+    font-size: .65rem;
   }
  }
  .businessLicense .licenseImg{
@@ -2197,6 +2209,12 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   padding: 24px 18px !important;
   box-shadow: 0 4px 16px 2px rgba(0, 0, 0, .12);
   margin-bottom: .5rem;
+}
+.businessContent .container .businessSnepet img {
+ display: block;
+ margin: 1rem auto;
+ max-width: 100%;
+ object-fit: contain;
 }
 .businessLicense .container .businessSnepet p{
  color: #232323;
