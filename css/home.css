@@ -952,7 +952,6 @@ background: #f0f0f0;
   }
 }
 .ourSoftware .serviceType{
-  border: 2px solid red;
   margin-bottom: 1rem;
 }
 .ourSoftware .serviceImgBox .blockImg{
@@ -993,7 +992,6 @@ background: #f0f0f0;
 @media(max-width:991px){
   .ourSoftware .serviceImgBox{
     margin-bottom: 1rem;
-    border: 2px solid red;
   }
 }
 @media(max-width:550px){
