@@ -1702,6 +1702,19 @@ inputs.forEach((input) => {
       mainRow.textContent = isExpanded ? '-' : '+';
   }
 </script>
+<script>
+       document.querySelectorAll('p').forEach(p => {
+       const spanElements = p.querySelectorAll('span');
+
+       const hasEmptySpan = Array.from(spanElements).some(span => {
+            return span.innerHTML.trim() === '' || span.innerHTML.trim() === '<br>';
+        });
+
+        if (p.innerHTML.trim() === '' || p.innerHTML.trim() === '<br>' || hasEmptySpan) {
+            p.remove();
+        }
+        });
+</script>
 
 </body>
 </html>

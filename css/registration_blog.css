@@ -2409,3 +2409,14 @@ section strong{
   overflow-x: auto;
   margin-bottom: 1rem;
 }
+@media(max-width:991px){
+  .businessContent .container .businessSnepet p img{
+     display: block;
+     margin: auto;
+     width: 100% !important;
+     float: none !important;
+   }
+   .businessContent .container .businessSnepet img {
+    float: none !important;
+  }
+ }

@@ -763,7 +763,6 @@ background: #f0f0f0;
     position: absolute;
     top: 0;
     z-index: 99;
-
 }
 .planGrowContentBox .tab-link{
   color: #232323;
@@ -791,6 +790,16 @@ background: #f0f0f0;
   border: 1px solid #f5b402;
   background: var(--Gradient-Orange-1, linear-gradient(239deg, hsla(0, 0%, 100%, .2) 8.52%, hsla(0, 0%, 100%, 0) 51.09%), #f5b402);
   box-shadow: inset 0 0 2px 2px hsla(0, 0%, 100%, .5);
+}
+@media(max-width:600px){
+  .planGrowContentBox .tab-flex{
+   overflow-x: auto;
+   max-width: 100%;
+  }
+
+}
+.planGrowContentBox .tab-flex::-webkit-scrollbar{
+  display: none;
 }
 .planGrow .planGrowContainer{
   position: relative;
@@ -1046,3 +1055,128 @@ background: #f0f0f0;
   color: #2e2e2e;
   max-width: 500px;
 }
+/* sticky software section */
+  .stickySoftwareSection{
+    padding: 3rem 0;
+  }
+  .software-tab-container {
+      position: sticky;
+      top: 0;
+      overflow-x: auto;
+      white-space: nowrap;
+      width: 100%;
+      border-bottom: 2px solid #ccc;
+      background-color: white;
+      z-index: 1000;
+      background-color: #fafafa;
+      border-bottom: 1px solid #e2e2e2;
+      padding: 0;
+  }
+
+  .softwareTabs {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: auto;
+  }
+
+  .softwareTabs .softwareTab {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      cursor: pointer;
+      white-space: nowrap;
+      user-select: none;
+      text-decoration: none; 
+      font-weight: 700;
+      color: #2e2e2e; 
+      letter-spacing: .6px;
+      transition: .3s ease-in;
+      border-bottom: 3px solid #fafafa;
+      margin: 0  1rem;
+      font-size: 1.2rem;
+  }
+  .softwareTabs .softwareTab img{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 10px; 
+    object-fit: contain;
+  }
+  .softwareTabs .softwareTab :hover {
+    color: rgb(22, 120, 251);
+  }
+  .softwareTab.active {
+      color: rgb(22, 120, 251);
+      border-bottom: 3px solid rgb(22, 120, 251);
+  }
+
+  .softwareContent {
+      margin-bottom: 60px;
+  }
+
+  .softwareContent .softwareFeatures .imgBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .softwareContent .softwareFeatures .featuredItem{
+    display: flex;
+    flex-direction: row;
+    padding: .5rem;
+    border-radius: 16px;
+    margin-bottom: 2.6rem;
+  }
+  .softwareContent .softwareFeatures .featuredItem:hover{
+    background-color: rgba(173, 129, 10, 0.112);
+  }
+  .softwareContent .softwareFeatures .featuredIcon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.2rem;
+    border-radius: 50%;
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: #fafafa;
+  }
+  .softwareContent .softwareFeatures .featuredIcon img{
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .softwareContent .softwareFeatures .featuredContent h3{
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #2e2e2e;
+  }
+  .softwareContent .softwareFeatures .featuredContent p{
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #666;
+  }
+  @media(min-width:768px){
+    .softwareContent .softwareFeatures .featuredContent p{
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      line-clamp: 2;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+    }
+  }
+  .softwareContent .softwareFeatures .imgBox img{
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  @media(min-width:991px){
+    .softwareContent {
+      padding-bottom: 180px;
+  }
+  }

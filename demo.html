@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollable Tabs with Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .tab-container {
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            overflow-x: auto;
+            white-space: nowrap;
+            width: 100%;
+            border-bottom: 2px solid #ccc;
+            background-color: white;
+            z-index: 1000; /* Ensure it is above other content */
+            margin-bottom: 20px;
+        }
+
+        .softwareTabs {
+            display: inline-flex;
+            width: 100%;
+        }
+
+        .softwareTab {
+            display: inline-block;
+            padding: 10px 20px;
+            cursor: pointer;
+            white-space: nowrap;
+            border: 1px solid #ccc;
+            margin-right: -1px;
+            user-select: none;
+            text-decoration: none; /* Remove underline from links */
+            color: inherit; /* Inherit text color from parent */
+        }
+
+        .softwareTab.active {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .softwareContent {
+            padding: 20px;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            height: 100vh; /* Just for demonstration, to make the sections tall enough to scroll */
+        }
+    </style>
+</head>
+<body>
+    <div class="tab-container">
+        <div class="softwareTabs">
+            <a href="#softwareContent-1" class="softwareTab" data-tab="1">Tab 1</a>
+            <a href="#softwareContent-2" class="softwareTab" data-tab="2">Tab 2</a>
+            <a href="#softwareContent-3" class="softwareTab" data-tab="3">Tab 3</a>
+            <a href="#softwareContent-4" class="softwareTab" data-tab="4">Tab 4</a>
+            <a href="#softwareContent-5" class="softwareTab" data-tab="5">Tab 5</a>
+        </div>
+    </div>
+
+    <div class="softwareContent" id="softwareContent-1">Content for Tab 1</div>
+    <div class="softwareContent" id="softwareContent-2">Content for Tab 2</div>
+    <div class="softwareContent" id="softwareContent-3">Content for Tab 3</div>
+    <div class="softwareContent" id="softwareContent-4">Content for Tab 4</div>
+    <div class="softwareContent" id="softwareContent-5">Content for Tab 5</div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.softwareTab');
+            const contents = document.querySelectorAll('.softwareContent');
+
+            const scrollToTab = (tab) => {
+                const tabContainer = document.querySelector('.tab-container');
+                const tabRect = tab.getBoundingClientRect();
+                const containerRect = tabContainer.getBoundingClientRect();
+                const offset = tabRect.left - containerRect.left + tabContainer.scrollLeft;
+
+                tabContainer.scrollTo({
+                    left: offset,
+                    behavior: 'smooth'
+                });
+            };
+
+            const scrollToContent = (content) => {
+                const contentTop = content.getBoundingClientRect().top + window.scrollY;
+                window.scrollTo({ top: contentTop - document.querySelector('.tab-container').offsetHeight, behavior: 'smooth' });
+            };
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', (event) => {
+                    event.preventDefault(); // Prevent default anchor behavior
+
+                    tabs.forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+
+                    const tabIndex = tab.getAttribute('data-tab');
+                    const contentElement = document.getElementById(`softwareContent-${tabIndex}`);
+                    
+                    scrollToContent(contentElement);
+                    scrollToTab(tab);
+                });
+            });
+
+            const onScroll = () => {
+                const scrollPosition = window.scrollY + window.innerHeight / 2;
+
+                contents.forEach((content, index) => {
+                    const contentRect = content.getBoundingClientRect();
+                    const contentTop = window.scrollY + contentRect.top;
+                    const contentBottom = contentTop + contentRect.height;
+
+                    if (scrollPosition >= contentTop && scrollPosition < contentBottom) {
+                        tabs.forEach(t => t.classList.remove('active'));
+                        tabs[index].classList.add('active');
+
+                        scrollToTab(tabs[index]);
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', onScroll);
+
+            // Set the first tab as active by default
+            if (tabs.length > 0) {
+                tabs[0].classList.add('active');
+            }
+        });
+    </script>
+</body>
+</html>
