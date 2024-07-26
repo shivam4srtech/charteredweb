@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CharteredOne: One destination for  all your fintech solutions</title>
     <link rel="shortcut icon" href="./images/bigaffilogo.jpeg" type="image/x-icon">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
      <!-- ***********************************Montserrat********************************** -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,11 +29,11 @@
 <body>
     <!-- ==============================Navbar======================================= -->
     <nav class="autohide customeNav fixed-top">
-        <div class="wrapper d-none d-lg-flex">
+        <div class="wrapper">
           <div class="logo"><a href="/"><img src="./images/charteredOne-com-logo.png" alt=""></a></div>
           <input type="radio" name="slider" id="menu-btn">
           <input type="radio" name="slider" id="close-btn">
-          <ul class="nav-links">
+          <ul class="nav-links hideOnMobile">
             <li><label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label></li>
             <li class="toggle-group">
                 <a href="#" class="desktop-item border_bottom">Company</a>
@@ -834,9 +832,154 @@
                 </div>
               </div>
             </li>
-            <li><a href="./news.html" class="border_bottom">Product</a></li>
-            <li><a href="./career.html" class="border_bottom">Resources</a></li>
-            <li class="nav-item d-lg-none"><a class="nav-btn" id="loginBtn" href="./login.html">Login / Sign-up</a></li>
+            <li class="mobileViewNav">
+                <div>
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-button" onclick="toggleMobileDropdown(event)">
+                            Company
+                            <span class="mobile-dropdown-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16">
+                                    <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="mobile-dropdown-content">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterCompany">
+                                <span>Company</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span>Podcost</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span>Media</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span>Career</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-button" onclick="toggleMobileDropdown(event)">
+                            Services
+                            <span class="mobile-dropdown-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16">
+                                    <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="mobile-dropdown-content">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>Business Setup</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>Tax &amp; Audit</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>Registration</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>Import Export</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>Trademark &amp; IP</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>BIS</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>Others</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-button" onclick="toggleMobileDropdown(event)">
+                            Product
+                            <span class="mobile-dropdown-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16">
+                                    <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-button" onclick="toggleMobileDropdown(event)">
+                            Resources
+                            <span class="mobile-dropdown-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16">
+                                    <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-button" onclick="toggleMobileDropdown(event)">
+                            Login/Signup
+                            <span class="mobile-dropdown-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16">
+                                    <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+            <li class="d-none d-lg-block"><a href="./news.html" class="border_bottom">Product</a></li>
+            <li class="d-none d-lg-block"><a href="./career.html" class="border_bottom">Resources</a></li>
           </ul>
           <ul class="signRegister">
                 <li class="nav-item"><a class="nav-btn" id="loginBtn" href="./login.html">Login / Sign-up</a></li>
@@ -2004,7 +2147,6 @@
         </div>
      </section>
 
-
     <footer class="footer">
         <div class="footer-box container">
             <div class="footer-row row">
@@ -2108,13 +2250,225 @@
             </div>
         </div>
     </div>
+
+    <!-- Webmaster Modal -->
+    <div class="modal fade webMasterModal" id="webMasterCompany" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="ms-auto" type="button"  data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="20" height="20" fill="#000">
+                            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="toggle-content">
+                        <div class="row">
+                            <div class="col-12">
+                              <h4 class="serviceHeading">
+                                Company
+                            </h4>
+                              <p class="menuPara">CharteredOne is global accounting &amp; legal consulting firm</p>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="megaRowItem">
+                                  <a href="#" class="megaRowAnchor">
+                                      <h3>
+                                            <span>About Us</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="20" height="20" fill="#2e2e2e">
+                                                <path d="M48 0C21.5 0 0 21.5 0 48L0 464c0 26.5 21.5 48 48 48l96 0 0-80c0-26.5 21.5-48 48-48s48 21.5 48 48l0 80 96 0c26.5 0 48-21.5 48-48l0-416c0-26.5-21.5-48-48-48L48 0zM64 240c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm112-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM80 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM272 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16z"/>
+                                            </svg> 
+                                      </h3>
+                                      <p>CharteredOne is global accounting &amp; legal consulting firm</p>
+                                  </a>
+                               </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="megaRowItem">
+                                  <a href="#" class="megaRowAnchor">
+                                      <h3>
+                                           <span> Contact Us</span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="20" height="20" fill="#2e2e2e">
+                                                <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                                            </svg>
+                                      </h3>
+                                      <p>Floor 405, Maheshwari Chambers, Irram Manzil Colony, Punjagutta, Hyderabad, Telangana 500082.</p>
+                                  </a>
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="megaRowItem">
+                                  <a href="#" class="megaRowAnchor">
+                                      <h3>
+                                        <span>CharteredOne Wiki</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="20" width="20" fill="#2e2e2e">
+                                            <path d="M352 256c0 22.2-1.2 43.6-3.3 64l-185.3 0c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64l185.3 0c2.2 20.4 3.3 41.8 3.3 64zm28.8-64l123.1 0c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64l-123.1 0c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32l-116.7 0c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0l-176.6 0c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0L18.6 160C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192l123.1 0c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64L8.1 320C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6l176.6 0c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352l116.7 0zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6l116.7 0z"/>
+                                        </svg>
+                                    </h3>
+                                      <p>CharteredOne is emerging global accounting &amp; legal consulting firm.</p>
+                                  </a>
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="megaRowItem">
+                                  <a href="#" class="megaRowAnchor">
+                                      <h3>
+                                        <span>Partners</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="20" height="20" fill="#2e2e2e">
+                                            <path d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3l0-84.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5l0 21.5c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-26.8C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112l32 0c24 0 46.2 7.5 64.4 20.3zM448 416l0-21.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176l32 0c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2l0 26.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3l0-84.7c-10 11.3-16 26.1-16 42.3zm144-42.3l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2l0 42.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-42.8c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112l32 0c61.9 0 112 50.1 112 112z"/>
+                                        </svg>
+                                      </h3>
+                                      <p>Let's Create Magic by Empowering Partners To Boost Market Competitiveness</p>
+                                  </a>
+                              </div>
+                            </div>
+                            <div class="col-lg-4">
+                              <div class="megaRowItem">
+                                  <a href="#" class="megaRowAnchor">
+                                      <h3>
+                                        <span>Case Study</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="#2e2e2e">
+                                            <path d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152l0 264-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427L0 224c0-17.7 14.3-32 32-32l30.3 0c63.6 0 125.6 19.6 177.7 56zm32 264l0-264c52.1-36.4 114.1-56 177.7-56l30.3 0c17.7 0 32 14.3 32 32l0 203c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"/>
+                                        </svg>
+                                      </h3>
+                                      <p>CharteredOne Labs: Innovating Solutions for Tomorrow's Challenges.</p>
+                                  </a>
+                              </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade webMasterModal" id="webMasterMobileNav" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="ms-auto" type="button"  data-bs-dismiss="modal" aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="20" height="20" fill="#000">
+                            <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="toggle-content">
+                        <div class="row">
+                            <div class="col-lg-3 mb-3">
+                                <h4 class="megaServiceHeading">Bussines Setup in India</h4>
+                                <div class="serviceAnchors">
+                                    <ul>
+                                        <li><a href="#">Private Limited Company</a></li>
+                                        <li><a href="#">Partnership Firm registration</a></li>
+                                        <li><a href="#">Limited Liability Partnership</a></li>
+                                        <li><a href="#">One Person Company</a></li>
+                                        <li><a href="#">NBFC Registration</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Proprietorship Registration</a></li>
+                                        <li><a href="#">Section 8 company</a></li>
+                                        <li><a href="#">Society Registartion</a></li>
+                                        <li><a href="#">Nidhi Company</a></li>
+                                        <li><a href="#">IRDA Insurance Marketing Firm</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">NGO Registration</a></li>
+                                        <li><a href="#">Section 8 Microfinance Company</a></li>
+                                        <li><a href="#">Public Limited Company</a></li>
+                                        <li><a href="#">Producer Company</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mb-3">
+                                <h4 class="megaServiceHeading">Compliance</h4>
+                                <div class="serviceAnchors">
+                                    <ul>
+                                        <li><a href="#">Annual Filing</a></li>
+                                        <li><a href="#">Annual Compliance of PVT. LTD. Company</a></li>
+                                        <li><a href="#">Annual Compliance LLP</a></li>
+                                        <li><a href="#">Compliances of section</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Compliance for Nidhi Company</a></li>
+                                        <li><a href="#">Compiance for NBFC</a></li>
+                                    </ul>
+                                </div>
+                                <h4 class="megaServiceHeading">Event Based Compliance</h4>
+                                <div class="serviceAnchors">
+                                    <ul>
+                                        <li><a href="#">Director KYC</a></li>
+                                        <li><a href="#">Appointment of Auditor</a></li>
+                                        <li><a href="#">Change in object clause</a></li>
+                                        <li><a href="#">Change in MOA &amp; AOA</a></li>
+                                    </ul>
+                                    <ul> 
+                                        <li><a href="#">Change in name Clause</a></li>
+                                        <li><a href="#">Company Closure</a></li>
+                                        <li><a href="#">Change in registered office</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mb-3">
+                                <div class="serviceAnchors">
+                                    <ul>
+                                        <li><a href="#">Removal of Director</a></li>
+                                        <li><a href="#">Appointment &amp; Resiganation of Director</a></li>
+                                        <li><a href="#">Change in Share Capital</a></li>
+                                        <li><a href="#">Change in Director</a></li>
+                                        <li><a href="#">Legal Drafting</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Appointment of Managing Director</a></li>
+                                        <li><a href="#">Change of Auditor</a></li>
+                                        <li><a href="#">Change in Authorised Capital</a></li>
+                                        <li><a href="#">Change in Name of Company</a></li>
+                                        <li><a href="#">Issue &amp; Transfer of Shares</a></li>
+                                    </ul>
+                                </div>
+                                <h4 class="megaServiceHeading">POSH Compliance</h4>
+                                <div class="serviceAnchors">
+                                    <ul>
+                                        <li><a href="#">POSH Compliance</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 mb-3">
+                                <h4 class="megaServiceHeading">International Business Setup</h4>
+                                <div class="serviceAnchors">
+                                    <ul>
+                                        <li><a href="#">Foreign Company Registration</a></li>
+                                        <li><a href="#">Foreign Subsidiary Company</a></li>
+                                        <li><a href="#">Incorporation in USA</a></li>
+                                        <li><a href="#">Incorporation in UK</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Incorporation in Singapore</a></li>
+                                        <li><a href="#">Incorporation in Australia</a></li>
+                                        <li><a href="#">Incorporation in Switzerland</a></li>
+                                        <li><a href="#">Incorporation in China</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Incorporation in Dubai</a></li>
+                                        <li><a href="#">Incorporation in Hongkong</a></li>
+                                        <li><a href="#">Incorporation in Malaysia</a></li>
+                                        <li><a href="#">Incorporation in Netherlands</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- ==========================Local Script================================ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
     <script src="./js/navbar.js"></script>
-    <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
     <script>
-       
-        document.addEventListener('DOMContentLoaded', function() {
+         document.addEventListener('DOMContentLoaded', function() {
             const tabContainer = document.getElementById('tab-container');
             const links = tabContainer.querySelectorAll('.tab-link');
             const contents = document.querySelectorAll('.planGrowContent');

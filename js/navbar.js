@@ -22,49 +22,8 @@
   }); 
   }
   }); 
-//logo Slider.......
-// $(document).ready(function() {
-//     $('#logo-slider').slick({
-//       slidesToShow: 3,
-//       slidesToScroll: 1,
-//       autoplay: true,
-//       autoplaySpeed: 2000
-//     });
-//   });
-//   *************Number counter*********************
-// function visible(partial) {
-//     var $t = partial,
-//         $w = jQuery(window),
-//         viewTop = $w.scrollTop(),
-//         viewBottom = viewTop + $w.height(),
-//         _top = $t.offset().top,
-//         _bottom = _top + $t.height(),
-//         compareTop = partial === true ? _bottom : _top,
-//         compareBottom = partial === true ? _top : _bottom;
 
-//     return ((compareBottom <= viewBottom) && (compareTop >= viewTop) && $t.is(':visible'));
 
-// }
-// $(window).scroll(function(){
-
-//   if(visible($('.count-digit')))
-//     {
-//       if($('.count-digit').hasClass('counter-loaded')) return;
-//       $('.count-digit').addClass('counter-loaded');
-      
-// $('.count-digit').each(function () {
-//   var $this = $(this);
-//   jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-//     duration: 5000,
-//     easing: 'swing',
-//     step: function () {
-//       $this.text(Math.ceil(this.Counter));
-//     }
-//   });
-// });
-//     }
-// })
-// Navbar toggle visibility on hover
 document.addEventListener("DOMContentLoaded", function() {
       const toggleGroups = document.querySelectorAll('.toggle-group');
 
@@ -93,6 +52,32 @@ document.addEventListener("DOMContentLoaded", function() {
         });
       });
     });
+    // Mobile Nav
+    function toggleMobileDropdown(event) {
+      document.querySelectorAll('.mobile-dropdown').forEach(dropdown => {
+          if (dropdown !== event.currentTarget.parentNode) {
+              dropdown.classList.remove('show');
+              dropdown.querySelector('.mobile-dropdown-arrow svg').classList.remove('rotate');
+          }
+      });
 
+      var dropdown = event.currentTarget.parentNode;
+      dropdown.classList.toggle('show');
+      var arrow = dropdown.querySelector('.mobile-dropdown-arrow svg');
+      arrow.classList.toggle('rotate');
+  }
+
+  window.onclick = function(event) {
+      if (!event.target.matches('.mobile-dropdown-button') && !event.target.closest('.mobile-dropdown')) {
+          var dropdowns = document.getElementsByClassName("mobile-dropdown");
+          for (var i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                  openDropdown.querySelector('.mobile-dropdown-arrow svg').classList.remove('rotate');
+              }
+          }
+      }
+  }
 
 		
