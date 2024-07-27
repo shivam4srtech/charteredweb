@@ -903,7 +903,7 @@ ul.navbar-nav{
 }
 
 .show .mobile-dropdown-content {
-	display: none;
+	display: block;
 }
 .rotate {
 	transform: rotate(90deg);
