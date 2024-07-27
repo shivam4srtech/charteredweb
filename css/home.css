@@ -239,25 +239,20 @@ height: 300px;
 position: relative;
 transform-style: preserve-3d;
 transition: transform 0.6s;
-display: block;
+display: flex;
+justify-content: center;
 }
-.oneStop .destPara{
-font-weight: 600;
-line-height: 1.8;
-font-size: 1.1rem;
-margin-top: 1rem;
-color: #535464;
-}
+
 .flip-container:hover .flipper {
 transform: rotateY(180deg);
 }
 
 .front,
 .back {
-width: 100%;
-height: 290px;
-position: absolute;
-backface-visibility: hidden;
+  width: 100%;
+  height: 340px;
+  position: absolute;
+  backface-visibility: hidden;
 }
 
 .oneStop .front {
@@ -285,34 +280,32 @@ font-size: 1.8rem;
 color: rgba(49, 66, 89, 1);
 line-height: 1.5;
 }
-.oneStop .back{
+.expertServices .back{
 display: flex;
 flex-direction: column;
 justify-content: space-between;
 }
-.oneStop .back .flipPara p{
+.expertServices .back .flipPara p{
 font-weight: 600;
 font-size: 1.3rem;
 color: #fff;
 line-height: 1.6;
+line-clamp: 9;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 9;
+overflow: hidden;
 }
-.oneStop .back .flipPara:nth-of-type(2){
+.expertServices .back .flipPara{
 display: flex;
 align-items: flex-end;
 }
-.oneStop .front .gifi{
-margin-top: 1rem;
-}
-.oneStop .front .gifi img{
-max-width: 100%;
-height: 150px;
-}
 
-.back {
+.expertServices .back {
 transform: rotateY(180deg);
 background-color: #fff;
 border: 1px solid rgb(241, 242, 246);
-padding: 2rem;
+padding: 1rem;
 border-radius: 20px;
 }
 /* professional services */
@@ -343,11 +336,7 @@ margin-bottom: 1rem;
 font-size: 1.6rem;
 color: #000;
 }
-@media(min-width:991px){
-.expertServices .for {
-  padding-left: 2.5rem;
-}
-}
+
 .expertServices .expertItem {
 width: 350px;
 background-color: #fff;
@@ -358,6 +347,7 @@ padding: 20px 30px;
 border-radius: 20px;
 box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 transition: .3s ease;
+max-width: 100%;
 }
 @media(max-width:991px){
   .expertServices h2{
@@ -368,6 +358,8 @@ transition: .3s ease;
 .expertServices .expertItem img{
 height: 140px;
 margin-bottom: .5rem;
+max-width: 100%;
+object-fit: contain;
 }
 .expertServices .expertItem:hover{
 background-color: #f0f2fe;
@@ -384,6 +376,11 @@ font-weight: 500;
 font-size: 1rem;
 line-height: 1.4;
 color: #575766;
+display: -webkit-box;
+-webkit-box-orient: vertical;
+line-clamp: 4;
+-webkit-line-clamp: 4;
+overflow: hidden;
 }
 /* serviceTag */
 .searchPanel{
