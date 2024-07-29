@@ -57,6 +57,7 @@
      height: 100%;
      max-width: 100%;
     display: block;
+    border-radius: 20px;
    }
 
    @media(max-width: 600px){
@@ -80,6 +81,9 @@
     padding-bottom: 180px;
     background-color: rgb(241, 242, 246);
    }
+   .ourJourney .container{
+    max-width: 1200px;
+   }
    .ourJourney .heading {
     font-weight: 700;
     font-size: 56px;
@@ -91,10 +95,28 @@
 .ourJourney .journeyBox p{
     margin: 0 0 25px;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 148%;
     color: #344054;
-    letter-spacing: -.2px;
+    letter-spacing: .5px;
+}
+.ourJourney .journeyBox ul{
+   padding-left: 20px;
+   margin-bottom: 2rem;
+}
+.ourJourney .journeyBox ul li{
+    margin: 0 0 25px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 148%;
+    color: #344054;
+    letter-spacing: .5px;
+    margin-bottom: 1rem;
+    list-style-type: disc;
+}
+.ourJourney .journeyBox ul li strong{
+    font-weight: 700;
+    color: #f5b402;
 }
 .ourJourney .journeyBox p .font-semibold {
     font-weight: 600;
@@ -263,3 +285,41 @@
     position: absolute;
     overflow: hidden;
 }
+/* our team */
+.ourTeam h2{
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #f5b402;
+}
+.ourTeam{
+    padding: 3rem 0;
+}
+.ourTeam .container{
+    max-width: 1200px;
+}
+.ourTeam .teamImg img{
+   max-width: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 20px 20px 0 0;
+   max-height: 400px;
+}
+.ourTeam  .name {
+    padding: 20px 5px;
+ }
+.ourTeam  .name p{
+    font-weight: 600;
+    letter-spacing: .5px;
+    color: #2e2e2e;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin: auto;
+    text-align: center;
+ }
+ .ourTeam .teamContent{
+    border-radius: 20px 20px 0 0;
+    background-color: #f1f2f6;
+ }
