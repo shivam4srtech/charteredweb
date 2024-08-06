@@ -914,7 +914,7 @@ background: #f0f0f0;
 .faq .faqGroup{
   margin-bottom: 3rem;
 }
-.faq .faqGroup h6{
+.faq .faqGroup h3{
   font-weight: 600;
   font-size: 1.4rem;
   margin-bottom: 1rem;
@@ -948,7 +948,7 @@ background: #f0f0f0;
   font-size: 2.2rem;
   margin-bottom: 2rem;
 }
-.whysChooseUs h4{
+.whysChooseUs h3{
   color: #000;
   font-weight: 600;
   font-size: 1.5rem;
@@ -1055,7 +1055,7 @@ background: #f0f0f0;
 }
 .ourSoftware .btnGroup a.activeBtn{
   background-color: #f5b402;
-  color: #fff;
+  color: #000;
   border: 2px solid #f5b402;
  }
  .ourSoftware .serviceType .serviceImgBox .serviceHeading{
@@ -1232,7 +1232,7 @@ background: #f0f0f0;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    opacity: .5;
+    opacity: .75;
     padding: 12px;
     border-radius: 4px;
     cursor: pointer;
@@ -1396,13 +1396,13 @@ background: #f0f0f0;
  }
  
  .contactUs .contact-form {
-   background-color: #1abc9c;
+   background-color: #0452B4;
    position: relative;
  }
  
  .contactUs .circle {
    border-radius: 50%;
-   background: linear-gradient(135deg, transparent 20%, #149279);
+   background: linear-gradient(135deg, transparent 20%, #578cce);
    position: absolute;
  }
  
@@ -1425,7 +1425,7 @@ background: #f0f0f0;
    position: absolute;
    width: 26px;
    height: 26px;
-   background-color: #1abc9c;
+   background-color: #0452B4;
    transform: rotate(45deg);
    top: 50px;
    left: -13px;
@@ -1497,7 +1497,7 @@ background: #f0f0f0;
    background-color: #fff;
    border: 2px solid #fafafa;
    font-size: 0.95rem;
-   color: #1abc9c;
+   color: #0452B4;
    line-height: 1;
    border-radius: 5px;
    outline: none;
@@ -1565,7 +1565,7 @@ background: #f0f0f0;
  }
  
  .contactUs .contact-info .title {
-   color: #1abc9c;
+   color: #0452B4;
  }
  
  .contactUs .text {
@@ -1619,7 +1619,7 @@ background: #f0f0f0;
    width: 35px;
    height: 35px;
    border-radius: 5px;
-   background: linear-gradient(45deg, #1abc9c, #149279);
+   background: linear-gradient(45deg, #4680c7, #0452B4);
    color: #fff;
    text-align: center;
    line-height: 35px;
@@ -1636,7 +1636,7 @@ background: #f0f0f0;
    position: absolute;
    width: 110px;
    height: 100px;
-   border: 22px solid #1abc9c;
+   border: 22px solid #578cce;
    border-radius: 50%;
    bottom: -77px;
    right: 50px;
@@ -1648,7 +1648,7 @@ background: #f0f0f0;
    width: 450px;
    height: 450px;
    border-radius: 50%;
-   background: linear-gradient(to bottom, #1cd4af, #159b80);
+   background: linear-gradient(to bottom, #74adf4, #0452B4);
    bottom: 50%;
    right: 55%;
    transform: translate(-40%, 38%);

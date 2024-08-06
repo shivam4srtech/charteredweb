@@ -17,10 +17,10 @@
     color: #030525;
 }
 .founderMission .small-container .heading .text-orange{
-  color: #f5b402;
+  color: #4f2da6;
 }
 .text-orange{
-    color: #f5b402;
+    color: #4f2da6;
   }
 .founderMission .small-container .relativeBox{
    position: relative;
@@ -31,32 +31,38 @@
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
     --tw-translate-x: -50%;
      z-index: 10;
-     left: 38%;
-     top: 38%;
+     left: 42%;
+     top: 34%;
    }
    .founderMission .small-container .absoluteBox svg{
     display: block;
+    width: 120px;
    }
    .founderMission .small-container .founderNote{
-      font-size: 24px;
-      font-weight: 600;
-      margin-bottom: 16px;
-      margin: 0 0 25px;
-      color: #344054;
-      letter-spacing: -.2px;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 25px;
+    color: #344054;
+    letter-spacing: -.2px;
+    line-height: 1.4;
    }
    .founderMission .founderName{
         font-weight: 600;
         margin-bottom: 16px;
         font-size: 20px;
    }
+   .founderMission .imgBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
    .founderMission .founderImage{
      object-position: top;
      object-fit: cover;
-     width: 100%;
-     height: 100%;
      max-width: 100%;
-    display: block;
+     width: 350px;
+     max-height: 300px;
+     display: block;
     border-radius: 20px;
    }
 
@@ -90,7 +96,7 @@
     line-height: 110%;
     text-align: center;
     margin-bottom: 64px;
-    color: #f5b402;
+    color: #4f2da6;
 }
 .ourJourney .journeyBox p{
     margin: 0 0 25px;
@@ -116,7 +122,7 @@
 }
 .ourJourney .journeyBox ul li strong{
     font-weight: 700;
-    color: #f5b402;
+    color: #4f2da6;
 }
 .ourJourney .journeyBox p .font-semibold {
     font-weight: 600;
@@ -241,6 +247,7 @@
     line-height: 1.4;
     font-size: .9rem;
     display: -webkit-box;
+    line-clamp: 7;
     -webkit-line-clamp: 7;
     -webkit-box-orient: vertical;
     overflow: hidden;
@@ -259,12 +266,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .about-hero-main .hero-bg-video {
     position: absolute;
-    -o-object-fit: cover;
     object-fit: cover;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     top: 0;
     left: 0;
@@ -272,18 +279,43 @@
 .about-hero-main .hero-bg-overlay {
     position: absolute;
     top: 0;
-    left: 0;
-    bottom: 0;
     width: 100%;
+    height: 100vh;
     background: rgba(28, 8, 82, .65);
+}
+.about-hero-main .about-hero-content{
+    position: absolute;
+    top: 30%;
+    z-index: 99;
 }
 .about-hero-content h1{
     text-align: center;
     margin: auto;
     font-weight: 700;
     font-size: 72px;
-    position: absolute;
-    overflow: hidden;
+   max-width: 1200px;
+   line-height: 1.5;
+   color: #fff;
+}
+@media(max-width:950px){
+    .about-hero-main .about-hero-content{
+        top: 20%;
+    }
+}
+@media(max-width:768px){
+    .about-hero-content h1{
+       font-size: 60px;
+       padding: 0 .5rem;
+    }
+}
+@media(max-width:550px){
+    .about-hero-content h1{
+       font-size: 40px;
+       line-height: 1.4;
+    }
+    .about-hero-main .about-hero-content{
+        top: 30%;
+    }
 }
 /* our team */
 .ourTeam h2{
@@ -292,7 +324,7 @@
     line-height: 1.4;
     text-align: center;
     margin-bottom: 40px;
-    color: #f5b402;
+    color: #4f2da6;
 }
 .ourTeam{
     padding: 3rem 0;
@@ -300,13 +332,7 @@
 .ourTeam .container{
     max-width: 1200px;
 }
-.ourTeam .teamImg img{
-   max-width: 100%;
-   width: 100%;
-   object-fit: cover;
-   border-radius: 20px 20px 0 0;
-   max-height: 400px;
-}
+
 .ourTeam  .name {
     padding: 20px 5px;
  }
@@ -319,7 +345,27 @@
     margin: auto;
     text-align: center;
  }
- .ourTeam .teamContent{
-    border-radius: 20px 20px 0 0;
-    background-color: #f1f2f6;
+
+ @media(max-width:600px){
+    .ourTeam h2 {
+        font-size: 40px;
+    }
+ }
+
+ .ourTeam .teamFlex{
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+ }
+ 
+ .ourTeam .teamFlex .teamContent{
+    max-width: 250px;
+ }
+
+ .ourTeam .teamFlex .teamContent .teamImg img{
+   height: 250px;
+   width: 250px;
+   border-radius: 50%;
+   object-fit: cover;
  }
