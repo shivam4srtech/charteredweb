@@ -89,7 +89,7 @@
     padding: 4rem 0;
 }
 .whyRegistar .container{
-    max-width: 1500px;
+    max-width: 1450px;
 }
 .whyRegistar h1{
     color: #fff;
@@ -298,7 +298,7 @@
  }
  @media(max-width: 600px){
     .adService{
-        padding-top: 0;
+        padding-top: 3rem;
     }
     .adService .container{
        padding: 0 1.4rem;
@@ -314,7 +314,7 @@
     padding: 3rem 0;
  }
  .dcoRequired .container{
-    max-width: 1500px;
+    max-width: 1450px;
  }
  .dcoRequired p{
   margin-bottom: 1rem;
@@ -631,7 +631,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     padding:  3rem 0;
 }
 .foreignRegistration .container{
-    max-width: 1500px;
+    max-width: 1450px;
 }
 .foreignRegistration h3{
     font-weight: 600;
@@ -907,13 +907,23 @@ ol.process-chart > li:nth-of-type(6n+5):after {
         height: 8rem;
     }
 }
+@media(max-width: 600px){
+  .gauranteed .gauranteeBadge{
+       height: 16rem;
+    }
+    .gauranteed .gauranteeBadge p {
+      font-size: 1.4rem;
+      padding: 0 .5rem;
+  }
+
+}
 .hassleFree{
     padding: 4rem 0;
     background-color: #2f3c97;
     color: #fff;
 }
 .hassleFree .container{
-    max-width: 1500px;
+    max-width: 1450px;
 }
 .hassleFree .hassalHeader h2{
     font-weight: 600;
@@ -963,7 +973,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     padding: 4rem 0 2rem 0;
   }
   .customerReview .container{
-   max-width: 1500px;
+   max-width: 1450px;
   }
   .customerReview h2{
     font-weight: 600;
@@ -1175,7 +1185,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
      opacity: 0;
      transition: 0.3s;
      height: 5px;
-     background-color: #1abc9c;
+     background-color: #0452B4;
      top: 50%;
      transform: translateY(-50%);
    }
@@ -1236,7 +1246,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
      font-weight: 600;
    }
   .contactUs  .information i {
-     color: #1ABC9C;
+     color: #0452B4;
    }
    
    .contactUs .icon {
@@ -1728,7 +1738,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   background-color: #f5f5f5;
 }
 .registrationSteps .container{
-  max-width: 1500px;
+  max-width: 1450px;
 }
 .registrationSteps h2{
     text-align: center;
