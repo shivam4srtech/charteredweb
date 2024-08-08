@@ -353,7 +353,6 @@
  }
 
  .ourTeam .teamFlex{
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -364,8 +363,8 @@
  }
 
  .ourTeam .teamFlex .teamContent .teamImg img{
-   height: 250px;
-   width: 250px;
+   height: 240px;
+   width: 240px;
    border-radius: 50%;
    object-fit: cover;
  }
