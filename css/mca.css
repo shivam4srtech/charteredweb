@@ -1,0 +1,271 @@
+.searchCompany{
+    padding: 4rem 0;
+}
+ .container{
+    max-width: 1200px;
+}
+.gradient-text {
+    background: linear-gradient(to right, #db4d97, #ff7f00, #db4d97, #4f2da6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  /* animated text */
+  .animatedText{
+    font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 600px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    max-width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to right, #db4d97, #ff7f00, #db4d97, #4f2da6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin: auto;
+    text-align: center;
+    font-weight: 600;
+}
+
+#typedText::after {
+    content: '';
+    display: inline-block;
+    width: 2px;
+    height: 1em;
+    background: linear-gradient(to right, #db4d97, #ff7f00, #db4d97, #4f2da6);
+    margin-left: 2px;
+    animation: blink 1s steps(1) infinite;
+    vertical-align: middle;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+.searchCompany .searchBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    max-width: 750px;
+    margin: auto;
+    position: relative;
+}
+.searchCompany .searchBox input{
+    color: #232323;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 2px solid #f5b402;
+    outline: none;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 10px;
+    min-height: 48px;
+    height: 48px;
+    width: 100%;
+    cursor: auto;
+    -moz-box-flex: 2;
+    -ms-flex-positive: 2;
+    max-width: 600px;
+    color: #2e2323;
+    font-weight: 500;
+    letter-spacing: .5px;
+    font-style: italic;
+}
+.searchCompany .searchBox button{
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: .5rem 1rem;
+    background-color: #f5b402;
+    border-radius: 8px;
+    height: 48px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+}
+.searchCompany .searchBox input::placeholder{
+    color: #2e2323;
+    font-weight: 500;
+    letter-spacing: .5px;
+    font-style: italic;
+}
+.searchCompany .arrowSvg{
+    transform: rotate(180deg);
+}
+@media(max-width:768px){
+    .searchCompany .searchBox{
+        flex-direction: column;
+    }
+    .searchCompany .searchBox button{
+       width: 500px;
+       max-width: 100%;
+       margin-top: 1rem;
+       margin-left: 0;
+    }
+}
+@media(max-width:600px){
+    .animatedText{
+        font-size: 30px;
+    }
+}
+@media(max-width:400px){
+    .animatedText{
+        font-size: 24px;
+    }
+}
+/* search sugestion */
+.search-container {
+    width: 300px;
+    position: relative;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.suggestions {
+    position: absolute;
+    width: 750px;
+    max-width: 100%;
+    background: white;
+    border: 1px solid #e2e2e2;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   top: 80px;
+   border-radius: 8px;
+   padding:0;
+}
+
+.suggestions a {
+    padding: 8px;
+    cursor: pointer;
+    padding: .5rem 1rem;
+    display: block;
+    color: #232323;
+    font-weight: 500;
+}
+.suggestions a:first-child{
+    border-radius: 8px 8px 0 0;
+}
+.suggestions a:last-child{
+    border-radius: 0 0 8px 8px;
+}
+
+.suggestions a:hover {
+    background: #f5b402;
+}
+.searchResult{
+    padding-bottom: 2rem;
+}
+.searchResult .resultBox h1{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #2e2e2e;
+    text-transform: uppercase;
+}
+.searchResult .resultBox .lastUpdate{
+   margin-bottom: 1rem;
+}
+.searchResult .resultBox .lastUpdate span{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+.searchResult .resultBox .lastUpdate small{
+    display: inline-block;
+    margin: 0 .5rem;
+    color: #388440;
+    font-weight: 600;
+}
+.searchResult .resultBox .lastUpdate a{
+    color: #ff7f00;
+    font-weight: 500;
+    font-size: .8rem;
+}
+.searchResult .resultBox .resultPara p{
+    line-height: 1.6;
+    color: #5b534e;
+    font-weight: 500;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+.searchResult .resultBox .resultPara p span{
+    font-weight: 600;
+    color: #2e2e2e;
+}
+.searchResult .resultBox .resultPara p a{
+    font-weight: 600;
+    color: #1303d4;
+
+}
+/* resultTable */
+.resultTable h2{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #2e2e2e;
+    text-transform: uppercase;
+}
+.resultTable .tableContainer{
+    border: 2px solid red;
+}
+.resultTable .tableContainer table{
+    border: 2px solid red;
+}
+.resultTable .tableContainer table tr td, .resultTable .tableContainer table tr th{
+    padding: .5rem;
+    /* min-width: 300px; */
+}
+.resultTable .tableContainer table tr td{
+    line-height: 1.6;
+    color: #5b534e;
+    font-weight: 500;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
+.resultTable .tableContainer table tr .cin a{
+    color: #dc6d61;
+    font-weight: 600;
+}
+.resultTable .tableContainer table tr .active{
+    color: #388440;
+    font-weight: 600;
+}
+.resultTable .tableContainer table tr td strong{
+    color: #2e2e2e;
+    font-weight: 600;
+}
+.resultTable .tableContainer table tr th{
+    color: #2e2e2e;
+    font-weight: 600;
+}
+.resultTable .tableContainer table tr:nth-of-type(odd){
+    background-color: #f2f2f2;
+}
