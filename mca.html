@@ -849,12 +849,22 @@
                 </svg>
             </div>
             <div class="searchBox">
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Search By</option>
+                    <option value="1">Company</option>
+                    <option value="2">Trademark</option>
+                    <option value="3">CIN</option>
+                    <option value="3">LLP Name</option>
+                    <option value="3">DIN</option>
+                    <option value="3">LLPIN</option>
+                </select>
                 <input type="text" placeholder="Eg. Charteredone" id="searchInput">
                 <button>Search →</button>
                 <div id="suggestions" class="suggestions"></div>
             </div>
         </div>
     </section>
+    <!-- search section -->
     <section class="mainHeading searchResult">
         <div class="container">
             <div class="resultBox">
@@ -866,387 +876,491 @@
         </div>
     </section>
     <!-- tabsection -->
-     <section class="tabSection">
+    <section class="tabSection">
         <div class="container">
-            <div class="tabList">
-                <ul>
-                    <li><a href="#" data-index="0" class="active"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="16" height="16"><path d="M320 464c8.8 0 16-7.2 16-16l0-288-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16l256 0zM0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64z"/></svg>Overview</a></li>
-                    <li><a href="#" data-index="1"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"><path d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160l0 8c0 13.3 10.7 24 24 24l400 0c13.3 0 24-10.7 24-24l0-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224l-64 0 0 196.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512l448 0c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1L448 224l-64 0 0 192-40 0 0-192-64 0 0 192-48 0 0-192-64 0 0 192-40 0 0-192zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg> Financials</a></li>
-                    <li><a href="#" data-index="2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"><path d="M418.4 157.9c35.3-8.3 61.6-40 61.6-77.9c0-44.2-35.8-80-80-80c-43.4 0-78.7 34.5-80 77.5L136.2 151.1C121.7 136.8 101.9 128 80 128c-44.2 0-80 35.8-80 80s35.8 80 80 80c12.2 0 23.8-2.7 34.1-7.6L259.7 407.8c-2.4 7.6-3.7 15.8-3.7 24.2c0 44.2 35.8 80 80 80s80-35.8 80-80c0-27.7-14-52.1-35.4-66.4l37.8-207.7zM156.3 232.2c2.2-6.9 3.5-14.2 3.7-21.7l183.8-73.5c3.6 3.5 7.4 6.7 11.6 9.5L317.6 354.1c-5.5 1.3-10.8 3.1-15.8 5.5L156.3 232.2z"/></svg>Company Network</a></li>
-                    <li><a href="#" data-index="3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="16" height="16"><path d="M48 0C21.5 0 0 21.5 0 48L0 464c0 26.5 21.5 48 48 48l96 0 0-80c0-26.5 21.5-48 48-48s48 21.5 48 48l0 80 96 0c26.5 0 48-21.5 48-48l0-416c0-26.5-21.5-48-48-48L48 0zM64 240c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm112-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM80 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM272 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16z"/></svg>Industry</a></li>
-                    <li><a href="#" data-index="4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="16" height="16"><path d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3l0-84.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5l0 21.5c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-26.8C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112l32 0c24 0 46.2 7.5 64.4 20.3zM448 416l0-21.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176l32 0c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2l0 26.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3l0-84.7c-10 11.3-16 26.1-16 42.3zm144-42.3l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2l0 42.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-42.8c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112l32 0c61.9 0 112 50.1 112 112z"/></svg>Directors</a></li>
-                    <li><a href="#" data-index="4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="16" height="16"><path d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3l0-84.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5l0 21.5c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-26.8C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112l32 0c24 0 46.2 7.5 64.4 20.3zM448 416l0-21.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176l32 0c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2l0 26.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3l0-84.7c-10 11.3-16 26.1-16 42.3zm144-42.3l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2l0 42.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-42.8c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112l32 0c61.9 0 112 50.1 112 112z"/></svg>Others</a></li>
-                </ul>
-            </div>
-            <div class="tabContent">
-                <div class="resultPara">
-                    <p>
-                        CHARTERED ONE SOFTECH PRIVATE LIMITED having CIN <span>U62090TS2024PTC182729</span> is <span>5 months &amp; 11 days</span> old Private company incorporated with MCA on <span>28th February, 2024</span>. CHARTERED ONE SOFTECH PRIVATE LIMITED is listed in the class of Private company and classified as Non-govt company. This company is registered at Registrar of Companies(ROC), RoC-Hyderabad with an Authorized Share Capital of <span>₹1,00,000</span> and paid-up capital is <span>₹1,00,000.</span>
-                    </p>
-                    <p class="resultPara">
-                        The company has <span>2</span> directors/key management personal <a href="#">SHIVAM DUBEY</a>, <a href="#">RUDRESH DUBEY</a>. <span>CHARTERED ONE SOFTECH PVT LTD company</span> registration number is 182729 and its Corporate Identification Number(CIN) provided from MCA is <span>U62090TS2024PTC182729</span>.
-                    </p>
-                    <p class="resultPara">
-                        As per MCA records <span>CHARTERED ONE SOFTECH PRIVATE LIMITED</span> is involved in activities such as Computer programming, consultancy and related activities
-                    </p>
-                    <p>
-                        <span>CHARTERED ONE SOFTECH PVT LTD's</span> registered office address is <span> 6-3-650, 405, Maheshwari Chambers, Somajiguda, Hyderabad, Khairatabad, Telangana, India,</span> <a href="#">500082</a>
-                        . Find other contact information for CHARTERED ONE SOFTECH PRIVATE LIMITED such as contact number, email, website, gst details and more below.
-                    </p>
-                    <p>
-                        <span>CHARTERED ONE SOFTECH PRIVATE LIMITED's</span> last Annual General Meeting(AGM) was held on <span>N/A</span>, and the company last updated its financials on <span>N/A</span>.
-                    </p>
-                </div>
-                <div>
-                    <h2>REGISTERED DETAILS - CHARTERED AUTO COMPONENTS PRIVATE LIMITED</h2>
-                    <div class="tableContainer">
-                        <table style="width: 100%;">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="tabList">
+                        <ul>
+                            <li><a href="#" data-index="0" class="active"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="16" height="16"><path d="M320 464c8.8 0 16-7.2 16-16l0-288-80 0c-17.7 0-32-14.3-32-32l0-80L64 48c-8.8 0-16 7.2-16 16l0 384c0 8.8 7.2 16 16 16l256 0zM0 64C0 28.7 28.7 0 64 0L229.5 0c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3L384 448c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 64z"/></svg>Overview</a></li>
+                            <li><a href="#" data-index="1"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"><path d="M243.4 2.6l-224 96c-14 6-21.8 21-18.7 35.8S16.8 160 32 160l0 8c0 13.3 10.7 24 24 24l400 0c13.3 0 24-10.7 24-24l0-8c15.2 0 28.3-10.7 31.3-25.6s-4.8-29.9-18.7-35.8l-224-96c-8-3.4-17.2-3.4-25.2 0zM128 224l-64 0 0 196.3c-.6 .3-1.2 .7-1.8 1.1l-48 32c-11.7 7.8-17 22.4-12.9 35.9S17.9 512 32 512l448 0c14.1 0 26.5-9.2 30.6-22.7s-1.1-28.1-12.9-35.9l-48-32c-.6-.4-1.2-.7-1.8-1.1L448 224l-64 0 0 192-40 0 0-192-64 0 0 192-48 0 0-192-64 0 0 192-40 0 0-192zM256 64a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg> Financials</a></li>
+                            <li><a href="#" data-index="2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="16" height="16"><path d="M418.4 157.9c35.3-8.3 61.6-40 61.6-77.9c0-44.2-35.8-80-80-80c-43.4 0-78.7 34.5-80 77.5L136.2 151.1C121.7 136.8 101.9 128 80 128c-44.2 0-80 35.8-80 80s35.8 80 80 80c12.2 0 23.8-2.7 34.1-7.6L259.7 407.8c-2.4 7.6-3.7 15.8-3.7 24.2c0 44.2 35.8 80 80 80s80-35.8 80-80c0-27.7-14-52.1-35.4-66.4l37.8-207.7zM156.3 232.2c2.2-6.9 3.5-14.2 3.7-21.7l183.8-73.5c3.6 3.5 7.4 6.7 11.6 9.5L317.6 354.1c-5.5 1.3-10.8 3.1-15.8 5.5L156.3 232.2z"/></svg>Company Network</a></li>
+                            <li><a href="#" data-index="3"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="16" height="16"><path d="M48 0C21.5 0 0 21.5 0 48L0 464c0 26.5 21.5 48 48 48l96 0 0-80c0-26.5 21.5-48 48-48s48 21.5 48 48l0 80 96 0c26.5 0 48-21.5 48-48l0-416c0-26.5-21.5-48-48-48L48 0zM64 240c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm112-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM80 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM272 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16z"/></svg>Industry</a></li>
+                            <li><a href="#" data-index="4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="16" height="16"><path d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3l0-84.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5l0 21.5c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-26.8C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112l32 0c24 0 46.2 7.5 64.4 20.3zM448 416l0-21.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176l32 0c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2l0 26.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3l0-84.7c-10 11.3-16 26.1-16 42.3zm144-42.3l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2l0 42.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-42.8c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112l32 0c61.9 0 112 50.1 112 112z"/></svg>Directors</a></li>
+                            <li><a href="#" data-index="4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" width="16" height="16"><path d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3l0-84.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5l0 21.5c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-26.8C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112l32 0c24 0 46.2 7.5 64.4 20.3zM448 416l0-21.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176l32 0c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2l0 26.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3l0-84.7c-10 11.3-16 26.1-16 42.3zm144-42.3l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2l0 42.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-42.8c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112l32 0c61.9 0 112 50.1 112 112z"/></svg>Others</a></li>
+                        </ul>
+                    </div>
+                    <div class="tabContent">
+                        <div class="resultPara">
+                            <p>
+                                CHARTERED ONE SOFTECH PRIVATE LIMITED having CIN <span>U62090TS2024PTC182729</span> is <span>5 months &amp; 11 days</span> old Private company incorporated with MCA on <span>28th February, 2024</span>. CHARTERED ONE SOFTECH PRIVATE LIMITED is listed in the class of Private company and classified as Non-govt company. This company is registered at Registrar of Companies(ROC), RoC-Hyderabad with an Authorized Share Capital of <span>₹1,00,000</span> and paid-up capital is <span>₹1,00,000.</span>
+                            </p>
+                            <p class="resultPara">
+                                The company has <span>2</span> directors/key management personal <a href="#">SHIVAM DUBEY</a>, <a href="#">RUDRESH DUBEY</a>. <span>CHARTERED ONE SOFTECH PVT LTD company</span> registration number is 182729 and its Corporate Identification Number(CIN) provided from MCA is <span>U62090TS2024PTC182729</span>.
+                            </p>
+                            <p class="resultPara">
+                                As per MCA records <span>CHARTERED ONE SOFTECH PRIVATE LIMITED</span> is involved in activities such as Computer programming, consultancy and related activities
+                            </p>
+                            <p>
+                                <span>CHARTERED ONE SOFTECH PVT LTD's</span> registered office address is <span> 6-3-650, 405, Maheshwari Chambers, Somajiguda, Hyderabad, Khairatabad, Telangana, India,</span> <a href="#">500082</a>
+                                . Find other contact information for CHARTERED ONE SOFTECH PRIVATE LIMITED such as contact number, email, website, gst details and more below.
+                            </p>
+                            <p>
+                                <span>CHARTERED ONE SOFTECH PRIVATE LIMITED's</span> last Annual General Meeting(AGM) was held on <span>N/A</span>, and the company last updated its financials on <span>N/A</span>.
+                            </p>
+                        </div>
+                        <div>
+                            <h2>REGISTERED DETAILS - CHARTERED AUTO COMPONENTS PRIVATE LIMITED</h2>
+                            <div class="tableContainer">
+                                <table style="width: 100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>CIN</strong> U62090TS2024PTC182729</td>
+                                                <td><strong>Incorporation Date / Age</strong>05 February, 2013 / 11 yrs</td>
+                                                <td><strong>Last Reported AGM Date</strong> 29 September, 2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Authorized Capital</strong> INR 1.0 Lacs</td>
+                                                <td><strong>Paidup Capital</strong>INR 1.0 Lacs</td>
+                                                <td><strong>industry*</strong> Manufacturing (Machinery & Equipments)</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Type</strong>Unlisted Private Company</td>
+                                                <td><strong>category</strong>Company limited by Shares</td>
+                                                <td><strong>subcategory</strong> 29 September, 2022</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Email Address</strong>exampleEmail@domial.com</td>
+                                                <td><strong>Website</strong>charteredone.com</td>
+                                                <td><strong>Registered Address</strong>
+                                                    S.NO.471/P, SANATHAL, NR. SANATHAL PATIYA
+                                                    SARKHEJ BAVLA HIGHWAY, TAL. SANAND
+                                                    AHMEDABAD - 382210
+                                                    Gujarat - India
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabContent">
+                        <div>
+                            <h2>FINANCIAL HIGHLIGHTS - CHARTERED AUTO COMPONENTS PRIVATE LIMITED</h2>
+                            <p>
+                                Provided here are the financial indicators for financial year ending on 31 March, 2019. Actual numbers and updated financial data are included in purchased financial report. View Sample Report.
+                            </p>
+                            <ul>
+                                <li>
+                                    Revenue / turnover of CHARTERED AUTO COMPONENTS PRIVATE LIMITED is INR 1 cr - 100 cr
+                                </li>
+                                <li>
+                                    Net worth of the company has increased by 238.87 %
+                                </li>
+                                <li>
+                                    EBITDA of the company has increased by 844.30 %
+                                </li>
+                                <li>
+                                    Total assets of the company has increased by 65.65 %
+                                </li>
+                                <li>
+                                    Liabilities of the company has increased by 51.67 %
+                                </li>
+                            </ul>
+                            <p>
+                                For a detailed balance sheet <a href="#">Buy Financial Report</a>
+                            </p>
+                            <div class="tableContainer">
+                                <table>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Operating Revenue</strong></td>
+                                                <td>INR 1 cr - 100 cr</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>EBITDA</strong></td>
+                                                <td><img src="./images/arrow-dot.svg" alt="arrow-up" width="30" height="30"> 200%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Networth</strong></td>
+                                                <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Debt/Equity Ratio</strong></td>
+                                                <td><img src="./images/arrow-dot.svg" alt="arrow-up" width="30" height="30"> 200%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Return on Equity</strong></td>
+                                                <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Total Assets</strong></td>
+                                                <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Fixed Assets</strong></td>
+                                                <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Current Assets</strong></td>
+                                                <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Current Liabilities</strong></td>
+                                                <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Trade Receivables</strong></td>
+                                                <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Trade Payables</strong></td>
+                                                <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Current Ratio</strong></td>
+                                                <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
+                                            </tr>
+                                        </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabContent">
+                        <h2>Connected Companies</h2>
+                        <div class="tableContainer">
+                            <table>
                                 <tbody>
                                     <tr>
-                                        <td><strong>CIN</strong> U62090TS2024PTC182729</td>
-                                        <td><strong>Incorporation Date / Age</strong>05 February, 2013 / 11 yrs</td>
-                                        <td><strong>Last Reported AGM Date</strong> 29 September, 2022</td>
+                                        <th>NAME</th>
+                                        <th class="text-center">NUMBER OF COMMON <br> DIRECTOR</th>
+                                        <th>STATE</th>
+                                        <th>PAID UP CAPITAL</th>
+                                        <th></th>
                                     </tr>
                                     <tr>
-                                        <td><strong>Authorized Capital</strong> INR 1.0 Lacs</td>
-                                        <td><strong>Paidup Capital</strong>INR 1.0 Lacs</td>
-                                        <td><strong>industry*</strong> Manufacturing (Machinery & Equipments)</td>
+                                        <td><a href="#">Social Labs Enterprize Limited</a></td>
+                                        <td class="text-center">2</td>
+                                        <td>Prayagraj</td>
+                                        <td>1.5 Lac</td>
+                                        <td><a href="">Buy Financial Report</a></td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Type</strong>Unlisted Private Company</td>
-                                        <td><strong>category</strong>Company limited by Shares</td>
-                                        <td><strong>subcategory</strong> 29 September, 2022</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Email Address</strong>exampleEmail@domial.com</td>
-                                        <td><strong>Website</strong>charteredone.com</td>
-                                        <td><strong>Registered Address</strong>
-                                            S.NO.471/P, SANATHAL, NR. SANATHAL PATIYA
-                                            SARKHEJ BAVLA HIGHWAY, TAL. SANAND
-                                            AHMEDABAD - 382210
-                                            Gujarat - India
-                                        </td>
+                                        <td><a href="#">Social Labs Enterprize Limited</a></td>
+                                        <td class="text-center">2</td>
+                                        <td>Prayagraj</td>
+                                        <td>1.5 Lac</td>
+                                        <td><a href="">Buy Financial Report</a></td>
                                     </tr>
                                 </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <div class="tabContent">
-                <div>
-                    <h2>FINANCIAL HIGHLIGHTS - CHARTERED AUTO COMPONENTS PRIVATE LIMITED</h2>
-                    <p>
-                        Provided here are the financial indicators for financial year ending on 31 March, 2019. Actual numbers and updated financial data are included in purchased financial report. View Sample Report.
-                    </p>
-                    <ul>
-                        <li>
-                            Revenue / turnover of CHARTERED AUTO COMPONENTS PRIVATE LIMITED is INR 1 cr - 100 cr
-                        </li>
-                        <li>
-                            Net worth of the company has increased by 238.87 %
-                        </li>
-                        <li>
-                            EBITDA of the company has increased by 844.30 %
-                        </li>
-                        <li>
-                            Total assets of the company has increased by 65.65 %
-                        </li>
-                        <li>
-                            Liabilities of the company has increased by 51.67 %
-                        </li>
-                    </ul>
-                    <p>
-                        For a detailed balance sheet <a href="#">Buy Financial Report</a>
-                    </p>
-                    <div class="tableContainer">
-                        <table>
+                            </table>
+                        </div>
+                        <h2>Companies Registered in Prayagraj</h2>
+                        <div class="tableContainer">
+                            <table>
                                 <tbody>
                                     <tr>
-                                        <td><strong>Operating Revenue</strong></td>
-                                        <td>INR 1 cr - 100 cr</td>
+                                        <th>NAME</th>
                                     </tr>
                                     <tr>
-                                        <td><strong>EBITDA</strong></td>
-                                        <td><img src="./images/arrow-dot.svg" alt="arrow-up" width="30" height="30"> 200%</td>
+                                        <td><a href="#">Social Labs Enterprize Limited</a></td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Networth</strong></td>
-                                        <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
+                                        <td><a href="#">Social Labs Enterprize Limited</a></td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Debt/Equity Ratio</strong></td>
-                                        <td><img src="./images/arrow-dot.svg" alt="arrow-up" width="30" height="30"> 200%</td>
+                                        <td><a href="#">Social Labs Enterprize Limited</a></td>
                                     </tr>
                                     <tr>
-                                        <td><strong>Return on Equity</strong></td>
-                                        <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Total Assets</strong></td>
-                                        <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Fixed Assets</strong></td>
-                                        <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Current Assets</strong></td>
-                                        <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Current Liabilities</strong></td>
-                                        <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Trade Receivables</strong></td>
-                                        <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Trade Payables</strong></td>
-                                        <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Current Ratio</strong></td>
-                                        <td><img src="./images/arrow-dot-down.svg" alt="arrow-down" width="30" height="30"> 200%</td>
+                                        <td><a href="#">Social Labs Enterprize Limited</a></td>
                                     </tr>
                                 </tbody>
-                        </table>
+                            </table>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="tabContent">
-                <h2>Connected Companies</h2>
-                <div class="tableContainer">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>NAME</th>
-                                <th class="text-center">NUMBER OF COMMON <br> DIRECTOR</th>
-                                <th>STATE</th>
-                                <th>PAID UP CAPITAL</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Social Labs Enterprize Limited</a></td>
-                                <td class="text-center">2</td>
-                                <td>Prayagraj</td>
-                                <td>1.5 Lac</td>
-                                <td><a href="">Buy Financial Report</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Social Labs Enterprize Limited</a></td>
-                                <td class="text-center">2</td>
-                                <td>Prayagraj</td>
-                                <td>1.5 Lac</td>
-                                <td><a href="">Buy Financial Report</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <h2>Companies Registered in Prayagraj</h2>
-                <div class="tableContainer">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>NAME</th>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Social Labs Enterprize Limited</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Social Labs Enterprize Limited</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Social Labs Enterprize Limited</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Social Labs Enterprize Limited</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="tabContent">
-                <h2>Industry</h2>
-                <div class="tableContainer">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <th>NAME</th>
-                                <th class="text-center">INCORPORATION <br> YEAR</th>
-                                <th>STATE</th>
-                                <th>PAID UP CAPITAL</th>
-                                <th></th>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Social Labs Enterprize Limited</a></td>
-                                <td class="text-center">2022</td>
-                                <td>Uttar Pradesh</td>
-                                <td>1.5 Lac</td>
-                                <td><a href="">Buy Financial Report</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Social Labs Enterprize Limited</a></td>
-                                <td class="text-center">2019</td>
-                                <td>Uttar Pradesh</td>
-                                <td>1.5 Lac</td>
-                                <td><a href="">Buy Financial Report</a></td>
-                            </tr>
-                            <tr>
-                                <td><a href="#">Social Labs Enterprize Limited</a></td>
-                                <td class="text-center">2019</td>
-                                <td>Uttar Pradesh</td>
-                                <td>1.5 Lac</td>
-                                <td><a href="">Buy Financial Report</a></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="tabContent">
-                <h2>Directors - CHARTERED AUTO COMPONENTS PRIVATE LIMITED</h2>
-                <p>
-                    The company has 2 directors and no reported key management personnel.
-                </p>
-                <p>
-                    The longest serving director currently on board is Rudresh Dubey who was appointed on 05 February, 2013. Rudresh Dubey has been on the board for more than 11 years. The most recently appointed director is Shivam Dubey, who was appointed on 25 June, 2020.
-                </p>
-                <p>
-                   Rudresh Dubey has the largest number of other directorships with a seat at a total of 3 companies. In total, the company is connected to 2 other companies through its directors.
-                </p>
-                <div class="tableContainer">
-                    <table style="width: 100%;">
-                        <tbody>
-                            <tr>
-                                <th>NAME</th>
-                                <th>YEAR</th>
-                                <th>Designation</th>
-                            </tr>
-                            <tr>
-                                <td>Rudresh Dubey</td>
-                                <td>2019-2021</td>
-                                <td>Director</td>
-                            </tr>
-                            <tr>
-                                <td>Shivam Dubey</td>
-                                <td>2021-Present</td>
-                                <td>Director</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="tabContent" style="box-shadow: none;">
-                <div class="snippet">
-                    <h2>Prosecution Details</h2>
-                    <div class="tableContainer mb-4">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <th>S.No.</th>
-                                    <th>Defaulting Entities</th>
-                                    <th>Court Name</th>
-                                    <th>Prosecution Section</th>
-                                    <th>Date Of Order</th>
-                                    <th>Status</th>
-                                </tr>
-                                <tr>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="noData">
-                            <p>No prosecutions found</p>
+                    <div class="tabContent">
+                        <h2>Industry</h2>
+                        <div class="tableContainer">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>NAME</th>
+                                        <th class="text-center">INCORPORATION <br> YEAR</th>
+                                        <th>STATE</th>
+                                        <th>PAID UP CAPITAL</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Social Labs Enterprize Limited</a></td>
+                                        <td class="text-center">2022</td>
+                                        <td>Uttar Pradesh</td>
+                                        <td>1.5 Lac</td>
+                                        <td><a href="">Buy Financial Report</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Social Labs Enterprize Limited</a></td>
+                                        <td class="text-center">2019</td>
+                                        <td>Uttar Pradesh</td>
+                                        <td>1.5 Lac</td>
+                                        <td><a href="">Buy Financial Report</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Social Labs Enterprize Limited</a></td>
+                                        <td class="text-center">2019</td>
+                                        <td>Uttar Pradesh</td>
+                                        <td>1.5 Lac</td>
+                                        <td><a href="">Buy Financial Report</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tabContent">
+                        <h2>Directors - CHARTERED AUTO COMPONENTS PRIVATE LIMITED</h2>
+                        <p>
+                            The company has 2 directors and no reported key management personnel.
+                        </p>
+                        <p>
+                            The longest serving director currently on board is Rudresh Dubey who was appointed on 05 February, 2013. Rudresh Dubey has been on the board for more than 11 years. The most recently appointed director is Shivam Dubey, who was appointed on 25 June, 2020.
+                        </p>
+                        <p>
+                           Rudresh Dubey has the largest number of other directorships with a seat at a total of 3 companies. In total, the company is connected to 2 other companies through its directors.
+                        </p>
+                        <div class="tableContainer">
+                            <table style="width: 100%;">
+                                <tbody>
+                                    <tr>
+                                        <th>NAME</th>
+                                        <th>YEAR</th>
+                                        <th>Designation</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Rudresh Dubey</td>
+                                        <td>2019-2021</td>
+                                        <td>Director</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shivam Dubey</td>
+                                        <td>2021-Present</td>
+                                        <td>Director</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tabContent" style="box-shadow: none;">
+                        <div class="snippet">
+                            <h2>Prosecution Details</h2>
+                            <div class="tableContainer mb-4">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <th>S.No.</th>
+                                            <th>Defaulting Entities</th>
+                                            <th>Court Name</th>
+                                            <th>Prosecution Section</th>
+                                            <th>Date Of Order</th>
+                                            <th>Status</th>
+                                        </tr>
+                                        <tr>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="noData">
+                                    <p>No prosecutions found</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snippet">
+                            <h2>Charges/Borrowing  Details</h2>
+                            <div class="tableContainer mb-4">
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                           <th>Charge ID</th>
+                                           <th>Creation Date</th>
+                                           <th>Modification Date</th>
+                                           <th>Closure Date</th>
+                                           <th>Assets Under Charge</th>
+                                           <th>Amount</th>
+                                           <th>Charge Holder</th>
+                                        </tr>
+                                        <tr>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="noData">
+                                    <p>No Charges/Borrowing found</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="snippet">
+                            <h2>Establishments  Details</h2>
+                            <div class="tableContainer mb-4">
+                                <table style="width: 100%;">
+                                    <tbody>
+                                        <tr>
+                                           <th>Establishment Name</th>
+                                           <th>City</th>
+                                           <th>Pincode</th>
+                                           <th>Address</th>
+                                        </tr>
+                                        <tr>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="noData">
+                                    <p>No Establishments found</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="snippet">
-                    <h2>Charges/Borrowing  Details</h2>
-                    <div class="tableContainer mb-4">
-                        <table>
-                            <tbody>
-                                <tr>
-                                   <th>Charge ID</th>
-                                   <th>Creation Date</th>
-                                   <th>Modification Date</th>
-                                   <th>Closure Date</th>
-                                   <th>Assets Under Charge</th>
-                                   <th>Amount</th>
-                                   <th>Charge Holder</th>
-                                </tr>
-                                <tr>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="noData">
-                            <p>No Charges/Borrowing found</p>
+                <div class="col-lg-4">
+                    <div class="pricingPanle">
+                        <div class="pricingHeader">
+                            <h2>Company Financials</h2>
                         </div>
+                        <form action="NoWhere">
+                            <ul>
+                               <li class="pricingLi">
+                                    <div class="liHeader">
+                                        <div class="panelCheck">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                            </div>
+                                            <h3>
+                                                <span>View In Dashboard</span>
+                                                <span>Popular</span>
+                                            </h3>
+                                        </div>
+                                        <div>
+                                            <span>INR 349</span>
+                                        </div>
+                                    </div>
+                                    <div class="liContent">
+                                        <p>
+                                            Company360 is an interactive dashboard that provides more than 3 years company’s financials, ratios, charts, network and features like lists, comparator, financial alerts, pdf reports, and excel downloads. <a href="#">Learn More</a>
+                                        </p>
+                                    </div>
+                               </li>
+                               <li class="pricingLi">
+                                <div class="liHeader">
+                                    <div class="panelCheck">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        </div>
+                                        <h3>
+                                            <span>All Financial</span>
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <span>INR 349</span>
+                                    </div>
+                                </div>
+                                <div class="liContent">
+                                    <p>
+                                        Company360 is an interactive dashboard that provides more than 3 years company’s financials, ratios, charts, network and features like lists, comparator, financial alerts, pdf reports, and excel downloads. <a href="#">Learn More</a>
+                                    </p>
+                                </div>
+                               </li>
+                               <li class="pricingLi">
+                                <div class="liHeader">
+                                    <div class="panelCheck">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        </div>
+                                        <h3>
+                                            <span>1 Year</span>
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <span>INR 249</span>
+                                    </div>
+                                </div>
+                                <div class="liContent">
+                                    <p>
+                                        Company360 is an interactive dashboard that provides more than 3 years company’s financials, ratios, charts, network and features like lists, comparator, financial alerts, pdf reports, and excel downloads. <a href="#">Learn More</a>
+                                    </p>
+                                </div>
+                               </li>
+                               <li class="pricingLi">
+                                <div class="liHeader">
+                                    <div class="panelCheck">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        </div>
+                                        <h3>
+                                            <span>Financial Report</span>
+                                           
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <span>INR 799</span>
+                                    </div>
+                                </div>
+                                <div class="liContent">
+                                    <p>
+                                        Company360 is an interactive dashboard that provides more than 3 years company’s financials, ratios, charts, network and features like lists, comparator, financial alerts, pdf reports, and excel downloads. <a href="#">Learn More</a>
+                                    </p>
+                                </div>
+                               </li>
+                               <li class="pricingLi">
+                                <div class="liHeader">
+                                    <div class="panelCheck">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                                        </div>
+                                        <h3>
+                                            <span>Due Diligence Report</span>
+                                        </h3>
+                                    </div>
+                                    <div>
+                                        <span>INR 2999</span>
+                                    </div>
+                                </div>
+                                <div class="liContent">
+                                    <p>
+                                        Company360 is an interactive dashboard that provides more than 3 years company’s financials, ratios, charts, network and features like lists, comparator, financial alerts, pdf reports, and excel downloads. <a href="#">Learn More</a>
+                                    </p>
+                                </div>
+                               </li>
+                               <li>
+                                    <p>
+                                        <em> # Wherever available</em>
+                                        <em> * Prices are exclusive of taxes.</em>
+                                        <em> ** Company has reported to have approved financials for 31 March, 2021. However, in case, they are not available at MCA because of non-filing or damage, then we will provide the latest financials downloadable from MCA.</em>
+                                        <em> *** Working hours: 9am-6pm (Mon-Fri)</em>
+                                    </p>
+                               </li>
+                            </ul>
+                            <div>
+                                <button class="cartBtn">Add to cart</button>
+                            </div>
+                        </form>
                     </div>
-                </div>
-                <div class="snippet">
-                    <h2>Establishments  Details</h2>
-                    <div class="tableContainer mb-4">
-                        <table style="width: 100%;">
-                            <tbody>
-                                <tr>
-                                   <th>Establishment Name</th>
-                                   <th>City</th>
-                                   <th>Pincode</th>
-                                   <th>Address</th>
-                                </tr>
-                                <tr>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                    <td>-</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="noData">
-                            <p>No Establishments found</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-     </section>
-     <section class="searchResult">
-        <div class="container">
-            <div class="resultBox">
-                <h1>CHARTERED ONE SOFTECH PRIVATE LIMITED / U62090TS2024PTC182729</h1>
-                <div class="resultPara">
-                    <p>
-                        CHARTERED ONE SOFTECH PRIVATE LIMITED having CIN <span>U62090TS2024PTC182729</span> is <span>5 months & 11 days</span> old Private company incorporated with MCA on <span>28th February, 2024</span>. CHARTERED ONE SOFTECH PRIVATE LIMITED is listed in the class of Private company and classified as Non-govt company. This company is registered at Registrar of Companies(ROC), RoC-Hyderabad with an Authorized Share Capital of <span>₹1,00,000</span> and paid-up capital is <span>₹1,00,000.</span>
-                    </p>
-                    <p class="resultPara">
-                        The company has <span>2</span> directors/key management personal <a href="#">SHIVAM DUBEY</a>, <a href="#">RUDRESH DUBEY</a>. <span>CHARTERED ONE SOFTECH PVT LTD company</span> registration number is 182729 and its Corporate Identification Number(CIN) provided from MCA is <span>U62090TS2024PTC182729</span>.
-                    </p>
-                    <p class="resultPara">
-                        As per MCA records <span>CHARTERED ONE SOFTECH PRIVATE LIMITED</span> is involved in activities such as Computer programming, consultancy and related activities
-                    </p>
-                    <p>
-                        <span>CHARTERED ONE SOFTECH PVT LTD's</span> registered office address is <span> 6-3-650, 405, Maheshwari Chambers, Somajiguda, Hyderabad, Khairatabad, Telangana, India,</span> <a href="#">500082</a>
-                        . Find other contact information for CHARTERED ONE SOFTECH PRIVATE LIMITED such as contact number, email, website, gst details and more below.
-                    </p>
-                    <p>
-                        <span>CHARTERED ONE SOFTECH PRIVATE LIMITED's</span> last Annual General Meeting(AGM) was held on <span>N/A</span>, and the company last updated its financials on <span>N/A</span>.
-                    </p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Table section -->
     <section class="resultTable">
         <div class="container mb-5">
             <h2>COMPANY INFORMATION</h2>
@@ -1504,6 +1618,21 @@
                 </div>
             </div>
         </div>
+        <div class="container contactDtl mb-5">
+            <h2>Contact Details</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Email ID:</strong> mandeepbrar213@gmail.com</p>
+                    <p><strong>Website:</strong> <a href="#">charteredone.com</a></p>
+                    <p><strong>Address:</strong> <br> Cabin 19, 2nd Floor, Meeting Point, SCO 487-488, Sector 35C , Chandigarh, Chandigarh, India - 160022</p>
+                </div>
+                <div class="col-md-6">
+                    <div class="gMap">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d60909.86478407783!2d78.4162431380184!3d17.418190869188386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bcb97aa9b4ceae5%3A0x75fa90fc7249ba99!2scharteredone!3m2!1d17.4181951!2d78.457443!5e0!3m2!1sen!2sin!4v1723879623050!5m2!1sen!2sin" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container financial mb-5">
             <h2>Share Capital &amp; Compliance</h2>
             <div class="row">
@@ -1592,21 +1721,6 @@
                 </div>
             </div>
         </div>
-        <div class="container contactDtl mb-5">
-            <h2>Contact Details</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <p><strong>Email ID:</strong> mandeepbrar213@gmail.com</p>
-                    <p><strong>Website:</strong> <a href="#">charteredone.com</a></p>
-                    <p><strong>Address:</strong> <br> Cabin 19, 2nd Floor, Meeting Point, SCO 487-488, Sector 35C , Chandigarh, Chandigarh, India - 160022</p>
-                </div>
-                <div class="col-md-6">
-                    <div class="gMap">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d60909.86478407783!2d78.4162431380184!3d17.418190869188386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3bcb97aa9b4ceae5%3A0x75fa90fc7249ba99!2scharteredone!3m2!1d17.4181951!2d78.457443!5e0!3m2!1sen!2sin!4v1723879623050!5m2!1sen!2sin" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="container mb-5">
             <h2>Companies with Similar Address</h2>
             <div class="tableContainer">
@@ -1681,9 +1795,9 @@
                 <button class="ms-auto similarCompany">View all 38362 companies with similar NIC</button>
             </div>
         </div>
-     </section>
-     <!-- faqs -->
-     <section class="faqs">
+    </section>
+    <!-- faqs -->
+    <section class="faqs">
         <div class="container">
             <h2>FAQ'S ON CHARTERED ONE SOFTECH PRIVATE LIMITED</h2>
             <div class="accordion">
@@ -1756,7 +1870,7 @@
                 </div>
             </div>
         </div>
-     </section>
+    </section>
     <!-- ======================Footer=========================================== -->
     <footer class="footer">
         <div class="footer-box container">

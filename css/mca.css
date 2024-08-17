@@ -48,7 +48,7 @@
     justify-content: center;
     align-items: center;
     padding: 1rem 0;
-    max-width: 750px;
+    max-width: 900px;
     margin: auto;
     position: relative;
 }
@@ -89,6 +89,16 @@
     letter-spacing: .5px;
     font-style: italic;
 }
+.searchCompany .searchBox select{
+    height: 49px;
+    width: 135px;
+    border-radius: 10px;
+    border: 2px solid #f5b402;
+    box-shadow: none;
+    font-weight: 600;
+    margin-right: 10px;
+    font-size: .95rem;
+}
 .searchCompany .searchBox button{
     border: none;
     outline: none;
@@ -122,6 +132,15 @@
        margin-top: 1rem;
        margin-left: 0;
     }
+    .searchCompany .searchBox select{
+        margin-bottom: 1rem;
+        width: 600px;
+        max-width: 100%;
+        margin-right: 0;
+     }
+     .searchCompany{
+        padding: 2rem 0;
+     }
 }
 @media(max-width:710px){
     .animatedText{
@@ -131,6 +150,7 @@
 @media(max-width:510px){
     .animatedText{
         font-size: 25px;
+        height: 40px;
     }
 }
 /* search sugestion */
@@ -282,6 +302,9 @@
     box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
     overflow-x: auto;
     max-width: 100%;
+}
+.tabSection .tabList::-webkit-scrollbar{
+    display: none;
 }
 .tabSection .tabList ul{
     display: flex;
@@ -557,4 +580,123 @@ table a{
     font-weight: 600;
     margin-bottom: 1rem;
     font-size: 1.2rem;
+}
+.gMap{
+    display: none;
+}
+.pricingPanle{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .16), 0 2px 10px 0 rgba(0, 0, 0, .12);
+}
+.pricingPanle .pricingHeader{
+    background-color: #2e2e2e;
+    padding: 1rem .5rem;
+}
+.pricingPanle .pricingHeader h2{
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+.pricingPanle .liHeader{
+   display: flex;
+   justify-content: space-between;
+}
+.pricingPanle  ul li {
+    border-bottom: 1px solid #847f7f;
+    padding: .5rem;
+    cursor: pointer;
+}
+.pricingPanle  ul li:last-child{
+    border: none;
+}
+.pricingPanle  ul li .panelCheck{
+   display: flex;
+}
+.pricingPanle .liHeader h3{
+    font-weight: 600;
+    color: rgba(0, 0, 0, .54);
+    font-size: 1rem;
+ }
+ .pricingPanle .liHeader span{
+    color: #2e2e2e;
+    font-weight: 600;
+    font-size: 1rem;
+ }
+ .pricingPanle .liHeader span{
+    display: block;
+ }
+ .pricingPanle .liHeader span:nth-of-type(2){
+    width: 70px;
+    background-color: #ff7f00;
+    font-size: .75rem;
+    text-align: center;
+    border: none;
+    font-weight: 500;
+    padding: .1rem;
+    text-transform: uppercase;
+    color: #000;
+    margin-top: .5rem;
+ }
+ .pricingPanle .form-check-input:checked[type=radio]{
+    background-color: #f5b402;
+    border: none;
+    --bs-form-check-bg-image: url(none);
+    border: 1px solid #f5b402;
+}
+.pricingPanle .form-check-input{
+    border: 1px solid #000;
+    box-shadow: none;
+}
+.pricingPanle .form-check{
+    margin-bottom: 0;
+    margin-right: .5rem;
+}
+.pricingPanle .liContent{
+    padding: .5rem 1.2rem;
+}
+.pricingPanle .liContent p{
+    font-size: .75rem;
+    font-weight: 500;
+    color: #000;
+}
+.pricingPanle  ul li p em{
+    font-size: .75rem;
+    font-weight: 500;
+    color: #000;
+    font-style: italic;
+    display: block;
+    line-height: 1.3;
+ }
+ .pricingPanle  .cartBtn{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    color: #000;
+    background-color: #f5b402;
+    padding: .5rem 1rem;
+    text-transform: uppercase;
+ }
+.pricingPanle .liContent p a{
+    color:  #1303d4;
+    text-align: center;
+}
+ 
+.pricingPanle li {
+    position: relative;
+    overflow: hidden; 
+}
+.pricingPanle .liContent {
+    max-height: 0;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+    overflow: hidden;
+    transition: max-height 1s ease, opacity 1s ease, transform 1s ease;
+}
+.pricingLi:hover .liContent {
+    max-height: 500px;
+    opacity: 1;
+    transform: scaleY(1);
 }
