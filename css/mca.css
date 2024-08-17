@@ -11,11 +11,10 @@
     background-clip: text;
   }
   /* animated text */
-  .animatedText{
-    font-size: 40px;
-    font-family: 'Courier New', Courier, monospace;
-    width: 600px; /* Adjust as needed */
-    height: 50px; /* Adjust as needed */
+  .animatedText {
+    font-size: 50px;
+    width: 700px;
+    height: 60px;
     max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -27,6 +26,7 @@
     margin: auto;
     text-align: center;
     font-weight: 600;
+    max-width: 100%;
 }
 
 #typedText::after {
@@ -92,8 +92,8 @@
 .searchCompany .searchBox button{
     border: none;
     outline: none;
-    color: #fff;
-    font-weight: 500;
+    color: #000;
+    font-weight: 600;
     font-size: 1rem;
     padding: .5rem 1rem;
     background-color: #f5b402;
@@ -123,14 +123,14 @@
        margin-left: 0;
     }
 }
-@media(max-width:600px){
+@media(max-width:710px){
     .animatedText{
-        font-size: 30px;
+        font-size: 40px;
     }
 }
-@media(max-width:400px){
+@media(max-width:510px){
     .animatedText{
-        font-size: 24px;
+        font-size: 25px;
     }
 }
 /* search sugestion */
@@ -149,14 +149,11 @@
     position: absolute;
     width: 750px;
     max-width: 100%;
-    background: white;
+    background: #fff;
     border: 1px solid #e2e2e2;
     max-height: 150px;
     overflow-y: auto;
     display: none;
-   display: flex;
-   align-items: center;
-   justify-content: center;
    top: 80px;
    border-radius: 8px;
    padding:0;
@@ -216,6 +213,13 @@
     font-size: .9rem;
     margin-bottom: 1rem;
 }
+.mainHeading p{
+    line-height: 1.6;
+    color: #5b534e;
+    font-weight: 500;
+    font-size: .9rem;
+    margin-bottom: 1rem;
+}
 .searchResult .resultBox .resultPara p span{
     font-weight: 600;
     color: #2e2e2e;
@@ -267,6 +271,7 @@
 /* tabSection */
 .tabSection{
     padding: 3rem 0;
+    padding-top: 0;
 }
 .tabSection .tabList{
     position: sticky;
@@ -317,6 +322,7 @@
     display: none;
     max-width: 1000px;
     padding: 1rem .5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .tabSection .tabContent.active{
@@ -429,7 +435,7 @@
  }
  /* faqs */
  .faqs{
-    padding: 0  0 3rem 0;
+    padding:  3rem 0;
  }
  .faqs h2{
     margin-bottom: 2rem;
@@ -504,4 +510,26 @@
 
 .faqs .accordion-header.active svg {
     transform: rotate(90deg);
+}
+.tableContainer::-webkit-scrollbar{
+    display: none;
+}
+.similarCompany{
+    border: none;
+    outline: none;
+    background-color: #2e2e2e;
+    font-weight: 600;
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+.noData{
+    background-color: #f9f9f9;
+    padding: 1rem;
+}
+.noData p{
+    margin-bottom: 0 !important;
+    color: #2e2e2e;
+    font-weight: 500;
 }
