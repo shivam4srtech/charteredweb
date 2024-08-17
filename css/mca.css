@@ -533,3 +533,28 @@
     color: #2e2e2e;
     font-weight: 500;
 }
+.snippet{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: .5rem 1rem;
+    margin-bottom: 1rem;
+}
+table a{
+    color: #1303d4;
+}
+.contactDtl p{
+    font-weight: 500;
+    color: #2e2e2e;
+    line-height: 1.5;
+}
+.contactDtl p strong{
+    font-weight: 600;
+    margin-right: .5rem;
+}
+.contactDtl a{
+    color: #1303d4;
+}
+.financial h3{
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
