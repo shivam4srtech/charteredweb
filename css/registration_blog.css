@@ -1435,7 +1435,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
  /* FAQS */
  .faqs{
     padding: 3rem 0;
-    background-color: #f8e9e0;
+    background-color: #fff;
  }
  .faqs .sectionPara{
     font-weight: 500;
@@ -1471,19 +1471,21 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   }
 
   .faqs .accordion-item {
-    border: 1px solid #ccc;
+    border: none;
     margin-bottom: 10px;
     border-radius: 5px;
+
   }
 
   .faqs .accordion-header {
     padding: 15px;
     cursor: pointer;
     position: relative;
-    background-color: #f7f7f7;
+    background-color: #fff;
     font-weight: 600;
     font-size: 1.4rem;
-    border-radius: 5px;
+    border-radius: 0;
+    border-bottom: 1px solid #e2e2e2;
   }
 
   .faqs .accordion-header::after {
@@ -1969,7 +1971,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
 .businessLicense h1{
  font-weight: 700;
  font-size: 3rem;
- margin-bottom: 2rem;
+ margin-bottom: .5rem;
  color: #232323;
  line-height: 1.4;
 }
@@ -2625,3 +2627,249 @@ section strong{
 .compareFirm .row.active {
     display: flex;
 }
+/* service summary */
+.serviceSummary{
+  margin-bottom: .5rem;
+  max-height: 100vh;
+  overflow: auto;
+}
+
+.serviceSummary::-webkit-scrollbar{
+  display: none;
+}
+.serviceSummary .serviceValue {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.serviceSummary .serviceValue .pricingItem{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: #fafafe;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem .6rem;
+  text-align: center;
+}
+.serviceSummary .serviceValue .pricingItem p:nth-of-type(1){
+ font-weight: 600;
+ line-height: 1.4;
+ font-size: 1.1rem;
+ color: #000;
+}
+.serviceSummary .serviceValue .pricingItem .value{
+ font-weight: 700;
+ color: #000;
+ letter-spacing: .5px;
+ line-height: 1.4;
+ font-size: 1.65rem;
+ margin-bottom: .5rem;
+ }
+ .serviceSummary .serviceValue .pricingItem .discount{
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  }
+  .serviceSummary .serviceValue .pricingItem .discount span{
+  color: #70757b;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: .2rem;
+  }
+  .serviceSummary .serviceValue .pricingItem .discount small{
+  color: #e3756b;
+    font-weight: 600; 
+  }
+  .serviceSummary .serviceValue button{
+    border: none;
+    outline: none;
+    background-color: #f5b402;
+    color: #000;
+    font-weight: 600;
+    width: 100%;
+    border-radius: 10px;
+    padding: .5rem 0;
+    }
+  .serviceSummary .aboutPlan{
+    margin-bottom: 1rem;
+  }
+  .serviceSummary .aboutPlan h2{
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    color: #000;
+    line-height: 1.4;
+  }  
+  .serviceSummary .aboutPlan p{
+    font-weight: 500;
+    font-size: .95rem;
+    color: #472515;
+    line-height: 1.5;
+  } 
+  .serviceSummary .servicesIncluded {
+    margin-bottom: 1rem;
+  }
+  .serviceSummary .servicesIncluded h2{
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    color: #000;
+    line-height: 1.4;
+  } 
+  .serviceSummary .servicesIncluded ul li{
+    font-weight: 500;
+    font-size: .95rem;
+    color: #472515;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    display: flex;
+  } 
+  .serviceSummary .servicesIncluded ul li span:nth-of-type(1){
+   margin-right: 1rem;
+  } 
+  .serviceSummary .whoBuy {
+    margin-bottom: 1rem;
+  }
+  .serviceSummary .whoBuy h2{
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    color: #000;
+    line-height: 1.4;
+  } 
+  .serviceSummary .whoBuy .terms{
+   display: flex;
+  }
+  .serviceSummary .whoBuy .terms img{
+    margin-right: 1rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+   }
+
+   .serviceSummary .whoBuy .terms p{
+    font-weight: 500;
+    font-size: .95rem;
+    color: #472515;
+    line-height: 1.5;
+   }
+   .serviceSummary .howDone {
+   margin-bottom: 1rem;
+  } 
+   .serviceSummary .howDone h2{
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    font-size: 1.4rem;
+    color: #000;
+    line-height: 1.4;
+  } 
+  .serviceSummary .howDone p{
+    color: #92959a;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+  } 
+
+   /* Page Update */
+.pageUpdate .step {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pageUpdate .v-stepper {
+  position: relative;
+}
+
+
+/* regular step */
+.pageUpdate  {
+ border: 2px solid red;
+ max-width: 100%;
+ 
+}
+.pageUpdate .step .circle {
+  border: 1px solid #8abbfd;
+  border-radius: 100%;
+  width: 36px;   
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageUpdate .step .line {
+  top: 30px;
+  left: 17px;
+  height: 100%;
+  position: absolute;
+  border-left: 1px solid #8abbfd;
+}
+
+.pageUpdate .step.active .circle {
+visibility: visible;
+  border-color: rgb(6,150,215);
+}
+
+.pageUpdate .step.empty .circle {
+    visibility: hidden;
+}
+.pageUpdate .step .circle img{
+  width: 25px;
+  height: 25px;
+}
+.pageUpdate .step.lastStep  .circle img{
+  width: 20px;
+  height: 20px;
+}
+
+.pageUpdate .step.empty .line {
+  top: 0;
+  height: 150%;
+}
+
+
+.pageUpdate .step:last-child .line {
+  border-left: 3px solid white;
+  z-index: -1; 
+}
+.pageUpdate .content  {
+  margin-left: 10px;
+  display: inline-block;
+}
+.pageUpdate .content p {
+  display: inline-block;
+  color: #314259;
+  font-size: .9rem;
+  line-height: 1.4;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.pageUpdate .content .date{
+  color: #999;
+  display: block;
+  margin-top: .4rem;
+  font-size: .8rem;
+  font-weight: 500;
+}
+.pageUpdate .latestTag span{
+  display: inline-flex;
+ height: 2rem;
+ width: 3.5rem;
+ align-items: center;
+ justify-content: center;
+ font-size: .85rem;
+ border-radius: 4px;
+ font-weight: 500;
+ color: rgb(30 66 159);
+ background-color: rgb(225 239 254);
+ margin-left: .2rem;
+}
+.stepperBox ol{
+  padding-left: 1rem;
+}
+   
