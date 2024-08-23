@@ -1984,9 +1984,11 @@ ol.process-chart > li:nth-of-type(6n+5):after {
  }
 
  .businessLicense .toc ul{
- max-height: 210px;
+ max-height: 400px;
  overflow-y: scroll;
  margin-bottom: .5rem;
+ position: sticky;
+ top: 0;
  }
  .businessLicense .toc ul::-webkit-scrollbar{
   display: none;
@@ -2630,8 +2632,11 @@ section strong{
 /* service summary */
 .serviceSummary{
   margin-bottom: .5rem;
-  max-height: 100vh;
-  overflow: auto;
+  height: 600px;
+  border: 2px solid red;
+  position: sticky;
+  top: 0;
+  overflow-y: scroll;
 }
 
 .serviceSummary::-webkit-scrollbar{
@@ -2785,8 +2790,6 @@ section strong{
   position: relative;
 }
 
-
-/* regular step */
 .pageUpdate  {
  border: 2px solid red;
  max-width: 100%;
@@ -2872,4 +2875,7 @@ visibility: visible;
 .stepperBox ol{
   padding-left: 1rem;
 }
-   
+   .row{
+    max-width: 100%;
+    margin: auto;
+   }
