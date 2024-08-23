@@ -2187,7 +2187,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
  }
 
  .businessContent .container .contentIndex{
-  max-height: 400px;
+  max-height: 100vh;
   overflow-y: auto;
   }
   @media(min-width:991px){
@@ -2196,6 +2196,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
      top: 10px;
   }
 }
+
   .businessContent .container .contentIndex::-webkit-scrollbar{
     display: none;
     }
