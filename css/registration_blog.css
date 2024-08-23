@@ -1997,11 +1997,11 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   list-style-type: none;
   margin-bottom: 1rem;
   padding: 8px 16px;
-  border-radius: 16px;
+  border-radius: 0;
   list-style-position: inside;
   color: #fff;
   background: #fbfbfb;
-  border: .5px solid #e2e2e2;
+  border-bottom: .5px solid #e2e2e2;
  }
  .businessLicense .toc ul li a{
   color: #232323;
@@ -2042,7 +2042,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     font-size: 1.2rem;
  }
  .businessLicense .reviewContainer{
-  border-radius: 20px;
+  padding-left: .5rem;
  }
  .businessLicense .displayReview{
   display: flex;
@@ -2207,7 +2207,9 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   }
 
   .businessContent .container .contentIndex .tableOfContent ul li{
-    margin-bottom: .8rem;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #e2e2e2;
   }
   .businessContent .container .contentIndex .tableOfContent ul li a{
     font-size: 1rem;
@@ -2673,6 +2675,11 @@ section strong{
  font-size: 1.65rem;
  margin-bottom: .5rem;
  }
+ @media(min-width:991px){
+  .serviceSummary{
+    padding-left: 3rem;
+  }
+ }
  .serviceSummary .serviceValue .pricingItem .discount{
   font-weight: 500;
   font-size: 1rem;
@@ -3044,4 +3051,9 @@ margin: auto;
   font-size: 1.4rem;
   color: #2e2e2e;
   text-transform: uppercase;
+}
+@media(min-width:991px){
+  .xpadding{
+    padding-left: 3rem;
+  }
 }
