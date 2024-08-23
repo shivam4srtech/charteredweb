@@ -1185,7 +1185,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
    opacity: 0;
    transition: 0.3s;
    height: 5px;
-   background-color: #1abc9c;
+   background-color: #0452B4;
    top: 50%;
    transform: translateY(-50%);
  }
@@ -1983,13 +1983,13 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   line-height: 1.4;
  }
 
- .businessLicense .toc ul{
+ /* .businessLicense .toc ul{
  max-height: 400px;
  overflow-y: scroll;
  margin-bottom: .5rem;
  position: sticky;
  top: 0;
- }
+ } */
  .businessLicense .toc ul::-webkit-scrollbar{
   display: none;
   }
@@ -2066,6 +2066,11 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   padding-top: .5rem;
   margin-right: 2rem;
  }
+ @media(max-width:500px){
+  .businessLicense .displayReview .reviewItem:nth-of-type(1) {
+    margin-right: 0rem;
+}
+ }
  .businessLicense .displayReview .reviewItem p{
  color: #000;
  margin-top: 1rem;
@@ -2130,8 +2135,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
  .businessLicense .displayReview .reviewItem .excellent{
   font-weight: 500;
   color: #232323;
-  font-size: .9rem;
-  margin-bottom: .5rem;
+  font-size: .7rem;
   display: inline-flex;
   align-items: center;
   margin-bottom: 0;
@@ -2632,8 +2636,7 @@ section strong{
 /* service summary */
 .serviceSummary{
   margin-bottom: .5rem;
-  height: 600px;
-  border: 2px solid red;
+  max-height: 100vh;
   position: sticky;
   top: 0;
   overflow-y: scroll;
@@ -2643,7 +2646,6 @@ section strong{
   display: none;
 }
 .serviceSummary .serviceValue {
-  margin-top: 1.5rem;
   margin-bottom: 1rem;
 }
 .serviceSummary .serviceValue .pricingItem{
@@ -2708,10 +2710,11 @@ section strong{
     line-height: 1.4;
   }  
   .serviceSummary .aboutPlan p{
-    font-weight: 500;
-    font-size: .95rem;
     color: #472515;
-    line-height: 1.5;
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
   } 
   .serviceSummary .servicesIncluded {
     margin-bottom: 1rem;
@@ -2724,10 +2727,10 @@ section strong{
     line-height: 1.4;
   } 
   .serviceSummary .servicesIncluded ul li{
-    font-weight: 500;
-    font-size: .95rem;
     color: #472515;
-    line-height: 1.5;
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
     display: flex;
   } 
@@ -2755,10 +2758,11 @@ section strong{
    }
 
    .serviceSummary .whoBuy .terms p{
-    font-weight: 500;
-    font-size: .95rem;
     color: #472515;
-    line-height: 1.5;
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
    }
    .serviceSummary .howDone {
    margin-bottom: 1rem;
@@ -2771,10 +2775,11 @@ section strong{
     line-height: 1.4;
   } 
   .serviceSummary .howDone p{
-    color: #92959a;
+    color: #472515;
+    line-height: 1.6;
     font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
   } 
 
    /* Page Update */
@@ -2791,7 +2796,6 @@ section strong{
 }
 
 .pageUpdate  {
- border: 2px solid red;
  max-width: 100%;
  
 }
@@ -2847,7 +2851,7 @@ visibility: visible;
 .pageUpdate .content p {
   display: inline-block;
   color: #314259;
-  font-size: .9rem;
+  font-size: 1.1rem;
   line-height: 1.4;
   font-weight: 600;
   margin-bottom: 0;
@@ -2875,7 +2879,169 @@ visibility: visible;
 .stepperBox ol{
   padding-left: 1rem;
 }
-   .row{
-    max-width: 100%;
-    margin: auto;
-   }
+.row{
+max-width: 100%;
+margin: auto;
+}
+.serviceSummary .docRequired{
+  margin-bottom: 1rem;
+}
+.serviceSummary .docRequired h2{
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+  color: #000;
+  line-height: 1.4;
+}
+.serviceSummary .serviceValue h2{
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+  font-size: 1.4rem;
+  color: #000;
+  line-height: 1.4;
+}
+/* fassi Registration in states */
+.similarCompanies{
+  padding: 3rem 0;
+}
+.similarCompanies h2{
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #2e2e2e;
+  text-transform: uppercase;
+}
+.similarCompanies .stateBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e2e2e2;
+  padding: .8rem .5rem;
+  border-radius: 10px;
+}
+.similarCompanies .stateBox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.similarCompanies .stateBox .stateName{
+  display: flex;
+  align-items: center;
+}
+.similarCompanies .stateBox .stateName p{
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #000;
+  font-size: .9rem;
+}
+.similarCompanies .stateBox .stateName .imgBox{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f8fa;
+  margin-right: .5rem;
+}
+.similarCompanies .stateBox .stateName .imgBox img{
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+}
+.similarCompanies .stateBox .arrow{
+ width: 2rem;
+ text-align: right;
+ height: 1.5rem;
+}
+.similarCompanies .arrow svg{
+ display: none;
+}
+.similarCompanies .stateBox:hover{
+ border: 1px solid #f5b402;
+ background-color: #f5b4020a;
+}
+.similarCompanies .stateBox:hover svg {
+ display: inline;
+ fill: #f5b402;
+}
+.similarCompanies .listCompany{
+  padding: 1rem;
+}
+.listCompany h3{
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #2e2e2e;
+  text-transform: uppercase;
+}
+.listCompany .name{
+  display: flex;
+  align-items: center;
+  padding: .8rem .5rem;
+  background-color: #fff;
+ color: #000;
+ font-weight: 500;
+ font-size: .9rem;
+ border-radius: 5px;
+ margin-bottom: 1rem;
+ box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.listCompany .name span{
+ display: -webkit-box;
+ line-clamp: 1;
+ -webkit-line-clamp: 1;
+ -webkit-box-orient: vertical;
+ overflow: hidden;
+}
+.similarCompanies .loadMore{
+  background-color: #2e2e2e;
+  color: #fff;
+  padding: .6rem 1rem;
+ font-weight: 500;
+ border-radius: 5px;
+}
+.similarCompanies .loadMore svg{
+ margin-left: .5rem;
+}
+.stateItem{
+  display: none;
+}
+
+.hidden {
+  display: none;
+}
+.listCompany .name small {
+ margin-right: .5rem;
+}
+.popularService .popularTags{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: justify;
+}
+.popularService .popularTags span{
+  margin: 0 .5rem;
+  font-weight: 600;
+}
+.popularService .popularTags a{
+  color: #1303d4;
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: .95rem;
+}
+.popularService .popularTags a:hover{
+  text-decoration: underline;
+}
+  
+.popularService h2 {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #2e2e2e;
+  text-transform: uppercase;
+}
