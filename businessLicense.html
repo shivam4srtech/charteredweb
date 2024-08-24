@@ -840,7 +840,7 @@
     <!--  -->
     <section class="businessLicense">
         <div class="container">
-            <div class="text-center mb-5">
+            <div class="text-center titleContent mb-5">
                 <h1>
                     Applying for Business Licenses and Permits
                 </h1>
@@ -2458,6 +2458,40 @@
     
     <script src="./js/navbar.js"></script>
     <script src="./js/home.js"></script>
+   <script>
+    // add scroll feature
+            function debounce(func, wait) {
+            let timeout;
+            return function(...args) {
+                clearTimeout(timeout);
+                timeout = setTimeout(() => func.apply(this, args), wait);
+            };
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const titleContent = document.querySelector('.titleContent');
+            const serviceSummary = document.querySelector('.serviceSummary');
+
+            if (titleContent && serviceSummary) {
+                function toggleScroll() {
+                    const titleContentRect = titleContent.getBoundingClientRect();
+                    
+                    if (titleContentRect.bottom <= 0) {
+                        serviceSummary.classList.add('scrollable');
+                    } else {
+                        serviceSummary.classList.remove('scrollable');
+                    }
+                }
+
+                const debouncedToggleScroll = debounce(toggleScroll, 50);
+
+                window.addEventListener('scroll', debouncedToggleScroll);
+
+                toggleScroll();
+            }
+        });
+
+   </script>
     <!-- Load states -->
     <script>
         document.querySelectorAll('.stateContainer').forEach(container => {
@@ -2489,25 +2523,20 @@
     </script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            // Get all table elements in the document
             const tables = document.querySelectorAll('table');
-
-            // Loop through each table element
             tables.forEach((table) => {
-                // Create a new div element
+              
                 const div = document.createElement('div');
-                // Add the class .tableContainer to the div
+              
                 div.className = 'tableContainer';
-                // Insert the div before the table
                 table.parentNode.insertBefore(div, table);
-                // Move the table inside the div
                 div.appendChild(table);
             });
         });
     </script>
     <script>
       document.getElementById('toggleLink').addEventListener('click', function(event) {
-          event.preventDefault(); // Prevent the default anchor behavior
+          event.preventDefault();
 
           var choosePlanSection = document.getElementById('choosePlan');
           if (choosePlanSection.style.display === 'none' || choosePlanSection.style.display === '') {
