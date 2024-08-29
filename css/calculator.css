@@ -1,0 +1,108 @@
+.calcsection{
+    padding: 8rem 0 2rem 0;
+}
+.container{
+    max-width: 1200px;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+.calcsection .clcStrip {
+    display: flex;
+    justify-content: center;
+    padding: .8rem 1rem;
+    line-height: 20px;
+    align-items: center;
+    background: linear-gradient(90.09deg, #f5b402 1.01%, #f2dda9 99.06%);
+    color: #000;
+    font-size: 18px;
+}
+.calcsection .clcStrip a {
+    background-color: #fff;
+    padding:  .6rem;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 1px rgba(64, 60, 67, .16);
+    margin-left: .5rem;
+    color: #000;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: .5px;
+}
+.calcsection .clcStrip strong {
+   font-weight: 600;
+}
+
+@media(max-width:768px){
+    .calcsection .clcStrip {
+        flex-direction: column;
+    }
+    .calcsection .clcStrip strong {
+        display: block;
+        margin-bottom: 1rem;
+        text-align: center;
+        line-height: 1.4;
+     }
+}
+.calcsection h1 {
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 1.8rem;
+    color: #000;
+    line-height: 1.4;
+ }
+
+ .calcsection .calculatorList {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 20px rgba(64, 64, 64, .1);
+    border-radius: 15px;
+    padding:  1rem;
+    background-color: #fbfbfb;
+ }
+
+ .calcsection .calculatorList figure{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+ }
+ .calcsection .calculatorList span{
+   font-weight: 600;
+   color: #2e2e2e;
+   font-size: 1.2rem;
+   margin-bottom: 1rem;
+ }
+ .calcsection .calculatorList p{
+    font-weight: 500;
+    color: #555;
+    line-height: 1.4;
+    font-size: .9rem;
+  }
+  .moreBlack{
+   background-color: #f5b402;
+   border-radius: 50%;
+   padding: .5rem;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   transition: .3s ease-in-out;
+  }
+
+  .calcsection .calculatorList .moreBlack img{
+    border-radius: 50%;
+    object-fit: contain;
+   }
+   .calcsection .calculatorList:hover {
+    background-color: #f5b4023c;
+    transition: .3s ease-in-out;
+ }
+ .calcsection .calculatorList:hover .moreBlack{
+   background-color: #fff;
+ }
+ .calcsection .calculatorList:hover p{
+   color: #000;
+  }

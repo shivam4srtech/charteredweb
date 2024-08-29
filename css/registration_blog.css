@@ -2238,9 +2238,11 @@ ol.process-chart > li:nth-of-type(6n+5):after {
 }
 .businessContent .container .businessSnepet img {
  display: block;
- margin: 1rem auto;
- max-width: 100%;
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+ width: 100%;
  object-fit: contain;
+ max-width: 600px;
 }
 .businessLicense .container .businessSnepet p{
  color: #232323;
@@ -2251,6 +2253,12 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   font-weight: 500;
   font-size: 1.1rem;
   margin-bottom: 1rem;
+}
+.businessContent .container .businessSnepet p b{
+  color: #000;
+  font-weight: 600;
+  margin-right: .5rem;
+  display: inline-block;
 }
 .businessContent .container .businessSnepet ul{
   padding-left: 20px;
@@ -2386,8 +2394,19 @@ ol.process-chart > li:nth-of-type(6n+5):after {
 .businessSnepet table{
   border: 1px solid #e2e2e2;
 }
+.businessSnepet table tr th{
+  border: 1px solid #c1bcbc;
+  font-weight: 600;
+  line-height: 1.4;
+}
 .businessSnepet table tr td{
-  border: 1px solid #e2e2e2;
+  border: 1px solid #c1bcbc;
+  font-weight: 500;
+  line-height: 1.4;
+}
+.businessSnepet table tr:nth-of-type(1) td{
+  font-weight: 600;
+  line-height: 1.4;
 }
 .authorBox{
   margin-bottom: 1rem;
@@ -2713,6 +2732,11 @@ section strong{
     font-size: 1.1rem;
     margin-bottom: 1rem;
   } 
+  .serviceSummary .aboutPlan p span{
+    color: #000;
+    font-weight: 600 !important;
+    margin-right: .5rem;
+  }
   .serviceSummary .servicesIncluded {
     margin-bottom: 1rem;
   }
@@ -2746,20 +2770,20 @@ section strong{
   } 
   .serviceSummary .whoBuy .terms{
    display: flex;
+   align-items: flex-start;
   }
   .serviceSummary .whoBuy .terms img{
     margin-right: 1rem;
-    width: 2.5rem;
-    height: 2.5rem;
     border-radius: 50%;
+    object-fit: contain;
    }
 
    .serviceSummary .whoBuy .terms p{
     color: #472515;
-    line-height: 1.6;
+    line-height: 1.1;
     font-weight: 500;
     font-size: 1.1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
    }
    .serviceSummary .howDone {
    margin-bottom: 1rem;
