@@ -1000,11 +1000,6 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     text-align: center;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
    }
    .customerReview .reviewBox .clientRole{
     color: #4D4D4D;
@@ -1012,24 +1007,13 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     text-align: center;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
    }
    .customerReview .reviewBox .reviewText{
     color: #4D4D4D;
     font-weight: 500;
     font-size: .95rem;
     text-align: left;
-    line-height: 1.4;
-   }
-   .customerReview .reviewBox{
-    color: #4D4D4D;
-    font-weight: 500;
-    font-size: .95rem;
-    text-align: left;
+    font-style: italic;
     line-height: 1.4;
    }
   /* get in touch contact us */
@@ -1447,6 +1431,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
        padding: 2rem .5rem;
    }
 }
+
  /* FAQS */
  .faqs{
     padding: 3rem 0;
@@ -1489,7 +1474,6 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     border: none;
     margin-bottom: 10px;
     border-radius: 5px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
   }
 
@@ -1501,6 +1485,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     font-weight: 600;
     font-size: 1.4rem;
     border-radius: 0;
+    border-bottom: 1px solid #e2e2e2;
   }
 
   .faqs .accordion-header::after {
@@ -1534,17 +1519,12 @@ ol.process-chart > li:nth-of-type(6n+5):after {
    font-weight: 500;
    font-size: 1.1rem;
    margin-bottom: 1rem;
-   line-height: 1.4;
   }
-  .faqs .faqAns p:nth-of-type(1){
-   border-top: 1px solid #e2e2e2;
-   padding-top: 1rem;
-   }
   .faqs .faqAns {
     color: #4D4D4D;
     font-weight: 500;
     font-size: 1.1rem;
-    line-height: 1.4;
+    
    }
   .faqs .faqAns ul{
     padding-left: 15px;
@@ -1980,6 +1960,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
  }
 /* ====================================business License=========================== */
 .businessLicense{
+  /* background: radial-gradient(#fff 0, #fbfbfb 100%); */
   background-color: #fff;
   padding: 6rem 0 0rem 0;
   color: #232323;
@@ -1988,7 +1969,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   max-width: 1500px;
 }
 .businessLicense h1{
- font-weight: 600;
+ font-weight: 700;
  font-size: 3rem;
  margin-bottom: .5rem;
  color: #232323;
@@ -2002,6 +1983,13 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   line-height: 1.4;
  }
 
+ /* .businessLicense .toc ul{
+ max-height: 400px;
+ overflow-y: scroll;
+ margin-bottom: .5rem;
+ position: sticky;
+ top: 0;
+ } */
  .businessLicense .toc ul::-webkit-scrollbar{
   display: none;
   }
@@ -2193,7 +2181,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     width: 100%;
    }
    .businessLicense h1 {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 2rem; 
   }
   .businessLicense .displayReview .reviewItem .excellent {
@@ -2341,11 +2329,9 @@ ol.process-chart > li:nth-of-type(6n+5):after {
 }
 strong{
   font-weight: 600;
-  color: #000;
 }
 b{
   font-weight: 600;
-  color: #000;
 }
 @media(max-width:600px){
   .businessContent .container .businessSnepet h2{
@@ -2803,7 +2789,7 @@ section strong{
   }
   .serviceSummary .aboutPlan p span{
     color: #000;
-    font-weight: 600;
+    font-weight: 600 !important;
     margin-right: .5rem;
   }
   .serviceSummary .servicesIncluded {
@@ -3169,6 +3155,5 @@ margin: auto;
     position: relative; 
   }
 }
-.summaryContent{
-  height: fit-content;
-}
+
+

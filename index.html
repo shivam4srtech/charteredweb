@@ -2054,21 +2054,25 @@
                 <h3 class="title">Contact us</h3>
                 <div class="input-container">
                   <input type="text" name="name" class="input" />
+                  <small class="errorMsg">Hello this is an error msg!</small>
                   <label for="name">First Name</label>
                   <span>First Name</span>
                 </div>
                 <div class="input-container">
                   <input type="text" name="name" class="input" />
+                  <small class="errorMsg"></small>
                   <label for="">Last Name</label>
                   <span>Last Name</span>
                 </div>
                 <div class="input-container">
                   <input type="text" name="phone" class="input" />
+                  <small class="errorMsg"></small>
                   <label for="phone">Phone Number</label>
                   <span>Phone Number</span>
                 </div>
                 <div class="input-container">
                   <input type="email" name="email" class="input" />
+                  <small class="errorMsg"></small>
                   <label for="email">Email</label>
                   <span>Email</span>
                 </div>
@@ -2078,6 +2082,7 @@
                   <span>Message</span>
                 </div>
                 <input type="submit" value="Submit" class="btn" />
+                <small class="errorMsg"></small>
               </form>
             </div>
           </div>
@@ -2703,6 +2708,27 @@
                     anchor.classList.add('active');
                 });
             });
+        });
+    </script>
+    <script>
+        // Contact Us
+        const inputs = document.querySelectorAll(".contactUs .input");
+      
+        function focusFunc() {
+          let parent = this.parentNode;
+          parent.classList.add("focus");
+        }
+      
+        function blurFunc() {
+          let parent = this.parentNode;
+          if (this.value === "") {
+            parent.classList.remove("focus");
+          }
+        }
+      
+        inputs.forEach((input) => {
+          input.addEventListener("focus", focusFunc);
+          input.addEventListener("blur", blurFunc);
         });
     </script>
 </body>

@@ -1448,7 +1448,7 @@ background: #f0f0f0;
  
 .contactUs  .input-container {
    position: relative;
-   margin: 1rem 0;
+   margin: 2.8rem 0 0rem 0;
  }
  
  .contactUs .input {
@@ -1533,7 +1533,7 @@ background: #f0f0f0;
    opacity: 0;
    transition: 0.3s;
    height: 5px;
-   background-color: #1abc9c;
+   background-color: #0452B4;
    top: 50%;
    transform: translateY(-50%);
  }
@@ -1594,7 +1594,7 @@ background: #f0f0f0;
    font-weight: 600;
  }
 .contactUs  .information i {
-   color: #1ABC9C;
+   color: #0452B4;
  }
  
  .contactUs .icon {
@@ -1778,4 +1778,12 @@ background: #f0f0f0;
    .contactUs .container{
        padding: 2rem .5rem;
    }
+}
+.contactUs .errorMsg{
+  color: #c42e36;
+  font-weight: 600;
+  display: block;
+ position: absolute;
+  font-size: .9rem;
+ margin-top: 10px;
 }
