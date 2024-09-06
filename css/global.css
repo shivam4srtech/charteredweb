@@ -588,11 +588,13 @@ ul.navbar-nav{
 	}
 }
 #enquiryModal .modal-content{
-	max-width: 80%;
+    width: 400px;
 	margin: auto;
-	box-shadow: 5px -5px -5px 5px 10px #232323;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 	border-radius: 4px;
 	padding-bottom: 1.4rem;
+	border: none;
+	max-width: 100%;
 }
 #enquiryModal .modal-content label{
 	font-weight: 600;
@@ -610,6 +612,10 @@ ul.navbar-nav{
 	color: #232323;
 	letter-spacing: .5px;
 	padding: 0 .2rem;
+}
+#enquiryModal .modal-content .form-control{
+	box-shadow: none;
+	border-radius: 0;
 }
 #enquiryModal .modal-content label span{
 	padding: 0 .2rem;
@@ -631,7 +637,9 @@ ul.navbar-nav{
 	text-transform: capitalize;
 }
 #enquiryModal .modal-content .btns .sendmsg{
-	background-color: #26ace3;
+	background-color: #f5b402;
+	color: #000;
+	font-weight: 600;
 } 
 
 /*   toglle visibility over hover */
@@ -945,3 +953,12 @@ ul.navbar-nav{
 	border: none;
 }
  
+body.modal-open {
+    overflow: auto !important;
+    padding-right: 0 !important; 
+}
+#enquiryModal.modal.fade.show{
+	padding-right: 0 !important;
+	width: 100%;
+	overflow: hidden;
+}

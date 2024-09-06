@@ -106,3 +106,584 @@ body{
  .calcsection .calculatorList:hover p{
    color: #000;
   }
+  .calcSingle {
+   padding-top: 6rem;
+}
+.calcSingle h1{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.calcSingle .pagedesc{
+    font-weight: 500;
+    color: #2e2e2e;
+    line-height: 1.4;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.calcSingle .formBox{
+    border: 1px solid red;
+    background-color: #fbfbfb;
+    padding: 32px  24px 32px 24px;
+    border-radius: 12px;
+    border: 1px solid #ececf1;
+}
+.calcSingle .formBox .inputBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.6rem;
+}
+.calcSingle .formBox .inputBox label{
+   width: 300px;
+   font-weight: 500;
+   color: #000;
+   letter-spacing: .5px;
+   line-height: 1.5;
+}
+.calcSingle .formBox .inputBox .form-control{
+    box-shadow: none;
+    border-radius: 4px;
+    border: 1px solid #d4d9e1;
+    width: 300px;
+    max-width: 100%;
+    font-weight: 500;
+    height: 45px;
+ }
+ .calcSingle .formBox .inputBox .form-control:focus{
+    border: 1px solid #f5b402;
+ }
+ .calcSingle .formBox .inputBox .form-select{
+    box-shadow: none;
+    border-radius: 4px;
+    border: 1px solid #d4d9e1;
+    width: 300px;
+    max-width: 100%;
+    font-weight: 500;
+    color: #2e2e2e;
+    font-size: .95rem;
+    height: 45px;
+ }
+ .calcSingle .bannerImg img{
+    max-width: 100%;
+ }
+ .calcSingle .formBox .inputBox .form-select:focus{
+    border: 1px solid #f5b402;
+ }
+ .calcBlog{
+    margin-top: 1rem;
+ }
+ .calcBlog h2{
+    font-weight: 600;
+   margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #000;
+    line-height: 1.4;
+ }
+ .calcBlog h3{
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    color: #000;
+    line-height: 1.4;
+ }
+ .calcBlog p{
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #2e2e2e;
+    line-height: 1.4;
+ }
+ b{
+    font-weight: 600;
+    color: #000;
+ }
+ strong{
+    font-weight: 600;
+    color: #000;
+ }
+ .calcBlog ul li{
+    list-style-type: disc;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #2e2e2e;
+    line-height: 1.4;
+ }
+ .calcBlog ul{
+   padding-left: 20px;
+ }
+ .calcBlog ol li{
+    list-style-type: decimal;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: #2e2e2e;
+    line-height: 1.4;
+ }
+ .calcBlog ol {
+   padding-left: 20px;
+ }
+ .fileItrsnippet{
+    padding-top: 1rem;
+ }
+ .fileItrsnippet .snippet{
+    margin: auto;
+    width: 920px;
+    background: #fbfbfb;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 30px;
+    padding: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+ }
+ .fileItrsnippet .snippet h2{
+    font-size: 42px;
+    font-weight: 600;
+    color: #0c2343;
+    margin: 0 0 18px 0;
+    line-height: 48px;
+ }
+ .fileItrsnippet .snippet p{
+    line-height: 23px;
+    font-size: 16px;
+    margin-bottom: 52px;
+    font-weight: 500;
+ }
+ .fileItrsnippet .snippet a{
+    background-color: #f5b402;
+    color: #2e2e2e;
+    border-radius: 8px;
+    padding: 1.5rem 6rem;
+    font-size: 18px;
+    border: none;
+    line-height: 19px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+ }
+ .fileItrsnippet .snippet a img{
+   margin-left: .5rem;
+   object-fit: contain;
+   max-width: 100%;
+ }
+ .fileItrsnippet .snippet .fileImg{
+    margin-left: .5rem;
+  }
+  @media(max-width:768px){
+    .fileItrsnippet .snippet{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     }
+     .fileItrsnippet .snippet .fileImg{
+        margin-left: 0;
+        margin-bottom: 1rem;
+     } 
+     .fileItrsnippet .snippet .fileImg img{
+      max-height: 200px;
+     } 
+     .fileItrsnippet .snippet a{
+        padding: 1rem 1.5rem;
+    }
+    .fileItrsnippet .snippet h2{
+        font-size: 32px;
+        line-height: 1.4;
+     }
+     .fileItrsnippet .snippet{
+       padding: 30px;
+     }
+  }
+  /* FAQs */
+  .faqs{
+    padding: 3rem 0;
+    background-color: #fff;
+    position: relative;
+ }
+ .faqs .sectionPara{
+    font-weight: 500;
+    color: #2e2e2e;
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-right: 20px;
+ }
+ .faqs h2{
+   font-weight: 600;
+   color: #2e2e2e;
+   font-size: 2rem;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-bottom: 1rem;
+ }
+
+ @media(max-width:600px){
+    .faqs .container{
+      padding: 0;
+  }
+ }
+
+ .faqs .accordion {
+    margin: 20px;
+  }
+
+  .faqs .accordion-item {
+    border: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  }
+
+  .faqs .accordion-header {
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 1.4rem;
+    border-radius: 0;
+  }
+
+  .faqs .accordion-header::after {
+    content: '+';
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s, content 0.2s;
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .faqs .accordion-header.active::after {
+    content: '-';
+    transform: translateY(-50%) rotate(180deg);
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .faqs .accordion-content {
+    height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: height 0.5s ease-out, padding 0.5s ease-out;
+  }
+
+  .faqs .faqAns p{
+   color: #4D4D4D;
+   font-weight: 500;
+   font-size: 1.1rem;
+   margin-bottom: 1rem;
+   line-height: 1.4;
+  }
+  .faqs .faqAns p:nth-of-type(1){
+   border-top: 1px solid #e2e2e2;
+   padding-top: 1rem;
+   }
+  .faqs .faqAns {
+    color: #4D4D4D;
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 1.4;
+   }
+  .faqs .faqAns ul{
+    padding-left: 15px;
+   }
+   .faqs .faqAns ul li{
+    color: #4D4D4D;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    list-style-type: disc;
+   }
+   .faqs .faqAns ol{
+    padding-left: 15px;
+   }
+   .faqs .faqAns ol li{
+    color: #4D4D4D;
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    list-style-type: decimal;
+   }
+  .faqs .faqAns .additionalPadding{
+    padding-bottom: 2rem;
+  }
+  /* waving baloon */
+  .baloonBox {
+    position: relative;
+    display: inline-block;
+}
+
+.baloonBox img {
+    display: block;
+    animation: wave 3s ease-in-out infinite;
+    position: relative;
+    width: 100px;
+    object-fit: contain;
+}
+
+@keyframes wave {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.faqs .baloonBox{
+    position: absolute;
+    bottom: 0;
+    z-index: 99;
+}
+.faqs .baloonBox:nth-of-type(1){
+   left: 0;
+   padding-left: 1rem;
+}
+.faqs .baloonBox:nth-of-type(2){
+    right: 0;
+    padding-right: 1rem;
+ }
+
+
+ /* ========blog===== */
+ 
+ .businessContent{
+   padding: 1rem 0;
+  }
+  .businessContent .container{
+  max-width: 1500px;
+  }
+ 
+  .businessContent .container .contentIndex{
+   max-height: 100vh;
+   overflow-y: auto;
+   }
+   @media(min-width:991px){
+     .businessContent .container .contentIndex{ 
+      position: sticky;
+      top: 10px;
+   }
+ }
+ 
+   .businessContent .container .contentIndex::-webkit-scrollbar{
+     display: none;
+     }
+   .businessContent .container .contentIndexHeading{
+     font-weight: 600;
+     color: #2e2e2e;
+     margin-bottom: 1rem;
+     font-size: 1.4rem;
+   }
+ 
+   .businessContent .container .contentIndex .tableOfContent ul li{
+     margin-bottom: 1rem;
+     padding-bottom: .5rem;
+     border-bottom: 1px solid #e2e2e2;
+   }
+   .businessContent .container .contentIndex .tableOfContent ul li a{
+     font-size: 1rem;
+     color: rgb(49, 66, 89);
+     font-weight: 500;
+     display: -webkit-box;
+     line-clamp: 1;
+     -webkit-line-clamp: 1;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+   }
+   .businessContent .container .businessSnepet{
+     background-color: #fff;
+     border-radius: 16px;
+     padding: 24px 18px !important;
+     box-shadow: 0 4px 16px 2px rgba(0, 0, 0, .12);
+     margin-bottom: .5rem;
+ }
+ .businessLicense .container .businessSnepet {
+   background-color: #fafafa;
+   border-radius: 16px;
+   padding: 24px 18px !important;
+   box-shadow: 0 4px 16px 2px rgba(0, 0, 0, .12);
+   margin-bottom: .5rem;
+ }
+ .businessContent .container .businessSnepet img {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  object-fit: contain;
+  max-width: 600px;
+ }
+ .businessLicense .container .businessSnepet p{
+  color: #232323;
+ }
+ .businessContent .container .businessSnepet p{
+   color: #472515;
+   line-height: 1.6;
+   font-weight: 500;
+   font-size: 1.1rem;
+   margin-bottom: 1rem;
+ }
+ .businessContent .container .businessSnepet p b{
+   color: #000;
+   font-weight: 600;
+   margin-right: .5rem;
+   display: inline-block;
+ }
+ .businessContent .container .businessSnepet ul{
+   padding-left: 20px;
+ }
+ .businessContent .container .businessSnepet ul li {
+   color: #472515;
+   line-height: 1.6;
+   font-weight: 500;
+   font-size: 1.1rem;
+   margin-bottom: .5rem;
+   list-style-type: disc;
+ }
+ .businessContent .container .businessSnepet ol{
+   padding-left: 20px;
+ }
+ .businessContent .container .businessSnepet ol li {
+   color: #472515;
+   line-height: 1.6;
+   font-weight: 500;
+   font-size: 1.1rem;
+   margin-bottom: .5rem;
+   list-style-type: decimal;
+ }
+ .businessContent .container .businessSnepet ul li a{
+   color: #002FCF;
+ }
+ .businessContent .container .businessSnepet p a{
+   color: #002FCF;
+   display: inline-block;
+ }
+ .businessContent .container .businessSnepet h2{
+   color: #314259;
+   line-height: 1.6;
+   font-weight: 600;
+   font-size: 2rem;
+   margin-bottom: 1rem;
+ }
+ .businessContent .container .businessSnepet h3{
+   color: #314259;
+   line-height: 1.6;
+   font-weight: 600;
+   font-size: 1.4rem;
+   margin-bottom: 1rem;
+ }
+ strong{
+   font-weight: 600;
+   color: #000;
+ }
+ b{
+   font-weight: 600;
+   color: #000;
+ }
+ @media(max-width:600px){
+   .businessContent .container .businessSnepet h2{
+     font-size: 1.4rem;
+   }
+   .businessContent .container .businessSnepet h3{
+     font-size: 1.2rem;
+   }
+   .businessContent .container .businessSnepet ol li {
+     font-size: 1rem;
+   }
+   .businessContent .container .businessSnepet ul li {
+     font-size: 1rem;
+   }
+   .businessContent .container .businessSnepet p{
+     font-size: 1rem;
+   }
+ }
+ .businessContent .contentIndex .tableOfContent .startBtn{
+  text-align: center;
+  }
+  .businessContent .contentIndex .tableOfContent .startBtn button{
+   border: 2px solid transparent;
+   border-radius: 5px;
+   cursor: pointer;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   transition-duration: .4s;
+   font-weight: 600;
+   background-color: #f5b402;
+   width: 90%;
+   outline: none;
+   font-size: 1rem;
+  }
+  .businessContent .docSample h2 {
+   text-align: left;
+   font-weight: 600;
+   margin: auto;
+   font-size: 1.8rem;
+   color: #2e2e2e;
+   margin-bottom: 2rem;
+ }
+ .businessContent .docSample .docName {
+   text-align: center;
+   margin-bottom: 1rem;
+ }
+ .businessContent .docSample .docName span {
+   font-weight: 600;
+     color: #2e2e2e;
+     font-size: 1.2rem;
+     display: inline-block;
+     padding: .4rem 1rem;
+     letter-spacing: .5px;
+     box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+ }
+ .businessContent .docSample .imgBox {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .businessContent .docSample img {
+   max-width: 100%;
+   object-fit: contain;
+   max-height: 300px;
+ }
+   
+ .businessSnepet strong{
+   font-weight: 700;
+ }
+ .businessSnepet table{
+   border: 1px solid #e2e2e2;
+ }
+ .businessSnepet table tr th{
+   border: 1px solid #c1bcbc;
+   font-weight: 600;
+   line-height: 1.4;
+ }
+ .businessSnepet table tr td{
+   border: 1px solid #c1bcbc;
+   font-weight: 500;
+   line-height: 1.4;
+ }
+ .businessSnepet table tr:nth-of-type(1) td{
+   font-weight: 600;
+   line-height: 1.4;
+ }
+ section strong{
+   font-weight: 700;
+ }
+ .tableContainer{
+   overflow-x: auto;
+   margin-bottom: 1rem;
+ }
+@media(min-width:991px){
+   .xpadding{
+      padding-left: 3rem;
+   }
+}
+ 
