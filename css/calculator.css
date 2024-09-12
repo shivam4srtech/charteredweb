@@ -225,7 +225,7 @@ body{
    padding-left: 20px;
  }
  .fileItrsnippet{
-    padding-top: 1rem;
+    padding: 2rem 0;
  }
  .fileItrsnippet .snippet{
     margin: auto;
@@ -299,121 +299,126 @@ body{
      }
   }
   /* FAQs */
-  .faqs{
-    padding: 3rem 0;
-    background-color: #fff;
-    position: relative;
+ .faqs{
+  padding: 3rem 0;
+  background-color: #fff;
+}
+.faqs .sectionPara{
+  font-weight: 500;
+  color: #2e2e2e;
+  font-size: 1rem;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.faqs h2{
+  color: #000;
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  margin-left: 1.5rem
+}
+.faqs .container{
+  max-width: 1500px;
+}
+@media(max-width:600px){
+  .faqs .container{
+    padding: 0;
+}
+}
+#faqs {
+padding: 1rem 0;
+}
+#faqs .container{
+max-width: 1500px;
+}
+.faqs .accordion {
+  margin: 20px;
+}
+
+.faqs .accordion-item {
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.faqs .accordion-header {
+  padding: 15px;
+  cursor: pointer;
+  position: relative;
+  background-color: #fff;
+  font-weight: 600;
+  font-size: 1.3rem;
+  border-radius: 0;
+}
+
+.faqs .accordion-header::after {
+  content: '+';
+  font-size: 20px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.2s, content 0.2s;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.faqs .accordion-header.active::after {
+  content: '-';
+  transform: translateY(-50%) rotate(180deg);
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.faqs .accordion-content {
+  height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  transition: height 0.5s ease-out, padding 0.5s ease-out;
+}
+
+.faqs .faqAns p{
+ color: #4D4D4D;
+ font-weight: 500;
+ font-size: .95rem;
+ margin-bottom: 1rem;
+ line-height: 1.4;
+}
+.faqs .faqAns p:nth-of-type(1){
+ border-top: 1px solid #e2e2e2;
+ padding-top: 1rem;
  }
- .faqs .sectionPara{
-    font-weight: 500;
-    color: #2e2e2e;
-    font-size: 1rem;
-    margin-left: 20px;
-    margin-right: 20px;
+.faqs .faqAns {
+  color: #4D4D4D;
+  font-weight: 500;
+  font-size: .95rem;
+  line-height: 1.4;
  }
- .faqs h2{
-   font-weight: 600;
-   color: #2e2e2e;
-   font-size: 2rem;
-   margin-left: 20px;
-   margin-right: 20px;
-   margin-bottom: 1rem;
+.faqs .faqAns ul{
+  padding-left: 15px;
  }
-
- @media(max-width:600px){
-    .faqs .container{
-      padding: 0;
-  }
+ .faqs .faqAns ul li{
+  color: #4D4D4D;
+  font-weight: 500;
+  font-size: .95rem;
+  margin-bottom: 1rem;
+  list-style-type: disc;
  }
-
- .faqs .accordion {
-    margin: 20px;
-  }
-
-  .faqs .accordion-item {
-    border: none;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-
-  }
-
-  .faqs .accordion-header {
-    padding: 15px;
-    cursor: pointer;
-    position: relative;
-    background-color: #fff;
-    font-weight: 600;
-    font-size: 1.4rem;
-    border-radius: 0;
-  }
-
-  .faqs .accordion-header::after {
-    content: '+';
-    font-size: 20px;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: transform 0.2s, content 0.2s;
-    font-weight: 600;
-    font-size: 2rem;
-  }
-
-  .faqs .accordion-header.active::after {
-    content: '-';
-    transform: translateY(-50%) rotate(180deg);
-    font-weight: 600;
-    font-size: 2rem;
-  }
-
-  .faqs .accordion-content {
-    height: 0;
-    overflow: hidden;
-    padding: 0 15px;
-    transition: height 0.5s ease-out, padding 0.5s ease-out;
-  }
-
-  .faqs .faqAns p{
-   color: #4D4D4D;
-   font-weight: 500;
-   font-size: 1.1rem;
-   margin-bottom: 1rem;
-   line-height: 1.4;
-  }
-  .faqs .faqAns p:nth-of-type(1){
-   border-top: 1px solid #e2e2e2;
-   padding-top: 1rem;
-   }
-  .faqs .faqAns {
-    color: #4D4D4D;
-    font-weight: 500;
-    font-size: 1.1rem;
-    line-height: 1.4;
-   }
-  .faqs .faqAns ul{
-    padding-left: 15px;
-   }
-   .faqs .faqAns ul li{
-    color: #4D4D4D;
-    font-weight: 500;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    list-style-type: disc;
-   }
-   .faqs .faqAns ol{
-    padding-left: 15px;
-   }
-   .faqs .faqAns ol li{
-    color: #4D4D4D;
-    font-weight: 500;
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    list-style-type: decimal;
-   }
-  .faqs .faqAns .additionalPadding{
-    padding-bottom: 2rem;
-  }
+ .faqs .faqAns ol{
+  padding-left: 15px;
+ }
+ .faqs .faqAns ol li{
+  color: #4D4D4D;
+  font-weight: 500;
+  font-size: .95rem;
+  margin-bottom: 1rem;
+  list-style-type: decimal;
+ }
+.faqs .faqAns .additionalPadding{
+  padding-bottom: 2rem;
+}
   /* waving baloon */
   .baloonBox {
     position: relative;
@@ -687,3 +692,22 @@ body{
    }
 }
  
+.formBox .finalResult{
+    color: #04a96d;
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-size: 1.1rem;
+}
+.alert-danger{
+  color: #d04954;
+  font-weight: 500;
+  font-size: .9rem;
+  padding: .5rem;
+}
+.formBox .alert-danger button{
+  color: #d04954;
+  box-shadow: none;
+  padding: .5rem;
+  top: 3px;
+
+}

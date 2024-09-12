@@ -16,16 +16,16 @@
     <!-- *******************Fontawesome***************************** -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ***********************Bootstrap CSS******************************* -->
-    <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <!-- ******************Local Stylesheet************************* -->
-    <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/calculator.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/calculator.css">
 </head>
 <body>
     <!-- ==============================Navbar======================================= -->
     <nav class="autohide customeNav fixed-top">
         <div class="wrapper">
-          <div class="logo"><a href="/"><img src="./images/charteredOne-com-logo.png" alt=""></a></div>
+          <div class="logo"><a href="/"><img src="../images/charteredOne-com-logo.png" alt=""></a></div>
           <input type="radio" name="slider" id="menu-btn">
           <input type="radio" name="slider" id="close-btn">
           <ul class="nav-links">
@@ -39,11 +39,11 @@
                     <div class="row serviceBox">
                       <aside class="col-lg-3 md-12 p-4 pt-0">
                           <nav class="d-flex flex-column">
-                              <a href="#" class="toggle-menuItem active" data-target="companyMenu"> <img src="./images/company.svg" width="40" height="40" alt="">Company</a>
-                              <a href="#" class="toggle-menuItem" data-target="blogMenu"> <img src="./images/blogs.svg" width="40" height="40" alt="">Blogs</a>
-                              <a href="#" class="toggle-menuItem" data-target="podcostMenu"><img src="./images/podcast.svg" width="40" height="40" alt="">Podcost</a>
-                              <a href="#" class="toggle-menuItem" data-target="mediaMenu"><img src="./images/media.svg" width="40" height="40" alt="">Media</a>
-                              <a href="#" class="toggle-menuItem" data-target="careerMenu"><img src="./images/career.svg" width="40" height="40" alt="">Career</a>
+                              <a href="#" class="toggle-menuItem active" data-target="companyMenu"> <img src="../images/company.svg" width="40" height="40" alt="">Company</a>
+                              <a href="#" class="toggle-menuItem" data-target="blogMenu"> <img src="../images/blogs.svg" width="40" height="40" alt="">Blogs</a>
+                              <a href="#" class="toggle-menuItem" data-target="podcostMenu"><img src="../images/podcast.svg" width="40" height="40" alt="">Podcost</a>
+                              <a href="#" class="toggle-menuItem" data-target="mediaMenu"><img src="../images/media.svg" width="40" height="40" alt="">Media</a>
+                              <a href="#" class="toggle-menuItem" data-target="careerMenu"><img src="../images/career.svg" width="40" height="40" alt="">Career</a>
                           </nav>    
                       </aside>
                       <div class="col-lg-9 col-md-12">
@@ -157,7 +157,7 @@
                                         <div class="col-lg-4 mb-3">
                                             <a class="podcostHeader" href="#">
                                                 <div>
-                                                    <img src="./images/podcostImg.webp" alt="">
+                                                    <img src="../images/podcostImg.webp" alt="">
                                                 </div>
                                                 <div class="podcostDescriptin">
                                                     Why zk-Rollups are the Next Big Thing in Ethereum Scaling | EP 15
@@ -847,42 +847,56 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h1>80DD Calculator</h1>
+                    <h1>80U Calculator</h1>
                     <p class="pagedesc">
                         Calculate the tax deduction for disabled dependents using our 80DD calculator. Check out 80DD deductions, how to claim deductions, eligibility & more.
                     </p>
                     <div class="formBox">
                         <form action="NoWhere">
-                           <div class="inputBox">
+                           
+                            <div class="inputBox" id="inputBox1">
                                 <label for="">Financial year</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>2020-2021</option>
+                                <select class="form-select" id="financialYearSelect" aria-label="Default select example">
+                                    <option selected>Select</option>
                                     <option value="1">2020-2021</option>
-                                    <option value="2">2020-2021</option>
-                                    <option value="3">2020-2021</option>
+                                    <option value="2">2021-2022</option>
+                                    <option value="3">2022-2023</option>
+                                    <option value="4">2023-2024</option>
+                                    <option value="4">2024-2025</option>
                                 </select>
-                           </div>
-                           <div class="inputBox">
-                            <label for="">Status</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Residence HUF</option>
-                                <option value="1">Residence HUF</option>
-                                <option value="2">Other</option>
-                            </select>
-                           </div>
-                           <div class="inputBox">
-                            <label for="">Deductions claimed under section 80U <br>  by disabled dependent?</label>
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Yes</option>
-                                <option value="1">No</option>
-                            </select>
-                           </div>
+                            </div>
+                        
+                            <div class="inputBox" id="inputBox2">
+                                <label for="">Status</label>
+                                <select class="form-select" id="statusSelect">
+                                    <option selected>Select</option>
+                                    <option value="1">Residence Individual</option>
+                                    <option value="2">Other</option>
+                                </select>
+                            </div>
+                            
+            
+                            <div class="inputBox" id="inputBox3" style="display: none;">
+                                <label for="">Percentage of disability</label>
+                                <select class="form-select" id="disabilitySelect">
+                                    <option selected>Select</option>
+                                    <option value="1">Normal (40% or more)</option>
+                                    <option value="2">Severe (80% or more)</option>
+                                </select>
+                            </div>
+                            
+                           
+                            <div class="inputBox" id="deductionResult" style="display: none;">
+                                <label for="">Deduction amount</label>
+                                <span id="deductionMessage" class="finalResult"></span>
+                            </div>
                         </form>
                     </div>
+                    
                 </div>
                 <div class="col-md-4">
                    <a href="#" class="bannerImg">
-                     <img src="./images/tax-advisory-services-side-banner.webp" alt="calc">
+                     <img src="../images/tax-advisory-services-side-banner.webp" alt="calc">
                    </a> 
                 </div>
             </div>
@@ -1182,10 +1196,10 @@
                         We provide expert guide also  guaranteed maximum refunds on your income tax returns, with additional expenses from you.
                     </p>
                     
-                    <a href="#">File your ITR <img src="./images/arrow-black.svg" alt="arrow"></a>
+                    <a href="#">File your ITR <img src="../images/arrow-black.svg" alt="arrow"></a>
                </div>
                <div class="fileImg">
-                    <img src="./images/tax-img.svg" alt="tax">
+                    <img src="../images/tax-img.svg" alt="tax">
                </div>
             </div>
         </div>
@@ -1195,11 +1209,11 @@
                 <h1>Make you financial decision more accurate - Use Our Free Online Tax Tools</h1>
                 <div class="row">
                     <div class="col-lg-4 mb-3">
-                        <a href="./calculator.html" class="calculatorList">
+                        <a href="../calculator.html" class="calculatorList">
                             <figure>
                                 <img src="https://tax2win.in/assets-new/img/calculators/more-calc-icon.svg" alt="arrow" width="25">
                                 <i class="moreBlack">
-                                <img src="images/more.svg" alt="" width="16">
+                                <img src="../images/more.svg" alt="more" width="16">
                                 </i>
                             </figure>
                             <span>80DD Calculator</span>
@@ -1213,10 +1227,10 @@
                             <figure>
                                 <img src="https://tax2win.in/assets-new/img/calculators/more-calc-icon.svg" alt="arrow" width="25">
                                 <i class="moreBlack">
-                                <img src="./images/more.svg" alt="" width="16">
+                                <img src="../images/more.svg" alt="" width="16">
                                 </i>
                             </figure>
-                            <span>80DD Calculator</span>
+                            <span>80TTA calculator</span>
                             <p>
                                 If you have disabled dependants in your family, you can claim a deduction of the same from your taxable income. This deduction is available only if the disability is more than 40%.
                             </p>
@@ -1227,7 +1241,7 @@
                             <figure>
                                 <img src="https://tax2win.in/assets-new/img/calculators/more-calc-icon.svg" alt="arrow" width="25">
                                 <i class="moreBlack">
-                                <img src="images/more.svg" alt="" width="16">
+                                <img src="../images/more.svg" alt="" width="16">
                                 </i>
                             </figure>
                             <span>80DD Calculator</span>
@@ -1257,56 +1271,73 @@
             </div>
     </section>
     <section class="faqs">
-        <div class="baloonBox">
-            <img src="./images/baloon-orange.png" alt="baloon">
-        </div>
-        <div class="baloonBox">
-            <img src="./images/baloon-orange.png" alt="baloon">
-        </div>
         <div class="container">
           <h2>FAQs</h2>
           <p class="sectionPara">
             Here are some common questions we receive from our customers.
             If you have any additional questions, please don’t hesitate to contact us.
           </p>
-          <div class="accordion" id="snnipetSeven">
-            
-                        <div class="accordion-item">
-              <div class="accordion-header active">1) What is Food license or FSSAI Registration?</div>
-              <div class="accordion-content faqAns" style="height: 261px;">
-               <p>Food License or FSSAI Registration is a 14-digit code issued by the Food Safety and Standard Authority of India to monitor the quality and safety of food products produced and sold to consumers. All food-related businesses in India must apply for the applicable category of FSSAI License/Registration based on the following parameters:</p><ul><li><b>Type of Activity</b></li><li><b>Turnover</b></li><li><b>Production capacity</b></li></ul>                <div class="additionalPadding"></div>
-              </div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header">How to incorporate a company in Singapore?</div>
+              <div class="accordion-content faqAns collapsed" style="height: 0px;">
+                <p>Incorporating a company in Singapore as a local is a relatively straightforward process. All you need is the following:</p>
+                <ul>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                </ul>
+                <p>Incorporating a company in Singapore as a local is a relatively straightforward process. All you need is the following:</p>
+                <ol>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                
+                <div class="additionalPadding"></div>
+              </ol></div>
             </div>
-                        <div class="accordion-item">
-              <div class="accordion-header active">2) What are the different categories of FSSAI licenses?</div>
-              <div class="accordion-content faqAns" style="height: 81px;">
-               As per 'FSS (Licensing &amp; Registration) Regulations, 2011, FSSAI Licenses and Registrations are granted to FBOs in a 3-tier system i.e. Registration, State license, and Central License.                <div class="additionalPadding"></div>
-              </div>
+            <div class="accordion-item">
+              <div class="accordion-header active">What types of company structures are available for company incorporation in Singapore?</div>
+              <div class="accordion-content faqAns" style="height: 452px;">
+                <p>Incorporating a company in Singapore as a local is a relatively straightforward process. All you need is the following:</p>
+                <ul>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                </ul>
+                <p>Incorporating a company in Singapore as a local is a relatively straightforward process. All you need is the following:</p>
+                <ol>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                
+                <div class="additionalPadding"></div>
+              </ol></div>
             </div>
-                        <div class="accordion-item">
-              <div class="accordion-header active">3) Is it essential to have an FSSAI License or Registration?</div>
-              <div class="accordion-content faqAns" style="height: 180px;">
-               An FSSAI License comprises a 14-digit code issued by the authority under the Food Safety and Standards Act, 2006 to all food business operators in India.
-The primary reason why you must have an FSSAI License if you are in the Food Business in India 
-a) Mandatory Legal Requirement: It is a legal requirement to operate a food business in India as per the Food Safety and Standards Act, 2006 (FSS Act).   
-b) Consumer Safety: This code certifies that the food products are of good quality and free from adulteration, which meets the safety standards set by the government. 
-c) Brand Reputation: The license number will be printed on the label of all food items intended for sale to the general public. It helps build trust with consumers and enhances your brand's credibility.   
-d) Business Growth: An FSSAI license can be a prerequisite for partnerships, contracts, and government tenders.                <div class="additionalPadding"></div>
-              </div>
+            <div class="accordion-item">
+              <div class="accordion-header active">Why should you incorporate a Singapore Private Limited company?</div>
+              <div class="accordion-content faqAns" style="height: 452px;">
+                <p>Incorporating a company in Singapore as a local is a relatively straightforward process. All you need is the following:</p>
+                <ul>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                </ul>
+                <p>Incorporating a company in Singapore as a local is a relatively straightforward process. All you need is the following:</p>
+                <ol>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                  <li>At least S$1 paid up capital</li>
+                  <li>Local company secretary</li>
+                
+                <div class="additionalPadding"></div>
+              </ol></div>
             </div>
-                        <div class="accordion-item">
-              <div class="accordion-header active">4) Is it required to submit an annual return and any penalty due to delay when applying for license renewal?</div>
-              <div class="accordion-content faqAns" style="height: 131px;">
-               FBOs must pay the penalty levied due to delay in submission of Annual Returns [subject to a maximum penalty imposed shall not exceed 5 times the annual license fee] before applying for the renewal of their licenses. Non-submission of annual returns beyond 31st May of every year will attract a late fee of Rs. 100 per day till the date of submission of the annual return. Annual Returns penalty shall be submitted online by the FBOs on the FoSCoS portal w.e.f. FY 2020-2021.                <div class="additionalPadding"></div>
-              </div>
-            </div>
-                        <div class="accordion-item">
-              <div class="accordion-header active">5) What is the maximum period for which FSSAI License/Registration can be applied?</div>
-              <div class="accordion-content faqAns" style="height: 81px;">
-               FSSAI license can be applied for or renewed for 1 year up to a maximum of 5 years at a time. renewal has to be filed not later than 30 days prior to the expiry of License to avoid the late fee for renewal of the License.                <div class="additionalPadding"></div>
-              </div>
-            </div>
-                        
           </div>
         </div>
     </section>
@@ -1399,44 +1430,131 @@ d) Business Growth: An FSSAI license can be a prerequisite for partnerships, con
         </div>
     </div>
     <!-- ==========================Local Script================================ -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer" defer async>
+    </script>
+    <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
     
-    <script src="./js/navbar.js"></script>
-    <script src="./js/home.js"></script>
-    <!-- FAQs -->
+    <script src="../js/navbar.js"></script>
+    <!-- faqs -->
     <script>
         $(document).ready(function() {
-            function adjustAccordionHeight() {
-                $(".accordion-header").each(function() {
-                    var content = $(this).next(".accordion-content");
-                    if ($(this).hasClass("active")) {
-                        content.css({
-                            "height": content[0].scrollHeight + "px",
-                            "padding-top": "15px",
-                            "padding-bottom": "15px"
-                        });
-                    } else {
-                        content.css({
-                            "height": 0,
-                            "padding-top": 0,
-                            "padding-bottom": 0
-                        });
-                    }
-                });
+          function toggleAccordion(header) {
+            $(header).toggleClass("active");
+            var content = $(header).next(".accordion-content");
+      
+            if ($(header).hasClass("active")) {
+              content.removeClass("collapsed").css({
+                'height': content.prop('scrollHeight') + 'px' 
+              });
+            } else {
+              content.addClass("collapsed").css({
+                'height': '0' 
+              });
             }
-    
-            $(".accordion-header").click(function() {
-                $(this).toggleClass("active");
-                adjustAccordionHeight();
+          }
+      
+         
+          $(".accordion-header").click(function() {
+            toggleAccordion(this);
+          });
+      
+         
+          $(".accordion-header").each(function() {
+            $(this).addClass("active");
+            var content = $(this).next(".accordion-content");
+            content.removeClass("collapsed").css({
+              'height': content.prop('scrollHeight') + 'px' 
             });
-    
-            $(window).resize(function() {
-                adjustAccordionHeight();
-            });
-            adjustAccordionHeight();
+          });
         });
     </script>
+<!-- calculator -->
+<script>
+    // 80U Calculator
+    function showBootstrapAlert(message, iconUrl) {
+        const existingAlert = document.querySelector('.alert');
+        if (existingAlert) {
+            existingAlert.remove();
+        }
+        
+        const alertBox = document.createElement('div');
+        alertBox.className = 'alert alert-danger alert-dismissible fade show';
+        alertBox.role = 'alert';
+        alertBox.innerHTML = `
+            <div style="display: flex; align-items: center;">
+                <img src="${iconUrl}" alt="Alert Icon" style="width: 16px; height: 16px; margin-right: 8px;">
+                <span>${message}</span>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>`;
+        
+        const formBox = document.querySelector('.formBox');
+        formBox.insertBefore(alertBox, formBox.firstChild);
+        
+        setTimeout(() => {
+            alertBox.remove();
+        }, 5000);
+    }
+
+    function resetForm() {
+        const statusSelect = document.getElementById('statusSelect');
+        const disabilitySelect = document.getElementById('disabilitySelect');
+        
+        statusSelect.selectedIndex = 0;
+        disabilitySelect.selectedIndex = 0;
+        
+
+        document.getElementById('inputBox3').style.display = 'none';
+        document.getElementById('deductionResult').style.display = 'none';
+        
+
+        const existingAlert = document.querySelector('.alert');
+        if (existingAlert) {
+            existingAlert.remove();
+        }
+    }
+
+    function handleStatusChange() {
+        const statusSelect = document.getElementById('statusSelect');
+        const inputBox3 = document.getElementById('inputBox3');
+        const deductionResult = document.getElementById('deductionResult');
+
+        const statusValue = statusSelect.value;
+        
+        if (statusValue === '2') { 
+            showBootstrapAlert('Deduction can only be claimed by resident Indians and not NRIs', '../images/alertIcon.svg');
+            inputBox3.style.display = 'none';
+            deductionResult.style.display = 'none';
+        } else if (statusValue === '1') { 
+            inputBox3.style.display = 'flex';
+            deductionResult.style.display = 'none';
+        }
+    }
+    document.getElementById('statusSelect').addEventListener('change', handleStatusChange);
+    function handleDisabilityChange() {
+        const disabilitySelect = document.getElementById('disabilitySelect');
+        const deductionMessage = document.getElementById('deductionMessage');
+        const deductionResult = document.getElementById('deductionResult');
+
+        const disabilityValue = disabilitySelect.value;
+        
+        if (disabilityValue === '1') {
+            deductionMessage.textContent = '₹ 75,000';
+        } else if (disabilityValue === '2') {
+            deductionMessage.textContent = '₹ 1,25,000';
+        }
+
+        deductionResult.style.display = 'flex';
+    }
+    document.getElementById('disabilitySelect').addEventListener('change', handleDisabilityChange);
+
+
+    document.getElementById('financialYearSelect').addEventListener('change', function() {
+        if (this.value !== 'Select') {
+            resetForm();
+        }
+    });
+</script>
     
 </body>
 </html>
