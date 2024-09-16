@@ -21,37 +21,45 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/calculator.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript">
-  google.charts.load('current', {'packages':['corechart']});
-  google.charts.setOnLoadCallback(drawChart);
+    <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
 
-  var chart;
-  var data;
-  var options = {
-    title: 'Principal Amount vs Total Interest'
-  };
+    var chart;
+    var data;
+    var options = {
+        title: 'Principal Amount vs Total Interest'
+    };
 
-  function drawChart() {
-    data = new google.visualization.DataTable();
-    data.addColumn('string', 'Key');
-    data.addColumn('number', 'Value');
-    data.addRows([
-      ['Principal Amount', 0],
-      ['Total Interest', 0]
-    ]);
+    function drawChart() {
+        data = new google.visualization.DataTable();
+        data.addColumn('string', 'Category');
+        data.addColumn('number', 'Amount');
+        data.addRows([
+            ['Principal Amount', 0],
+            ['Total Interest', 0]
+        ]);
 
-    chart = new google.visualization.PieChart(document.getElementById('piechart'));
-    chart.draw(data, options);
-  }
-
-  function updateChart(principalAmount, totalInterest) {
-    if (chart) {
-      data.setValue(0, 1, principalAmount);
-      data.setValue(1, 1, totalInterest);
-      chart.draw(data, options);
+        chart = new google.visualization.PieChart(document.getElementById('piechart'));
+        chart.draw(data, options);
     }
-  }
-</script>
+
+    function updateChart(principalAmount, totalInterest) {
+        if (chart) {
+            data.setValue(0, 1, principalAmount);
+            data.setValue(1, 1, totalInterest);
+            chart.draw(data, options);
+        }
+    }
+
+    // Example usage: Update chart with sample data
+    function exampleUsage() {
+        updateChart(5000, 1500);  // Replace these values with actual data
+    }
+
+    // Call exampleUsage to demonstrate chart update
+    google.charts.setOnLoadCallback(exampleUsage);
+    </script>
 
     
 </head>
@@ -881,59 +889,54 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h1>Simple Interest Calculator </h1>
+                    <h1>Compound Interest Calculator</h1>
                     <p class="pagedesc">
                         Calculate the tax deduction for disabled dependents using our 80DD calculator. Check out 80DD deductions, how to claim deductions, eligibility & more.
                     </p>
                     <div class="formBox row">
-                        <form action="NoWhere" class="col-lg-8">
+                        <form action="NoWhere" class="col-lg-12">
                             <div class="inputBox" id="inputBox1">
-                                <label for="">Principle Amount (₹)</label>
-                                <input type="text" class="form-control">
+                                <label for="principalInput">Principal Amount (₹)</label>
+                                <input type="text" id="principalInput" class="form-control" placeholder="Enter amount">
                             </div>
                             <div class="inputBox" id="inputBox2">
-                                <label for="">Rate of interest (%)</label>
-                                <input type="text" class="form-control">
+                                <label for="rateInput">Rate of Interest (%)</label>
+                                <input type="text" id="rateInput" class="form-control" placeholder="Enter rate">
                             </div>
-                    
                             <div class="inputBox" id="inputBox3">
-                                <label for="">Period unit</label>
-                                <select class="form-select" id="statusSelect">
-                                    <option selected>Select</option>
-                                    <option value="1">Day</option>
-                                    <option value="2">Week</option>
-                                    <option value="3">Month</option>
+                                <label for="frequencySelect">Compounding Frequency</label>
+                                <select class="form-select" id="frequencySelect">
+                                    <option value="" selected>Select</option>
+                                    <option value="365">Day</option>
+                                    <option value="52">Week</option>
+                                    <option value="12">Month</option>
                                     <option value="4">Quarter</option>
-                                    <option value="5">Year</option>
+                                    <option value="1">Year</option>
                                 </select>
                             </div>
-                    
                             <div class="inputBox" id="inputBox4">
-                                <label for="">Duration</label>
-                                <input type="text" class="form-control" disabled>
+                                <label for="durationInput">Duration (Years)</label>
+                                <input type="text" id="durationInput" class="form-control disabled-field" placeholder="Enter duration" disabled>
                             </div>
-                    
-                            <!-- Results-->
+                            <!-- Results -->
                             <div class="inputBox">
-                                <label for="">Principal Amount</label>
+                                <label for="periodicalRate">Periodical Rate of Interest</label>
+                                <span id="periodicalRate" class="finalResult"></span>
+                            </div>
+                            <div class="inputBox">
+                                <label for="principalMessage">Principal Amount</label>
                                 <span id="principalMessage" class="finalResult"></span>
                             </div>
                             <div class="inputBox">
-                                <label for="">Total Interest</label>
+                                <label for="interestMessage">Total Interest</label>
                                 <span id="interestMessage" class="finalResult"></span>
                             </div>
                             <div class="inputBox">
-                                <label for="">Total Value</label>
+                                <label for="totalMessage">Total Value</label>
                                 <span id="totalMessage" class="finalResult"></span>
                             </div>
                         </form>
-                       <div class="col-lg-4 gChart">
-                            <div id="piechart"></div>
-                       </div>                       
                     </div>
-                      
-                    
-                    
                 </div>
                 <div class="col-md-4">
                    <a href="#" class="bannerImg">
@@ -1512,115 +1515,81 @@
     </script>
     <!-- calculator -->
     <script>
-        const formatWithCommas = (num) => num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    
-        const convertToYears = (unit, duration) => {
-            switch (unit) {
-                case '1': 
-                    return duration / 365;
-                case '2': 
-                    return duration / 52;
-                case '3': 
-                    return duration / 12;
-                case '4': 
-                    return duration / 4;
-                case '5': 
-                    return duration;
-                default:
-                    return 0; 
-            }
-        };
-    
-        const updateResults = () => {
-            const principalInput = document.querySelector('#inputBox1 input');
-            const rateInput = document.querySelector('#inputBox2 input');
-            const durationInput = document.querySelector('#inputBox4 input');
-      
-            let principalAmount = parseFloat(principalInput.value.replace(/,/g, '')) || 0;
-            let rateOfInterest = parseFloat(rateInput.value) || 0;
-            const periodUnit = document.getElementById('statusSelect').value;
-            let duration = parseFloat(durationInput.value) || 0;
-    
-            if (principalAmount > 100000000) {
-                principalAmount = 100000000;
-                principalInput.value = formatWithCommas(principalAmount); 
-            }
-      
-            if (rateOfInterest > 50) {
-                rateOfInterest = 50;
-                rateInput.value = rateOfInterest; 
-            }
-      
-            document.querySelector('#principalMessage').textContent = `₹ ${formatWithCommas(principalAmount)}`;
-      
-            if (principalAmount && rateOfInterest && periodUnit !== 'Select' && duration) {
-                const durationInYears = convertToYears(periodUnit, duration);
-                const simpleInterest = (principalAmount * rateOfInterest * durationInYears) / 100;
-                const totalValue = principalAmount + simpleInterest;
-      
-                document.querySelector('#interestMessage').textContent = `₹ ${formatWithCommas(simpleInterest.toFixed(2))}`;
-                document.querySelector('#totalMessage').textContent = `₹ ${formatWithCommas(totalValue.toFixed(2))}`;
-      
-                updateChart(principalAmount, simpleInterest);
-            } else {
-                document.querySelector('#interestMessage').textContent = '';
-                document.querySelector('#totalMessage').textContent = '';
-      
-                updateChart(0, 0);
-            }
-        };
-      
-        const initializeDefaultValues = () => {
-            const principalInput = document.querySelector('#inputBox1 input');
-            const rateInput = document.querySelector('#inputBox2 input');
-      
-            principalInput.value = formatWithCommas(0); 
-            rateInput.value = 1; 
-            updateResults(); 
-        };
-      
-       
-        document.getElementById('statusSelect').addEventListener('change', function () {
-            const periodUnit = this.value;
-            const durationInput = document.querySelector('#inputBox4 input');
-      
-            if (periodUnit !== 'Select') {
-                durationInput.disabled = false;
-            } else {
-                durationInput.disabled = true; 
-                durationInput.value = ''; 
-            }
-      
-            updateResults(); 
-        });
-      
-        document.querySelectorAll('.form-control').forEach(input => {
-            input.addEventListener('input', function () {
+        document.addEventListener('DOMContentLoaded', function() {
+            function calculateCompoundInterest(principal, rate, frequency, time) {
                 
-                this.value = this.value.replace(/[^0-9.]/g, '');
-
-                this.value = formatWithCommas(this.value);
-
-                updateResults();
-            });
-          
-            input.addEventListener('keypress', function (e) {
-                const principalInput = document.querySelector('#inputBox1 input');
-                const rateInput = document.querySelector('#inputBox2 input');
-      
+                const periodRate = rate / 100 / frequency;
+                
+                const n = frequency * time;
                
-                if (this === principalInput && parseFloat(this.value.replace(/,/g, '')) >= 100000000) {
-                    e.preventDefault();
+                const amount = principal * Math.pow((1 + periodRate), n);
+                const interest = amount - principal;
+                return {
+                    periodicalRate: periodRate * 100,
+                    principal: principal,
+                    totalInterest: interest,
+                    totalValue: amount
+                };
+            }
+
+           
+            function checkInputs() {
+                const principal = document.querySelector('#principalInput').value.trim();
+                const rate = document.querySelector('#rateInput').value.trim();
+                const frequency = document.querySelector('#frequencySelect').value;
+                const isValid = !isNaN(principal) && !isNaN(rate) && frequency !== '' && parseFloat(principal) > 0 && parseFloat(rate) > 0;
+
+                document.querySelector('#durationInput').disabled = !isValid;
+                if (!isValid) {
+                    document.querySelector('#durationInput').value = '';
                 }
-      
-                if (this === rateInput && parseFloat(this.value) >= 50) {
-                    e.preventDefault();
+            }
+
+           
+            function updateResults() {
+                const principalInput = document.querySelector('#principalInput').value;
+                const rateInput = document.querySelector('#rateInput').value;
+                const frequencySelect = document.querySelector('#frequencySelect').value;
+                const durationInput = document.querySelector('#durationInput').value;
+
+                
+                const principal = parseFloat(principalInput);
+                const rate = parseFloat(rateInput);
+                const frequency = parseInt(frequencySelect);
+                const time = parseFloat(durationInput);
+
+              
+                if (!isNaN(principal) && !isNaN(rate) && !isNaN(frequency) && !isNaN(time) && frequency > 0 && principal > 0 && rate > 0 && time > 0) {
+                    const results = calculateCompoundInterest(principal, rate, frequency, time);
+                    document.querySelector('#principalMessage').textContent = `₹${results.principal.toFixed(2)}`;
+                    document.querySelector('#interestMessage').textContent = `₹${results.totalInterest.toFixed(2)}`;
+                    document.querySelector('#totalMessage').textContent = `₹${results.totalValue.toFixed(2)}`;
+                    document.querySelector('#periodicalRate').textContent = `${results.periodicalRate.toFixed(2)}%`;
+                } else {
+                   
+                    document.querySelector('#principalMessage').textContent = '';
+                    document.querySelector('#interestMessage').textContent = '';
+                    document.querySelector('#totalMessage').textContent = '';
+                    document.querySelector('#periodicalRate').textContent = '';
                 }
+            }
+
+           
+            document.querySelectorAll('#principalInput, #rateInput, #frequencySelect, #durationInput').forEach(input => {
+                input.addEventListener('input', function() {
+                  
+                    this.value = this.value.replace(/[^0-9.]/g, '');
+
+                    
+                    checkInputs();
+
+                   
+                    updateResults();
+                });
             });
+
+            checkInputs();
         });
-        window.onload = initializeDefaultValues;
-    </script>
-      
-      
+    </script>  
 </body>
 </html>
