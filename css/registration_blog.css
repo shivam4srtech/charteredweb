@@ -37,8 +37,9 @@
 .registrationHeader .headerBtn.expertBtn{
    background-color: #f5b402;
    border: 2px solid #f5b402;
-   color: #fff;
+   color: #000;
    margin-right: 1rem;
+   font-weight: 500;
 }
 .registrationHeader .headerBtn svg{
     margin: 0 .5rem;
@@ -2779,3 +2780,191 @@ margin: auto;
 #collpaseExample .accordion-body{
   padding-top: 0;
 }
+
+.registrationHeader .expertBox{
+  width: 400px;
+  max-width: 100%;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+}
+.registrationHeader .expertBox h2{
+  color: #183d5c;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+.registrationHeader .expertBox form .form-control{
+ box-shadow: none;
+ border-radius: 5px;
+ font-size: .9rem;
+ color: #2e2e2e;
+ font-weight: 500;
+ height: 2.6rem;
+}
+.registrationHeader .expertBox form .form-control::placeholder{
+  font-weight: 500;
+  color: #999;
+  font-size: .9rem;
+ }
+ .registrationHeader .expertBox form button{
+  text-align: center;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: #f5b402;
+  color: #000;
+  font-weight: 500;
+  letter-spacing: .2px;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: .7rem .8rem;
+  text-transform: uppercase;
+ }
+ .registrationHeader .expertBox form button:hover{
+  background-color: #eeb10b;
+ }
+ @media(max-width:991px){
+  .registrationHeader .expertBox{
+   margin-top: 2rem;
+  }
+ }
+ /* why trust us */
+ .whyTrustus{
+  padding: 0 0 3rem 0;
+ }
+ .whyTrustus h2{
+  text-align: center;
+  font-weight: 600;
+  margin: auto;
+  font-size: 2rem;
+  color: #2e2e2e;
+  margin-bottom: 2rem;
+ }
+.whyTrustus .founder{
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.whyTrustus .founder img{
+ object-fit: contain;
+ border-radius: 10px;
+ box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+ display: inline-block;
+ margin-right: .8rem;
+}
+.whyTrustus .founder .name p{
+  font-weight: 600;
+  color: #000;
+  margin-bottom: .35rem;
+ }
+ .whyTrustus .founder .name span{
+  font-weight: 500;
+  color: #333;
+  font-size: .9rem;
+ }
+ .whyTrustus .founderNote p{
+  font-weight: 400;
+  color: #666;
+  font-size: 1rem;
+  letter-spacing: .5px;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+ }
+ .whyTrustus .ourExpert h3{
+  text-align: left;
+  font-weight: 600;
+  margin: auto;
+  font-size: 1.6rem;
+  color: #2e2e2e;
+  margin-bottom: 1rem;
+ }
+ .whyTrustus .ourExpert .expertPara p{
+  font-weight: 400;
+  color: #666;
+  font-size: 1rem;
+  letter-spacing: .5px;
+  line-height: 1.5;
+  margin-bottom: 1.2rem;
+ }
+ .whyTrustus .ourExpert .listExpert ul li{
+   display: flex;
+   align-items: center;
+ }
+ .whyTrustus .ourExpert .listExpert ul li{
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+.whyTrustus .ourExpert .listExpert ul li img{
+  border-radius: 5px;
+  object-fit: contain;
+  display: inline-block;
+  margin-right: .6rem;
+}
+.whyTrustus .ourExpert .listExpert ul li a{
+  font-weight: 600;
+  color: #000;
+  cursor: pintee;
+  letter-spacing: .5px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: .5rem;
+  font-size: 1rem;
+}
+.whyTrustus .ourExpert .listExpert ul li .exp{
+ padding: .5rem 1rem;
+ background-color: #f5b40239;
+ border-radius: 5px;
+ font-weight: 500;
+ font-size: 1rem;
+ display: inline-block;
+}
+.whyTrustus .ourExpert .listExpert ul li .desg{
+  padding: .5rem 1rem;
+  background-color: #eeebf0;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 1rem;
+  display: inline-block;
+  margin-right: .5rem;
+ }
+ .ourAssociated h2{
+  text-align: center;
+  font-weight: 600;
+  margin: auto;
+  font-size: 2rem;
+  color: #2e2e2e;
+  margin-bottom: 2rem;
+ }
+ .ourAssociated .associatedList ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+ }
+ .ourAssociated .associatedList{
+ margin-bottom: 4rem;
+ }
+ .ourAssociated .associatedList ul li{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  box-shadow: 0 5px 19px -10px #000;
+  padding: 5px;
+  width: 220px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+ }
+ .ourAssociated .associatedList ul li:last-child{
+  margin-right: 0;
+ }
+
+ @media(max-width:470px){
+  .ourAssociated .associatedList ul li{
+     margin-right: 0;
+   }
+ }
