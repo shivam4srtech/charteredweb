@@ -837,7 +837,6 @@
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
     </nav>
-    <!--  -->
     <section class="businessLicense">
         <div class="container">
             <div class="text-center titleContent mb-5">
@@ -848,8 +847,50 @@
                     Below, we discuss what licenses and permits are needed to start a business.
                 </p>
             </div>
-            <div class="row reviewSummary">
-                <div class="col-lg-2 col-md-12 mb-4 reviewToc p-0">
+            <!--mobile v Table of content  -->
+            <div class="accordion accordion-flush  d-lg-none d-block" id="collpaseExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseToc" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Table of content [show]
+                    </button>
+                  </h2>
+                  <div id="collapseToc" class="accordion-collapse collapse" data-bs-parent="#collpaseExample">
+                    <div class="accordion-body">
+                        <div class="toc">
+                            <ul>
+                                <li>
+                                    <a href="#snnipetOne">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#snnipetTwo">About this plan</a>
+                                </li>
+                                <li>
+                                    <a href="#snnipetThree">Service Included</a>
+                                </li>
+                                <li>
+                                    <a href="#snnipetFour">Document Required</a>
+                                </li>
+                                <li>
+                                    <a href="#snnipetFour">Who should Buy</a>
+                                </li>
+                                <li>
+                                    <a href="#snnipetFive">How it's done</a>
+                                </li>
+                                <li>
+                                    <a href="#snnipetFive">FAQs</a>
+                                </li>
+                                <li>
+                                    <a href="#snnipetFive">Reviews</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row reviewSummary flex-lg-row flex-column-reverse">
+                <div class="col-lg-2 col-md-12 mb-4 reviewToc p-0  d-lg-block d-none">
                     <div class="toc">
                         <ul>
                             <li>
@@ -909,7 +950,7 @@
                                     </div>
 
                                 </div>
-                                <!-- <div class="col-md-4 mb-3">
+                                <div class="col-md-4 mb-3">
                                     <div class="pricingItem">
                                         <p>FSSAI Registration (Food License) (Basic Registration)</p>
                                         <span class="value">₹3,500</span>
@@ -924,7 +965,38 @@
                                         <p class="discount"><span>₹5,500</span> <small>(30% OFF)</small></p>
                                         <button>Buy Now</button>
                                     </div>
-                                </div> -->
+                                </div>
+                            </div>
+                        </div>
+                        <section class="gauranteed" id="gauranteed">
+                            <div class="container p-0">
+                              <div class="gauranteeBadge">
+                                   <div>
+                                      <img src="./images/money-back-gaurantee.png" alt="">
+                                   </div> 
+                                   <div>
+                                        <p>
+                                           Satisfaction guaranteed or get your money-back <a href="#">Learn more.</a>
+                                        </p>
+                                   </div>
+                              </div>
+                            </div>
+                        </section>
+                        <!-- mobile V Rating -->
+                        <div class="reviewContainer d-block d-lg-none">
+                            <div class="displayReview">
+                                <div class="reviewItem">
+                                    <img class="googleLogo" src="./images/google-logo.svg" alt="">
+                                    <div class="starIcon">
+                                        <img src="./images/Five-Star-Rating-SVG.svg" alt="">
+                                        <p>4.5 Google reviews</p>
+                                    </div>
+                                </div>
+                                <div class="reviewItem">
+                                    <span class="trustLogo"><img src="./images/trustpilot-logo.svg" alt=""></span>
+                                    <p class="excellent">Reviews 4,568 <small> • </small> Execellent</p>
+                                   <span class="trustStar"> <img src="./images/trustpilot-stars-4.5.svg" alt=""> 4.5</span>
+                                </div>
                             </div>
                         </div>
                         <!-- about -->
@@ -1106,20 +1178,6 @@
             </div>
         </div>
     </section> -->
-    <section class="gauranteed" id="gauranteed">
-        <div class="container">
-          <div class="gauranteeBadge">
-               <div>
-                  <img src="./images/money-back-gaurantee.png" alt="">
-               </div> 
-               <div>
-                    <p>
-                       Satisfaction guaranteed or get your money-back <a href="#">Learn more.</a>
-                    </p>
-               </div>
-          </div>
-        </div>
-    </section>
     <section class="businessContent">
         <div class="container">
             <div class="row">
@@ -1396,6 +1454,16 @@
                             Most licenses and permits require regular renewals. Depending on which licenses your business has, that might mean that you’re subject to periodic renewal fees. You may also need to re-submit applications after a certain period of time has lapsed or provide annual reports to your governing agency. Be sure to take note of the requirements of each license and permit you possess.
                         </p>
                     </div>
+                    <section class="businessContent">
+                        <div class="container p-0">
+                            <div class="businessSnepet" id="snnipetNine">
+                                <h2>Conclusion</h2>
+                                <p>
+                                    When you’re ready to obtain the correct licenses and permits for your business, try our <a href="#">business license report</a>. Our partners use the data you provide, including your business location, industry, and activities, to identify potential licensing requirements. These partners search federal, state, and local regulations to help ensure that you’ve got all the information you need to get started.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </div>
@@ -2611,6 +2679,14 @@
 
             if (p.innerHTML.trim() === '' || p.innerHTML.trim() === '<br>' || hasEmptySpan || hasOnlyEmptyTags) {
                 p.remove();
+            }
+        });
+    </script>
+    <script>
+            document.querySelectorAll('section').forEach(section => {
+            const div = section.querySelector('div.container');
+            if (div && div.innerHTML.trim() === '') {
+                section.remove();
             }
         });
     </script>

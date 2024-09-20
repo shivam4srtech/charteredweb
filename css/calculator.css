@@ -711,6 +711,12 @@ max-width: 1500px;
   top: 3px;
 
 }
+.btcIcon{
+  margin-bottom: 1rem;
+}
+.btcIcon img{
+  object-fit: contain;
+}
 @media(max-width:991px){
   .calcSingle .formBox .inputBox{
     flex-direction: column;
@@ -734,6 +740,10 @@ max-width: 1500px;
   .calcSingle .formBox .inputBox .form-control {
     width: 400px;
   }
+}
+.sharePage p{
+  font-weight: 600;
+  font-size: 1.2rem;
 }
 
 /* graph */

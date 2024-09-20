@@ -871,7 +871,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     max-width: 1500px;
   }
   .gauranteed .gauranteeBadge{
-    height: 4rem;
+    height: 3.5rem;
     background-color: #2e2e2e;
     color: #fff;
      display: flex;
@@ -881,8 +881,8 @@ ol.process-chart > li:nth-of-type(6n+5):after {
      justify-content: center;
   }
   .gauranteed .gauranteeBadge img{
-    height: 14rem;
-    width: 14rem;
+    height: 10rem;
+    width: 10rem;
     object-fit: contain;
     border-radius: 50%;  
     margin-right: 1rem;
@@ -890,11 +890,21 @@ ol.process-chart > li:nth-of-type(6n+5):after {
 .gauranteed .gauranteeBadge p{
     font-weight: 600;
     color: #fff;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
+    margin-bottom: 0;
 }
 .gauranteed .gauranteeBadge p a{
     text-decoration: underline;
     color: #fff;
+}
+@media(max-width: 991px){
+  .gauranteed .gauranteeBadge{
+      height: 4rem;
+    }
+    .gauranteed .gauranteeBadge img{
+      margin-right: 0rem;
+      height: 8rem;
+  }
 }
 @media(max-width: 768px){
     .gauranteed .gauranteeBadge{
@@ -902,20 +912,15 @@ ol.process-chart > li:nth-of-type(6n+5):after {
          height: 12rem;
          text-align: center;
       }
-      .gauranteed .gauranteeBadge img{
-        margin-right: 0rem;
-        height: 8rem;
-    }
 }
 @media(max-width: 600px){
   .gauranteed .gauranteeBadge{
-       height: 16rem;
+       height: 13rem;
+       padding: .5rem .5rem; 
     }
-    .gauranteed .gauranteeBadge p {
-      font-size: 1.4rem;
-      padding: 0 .5rem;
-  }
-
+    .gauranteed .gauranteeBadge p{
+     padding-bottom: 1rem; 
+   }
 }
 .hassleFree{
     padding: 4rem 0;
@@ -2759,4 +2764,18 @@ margin: auto;
   .reviewToc {
     position: relative; 
   }
+}
+
+#collpaseExample button{
+  padding-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  letter-spacing: .5px;
+  font-size: 1em;
+}
+#collpaseExample .accordion-button::after{
+ display: none;
+}
+#collpaseExample .accordion-body{
+  padding-top: 0;
 }
