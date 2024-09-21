@@ -1000,6 +1000,10 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     align-items: center;
     justify-content: center;
    }
+   .customerReview .reviewBox .googleReview img:nth-of-type(1){
+   margin-right: .5rem;
+   object-fit: contain;
+   }
    .customerReview .reviewBox .clientName{
     color: #f5b402;
     font-weight: 600;
@@ -2285,7 +2289,7 @@ section strong{
     box-shadow: inset 0 0 2px 2px hsla(0, 0%, 100%, .5);
     border-radius: 500px;
     font-weight: 600;
-    padding: 12px 15px;
+    padding: 12px 20px;
     text-decoration: none;
     color: black;
     transition: background-color 0.3s;
@@ -2295,6 +2299,12 @@ section strong{
     border: 1px solid #fff;
     margin: 0 .1rem;
     min-width: fit-content;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    line-height: 1.4;
 }
 
 .compareFirm .firmTabButton a.active {
@@ -2895,7 +2905,7 @@ margin: auto;
  .whyTrustus .ourExpert .listExpert ul li{
   display: flex;
   align-items: center;
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
 .whyTrustus .ourExpert .listExpert ul li img{
   border-radius: 5px;
@@ -2958,6 +2968,9 @@ margin: auto;
   width: 220px;
   margin-right: 1rem;
   margin-bottom: 1rem;
+ }
+ .ourAssociated .associatedList ul li img{
+ object-fit: contain;
  }
  .ourAssociated .associatedList ul li:last-child{
   margin-right: 0;
