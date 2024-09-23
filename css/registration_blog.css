@@ -3242,3 +3242,55 @@ margin: auto;
       background-color: #f5f2ed;
     }
   }
+  .tradeMarkMethod{
+    padding: 3rem 0;
+    padding-top: 0;
+  }
+  .tradeMarkMethod .container{
+    padding: 3rem 0;
+    max-width: 1350px;
+  }
+  .tradeMarkMethod .tradeMarkMethodBox .tradeMarkMethodItem h2{
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1.4rem;
+    font-size: 1.8rem;
+  }
+  .tradeMarkMethod .tradeMarkMethodBox .tradeMarkMethodItem {
+   margin-bottom: 3rem;
+  }
+  .tradeMarkMethod .tradeMarkMethodBox .tradeMarkMethodItem p{
+    font-weight: 500;
+    color: #2e2e2e;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    line-height: 1.6;
+  }
+  .tradeMarkMethod .tradeMarkMethodBox .tradeMarkMethodItem p.flexPara{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  .tradeMarkMethod .tradeMarkMethodBox .tradeMarkMethodItem p.flexPara span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 1.6rem;
+    padding: .2rem;
+    border-radius: 50%;
+    border: 1.6px solid #000;
+  }
+  .tradeMarkMethod .imgBox{
+    display: flex;
+    justify-content: right;
+  }
+  .tradeMarkMethod .imgBox img{
+    max-width: 100%;
+    width: 550px;
+    border-radius: 10px;
+    min-height: 1000px;
+  }
