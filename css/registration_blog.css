@@ -1042,6 +1042,17 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     text-align: left;
     line-height: 1.4;
    }
+
+   @media(max-width:575px){
+    .customerReview .reviewBox{
+      border-right: none;
+      border-bottom: 1px solid #e2e2e2;
+      padding-bottom: 1rem;
+     }
+     .customerReview{
+      padding-bottom: 0;
+     }
+   }
  /* FAQS */
  .faqs{
     padding: 3rem 0;
@@ -1220,7 +1231,8 @@ ol.process-chart > li:nth-of-type(6n+5):after {
 .choosePlan{
   display: none;
 }
- .showDetailedPrice a{
+
+.showDetailedPrice button{
   background-color: #000;
   color: #fff !important;
   padding: .8rem 2.2rem;
@@ -1231,6 +1243,8 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   display: inline-block;
   cursor: pointer;
   text-transform: capitalize;
+  border: none;
+  outline: none;
 }
 .pricingPanel .advance .pricingTag{
   background-color: #000;
@@ -1405,6 +1419,11 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   align-items: center;
   width: 100%;
   transition: .3s ease;
+}
+.registrationSteps .nav-pills li a p {
+  display: flex;
+  align-items: center;
+  line-height: 1.4;
 }
 .registrationSteps .nav-pills .nav-link:hover{
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -2980,4 +2999,9 @@ margin: auto;
   .ourAssociated .associatedList ul li{
      margin-right: 0;
    }
+ }
+ /* Trademark */
+ .tradeMark .pageTitle sup{
+  text-transform: uppercase;
+  font-size: .8rem;
  }
