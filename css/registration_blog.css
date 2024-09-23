@@ -1208,7 +1208,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  position: relative
+  position: relative;
 }
  .pricingPanel .pricingTag{
   position: absolute;
@@ -1362,6 +1362,22 @@ ol.process-chart > li:nth-of-type(6n+5):after {
  .pricingPanel .pricingTerms img{
   margin-right: .6rem;
 }
+@media(min-width:991px){
+  .pricingPanel  .col-lg-4:nth-of-type(4) .pricingBox{
+    min-height: fit-content;
+  }
+}
+@media(min-width:991px){
+  .pricingPanel .pricingBox{
+    min-height: 600px;
+  }
+}
+@media only screen and (min-width:768px) and (max-width:991px){
+  .pricingPanel .pricingBox{
+    min-height: 700px; 
+  }
+}
+
 /* registration steps */
 .registrationSteps{
   padding: 3rem 0;
@@ -2887,6 +2903,17 @@ margin: auto;
   font-weight: 600;
   color: #000;
   margin-bottom: .35rem;
+  display: flex;
+  align-items: center;
+ }
+ .whyTrustus .founder .name p a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: .5rem;
+ }
+ .whyTrustus .founder .name p a svg{
+ border-radius: 5px;
  }
  .whyTrustus .founder .name span{
   font-weight: 500;
@@ -3000,8 +3027,218 @@ margin: auto;
      margin-right: 0;
    }
  }
+ .floatingWhatsApp{
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+ }
+
+.floatingWhatsApp .btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: .3s ease-in;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #00d757;
+}
+
+.floatingWhatsApp .sign {
+  width: 100%;
+  transition-duration: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floatingWhatsApp .sign svg {
+  width: 25px;
+}
+
+.floatingWhatsApp .sign svg path {
+  fill: white;
+}
+.floatingWhatsApp .text {
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition-duration: 0.3s;
+  display: inline-block;
+}
+
+.floatingWhatsApp .btn:hover {
+  width: 180px;
+  border-radius: 40px;
+  transition-duration: 0.3s;
+}
+
+.floatingWhatsApp .btn:hover .sign {
+  width: 30%;
+  transition-duration: 0.3s;
+  padding-left: 10px;
+}
+
+.floatingWhatsApp .btn:hover .text {
+  opacity: 1;
+  width: 70%;
+  transition-duration: 0.3s;
+  padding-right: 10px;
+}
+.floatingWhatsApp .btn:active {
+  transform: translate(2px, 2px);
+}
+
  /* Trademark */
  .tradeMark .pageTitle sup{
-  text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 35%; 
+  vertical-align: super; 
+  line-height: 1; 
+  position: relative; 
+  top: -0.5em;
+  border: 1.45px solid #000;
+  border-radius: 50%;
+  width: 1.6rem;
+  height: 1.6rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
  }
+ .brandSection .container{
+  max-width: 1170px;
+ }
+ .brandSection{
+ padding: 3rem 0;
+ }
+ .brandSection .brandList img{
+  max-width: 100%;
+  object-fit: contain;
+  width: 120px;
+  
+  }
+  .brandSection .brandDesc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .brandSection .brandDesc h2{
+    font-size: 31px;
+    line-height: 38px;
+    color: #333;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+  .brandSection .brandDesc button{
+    background: #f5b402;
+    padding: 10px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    color: #000;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px #cecece;
+    border: none;
+    outline: none;
+    letter-spacing: .5px;
+  }
+  .brandSection .brandDesc .brandDescData{
+   border-left: 4px solid #d73e3d;
+   padding-left: 2rem;
+   min-height: 15rem;
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   flex-direction: column;
+  }
+  .copyVsTrade {
+    padding: 3rem 0;
+  }
+  .copyVsTrade .container{
+    max-width: 1350px;
+  }
+  .copyVsTrade .copyHeader{
+    text-align: center;
+  }
+  .copyVsTrade .copyHeader h2{
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: .6rem;
+  }
+  .copyVsTrade .copyHeader p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: .5px;
+    line-height: 1.4;
+  }
+  .copyVsTrade .copyVsTradeBox {
+    margin-top: 2rem;
+    padding: 6rem;
+    background-color: #f5f2ed;
+  }
+  .copyVsTrade .copyVsTradeBox h3{
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+  }
+  .copyVsTrade .copyVsTradeBox h3 span{
+   margin-left: .2rem;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+   width: 2rem;
+   height: 2rem;
+   text-align: center;
+  }
+  .copyVsTrade .copyVsTradeBox h3 span.trade{
+    border: 1.5px solid #000;
+    margin-left: .2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: .7rem;
+    text-transform: uppercase;
+   }
+  .copyVsTrade .copyVsTradeBox .copyVsTradeItem{
+    margin-bottom: 2rem;
+  }
+  .copyVsTrade .copyVsTradeBox .copyVsTradeItem h4{
+    font-weight: 600;
+    color: #000;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    line-height: 1.4;
+  }
+  .copyVsTrade .copyVsTradeBox .copyVsTradeItem p{
+    font-weight: 500;
+    color: #2e2e2e;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    line-height: 1.6;
+  }
+
+  @media(max-width: 500px){
+    .copyVsTrade .copyVsTradeBox {
+      margin-top: 2rem;
+      padding: 2.5rem 1rem;
+      background-color: #f5f2ed;
+    }
+  }
