@@ -869,13 +869,53 @@
                   <div class="expertBox">
                       <h2>Get Expert Consultation</h2>
                       <form action="NoWhere">
-                          <input type="text" class="form-control mb-3" placeholder="Full Name*" required>
-                          <input type="email" class="form-control mb-3" placeholder="Email*" required>
-                          <input type="text" class="form-control  mb-3" placeholder="Mobile*" required>
-                          <div class="text-center">
-                              <button data-bs-toggle="modal" data-bs-target="#enquiryModal">Request a callback</button>
-                          </div>
-                      </form>
+                        <input type="text" class="form-control mb-3" placeholder="Full Name*" required="">
+                        <input type="email" class="form-control mb-3" placeholder="Email*" required="">
+                        <input type="text" class="form-control mb-3" placeholder="Mobile*" required="">
+                        <select class="form-select custom-select mb-3">
+                          <option selected="">Select State/UT*</option>
+                          <option value="Andhra Pradesh">Andhra Pradesh</option>
+                          <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                          <option value="Assam">Assam</option>
+                          <option value="Bihar">Bihar</option>
+                          <option value="Chhattisgarh">Chhattisgarh</option>
+                          <option value="Goa">Goa</option>
+                          <option value="Gujarat">Gujarat</option>
+                          <option value="Haryana">Haryana</option>
+                          <option value="Himachal Pradesh">Himachal Pradesh</option>
+                          <option value="Jharkhand">Jharkhand</option>
+                          <option value="Karnataka">Karnataka</option>
+                          <option value="Kerala">Kerala</option>
+                          <option value="Madhya Pradesh">Madhya Pradesh</option>
+                          <option value="Maharashtra">Maharashtra</option>
+                          <option value="Manipur">Manipur</option>
+                          <option value="Meghalaya">Meghalaya</option>
+                          <option value="Mizoram">Mizoram</option>
+                          <option value="Nagaland">Nagaland</option>
+                          <option value="Odisha">Odisha</option>
+                          <option value="Punjab">Punjab</option>
+                          <option value="Rajasthan">Rajasthan</option>
+                          <option value="Sikkim">Sikkim</option>
+                          <option value="Tamil Nadu">Tamil Nadu</option>
+                          <option value="Telangana">Telangana</option>
+                          <option value="Tripura">Tripura</option>
+                          <option value="Uttar Pradesh">Uttar Pradesh</option>
+                          <option value="Uttarakhand">Uttarakhand</option>
+                          <option value="West Bengal">West Bengal</option>
+                          <!-- Union Territories -->
+                          <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                          <option value="Chandigarh">Chandigarh</option>
+                          <option value="Dadra and Nagar Haveli and Daman and Diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                          <option value="Lakshadweep">Lakshadweep</option>
+                          <option value="Delhi">Delhi</option>
+                          <option value="Puducherry">Puducherry</option>
+                          <option value="Ladakh">Ladakh</option>
+                          <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        </select>
+                        <div class="text-center">
+                            <button data-bs-toggle="modal" data-bs-target="#enquiryModal">Request a callback</button>
+                        </div>
+                    </form>
                   </div>
                 </div>
             </div>
@@ -1580,7 +1620,7 @@
                 Applying for Name Approval
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
               <div class="accordion-body">
                 <p>
                     The next step is that you'll need to submit a SPICe RUN form, which is part of the larger
@@ -1597,7 +1637,7 @@
                 Applying for License under Section 8
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     Before Company Incorporaton, file Form INC-12 with the ROC to get a Secton 8 license.
@@ -1613,7 +1653,7 @@
                 Filing SPICe+ Form for Incorporation:
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+            <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     Next is to proceed with the applicaton process for the certficate of incorporaton of
@@ -1630,7 +1670,7 @@
                 Receive Certificate of Incorporation, PAN Card, Tax Deduction Number
               </button>
             </h2>
-            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+            <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     Upon successful registraton by the ROC, the branch office will receive a Certficate of
@@ -1645,7 +1685,7 @@
                 Opening of Bank Account in India 
               </button>
             </h2>
-            <div id="collapseSix" class="accordion-collapse collapse">
+            <div id="collapseSix" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     Upon obtaining RBI’s approval, the company needs to open a bank account ensuring the
@@ -1662,7 +1702,7 @@
                 Registration with State Police(in special cases only) 
               </button>
             </h2>
-            <div id="collapseSeven" class="accordion-collapse collapse">
+            <div id="collapseSeven" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     Registraton with the State Police is is needed only if the foreign company is from
@@ -1680,7 +1720,7 @@
                 GST Registration &amp Filing 
               </button>
             </h2>
-            <div id="collapseEight" class="accordion-collapse collapse">
+            <div id="collapseEight" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     If the branch office engages in any commercial actvites that involve supplying goods or
@@ -1697,7 +1737,7 @@
                 PT, ESI, EPF Registration. 
               </button>
             </h2>
-            <div id="collapseNine" class="accordion-collapse collapse">
+            <div id="collapseNine" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     ESI registraton is required when the employee count is 9 and EPF registraton is required
@@ -1715,7 +1755,7 @@
                 Shops and Establishment Registration. 
               </button>
             </h2>
-            <div id="collapseTen" class="accordion-collapse collapse">
+            <div id="collapseTen" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     Required only if it is applicable. Chartered ONE ensures you don’t miss any registraton &
@@ -1730,7 +1770,7 @@
                 IEC Registration. 
               </button>
             </h2>
-            <div id="collapseEleven" class="accordion-collapse collapse">
+            <div id="collapseEleven" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     IEC registraton for FBOs is easy, Chartered ONE streamlines the process for you. A foreign
@@ -1748,7 +1788,7 @@
                 FSSAI/Drug License. 
               </button>
             </h2>
-            <div id="collapsetwelve" class="accordion-collapse collapse">
+            <div id="collapsetwelve" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     Required only if it is applicable. With Chartered ONE, you can secure your required
@@ -1763,7 +1803,7 @@
                 Accounting &amp Book Keeping. 
               </button>
             </h2>
-            <div id="collapseThirteen" class="accordion-collapse collapse">
+            <div id="collapseThirteen" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     Chartered ONE guarantees integrity, accuracy, and proper accountng & Book Keeping.
@@ -1777,7 +1817,7 @@
                 Regular filings. 
               </button>
             </h2>
-            <div id="collapseFourteen" class="accordion-collapse collapse">
+            <div id="collapseFourteen" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     Chartered ONE handles all applicable tax and social security contributons, including TDS,
@@ -1792,7 +1832,7 @@
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
                 Statutory Audit
             </h2>
-            <div id="collapseFifteen" class="accordion-collapse collapse">
+            <div id="collapseFifteen" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     Statutory Audit is applicable to the Branch Office. The audit should be completed well
@@ -1809,7 +1849,7 @@
                 TAX AUDIT 
               </button>
             </h2>
-            <div id="collapseSeventeen" class="accordion-collapse collapse">
+            <div id="collapseSeventeen" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     Under secton 44AB of the Income Tax Act, every branch office, being an Income Tax
@@ -1827,7 +1867,7 @@
                 Internal Audit 
               </button>
             </h2>
-            <div id="collapseEighteen" class="accordion-collapse collapse">
+            <div id="collapseEighteen" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     For a comprehensive and independent internal audit, consider Chartered ONE's
@@ -1842,7 +1882,7 @@
                 Filing FC-4 with ROC 
               </button>
             </h2>
-            <div id="collapseNineteen" class="accordion-collapse collapse">
+            <div id="collapseNineteen" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     Every branch office of a foreign company established in India must file an annual return
@@ -1862,7 +1902,7 @@
                 Filing FC-3 to ROC.
               </button>
             </h2>
-            <div id="collapseTwenty" class="accordion-collapse collapse">
+            <div id="collapseTwenty" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     The financial statement of the branch office, duly audited by a practsing chartered
@@ -1879,7 +1919,7 @@
                 Filing Annual Activity Certificate to ROC. 
               </button>
             </h2>
-            <div id="TwentyOne" class="accordion-collapse collapse">
+            <div id="TwentyOne" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     Annual Actvity Certficate is a Certficate issued by a practcing CA, where he declares
@@ -1897,7 +1937,7 @@
                 Filing Annual Income Tax Returns
               </button>
             </h2>
-            <div id="twentyTwo" class="accordion-collapse collapse">
+            <div id="twentyTwo" class="accordion-collapse collapse show">
               <div class="accordion-body">
                   <p>
                     The branch office's income tax (ITR) return is filed with the income tax department
@@ -2613,88 +2653,112 @@
         </p>
         <div class="accordion">
           <div class="accordion-item">
-            <div class="accordion-header">What does Private Limited Company mean?</div>
-            <div class="accordion-content faqAns">
-              <p>A private limited company means a company having a minimum paid-up share capital as prescribed, and which by its article -</p>
-              <ul>
-                1. restricts the rights to transfer its shares;
-                2. Limits the number of its members to 200
-                 Provided that where 2 or more persons hold one or more shares in a company jointly, they shall for the purpose of this clause, be treated as a single member
-                 Provided further that-
-                 (A) Persons who are in employment of the company; and
-                 (B) Persons who, having been formely in the employment of the company, where members of the company while in that employment and have continued to be members after the employment ceased, shall not be included in the number of members; and
-                3. Prohibits any invitation to the public to subscribe for any securities of the company
-                </ul>
+            <div class="accordion-header active">What does Pvt Ltd Co mean?</div>
+            <div class="accordion-content faqAns" style="height: 345px; padding-top: 15px; padding-bottom: 15px;">
+              <p>A Pvt Ltd Co means a company having a minimum paid-up share capital as prescribed, and which by its article -</p>
+              <ol>
+                  <li> Restricts the rights to transfer its shares</li>
+                  <li>
+                      Provided that where 2 or more persons hold one or more shares in a company jointly, they shall for the purpose of this clause, be treated as a single member
+                      Provided further that-
+                  </li>
+                  <ol>
+                    <li>Persons who are in employment of the company and</li>
+                    <li>
+                       Persons who, having been formely in the employment of the company, where members of the company while in that employment and have continued to be members after the employment ceased, shall not be included in the number of members; and
+                    </li>
+                  </ol>
+                  <li>
+                    Prohibits any invitation to the public to subscribe for any securities of the company.
+                  </li>
+              </ol>
               <div class="additionalPadding"></div>
             </div>
           </div>
           <div class="accordion-item">
-            <div class="accordion-header">Do I need a Private Limited Company to start a business?</div>
-            <div class="accordion-content faqAns" style="height: 0px; padding-top: 0px; padding-bottom: 0px;">
-              <p>It’s not necessary to form a private limited company in order to start a business. Also, a private limited company is only one of several ways to structure a business. Other possibilities include: Partnership, LLP, Public Limited, sole proprietorship, Sec 8 Co, Trust, and Society.
+            <div class="accordion-header active"> Do I need a Pvt Ltd Co to start a business?</div>
+            <div class="accordion-content faqAns" style="height: 137px; padding-top: 15px; padding-bottom: 15px;">
+              <p>It’s not necessary to form a Pvt Ltd Co in order to start a business. Also, a Pvt Ltd Co is only one of several ways to structure a business. Other possibilities include: Partnership, LLP, Public Limited, sole proprietorship, Sec 8 Co, Trust, and Society.
               
               </p><div class="additionalPadding"></div>
             </div>
           </div>
           <div class="accordion-item">
-            <div class="accordion-header">what are the minimum requirements to incorporate a Private Limited Company?</div>
-            <div class="accordion-content faqAns">
-              <p>The Minimum required for the incorporation of a private limited company are:
+            <div class="accordion-header active">what are the minimum requirements to incorporate a Pvt Ltd Co?</div>
+            <div class="accordion-content faqAns" style="height: 302px; padding-top: 15px; padding-bottom: 15px;">
+              <p>The Minimum required for the incorporation of a Pvt Ltd Co are:</p>
 
-                1. The number of members must be between 2-200.
-                2. No minumu capital
-                3. There must be at least two directors and two shareholders
-                4. Atleast one director must be resident and must have a Directors Identification Number (DIN)
-                5. PAN card copy of directors/shareholders and Passport copy for NRI subscribers.
+                <ol>
+                    <li>The number of members must be between 2-200.</li>
+                    <li>No minumu capital</li>
+                    <li>There must be at least two directors and two shareholders</li>
+                    <li>Atleast one director must be resident and must have a Directors Identification Number (DIN)</li>
+                    <li>PAN card copy of directors/shareholders and Passport copy for NRI subscribers.</li>
+                </ol>
+              
+              <div class="additionalPadding"></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header active">Can I use my residential address to incorporate a Pvt Ltd Co?</div>
+            <div class="accordion-content faqAns" style="height: 137px; padding-top: 15px; padding-bottom: 15px;">
+              <p>At the time of Incorporation of a Pvt Ltd Co, the company needs to provide an address proof. The  Ministry of Corporate Affairs (MCA) allows a residential address to be used as the company’s registered address. Thus any address can be provided as the registered address
               
               </p><div class="additionalPadding"></div>
             </div>
           </div>
           <div class="accordion-item">
-            <div class="accordion-header">Can I use my residential address to incorporate a Private Limited Company?</div>
-            <div class="accordion-content faqAns">
-              <p>At the time of Incorporation of a private limited company, the company needs to provide an address proof. The  Ministry of Corporate Affairs (MCA) allows a residential address to be used as the company’s registered address. Thus any address can be provided as the registered address
-              
-              </p><div class="additionalPadding"></div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-header">what are the Document required to incorporate a Private Limited Company?</div>
-            <div class="accordion-content faqAns">
+            <div class="accordion-header active">what are the Document required to incorporate a Pvt Ltd Co?</div>
+            <div class="accordion-content faqAns" style="height: 212px; padding-top: 15px; padding-bottom: 15px;">
               <p>Incorporating a company in Singapore as a local is a relatively straightforward process. All you need is the following:</p>
-              <ul>
+              <ol>
                 <li>Proof of Identity and Address: Directors and shareholders need to provide identity proof (such as Aadhar card, passport, or driver’s license) and address proof (such as electricity bills, Gas bills or bank statements or any other proof).</li>
                 <li>Registered Office Address Proof: Documents proving the registered office address of the company, such as a rental agreement or sale deed, NOC, Electricity bill, Gas bill etc.</li>
-              </ul>
+              </ol>
               <div class="additionalPadding"></div>
             </div>
           </div>
           <div class="accordion-item">
-            <div class="accordion-header">Private Limited Company vs. LLP - Why is LLP better?</div>
-            <div class="accordion-content faqAns">
-              <p>Both LLPs and Private limited company protect owners’ personal assets from business liabilities or debts. But they have some key differences, including:
-                How they’re owned. LLPs have one or more partners, but private limited company have shareholders.                
-                How they’re maintained. Both LLP &amp; Private Limited Company  LLP are required to be keep and maintain books of accounts at their registered office for the period of 8 years.However, the statutory audit is not mandatory for an LLP. An LLP should get its accounts audited when its annual turnover exceeds Rs.40 lakhs and the capital contribution exceeds Rs.25 lakhs. The statutory audit is mandatory for a Pvt Ltd company, irrespective of its turnover.
-                How they’re taxed. An LLP should pay a 30% fixed rate tax on its total income subject to 12% surcharge if its Total income exceeds 1 crore. Whereas the pvt Ltd co has to 25% if its total turnover is less than 400 crores and 30% if its total turnover is more than 400 crores. However, Pvt Ltd companies can also choose between the new rates of 22% (for existing companies) and 15% (for new companies).
-              
+            <div class="accordion-header active">Pvt Ltd Co vs. LLP - Why is LLP better?</div>
+            <div class="accordion-content faqAns" style="height: 313px; padding-top: 15px; padding-bottom: 15px;">
+              <p>
+                  Both LLPs and Pvt Ltd Co protect owners’ personal assets from business liabilities or debts. But they have some key differences, including:
+              </p>
+              <ol>
+                  <li>
+                    How they’re owned. LLPs have one or more partners, but Pvt Ltd Co have shareholders.
+                  </li>
+                  <li>
+                    How they’re maintained. Both LLP &amp; Pvt Ltd Co  LLP are required to be keep and maintain books of accounts at their registered office for the period of 8 years.However, the statutory audit is not mandatory for an LLP. An LLP should get its accounts audited when its annual turnover exceeds Rs.40 lakhs and the capital contribution exceeds Rs.25 lakhs. The statutory audit is mandatory for a Pvt Ltd company, irrespective of its turnover.
+                  </li>
+                  <li>
+                    How they’re taxed. An LLP should pay a 30% fixed rate tax on its total income subject to 12% surcharge if its Total income exceeds 1 crore. Whereas the pvt Ltd co has to 25% if its total turnover is less than 400 crores and 30% if its total turnover is more than 400 crores. However, Pvt Ltd companies can also choose between the new rates of 22% (for existing companies) and 15% (for new companies).
+                  </li>
+                </ol>  
+              <div class="additionalPadding"></div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <div class="accordion-header active">Pvt Ltd Co vs. Public Limited Company - Advantages?</div>
+            <div class="accordion-content faqAns" style="height: 137px; padding-top: 15px; padding-bottom: 15px;">
+              <p>Pvt Ltd Co is a better option to start a new business journey than a public limited company. Though both the companies have stringent compliances, private limited companies serves as a better result in entrepreneurship. There are also limited requirements to start up a new Pvt Ltd Co. A minimum of two shareholder and two directors is required.
               </p><div class="additionalPadding"></div>
             </div>
           </div>
           <div class="accordion-item">
-            <div class="accordion-header">Private Limited Company vs. Public Limited Company - Advantages?</div>
-            <div class="accordion-content faqAns">
-              <p>Private limited company is a better option to start a new business journey than a public limited company. Though both the companies have stringent compliances, private limited companies serves as a better result in entrepreneurship. There are also limited requirements to start up a new private limited company. A minimum of two shareholder and two directors is required.
-              </p><div class="additionalPadding"></div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <div class="accordion-header">what are MOA &amp; AOA of Private Limited Company?</div>
-            <div class="accordion-content faqAns">
-              <p>Memorandum of Association (MOA) is defined under section 2(56) of the Companies Act 2013. It is the foundation on which the company is built. It defines the constitution, powers and objects of the company. 
-
-                The Articles of Association (AOA) is defined under section 2(5) of the Companies Act. It details all the rules and regulations relating to the management of the company.
-              
-              </p><div class="additionalPadding"></div>
+            <div class="accordion-header active">what are MOA &amp; AOA of Pvt Ltd Co?</div>
+            <div class="accordion-content faqAns" style="height: 191px; padding-top: 15px; padding-bottom: 15px;">
+              <p>
+                Memorandum of Association (MOA) is defined under section 2(56) of the Companies Act 2013. It is the foundation on which the company is built.
+              </p>
+              <p>
+                 It defines the constitution, powers and objects of the company. 
+                 The Articles of Association (AOA) is defined under section 2(5) of the Companies Act.
+              </p>
+              <p>
+                  It details all the rules and regulations relating to the management of the company.
+              </p>
+              <div class="additionalPadding"></div>
             </div>
           </div>
         </div>
@@ -2946,7 +3010,21 @@
             <p class="mt-3">&copy; 2024 CharteredOne.com | All Right Reserved</p>
         </div>
     </footer>
-   
+    <!-- WhataApp Floating Btn -->
+
+    <div class="floatingWhatsApp">
+      <a class="btn" title="Chat on WhatApp" target="_blank" href="https://wa.me/916300347380?text=Hello I am redirected here form charteredone.com need more info on this.">
+        <div class="sign">
+          <svg class="socialSvg whatsappSvg" viewBox="0 0 16 16">
+            <path
+              d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"
+            ></path>
+          </svg>
+        </div>
+        <div class="text">WhatsApp</div>
+      </a>
+
+  </div>
     <!-- =====================enquiry Model================================= -->
     <div id="enquiry">
         <a href="" data-bs-toggle="modal" data-bs-target="#enquiryModal">Enquiry</a>
@@ -2990,5 +3068,41 @@
     
     <script src="./js/navbar.js" defer></script>
     <script src="./js/services.js" defer ></script>
+    <!-- FAQS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+      function adjustAccordionHeight(faqsSection) {
+      faqsSection.querySelectorAll(".accordion-header").forEach(function(header) {
+          var content = header.nextElementSibling;
+          if (header.classList.contains("active")) {
+              content.style.height = content.scrollHeight + "px";
+              content.style.paddingTop = "15px";
+              content.style.paddingBottom = "15px";
+          } else {
+              content.style.height = "0";
+              content.style.paddingTop = "0";
+              content.style.paddingBottom = "0";
+          }
+      });
+  }
+      document.querySelectorAll(".faqs").forEach(function(faqsSection) {
+          faqsSection.querySelectorAll(".accordion-header").forEach(function(header) {
+              header.addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  adjustAccordionHeight(faqsSection);
+              });
+          });
+          faqsSection.querySelectorAll(".accordion-header").forEach(function(header) {
+              header.classList.add("active");
+          });
+          adjustAccordionHeight(faqsSection);
+      });
+      window.addEventListener("resize", function() {
+          document.querySelectorAll(".faqs").forEach(function(faqsSection) {
+              adjustAccordionHeight(faqsSection);
+          });
+      });
+  });
+</script>
 </body>
 </html>

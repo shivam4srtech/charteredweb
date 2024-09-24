@@ -589,6 +589,9 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     padding: 4rem 0;
     background-color: #e7f6ff;
 }
+.registrationpProcedure .accordion-body{
+ padding-top: 0;
+}
 .registrationpProcedure .container{
     max-width: 1450px;
 }
@@ -606,12 +609,27 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     padding-bottom: 0;
 }
 .registrationpProcedure h2{
+  font-weight: 600;
+  color: #2e2e2e;
+  letter-spacing: .5px;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin-bottom: .8rem;
+}
+.registrationpProcedure .accordion-header{
     font-weight: 600;
     color: #2e2e2e;
     letter-spacing: .5px;
     font-size: 1.8rem;
     line-height: 1.4;
-    margin-bottom: 1rem;
+    margin-bottom: .8rem;
+}
+.registrationpProcedure .accordion-body{
+  border-top: 1px solid #e2e2e2;
+  padding-top: 1rem;
+}
+.registrationpProcedure .accordion-header .accordion-button{
+  padding-bottom: .6rem;
 }
 .registrationpProcedure .accordion-body p{
     font-weight: 500;
@@ -1106,6 +1124,8 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     font-weight: 600;
     font-size: 1.3rem;
     border-radius: 0;
+    display: flex;
+    flex-direction: row;
   }
 
   .faqs .accordion-header::after {
@@ -1171,6 +1191,13 @@ ol.process-chart > li:nth-of-type(6n+5):after {
     margin-bottom: 1rem;
     list-style-type: decimal;
    }
+   .faqs .faqAns ol li::marker{
+     font-weight: 600;
+     color: #000;
+   }
+   .faqs .faqAns ol  ol li{
+    list-style-type: upper-alpha;
+   }
   .faqs .faqAns .additionalPadding{
     padding-bottom: 2rem;
   }
@@ -1209,6 +1236,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
+  min-height: 100%;
 }
  .pricingPanel .pricingTag{
   position: absolute;
@@ -1362,22 +1390,6 @@ ol.process-chart > li:nth-of-type(6n+5):after {
  .pricingPanel .pricingTerms img{
   margin-right: .6rem;
 }
-@media(min-width:991px){
-  .pricingPanel  .col-lg-4:nth-of-type(4) .pricingBox{
-    min-height: fit-content;
-  }
-}
-@media(min-width:991px){
-  .pricingPanel .pricingBox{
-    min-height: 600px;
-  }
-}
-@media only screen and (min-width:768px) and (max-width:991px){
-  .pricingPanel .pricingBox{
-    min-height: 700px; 
-  }
-}
-
 /* registration steps */
 .registrationSteps{
   padding: 3rem 0;
@@ -2221,12 +2233,9 @@ section strong{
   position: relative;
   transition: transform 1s ease-out, opacity 1s ease-out;
   opacity: 0; 
+  min-height: 100%;
 }
-@media(min-width:768px){
-  .compareCard {
-    min-height: 510px;
-  }
-}
+
 
 .compareCard-left {
   transform: translateX(-150%); 
@@ -2848,6 +2857,24 @@ margin: auto;
  font-weight: 500;
  height: 2.6rem;
 }
+.registrationHeader .expertBox form .form-select{
+  box-shadow: none;
+  border-radius: 5px;
+  font-size: .9rem;
+  color: #2e2e2e;
+  font-weight: 500;
+  height: 2.6rem;
+  font-weight: 500;
+  color: #999;
+  font-size: .9rem;
+ }
+ @media(max-width:500px){
+  .registrationHeader .expertBox{
+    padding: 2rem .8rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+ }
+/* ============== */
 .registrationHeader .expertBox form .form-control::placeholder{
   font-weight: 500;
   color: #999;
@@ -3031,6 +3058,7 @@ margin: auto;
   position: fixed;
   bottom: 40px;
   right: 10px;
+  z-index: 9999;
  }
 
 .floatingWhatsApp .btn {
@@ -3293,4 +3321,49 @@ margin: auto;
     width: 550px;
     border-radius: 10px;
     min-height: 1000px;
+  }
+  .tradeMarkWithUs{
+    padding: 2rem 0;
+  }
+  .tradeMarkWithUs .tradeHeader h2{
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: .6rem;
+    color: #000;
+  }
+  .tradeMarkWithUs .tradeHeader p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: .6rem;
+    color: #333;
+    max-width: 850px;
+    margin-bottom: 2rem;
+    text-align: justify;
+  }
+  .tradeMarkWithUs .tradeHeader p span{
+    display: inline-block;
+  }
+  .tradeMarkWithUs .tradeMarkWithUsCard {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .tradeMarkWithUs .tradeMarkWithUsCard .svgBox{
+   margin-bottom: 1rem;
+  }
+  .tradeMarkWithUs .tradeMarkWithUsCard span{
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    color: #000;
+  }
+  .tradeMarkWithUs .tradeMarkWithUsCard p{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: .6rem;
+    color: #333;
   }

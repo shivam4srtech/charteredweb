@@ -53,26 +53,26 @@
 
 
 // Procedure Accordian
-  $(document).ready(function() {
-    $(".accordion-header").click(function() {
-      $(this).toggleClass("active");
-      var content = $(this).next(".accordion-content");
+//   $(document).ready(function() {
+//     $(".accordion-header").click(function() {
+//       $(this).toggleClass("active");
+//       var content = $(this).next(".accordion-content");
 
-      if ($(this).hasClass("active")) {
-        content.css({
-          "height": content.prop('scrollHeight') + "px",
-          "padding-top": "15px",
-          "padding-bottom": "15px"
-        });
-      } else {
-        content.css({
-          "height": 0,
-          "padding-top": 0,
-          "padding-bottom": 0
-        });
-      }
-    });
-  });
+//       if ($(this).hasClass("active")) {
+//         content.css({
+//           "height": content.prop('scrollHeight') + "px",
+//           "padding-top": "15px",
+//           "padding-bottom": "15px"
+//         });
+//       } else {
+//         content.css({
+//           "height": 0,
+//           "padding-top": 0,
+//           "padding-bottom": 0
+//         });
+//       }
+//     });
+//   });
 
 
 
