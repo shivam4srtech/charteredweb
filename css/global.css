@@ -618,6 +618,14 @@ ul.navbar-nav{
 #enquiryModal .modal-content .form-control{
 	box-shadow: none;
 	border-radius: 0;
+	height: 2.2rem;
+}
+#enquiryModal .modal-content .form-select{
+	box-shadow: none;
+	border-radius: 0;
+	font-weight: 500;
+	font-size: .8rem;
+	height: 2.2rem
 }
 #enquiryModal .modal-content label span{
 	padding: 0 .2rem;
