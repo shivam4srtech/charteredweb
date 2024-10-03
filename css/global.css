@@ -856,8 +856,7 @@ ul.navbar-nav{
   }
   .customeNav .logo a img{
 	 object-fit: contain;
-	 height: 25px;
-	 width: 220px;
+	 width: 210px;
   }
 
   /* mobile nav */
