@@ -2246,19 +2246,19 @@ opacity: 0;
 min-height: 100%;
 }
 
-
 .compareCard-left {
-transform: translateX(-150%); 
+  transform: translate(-140%, -20%); 
 }
 
 .compareCard-right {
-transform: translateX(150%); 
+  transform: translate(140%, -20%); 
 }
 
-.in-view {
-transform: translateX(0);
-opacity: 1; 
+.compareCard.in-view {
+  transform: translateX(0);
+  opacity: 1;
 }
+/*  */
 .compareCard .cardHeader{
 display: flex;
 flex-direction: row;
@@ -2396,6 +2396,7 @@ align-items: center;
 justify-content: center;
 padding: 1rem .6rem;
 text-align: center;
+min-height: 100%;
 }
 .serviceSummary .serviceValue .pricingItem p:nth-of-type(1){
 font-weight: 600;
@@ -2417,6 +2418,7 @@ font-weight: 500;
 font-size: 1rem;
 display: flex;
 align-items: center;
+margin-bottom: .8rem;
 }
 .serviceSummary .serviceValue .pricingItem .discount span{
 color: #56595D;
@@ -2834,6 +2836,25 @@ font-weight: 600;
 letter-spacing: .5px;
 font-size: 1em;
 }
+.businessLicense .accordion-header .accordion-button svg{
+ margin-left: .5rem;
+ display: none;
+}
+.businessLicense .accordion-header .accordion-button svg:nth-of-type(2){
+  display: inline-block;
+ }
+ .businessLicense .accordion-header .accordion-button svg:nth-of-type(1){
+  display: none
+ }
+.businessLicense .accordion-header.active .accordion-button svg:nth-of-type(1){
+  display: inline-block;
+}
+.businessLicense .accordion-header.active .accordion-button svg:nth-of-type(2){
+  display: none;
+}
+.businessLicense .accordion-button svg.collapse{
+ display: inline-block;
+ }
 #collpaseExample .accordion-button::after{
 display: none;
 }
@@ -3406,10 +3427,10 @@ border-radius: 10px;
   text-decoration: none;
 }
 .sliderBox .menu-wrapper .menu-item a:hover {
-  border-bottom: 3px solid #f5b402;
+  border-bottom: 5px solid #f5b402;
 }
 .sliderBox .menu-wrapper .menu-item .active {
-  border-bottom: 3px solid #f5b402;
+  border-bottom: 5px solid #f5b402;
 }
 
 .sliderBox .menu-wrapper .menu-item::-webkit-scrollbar {
@@ -3602,3 +3623,8 @@ margin-bottom: .8rem;
 line-height: 1.4;
 color: #000;
 }
+
+
+
+
+

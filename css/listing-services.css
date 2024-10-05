@@ -1,0 +1,84 @@
+.serviceSection{
+    padding: 6rem 0 3rem 0;
+}
+.serviceSection .container{
+   max-width: 1200px;
+}
+.serviceSection .breadcrumbs ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.serviceSection .breadcrumbs ul li{
+    margin-right: .5rem;
+    font-weight: 500;
+    color: #000;
+    letter-spacing: .4px;
+}
+.serviceSection .breadcrumbs ul li a{
+    color: #1303d4;
+}
+.serviceSection .breadcrumbs ul li:last-child{
+    margin-right: 0;
+}
+.serviceSection h2{
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #2e2e2e;
+    text-transform: uppercase;
+}
+.serviceSection .serviceBox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e2e2e2;
+    padding: .8rem .5rem;
+    border-radius: 5px;
+    min-height: 100%;
+}
+
+.serviceSection .serviceBox .serviceName{
+    display: flex;
+    align-items: center;
+}
+.serviceSection .serviceBox .serviceName p{
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+    font-size: .9rem;
+    line-height: 1.5;
+}
+.serviceSection .serviceBox .serviceName .imgBox{
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f8fa;
+    margin-right: .5rem;
+}
+.serviceSection .serviceBox .serviceName .imgBox img{
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+.serviceSection .serviceBox .arrow{
+   width: 2rem;
+   text-align: right;
+   height: 1.5rem;
+}
+.serviceSection .arrow svg{
+   display: none;
+}
+.serviceSection .serviceBox:hover{
+   border: 1px solid #f5b402;
+   background-color: #f5b4020a;
+ }
+.serviceSection .serviceBox:hover svg {
+   display: inline;
+   fill: #f5b402;
+}
