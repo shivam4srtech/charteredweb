@@ -307,32 +307,28 @@ body{
   font-weight: 500;
   color: #2e2e2e;
   font-size: 1rem;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .faqs h2{
   color: #000;
   font-weight: 600;
   font-size: 1.4rem;
   margin-bottom: 1rem;
-  margin-left: 1.5rem
+  margin-left: 0
 }
 .faqs .container{
-  max-width: 1500px;
+  max-width: 1200px;
 }
-@media(max-width:600px){
-  .faqs .container{
-    padding: 0;
+
+  @media(max-width:600px){
+    .faqs .container{
+      padding: 0;
+  }
 }
-}
-#faqs {
-padding: 1rem 0;
-}
-#faqs .container{
-max-width: 1500px;
-}
+
 .faqs .accordion {
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .faqs .accordion-item {
@@ -464,9 +460,7 @@ max-width: 1500px;
  .businessContent{
    padding: 1rem 0;
   }
-  .businessContent .container{
-  max-width: 1500px;
-  }
+
  
   .businessContent .container .contentIndex{
    max-height: 100vh;
@@ -662,35 +656,10 @@ max-width: 1500px;
  .businessSnepet strong{
    font-weight: 700;
  }
- .businessSnepet table{
-   border: 1px solid #e2e2e2;
- }
- .businessSnepet table tr th{
-   border: 1px solid #c1bcbc;
-   font-weight: 600;
-   line-height: 1.4;
- }
- .businessSnepet table tr td{
-   border: 1px solid #c1bcbc;
-   font-weight: 500;
-   line-height: 1.4;
- }
- .businessSnepet table tr:nth-of-type(1) td{
-   font-weight: 600;
-   line-height: 1.4;
- }
+ 
  section strong{
    font-weight: 700;
  }
- .tableContainer{
-   overflow-x: auto;
-   margin-bottom: 1rem;
- }
-@media(min-width:991px){
-   .xpadding{
-      padding-left: 3rem;
-   }
-}
  
 .formBox .finalResult{
     color: #04a96d;
@@ -754,4 +723,112 @@ max-width: 1500px;
   background-color: transparent;
   border-radius: 10px;
   margin: auto;
+}
+
+
+
+ table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+  border: 1px solid #c1bcbc;
+}
+
+
+ thead {
+  background-color: #f4f4f4;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+ table tr th{
+  border: 1px solid #c1bcbc;
+  font-weight: 600;
+  line-height: 1.4;
+}
+table tr th, table tr td {
+  font-size: 1rem;
+}
+ table tr td{
+  border: 1px solid #c1bcbc;
+  font-weight: 500;
+  line-height: 1.4;
+}
+ table tr:nth-of-type(1) td{
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+@media(max-width:600px){
+  table tr th, table tr td {
+    font-size: .75rem;
+  }
+}
+/* justified index */
+
+.justifiedIndex{
+  border-radius: 18px;
+  border: 1.5px solid rgba(9, 43, 70, 0.32);
+  background: #F5F7F9;
+  padding: 2rem 3rem;
+  margin-bottom: 2rem;
+}
+
+.justifiedIndex h3{
+  color: #092B46;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin-top: 34px;
+}
+.justifiedIndex .seprate_table{
+  width: 92px;
+  border: 5px solid;
+  color: #f5b402;
+  background-color: #f5b402;
+  text-align: center !important;
+  opacity: 1;
+  margin-top: -5px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+.justifiedIndex .contentList{
+  margin-top: 28px;
+  list-style-type: disc;
+  margin-left: 30px;
+  text-align: left;
+}
+.justifiedIndex .contentList li{
+margin-bottom: .5rem;
+}
+.justifiedIndex .contentList li a{
+color: #425c71;
+font-size: 1.15rem;
+font-weight: 500;
+}
+.justifiedIndex .contentList li a:hover{
+text-decoration: underline;
+}
+.justifiedIndex .contentList li::marker{
+  color: #f5b402;
+  font-size: 21px;
+}
+.justifiedIndex .imgBox img{
+max-width: 100%;
+object-fit: contain;
+width: 600px;
+}
+@media(max-width:600px){
+  .justifiedIndex{
+    padding: 1.6rem 0rem;
+}
+.justifiedIndex .contentList li{
+  margin-bottom: .6rem;
+  line-height: 1.4;
+}
+.justifiedIndex .contentList li a{
+  font-size: 1.1rem;
+}
 }
