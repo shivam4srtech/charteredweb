@@ -832,3 +832,7 @@ width: 600px;
   font-size: 1.1rem;
 }
 }
+
+.targetDiv{
+  display: none;
+}
