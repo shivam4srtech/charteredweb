@@ -1,5 +1,6 @@
 .calcsection{
     padding: 8rem 0 2rem 0;
+    background-color: #f8f9fb;
 }
 .container{
     max-width: 1200px;
@@ -107,7 +108,16 @@ body{
    color: #000;
   }
   .calcSingle {
-   padding-top: 6rem;
+   padding-top: 3rem;
+   background-color: #f8f9fb;
+   padding-bottom: 3rem;
+}
+.calcSingle .container{
+ max-width: 1300px; 
+ background: #fff;
+padding: 3rem 4rem;
+box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+border-radius: 20px;
 }
 .calcSingle h1{
     font-weight: 600;
@@ -836,3 +846,312 @@ width: 600px;
 .targetDiv{
   display: none;
 }
+.rageWrapper{
+  position: relative;
+}
+.rageWrapper svg{
+  position: absolute;
+  top: 35%;
+  left: 10px;
+}
+.rageWrapper .form-control{
+  padding-left: 2rem;
+}
+.calcSingle .setIcon{
+  border-radius: 10px;
+  display: inline-flex;
+  padding: .8rem;
+  margin-bottom: 1rem;
+  background-color: #f5b402;
+  fill: #fff;
+}
+.calcSingle .setIcon svg{
+ height: 3rem;
+ width: 3rem;
+}
+.calcArea .calcBox .form-select{
+  padding: .8rem 4.5rem .8rem 1rem;
+  height: 49px;
+  font-size: 15px;
+  outline: 0;
+  border: solid 1px #cad0d8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.calcArea .mainLabel{
+  font-weight: 600;
+}
+.calcArea .mainLabel h3{
+  font-weight: 600;
+  font-size: 18px;
+  margin: 0;
+  line-height: 18px;
+  border-left: solid 5px #f5b402;
+  padding-left: 1rem;
+}
+.calcArea .calcBox .form-label{
+  font-weight: 500;
+  font-size: 13px;
+  display: flex;
+  letter-spacing: .5px;
+  min-height: 2rem;
+  margin-bottom: .4rem;
+ align-items: end;
+}
+.calcArea .calcBox .form-control{
+  height: 49px;
+  background: #fff;
+  font-size: 15px;
+  outline: 0;
+  border: solid 1px #cad0d8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+  border-radius: 6px;
+  padding: .8rem 2rem;
+  font-weight: 500;
+}
+.calcArea .calcBox {
+  position: relative;
+}
+.calcArea .calcBox .rupeeIcon{
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 58%;
+  left: 6px;
+  background: #fff;
+  border-radius: 50%;
+  border: solid 1px #f5b402;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  display: inline-block;
+}
+.calcArea .calcBox .rupeeIcon img{
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
+}
+.calcArea .row{
+  max-width: 100%;
+  margin: auto;
+}
+.calcArea .calcBox .form-control:disabled{
+  background: #f6f7fb;
+  cursor: not-allowed;
+}
+
+.calcModal button{
+  display: inline-block;
+  z-index: 999;
+  padding: .2rem 1rem;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 20px;
+  position: absolute;
+  right: 15px;
+  bottom: -25px;
+  border: none;
+  outline: none;
+  font-size: .7rem;
+  font-weight: 500;
+  letter-spacing: .5px;
+  background-color: #f5b402;
+}
+.calcArea .calcAll{
+  text-align: center;
+}
+.calcArea .calcAll button{
+  background-color: #f5b402d7;
+  font-weight: 500;
+  padding: .5rem 1rem;
+  border-radius: 4px;
+}
+.calcArea .calcAll button:hover{
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.calcArea .calcResultAll{
+  display: flex;
+  flex-direction: column;
+  border: .5px solid #f5b402;
+  background-color: #f5b4020e;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
+  padding:1rem  2rem;
+  border-radius: 6px;
+}
+.calcArea .calcResultAll p{
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.calcArea .calcResultAll span{
+  font-size: 30px;
+  color: #56ba4b;
+  font-weight: 600;
+}
+.calcArea .calcResultAll small{
+  font-size: .8rem;
+  color: #2e2e2e;
+  font-weight: 400;
+  display: block;
+  margin-top: .5rem;
+}
+.calcSingle .trendingGuide{
+  background: #fff;
+  box-shadow: 0 0 10px 0 #ccc;
+  position: relative;
+  border-bottom: 5px solid #f5b402;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  padding-top: 5px;
+}
+.calcSingle .trendingGuide h3{
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-size: 15px;
+  position: relative;
+  margin: 15px 0 10px 0;
+  background: #f5b402;
+  color: #111;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.calcSingle .trendingGuide .newsContainer{
+  height: 230px;
+  overflow-x: hidden;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding-bottom: 0;
+}
+.calcSingle .trendingGuide .newsContainer ul{
+  padding: 0;
+}
+.calcSingle .trendingGuide .newsContainer ul li{
+  background: url(../images/trading-icon.webp) 12px no-repeat;
+  list-style-type: none;
+  background-size: 20px;
+  padding: 0;
+  border: 0;
+}
+.calcSingle .trendingGuide .newsContainer ul li div{
+  font-weight: 500;
+  border: 1px solid #f5f5f5;
+  padding-left: 40px;
+  padding-right: 10px;
+  font-size: 13px;
+}
+.calcSingle .trendingGuide .newsContainer ul li div a{
+  color: #000;
+  padding: 5px 0;
+  padding-left: 20px;
+  width: 100%;
+  display: block;
+  text-decoration: none;
+}
+.colculatorModals .modal-content{
+  position: relative;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 6px;
+  outline: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+.colculatorModals .modal-header{
+  border: none;
+  text-align: center;
+  font-weight: 600;
+  padding: 2rem 0;
+  display: block;
+}
+.colculatorModals .modal-body{
+ padding-bottom: 2rem;
+}
+@media(min-width:991px){
+  .colculatorModals .modal-body{
+    padding: 0 4rem;
+    padding-bottom: 2rem;
+   }
+}
+.colculatorModals .modal-header .close{
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background: #fff;
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  opacity: 1;
+  line-height: 30px;
+  margin-top: -2px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.4rem;
+  border: none;
+  outline: none;
+}
+.colculatorModals .closemodal{
+ text-align: center;
+}
+.colculatorModals .closemodal button{
+  background-color: #f5b402;
+  font-weight: 500;
+  color: #000;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+ }
+.calcTable .calcArea .calcBox .form-control{
+  max-width: 200px;
+  height: 40px;
+}
+.calcTable .calcArea .calcBox .rupeeIcon{
+  top: 20%;
+  left: -9px;
+}
+.calcTable .calcArea table{
+  border: none;
+  background-color: #fff;
+ }
+.calcTable .calcArea table tr th{
+ padding: .5rem 1rem;
+ border: none;
+ background-color: #fff;
+ vertical-align: bottom;
+ font-size: .8rem;
+}
+.calcTable .calcArea table tr td{
+  padding: .5rem 1rem;
+  border: none;
+  background-color: #fff;
+  font-size: .8rem;
+ }
+ .colculatorModals::-webkit-scrollbar{
+  display: none;
+ }
+ .gratuty{
+  border-left: 5px solid #f5b402;
+  padding-left: 1rem;
+ }
+ .calculateBtn button{
+  background-color: #f5b402;
+  color: #000;
+  font-weight: 500;
+  padding: .6rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 1rem;
+ }
