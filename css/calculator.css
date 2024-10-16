@@ -1155,3 +1155,21 @@ width: 600px;
   border-radius: 5px;
   font-size: 1rem;
  }
+ .form-check-input:focus{
+  box-shadow: none;
+}
+ .form-check-input:checked {
+  background-color: #f5b402;
+  border: 2px solid #f5b402;
+  box-shadow: none;
+}
+.form-check-label{
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: .5px;
+}
+.checkContainer{
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+}
