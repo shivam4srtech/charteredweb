@@ -4449,31 +4449,33 @@
     // compareCard Trigger Animation
     document.addEventListener("DOMContentLoaded", function() {
         const cards = document.querySelectorAll(".compareCard");
+
         function applyInViewOnSmallScreens() {
             if (window.innerWidth <= 600) {
+                // Add 'in-view' to all cards at once on small screens
                 cards.forEach(card => card.classList.add("in-view"));
             } else {
+                // Add 'in-view' to all cards simultaneously on larger screens
                 const cardObserver = new IntersectionObserver(entries => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            setTimeout(() => {
-                                entry.target.classList.add("in-view");
-                                cardObserver.unobserve(entry.target);
-                            }, 400); 
-                        }
-                    });
-                }, { threshold: 0.0 }); 
-                
-                cards.forEach(card => {
-                    cardObserver.observe(card);
-                });
+                    const anyIntersecting = entries.some(entry => entry.isIntersecting);
+                    if (anyIntersecting) {
+                        cards.forEach(card => card.classList.add("in-view"));
+                        cardObserver.disconnect();
+                    }
+                }, { threshold: 0.0 });
+
+                // Observe any one of the cards to add class to all
+                if (cards.length > 0) {
+                    cardObserver.observe(cards[0]);
+                }
             }
         }
-        applyInViewOnSmallScreens();
 
+        applyInViewOnSmallScreens();
         window.addEventListener('resize', applyInViewOnSmallScreens);
     });
 </script>
+
 
 <script>
     document.addEventListener("DOMContentLoaded", function() {

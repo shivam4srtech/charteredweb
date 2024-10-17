@@ -1173,3 +1173,122 @@ width: 600px;
   border-radius: 5px;
   background-color: #f8f8f8;
 }
+.suknyaCalc .sukanyaBox{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ gap: 20px;
+}
+.suknyaCalc .container{
+  max-width: 1300px;
+ }
+
+.sukanyaBox .suknyaItem{
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .05);
+    background: #fff;
+    border-radius: 2px;
+    padding: 2rem;
+    text-align: center;
+    min-height: 100%;
+    width: calc(100% / 5);
+}
+.suknyaCalc{
+  background-color: #f8f9fb;
+  padding-bottom: 3rem;
+}
+
+.sukanyaBox .suknyaItem p{
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    color: #000;
+}
+.sukanyaBox .suknyaItem .rateValue{
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+.sukanyaBox .suknyaItem .rateValue img{
+  margin-right: .4rem;
+}
+@media(max-width:1100px){
+    .sukanyaBox .suknyaItem{
+      width: calc(94% / 3);
+  }
+  .suknyaCalc .sukanyaBox{
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+   }
+}
+@media(max-width:768px){
+  .sukanyaBox .suknyaItem{
+    width: calc(94% / 2);
+}
+}
+@media(max-width:420px){
+  .sukanyaBox .suknyaItem{
+    width: 100%;
+}
+}
+.sukanyaBox .suknyaItem.maturityAmt{
+ background-color: #f5b4021b;
+}
+.suknyaTableBox{
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .05);
+  background: #fff;
+  border-radius: 2px;
+  padding: 2rem 0;
+  margin-top: 2rem;
+  border: solid 1px #e8edef;
+}
+.suknyaTableBox table th, .suknyaTableBox table td{
+  padding: 15px 20px;
+  border: none;
+}
+.suknyaTableBox table th{
+  font-weight: 600;
+  font-size: .9rem;
+}
+.suknyaTableBox table td{
+  font-weight: 500;
+  font-size: .9rem;
+}
+.suknyaTableBox table{
+  padding: 15px 20px;
+  border-collapse: collapse;
+  border: none;
+}
+.suknyaTableBox table tr{
+  padding: 15px 20px;
+}
+
+.suknyaTableBox table tr:nth-child(odd) {
+  background: #f6f8f9;
+}
+.suknyaTableBox table tr:nth-child(even) {
+  background: #fff;
+}
+.suknyaTableBox .suknyaTable table thead tr{
+  background-color: #fff;
+ }
+ .suknyaTableBox table tr:nth-of-type(1) td{
+  font-weight: 500;
+ }
+
+ @media(max-width: 600px){
+  .suknyaTableBox table th{
+    font-size: .7rem;
+  }
+  .suknyaTableBox table td{
+    font-size: .7rem;
+  }
+  .suknyaTableBox table th, .suknyaTableBox table td{
+    padding: 10px 5px;
+  }
+}
+.row{
+  max-width: 100%;
+  margin: auto;
+}
