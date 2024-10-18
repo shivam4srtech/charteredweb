@@ -56,6 +56,8 @@ body{
 }
 
 .form .form-details input[type="text"],
+.form .form-details input[type="date"],
+.form .form-details input[type="time"],
 .form .form-details input[type="email"] {
     padding: 13px 18px;
     border-radius: 4px;
@@ -120,6 +122,8 @@ body{
     }
     .form .form-details input[type="text"],
     .form .form-details input[type="email"],
+    .form .form-details input[type="date"],
+    .form .form-details input[type="time"],
     .form .form-details textarea {
         width: 100%;
     }
@@ -186,4 +190,22 @@ body{
     .form .form-txt h1{
         font-size: 26px;
     }
+}
+.addressBox img{
+ object-fit: contain;
+ width: 500px;
+ max-width: 100%;
+}
+.form-details label{
+    font-weight: 600;
+    margin-bottom: .5rem;
+    display: block;
+    padding-left: .1rem;
+    font-size: 1rem;
+}
+.form .form-details.appointmentForm input{
+    margin-bottom: 1rem;
+}
+.ourReview{
+    margin-top: 1rem;
 }
