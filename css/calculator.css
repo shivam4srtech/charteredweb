@@ -783,7 +783,7 @@ table tr th, table tr td {
   border: 1.5px solid rgba(9, 43, 70, 0.32);
   background: #F5F7F9;
   padding: 2rem 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
 }
 
 .justifiedIndex h3{

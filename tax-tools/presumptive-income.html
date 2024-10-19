@@ -847,192 +847,64 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <h1>Children Education and Hostel Allowance Calculator</h1>
+                    <h1>
+                        Presumptive income under u/s 44E calculator
+                    </h1>
                     <p class="pagedesc">
-                        Do you need to know how much you'll save this year with a National Savings Certificate? With our National Savings Certificate tax calculator, you can find out in no time. Just answer a few questions, and we'll quickly show you how much you can save.
+                        Calculate tax exemptions on income earned from goods carriage vehicles
                     </p>
-                    <div class="formBox">
-                        <form action="NoWhere">
+                    <div class="formBox row">
+                        <form action="NoWhere" class="col-lg-12">
                             <div class="inputBox">
-                                <label for="">Type of calculator</label>
-                                <select class="form-select dropdown-select" aria-label="Default select example" data-group="group1">
-                                    <option selected data-target="education" data-group="group1">Education</option>
-                                    <option data-target="hostelAllowance" data-group="group1">Hostle Allowance</option>
+                                <label>Financial year</label>
+                                <select class="form-select">
+                                    <option selected>Select</option>
+                                    <option value="1">2020 - 2021</option>
+                                    <option value="2">2021 - 2022</option>
+                                    <option value="3">2022 - 2023</option>
+                                    <option value="4">2023 - 2024</option>
+                                    <option value="5">2024 - 2025</option>
                                 </select>
                             </div>
-                        
-                            <div class="targetDiv flex-column" data-target="education" data-group="group1">
-                                <div class="inputBox floatRadio" style="width: 100%;">
-                                    <label for="">Number of childrens do you have?</label>
-                                    <div class="d-flex flex-column radioSet" data-group="group2">
-                                        <div class="form-check">
-                                            
-                                            <label class="form-check-label" for="">
-                                              One Child
-                                            </label>
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" data-target="oneChild" data-group="group2" checked>
-                                        </div>
-                                        <div class="form-check">
-                                            
-                                            <label class="form-check-label" for="">
-                                              Two Child
-                                            </label>
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" data-target="twoChild" data-group="group2">
-                                        </div>
+                            <div class="inputBox floatRadio" style="width: 100%;">
+                                <label for="">Whether partnership firm or not?</label>
+                                <div class="d-flex flex-column radioSet" data-group="group2">
+                                    <div class="form-check">
                                         
+                                        <label class="form-check-label" for="">
+                                         Yes
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" data-target="oneChild" data-group="group2" checked>
                                     </div>
-                                </div>
-                                <div class="inputBox targetDiv flex-column align-items-start" data-target="oneChild" style="display: none;" data-group="group2" >
-                                   <div class="inputBox" id="inputBox3" style="display: flex; width: 100%;">
-                                        <label for="interestAmount">Monthly Education Allowance received (₹)</label>
-                                        <input type="text" class="form-control" placeholder="" value="0">
+                                    <div class="form-check">
+                                        
+                                        <label class="form-check-label" for="">
+                                         No
+                                        </label>
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault" data-target="twoChild" data-group="group2">
                                     </div>
-                                    <div class="inputBox" id="inputBox3" style="display: flex; width: 100%;">
-                                        <label for="interestAmount">No. of months</label>
-                                        <input type="text" class="form-control" placeholder="" value="1">
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Exempted education allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Taxable education allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                </div>
-                                <div class="inputBox targetDiv flex-column align-items-start" data-target="twoChild" style="display: none;" data-group="group2">
-                                    <h3>For Child 1:</h3>
-                                   <div class="inputBox" id="inputBox3" style="display: flex; width: 100%;">
-                                        <label for="interestAmount">Monthly Education Allowance received (₹)</label>
-                                        <input type="text" class="form-control" placeholder="" value="0">
-                                    </div>
-                                    <div class="inputBox" id="inputBox3" style="display: flex; width: 100%;">
-                                        <label for="interestAmount">No. of months</label>
-                                        <input type="text" class="form-control" placeholder="" value="1">
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Exempted education allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Taxable Hostle allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                    <h3>For Child 2:</h3>
-                                   <div class="inputBox" id="inputBox3" style="display: flex; width: 100%;">
-                                        <label for="interestAmount">Monthly Education Allowance received (₹)</label>
-                                        <input type="text" class="form-control" placeholder="" value="0">
-                                    </div>
-                                    <div class="inputBox" id="inputBox3" style="display: flex; width: 100%;">
-                                        <label for="interestAmount">No. of months</label>
-                                        <input type="text" class="form-control" placeholder="" value="1">
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Exempted education allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Taxable Hostle allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                    <h3>Total:</h3>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Total Exempted education allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Total Taxable Hostle allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
+                                    
                                 </div>
                             </div>
-                            <div class="targetDiv flex-column" data-target="hostelAllowance" data-group="group1">
-                                <div class="inputBox floatRadio" style="width: 100%;">
-                                    <label for="">Number of childrens do you have?</label>
-                                    <div class="d-flex flex-column radioSet" data-group="group3">
-                                        <div class="form-check">
-                                            
-                                            <label class="form-check-label" for="">
-                                              One Child
-                                            </label>
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" data-target="oneChild2" data-group="group3">
-                                        </div>
-                                        <div class="form-check">
-                                            
-                                            <label class="form-check-label" for="">
-                                              Two Child
-                                            </label>
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" data-target="twoChild2" data-group="group3">
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                                <div class="inputBox targetDiv flex-column align-items-start" data-target="oneChild2" style="display: none;" data-group="group3" >
-                                   <div class="inputBox" id="inputBox3" style="display: flex; width: 100%;">
-                                        <label for="interestAmount">Monthly Hostel Expenditure Allowance received (₹)</label>
-                                        <input type="text" class="form-control" placeholder="" value="0">
-                                    </div>
-                                    <div class="inputBox" id="inputBox3" style="display: flex; width: 100%;">
-                                        <label for="interestAmount">No. of months</label>
-                                        <input type="text" class="form-control" placeholder="" value="1">
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Exempted hostel allowance allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Taxable hostel allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                </div>
-                                <div class="inputBox targetDiv flex-column align-items-start" data-target="twoChild2" style="display: none;" data-group="group3">
-                                    <h3>For Child 1:</h3>
-                                   <div class="inputBox" id="inputBox3" style="display: flex; width: 100%;">
-                                        <label for="interestAmount">Monthly Hostel Expenditure  Allowance received (₹)</label>
-                                        <input type="text" class="form-control" placeholder="" value="0">
-                                    </div>
-                                    <div class="inputBox" id="inputBox3" style="display: flex; width: 100%;">
-                                        <label for="interestAmount">No. of months</label>
-                                        <input type="text" class="form-control" placeholder="" value="1">
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Exempted hostel allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Taxable hostel allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                    <h3>For Child 2:</h3>
-                                   <div class="inputBox" id="inputBox3" style="display: flex; width: 100%;">
-                                        <label for="interestAmount">Monthly Hostel Expenditure received (₹)</label>
-                                        <input type="text" class="form-control" placeholder="" value="0">
-                                    </div>
-                                    <div class="inputBox" id="inputBox3" style="display: flex; width: 100%;">
-                                        <label for="interestAmount">No. of months</label>
-                                        <input type="text" class="form-control" placeholder="" value="1">
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Exempted hostel allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Taxable hostel allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Total Exempted hostel allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                    <div class="inputBox" style="display: flex; width: 100%;">
-                                        <label for="">Total Taxable hostel allowance</label>
-                                        <span id="deductionMessage" class="finalResult"> ₹ 00</span>
-                                    </div>
-                                </div>
+                            <div class="inputBox">
+                                <label for="">Total no. of vehicles owned (max. 10 vehicles for
+                                    eligiblity u/s 44AE)</label>
+                                <input type="text" class="form-control" value="1">
+                            </div>
+                            <div class="inputBox">
+                                <label for="">
+                                    No. of heavy vehicles goods vehicles owned(more than gross weight of 12MT)
+                                </label>
+                                <input type="text" class="form-control" value="1">
+                            </div>
+                            <div class="inputBox">
+                                <label for="">
+                                    No. of light vehicles goods vehicles owned (less than gross weight of 12MT)
+                                </label>
+                                <input type="text" class="form-control" value="0" disabled>
                             </div>
                         </form>
                     </div>
-                    
                 </div>
                 <div class="col-md-4">
                    <a href="#" class="bannerImg">
@@ -1518,70 +1390,6 @@
     <script src="../bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
     
     <script src="../js/navbar.js"></script>
-<!-- Script to handle independent radio buttons and dropdowns per group -->
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-
-        // Function to hide all divs in a specific group
-        function hideAllDivs(group) {
-            document.querySelectorAll(`.targetDiv[data-group="${group}"]`).forEach(div => div.style.display = 'none');
-        }
-
-        // Function to show a specific div and hide others within the same group
-        function showTargetDiv(group, targetAttr) {
-            hideAllDivs(group); // Hide all divs in the group
-            const targetDiv = document.querySelector(`.targetDiv[data-target="${targetAttr}"][data-group="${group}"]`);
-            if (targetDiv) {
-                targetDiv.style.display = 'flex'; // Show the correct targetDiv
-            }
-        }
-
-        // Handle radio button changes
-        function handleRadioChange(event) {
-            const group = event.target.getAttribute('data-group');
-            const targetAttr = event.target.getAttribute('data-target');
-
-            if (event.target.checked) {
-                showTargetDiv(group, targetAttr);
-            }
-        }
-
-        // Handle dropdown changes
-        function handleSelectChange(event) {
-            const group = event.target.getAttribute('data-group');
-            const targetAttr = event.target.selectedOptions[0].getAttribute('data-target');
-            
-            if (targetAttr) {
-                showTargetDiv(group, targetAttr);
-            }
-        }
-
-        // Initialize radio buttons
-        document.querySelectorAll('.radioSet .form-check-input[type="radio"]').forEach(radio => {
-            radio.addEventListener('change', handleRadioChange);
-
-            // Optionally, check if any radio button is already checked on page load
-            if (radio.checked) {
-                handleRadioChange({ target: radio });
-            }
-        });
-
-        // Initialize dropdowns
-        document.querySelectorAll('.dropdown-select').forEach(dropdown => {
-            dropdown.addEventListener('change', handleSelectChange);
-
-            // Check if any option is selected on page load
-            const selectedOption = dropdown.querySelector('option[selected]');
-            if (selectedOption) {
-                const group = dropdown.getAttribute('data-group');
-                const targetAttr = selectedOption.getAttribute('data-target');
-                if (targetAttr) {
-                    showTargetDiv(group, targetAttr);
-                }
-            }
-        });
-    });
-</script>
     <!-- faqs -->
     <script>
         $(document).ready(function() {
@@ -1615,6 +1423,6 @@
           });
         });
     </script>
-
+    <!-- calculator -->
 </body>
 </html>
