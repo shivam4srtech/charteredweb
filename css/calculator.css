@@ -1304,3 +1304,15 @@ width: 600px;
   line-height: 1.4;
   padding-left: 1rem;
 }
+.suknyaTableBox table .form-control{
+  box-shadow: none;
+  max-height: 2rem;
+  border-radius: 0;
+}
+.suknyaTableBox h3{
+  font-weight: 600;
+  color: #000;
+  font-size: 1.4rem;
+  margin-bottom: .5rem;
+  padding: 0 .5rem;
+}
