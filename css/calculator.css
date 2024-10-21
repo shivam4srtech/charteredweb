@@ -720,10 +720,45 @@ border-radius: 20px;
     width: 400px;
   }
 }
+.sharePage {
+ margin-bottom: 1rem;
+}
 .sharePage p{
   font-weight: 600;
   font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
+.sharePage .shareLinks{
+  display: flex;
+  align-items: center;
+ }
+ .sharePage .shareLinks a{
+  padding: .2rem;
+  width: 2.1rem;
+  height: 2.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: .6rem;
+  border-radius: 5px;
+ }
+ .sharePage .shareLinks a:nth-of-type(1){
+  background-color: #3d579b;
+ }
+ .sharePage .shareLinks a:nth-of-type(2){
+  background-color: #000;
+ }
+ .sharePage .shareLinks a:nth-of-type(3){
+  background-color: #4ac043;
+ }
+ .sharePage .shareLinks a:nth-of-type(4){
+  background-color: #0176b3;
+ }
+ .sharePage .shareLinks a svg{
+  width: 1.6rem;
+  height: 1.6rem;
+  fill: #fff;
+ }
 
 /* graph */
 #piechart {
@@ -1297,7 +1332,7 @@ width: 600px;
 }
 .formBox h3{
   font-weight: 600;
-  margin-bottom: .5rem;
+  margin-bottom: 1.5rem;
   color: #000;
   font-size: 1.2rem;
   border-left: 5px solid #f5b402;

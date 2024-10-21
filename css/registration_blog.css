@@ -1643,11 +1643,18 @@ max-width: 1500px;
 }
 .businessLicense h1{
 font-weight: 600;
-font-size: 3rem;
-margin-bottom: .5rem;
 color: #232323;
 line-height: 1.4;
+margin: auto;
+margin-bottom: .5rem;
+font-size: 3rem;
 }
+@media(min-width:768px){
+  .businessLicense h1{
+    max-width: 98%;
+    }
+}
+
 .businessLicense p{
 font-weight: 500;
 font-size: 1.2rem;
@@ -3630,10 +3637,10 @@ color: #000;
 
 /* table */
 table {
-  width: 100%;
   border-collapse: collapse;
   table-layout: auto;
   border: 1px solid #c1bcbc;
+  max-width: 100%;
 }
  thead {
   background-color: #f4f4f4;
