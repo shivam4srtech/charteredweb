@@ -1351,3 +1351,10 @@ width: 600px;
   margin-bottom: .5rem;
   padding: 0 .5rem;
 }
+.addRemoveBtns button{
+  border-radius: 4px;
+  font-weight: 500;
+  min-width: 100px;
+  font-size: 1rem;
+  letter-spacing: .4px;
+}

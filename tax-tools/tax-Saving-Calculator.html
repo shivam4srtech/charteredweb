@@ -848,13 +848,13 @@
             <div class="row mb-3">
                 <div class="col-md-8">
                     <figure class="setIcon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M504 256c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-141.7-35.3c4.9-33-20.2-50.7-54.6-62.6l11.1-44.7-27.2-6.8-10.9 43.5c-7.2-1.8-14.5-3.5-21.8-5.1l10.9-43.8-27.2-6.8-11.2 44.7c-5.9-1.3-11.7-2.7-17.4-4.1l0-.1-37.5-9.4-7.2 29.1s20.2 4.6 19.8 4.9c11 2.8 13 10 12.7 15.8l-12.7 50.9c.8 .2 1.7 .5 2.8 .9-.9-.2-1.9-.5-2.9-.7l-17.8 71.3c-1.3 3.3-4.8 8.4-12.5 6.5 .3 .4-19.8-4.9-19.8-4.9l-13.5 31.1 35.4 8.8c6.6 1.7 13 3.4 19.4 5l-11.3 45.2 27.2 6.8 11.2-44.7a1038.2 1038.2 0 0 0 21.7 5.6l-11.1 44.5 27.2 6.8 11.3-45.1c46.4 8.8 81.3 5.2 96-36.7 11.8-33.8-.6-53.3-25-66 17.8-4.1 31.2-15.8 34.7-39.9zm-62.2 87.2c-8.4 33.8-65.3 15.5-83.8 10.9l14.9-59.9c18.4 4.6 77.6 13.7 68.8 49zm8.4-87.7c-7.7 30.7-55 15.1-70.4 11.3l13.5-54.3c15.4 3.8 64.8 11 56.8 43z"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path d="M0 64C0 46.3 14.3 32 32 32l64 0 16 0 176 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-56.2 0c9.6 14.4 16.7 30.6 20.7 48l35.6 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-35.6 0c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256l80 0c32.8 0 61-19.7 73.3-48L32 208c-17.7 0-32-14.3-32-32s14.3-32 32-32l153.3 0C173 115.7 144.8 96 112 96L96 96 32 96C14.3 96 0 81.7 0 64z"/>
                         </svg>
                     </figure>
-                    <h1>Crypto Tax Calculator - Taxation on Cryptocurrency, Bitcoin, Ethereum</h1>
+                    <h1>Tax Saving Calculator - Calculate Deductions under 80C</h1>
                     <p class="pagedesc">
-                        Leave encashment is a component of salary that is received on the conversion of unveiled leaves into cash. Learn how to calculate leave encashment exemption using the Taxable Leave Salary calculator
+                        Lower your tax liability through tax exemptions. Section 80C allows you to be eligible for tax deductions up to Rs.1.5 lakh per year under the old regime. Calculate your tax deduction through 80C using Tax saving calculator.
                     </p>
                     <div class="sharePage">                        
                         <p>Please share if you found this helpful - We'd greatly appreciate it.</p>                        
@@ -892,7 +892,7 @@
                 <div class="col-lg-9">
                     <div class="calcArea">
                         <div class="row">
-                            <div class="col-md-12 calcBox mb-4">
+                            <div class="col-md-6 calcBox mb-4">
                                 <select class="form-select" aria-label="Default select example">
                                     <option selected>Select Financial Year</option>
                                     <option value="1">2020-2021</option>
@@ -903,20 +903,73 @@
                                 </select>
                             </div>
                             <div class="col-md-6 calcBox mb-4">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select Status</option>
+                                    <option value="1">HUF</option>
+                                    <option value="2">Individual</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 calcBox mb-4">
                                 <label for="" class="form-label">
-                                    Sale value of crypto currency</label>
-                                <input type="text" class="form-control" value="0">
+                                    Life insurance premium paid</label>
+                                <input type="text" class="form-control">
                                 <div class="rupeeIcon">
                                    <img src="../images/rupee-orange.svg" alt="rupee">
                                 </div>
                            </div>
-                           <div class="col-md-6 calcBox mb-4">
+                           <div class="col-md-4 calcBox mb-4">
                                 <label for="" class="form-label">
-                                    Cost of aquisition of crypto currency</label>
-                                <input type="text" class="form-control" value="0">
+                                    Deposit in provident fund</label>
+                                <input type="text" class="form-control">
                                 <div class="rupeeIcon">
                                 <img src="../images/rupee-orange.svg" alt="rupee">
                                 </div>
+                            </div>
+                            <div class="col-md-4 calcBox mb-4">
+                                <label for="" class="form-label">
+                                    Investment in fixed deposit/Bonds</label>
+                                <input type="text" class="form-control">
+                                <div class="rupeeIcon">
+                                <img src="../images/rupee-orange.svg" alt="rupee">
+                                </div>
+                            </div>
+                            <div class="col-md-4 calcBox mb-4">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Select Others</option>
+                                    <option value="1">Investment in NSC</option>
+                                    <option value="2">Tuition fee of two children</option>
+                                    <option value="3">Repayment of housing loan (principal component)</option>
+                                    <option value="4">Stamp duty/registration fees/other expense for purchase/ contruction of residential house</option>
+                                    <option value="5">Investment in mutual fund/UTI eligible for section 80C</option>
+                                    <option value="6">Other investment/payment eligible for section 80C</option>
+                                    <option value="7">ELSS</option>
+                                    <option value="8">ULIP</option>
+                                    <option value="9">ULIP</option>
+                                    <option value="10">Senior citizen savings scheme</option>
+                                    <option value="11">Sukanya Samriddhi Yojana </option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 calcBox mb-4">
+                                <select class="form-select" aria-label="Default select example" disabled>
+                                    <option selected>Select</option>
+                                    <option value="1">Anuual Plan/deffered annuity plan/ULIP Investement for yourself, spouse or children</option>
+                                    <option value="1">Public provident fund</option>
+                                    <option value="1">Statutory/recognized provident fund</option>
+                                    <option value="1">Superannuation fund</option>
+                                    <option value="1">Infrastructure bonds/dedentures</option>
+                                    <option value="1">Notified bounds of NABARD</option>
+                                    <option value="1">Senior citizen saving scheme</option>
+                                    <option value="1">Five years fixed deposit eligible for section 80C</option>
+                                    <option value="1">Five year time deposit with post office</option>
+                                    <option value="1">Current year investment</option>
+                                    <option value="1">Accrued interest</option>
+                                    <option value="1">Equity linked saving scheme eligible for section 80C</option>
+                                    <option value="1">Notified pension fund eligible for section 80C</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 calcBox mb-4">
+                                <input type="text" class="form-control" disabled>
+
                             </div>
                             <div class="col-md-12">
                                 <div class="d-flex">
@@ -928,13 +981,14 @@
                             </div>
                             <div class=" col-md-6">
                                 <div class="calcResultAll">
-                                    <p>Total Gain or Loss</p>
+                                    <p>Total amount invested</p>
                                     <span>₹ 0</span>
                                 </div>
                             </div>
                             <div class=" col-md-6">
                                 <div class="calcResultAll">
-                                    <p>Tax on crypto currency (including cess)</p>
+                                    <p>Deduction available under section 80C
+                                    </p>
                                     <span>₹ 0</span>
                                 </div>
                             </div>
