@@ -852,7 +852,7 @@
                             <path d="M0 64C0 46.3 14.3 32 32 32l64 0 16 0 176 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-56.2 0c9.6 14.4 16.7 30.6 20.7 48l35.6 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-35.6 0c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256l80 0c32.8 0 61-19.7 73.3-48L32 208c-17.7 0-32-14.3-32-32s14.3-32 32-32l153.3 0C173 115.7 144.8 96 112 96L96 96 32 96C14.3 96 0 81.7 0 64z"/>
                         </svg>
                     </figure>
-                    <h1>All in One TDS Calculator</h1>
+                    <h1>Income Tax Calculator - FY 2024-2025</h1>
                     <p class="pagedesc">
                         Charteredone has done in-depth research on various aspects of TDS so you can save taxes and plan your finances very well. This calculator works perfectly for Individuals, HUFs, Sole Proprietors and others. This tool is updated as per the latest TDS rates & regulations.
                     </p>
@@ -884,101 +884,104 @@
                 </div>
                 <div class="col-md-4">
                    <a href="#" class="bannerImg">
-                     <img src="../images/tds.png" alt="tds-calc">
+                     <img src="../images/rupee.jpg" alt="tds-calc" style="border-radius: 20px;">
                    </a> 
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-9">
-                    <div class="calcArea">
-                        <div class="row">
-                            <div class="formBox mb-3">
-                                <div class="inputBox floatRadio" style="width: 100%;">
-                                    <label for="">Recipient Type:
-                                    </label>
-                                    <div class="d-flex flex-column radioSet" data-group="group2">
-                                        <div class="form-check">
-                                            
-                                            <label class="form-check-label" for="">
-                                                Individual / HUF / Sole Proprietor
-                                            </label>
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault" checked>
-                                        </div>
-                                        <div class="form-check">
-                                            
-                                            <label class="form-check-label" for="">
-                                                Others
-                                            </label>
-                                            <input class="form-check-input" type="radio" name="flexRadioDefault">
-                                        </div>
+                    <div class="multiStepsBox">
+                        <div class="tab-container">
+                            <span class="tab active" onclick="goToStep(0)">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M512 80c8.8 0 16 7.2 16 16l0 320c0 8.8-7.2 16-16 16L64 432c-8.8 0-16-7.2-16-16L48 96c0-8.8 7.2-16 16-16l448 0zM64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l448 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zM208 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128zm-32 32c-44.2 0-80 35.8-80 80c0 8.8 7.2 16 16 16l192 0c8.8 0 16-7.2 16-16c0-44.2-35.8-80-80-80l-64 0zM376 144c-13.3 0-24 10.7-24 24s10.7 24 24 24l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24l80 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-80 0z"/></svg>
+                                <small>About Yourself</small>
+                            </span>
+                            <span class="tab" onclick="goToStep(1)">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path d="M0 64C0 46.3 14.3 32 32 32l64 0 16 0 176 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-56.2 0c9.6 14.4 16.7 30.6 20.7 48l35.6 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-35.6 0c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256l80 0c32.8 0 61-19.7 73.3-48L32 208c-17.7 0-32-14.3-32-32s14.3-32 32-32l153.3 0C173 115.7 144.8 96 112 96L96 96 32 96C14.3 96 0 81.7 0 64z"></path>
+                                </svg>
+                                <small>Income Detailes</small>
+                            </span>
+                            <span class="tab" onclick="goToStep(2)">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path d="M0 64C0 46.3 14.3 32 32 32l64 0 16 0 176 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-56.2 0c9.6 14.4 16.7 30.6 20.7 48l35.6 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-35.6 0c-13.2 58.3-61.9 103.2-122.2 110.9L274.6 422c14.4 10.3 17.7 30.3 7.4 44.6s-30.3 17.7-44.6 7.4L13.4 314C2.1 306-2.7 291.5 1.5 278.2S18.1 256 32 256l80 0c32.8 0 61-19.7 73.3-48L32 208c-17.7 0-32-14.3-32-32s14.3-32 32-32l153.3 0C173 115.7 144.8 96 112 96L96 96 32 96C14.3 96 0 81.7 0 64z"></path>
+                                </svg>
+                                <small>Other Income</small>
+                            </span>
+                            <span class="tab" onclick="goToStep(3)">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path d="M256 192l-39.5-39.5c4.9-12.6 7.5-26.2 7.5-40.5C224 50.1 173.9 0 112 0S0 50.1 0 112s50.1 112 112 112c14.3 0 27.9-2.7 40.5-7.5L192 256l-39.5 39.5c-12.6-4.9-26.2-7.5-40.5-7.5C50.1 288 0 338.1 0 400s50.1 112 112 112s112-50.1 112-112c0-14.3-2.7-27.9-7.5-40.5L499.2 76.8c7.1-7.1 7.1-18.5 0-25.6c-28.3-28.3-74.1-28.3-102.4 0L256 192zm22.6 150.6L396.8 460.8c28.3 28.3 74.1 28.3 102.4 0c7.1-7.1 7.1-18.5 0-25.6L342.6 278.6l-64 64zM64 112a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm48 240a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/>
+                                </svg>
+                                <small>Deductions</small>
+                            </span>
+                        </div>
+                        <div class="form-container">
+                        
+                            <form id="multiStepForm">
+                              <!-- Step 1 -->
+                              <div class="step active">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                        <div class="badge">1</div>
+                                        <h2 class="stepHeading">About Yourself</h2>
+                                        <div class="hr"></div>
                                     </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="name" class="form-label">Name: <span>*</span></label>
+                                        <input class="form-control" type="text" id="name" name="name" required>
+                                        <p class="error hidden" id="nameError">Please fill out this field.</p>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="email" class="form-label">Email:<span>*</span> </label>
+                                        <input class="form-control" type="email" id="email" name="email" required>
+                                        <p class="error hidden" id="emailError">Please enter a valid email address.</p>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="dob" class="form-label">Date of Birth: <span>*</span></label>
+                                        <input class="form-control" type="date" id="dob" name="dob" required>
+                                        <p class="error hidden" id="emailError">Please enter a valid email address.</p>
+                                    </div>
+                                    
+                                    <div class="col-md-6">
+                                        <label for="profession" class="form-label">Profession</label>
+                                        <select id="profession"  class="form-select" name="profession" required>
+                                            <option value="">Select Your Profession</option>
+                                            <option value="USA">USA</option>
+                                            <option value="Canada">Canada</option>
+                                            <option value="India">India</option>
+                                        </select>
+                                        <p class="error hidden" id="professionError">Please select an option</p>
+                                    </div>
+                                    
                                 </div>
-                            </div>
-                            <div class="col-md-12 calcBox mb-4">
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select Financial Year</option>
-                                    <option value="1">2020-2021</option>
-                                    <option value="2">2021-2022</option>
-                                    <option value="3">2022-2023</option>
-                                    <option value="4">2023-2024</option>
-                                    <option value="5">2024-2025</option>
-                                </select>
-                            </div>
-                            <div class="col-md-6 calcBox mb-4">
-                                <label for="" class="form-label">
-                                    Cost of aquisition of crypto currency</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select</option>
-                                    <option value="1">Yes</option>
-                                    <option value="2">No</option>
-                                </select>
-                            </div>
-                           <div class="col-md-6 calcBox mb-4">
-                                <label for="" class="form-label">
-                                    Amount of Payment :</label>
-                                <input type="text" class="form-control" value="0">
-                                <div class="rupeeIcon">
-                                <img src="../images/rupee-orange.svg" alt="rupee">
-                                </div>
-                            </div>
-                            <div class="col-md-12 calcBox mb-4">
-                                <label for="" class="form-label">
-                                    Nature of Payment :</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select</option>
-                                    <option value="1">Section 192A - Payment of accumulated PF balance to an employee</option>
-                                    <option value="2">Section 193 - Interest on Securities</option>
-                                    <option value="3">Section 194 - Dividend other than the Dividend as referred to in Section 115-O</option>
-                                    <option value="4">Section 194A - Interest other than Banks</option>
-                                    <option value="5">Section 194A - Interest from Banks</option>
-                                    <option value="6">Section 194B - Winnings from Lotteries, Crossword Puzzles etc.</option>
-                                    <option value="7">Section 194BB - Income by way of Winnings from Horse Races</option>
-                                    <option value="8">Section 194C - Payment to Contractor/Sub-Contractor ( In case of single
-                                        payment )</option>
-                                    <option value="9">Section 194C - Payment to Contractor/Sub-Contractor ( In case of during
-                                        F.Y. ) </option>
-                                    <option value="10">Section 194D - TDS on insurance comission</option>
-                                    <option value="11">Section 194DA - TDS on Payment in Respect of Life Insurance Policy</option>
-                                    <option value="12">Section 194H - Commission or Brokerage</option>
-                                    <option value="13">Section 194I(a) - Rent on Plant & Machinery</option>
-                                    <option value="14">Section 194I(b) - Rent on Land & building or Furniture & Fitting</option>
-                                    <option value="15">Section 194IA - Payment on transfer of certain Immovable Property other than
-                                        agricultural land</option>
-                                    <option value="16">Section 194IB - Rent Payment to Landlord by Individuals</option>
-                                    <option value="17">Section 194J - Fees for Professional Services / Royalty etc. (Normally in
-                                        all cases)</option>
-                                    <option value="18">Section 194J - Fees for technical services, Fees to Call centre operator</option>
-                                    <option value="19">Section 194K - TDS on income from mutual fund units (Dividend income)</option>
-                                    <option value="20">Section 194O - TDS on Payment by E-commerce Operator to E-commerce
-                                        participant</option>
-                                </select>
-                            </div>
-                            <div class=" col-md-12">
-                                <div class="calcResultAll">
-                                    <p>TDS Amount:</p>
-                                    <span>₹ 0</span>
-                                </div>
-                            </div>
+                              </div>
+                        
+                              <!-- Step 2 -->
+                              <div class="step">
+                                <h2>Step 2</h2>
+                                
+                              </div>
+                        
+                              <!-- Step 3 -->
+                              <div class="step">
+                                <h2>Step 3</h2>
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" required pattern="\d*">
+                                <p class="error hidden" id="phoneError">Please enter a valid phone number.</p>
+                              </div>
+                              <div class="step">
+                                <h2>Step 4</h2>
+                                <label for="phone">Phone Number:</label>
+                                <input type="tel" id="phone" name="phone" required pattern="\d*">
+                                <p class="error hidden" id="phoneError">Please enter a valid phone number.</p>
+                              </div>
+                        
+                              <!-- Navigation Buttons -->
+                              <div class="navigation-buttons">
+                                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                              </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -1627,6 +1630,96 @@
           });
         });
     </script>
+    <script>
+        // multi step from
+            let currentStep = 0;
+        showStep(currentStep);
+
+        document.getElementById('phone').addEventListener('input', function(e) {
+        const cleanedValue = e.target.value.replace(/\D/g, '');
+        e.target.value = cleanedValue;
+        });
+
+        function showStep(n) {
+        const steps = document.querySelectorAll('.step');
+        const tabs = document.querySelectorAll('.tab');
+        steps.forEach((step) => step.classList.remove('active'));
+        tabs.forEach((tab) => tab.classList.remove('active'));
+        steps[n].classList.add('active');
+        tabs[n].classList.add('active');
+        document.getElementById("prevBtn").style.display = n === 0 ? "none" : "inline";
+        document.getElementById("nextBtn").innerHTML = n === (steps.length - 1) ? "Submit" : "Next";
+        }
+
+        function nextPrev(n) {
+        const steps = document.querySelectorAll('.step');
+        if (n === 1 && !validateForm()) {
+            return false;
+        }
+        steps[currentStep].classList.remove('active');
+        currentStep += n;
+        if (currentStep >= steps.length) {
+            document.getElementById("multiStepForm").submit();
+            return;
+        }
+        showStep(currentStep);
+        }
+
+        function goToStep(n) {
+        currentStep = n;
+        showStep(currentStep);
+        }
+
+        function validateForm() {
+        let valid = true;
+        const steps = document.querySelectorAll('.step');
+        const currentStepInputs = steps[currentStep].querySelectorAll('input[required], select[required], textarea[required]');
+        steps[currentStep].querySelectorAll('.error').forEach(error => error.classList.add('hidden'));
+        currentStepInputs.forEach(input => {
+            if (!input.checkValidity()) {
+            valid = false;
+            input.nextElementSibling.classList.remove('hidden');
+            }
+            if (input.type === 'radio') {
+            const radios = document.querySelectorAll(`input[name="${input.name}"]`);
+            if (!Array.from(radios).some(radio => radio.checked)) {
+                document.getElementById(`${input.name}Error`).classList.remove('hidden');
+                valid = false;
+            }
+            }
+            if (input.type === 'checkbox' && !input.checked) {
+            document.getElementById(`${input.name}Error`).classList.remove('hidden');
+            valid = false;
+            }
+        });
+
+        const emailInput = document.getElementById('email');
+        const phoneInput = document.getElementById('phone');
+
+        if (currentStep === 1 && !isValidEmail(emailInput.value.trim())) {
+            document.getElementById('emailError').classList.remove('hidden');
+            valid = false;
+        }
+
+        if (currentStep === 1 && !isValidPhone(phoneInput.value.trim())) {
+            document.getElementById('phoneError').classList.remove('hidden');
+            valid = false;
+        }
+
+        return valid;
+        }
+
+        function isValidEmail(email) {
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return emailPattern.test(email);
+        }
+
+        function isValidPhone(phone) {
+        const phonePattern = /^\d{10}$/;
+        return phonePattern.test(phone);
+        }
+
+      </script>
    
 </body>
 </html>

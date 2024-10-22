@@ -1359,3 +1359,174 @@ width: 600px;
   font-size: 1rem;
   letter-spacing: .4px;
 }
+/* mutistep form */
+.step { 
+  display: none; 
+}
+
+.step.active { 
+  display: block; 
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.hidden {
+  display: none;
+}
+.form-container{
+  background: #fff;
+  box-shadow: 0 0 10px 0 #ccc;
+  position: relative;
+  border-bottom: 5px solid #f5b402;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  padding: 20px 15px;
+}
+.multiStepsBox .tab-container{
+  margin-bottom: 1rem;
+  margin-top: .5rem;
+  max-width: 100%;
+  overflow: auto;
+  padding: .5rem;
+  display: flex;
+}
+.multiStepsBox .tab-container::-webkit-scrollbar{
+ display: none;
+}
+.multiStepsBox .tab-container .tab{
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background: #fff;
+  color: #000;
+  font-weight: 500;
+  font-size: 15px;
+  align-items: center;
+  margin: 0 16px;
+  box-shadow: 0 0 30px rgba(59, 70, 86, .1);
+  min-width: 180px;
+  cursor: pointer;
+  padding: 1rem .6rem;
+  transition: .5s bottom ease-in;
+  border-radius: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.multiStepsBox .tab-container .tab:first-child{
+  margin-left: 0;
+}
+.multiStepsBox .tab-container .tab:last-child{
+  margin-right: 0;
+}
+.multiStepsBox .tab-container .tab.active{
+  border-top: solid 4px #f5b402;
+  box-shadow: 0 0 40px rgba(0, 0, 0, .3);
+  box-sizing: border-box;
+  position: relative;
+  bottom: 6px;
+  transition: .5s bottom ease-in;
+}
+.multiStepsBox .tab-container .tab svg{
+ width: 2rem;
+ height: 2rem;
+ margin-right: .6rem;
+}
+@media(max-width: 768px){
+  .calcSingle .container {
+    padding: 3rem 0rem;
+}
+}
+.multiStepsBox .badge{
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  border: solid 2px #40b973;
+  border-radius: 50%;
+  background-clip: padding-box;
+  width: 40px;
+  height: 40px;
+  line-height: 32px;
+  text-align: center;
+  background: #fff;
+  font-size: 22px;
+  color: #40b973;
+  float: left;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.multiStepsBox .stepHeading{
+  background: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+  border: solid 1px #eceff5;
+  border-radius: 20px;
+  background-clip: padding-box;
+  padding: 8px 56px;
+}
+.multiStepsBox .hr{
+  width: 50%;
+  height: 2px;
+  background: #eff1f7;
+  margin: -18px auto 50px;
+}
+.multiStepsBox label.form-label{
+  display: block;
+  font-weight: 500;
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #333;
+  margin: 0 0 3px 0;
+}
+.multiStepsBox label.form-label span{
+ color: #ff0000;
+ display: inline-block;
+ margin-left: .2rem;
+}
+.multiStepsBox input.form-control{
+   font-weight: 400;
+    border-radius: 0;
+    outline: 0;
+    background: #fff;
+    border-radius: 4px;
+    background-clip: padding-box;
+    font-size: 12px;
+    padding: 0 15px;
+    line-height: 43px;
+    height: 43px;
+    transition: .7s;
+    box-shadow: none;
+}
+.multiStepsBox select.form-select{
+  font-weight: 400;
+   border-radius: 0;
+   outline: 0;
+   background: #fff;
+   border-radius: 4px;
+   background-clip: padding-box;
+   font-size: 12px;
+   padding: 0 15px;
+   line-height: 43px;
+   height: 43px;
+   transition: .7s;
+   box-shadow: none;
+}
+
+
