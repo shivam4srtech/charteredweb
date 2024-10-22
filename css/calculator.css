@@ -63,6 +63,7 @@ body{
     border-radius: 15px;
     padding:  1rem;
     background-color: #fbfbfb;
+    min-height: 100%;
  }
 
  .calcsection .calculatorList figure{
