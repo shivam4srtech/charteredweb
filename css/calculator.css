@@ -1623,3 +1623,7 @@ width: 600px;
   font-weight: 600;
   color: #000;
  }
+ .formBox .form-check-label small{
+  font-size: .5rem;
+  font-weight: 400;
+ }
