@@ -1758,6 +1758,103 @@ window.onload = initializeDefaultValues;
         window.onload = initializeDefaultValues;
       </script>
       
-      
+      <script>
+        //multi step form
+        let currentStep = 0;
+showStep(currentStep);
+
+document.getElementById('phone').addEventListener('input', function(e) {
+const cleanedValue = e.target.value.replace(/\D/g, '');
+e.target.value = cleanedValue;
+});
+
+function showStep(n) {
+const steps = document.querySelectorAll('.step');
+const tabs = document.querySelectorAll('.tab');
+
+steps.forEach((step) => step.classList.remove('active'));
+tabs.forEach((tab) => tab.classList.remove('active'));
+
+steps[n].classList.add('active');
+tabs[n].classList.add('active');
+
+document.getElementById("prevBtn").style.display = n === 0 ? "none" : "inline";
+document.getElementById("nextBtn").innerHTML = n === (steps.length - 1) ? "Submit" : "Next";
+}
+
+function nextPrev(n) {
+const steps = document.querySelectorAll('.step');
+
+if (n === 1 && !validateForm()) {
+return false;
+}
+
+steps[currentStep].classList.remove('active');
+currentStep += n;
+
+if (currentStep >= steps.length) {
+document.getElementById("multiStepForm").submit();
+return;
+}
+
+showStep(currentStep);
+}
+
+function goToStep(n) {
+currentStep = n;
+showStep(currentStep);
+}
+
+function validateForm() {
+let valid = true;
+const steps = document.querySelectorAll('.step');
+const currentStepInputs = steps[currentStep].querySelectorAll('input[required], select[required], textarea[required]');
+
+steps[currentStep].querySelectorAll('.error').forEach(error => error.classList.add('hidden'));
+
+currentStepInputs.forEach(input => {
+if (input.type === 'radio' || input.type === 'checkbox') {
+  if (!document.querySelector(`input[name="${input.name}"]:checked`)) {
+    document.getElementById(`${input.name}Error`).classList.remove('hidden');
+    valid = false;
+  }
+} else if (input.type === 'select-one') {
+  if (input.value === "") {
+    input.nextElementSibling.classList.remove('hidden');
+    valid = false;
+  }
+} else if (!input.checkValidity()) {
+  input.nextElementSibling.classList.remove('hidden');
+  valid = false;
+}
+});
+
+const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
+
+if (currentStep === 1 && !isValidEmail(emailInput.value.trim())) {
+document.getElementById('emailError').classList.remove('hidden');
+valid = false;
+}
+
+if (currentStep === 2 && !isValidPhone(phoneInput.value.trim())) {
+document.getElementById('phoneError').classList.remove('hidden');
+valid = false;
+}
+
+return valid;
+}
+
+function isValidEmail(email) {
+const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+return emailPattern.test(email);
+}
+
+function isValidPhone(phone) {
+const phonePattern = /^\d{10}$/;
+return phonePattern.test(phone);
+}
+
+</script>
 </body>
 </html>

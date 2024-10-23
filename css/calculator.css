@@ -1407,7 +1407,12 @@ width: 600px;
 .multiStepsBox .navigation-buttons #nextBtn:hover{
   background-color: #e5ab0a;
 }
-
+.multiStepsBox .navigation-buttons #calculateBtn{
+  background-color: #f5b402;
+}
+.multiStepsBox .navigation-buttons #calculateBtn:hover{
+  background-color: #e5ab0a;
+}
 .error {
   color: red;
   font-size: 12px;
@@ -1584,3 +1589,37 @@ width: 600px;
     font-size: 16px;
   }
 }
+.incomeResultBox{
+  background: #fff;
+  box-shadow: 0 0 10px 0 #ccc;
+  position: relative;
+  border-bottom: 5px solid #f5b402;
+  border-radius: 10px 10px 10px 10px;
+  margin-bottom: 10px;
+  padding: 20px 15px;
+}
+.incomeResultBox h3{
+ color: #000;
+ font-weight: 600;
+ font-size: 1.2rem;
+ margin-bottom: 1rem;
+}
+.incomeResultBox .taxResultContainer table td{
+ padding: .5rem .15rem;
+ font-size: .85rem;
+ font-weight: 500;
+ color: #000;
+ }
+ .incomeResultBox .taxResultContainer{
+  margin-bottom: 1.5rem;
+}
+.incomeResultBox .taxResultContainer thead{
+ background-color: #f5b4020d;
+}
+.incomeResultBox .taxResultContainer thead th{
+  background-color: #f5b4020d;
+  padding: 1rem .15rem;
+  font-size: .85rem;
+  font-weight: 600;
+  color: #000;
+ }

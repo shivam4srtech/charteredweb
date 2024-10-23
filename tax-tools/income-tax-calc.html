@@ -1116,14 +1116,190 @@
                                         </div>
                                     </div>
                                 </div>
+                                
                               </div>
                         
                               <!-- Navigation Buttons -->
                               <div class="navigation-buttons">
-                                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-                                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                    <button id="prevBtn" onclick="nextPrev(-1)" style="display:none;">Previous</button>
+                                    <button id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                    <button type="button" id="calculateBtn" onclick="showIncomeResult()" style="display:none;">
+                                        Calculate
+                                    </button> 
                               </div>
                             </form>
+                        </div>
+                        <div class="incomeResultBox hidden">
+                            <h3>Great, Here is your Tax Calculation</h3>
+                            <div class="taxResultContainer">
+                                <table>
+                                     <tbody>
+                                        <tr>
+                                            <td>Salary</td>
+                                            <td>₹0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Business</td>
+                                            <td>₹0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>House Property ( Rental Income Received )</td>
+                                            <td>₹0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>House Property ( Interest Paid on Home Loan )</td>
+                                            <td>₹0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Other Sources</td>
+                                            <td>₹0</td>
+                                        </tr>
+                                     </tbody>
+                                </table>
+                            </div>
+                            <div class="taxResultContainer">
+                                <table>
+                                     <thead>
+                                         <tr>
+                                            <th>Financial Year</th>
+                                            <th>
+                                                2022-23
+                                                Old Regime
+                                            </th>
+                                            <th>
+                                                2022-23
+                                                New Regime
+                                            </th>
+                                            <th>
+                                                2023-24/
+                                                2024-25
+                                                Old Regime
+                                            </th>
+                                            <th>
+                                                2023-24/
+                                                2024-25
+                                                New Regime
+                                            </th>
+                                         </tr>
+                                     </thead>
+                                     <tbody>
+                                        <tr>
+                                            <td>Basic Deductions (80C)</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                        <tr> 
+                                        <tr>
+                                            <td>Medical Insurance Premium (80D)</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                        <tr>
+                                        <tr>
+                                            <td>Interest on Education Loan (80E)</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                        <tr>  
+                                        <tr>
+                                            <td>Interest from Savings (80TTA / 80TTB)</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                        <tr> 
+                                        <tr>
+                                            <td>Other Deductions</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                        <tr> 
+                                        <tr>
+                                            <td>Standard Deduction</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                        <tr> 
+                                        <tr>
+                                            <td>Taxable Income</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                        <tr>                              
+                                     </tbody>
+                                </table>
+                            </div>
+                            <div class="taxResultContainer">
+                                <table>
+                                     <thead>
+                                         <tr>
+                                            <th>Financial Year</th>
+                                            <th>
+                                                2022-23
+                                                Old Regime
+                                            </th>
+                                            <th>
+                                                2022-23
+                                                New Regime
+                                            </th>
+                                            <th>
+                                                2023-24/
+                                                2024-25
+                                                Old Regime
+                                            </th>
+                                            <th>
+                                                2023-24/
+                                                2024-25
+                                                New Regime
+                                            </th>
+                                         </tr>
+                                     </thead>
+                                     <tbody>
+                                        <tr>
+                                            <td>Basic Tax</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                        <tr> 
+                                        <tr>
+                                            <td>Rebate u/s 87A</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                        <tr>
+                                        <tr>
+                                            <td>Surcharge</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                        <tr>
+                                        <tr>
+                                            <td>Health & Education Cess (HEC)</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                        <tr>
+                                        <tr>
+                                            <td>Total Tax Liability</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                            <td>₹0</td>
+                                        <tr>    
+                                                                    
+                                     </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1773,102 +1949,122 @@
         });
     </script>
     <script>
-            let currentStep = 0;
-showStep(currentStep);
-
-document.getElementById('phone').addEventListener('input', function(e) {
-  const cleanedValue = e.target.value.replace(/\D/g, '');
-  e.target.value = cleanedValue;
-});
-
-function showStep(n) {
-  const steps = document.querySelectorAll('.step');
-  const tabs = document.querySelectorAll('.tab');
-
-  steps.forEach((step) => step.classList.remove('active'));
-  tabs.forEach((tab) => tab.classList.remove('active'));
-
-  steps[n].classList.add('active');
-  tabs[n].classList.add('active');
-  
-  document.getElementById("prevBtn").style.display = n === 0 ? "none" : "inline";
-  document.getElementById("nextBtn").innerHTML = n === (steps.length - 1) ? "Submit" : "Next";
-}
-
-function nextPrev(n) {
-  const steps = document.querySelectorAll('.step');
-
-  if (n === 1 && !validateForm()) {
-    return false;
-  }
-
-  steps[currentStep].classList.remove('active');
-  currentStep += n;
-
-  if (currentStep >= steps.length) {
-    document.getElementById("multiStepForm").submit();
-    return;
-  }
-
-  showStep(currentStep);
-}
-
-function goToStep(n) {
-  currentStep = n;
-  showStep(currentStep);
-}
-
-function validateForm() {
-  let valid = true;
-  const steps = document.querySelectorAll('.step');
-  const currentStepInputs = steps[currentStep].querySelectorAll('input[required], select[required], textarea[required]');
-  
-  steps[currentStep].querySelectorAll('.error').forEach(error => error.classList.add('hidden'));
-
-  currentStepInputs.forEach(input => {
-    if (input.type === 'radio' || input.type === 'checkbox') {
-      if (!document.querySelector(`input[name="${input.name}"]:checked`)) {
-        document.getElementById(`${input.name}Error`).classList.remove('hidden');
-        valid = false;
-      }
-    } else if (input.type === 'select-one') {
-      if (input.value === "") {
-        input.nextElementSibling.classList.remove('hidden');
-        valid = false;
-      }
-    } else if (!input.checkValidity()) {
-      input.nextElementSibling.classList.remove('hidden');
-      valid = false;
-    }
-  });
-
-  const emailInput = document.getElementById('email');
-  const phoneInput = document.getElementById('phone');
-
-  if (currentStep === 1 && !isValidEmail(emailInput.value.trim())) {
-    document.getElementById('emailError').classList.remove('hidden');
-    valid = false;
-  }
-
-  if (currentStep === 2 && !isValidPhone(phoneInput.value.trim())) {
-    document.getElementById('phoneError').classList.remove('hidden');
-    valid = false;
-  }
-
-  return valid;
-}
-
-function isValidEmail(email) {
-  const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-  return emailPattern.test(email);
-}
-
-function isValidPhone(phone) {
-  const phonePattern = /^\d{10}$/;
-  return phonePattern.test(phone);
-}
-
+        // multi-step form
+        let currentStep = 0;
+        showStep(currentStep);
+    
+        // Function to display the respective step and tab
+        function showStep(n) {
+            const steps = document.querySelectorAll('.step');
+            const tabs = document.querySelectorAll('.tab');
+    
+            steps.forEach((step) => step.classList.remove('active'));
+            tabs.forEach((tab) => tab.classList.remove('active'));
+    
+            steps[n].classList.add('active');
+            tabs[n].classList.add('active');
+    
+            document.getElementById("prevBtn").style.display = n === 0 ? "none" : "inline";
+    
+            if (n === steps.length - 1) {
+                document.getElementById("nextBtn").style.display = 'none';
+                document.getElementById("calculateBtn").style.display = 'inline';
+            } else {
+                document.getElementById("nextBtn").innerHTML = "Next";
+                document.getElementById("nextBtn").style.display = 'inline';
+                document.getElementById("calculateBtn").style.display = 'none';
+            }
+        }
+    
+        // Function to handle next and previous buttons
+        function nextPrev(n, event) {
+            event.preventDefault(); // Prevent default button behavior
+            const steps = document.querySelectorAll('.step');
+    
+            if (n === 1 && !validateForm()) {
+                return false;
+            }
+    
+            steps[currentStep].classList.remove('active');
+            currentStep += n;
+    
+            if (currentStep >= steps.length) {
+                showIncomeResult();
+                return;
+            }
+    
+            showStep(currentStep);
+        }
+    
+        // Function to handle tab click and switch to the corresponding step
+        function goToStep(n, event) {
+            event.preventDefault(); // Prevent default behavior
+    
+            currentStep = n;
+            showStep(currentStep);
+        }
+    
+        // Validation function for the form
+        function validateForm() {
+            let valid = true;
+            const steps = document.querySelectorAll('.step');
+            const currentStepInputs = steps[currentStep].querySelectorAll('input[required], select[required], textarea[required]');
+    
+            steps[currentStep].querySelectorAll('.error').forEach(error => error.classList.add('hidden'));
+    
+            currentStepInputs.forEach(input => {
+                if (input.type === 'radio' || input.type === 'checkbox') {
+                    if (!document.querySelector(`input[name="${input.name}"]:checked`)) {
+                        document.getElementById(`${input.name}Error`).classList.remove('hidden');
+                        valid = false;
+                    }
+                } else if (input.type === 'select-one') {
+                    if (input.value === "") {
+                        input.nextElementSibling.classList.remove('hidden');
+                        valid = false;
+                    }
+                } else if (!input.checkValidity()) {
+                    input.nextElementSibling.classList.remove('hidden');
+                    valid = false;
+                }
+            });
+    
+            return valid;
+        }
+    
+        // Function to display the income result
+        function showIncomeResult(event) {
+            if (event) {
+                event.preventDefault(); // Prevent default button behavior
+            }
+    
+            const incomeResultBox = document.querySelector('.incomeResultBox');
+            if (incomeResultBox) {
+                incomeResultBox.classList.remove('hidden'); 
+                incomeResultBox.style.display = 'block';  
+            }
+        }
+    
+        // Add event listeners for the next, previous, and calculate buttons
+        document.getElementById("nextBtn").addEventListener("click", function(event) {
+            nextPrev(1, event);
+        });
+    
+        document.getElementById("prevBtn").addEventListener("click", function(event) {
+            nextPrev(-1, event);
+        });
+    
+        document.getElementById("calculateBtn").addEventListener("click", showIncomeResult);
+    
+        // Add event listeners for tabs
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach((tab, index) => {
+            tab.addEventListener("click", function(event) {
+                goToStep(index, event);
+            });
+        });
     </script>
-   
+    
+
 </body>
 </html>
