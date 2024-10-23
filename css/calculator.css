@@ -1373,10 +1373,39 @@ width: 600px;
   color: white;
 }
 
-.navigation-buttons {
+.multiStepsBox .navigation-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   margin-top: 10px;
+  gap: 20px;
+  border: none;
+  outline: none;
+}
+.multiStepsBox .navigation-buttons button {
+  border: none;
+  outline: none;
+  min-width: 100px;
+  padding: .7rem .5rem;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: .5px;
+  font-size: .9rem;
+  color: #fff;
+  transition: .3s ease-in;
+}
+.multiStepsBox .navigation-buttons #prevBtn{
+  background-color: #0d2443;
+}
+.multiStepsBox .navigation-buttons #prevBtn:hover{
+  background-color: #f5b402;
+}
+.multiStepsBox .navigation-buttons #nextBtn{
+  background-color: #f5b402;
+}
+.multiStepsBox .navigation-buttons #nextBtn:hover{
+  background-color: #e5ab0a;
 }
 
 .error {
@@ -1455,7 +1484,7 @@ width: 600px;
   position: absolute;
   left: 10px;
   top: 20px;
-  border: solid 2px #40b973;
+  border: solid 2px #f5b402;
   border-radius: 50%;
   background-clip: padding-box;
   width: 40px;
@@ -1464,7 +1493,7 @@ width: 600px;
   text-align: center;
   background: #fff;
   font-size: 22px;
-  color: #40b973;
+  color: #f5b402;
   float: left;
   display: inline-flex;
   align-items: center;
@@ -1493,7 +1522,7 @@ width: 600px;
   font-size: 13px;
   text-transform: capitalize;
   color: #333;
-  margin: 0 0 3px 0;
+  margin: 0 0 8px 0;
 }
 .multiStepsBox label.form-label span{
  color: #ff0000;
@@ -1518,9 +1547,7 @@ width: 600px;
   font-weight: 400;
    border-radius: 0;
    outline: 0;
-   background: #fff;
    border-radius: 4px;
-   background-clip: padding-box;
    font-size: 12px;
    padding: 0 15px;
    line-height: 43px;
@@ -1528,5 +1555,32 @@ width: 600px;
    transition: .7s;
    box-shadow: none;
 }
-
-
+.rangewrapper{
+  position: relative;
+}
+.rangewrapper .rupeeSvg{
+  position: absolute;
+  top: .8rem;
+  left: .4rem;
+}
+.multiStepsBox .rangewrapper input.form-control{
+ padding-left: 1.6rem;
+ width: 220px;
+ color: #000;
+ font-weight: 500;
+ font-size: .85rem;
+}
+.multiStepsBox input[type=number]::-webkit-inner-spin-button, 
+.multiStepsBox input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+@media(max-width:450px){
+  .multiStepsBox .badge{
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
