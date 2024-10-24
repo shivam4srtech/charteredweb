@@ -1741,3 +1741,49 @@ width: 600px;
   font-weight: 500;
   margin-bottom: 1rem;
 }
+.ifscResultBox .bankDetails h4 span{
+  font-size: 16px;
+  padding: 12px 18px;
+  margin-bottom: 0;
+}
+.ifscResultBox .bankDetails h2 img{
+  margin-right: 12px;
+}
+.ifscResultBox .bankDetails table.bank-details{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    max-width: 100%;
+    border: none;
+}
+
+.ifscResultBox .bankDetails table.bank-details tbody{
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.ifscResultBox .bankDetails table.bank-details  tr{
+  margin-bottom: 5px;
+  display: block;
+}
+.ifscResultBox .bankDetails table.bank-details  tr td{
+  border: 0;
+  padding: 0;
+  vertical-align: top;
+}
+.ifscResultBox .bankDetails table.bank-details  tr td a{
+ color: #1b1dc7;
+}
+.ifscResultBox .bankDetails table.bank-details  tr td p{
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(5, 47, 95, 1);
+  line-height: 22px;
+}
+.ifscResultBox .bank-details tr td:first-child {
+  width: 100px;
+}
+.ifscResultBox .bank-details tr:nth-child(even) {
+  background-color: transparent;
+}
