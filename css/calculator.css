@@ -1627,3 +1627,117 @@ width: 600px;
   font-size: .5rem;
   font-weight: 400;
  }
+ .multiStepsBox textarea.form-control {
+  font-weight: 400;
+  outline: 0;
+  background: #fff;
+  border-radius: 4px;
+  background-clip: padding-box;
+  font-size: 12px;
+  padding: 0 15px;
+  line-height: 43px;
+  transition: .7s;
+  box-shadow: none;
+  height: 5rem;
+}
+.addNewField button{
+  color: #fff;
+  border: none;
+  padding: 8px 5px;
+  border-radius: 2px;
+ 
+  white-space: nowrap;
+  height: 40px;
+  margin-top: 8px;
+  margin-left: 2px;
+  cursor: pointer;
+  min-width: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.addNewField button.add{
+  background-color: #495362;
+}
+.addNewField button.remove{
+  background-color: #aa0707;
+}
+.addNewField button.add:hover{
+  background-color: #42474d;
+  color: #fff;
+}
+.addNewField button.remove:hover{
+  background-color: #a20707;
+  color: #fff;
+}
+.saveForm .formPara{
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.saveForm  h3 small{
+  font-weight: 500;
+  font-size: .7rem;
+}
+.saveForm .formFooter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.saveForm .formFooter span{
+  font-weight: 400;
+  font-size: .75rem;
+  width: calc(100%/3);
+  text-align: center;
+}
+.saveForm .formFooter span:nth-of-type(1){
+ text-align: left;
+}
+.saveForm .formFooter span:nth-of-type(3){
+  text-align: right;
+ }
+.saveForm .formFooter span a{
+  font-weight: 500;
+  color: #002FCF;
+}
+.checkEligibility{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ flex-direction: column;
+}
+.checkEligibility img{
+  max-width: 100%;
+  object-fit: contain;
+  width: 300px;
+  display: block;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.checkEligibility h3{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #003a6e;
+}
+.checkEligibility p{
+  font-size: 15px;
+  color: #003a6e;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.checkEligibility button{
+  width: 400px;
+  border: none;
+  background: #f5b402;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 4px;
+  color: #fff;
+  max-width: 100%;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
