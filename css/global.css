@@ -1558,3 +1558,17 @@ max-width: 1500px;
 .errorMsg {
     color: red;
 }	
+
+.webmasterOffcanvas{
+	background-color: #000;
+}
+.webmasterOffcanvas .btn-close{
+	opacity: 1;
+}
+.webmasterOffcanvas .offcanvas-header{
+	padding-left: .4rem;
+}
+.webmasterOffcanvas.offcanvas.offcanvas-end{
+	width: 350px;
+	max-width: 100%;
+}

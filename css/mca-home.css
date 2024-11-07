@@ -1,0 +1,174 @@
+.searchSection .logo img{
+    object-fit: contain;
+    width: 440px;
+    height: 80px;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+.searchSection .logo{
+   margin-bottom: .5rem;
+}
+.searchSection .container{
+   max-width: 900px;
+   text-align: center;
+ }
+.searchSection {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-color: #fcfcfe;
+}
+.searchSection form{
+    max-width: 100%;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    height: 60px;
+    padding: 24px 20px;
+    border-radius: 88px;
+    border: 1px solid #f5b402;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 0px 0px 6px #f4ebff, 0px 1px 2px 0px rgba(16, 24, 40, .0509803922);
+    margin: 20px 0;
+    background-color: #fff;
+    margin: auto;
+    margin-bottom: 2.4rem;
+}
+.searchSection form .form-control{
+   box-shadow: none;
+   padding: 0;
+   font-size: 1rem;
+   height: 2.2rem;
+   border: none;
+}
+.searchSection form .form-control::placeholder{
+  color: #999;
+ }
+ .searchSection form button{
+   background-color: transparent;
+   border: none;
+   outline: none;
+ }
+ .searchSection p{
+   color: #6c6a71;
+   font-weight: 500;
+   margin-bottom: 2rem;
+   font-size: 1rem;
+   line-height: 1.4;
+ }
+ .trandingSearch{
+    font-weight: 600;
+    color: #6c6a71;
+    font-size: 18px;
+    text-align: center;
+    margin: 1rem auto;
+  }
+  .trandingServices a{
+    background: #f6f3fb;
+    color: #6c6a71;
+    margin: .5rem;
+    padding: .2rem .6rem;
+    border-radius: 1.76rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: .85rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    color: #222;
+    border-bottom: 2px solid #f0e9fe;
+    font-size: .8rem;
+  }
+  .trandingServices .trandingBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: .8rem;
+  }
+  .trandingServices a:hover{
+   background-color: #fff;
+   border-bottom: 2px solid #f5b402;
+  }
+  .recommendations{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 100%;
+  width: 700px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.recommendation{
+    padding: 16px 12px;
+    cursor: pointer;
+    font-weight: 400;
+    color: #2e2e2e;
+    border-bottom: 1px solid #e2e2e2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: .95rem;
+}
+.recommendation:hover{
+   background-color: #f5b4022e;
+}
+.recommendations .recommendation:last-child{
+    border-bottom: none;
+}
+.searchBox{
+    position: relative
+}
+.recommendation svg{
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+.recommendation span {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+.recommendation .active{
+    color: #75ba75;
+    font-size: .75rem;
+    display: inline-flex;
+    align-items: center;
+}
+.recommendation  .badges{
+   height: .4rem;
+   width: .4rem;
+   border-radius: 50%;
+   background-color: #27be69;
+   margin-left: .4rem;
+   margin-right: .4rem;
+}
+.recommendation:hover svg{
+    display: inline-block;
+}
+@media (max-width:600px){
+    .searchSection .logo{
+       display: none;
+     }
+}
+
+.companyInsights{
+    padding-top: 10rem;
+}

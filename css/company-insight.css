@@ -1,0 +1,350 @@
+.tabsWrapper{
+    margin: auto;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    background-color: #f2effa;
+    padding-top: 80px;
+    background-color: #fff;
+    padding-bottom: 1rem;
+    box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media(min-width:991px){
+    .tabsWrapper{
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+}
+body{
+    background-color: #fcfcfe;
+}
+.tabsWrapper .nav-pills{
+  overflow: auto;
+  flex-wrap: nowrap;
+ }
+ .tabsWrapper .nav-pills::-webkit-scrollbar{
+    display: none;
+   }
+.tabsWrapper .nav-item .nav-link{
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 14px;
+   font-weight: 600;
+  cursor: pointer;
+  color: #47444e;
+  padding: 10px 0;
+  white-space: nowrap;  
+  letter-spacing: .5px;  
+  margin-bottom: 0;    
+  margin-right: 3rem;
+  text-align: center;
+}
+.companyInsights .container{
+    border: 2px solid green;
+    max-width: 1400px;
+}
+.tabsWrapper .nav-item .nav-link.active{
+    background-color: transparent;
+    border-bottom: 2px solid #f5b402;
+    color: #f5b402;
+}
+.insightBox{
+    box-shadow: 0px 2px 20px 2px rgba(97, 61, 193, .0392156863);
+    padding: 30px;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 24px;
+    margin-bottom: 2.4rem;
+}
+.companyInfo .cartBtn button{
+   border: none;
+   outline: none;
+   background-color: #f5b402;
+   color: #fff;
+   font-weight: 600;
+   border-radius: 5px;
+   padding: .5rem 1rem;
+   text-align: center;
+   display: inline-flex;
+   align-items: center;
+   justify-content: center;
+}
+.companyInfo .cartBtn {
+   display: flex;
+   min-width: 200px;
+   justify-content: right;
+ }
+.companyInfo .cartBtn button img{
+   margin-right: .4rem;
+ }
+.companyInfo{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+@media(max-width:991px){
+    .companyInfo{
+        flex-direction: column;
+     }
+     .companyInfo .cartBtn{
+       width: 100%;
+       margin-top: 2rem;
+     }
+     .companyInfo .cartBtn button{
+        width: 100%;
+      }
+}
+@media(max-width: 600px){
+    .insightBox{
+        padding: 10px;
+    }
+}
+.companyInfo .intro h1{
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #231f2b;
+  font-weight: 600;
+  margin-bottom: 1rem;
+ }
+ .companyInfo .intro h1 a{
+    font-size: .7rem;
+    font-weight: 500;
+    color: #613DC1;
+    text-decoration: underline;
+    text-transform: none;
+    margin-left: .5rem;
+    display: inline-block;
+    letter-spacing: .5px;
+}
+.companyInfo .intro .isActive{
+   margin-bottom: 1rem;
+   }
+.companyInfo .intro .isActive .active{
+ color: #27be69;
+ font-weight: 600;
+ font-size: .9rem;
+}
+.companyInfo .intro .isActive .active small{
+ border-radius: 50%;
+ width: .5rem;
+ height: .5rem;
+ display: inline-block;
+ background-color: #27be69;
+ margin-right: .4rem;
+}
+.companyInfo .intro .isActive .lastUpdate{
+color: #6c6a71;
+font-weight: 500;
+font-size: .8rem;
+display: inline-block;
+margin-left: .5rem;
+}
+.insightBox h3{
+  font-size: 1.4rem;
+  color: #231f2b;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.insightBox p{
+   color: #6c6a71;
+   font-weight: 500;
+   font-size: 1rem;
+   line-height: 1.5;
+   margin-bottom: 1rem;
+  }
+  .readMoreBtn button{
+    border: none;
+    outline: none;
+    border-radius: 1.7rem;
+    background-color: #f5b402;
+    font-weight: 500;
+    padding: .2rem .4rem;
+    font-size: .7rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  .readMoreBtn{
+   margin-bottom: 1.4rem;
+  }
+  .readMoreBtn button svg{
+   width: 15px;
+   height: 15px;
+   margin-left: .2rem;
+  }
+  .insightBox h4{
+    font-size: 1.2rem;
+    color: #231f2b;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .insightBox .industryType{
+    border-radius: 5px;
+    background-color: #f5b40232;
+    display: inline-block;
+    font-weight: 500;
+    font-size: .8rem;
+    padding: .4rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(270deg, #ff7e5f, #feb47b, #f5b40282, #f5b402);
+    background-size: 800% 800%;
+    animation: gradientAnimation 10s ease infinite;
+
+  }
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  .insightBox .sm-txt{
+    font-size: .75rem;
+  }
+  .matricsBox{
+    border-radius: 24px;
+    border: 1px solid #e7e6e7;
+    padding: 20px 30px;
+  }
+  .matricsBox .key{
+   display: flex;
+   gap: 10px;
+   margin-bottom: .65rem;
+  }
+  .matricsBox .key span:nth-of-type(1){
+   color: #6c6a71;
+   font-weight: 500;
+   font-size: .85rem;
+   display: inline-block;
+   }
+   .matricsBox .key span:nth-of-type(2){
+    font-weight: 500;
+    font-size: .8rem;
+    display: inline-block;
+    }
+    .matricsBox .key.profit span:nth-of-type(2){
+        color: #27be69;
+    }
+    .matricsBox .key.loss span:nth-of-type(2){
+        color: #f2415a;
+    }
+    .matricsBox .value{
+    color: #000;
+   font-weight: 600;
+   font-size: .9rem;
+    }
+    .matricsBox .key span:nth-of-type(2){
+        font-weight: 500;
+        font-size: .8rem;
+        color: #27be69;
+        display: inline-block;
+        }
+     @media(max-width:600px){
+        .matricsBox{
+            padding: 15px;
+          }
+     }
+     .matricsTable{
+        border: 1px solid #EFECF9;
+        border-radius: 16px;
+     }   
+     .matricsTable .tablecontainer{
+        overflow: auto;
+        border-radius: 16px;
+     }  
+     .matricsTable .tablecontainer table{
+        border: none;
+        text-align: left;
+        overflow: hidden;
+        margin: 0;
+        border-collapse: collapse;
+        overflow-x: scroll;
+        width: 100%;
+     }
+     .matricsTable .tablecontainer table thead tr{
+        background-color: #f5b40246;
+        text-align: left;
+     }  
+     .matricsTable .tablecontainer table thead tr th{
+        padding-right: 16px;
+        padding-left: 16px;
+        font-weight: 600;
+        color: #000;
+        padding: 16px 24px;
+        font-size: 14px;
+        text-align: right;
+     } 
+     .matricsTable .tablecontainer table  tr th{
+        padding-right: 16px;
+        padding-left: 16px;
+        font-weight: 600;
+        color: #000;
+        padding: 16px 24px;
+        font-size: 14px;
+        text-align: right;
+     } 
+     .matricsTable .tablecontainer table tbody tr td{
+        padding-right: 16px;
+        padding-left: 16px;
+        font-weight: 500;
+        color: #6C6A71;
+        padding: 8px 24px;
+        font-size: 14px;
+        text-align: right;
+     }  
+     .matricsTable table tbody tr:nth-of-type(even) {
+        background-color: rgba(242, 239, 250, 0.5);
+    }
+    .matricsTable table tbody tr td:nth-of-type(1) {
+       text-align: left;
+    }
+    .matricsTable table tbody tr th:nth-of-type(1) {
+        text-align: left;
+     }
+    .paginations{
+        display: flex;
+        justify-content: center;
+        margin: 1.2rem auto;
+    }
+    .paginations a{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.4rem;
+        height: 2.2rem;
+        font-size: 16px;
+        font-weight: 500;
+        color: #000;
+        margin: 0 .5rem;
+        border-radius: 4px;
+    }
+    .paginations a svg{
+       width: 16px;
+       height: 16px;
+    }
+    .paginations a.active{
+       background-color: #f5b402;
+       color: #fff;
+    }
+    .paginations a:hover{
+      background-color: #f5b402;
+      color: #fff;
+    }
+    .hidden-row {
+        display: none;
+    }
+    .matricsTable .toggle-table .toggle-button{
+        cursor: pointer;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+    }
+    .matricsTable .toggle-table .toggle-button .toggle-icon{
+       font-size: 1.4rem;
+       margin-left: .5rem;
+    }

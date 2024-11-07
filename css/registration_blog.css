@@ -1,3 +1,6 @@
+body{
+  min-width: 250px;
+}
 .registrationHeader .container{
   max-width: 1450px;
 }
@@ -145,7 +148,7 @@
   padding: 4rem 0;
 }
 .choosePlan .container{
- max-width: 1500px;
+ max-width: 1200px;
  border: 2px solid #B8DFE5;
  padding: 2rem  1rem;
  border-radius: 10px;
@@ -257,7 +260,7 @@
  padding: 3rem 0;
 }
 .adService .container{
-  max-width: 1500px;
+  max-width: 1200px;
 }
 .adService h2{
   text-align: center;
@@ -719,7 +722,7 @@ content: '✅ ';
   background-color: #f8e9e0;
 }
 .checkAvailbility .container{
-  max-width: 1500px;
+  max-width: 1200px;
 }
 .checkAvailbility .checkForm{
   display: flex;
@@ -894,7 +897,7 @@ margin-bottom: 1rem;
   }
 }
 .gauranteed .container{
-  max-width: 1500px;
+  max-width: 1200px;
 }
 .gauranteed .gauranteeBadge{
   height: 3.5rem;
@@ -1090,7 +1093,7 @@ margin-bottom: 1rem;
   margin-left: 20px;
   margin-right: 20px;
 }
-.faqs h2{
+.faqs h1{
   color: #000;
   font-weight: 600;
   font-size: 1.4rem;
@@ -1098,7 +1101,7 @@ margin-bottom: 1rem;
   margin-left: 1.5rem
 }
 .faqs .container{
-  max-width: 1500px;
+  max-width: 1200px;
 }
 @media(max-width:600px){
   .faqs .container{
@@ -1109,7 +1112,7 @@ margin-bottom: 1rem;
 padding: 1rem 0;
 }
 #faqs .container{
-max-width: 1500px;
+max-width: 1200px;
 }
 .faqs .accordion {
   margin: 20px;
@@ -1213,7 +1216,7 @@ max-width: 1500px;
   background-color: #f5f2ee;
 }
 .pricingPanel .container{
-  max-width: 1500px;
+  max-width: 1200px;
 }
 .pricingPanel .pricingBox{
 -webkit-box-align: stretch;
@@ -1336,6 +1339,7 @@ margin-bottom: 1rem;
 color: #000;
 font-size: 1.5rem;
 margin-bottom: 0;
+min-height: 3.8rem;
 }
 .pricingPanel .priceValue{
 margin-bottom: 1rem;
@@ -1410,7 +1414,10 @@ margin-right: .6rem;
 padding: 3rem 0;
 }
 .registrationSteps .container{
-max-width: 1450px;
+  box-shadow: 0 4px 16px 2px rgba(0, 0, 0, .12);
+  border-radius: 16px;
+  padding: 24px 18px !important;
+  max-width: 1200px;
 }
 .registrationSteps h2{
   text-align: center;
@@ -1517,7 +1524,7 @@ padding: 2rem 0;
 background-color: #f5f2ee;
 }
 .aboutLLC .container{
-max-width: 1500px;
+max-width: 1200px;
 }
 .aboutLLC h2{
 color: #000;
@@ -1639,7 +1646,7 @@ line-height: 1.4;
 display: none;
 }
 .businessLicense .container{
-max-width: 1500px;
+max-width: 1200px;
 }
 .businessLicense h1{
 font-weight: 600;
@@ -1886,7 +1893,10 @@ object-fit: contain;
 padding: 1rem 0;
 }
 .businessContent .container{
-max-width: 1500px;
+max-width: 1200px;
+}
+.container{
+  max-width: 1200px;
 }
 
 .businessContent .container .contentIndex{
@@ -3039,7 +3049,6 @@ font-weight: 500;
 font-size: .9rem;
 display: inline-block;
 line-height: 1.4;
-
 }
 .whyTrustus .ourExpert .listExpert ul li .desg{
 padding: .5rem 1rem;
@@ -3049,6 +3058,19 @@ font-weight: 500;
 font-size: 1rem;
 display: inline-block;
 margin-right: .5rem;
+}
+@media(max-width:450px){
+  .whyTrustus .ourExpert .listExpert ul li{
+    flex-direction: column;
+    align-items: flex-start;
+   }
+   .whyTrustus .ourExpert .listExpert ul li small{
+   margin-bottom: .6rem;
+   margin-right: 0;
+    }
+    .whyTrustus .ourExpert .listExpert ul li{
+      margin-bottom: 1.2rem;
+    }
 }
 .ourAssociated h2{
 text-align: center;
@@ -3558,7 +3580,10 @@ z-index: 10;
 padding: 3rem 0;
 }
 .detailedDocument .container{
-max-width: 1200px;
+  max-width: 1200px;
+  box-shadow: 0 4px 16px 2px rgba(0, 0, 0, .12);
+  border-radius: 16px;
+  padding: 24px 18px !important;
 }
 .detailedDocument h2{
 font-weight: 600;
@@ -3574,37 +3599,48 @@ width: 100%;
 .detailedDocument .docType ul li{
 padding: 0;
 margin: 0;
-margin-bottom: 1.4rem;
+margin-bottom: 1rem;
 list-style-type: none;
 width: 100%;
+}
+.titleContent{
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
 }
 .detailedDocument .docType ul li button{
 padding: 0;
 margin: 0;
 display: flex;
 align-items: center;
-min-height: 65.5px;
 width: 100%;
 background-color: #f4f7f9;
 color: #0c3c63;
-border: 3px solid #DEE6ED;
+border: 1px solid #DEE6ED;
 text-align: left;
 cursor: pointer;
 transition: 0.3s;
-font-size: 18px;
+font-size: 14px;
 border-radius: 8px;
 font-weight: 500;
 padding: 12px;
+justify-content: space-between;
 }
-.detailedDocument .docType ul li button .active{
+.detailedDocument .docType ul li button.active{
 background-color: #f5b402;
 color: #fff;
 }
+.detailedDocument .docType ul li button svg{
+  fill: #000;
+  }
+.detailedDocument .docType ul li button.active svg{
+  fill: #fff;
+  }
 
 .detailedDocument .docType ul li button img{
 margin-right: .8rem;
-width: 1.8rem;
-height: 1.8rem;
+width: 1rem;
+height: 1rem;
 object-fit: contain;
 }
 .detailedDocument .detailedDocBox h3{

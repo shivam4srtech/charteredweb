@@ -32,10 +32,10 @@
     <nav class="autohide customeNav fixed-top">
         <div class="wrapper">
           <div class="logo"><a href="/"><img src="./images/charteredOne-com-logo.png" alt=""></a></div>
-          <input type="radio" name="slider" id="menu-btn">
-          <input type="radio" name="slider" id="close-btn">
+          <!-- <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn"> -->
           <ul class="nav-links hideOnMobile">
-            <li><label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label></li>
+            <li><label for="close-btn" class="btn close-btn"><i class="fas fa-times" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"></i></label></li>
             <li class="toggle-group">
                 <a href="#" class="desktop-item border_bottom">Company</a>
                 <!-- <input type="checkbox" id="showMega"> -->
@@ -985,7 +985,7 @@
           <ul class="signRegister">
                 <li class="nav-item"><a class="nav-btn" id="loginBtn" href="./login.html">Login / Sign-up</a></li>
           </ul>
-          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+          <label data-bs-toggle="offcanvas" data-bs-target="#webmasterOffcanvas" for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
     </nav>
     <!-- ======================= -->
@@ -2518,11 +2518,172 @@
             </div>
         </div>
     </div>
+    <!-- webmaster offcanvas -->
+    <div class="offcanvas offcanvas-end webmasterOffcanvas" tabindex="-1" id="webmasterOffcanvas" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="20" height="20" fill="#fff">
+                <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path>
+            </svg>
+        </button>
+      </div>
+      <div class="offcanvas-body">
+        <ul>
+            <li class="mobileViewNav">
+                <div>
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-button" onclick="toggleMobileDropdown(event)">
+                            Company
+                            <span class="mobile-dropdown-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16">
+                                    <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="mobile-dropdown-content">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterCompany">
+                                <span>Company</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span>Podcost</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span>Media</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#">
+                                <span>Career</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-button" onclick="toggleMobileDropdown(event)">
+                            Services
+                            <span class="mobile-dropdown-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16">
+                                    <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="show mobile-dropdown-content">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>Business Setup</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>Tax &amp; Audit</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>Registration</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>Import Export</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>Trademark &amp; IP</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>BIS</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#webMasterMobileNav">
+                                <span>Others</span>
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16" fill="#f5b402">
+                                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                    </svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-button" onclick="toggleMobileDropdown(event)">
+                            Product
+                            <span class="mobile-dropdown-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16">
+                                    <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-button" onclick="toggleMobileDropdown(event)">
+                            Resources
+                            <span class="mobile-dropdown-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16">
+                                    <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="mobile-dropdown">
+                        <button class="mobile-dropdown-button" onclick="toggleMobileDropdown(event)">
+                            Login/Signup
+                            <span class="mobile-dropdown-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="16" height="16">
+                                    <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+      </div>
+    </div>
     <!-- ==========================Local Script================================ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
     <script src="./js/navbar.js"></script>
+      
     <script>
          document.addEventListener('DOMContentLoaded', function() {
             const tabContainer = document.getElementById('tab-container');
