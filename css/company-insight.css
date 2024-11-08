@@ -348,3 +348,308 @@ margin-left: .5rem;
        font-size: 1.4rem;
        margin-left: .5rem;
     }
+    .toggleDivsBtn{
+       display: flex;
+       align-items: center;
+       border-radius: 12px;
+    }
+    .toggleDivsBtn button{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        white-space: nowarp;
+        min-width: 100px;
+        font-size: .9rem;
+        font-weight: 500;
+        border-radius: 12px;
+        padding: .6rem 1rem;
+        background-color: #f5b40224;
+        border: 1px solid #f5b40284;
+    }
+    .toggleDivsBtn button.active{
+       background-color: #f5b4026f;
+       border: 1px solid #f5b402;
+    }
+    .toggleDivsBtn button:nth-of-type(1){
+       border-radius: 12px 0 0 12px;
+       border-right: none;
+    }
+    .toggleDivsBtn button:nth-of-type(2){
+        border-radius: 0 12px 12px 0;
+     }
+    .toggleDivsBtn button svg{
+       width: 18px;
+       height: 18px;
+       margin-right: .5rem;
+    }
+    #displayData1, #displayData2{
+        display: none;
+    }
+    #displayData1.active, #displayData2.active{
+        display: block;
+    }
+    .chargesOnAsset{
+        border-radius: 24px;
+        border: 1px solid #e7e6e7;
+        padding: 24px 8px;
+    }
+    .assetItem{
+       display: flex;
+       flex-direction: row;
+       align-items: flex-start;
+    }
+    .assetItem .count{
+       display: inline-flex;
+       justify-content: center;
+       align-items: center;
+       width: 2rem;
+       height: 2rem;
+       border-radius: 50%;
+       font-weight: 700;
+       margin-right: .8rem;
+       background-color: #f5b402;
+       object-fit: contain;
+     }
+     .assetItem .bankName{
+        font-weight: 600;
+        color: #000;
+        font-size: .95rem;
+        margin-bottom: .2rem;
+      }
+      .assetItem .keyValue{
+        margin-bottom: .2rem;
+      }
+      .assetItem .keyValue span{
+        font-weight: 500;
+        color: #6c6a71;
+        font-size: .85rem;
+        margin-right: .5rem;
+        display: inline-block;
+      }
+      .assetItem .keyValue strong{
+        font-weight:600;
+        color: #000;
+        font-size: .85rem;
+      }
+      .shareHolder{
+        display: flex;
+        flex-direction: column;
+      }
+      .shareHolder span:nth-of-type(1){
+       margin-bottom: .4rem;
+      }
+      .shareHolder span a{
+       color: #613dc1;
+       text-decoration: underline;
+       display: inline-block;
+       }
+       .shareHolder span a:hover{
+        color: #603dc1b1;
+        }
+      .shareHolder .badges{
+        border-radius: 1.7rem;
+        padding: .1rem .4rem;
+        font-size: .66rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        color: #27be69;
+        background-color: #e6faee;
+        font-weight: 500;
+       }
+       .shareHolder .badges{
+        border-radius: 1.7rem;
+        padding: .1rem .4rem;
+        font-size: .66rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        color: #27be69;
+        background-color: #e6faee;
+        font-weight: 500;
+        width: fit-content;
+       }
+       .amalgamated .badges{
+        border-radius: 1.7rem;
+        padding: .1rem .4rem;
+        font-size: .66rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        color: #ff9b0f;
+        background-color: rgba(255, 235, 207, .6);;
+        font-weight: 500;
+        width: fit-content;
+       }
+
+       .shareHolder .badges small{
+       width: .38rem;
+       height: .38rem;
+       background-color: #27be69;
+       border-radius: 50%;
+       margin-right: .25rem;
+       }
+       .amalgamated .badges small{
+        width: .38rem;
+        height: .38rem;
+        background-color: #ff9b0f;
+        border-radius: 50%;
+        margin-right: .25rem;
+        }
+        .companyType span{
+            border-radius: 1.7rem;
+            font-weight: 500;
+            margin-right: .5rem;
+            font-size: .74rem;
+            padding: .1rem .8rem;
+        }
+        .companyType span.public{
+           color: #27be69;
+           background-color: #e6faee;
+        }
+        .companyType span.ngo{
+           color: #f5b402;
+           background-color: #f5b4021a;
+        }
+        /* faqs */
+        .faqs{
+            padding:  3rem 0;
+         }
+         .faqs h2{
+            margin-bottom: 2rem;
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: #2e2e2e;
+            text-transform: uppercase;
+         }
+         .faqs .accordion {
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 4px;
+            border-radius: 0;
+        }
+        
+        .faqs .accordion-item {
+            margin-bottom: 1rem;
+            border: 0;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+        }
+        
+        .faqs .accordion-item:last-child {
+            border-bottom: none;
+        }
+        
+        .faqs .accordion-header {
+            background-color: #f2f2f2;
+            cursor: pointer;
+            padding: 20px 15px;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s ease;
+            letter-spacing: .5px;
+        }
+        
+        .faqs .accordion-header.active {
+            background-color: #ff7f00;
+        }
+        
+        .faqs .accordion-content.open {
+            max-height: fit-content;
+        }
+        .faqs .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease, padding 0.3s ease;
+            background-color: #fff;
+            padding: 0 15px;
+        }
+        .faqs .accordion-content p{
+            line-height: 1.6;
+            color: #5b534e;
+            font-weight: 500;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+        }
+        
+        .faqs .accordion-content.open {
+            max-height: fit-content;
+            padding: 15px;
+        }
+        
+        .faqs .accordion-header svg {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.3s ease;
+        }
+        
+        .faqs .accordion-header.active svg {
+            transform: rotate(90deg);
+        }
+        .faqs .accordion-content{
+            height: fit-content;
+        }
+        .faqs .accordion-header svg{
+            display: none;
+        }
+        /* sateweise company */
+        .stateWiseCompany .nav{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            border-radius: 6px;
+            background-color: #f5b4020d;
+            align-items: center;
+            gap: 45px;
+            padding: .6rem 1.6rem;
+            margin-bottom: 2rem;
+            overflow: auto;
+        }
+        .stateWiseCompany .nav::-webkit-scrollbar{
+           display: none;
+        }
+
+        .stateWiseCompany .nav li button{
+           margin-bottom: 0;
+           border: 1.5px solid transparent;
+           cursor: pointer;
+           border-radius: 4px;
+           color: #282729;
+           font-weight: 500;
+           outline: none;
+           border-radius: 5px;
+           white-space: nowrap;
+        }
+        .stateWiseCompany .nav li button.active{
+           background-color: transparent;
+           border: 1.5px solid #f5b402;
+           color: #f5b402
+         }
+         .stateWiseCompany .companyList{
+            list-style-type: disc;
+            padding-left: 30px;
+         }
+         .stateWiseCompany .companyList li{
+           margin-bottom: 1rem;
+         }
+         .stateWiseCompany .companyList li a{
+            color: #6c6a71;
+            font-weight: 500;
+            font-size: .9rem;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            line-clamp: 1;
+            overflow: hidden;
+          }
+          .stateWiseCompany .companyList li a:hover{
+           color: #613DC1;
+           text-decoration: underline;
+          }
