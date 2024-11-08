@@ -45,7 +45,7 @@ body{
   text-align: center;
 }
 .companyInsights .container{
-    border: 2px solid green;
+   
     max-width: 1400px;
 }
 .tabsWrapper .nav-item .nav-link.active{
@@ -278,7 +278,10 @@ margin-left: .5rem;
         padding: 16px 24px;
         font-size: 14px;
         text-align: right;
-     } 
+     }
+     .matricsTable .tablecontainer table thead tr th:nth-of-type(1){
+        text-align: left;
+     }  
      .matricsTable .tablecontainer table  tr th{
         padding-right: 16px;
         padding-left: 16px;
@@ -652,4 +655,35 @@ margin-left: .5rem;
           .stateWiseCompany .companyList li a:hover{
            color: #613DC1;
            text-decoration: underline;
+          }
+
+          .rupeePercentTabs li .nav-link{
+            margin-bottom: 0;
+            color: #000;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowarp;
+            min-width: 60px;
+            font-size: 1.2rem;
+            font-weight: 500;
+            border-radius: 12px;
+            padding: .65rem;
+            background-color: #f5b40224;
+            border: 1px solid #f5b40284;
+          }
+          .rupeePercentTabs li:nth-of-type(1) .nav-link{
+            border-radius: 12px 0 0 12px;
+          }
+          .rupeePercentTabs li:nth-of-type(2) .nav-link{
+            border-radius: 0 12px 12px 0
+          }
+          .locationMap img{
+            object-fit: contain;
+            max-width: 100%;
+            display: block;
+            margin: auto;
+            border-radius: 10px;
+            margin-top: 1rem;
           }

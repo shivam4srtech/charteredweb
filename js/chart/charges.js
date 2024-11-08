@@ -1,5 +1,5 @@
-const ctx = document.getElementById('chargesPieChart').getContext('2d');
-const chargesPieChart = new Chart(ctx, {
+const ctxcharges = document.getElementById('chargesPieChart').getContext('2d');
+const chargesPieChart = new Chart(ctxcharges, {
     type: 'pie',
     data: {
         labels: [
