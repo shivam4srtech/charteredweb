@@ -1,3 +1,15 @@
+.stripe{
+  padding-top: 7rem; 
+}
+.stripe .container{
+    background: linear-gradient(to right, #f5b402, violet);
+    padding: 9px 7px;
+    border-radius: 20px;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: .95rem;
+}
 .tabsWrapper{
     margin: auto;
     position: sticky;
@@ -743,6 +755,8 @@ margin-left: .5rem;
             .searchCompanyModal .modal-content{
                 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
                 border: none;
+                min-height: 400px;
+                max-height: 100vh;
             }
             .modal-backdrop {
                 background-color: #5a5a594d;
