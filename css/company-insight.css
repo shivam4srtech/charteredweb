@@ -57,8 +57,7 @@ body{
   text-align: center;
 }
 .companyInsights .container{
-   
-    max-width: 1400px;
+    max-width: 1200px;
 }
 .tabsWrapper .nav-item .nav-link.active{
     background-color: transparent;
@@ -150,6 +149,16 @@ body{
  font-weight: 600;
  font-size: .9rem;
 }
+.isActive a{
+  font-size: .7rem;
+  font-weight: 500;
+  color: #613DC1;
+  text-decoration: underline;
+  text-transform: none;
+  margin-left: .5rem;
+  display: inline-block;
+  letter-spacing: .5px;
+}
 .companyInfo .intro .isActive .active small{
  border-radius: 50%;
  width: .5rem;
@@ -165,6 +174,10 @@ font-size: .8rem;
 display: inline-block;
 margin-left: .5rem;
 }
+.companyInfo .intro .isActive .lastUpdate svg{
+ fill: #613DC1;
+ margin-right: .3rem;
+  }
 .insightBox h3{
   font-size: 1.4rem;
   color: #231f2b;
@@ -857,3 +870,158 @@ margin-left: .5rem;
                     
                  }
             }
+
+            .searchSection .logo img{
+              object-fit: contain;
+              width: 440px;
+              height: 80px;
+              display: block;
+              margin: auto;
+              max-width: 100%;
+          }
+          .searchSection .logo{
+             margin-bottom: .5rem;
+          }
+          .searchSection .container{
+             max-width: 900px;
+             text-align: center;
+           }
+          .searchSection {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             justify-content: center;
+             height: 100vh;
+             background-color: #fcfcfe;
+          }
+          .searchSection form{
+              max-width: 100%;
+              width: 700px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 16px;
+              height: 60px;
+              padding: 24px 20px;
+              border-radius: 88px;
+              border: 1px solid #f5b402;
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              box-shadow: 0px 0px 0px 6px #f4ebff, 0px 1px 2px 0px rgba(16, 24, 40, .0509803922);
+              margin: 20px 0;
+              background-color: #fff;
+              margin: auto;
+              margin-bottom: 2.4rem;
+          }
+          .searchSection form .form-control{
+             box-shadow: none;
+             padding: 0;
+             font-size: 1rem;
+             height: 2.2rem;
+             border: none;
+          }
+          .searchSection form .form-control::placeholder{
+            color: #999;
+           }
+           .searchSection form button{
+             background-color: transparent;
+             border: none;
+             outline: none;
+           }
+           .searchSection p{
+             color: #6c6a71;
+             font-weight: 500;
+             margin-bottom: 2rem;
+             font-size: 1rem;
+             line-height: 1.4;
+           }
+           
+  .recommendations{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 1000;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 100%;
+    width: 700px;
+    max-height: 300px;
+    overflow-y: auto;
+  }
+  
+  .recommendation{
+      padding: 16px 12px;
+      cursor: pointer;
+      font-weight: 400;
+      color: #2e2e2e;
+      border-bottom: 1px solid #e2e2e2;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 600;
+      font-size: .95rem;
+  }
+  .recommendation:hover{
+     background-color: #f5b4022e;
+  }
+  .recommendations .recommendation:last-child{
+      border-bottom: none;
+  }
+  .searchBox{
+      position: relative
+  }
+  .recommendation svg{
+    width: 16px;
+    height: 16px;
+    display: none;
+  }
+  .recommendation span {
+      display: flex;
+      flex-direction: row;
+      text-align: left;
+  }
+  .recommendation .active{
+      color: #75ba75;
+      font-size: .75rem;
+      display: inline-flex;
+      align-items: center;
+  }
+  .recommendation  .badges{
+     height: .4rem;
+     width: .4rem;
+     border-radius: 50%;
+     background-color: #27be69;
+     margin-left: .4rem;
+     margin-right: .4rem;
+  }
+  .recommendation:hover svg{
+      display: inline-block;
+  }
+  .popularServices{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .popularServices a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #16a8ff;
+    background-color: #F1F1F4;
+    padding: .3125rem .375rem;
+    line-height: 1;
+    border-radius: .25rem;
+    border: 1px solid #fff0;
+    font-weight: 600;
+    font-size: .6875rem;
+    letter-spacing: .5px;
+    white-space: nowrap;
+  }

@@ -878,14 +878,28 @@
             </ul>
         </nav>
        <div class="container">
+        <div class="searchSection mt-4" style="height: fit-content;">
+            <div class="container">
+                <div class="searchBox">
+                    <form action="#">
+                        <input type="search" class="form-control search-input" placeholder="search company, CIN, DIN">
+                        <button><img src="./images/search-normal.svg" alt="search"></button>
+                    </form>
+                    <div class="recommendations" style="display: none;"></div>
+                </div>
+            </div>
+        </div>
         <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
             <div id="scrollspy1" class="insightBox">
                <div class="companyInfo">
                     <div class="intro">
-                        <h1> Tata Steel Limited <a href="#">www.tatasteel.com</a></h1>
+                        <h1> Tata Steel Limited</h1>
                         <div class="isActive">
                             <span class="active"><small></small>Active</span>
-                            <span class="lastUpdate">Updated: 5 Nov 2024</span>
+                            <span class="lastUpdate"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="11" width="11"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg></a>BSE: 0837335</span>
+                            <span class="lastUpdate"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="11" width="11"><path d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6l0-128c0-17.7-14.3-32-32-32L352 0zM80 32C35.8 32 0 67.8 0 112L0 432c0 44.2 35.8 80 80 80l320 0c44.2 0 80-35.8 80-80l0-112c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 112c0 8.8-7.2 16-16 16L80 448c-8.8 0-16-7.2-16-16l0-320c0-8.8 7.2-16 16-16l112 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L80 32z"/></svg></a>NSE: TATASTEEL</span>
+                            <span class="lastUpdate">Last Updated: 5 Nov 2024</span>
+                            <a href="#">www.tatasteel.com</a>
                         </div>
                         <p>
                             The company is engaged in automotive and special products, branded products and retail and industrial products, projects and exports.
@@ -893,12 +907,123 @@
                         <p>
                             Tata Steel Limited, also popularly known as Tata Steel, is a listed public company incorporated on 26 August, 1907. It is classified as a public limited company and is located in , Maharashtra. It's authorized share capital is INR 32,619.50 cr and the total paid-up capital is INR 1,248.35 cr.
                         </p>
+                        <div class="mb-4">
+                            <h3 class="mt-4">Key Indicators</h3>
+                            <div class="matricsBox mb-3">
+                                <div class="row row-cols-2">
+                                    <div class="col-lg-3 co-sm-6 mb-3">
+                                        <div class="value mb-2">
+                                            Authorised Capital
+                                        </div>
+                                        <div class="key">
+                                            <span>₹ 0.10 M</span>
+                                        </div>
+                                        <p class="sm-txt">as on 05-07-2024</p>
+                                    </div>
+                                    <div class="col-lg-3 coll-sm-6 mb-3">
+                                        <div class="value mb-2">
+                                            Paid Up Capital
+                                        </div>
+                                        <div class="key">
+                                            <span>₹ 0.10 M</span>
+                                        </div>
+                                        <p class="sm-txt">as on 05-07-2024</p>
+                                    </div>
+                                    <div class="col-lg-3 col-sm-6 mb-3">
+                                        <div class="value mb-2">
+                                            Company Age
+                                        </div>
+                                        <div class="key">
+                                            <span>8 Year, 4 Months</span>
+                                        </div>
+                                    </div>  
+                                    <div class="col-lg-3 col-sm-6 mb-3">
+                                        <div class="value mb-2">
+                                            Last Filing with ROC
+                                        </div>
+                                        <div class="key">
+                                            <span>8 Year, 4 Months</span>
+                                        </div>
+                                    </div>        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <h3>Company Information</h3>
+                            <div class="matricsTable">
+                                <div class="tablecontainer">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <th>CIN</th>
+                                                <td style="text-align: left;">U62090UP2023PTC192151</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Company Status</th>
+                                                <th style="text-align: left;">Active</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Registration Number</th>
+                                                <th style="text-align: left;">192151</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Date of Incorporation</th>
+                                                <th style="text-align: left;">7th November, 2023</th>
+                                            </tr>
+                                            <tr>
+                                                <th>RoC</th>
+                                                <th style="text-align: left;">RoC-Kanpur</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Company Age</th>
+                                                <th style="text-align: left;">1 years & 7 days</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Authorized Capital</th>
+                                                <th style="text-align: left;">₹1,00,000</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Paid-up capital</th>
+                                                <th style="text-align: left;">₹1,00,000</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Company Category</th>
+                                                <th style="text-align: left;">Company limited by Shares</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Company Sub-Category</th>
+                                                <th style="text-align: left;">Non-govt company</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Class of company</th>
+                                                <th style="text-align: left;">Private</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Activity</th>
+                                                <th style="text-align: left;">Computer programming, consultancy and related activities</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Listing status</th>
+                                                <th style="text-align: left;">Unlisted</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Date of Last Annual General Meeting</th>
+                                                <th style="text-align: left;">N/A</th>
+                                            </tr>
+                                            <tr>
+                                                <th>Date of Latest Balance Sheet</th>
+                                                <th style="text-align: left;">N/A</th>
+                                            </tr>    
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                         <div class="readMoreBtn">
                             <button>More Details<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
                         </div>
                     </div>
                     <div class="cartBtn">
-                        <a href="#" title="search any company" data-bs-toggle="modal" data-bs-target="#searchCompanyModal"><img src="./images/search-normal.svg" alt="search"></a>
                         <button title="add to cart"><img src="./images/shopping-cart.svg" alt="cart">Add to cart</button>
                     </div>
                </div>
@@ -1044,56 +1169,31 @@
                 </div>
             </div>
             <div id="scrollspy2" class="insightBox">
-                <h3>Locations</h3>
-                <p><img src="./images/indian_flag.svg" alt="flag" class="me-2">India(196)</p>
+                <h3>Contact</h3>
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="matricsTable">
                             <div class="tablecontainer">
                                 <table>
-                                    <thead>
-                                            <tr>
-                                                <th>State</th>
-                                                <th>Type</th>
-                                                <th>Address</th>
-                                            </tr>
-                                    </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Maharastra</td>
-                                            <td>Registered Office</td>
-                                            <td>BOMBAY HOUSE, 24-HOMI MODY STREET, FORT, NA MUMBAI Maharashtra - 400001</td>
+                                            <th width="200m">Email ID</th>
+                                            <td style="text-align: left;">conatct@company.com</td>
                                         </tr>
                                         <tr>
-                                            <td>Uttarakhand</td>
-                                            <td>Sales Office</td>
-                                            <td>13 Awas Vikas, Near ICICI Bank, Nanital Road, Rudrapur, Udham Singh Nagar, Uttarakhand, 263153</td>
+                                            <th style="text-align: left;">Address</th>
+                                            <td style="text-align: left;">PLOT NO.94 SAGAR SOCIETY,FIRST AND SECOND FLOOR. ROAD NO.2,BANJARA HILLS. , HYDERABAD, Telangana, India - 500034</td>
                                         </tr>
                                         <tr>
-                                            <td>Uttarakhand</td>
-                                            <td>Warehouse</td>
-                                            <td>PLOT NO 16, SECTOR IIBT, IIE SIDCUL, PANTNAGAR, Udham Singh Nagar, Uttarakhand, 263156</td>
+                                            <th style="text-align: left;">Website</th>
+                                            <td style="text-align: left;"><a href="#">charteredone.com</a></td>
                                         </tr>
                                         <tr>
-                                            <td>Uttarakhand</td>
-                                            <td>Warehouse</td>
-                                            <td>KHASRA NO. 129, PREM RICE MILL COMPOUND, BHADRABAD, BHADRABAD, Haridwar, Uttarakhand, 249402</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Uttarakhand</td>
-                                            <td>Factory</td>
-                                            <td>M Y BUILDERS Plot No. 12, Sector 8A, M Y BUILDERS HUB PRIVATE LIMITED, Ranipur, SIDCUL Haridwar, Haridwar, Uttarakhand, 249403</td>
+                                            <th style="text-align: left;">Contact Number</th>
+                                            <td style="text-align: left;">96321 54269</td>
                                         </tr>
                                     </tbody>
                                 </table>
-                            </div>
-                            <div class="paginations">
-                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160zm352-160l-160 160c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L301.3 256 438.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0z"/></svg></a>
-                                <a href="#" class="active">1</a>
-                                <a href="#">2</a>
-                                <a href="#">...</a>
-                                <a href="#">25</a>
-                                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M470.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 256 265.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160zm-352 160l160-160c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L210.7 256 73.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0z"/></svg></a>
                             </div>
                         </div>
                     </div>
@@ -1101,7 +1201,7 @@
                         <div class="matricsBox">
                             <h3>Location on Map <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="20" height="20"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg></h3>
                             <div class="locationMap">
-                                <img src="./images/indialarge.gif" alt="locations">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d916994.1557746822!2d80.87617003026111!3d26.13126841507959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d26.8466937!2d80.94616599999999!4m5!1s0x39854bb0aad6658b%3A0x31a262fbb5779fa9!2scharteredone!3m2!1d25.4188245!2d81.9310149!5e0!3m2!1sen!2sin!4v1731577016123!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
@@ -2559,10 +2659,9 @@
                     </div>
                 </div>
             </div>
-
             <div id="scrollspy10">
                 <div class="insightBox">
-                    <h3>People</h3>
+                    <h3>Director</h3>
                     <div class="matricsTable">
                         <div class="tablecontainer">
                             <table class="toggle-table">
@@ -2576,7 +2675,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td style="text-align: left;">CFO</td>
+                                        <td style="text-align: left;">Director</td>
                                         <td style="text-align: left;">
                                             <div class="shareHolder">
                                                 <span><a href="./company-director.html" target="_blank">Koushik Chatterjee</a></span>
@@ -2587,7 +2686,7 @@
                                         <td style="text-align: left;">10 years</td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: left;">Whole-time Director</td>
+                                        <td style="text-align: left;">Director</td>
                                         <td style="text-align: left;">
                                             <div class="shareHolder">
                                                 <span><a href="./company-director.html" target="_blank">Farida Khambata</a></span>
@@ -2892,6 +2991,87 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="insightBox">
+                    <h3>Popular Services</h3>
+                    <div class="popularServices">
+                        <a href="#">FSSAI Registration</a>
+                        <a href="#">Company Registration</a>
+                        <a href="#">Trademark Registration</a>
+                        <a href="#">Udyam Registration</a>
+                        <a href="#">GST Registration</a>
+                        <a href="#">GST Return Filing</a>
+                        <a href="#">ITR Filing</a>
+                        <a href="#">Professional Tax</a>
+                        <a href="#">Tax Notice</a>
+                        <a href="#">Payroll</a>
+                        <a href="#">Business Tax Return Filing</a>
+                        <a href="#">PF Return Filing</a>
+                        <a href="#">Eway Bill</a>
+                        <a href="#">GST Registration</a>
+                        <a href="#">TDS Filing</a>
+                        <a href="#">Personal Tax Filing</a>
+                        <a href="#">Startup India Registration</a>
+                        <a href="#">Company Registration</a>
+                        <a href="#">Tax Notice</a>
+                        <a href="#">Indian Subsidiary</a>
+                        <a href="#">Trademark Search</a>
+                        <a href="#">USA Company Registration</a>
+                        <a href="#">Import Export Code</a>
+                    </div>
+                </div>
+                <div class="insightBox">
+                    <h3>Popular Searches</h3>
+                    <div class="popularServices">
+                        <a href="#">Partnership</a>
+                        <a href="#">
+                            Limited Liability Partnership
+                           </a>
+                        <a href="#">
+                            Digital Signature
+                            </a>
+                        <a href="#">
+                            Copyright Registration
+                          </a>
+                        <a href="#">
+                            Unified Portal
+                          </a>
+                        <a href="#">
+                            PAN Card Download
+                           </a>
+                        <a href="#">
+                            Nadakacheri
+                           </a>
+                        <a href="#">
+                            Flipkart Seller
+                           </a>
+                        <a href="#">
+                            Caste Certificate
+                        </a>
+                        <a href="#">
+                            IAY</a>
+                        <a href="#">
+                            Income Certificate</a>
+                        <a href="#">
+                            E PAN Card
+                           </a>
+                        <a href="#">
+                            Instant PAN Card
+                           </a>
+                        <a href="#">
+                            Bonafide Certificate
+                           </a>
+                        <a href="#">
+                            Encumbrance Certificate
+                           </a>
+                        <a href="#">
+                            PF Withdrawal
+                           </a>
+                        <a href="#">Partnership</a>
+                        <a href="#">
+                            Udyog Aadhaar
+                          </a>
                     </div>
                 </div>
                 <div class="insightBox">
@@ -3710,6 +3890,114 @@
     
     <script src="./js/navbar.js"></script>
     <script src="./js/home.js"></script>
+    <!-- search recommendation -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const searchInput = document.querySelector('.search-input');
+          const recommendationsContainer = document.querySelector('.recommendations');
+      
+          const data = [
+            'Adani Enterprises',
+            'Adani Ports and Special Economic Zone',
+            'Apollo Hospitals',
+            'Asian Paints',
+            'Axis Bank',
+            'Bajaj Auto',
+            'Bajaj Finance',
+            'Bajaj Finserv',
+            'Bharti Airtel',
+            'BPCL',
+            'Britannia Industries',
+            'Cipla',
+            'Coal India',
+            'Divi\'s Laboratories',
+            'Dr. Reddy\'s Laboratories',
+            'Eicher Motors',
+            'Grasim Industries',
+            'HCL Technologies',
+            'HDFC Bank',
+            'HDFC Life Insurance',
+            'Hero MotoCorp',
+            'Hindalco Industries',
+            'Hindustan Unilever',
+            'ICICI Bank',
+            'IndusInd Bank',
+            'Infosys',
+            'ITC',
+            'JSW Steel',
+            'Kotak Mahindra Bank',
+            'Larsen & Toubro',
+            'LTIMindtree',
+            'Mahindra & Mahindra',
+            'Maruti Suzuki',
+            'Nestle India',
+            'NTPC',
+            'Oil & Natural Gas Corporation (ONGC)',
+            'Power Grid Corporation',
+            'Reliance Industries',
+            'SBI Life Insurance',
+            'State Bank of India (SBI)',
+            'Sun Pharmaceutical Industries',
+            'Tata Consultancy Services (TCS)',
+            'Tata Consumer Products',
+            'Tata Motors',
+            'Tata Steel',
+            'Tech Mahindra',
+            'Titan Company',
+            'UltraTech Cement',
+            'UPL',
+            'Wipro'
+            ];
+
+      
+          searchInput.addEventListener('focus', function() {
+            filterRecommendations(searchInput.value);
+          });
+      
+          searchInput.addEventListener('blur', function() {
+            setTimeout(function() {
+              recommendationsContainer.style.display = 'none';
+            }, 200);
+          });
+      
+          searchInput.addEventListener('input', function() {
+            filterRecommendations(this.value);
+          });
+      
+          function filterRecommendations(keyword) {
+            recommendationsContainer.innerHTML = ''; // Clear previous recommendations
+            if (keyword.trim() === '') {
+              recommendationsContainer.style.display = 'none';
+              return;
+            }
+            const filteredData = data.filter(item => item.toLowerCase().includes(keyword.toLowerCase()));
+            
+            if (filteredData.length > 0) {
+              filteredData.forEach(function(item) {
+                const recommendationItem = document.createElement('a');
+                recommendationItem.href = "#";
+                recommendationItem.className = 'recommendation';
+                recommendationItem.innerHTML = `
+                  <span>${item} <small class="active"><div class="badges"></div> Active</small></span>
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+                `;
+                recommendationItem.addEventListener('click', function() {
+                  searchInput.value = item;
+                  recommendationsContainer.style.display = 'none';
+                });
+                recommendationsContainer.appendChild(recommendationItem);
+              });
+              recommendationsContainer.style.display = 'block';
+            } else {
+              const noResultsItem = document.createElement('div');
+              noResultsItem.className = 'no-results';
+              noResultsItem.textContent = 'No results found';
+              recommendationsContainer.appendChild(noResultsItem);
+              recommendationsContainer.style.display = 'block';
+            }
+          }
+        });
+    </script>
      <!-- faqs script -->
      <script>
         const headers = document.querySelectorAll('.accordion-header');

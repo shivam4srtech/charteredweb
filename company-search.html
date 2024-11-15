@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
     <!-- ******************Local Stylesheet************************* -->
     <link rel="stylesheet" href="./css/global.css">
-    <link rel="stylesheet" href="./css/mca-home.css">
+    <link rel="stylesheet" href="./css/company-insight.css">
 </head>
 <body>
     <!-- ==============================Navbar======================================= -->
@@ -837,50 +837,843 @@
         <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
       </div>
     </nav>
-    <section class="searchSection">
-        <div class="container">
-            <div class="logo">
-                <img src="./images/charteredOne-com-logo-removebg.png" alt="charteredone" loading="lazy">
-            </div>
-            <div>
-                <p>Gain valuable insights into your suppliers, customers, and competitors to drive your business growth.</p>
-            </div>
-            <div class="searchBox">
-                <form action="#">
-                    <input type="search" class="form-control search-input" placeholder="search company, CIN, DIN">
-                    <button><img src="./images/search-normal.svg" alt="search"></button>
-                </form>
-                <div class="recommendations">
-                    <a href="#" class="recommendation">
-                        <span>Service Name goes here <small class="active"><div class="badges"></div> Active</small></span> 
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg></a>
+    <section class="companyInsights pt-5">
+       <div class="container mt-5">
+        <div class="searchSection mt-4" style="height: fit-content;">
+            <div class="container">
+                <div class="searchBox">
+                    <form action="#">
+                        <input type="search" class="form-control search-input" placeholder="search company, CIN, DIN">
+                        <button><img src="./images/search-normal.svg" alt="search"></button>
+                    </form>
+                    <div class="recommendations" style="display: none;"></div>
                 </div>
-            </div>
-            <div>
-                <div>
-                    <h5 class="trandingSearch">Suggestions</h5>
-                </div>
-                <div class="trandingServices">
-                    <div class="trandingBox">
-                        <a href="#">Tata Consultancy Services (TCS)</a>
-                        <a href="#">Infosys</a>
-                        <a href="#">Wipro</a>
-                        <a href="#">Nestle India</a>
+                <div class="searchTerm">
+                    <h1>Tata: Companies Search</h1>
+                    <div class="matchCount">
+                        40 of 193 Matches
                     </div>
-                   <div class="trandingBox">
-                       <a href="#">Mahindra & Mahindra</a>
-                        <a href="#">Cipla</a>
-                        <a href="#">Bharti Airtel</a>
-                        <a href="#">Ultratech Cement</a>
-                   </div>
-                   <div class="trandingBox">
-                        <a href="#">NTPC Limited</a>
-                        <a href="#">Kotak Mahindra Bank</a>
-                   </div>
-                  
                 </div>
             </div>
         </div>
+        <div class="insightBox">
+            <h3>Directorship Details</h3>
+            <div class="matricsTable">
+                <div class="tablecontainer">
+                    <table class="toggle-table">
+                        <thead>
+                                <tr>
+                                    <th style="text-align: left;">Business Name</th>
+                                    <th style="text-align: left;">Incorporation Date</th>
+                                    <th style="text-align: left;">Industry</th>
+                                    <th style="text-align: left;">Status</th>
+                                    <th style="text-align: left;">Date of appointment</th>
+                                    <th style="text-align: left;">As on</th>
+                                    <th style="text-align: left;">Designation</th>
+                                </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="text-align: left;">
+                                    <div class="shareHolder">
+                                        <span><a href="#">THE CAPITAL TECH COMPANY OF INDIA LTD</a></span>
+                                    </div>
+                                </td>
+                                <td style="text-align: left;">20 Jan, 1920</td>
+                                <td style="text-align: left;">Manufacturing (Metals & Chemicals and their products)</td>
+                                <td style="text-align: left;">
+                                    <div class="amalgamated">
+                                        <span class="badges"><small></small> Amalgamated</span>
+                                    </div>
+                                </td>
+                                <td style="text-align: left;">25 Oct, 2004</td>
+                                <td style="text-align: left;">25 Oct, 2004</td>
+                                <td style="text-align: left;">Director</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">
+                                    <div class="shareHolder">
+                                        <span><a href="#">TATA STEEL FOUNDATION</a></span>
+                                    </div>
+                                </td>
+                                <td style="text-align: left;">20 Jan, 1920</td>
+                                <td style="text-align: left;">Manufacturing (Metals & Chemicals and their products)</td>
+                                <td style="text-align: left;">
+                                    <div class="shareHolder">
+                                        <span class="badges"><small></small>active</span>
+                                    </div>
+                                </td>
+                                <td style="text-align: left;">25 Oct, 2004</td>
+                                <td style="text-align: left;">25 Oct, 2004</td>
+                                <td style="text-align: left;">Director</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">
+                                    <div class="shareHolder">
+                                        <span><a href="#">THE CAPITAL TECH COMPANY OF INDIA LTD</a></span>
+                                    </div>
+                                </td>
+                                <td style="text-align: left;">20 Jan, 1920</td>
+                                <td style="text-align: left;">Manufacturing (Metals & Chemicals and their products)</td>
+                                <td style="text-align: left;">
+                                    <div class="amalgamated">
+                                        <span class="badges"><small></small> Amalgamated</span>
+                                    </div>
+                                </td>
+                                <td style="text-align: left;">25 Oct, 2004</td>
+                                <td style="text-align: left;">25 Oct, 2004</td>
+                                <td style="text-align: left;">Director</td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: left;">
+                                    <div class="shareHolder">
+                                        <span><a href="#">TATA STEEL FOUNDATION</a></span>
+                                    </div>
+                                </td>
+                                <td style="text-align: left;">20 Jan, 1920</td>
+                                <td style="text-align: left;">Manufacturing (Metals & Chemicals and their products)</td>
+                                <td style="text-align: left;">
+                                    <div class="shareHolder">
+                                        <span class="badges"><small></small>active</span>
+                                    </div>
+                                </td>
+                                <td style="text-align: left;">25 Oct, 2004</td>
+                                <td style="text-align: left;">25 Oct, 2004</td>
+                                <td style="text-align: left;">Director</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="insightBox">
+            <h3>Other individuals who might be associated with Koushik Chatterjee</h3>
+            <div class="matricsBox">
+                <div class="row row-cols-2 mb-4">
+                    <div class="col-lg-4 co-sm-6 mb-4">
+                        <div class="value mb-2">
+                           <a href="./company-director.html">Sougata Ray</a>
+                        </div>
+                        <div class="key">
+                            <span>0013321</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 co-sm-6 mb-4">
+                        <div class="value mb-2">
+                            <a href="./company-director.html">Ramdas Narayan Murthy</a>
+                        </div>
+                        <div class="key">
+                            <span>0034563</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 co-sm-6 mb-4">
+                        <div class="value mb-2">
+                           <a href="./company-director.html">Rupali Basu</a>
+                        </div>
+                        <div class="key">
+                            <span>009764</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 co-sm-6 mb-4">
+                        <div class="value mb-2">
+                          <a href="./company-director.html">Krishnava Dutt</a>
+                        </div>
+                        <div class="key">
+                            <span>002725</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 co-sm-6 mb-4">
+                        <div class="value mb-2">
+                           <a href="./company-director.html">Sougata Ray</a>
+                        </div>
+                        <div class="key">
+                            <span>0013321</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 co-sm-6 mb-4">
+                        <div class="value mb-2">
+                            <a href="./company-director.html">Ramdas Narayan Murthy</a>
+                        </div>
+                        <div class="key">
+                            <span>0034563</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 co-sm-6 mb-4">
+                        <div class="value mb-2">
+                           <a href="./company-director.html">Rupali Basu</a>
+                        </div>
+                        <div class="key">
+                            <span>009764</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 co-sm-6 mb-4">
+                        <div class="value mb-2">
+                          <a href="./company-director.html">Krishnava Dutt</a>
+                        </div>
+                        <div class="key">
+                            <span>002725</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 co-sm-6 mb-4">
+                        <div class="value mb-2">
+                            <a href="./company-director.html">Ramdas Narayan Murthy</a>
+                        </div>
+                        <div class="key">
+                            <span>0034563</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="insightBox">
+            <h3>Top Companies in your State</h3>
+            <div class="stateWiseCompany mt-4">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#uttarPradesh" type="button" role="tab" aria-controls="uttarPradesh" aria-selected="true">Uttar Pradesh</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#hariyana" type="button" role="tab" aria-controls="hariyana" aria-selected="false">Hariyana</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#madhyaPradesh" type="button" role="tab" aria-controls="madhyaPradesh" aria-selected="false">Madhya Pradesh</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#gujrat" type="button" role="tab" aria-controls="gujrat" aria-selected="false">Gujrat</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#punjab" type="button" role="tab" aria-controls="punjab" aria-selected="false">Punjab</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#rajsthan" type="button" role="tab" aria-controls="rajsthan" aria-selected="false">Rajsthan</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#udisa" type="button" role="tab" aria-controls="udisa" aria-selected="false">Udisa</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="uttarPradesh" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="hariyana" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="madhyaPradesh" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="gujrat" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="punjab" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="rajsthan" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="udisa" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 mb-3">
+                                <ul class="companyList">
+                                    <li>
+                                        <a href="" target="_blank">Aashi Industries Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Benzo Petro International Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Transpek Industry Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Asian Petro Products And Exporters Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Ghcl Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Crestchem Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">D C W Limited</a>
+                                    </li>
+                                    <li>
+                                        <a href="" target="_blank">Gujarat Alkalies And Chemicals Limited</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div>
     </section>
     <!-- ======================Footer=========================================== -->
     <footer class="footer">
@@ -976,114 +1769,5 @@
     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
     
     <script src="./js/navbar.js"></script>
-    <script src="./js/home.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          const searchInput = document.querySelector('.search-input');
-          const recommendationsContainer = document.querySelector('.recommendations');
-      
-          const data = [
-            'Adani Enterprises',
-            'Adani Ports and Special Economic Zone',
-            'Apollo Hospitals',
-            'Asian Paints',
-            'Axis Bank',
-            'Bajaj Auto',
-            'Bajaj Finance',
-            'Bajaj Finserv',
-            'Bharti Airtel',
-            'BPCL',
-            'Britannia Industries',
-            'Cipla',
-            'Coal India',
-            'Divi\'s Laboratories',
-            'Dr. Reddy\'s Laboratories',
-            'Eicher Motors',
-            'Grasim Industries',
-            'HCL Technologies',
-            'HDFC Bank',
-            'HDFC Life Insurance',
-            'Hero MotoCorp',
-            'Hindalco Industries',
-            'Hindustan Unilever',
-            'ICICI Bank',
-            'IndusInd Bank',
-            'Infosys',
-            'ITC',
-            'JSW Steel',
-            'Kotak Mahindra Bank',
-            'Larsen & Toubro',
-            'LTIMindtree',
-            'Mahindra & Mahindra',
-            'Maruti Suzuki',
-            'Nestle India',
-            'NTPC',
-            'Oil & Natural Gas Corporation (ONGC)',
-            'Power Grid Corporation',
-            'Reliance Industries',
-            'SBI Life Insurance',
-            'State Bank of India (SBI)',
-            'Sun Pharmaceutical Industries',
-            'Tata Consultancy Services (TCS)',
-            'Tata Consumer Products',
-            'Tata Motors',
-            'Tata Steel',
-            'Tech Mahindra',
-            'Titan Company',
-            'UltraTech Cement',
-            'UPL',
-            'Wipro'
-            ];
-
-      
-          searchInput.addEventListener('focus', function() {
-            filterRecommendations(searchInput.value);
-          });
-      
-          searchInput.addEventListener('blur', function() {
-            setTimeout(function() {
-              recommendationsContainer.style.display = 'none';
-            }, 200);
-          });
-      
-          searchInput.addEventListener('input', function() {
-            filterRecommendations(this.value);
-          });
-      
-          function filterRecommendations(keyword) {
-            recommendationsContainer.innerHTML = ''; // Clear previous recommendations
-            if (keyword.trim() === '') {
-              recommendationsContainer.style.display = 'none';
-              return;
-            }
-            const filteredData = data.filter(item => item.toLowerCase().includes(keyword.toLowerCase()));
-            
-            if (filteredData.length > 0) {
-              filteredData.forEach(function(item) {
-                const recommendationItem = document.createElement('a');
-                recommendationItem.href = "#";
-                recommendationItem.className = 'recommendation';
-                recommendationItem.innerHTML = `
-                  <span>${item} <small class="active"><div class="badges"></div> Active</small></span>
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
-                `;
-                recommendationItem.addEventListener('click', function() {
-                  searchInput.value = item;
-                  recommendationsContainer.style.display = 'none';
-                });
-                recommendationsContainer.appendChild(recommendationItem);
-              });
-              recommendationsContainer.style.display = 'block';
-            } else {
-              const noResultsItem = document.createElement('div');
-              noResultsItem.className = 'no-results';
-              noResultsItem.textContent = 'No results found';
-              recommendationsContainer.appendChild(noResultsItem);
-              recommendationsContainer.style.display = 'block';
-            }
-          }
-        });
-    </script>
-      
 </body>
 </html>

@@ -2693,13 +2693,15 @@ justify-content: space-between;
 align-items: center;
 border: 1px solid #e2e2e2;
 padding: .8rem .5rem;
-border-radius: 10px;
+border-radius: 4px;
 }
 .similarCompanies .stateBox{
 display: flex;
 justify-content: space-between;
 align-items: center;
 margin-bottom: 1rem;
+padding: .3rem;
+background-color: #F1F1F4;
 }
 .similarCompanies .stateBox .stateName{
 display: flex;
@@ -2708,8 +2710,8 @@ align-items: center;
 .similarCompanies .stateBox .stateName p{
 font-weight: 600;
 text-transform: capitalize;
-color: #000;
-font-size: .9rem;
+color: #1B84FF;
+font-size: .8rem;
 }
 .similarCompanies .stateBox .stateName .imgBox{
 width: 2.5rem;
@@ -2742,7 +2744,7 @@ background-color: #f5b4020a;
 }
 .similarCompanies .stateBox:hover svg {
 display: inline;
-fill: #f5b402;
+fill: #1B84FF;
 }
 .similarCompanies .listCompany{
 padding: 1rem;
@@ -3567,8 +3569,7 @@ position: relative;
 
 .businessLicense {
 padding-top: 5rem;
-height: 100vh;
-min-height: fit-content;
+height: fit-content;
 }
 .sliderBox {
 position: sticky;
@@ -3595,6 +3596,13 @@ text-align: center;
 
 .detailedDocument .docType ul{
 width: 100%;
+}
+.detailedDocument .detailedDocBox ul li {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: .8rem;
+  line-height: 1.4;
+  color: #000;
 }
 .detailedDocument .docType ul li{
 padding: 0;
