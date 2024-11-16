@@ -840,186 +840,603 @@
     <section class="companyInsights pt-5">
        <div class="container mt-5">
         <div class="searchSection mt-4" style="height: fit-content;">
-            <div class="container">
-                <div class="searchBox">
-                    <form action="#">
-                        <input type="search" class="form-control search-input" placeholder="search company, CIN, DIN">
-                        <button><img src="./images/search-normal.svg" alt="search"></button>
-                    </form>
-                    <div class="recommendations" style="display: none;"></div>
-                </div>
-                <div class="searchTerm">
-                    <h1>Tata: Companies Search</h1>
-                    <div class="matchCount">
-                        40 of 193 Matches
-                    </div>
-                </div>
+            <div class="searchBox">
+                <form action="#">
+                    <input type="search" class="form-control search-input" placeholder="search company, CIN, DIN">
+                    <button><img src="./images/search-normal.svg" alt="search"></button>
+                </form>
+                <div class="recommendations" style="display: none;"></div>
             </div>
         </div>
-        <div class="insightBox">
-            <h3>Directorship Details</h3>
-            <div class="matricsTable">
-                <div class="tablecontainer">
-                    <table class="toggle-table">
-                        <thead>
-                                <tr>
-                                    <th style="text-align: left;">Business Name</th>
-                                    <th style="text-align: left;">Incorporation Date</th>
-                                    <th style="text-align: left;">Industry</th>
-                                    <th style="text-align: left;">Status</th>
-                                    <th style="text-align: left;">Date of appointment</th>
-                                    <th style="text-align: left;">As on</th>
-                                    <th style="text-align: left;">Designation</th>
-                                </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="text-align: left;">
-                                    <div class="shareHolder">
-                                        <span><a href="#">THE CAPITAL TECH COMPANY OF INDIA LTD</a></span>
-                                    </div>
-                                </td>
-                                <td style="text-align: left;">20 Jan, 1920</td>
-                                <td style="text-align: left;">Manufacturing (Metals & Chemicals and their products)</td>
-                                <td style="text-align: left;">
-                                    <div class="amalgamated">
-                                        <span class="badges"><small></small> Amalgamated</span>
-                                    </div>
-                                </td>
-                                <td style="text-align: left;">25 Oct, 2004</td>
-                                <td style="text-align: left;">25 Oct, 2004</td>
-                                <td style="text-align: left;">Director</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;">
-                                    <div class="shareHolder">
-                                        <span><a href="#">TATA STEEL FOUNDATION</a></span>
-                                    </div>
-                                </td>
-                                <td style="text-align: left;">20 Jan, 1920</td>
-                                <td style="text-align: left;">Manufacturing (Metals & Chemicals and their products)</td>
-                                <td style="text-align: left;">
-                                    <div class="shareHolder">
-                                        <span class="badges"><small></small>active</span>
-                                    </div>
-                                </td>
-                                <td style="text-align: left;">25 Oct, 2004</td>
-                                <td style="text-align: left;">25 Oct, 2004</td>
-                                <td style="text-align: left;">Director</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;">
-                                    <div class="shareHolder">
-                                        <span><a href="#">THE CAPITAL TECH COMPANY OF INDIA LTD</a></span>
-                                    </div>
-                                </td>
-                                <td style="text-align: left;">20 Jan, 1920</td>
-                                <td style="text-align: left;">Manufacturing (Metals & Chemicals and their products)</td>
-                                <td style="text-align: left;">
-                                    <div class="amalgamated">
-                                        <span class="badges"><small></small> Amalgamated</span>
-                                    </div>
-                                </td>
-                                <td style="text-align: left;">25 Oct, 2004</td>
-                                <td style="text-align: left;">25 Oct, 2004</td>
-                                <td style="text-align: left;">Director</td>
-                            </tr>
-                            <tr>
-                                <td style="text-align: left;">
-                                    <div class="shareHolder">
-                                        <span><a href="#">TATA STEEL FOUNDATION</a></span>
-                                    </div>
-                                </td>
-                                <td style="text-align: left;">20 Jan, 1920</td>
-                                <td style="text-align: left;">Manufacturing (Metals & Chemicals and their products)</td>
-                                <td style="text-align: left;">
-                                    <div class="shareHolder">
-                                        <span class="badges"><small></small>active</span>
-                                    </div>
-                                </td>
-                                <td style="text-align: left;">25 Oct, 2004</td>
-                                <td style="text-align: left;">25 Oct, 2004</td>
-                                <td style="text-align: left;">Director</td>
-                            </tr>
-                        </tbody>
-                    </table>
+        <div class="row">
+            <aside class="col-lg-4">
+                <div class="insightBox me-3">
+                    <div class="searchCompanyTabs nav flex-column nav-pills" role="tablist" aria-orientation="vertical">
+                        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#companies" type="button" role="tab" aria-controls="companies" aria-selected="true">Companies</button>
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#listDirector" type="button" role="tab" aria-controls="listDirector" aria-selected="false">Directors</button>
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#trademark" type="button" role="tab" aria-controls="trademark" aria-selected="false">Trademarks</button>
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#patent" type="button" role="tab" aria-controls="patent" aria-selected="false">Patents</button>
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#companyDesign" type="button" role="tab" aria-controls="companyDesign" aria-selected="false">Designs</button>
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#companyCopyright" type="button" role="tab" aria-controls="companyCopyright" aria-selected="false">Copyright</button>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="insightBox">
-            <h3>Other individuals who might be associated with Koushik Chatterjee</h3>
-            <div class="matricsBox">
-                <div class="row row-cols-2 mb-4">
-                    <div class="col-lg-4 co-sm-6 mb-4">
-                        <div class="value mb-2">
-                           <a href="./company-director.html">Sougata Ray</a>
+            </aside>
+            <div class="col-lg-8">
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="companies" role="tabpanel" aria-labelledby="companies" tabindex="0">
+                        <div class="insightBox">
+                            <h1 class="searchTerm">Tata: Companies Search</h1>
+                            <div class="matchCount">
+                                40 of 193 Matches
+                            </div>
+                            <div class="listState">
+                                <p>State:</p>
+                                <div class="listBtns">
+                                    <button class="">Mumbai (50)</button>
+                                    <button>Delhi (50)</button>
+                                    <button>Kolkata (50)</button>
+                                    <button>Chennai (50)</button>
+                                    <button>Jharkhand (50)</button>
+                                    <button>Orissa (50)</button>
+                                    <button>Telangana (50)</button>
+                                    <button>Uttarakhand (50)</button>
+                                    <button>West Bengal (50)</button>
+                                    <button>Goa (50)</button>
+                                    <button>Hyderabad (50)</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="key">
-                            <span>0013321</span>
+                        <div class="listCompanies">
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>CIN: CIN733539335339</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Tata International Limited</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <small class="activeDot"></small>
+                                            <span class="active">Active</span>
+                                            <span>Mumbai</span>
+                                            <span>ROC Mumbai</span>
+                                        </div>
+                                        <div class="dName">
+                                            <span>Farokh Nariman Subedar </span>
+                                            <span>Noel Naval Tata</span>
+                                            <span> Deepak Premnarayen</span>
+                                            <span>Praveen Purushottam Kadle</span>
+                                            <span>Ajay Murlidhar Ponkshe</span>
+                                        </div>
+                                    </div>
+                                    <div class="cLogo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M48 0C21.5 0 0 21.5 0 48L0 464c0 26.5 21.5 48 48 48l96 0 0-80c0-26.5 21.5-48 48-48s48 21.5 48 48l0 80 96 0c26.5 0 48-21.5 48-48l0-416c0-26.5-21.5-48-48-48L48 0zM64 240c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm112-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM80 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM272 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16z"/></svg>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    Is based in 7th Floor, Trent House, G Block, Plot No. C 60 Beside Citi Bank, Bandra Kurla Complex, Ba, Ndra East, Mumbai, Maharashtra, India 400051 and has charges open of amount
+                                </div>
+                            </div>
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>CIN: CIN733539335339</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Tata Asset Management Limited</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <small class="activeDot"></small>
+                                            <span class="active">Active</span>
+                                            <span>Mumbai</span>
+                                            <span>ROC Mumbai</span>
+                                        </div>
+                                        <div class="dName">
+                                            <span>Farokh Nariman Subedar </span>
+                                            <span>Noel Naval Tata</span>
+                                            <span> Deepak Premnarayen</span>
+                                            <span>Praveen Purushottam Kadle</span>
+                                            <span>Ajay Murlidhar Ponkshe</span>
+                                        </div>
+                                    </div>
+                                    <div class="cLogo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M48 0C21.5 0 0 21.5 0 48L0 464c0 26.5 21.5 48 48 48l96 0 0-80c0-26.5 21.5-48 48-48s48 21.5 48 48l0 80 96 0c26.5 0 48-21.5 48-48l0-416c0-26.5-21.5-48-48-48L48 0zM64 240c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm112-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM80 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM272 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16z"/></svg>
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    Is based in 7th Floor, Trent House, G Block, Plot No. C 60 Beside Citi Bank, Bandra Kurla Complex, Ba, Ndra East, Mumbai, Maharashtra, India 400051 and has charges open of amount
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 co-sm-6 mb-4">
-                        <div class="value mb-2">
-                            <a href="./company-director.html">Ramdas Narayan Murthy</a>
+                    <div class="tab-pane fade show" id="listDirector" role="tabpanel" aria-labelledby="listDirector" tabindex="0">
+                        <div class="insightBox">
+                            <h1 class="searchTerm">Tata: Directors Search</h1>
+                            <div class="matchCount">
+                                40 of 193 Matches
+                            </div>
+                            <div class="listState">
+                                <p>State:</p>
+                                <div class="listBtns">
+                                    <button class="">Mumbai (50)</button>
+                                    <button>Delhi (50)</button>
+                                    <button>Kolkata (50)</button>
+                                    <button>Chennai (50)</button>
+                                    <button>Jharkhand (50)</button>
+                                    <button>Orissa (50)</button>
+                                    <button>Telangana (50)</button>
+                                    <button>Uttarakhand (50)</button>
+                                    <button>West Bengal (50)</button>
+                                    <button>Goa (50)</button>
+                                    <button>Hyderabad (50)</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="key">
-                            <span>0034563</span>
+                        <div class="listCompanies">
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>DIN: DIN383362</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Srikanth Tata</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <span>Mumbai</span>
+                                            <span>ROC Mumbai</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cLogo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>DIN: DIN383362</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Ramadevi Tata</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <span>Mumbai</span>
+                                            <span>ROC Mumbai</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cLogo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>DIN: DIN383362</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Tata Aruna</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <span>Mumbai</span>
+                                            <span>ROC Mumbai</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cLogo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>DIN: DIN383362</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Krishnamurthy Tata</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <span>Mumbai</span>
+                                            <span>ROC Mumbai</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cLogo">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"/></svg>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 co-sm-6 mb-4">
-                        <div class="value mb-2">
-                           <a href="./company-director.html">Rupali Basu</a>
+                    <div class="tab-pane fade show" id="trademark" role="tabpanel" aria-labelledby="trademark" tabindex="0">
+                        <div class="insightBox">
+                            <h1 class="searchTerm">Tata: Trademarks Search</h1>
+                            <div class="matchCount">
+                                40 of 193 Matches
+                            </div>
+                            <div class="listState">
+                                <p>Type:</p>
+                                <div class="listBtns">
+                                    <button class="active">All</button>
+                                    <button>Exact</button>
+                                    <button>Contains</button>
+                                    <button>Phonetics</button>
+                                    <button>Fuzzy</button>
+                                </div>
+                            </div>
+                            <div class="listState">
+                                <p>Classes:</p>
+                                <div class="listBtns">
+                                    <button class="">2 (50)</button>
+                                    <button>64 (50)</button>
+                                    <button>78 (50)</button>
+                                    <button>98 (50)</button>
+                                    <button>90 (50)</button>
+                                    <button>34 (50)</button>
+                                    <button>56 (50)</button>
+                                    <button>89 (50)</button>
+                                    <button>78 (50)</button>
+                                    <button>45 (50)</button>
+                                    <button>78 (50)</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="key">
-                            <span>009764</span>
+                        <div class="listCompanies">
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>DIN: DIN383362</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Tata Tata Sons Private Limited</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <small class="activeDot"></small>
+                                            <span class="active">Regirter</span>
+                                            <span>class 15</span>
+                                            <span>Device</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cLogo">
+                                       <img src="./images/trademark.svg" height="40" width="40" alt="trademark">
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    [Class : 15] Musical Instruments.
+                                </div>
+                            </div>
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>DIN: DIN383362</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Tata Tata Sons Private Limited</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <small class="activeDot"></small>
+                                            <span class="active">Accepted & Advertised</span>
+                                            <span>class 15</span>
+                                            <span>class 32</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cLogo">
+                                       <img src="./images/tata.jpg" height="40" width="40" alt="trademark">
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    [Class : 12] Vehicles; Apparatus For Locomotion By Land, Air Or Water.
+                                </div>
+                            </div>
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>DIN: DIN383362</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Tata Sh. Devi Charan Single Firm</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <small class="notActiveDot"></small>
+                                            <span class="NotActive">Abandoned</span>
+                                            <span>class 15</span>
+                                            <span>class 32</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cLogo">
+                                       <img src="./images/trademark.svg" height="40" width="40" alt="trademark">
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    [Class : 12] Vehicles; Apparatus For Locomotion By Land, Air Or Water.
+                                </div>
+                            </div>
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>DIN: DIN383362</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Tata Tata Sons Private Limited</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <small class="activeDot"></small>
+                                            <span class="active">Regirter</span>
+                                            <span>class 15</span>
+                                            <span>Device</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cLogo">
+                                       <img src="./images/trademark.svg" height="40" width="40" alt="trademark">
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    [Class : 15] Musical Instruments.
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 co-sm-6 mb-4">
-                        <div class="value mb-2">
-                          <a href="./company-director.html">Krishnava Dutt</a>
+                    <div class="tab-pane fade show" id="patent" role="tabpanel" aria-labelledby="patent" tabindex="0">
+                        <div class="insightBox">
+                            <h1 class="searchTerm">Tata: Patents Search</h1>
+                            <div class="matchCount">
+                                40 of 193 Matches
+                            </div>
+                            <div class="listState">
+                                <p>Invention Field:</p>
+                                <div class="listBtns">
+                                    <button class="">Communication (50)</button>
+                                    <button>Computer Science (50)</button>
+                                    <button>Electrical (50)</button>
+                                    <button>General Engineering (50)</button>
+                                    <button>Bio Chemistry (50)</button>
+                                    <button>Bio Technology (50)</button>
+                                    <button>Textile (50)</button>
+                                    <button>Food (50)</button>
+                                    <button>Agriculture Engineering (50)</button>
+                                    <button>Traditional Knowledge (50)</button>
+                                    <button>Chemical (50)</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="key">
-                            <span>002725</span>
+                        <div class="listCompanies">
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>ID: ID383362</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Retransmission Apparatus And Mehod For High Speed Tata Processing</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <small class="activeDot"></small>
+                                            <span class="active">Published</span>
+                                            <span class="publicationDate">Publication: 27 Aug 2016</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cLogo">
+                                       <img src="./images/patent.png" height="40" width="40" alt="trademark">
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    The invention provides, e.g., a recombinant virus comprising (i) a modified TATA box-based promoter, and/or (ii) a modified CAAT box-based promoter operably linked to a gene, wherein the modified TATA box- based promoter and/or modified CAAT box-based promoter lacks a functional TATA box and/or CAAT box and
+                                </div>
+                            </div>
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>ID: ID383362</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Tumor Selective Tata Box And Caat Box Mutants</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <small class="activeDot"></small>
+                                            <span class="active">Published</span>
+                                            <span class="publicationDate">Publication: 27 Aug 2016</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cLogo">
+                                       <img src="./images/patent.png" height="40" width="40" alt="trademark">
+                                    </div>
+                                </div>
+                                <div class="address">
+                                    The invention provides, e.g., a recombinant virus comprising (i) a modified TATA box-based promoter, and/or (ii) a modified CAAT box-based promoter operably linked to a gene, wherein the modified TATA box- based promoter and/or modified CAAT box-based promoter lacks a functional TATA box and/or CAAT box and
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 co-sm-6 mb-4">
-                        <div class="value mb-2">
-                           <a href="./company-director.html">Sougata Ray</a>
+                    <div class="tab-pane fade show" id="companyDesign" role="tabpanel" aria-labelledby="companyDesign" tabindex="0">
+                        <div class="insightBox">
+                            <h1 class="searchTerm">Tata: Design Search</h1>
+                            <div class="matchCount">
+                                40 of 193 Matches
+                            </div>
+                            <div class="listState">
+                                <p>Classes:</p>
+                                <div class="listBtns">
+                                    <button class="">10 (50)</button>
+                                    <button>65 (50)</button>
+                                    <button>54 (50)</button>
+                                    <button>21 (50)</button>
+                                    <button>32 (50)</button>
+                                    <button>65 (50)</button>
+                                    <button>21 (50)</button>
+                                </div>
+                            </div>
                         </div>
-                        <div class="key">
-                            <span>0013321</span>
+                        <div class="listCompanies">
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>ID: ID383362</button>
+                                    <button>Classes: 14</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Data Cable: Applicants Le Holdings (Beijing) Co., Ltd. · Lemobile Information Technology (Beijing) Co., Ltd.</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <small class="activeDot"></small>
+                                            <span class="active">Published</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="designImg">
+                                       <img src="./images/design-1.jpg" height="80" width="100" alt="trademark">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>ID: ID383362</button>
+                                    <button>Classes: 14</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Data Cable: Applicants Le Holdings (Beijing) Co., Ltd. · Lemobile Information Technology (Beijing) Co., Ltd.</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <small class="activeDot"></small>
+                                            <span class="active">Published</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="designImg">
+                                       <img src="./images/design-2.jpg" height="80" width="100" alt="trademark">
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>30 Nov 1962</button>
+                                    <button>ID: ID383362</button>
+                                    <button>Classes: 14</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Data Projector: Applicants Kabushiki Kaisha Toshiba.</a>
+                                        </div>
+                                    </div>
+                                    <div class="designImg">
+                                       <img src="./images/design-3.jpg" height="80" width="100" alt="trademark">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 co-sm-6 mb-4">
-                        <div class="value mb-2">
-                            <a href="./company-director.html">Ramdas Narayan Murthy</a>
+                    <div class="tab-pane fade show" id="companyCopyright" role="tabpanel" aria-labelledby="companyCopyright" tabindex="0">
+                        <div class="insightBox">
+                            <h1 class="searchTerm">Tata: Copyright Search</h1>
+                            <div class="matchCount">
+                                40 of 193 Matches
+                            </div>
+                            <div class="listState">
+                                <p>Journal</p>
+                            </div>
+                            <div class="listState">
+                                <p>Classes Of Work</p>
+                            </div>
                         </div>
-                        <div class="key">
-                            <span>0034563</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 co-sm-6 mb-4">
-                        <div class="value mb-2">
-                           <a href="./company-director.html">Rupali Basu</a>
-                        </div>
-                        <div class="key">
-                            <span>009764</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 co-sm-6 mb-4">
-                        <div class="value mb-2">
-                          <a href="./company-director.html">Krishnava Dutt</a>
-                        </div>
-                        <div class="key">
-                            <span>002725</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 co-sm-6 mb-4">
-                        <div class="value mb-2">
-                            <a href="./company-director.html">Ramdas Narayan Murthy</a>
-                        </div>
-                        <div class="key">
-                            <span>0034563</span>
+                        <div class="listCompanies">
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>ID: ID383362</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Colours Of Tata</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <small class="activeDot"></small>
+                                            <span class="active">Registered</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cLogo">
+                                       <img src="./images/copyright.svg" height="40" width="40" alt="copyright">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>ID: ID383362</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Tata Motors</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <small class="activeDot"></small>
+                                            <span class="active">Registered</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cLogo">
+                                       <img src="./images/copyright.svg" height="40" width="40" alt="copyright">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="insightBox mb-4">
+                                <div class="cins">
+                                    <button>ID: ID383362</button>
+                                </div>
+                                <div class="companyInfo">
+                                    <div>
+                                        <div class="cName">
+                                            <a href="#">Tata Samunder</a>
+                                        </div>
+                                        <div class="badgesList">
+                                            <small class="activeDot"></small>
+                                            <span class="active">Registered</span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="cLogo">
+                                       <img src="./images/copyright.svg" height="40" width="40" alt="copyright">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
