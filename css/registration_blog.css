@@ -314,11 +314,10 @@ color: #2e2e2e;
 /* Doc req */
 
 .dcoRequired{
-  background-color: #e7f6ff;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 .dcoRequired .container{
-  max-width: 1450px;
+  max-width: 1200px;
 }
 .dcoRequired p{
 margin-bottom: 1rem;
@@ -327,11 +326,45 @@ color: #2e2e2e;
 font-size: 1.2rem;
 line-height: 1.4;
 }
+.idBox{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.idBox .idCircle{
+  margin-bottom: 1rem;
+ }
+.idBox .idCircle img{
+ object-fit: contain;
+ max-width: 100%;
+}
+.idBox .idpara p{
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333;
+  text-align: center;
+ }
 .dcoRequired h2{
   font-weight: 600;
   color: #2e2e2e;
   font-size: 1.8rem;
   margin-bottom: 2.6rem;
+}
+.block_heading h2::after{
+    content: '';
+    display: block;
+    width: 75px;
+    height: 6px;
+    background: #f5b402;
+    border-radius: 3px;
+    margin: 30px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 30px;
+}
+.serviceSummary .detailedDocument .container {
+ box-shadow: none;
+ border-radius: 0px;
 }
 .dcoRequired h3{
 font-weight: 600;
@@ -596,7 +629,7 @@ ol.process-chart > li:nth-of-type(6n+5):after {
 padding-top: 0;
 }
 .registrationpProcedure .container{
-  max-width: 1450px;
+  max-width: 1200px;
 }
 .accordion-button:focus {
   box-shadow: none;
@@ -2701,7 +2734,6 @@ justify-content: space-between;
 align-items: center;
 margin-bottom: 1rem;
 padding: .3rem;
-background-color: #F1F1F4;
 }
 .similarCompanies .stateBox .stateName{
 display: flex;
@@ -2738,10 +2770,7 @@ height: 1.5rem;
 .similarCompanies .arrow svg{
 display: none;
 }
-.similarCompanies .stateBox:hover{
-border: 1px solid #f5b402;
-background-color: #f5b4020a;
-}
+
 .similarCompanies .stateBox:hover svg {
 display: inline;
 fill: #1B84FF;
