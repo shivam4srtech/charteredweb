@@ -946,7 +946,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mb-4">
+                                <div class="details mb-4" id="detailsContent">
                                     <h3>Company Information</h3>
                                     <div class="matricsTable">
                                         <div class="tablecontainer">
@@ -1018,7 +1018,7 @@
                                     </div>
                                 </div>
                                 <div class="readMoreBtn">
-                                    <button>More Details<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
+                                    <button class="toggle-btn" id="toggleDetailsBtn">Show More Details<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M201.4 374.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 306.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></button>
                                 </div>
                             </div>
                             <div class="cartBtn">
@@ -3888,6 +3888,23 @@
     
     <script src="./js/navbar.js"></script>
     <script src="./js/home.js"></script>
+    <!-- show more company info -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const toggleButton = document.getElementById('toggleDetailsBtn');
+            const detailsContent = document.getElementById('detailsContent');
+
+            toggleButton.addEventListener('click', function () {
+                if (detailsContent.style.display === 'none' || detailsContent.style.display === '') {
+                    detailsContent.style.display = 'block';
+                    toggleButton.textContent = 'Hide More Details';
+                } else {
+                    detailsContent.style.display = 'none';
+                    toggleButton.textContent = 'Show More Details';
+                }
+            });
+        });
+    </script>
     <!-- search recommendation -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {

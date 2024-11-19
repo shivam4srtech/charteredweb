@@ -892,7 +892,6 @@ margin-left: .5rem;
              align-items: center;
              justify-content: center;
              height: 100vh;
-             background-color: #fcfcfe;
           }
           .searchSection form{
               max-width: 100%;
@@ -1217,4 +1216,7 @@ margin-left: .5rem;
   }
   .designImg img{
     object-fit: contain;
+  }
+  .details{
+    display: none;
   }
