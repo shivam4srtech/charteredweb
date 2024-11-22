@@ -2495,6 +2495,7 @@ color: #A32B1F;
   font-size: 2rem;
   color: rgb(49, 66, 89);;
   line-height: 1.4;
+  text-align: center;
 }  
 .serviceSummary .aboutPlan p{
   color: #314259;
@@ -2520,6 +2521,7 @@ b{
   font-size: 2rem;
   color: rgb(49, 66, 89);;
   line-height: 1.4;
+  text-align: center;
 } 
 .serviceSummary .servicesIncluded img{
   width: 2rem;
@@ -2552,6 +2554,7 @@ b{
   font-size: 2rem;
   color: rgb(49, 66, 89);;
   line-height: 1.4;
+  text-align: center;
 } 
 .serviceSummary .whoBuy .terms{
  display: flex;
@@ -2582,6 +2585,7 @@ b{
   font-size: 2rem;
   color: rgb(49, 66, 89);
   line-height: 1.4;
+  text-align: center;
 } 
 .serviceSummary .howDone p{
   color: #472515;
@@ -3745,4 +3749,85 @@ table tr th, table tr td {
   table tr th, table tr td {
     font-size: .6rem;
   }
+}
+.businessLicense.llp .container{
+  max-width: 1400px;
+}
+.businessLicense.llp .container{
+  max-width: 1400px;
+}
+.registrationHeader .expertBox.llp{
+  width: 600px;
+}
+.registrationHeader .expertBox.llp h2{
+ text-align: left;
+}
+.registrationHeader .expertBox.llp p{
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+.registrationHeader .expertBox .form-check-input{
+  height: 20px;
+  width: 20px;
+  background-color: #dcdcdc;
+  border-radius: 5px;
+  border: 2px solid #505050;
+  box-shadow: none;
+}
+.registrationHeader .expertBox{
+  max-height: fit-content;
+}
+.registrationHeader .expertBox .form-check-label{
+ font-size: 12px;
+ font-weight: 500;
+ padding-left: 10px;
+}
+.registrationHeader .expertBox .form-check-input:checked{
+  background-color: #b6b6b6;
+}
+.registrationHeader h3{
+  font-weight: 600;
+  color: #232323;
+  line-height: 1.4;
+  margin-bottom: .5rem;
+  font-size: 1.2rem;
+}
+.registrationHeader .pageDesc{
+ margin-bottom: .6rem;
+}
+.isoBox{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+}
+.isoBox img{
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
+}
+.isoBox .isoItem h4{
+  text-align: center;
+  font-weight: 600;
+  display: block;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: .6rem;
+}
+.isoBox .isoItem{
+ display: flex;
+ align-items: center;
+ justify-content: flex-end;
+ flex-direction: column;
+ width: 200px;
+}
+.isoBox .isoItem p{
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  color: #333;
+  font-weight: 500;
 }
