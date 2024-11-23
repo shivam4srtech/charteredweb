@@ -932,7 +932,14 @@
                             <h2>Need Help with LLP Partnership Registration?</h2>
                             <p>Fill Up the below Mentioned Form</p>
                             <form action="NoWhere">
-                                <input type="text" class="form-control mb-3" placeholder="Full Name*" required="">
+                               <div class="d-flex"> 
+                                    <select class="form-control me-2" name="salutation" style="width: 60px;">
+                                        <option value="Mr.">Mr.</option>
+                                        <option value="Ms.">Ms.</option>
+                                        <option value="Mrs.">Mrs.</option>
+                                    </select>
+                                    <input type="text" class="form-control mb-3" placeholder="Full Name*" required="">
+                               </div>
                                 <input type="email" class="form-control mb-3" placeholder="Email*" required="">
                                 <input type="text" class="form-control  mb-3" placeholder="Mobile*" required="">
                                 <select class="form-select mb-3" aria-label="Default select example" required="">
@@ -977,10 +984,7 @@
                                 <div class="form-check mb-3">
                                   <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
                                   <label class="form-check-label" for="flexCheckChecked">
-                                    I have read & agreed to the company's Terms and Conditions, disclaimer and refund policy, and also ready to accept calls, SMS, emails, etc. 
-                                  </label>
-                                  <label class="form-check-label" for="flexCheckChecked">
-                                    Trust us we do not spam.
+                                    Ready to accept calls, SMS, emails, etc. Trust us we do not spam.
                                   </label>
                                 </div>
                                 <div class="text-center">
@@ -1055,6 +1059,28 @@
             <div class="row reviewSummary justify-content-center">
                 <div class="col-lg-10 col-md-12 mb-4 summaryContent">
                     <div class="sliderBox d-none d-lg-block">
+                        <div class="sliderForm pt-2">
+                            <select class="form-control me-2" name="salutation" style="width: 60px;">
+                                <option value="Mr.">Mr.</option>
+                                <option value="Ms.">Ms.</option>
+                                <option value="Mrs.">Mrs.</option>
+                            </select>
+                            <div class="me-2">
+                                <input type="text" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="me-2">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="me-2">
+                                <input type="number" class="form-control" placeholder="Mobile Number">
+                            </div>
+                            <div class="me-2">
+                                <input type="text" class="form-control" placeholder="Hyderabad">
+                            </div>
+                            <div class="me-2">
+                                 <button>Get Started</button>
+                            </div>
+                        </div>
                         <div class="menu-wrapper">
                             <div class="menu-item">
                               <a href="#aboutPricing" class="active">Pricing</a>

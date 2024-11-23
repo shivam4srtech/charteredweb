@@ -2933,8 +2933,8 @@ border-radius: 10px;
 color: #183d5c;
 text-align: center;
 font-weight: 600;
-font-size: 1.6rem;
-margin-bottom: 1.2rem;
+font-size: 1.4rem;
+margin-bottom: .8rem;
 }
 .registrationHeader .expertBox form .form-control{
 box-shadow: none;
@@ -2942,7 +2942,7 @@ border-radius: 5px;
 font-size: .9rem;
 color: #2e2e2e;
 font-weight: 500;
-height: 2.6rem;
+height: 2.2rem;
 }
 .registrationHeader .expertBox form .form-select{
 box-shadow: none;
@@ -3611,12 +3611,11 @@ position: relative;
 }
 
 .businessLicense {
-padding-top: 5rem;
+padding-top: 1rem;
 height: fit-content;
 }
 .sliderBox {
 position: sticky;
-padding-top: 38px;
 top: 0;
 z-index: 10;
 }
@@ -3786,7 +3785,7 @@ table tr th, table tr td {
   color: #333;
   font-weight: 500;
   font-size: 1rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: .8rem;
 }
 .registrationHeader .expertBox .form-check-input{
   height: 20px;
@@ -3993,7 +3992,7 @@ table tr th, table tr td {
   align-items: flex-start;
   text-align: center;
   padding: 1rem .8rem;
-  justify-content: space-around;'
+  justify-content: space-around;
  }
  .freeBies .freeBox .freeCircle{
   width: 3rem;
@@ -4025,3 +4024,42 @@ table tr th, table tr td {
     align-items: center;
     justify-content: center;
   }
+  .sliderForm{
+    display: flex;
+  }
+  .sliderForm .form-control{
+    box-shadow: none;
+    height: 2.2rem;
+    border-radius: 4px;
+    font-size: .8rem;
+    font-weight: 500;
+  }
+ .sliderForm input[type=number]::-webkit-inner-spin-button, 
+.sliderForm input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.sliderForm .form-control::placeholder{
+  font-size: .8rem;
+  color: #333;
+  font-weight: 500;
+}
+.sliderForm button{
+ white-space: nowrap;
+ height: 2.2rem;
+ border: none;
+ outline: none;
+ background-color: #f5b402;
+ font-weight: 500;
+ color: #000;
+ padding: .5rem;
+ font-size: .8rem;
+ border-radius: 4px;
+}
+@media(max-width:991px){
+  .sliderForm{
+    display: none;
+  }
+}
