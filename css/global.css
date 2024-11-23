@@ -1004,7 +1004,7 @@ body.modal-open {
 }
 /*contact us*/
 .contactUs {
-  padding: 3rem 0;
+  padding: 1rem 0;
   padding-bottom: 4rem;
  }
   .contactUs .container {
@@ -1525,6 +1525,7 @@ max-width: 1500px;
   font-size: .95rem;
   margin-bottom: 1rem;
   list-style-type: disc;
+  padding-left: 10px
  }
  .faqs .faqAns ol{
   padding-left: 15px;
@@ -1535,6 +1536,7 @@ max-width: 1500px;
   font-size: .95rem;
   margin-bottom: 1rem;
   list-style-type: decimal;
+  padding-left: 10px;
  }
 .faqs .faqAns .additionalPadding{
   padding-bottom: 2rem;
