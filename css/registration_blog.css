@@ -3616,7 +3616,7 @@ height: fit-content;
 }
 .sliderBox {
 position: sticky;
-top: 0;
+top: 62px;
 z-index: 10;
 }
 .detailedDocument{
@@ -4051,9 +4051,9 @@ table tr th, table tr td {
  height: 2.2rem;
  border: none;
  outline: none;
- background-color: #f5b402;
+ background-color: #000;
  font-weight: 500;
- color: #000;
+ color: #fff;
  padding: .5rem;
  font-size: .8rem;
  border-radius: 4px;
@@ -4062,4 +4062,30 @@ table tr th, table tr td {
   .sliderForm{
     display: none;
   }
+}
+.floatingForm{
+  position: relative;
+  background-color: #f5b402;
+  z-index: 999;
+  width: 100%;
+  display: none;
+  top: 0;
+}
+.floatingForm .sliderForm{
+  position: fixed;
+  top: 0;
+  background-color: #f5b402;
+  width: 100%;
+  margin: auto;
+  left: 0;
+  display: flex;
+  align-items: center;
+  padding: .8rem;
+}
+
+.floatingForm .sliderForm .getStartedForm{
+ margin: auto;
+}
+.floatingForm .sliderForm select{
+ width: 60px;
 }

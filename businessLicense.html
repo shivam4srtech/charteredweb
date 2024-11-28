@@ -837,6 +837,36 @@
           <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
     </nav>
+    <section class="floatingForm">
+       <div class="container">
+        <div class="sliderForm">
+            <form id="getStartedForm" class="getStartedForm">
+                <div class="d-flex align-items-center">
+                    <select class="form-control me-2 salutation_get_start err" name="salutation_get_start" required="">
+                        <option value="Mr.">Mr.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Mrs.">Mrs.</option>
+                    </select>
+                    <div class="me-2">
+                        <input type="text" class="form-control full_name_get_start  err" name="full_name_get_start" placeholder="Full Name" required="" style="border-color: red;">
+                    </div>
+                    <div class="me-2">
+                        <input type="email" class="form-control email_get_start err" name="email_get_start" placeholder="Email" required="" style="border-color: red;">
+                    </div>
+                    <div class="me-2">
+                        <input type="number" class="form-control mobile_get_start err" name="mobile_get_start" placeholder="Mobile Number" required="" style="border-color: red;">
+                    </div>
+                    <div class="me-2">
+                        <input type="text" class="form-control city_get_start err" name="city_get_start" placeholder="City" required="" style="border-color: red;">
+                    </div>
+                    <div class="me-2">
+                        <button type="button" class="btn btn-primary" id="submitgetstarted">Get Started</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+       </div>
+    </section>
     <section class="registrationHeader registrationBanner">
         <div class="container">
             <div class="row bannerBox" style="background-image: url(https://.builder.io/api/v1/image/assets/TEMP/e795bd460036f097c7351b68c2e18a9694bfc4d7345b9a8db711d908f82a8c2e?width=1224);">
@@ -1059,28 +1089,6 @@
             <div class="row reviewSummary justify-content-center">
                 <div class="col-lg-10 col-md-12 mb-4 summaryContent">
                     <div class="sliderBox d-none d-lg-block">
-                        <div class="sliderForm pt-2">
-                            <select class="form-control me-2" name="salutation" style="width: 60px;">
-                                <option value="Mr.">Mr.</option>
-                                <option value="Ms.">Ms.</option>
-                                <option value="Mrs.">Mrs.</option>
-                            </select>
-                            <div class="me-2">
-                                <input type="text" class="form-control" placeholder="Full Name">
-                            </div>
-                            <div class="me-2">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-                            <div class="me-2">
-                                <input type="number" class="form-control" placeholder="Mobile Number">
-                            </div>
-                            <div class="me-2">
-                                <input type="text" class="form-control" placeholder="Hyderabad">
-                            </div>
-                            <div class="me-2">
-                                 <button>Get Started</button>
-                            </div>
-                        </div>
                         <div class="menu-wrapper">
                             <div class="menu-item">
                               <a href="#aboutPricing" class="active">Pricing</a>
@@ -4711,22 +4719,28 @@
 </script>
 
 <script src="./js/custom.js"></script>
-    <!-- ################ -->
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const sliderBox = document.querySelector('.sliderBox');
-            const businessLicense = document.querySelector('.businessLicense');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        sliderBox.style.visibility = 'visible';
-                    } else {
-                        sliderBox.style.visibility = 'hidden';
-                    }
-                });
-            }, { threshold: 100 });
-            observer.observe(businessLicense);
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        const reviewSummary = document.querySelector('.reviewSummary');
+        const floatingForm = document.querySelector('.floatingForm'); 
+
+        let isFloatingFormVisible = false;
+
+        const checkPosition = () => {
+        const reviewSummaryRect = reviewSummary.getBoundingClientRect();
+
+        if (reviewSummaryRect.top <= 60 && !isFloatingFormVisible) {
+
+            floatingForm.style.display = 'block';
+            isFloatingFormVisible = true;
+        } else if (reviewSummaryRect.top > 60 && isFloatingFormVisible) {
+
+            floatingForm.style.display = 'none';
+            isFloatingFormVisible = false;
+        }
+        };
+        window.addEventListener('scroll', checkPosition);
         });
-    </script> -->
+    </script>
 </body>
 </html>
