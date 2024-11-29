@@ -1,18 +1,84 @@
-.section404 .container{
-    position: relative;
+.fouroFourHeader{
+    padding-top: 5rem;
+    margin-bottom: 2rem;
 }
-
-.section404 .container .navigationBtn{
-    position: absolute;
-    top: 250%;
+.popularSearches h3{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: #071437;
 }
-
-.section404 video{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border-radius: .25rem;
+    padding: .5rem .5rem;
+    border: 1px solid #fff0;
+    font-weight: 500;
+    font-size: .6875rem;
+    padding: .3125rem .375rem;
+    color: #4B5675;
+    border-color: #fff0;
+    background-color: #f5b40219;
+}
+.link {
+    font-weight: 600;
+    color: #000;
+}
+.card-header {
+    display: flex;
+    min-height: 56px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #F1F1F4;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: transparent;
+}    
+.listLinks{
+    gap: 10px;
+}
+.container{
+    max-width: 1200px;
+}
+.fourOfourBox{
+    background-color: #f5b40219;
+    padding: 1.6rem .8rem;
+}
+.fourOfourBox .imgBox img{
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    object-fit: contain;
+    max-height: 200px;
+}
+.fourOfourBox .imgBox{
+   margin-bottom: 1rem;
+}
+.badge.errorBadge{
+    background-color: #eef6ff;
+    color: #1B84FF;
+    border: 1px solid rgba(27, 132, 255, 0.20);
+    font-weight: 500;
+}
+.fouroFourHeader h1{
+    color: #071437;
+    font-size: 1.625rem;
+    line-height: 2.125rem;
+    font-weight: 600;
+    margin-bottom: .5rem;
+}
+.fouroFourHeader p{
+    font-size: .9375rem;
+    line-height: 1.375rem;
+    color: #4B5675;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+.fouroFourHeader p a{
+    color: #1B84FF;
 }
