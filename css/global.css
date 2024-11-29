@@ -152,6 +152,7 @@ nav{
     margin-top: .4rem; 	
     border-radius: 10px;
     box-shadow: 5px 5px 10px #232323;
+	max-width: fit-content;
   }
   .wrapper .btn{
 	color: #fff;
@@ -1599,10 +1600,10 @@ max-width: 1500px;
 	font-weight: 600;
 	font-size: 18px;
 	margin-bottom: .6rem;
-	color: rgb(192, 203, 217);
+	color: #fff;
   }
   .webFooter .footerlinks a{
-	color: rgb(146, 159, 176);
+	color: #fff;
 	font-weight: 500;
 	margin-bottom: .6rem;
 	font-size: .9rem;
@@ -1610,19 +1611,19 @@ max-width: 1500px;
   .webFooter .heading-sm{
     font-size: 14px;
 	font-weight: 600;
-	color: rgb(192, 203, 217);
+	color: #fff;
 	margin-bottom: .5rem;
   }
   .webFooter .phoneNumber{
-	font-size: 35px;
+	font-size: 20px;
 	font-weight: 600;
-	color: rgb(146, 159, 176);
+	color: #fff;
 	margin-bottom: .6rem;
   }
   .webFooter .emailUs{
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 600;
-	color: rgb(146, 159, 176);
+	color: #fff;
 	margin-bottom: .8rem;
   }
   .webFooter .social{
@@ -1634,22 +1635,23 @@ max-width: 1500px;
   .webFooter .address{
 	font-size: 16px;
 	font-weight: 600;
-	color: rgb(146, 159, 176);
+	color: #fff;
 	margin-bottom: .8rem;
 	line-height: 1.6;
 	display: block;
   }
   .webFooter .address svg{
-	fill: rgb(146, 159, 176);
+	fill: #fff;
 	width: 16px;
 	margin-right: .5rem;
   }
   .webFooter iframe{
 	border-radius: 10px;
 	max-width: 100%;
+	height: 100px;
   }
   .webFooter .policyBox p{
-	color: rgb(192, 203, 217);
+	color: #fff;
 	font-weight: 600;
 	font-size: 16px;
 	text-transform: uppercase;
@@ -1657,7 +1659,7 @@ max-width: 1500px;
 	line-height: 1.5;
   }
   .webFooter .policyBox a{
-	color: rgb(192, 203, 217);
+	color: #fff;
 	font-weight: 500;
     font-size: 14px;
 	display: inline-block;
@@ -1673,8 +1675,9 @@ max-width: 1500px;
   }
   .webFooter .isoBox .isoItem{
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	flex-direction: row;
+    justify-content: left;
   }
   .webFooter .isoBox .isoItem img{
 	width: 45px;
@@ -1682,7 +1685,7 @@ max-width: 1500px;
 	object-fit: contain;
   }
   .webFooter .isoBox .isoItem p{
-	color: rgb(192, 203, 217);
+	color: #fff;
 	font-weight: 500;
     font-size: 14px;
 	line-height: 1.6;
@@ -1702,7 +1705,7 @@ max-width: 1500px;
 	padding-top: 1rem;
 }
 .webFooter .paraBox{
-	color: rgb(192, 203, 217);
+	color: #fff;
     font-weight: 500;
     font-size: 14px;
     display: inline-block;
@@ -1717,7 +1720,7 @@ max-width: 1500px;
 	margin-bottom: 1.4rem;
 }
 .carouselReview .carousel-item .reviewPara p{ 
-	color: rgb(192, 203, 217);
+	color: #fff;
     font-weight: 500;
     font-size: 14px;
 	line-height: 1.5;
@@ -1757,7 +1760,7 @@ max-width: 1500px;
 .webFooter .trustBox .trustItem{
 	display: flex;
 	align-items: center;
-	border-right: 4px solid #fff;
+	border-right: 2px solid #fff;
 	padding-right: .8rem;
 }
 .webFooter .trustBox .trustItem:last-child{
@@ -1768,28 +1771,30 @@ max-width: 1500px;
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-	gap: 20px;
+	gap: 10px;
 }
 .webFooter .trustBox .trustItem img{
 	object-fit: contain;
 	margin-right: .4rem;
-	width: 44px;
+	width: 30px;
 	object-fit: contain;
 }
 .webFooter .trustBox .trustItem span{
 	font-weight: 600;
-	font-size: 1rem;
+	font-size: .8rem;
 	letter-spacing: .5px;
-	color: rgb(192, 203, 217);
+	color: #fff;
 }
 .webFooter .paymentBox{
 	display: flex;
-	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
 }
 .webFooter .paymentBox a{
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	height: 2.5rem;
 }
 .webFooter .paymentBox a img{
 	object-fit: contain;
@@ -1798,11 +1803,28 @@ max-width: 1500px;
 }
 .webFooter .paymentBox a.phonepe{
 	background-color: #fff;
-	margin-right: 1rem;
+	margin-right: 1.5rem;
 	border-radius: 5px;
 	box-shadow: 0 0 5px #f5b402;
 	transition: background-color 0.3s;
 	animation: pulse-shadow 1.5s infinite; 
+}
+.webFooter .paymentBox a.whatsApp{
+	background-color: #2BB741;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #f5b402;
+	transition: background-color 0.3s;
+	animation: pulse-shadow 1.5s infinite; 
+	font-weight: 600;
+	color: #fff;
+	font-size: .9rem;
+	padding: 0 .5rem ;
+	letter-spacing: .5px;
+}
+.webFooter .paymentBox a.whatsApp svg{
+	width: 20px;
+	fill: #fff ;
+	margin-left: .5rem;
 }
 
 .webFooter .paymentBox a.phonepe img{

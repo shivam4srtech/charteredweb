@@ -2009,6 +2009,7 @@ line-height: 1.4;
 font-weight: 500;
 font-size: 1rem;
 margin-bottom: .5rem;
+text-align: left;
 }
 .businessContent .container .businessSnepet p b{
 color: #000;
@@ -2699,7 +2700,7 @@ margin-left: .2rem;
 .stepperBox ol{
 padding-left: 1rem;
 }
-.row{
+section .row{
 max-width: 100%;
 margin: auto;
 }
@@ -3881,7 +3882,11 @@ table tr th, table tr td {
  align-items: center;
  flex-direction: column;
  position: relative;
+ border-right: 1px solid #b8b4b4;
 }
+.includeBox:last-child{
+ border-right: none;
+ }
 
 .includeBox .includeCircle{
   border-radius: 50%;
@@ -3894,8 +3899,8 @@ table tr th, table tr td {
   background-color: #f5b4020d;
 }
 .includeBox .includeCircle img{
-  width: 45px;
-  height: 45px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
   border: none;
 }
@@ -3908,27 +3913,6 @@ table tr th, table tr td {
   font-weight: 600;
   text-align: center;
 }
-.includeBox .includeHeading::after{
-  content: '';
-  background: url(/imagesweb/how_it_works_arrow.png);
-    width: 20px;
-    height: 20px;
-    display: block;
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 75%;
-    left: -15px;
-}
-.includeBox:nth-of-type(1) .includeHeading::after{
-  display: none;
-}
-@media(max-width:991px){
-  .includeBox .includeHeading::after{
-   display: none;
-  }
-}
-
 
 .registrationBanner{
   background-color:  #f5b402;
@@ -4088,4 +4072,9 @@ table tr th, table tr td {
 }
 .floatingForm .sliderForm select{
  width: 60px;
+}
+@media(max-width:991px){
+  .floatingForm{
+    display: none !important;
+  }
 }
