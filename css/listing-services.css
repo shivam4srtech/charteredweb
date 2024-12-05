@@ -5,7 +5,7 @@ body{
     background-color: #f1f1f3;
 }
 .serviceSection .container{
-   max-width: 1200px;
+   max-width: 950px;
 }
 .serviceSection .breadcrumbs ul{
     display: flex;
