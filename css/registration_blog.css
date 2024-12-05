@@ -4078,3 +4078,13 @@ table tr th, table tr td {
     display: none !important;
   }
 }
+.sliderForm .alert{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-weight: 500;
+  padding: .8rem .5rem;
+  font-size: .85rem;
+  border-radius: 4px;
+  border: none;
+}

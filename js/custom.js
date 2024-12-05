@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
     $('.scroll-to-section2').click(function() {
         var id=$(this).attr('data-id');
@@ -7,6 +8,195 @@ $(document).ready(function() {
       }, 800); // Adjust the speed (800ms in this case)
     });
   });
+  $(".errorkey").on("keyup change", (function() {
+      $(this).next("span").text('')
+  })) 
+  
+  $(document).ready(function () {
+    $('#submitgetstarted').on('click', function () {
+       
+        var formData = $('#getStartedForm').serialize();
+     
+        $(this).prop('disabled', true);
+        $(this).text('Loading...'); 
+        var thi=$(this);
+        csrftoken();
+        // AJAX request
+        $.ajax({
+            url: '/submitGetStart', // Replace with your server endpoint
+            type: 'POST',
+            data: formData,
+            dataType:'json',
+            success: function (response) {
+                
+                if (response.response==true) {
+                    $('.errorgetstarted').after('<div class="alert alert-success" role="alert">Request submitted successfully</div>');
+                    $('#getStartedForm')[0].reset(); // Reset form
+                } else {
+                    $('.errorgetstarted').after('<div class="alert alert-danger" role="alert">An error occurred. Please try again.</div>');
+                }
+                 setTimeout(function() {
+                  $('.alert').fadeOut('slow', function() {
+                      $('.alert').remove();
+                  });
+                  }, 5000);
+                 thi.prop('disabled', false);
+                 thi.text('Get Started');
+            },
+            error: function (xhr, status, error) {
+                // Handle error response
+                console.error(xhr.responseText);
+                if (xhr.responseJSON && xhr.responseJSON.errors) {
+                    // Iterate over the errors and display them
+                    $.each(xhr.responseJSON.errors, function (key, errorMessage) {
+                        if (key === 'full_name_get_start') {
+                            $('.full_name_get_start').css('border-color', 'red');
+                           // $('.name_enq_error').text('The name field is required');
+                        } else if (key === 'email_get_start') {
+                              $('.email_get_start').css('border-color', 'red');
+                            //$('.email_enq_error').text('The email field is required');
+                        } else if (key === 'mobile_get_start') {
+                              $('.mobile_get_start').css('border-color', 'red');
+                           // $('.phone_enq_error').text('The phone field is required');
+                        } else if (key === 'city_get_start') {
+                             $('.city_get_start').css('border-color', 'red');
+                           // $('.state_enq_error').text('The state field is required');
+                        }
+                    });
+                } else {
+                    // Handle general errors
+                    alert('An unexpected error occurred. Please try again.');
+                }
+                  thi.text('Get Started');    
+                  thi.prop('disabled', false);
+            }
+        });
+    });
+});
+  
+ $(document).ready(function () {
+    $('#submitCallback').on('click', function () {
+        
+        var formData = $('#callbackForm').serialize();
+        $(this).prop('disabled', true);
+        $(this).text('Loading...'); 
+        var thi=$(this);
+        csrftoken();
+        $.ajax({
+            url: '/callbackreq', // Replace with your backend URL
+            type: 'POST',
+            data: formData,
+            dataType: 'json',
+            success: function (response) {
+                if (response.response==true) {
+                    $('#responseMessage').after('<div class="alert alert-success" role="alert">Callback request submitted successfully</div>');
+                    $('#callbackForm')[0].reset(); // Reset form
+                } else {
+                    $('#responseMessage').after('<div class="alert alert-danger" role="alert">An error occurred. Please try again.</div>');
+                }
+                 setTimeout(function() {
+                  $('.alert').fadeOut('slow', function() {
+                      $('.alert').remove();
+                  });
+                  }, 5000);
+                 thi.prop('disabled', false);
+                 thi.text('Request a callback');
+            },
+            error: function (xhr, status, error) {
+               // Handle error response
+                console.error(xhr.responseText);
+                if (xhr.responseJSON && xhr.responseJSON.errors) {
+                    // Iterate over the errors and display them
+                    $.each(xhr.responseJSON.errors, function (key, errorMessage) {
+                        if (key === 'full_name') {
+                            $('.full_name').css('border-color', 'red');
+                           // $('.name_enq_error').text('The name field is required');
+                        } else if (key === 'email') {
+                              $('.email').css('border-color', 'red');
+                            //$('.email_enq_error').text('The email field is required');
+                        } else if (key === 'mobile') {
+                              $('.mobile').css('border-color', 'red');
+                           // $('.phone_enq_error').text('The phone field is required');
+                        } else if (key === 'state') {
+                             $('.state').css('border-color', 'red');
+                           // $('.state_enq_error').text('The state field is required');
+                        }
+                    });
+                } else {
+                    // Handle general errors
+                    alert('An unexpected error occurred. Please try again.');
+                }
+                  thi.text('Request a callback');    
+                  thi.prop('disabled', false);
+            }
+        });
+    });
+});
+          
+  $('body').on('click','.requestcallback',function(){
+      $(this).prop('disabled', true);
+      $(this).text('Loading...');  
+      var thi=$(this);
+       csrftoken();
+
+        $.ajax({
+            url: "/enquiryFormSubmit", // Replace with your server endpoint
+            type: "POST",
+            data: $('#enquiryForm').serialize(),
+            dataType:'json',
+            success: function (a) {
+               
+                $("#enquiryForm")[0].reset();
+                if(a.response==true){
+                
+                  $('.enquiry_error').after('<div class="alert alert-success" role="alert">'+a.success+'</div>');
+                  setTimeout(function() {
+                  $('.alert').fadeOut('slow', function() {
+                      $(this).remove();
+                  });
+                  }, 5000);
+                  thi.prop('disabled', false);
+                  
+              }else{
+                    thi.prop('disabled', false);
+                    $('.enquiry_error').after('<div class="alert alert-danger" role="alert">'+a.success+'</div>');
+                        setTimeout(function() {
+                      $('.alert').fadeOut('slow', function() {
+                          $(this).remove();
+                      });
+                  }, 5000);
+                 
+                  
+              }
+               thi.prop('disabled', false);
+               thi.text('Request a callback');    
+            },
+            error: function (xhr, status, error) {
+                // Handle error response
+                console.error(xhr.responseText);
+                if (xhr.responseJSON && xhr.responseJSON.errors) {
+                    // Iterate over the errors and display them
+                    $.each(xhr.responseJSON.errors, function (key, errorMessage) {
+                        if (key === 'full_name') {
+                            $('.name_enq_error').text('The name field is required');
+                        } else if (key === 'email') {
+                            $('.email_enq_error').text('The email field is required');
+                        } else if (key === 'mobile') {
+                            $('.phone_enq_error').text('The phone field is required');
+                        } else if (key === 'state') {
+                            $('.state_enq_error').text('The state field is required');
+                        }
+                    });
+                } else {
+                    // Handle general errors
+                    alert('An unexpected error occurred. Please try again.');
+                }
+                  thi.text('Request a callback');    
+                  thi.prop('disabled', false);
+            },
+        });
+    });
+
   
           // Compare Topic
           document.addEventListener('DOMContentLoaded', function() {
@@ -198,7 +388,130 @@ $(document).ready(function() {
                   }
               });
           });
-  
+    
+// Define global variables for data and elements
+let data = [];
+const $searchInput = $('.search-input');
+const $recommendationsContainer = $('.recommendations');
+
+// Function to fetch data and set it to the global `data` variable
+async function fetchData(value) {
+    return new Promise((resolve, reject) => {
+        csrftoken();
+
+        $.ajax({
+            type: "post",
+            url: "/searchCompany",
+            data: { value: value },
+            dataType: "json"
+        })
+        .done(function(response) {
+           
+            // Convert object values to an array
+            const responseDataArray = Object.values(response.data ?? {});
+            
+           
+            resolve(responseDataArray);  // Resolve with the array of values
+        })
+        .fail(function(jqXHR, textStatus, errorThrown) {
+            console.log("Error: " + textStatus + " " + errorThrown);
+            reject(errorThrown);  // Reject in case of an error
+        });
+    });
+}
+
+
+
+
+$('body').on('click','.recommendation',function(){
+    
+    var href=$(this).attr('href');
+    window.location.href =href;
+})
+ function filterRecommendations(keyword) {
+    $recommendationsContainer.empty(); // Clear previous recommendations
+
+    if ($.trim(keyword) === '') {
+        $recommendationsContainer.hide();
+        return;
+    }
+
+    // Filter data array by searching within the key-value pairs
+    // const filteredData = data.filter(item => {
+    //     const [cin, name] = Object.entries(item)[0];  // Extract the single key-value pair
+
+    //     // Convert `cin` to string for consistency
+    //     const cinStr = cin.toString().toLowerCase(); 
+    //     const nameStr = typeof name === 'string' ? name.toLowerCase() : '';
+    //     const keywordLower = keyword.toLowerCase();
+       
+    //     // Match `cin` if it contains the keyword as a substring or is equal (both numeric and string)
+    //     const isCinMatch = cinStr.includes(keywordLower) || cinStr === keywordLower;
+
+    //     // Match `name` if it contains the keyword
+    //     const isNameMatch = nameStr.includes(keywordLower);
+        
+        
+    //     return isCinMatch || isNameMatch;
+    // });
+
+    if (data.length > 0) {
+        $.each(data, function(_, item) {
+            console.log(item);
+            const [cin, name] = Object.entries(item)[0]; // Get the key-value pair
+            var nameString = name.replace(/\s+/g, "-");
+
+            const $recommendationItem = $(`
+                <a href="${APP_URL}/company/${nameString}/${cin}" class="recommendation">
+                    <span>${cin} - ${name} <small class="active"><div class="badges"></div> Active</small></span>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/>
+                    </svg>
+                </a>
+            `);
+
+            $recommendationItem.on('click', function(e) {
+                e.preventDefault();
+                $searchInput.val(`${cin} - ${name}`);
+                $recommendationsContainer.hide();
+            });
+
+            $recommendationsContainer.append($recommendationItem);
+        });
+        $recommendationsContainer.show();
+    } else {
+        const $noResultsItem = $('<div class="no-results">No results found</div>');
+        $recommendationsContainer.append($noResultsItem);
+        $recommendationsContainer.show();
+    }
+}
+
+// Add event listeners for both 'keyup' and 'change'
+$searchInput.on('focus', function() {
+    filterRecommendations($searchInput.val());
+});
+
+$searchInput.on('blur', function() {
+    setTimeout(function() {
+        $recommendationsContainer.hide();
+    }, 200);
+});
+
+// Use keyup and change events to trigger the filter
+$searchInput.on('keyup change', async function() {
+    const value = $(this).val();
+    if (value.length > 4) {
+        try {
+            data = await fetchData(value); // Fetch and set `data` globally
+            filterRecommendations(value);  // Now call filter function with updated data
+        } catch (error) {
+            console.log("Error fetching data:", error);
+        }
+    }
+});
+
+      
+      
   $('body').on('keyup','.frm',function(){
       if($(this).val()!==''){
           $(this).attr('style','');
@@ -593,6 +906,16 @@ $(document).ready(function() {
           $('.' + attrName + '_error').text('');
       }
   });
+  $('body').on('keypress change', '.err', function () {
+        var $this = $(this);
+        var value = $this.val();
+        
+        // Check if the input has a value
+        if (value.trim() !== '') {
+            // Remove inline styles if the field is not empty
+            $this.removeAttr('style');
+        }
+    });
   $("body").on("click", "#contact", (function() {
       $.ajaxSetup({
           headers: {
@@ -2782,8 +3105,4 @@ $(document).ready(function() {
           }
       })
   }));
-  
-  
-  
-      
   
