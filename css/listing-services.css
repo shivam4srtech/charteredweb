@@ -1,6 +1,9 @@
 .serviceSection{
     padding: 6rem 0 3rem 0;
 }
+body{
+    background-color: #f1f1f3;
+}
 .serviceSection .container{
    max-width: 1200px;
 }
@@ -22,7 +25,7 @@
     margin-right: 0;
 }
 .serviceSection h2{
-    margin-bottom: 1rem;
+    margin-bottom: 1.6rem;
     font-weight: 600;
     font-size: 1.4rem;
     color: #2e2e2e;
@@ -30,55 +33,45 @@
 }
 .serviceSection .serviceBox{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border: 1px solid #e2e2e2;
-    padding: .8rem .5rem;
-    border-radius: 5px;
+    flex-direction: column;
+    background-color: #fff;
     min-height: 100%;
+    align-items: center;
+    border-radius: .75rem;
+    border: 1px solid #F1F1F4;
+    box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.03);
 }
 
-.serviceSection .serviceBox .serviceName{
-    display: flex;
-    align-items: center;
+.serviceSection .serviceBox .serviceDesc {
+    min-height: 7rem;
 }
-.serviceSection .serviceBox .serviceName p{
+.serviceSection .serviceBox .serviceDesc p{
     font-weight: 600;
-    text-transform: capitalize;
     color: #000;
     font-size: .9rem;
     line-height: 1.5;
+    margin-bottom: .5rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
-.serviceSection .serviceBox .serviceName .imgBox{
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f7f8fa;
-    margin-right: .5rem;
+.serviceSection .serviceBox .serviceDesc span{
+   color: #252F4A;
+   line-height: 1.25rem;
+   font-size: .8125rem;
+   display: -webkit-box;
+   -webkit-line-clamp: 2;
+   line-clamp: 2;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
 }
-.serviceSection .serviceBox .serviceName .imgBox img{
-    max-width: 100%;
-    object-fit: contain;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
+.serviceSection .serviceBox .serviceImage img{
+   max-width: 100%;
+   object-fit: contain;
+   border-radius: .75rem .75rem 0 0;
 }
-.serviceSection .serviceBox .arrow{
-   width: 2rem;
-   text-align: right;
-   height: 1.5rem;
-}
-.serviceSection .arrow svg{
-   display: none;
-}
-.serviceSection .serviceBox:hover{
-   border: 1px solid #f5b402;
-   background-color: #f5b4020a;
+.serviceSection .serviceBox .serviceDesc{
+    padding: 1.25rem;
  }
-.serviceSection .serviceBox:hover svg {
-   display: inline;
-   fill: #f5b402;
-}
