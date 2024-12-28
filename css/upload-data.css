@@ -1,0 +1,68 @@
+.uploadSection{
+    padding-top: 6rem;
+}
+.uploadSection .container{
+    max-width: 1200px;
+}
+
+.uploadSection .uploadBox .col-md-4{
+   border-right: 1px solid #e2e2e2;
+   border-bottom: 1px solid #e2e2e2;
+   padding: .8rem .5rem;
+}
+ .uploadBox .col-md-4:nth-of-type(3){
+   border-right: none;
+ }
+.uploadSection .uploadBox .action{
+    display: flex;
+    justify-content: right;
+ }
+ .uploadSection .uploadBox .action button{
+   padding: .5rem;
+   border-radius: 4px;
+   outline: none;
+   border: none;
+   background-color: #b71d1d;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   height: 40px;
+   width: 40px;
+  }
+ .uploadSection .uploadBox .action svg{
+   width: 16px;
+   fill: #fff;
+ }
+ .uploadSection .docname{
+   font-weight: 500;
+   font-size: 1rem;
+   color: #000;
+}
+.uploadSection .uploadBox .form-control{
+   box-shadow: none;
+  }
+  .uploadSection .cname{
+    margin-bottom: 1rem;
+  }
+  .uploadSection .cname .form-control{
+   box-shadow: none;
+   border-radius: 4px;
+  }
+  .uploadSection .cname .form-label{
+    font-weight: 500;
+   }
+   .submitData{
+   text-align: center;
+   margin-top: 2rem;
+
+   }
+   .submitData button{
+    padding: .5rem .8rem;
+    background-color: #f5b402;
+    color: #000;
+    font-weight: 500;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+   }

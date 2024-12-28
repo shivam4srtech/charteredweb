@@ -1,0 +1,559 @@
+.banner{
+    background: url(https://tax2win.in/assets-new/img/ca-assisted/banner-element.png) left top no-repeat #fafbfd;
+    background-size: contain;
+    height: 110vh;
+    width: 100%;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: center;
+    align-items: center;
+}
+#banner{
+    height: 78vh;
+}
+.bookingBox{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 4rem;
+    width: 100%;
+    margin: auto;
+}
+ .banner .txt h1 {
+    font-weight: 700;
+    font-size: 40px;
+    padding: 20px 0 0 0;
+    line-height: 45px;
+    letter-spacing: .5px;
+    margin-bottom: 1rem;
+}   
+ .banner .txt h1 strong {
+    font-weight: 800;
+    color: #f5b402;
+    display: inline-block;
+} 
+.banner .txt p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 1.2rem 0;
+} 
+ 
+ .banner .register-form {
+    width: 420px;
+    margin: 3rem 0;
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: 0 0 30px rgba(121,121,121,.1);
+    background-color: rgb(255, 255, 255, .94);
+    display: flex;
+    justify-content: space-between;
+}
+.banner .register-form form {
+    display: flex;
+    flex-direction: column;
+}
+.banner .register-form h3 {
+    font-size: 1.4rem;
+    padding: 0;
+    font-weight: 500 ;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.banner .register-form form .form-control {
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    box-shadow: none;
+    padding: 10px 15px;
+    height: auto;
+    display: block;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+}
+.banner .register-form form .form-control:focus{
+   border: 1px solid #f5b402;
+}
+.banner .register-form form .form-control::placeholder {
+    color: #555;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.banner .register-form form .loginBtn {
+    background-color: #f5b402;
+    color: #fff;
+    letter-spacing: .5px;
+    font-weight: 500;
+    border-radius: 4px;
+
+}
+.banner .register-form form .terms-n-condition {
+    font-size: 13px;
+    display: block;
+    line-height: 20px;
+    font-weight: 500;
+}
+.banner .register-form form .terms-n-condition a {
+    color: #337ab7;
+    text-decoration: none;
+}
+.banner .register-form form .bookingBtn {
+    background: #f5b402;
+    color: #fff;
+    border-radius: 3px;
+    background-clip: padding-box;
+    padding: 12px 30px;
+    border: none;
+    display: block;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    margin: 10px 0 0 0;
+    box-shadow: none;
+    padding: 10px 15px;
+    height: auto;
+    width: 100%;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.banner .register-form form .bookingBtn:hover {
+    background-color: #f5b402e0;
+    box-shadow: 2px 2px 20px #2323231e;
+}
+@media(max-width: 991px) and (min-width: 768px){
+    .banner{
+        height: 50rem;
+    }
+}
+@media(max-width: 991px){
+    .bookingBox{
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin-top: 0;
+    }
+    .bookingBox .form-warp{
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+    .banner .register-form {
+        
+        margin-top: 0;
+    }
+    
+}
+@media(max-width: 768px){
+    .banner{
+        height: 50rem;
+    }
+    .bookingBox{
+        padding: 0 1rem;
+        width: 100%;
+    }
+}
+@media(max-width: 600px){
+    .banner{
+        height: 60rem;
+    }
+    .banner .txt h1 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .banner .register-form{
+        padding: 2rem 1rem;
+    }
+    .banner .txt .bestpointer li {
+        font-size: 14px;
+    }
+    .banner .txt .usps li span {
+        font-size: .9rem;
+    }
+    
+}
+
+/* Advice */
+ .advices {
+    padding: 4rem 0;
+    position: relative;
+    background: #f5b402;
+}
+ .advices h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: .5rem;
+    line-height: 1.4;
+
+}
+ .advices ul {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ .advices ul li {
+    width: 25%;
+    font-size: 16px;
+    margin-top: 3rem;
+    font-weight: 500;
+    color: #efefef;
+    list-style-type: none;
+    text-align: center;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ .advices ul li img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+    vertical-align: middle;
+}
+@media(max-width: 768px){
+    .advices ul {
+        width: 95%;
+    }
+    .advices ul li {
+        width: 50%;
+        font-size: 14px;
+    }
+    .advices h2 {
+        font-weight: 600;
+        font-size: 25px;
+    }
+}
+/* why choose us */
+ .why_us {
+    padding: 4rem 8rem;
+    background: #fff;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(240, 245, 253, 1) 100%);
+}
+ .why_us h2 {
+    margin: 0 0 3rem;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    letter-spacing: .5px;
+}
+.why_us h2 span {
+   color: #f5b402;
+}
+ .why_us .no,  .why_us .yes {
+    color: #fff;
+    border-radius: 20px;
+    padding: 3rem;
+    min-height: 31rem;
+}
+ .why_us .no {
+    background: #222;
+}
+.why_us .yes {
+    background: #f5b402;
+}
+ .why_us .no h3,  .why_us .yes h3 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+ .why_us .no ul,  .why_us .yes ul {
+    padding: 0;
+}
+.why_us .no ul li,  .why_us .yes ul li {
+    background: url(https://tax2win.in/assets-new/img/tax-advisory/list_point.svg) left 8px no-repeat;
+    font-size: 23px;
+    padding: .4rem 0 .4rem 2.5rem;
+    list-style-type: none;
+}
+@media(max-width: 768px){
+    .why_us {
+        padding: 4rem 2rem;
+    }
+}
+@media(max-width: 600px){
+    .why_us .no ul li,  .why_us .yes ul li {
+        background: url(https://tax2win.in/assets-new/img/tax-advisory/list_point.svg) left 6px no-repeat;
+        font-size: 18px;
+        padding: .4rem 0 .4rem 2.5rem;
+    }
+    .why_us .no,  .why_us .yes {
+        padding: 1rem;
+        min-height: fit-content;
+    }
+    .why_us .no h3, .why_us .yes h3 {
+        font-weight: 600;
+        font-size: 25px;
+        margin-bottom: .5rem;
+    }
+    .why_us h2 {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    .why_us {
+        padding: 4rem 1rem;
+    }
+}
+/* testimonials */ 
+.testimonial{
+    background-color: #f1f5f8;
+    padding: 2rem 0 .5rem 0;
+}
+.testimonial article {
+    background: #fff;
+    width: auto;
+    min-height: 280px;
+    margin: 2rem 1rem;
+    text-align: left;
+    border-radius: 20px;
+    box-shadow: none;
+    padding: 60px;
+}
+.testimonial article p {
+    color: #253243;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 24px;
+}
+.testimonial article .bottom {
+    display: flex;
+    align-items: center;
+    margin-right: 2.5rem;
+    text-align: left;
+}
+.testimonial article .bottom .c_detail {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0;
+    bottom: 0;
+    margin-left: 2rem;
+}
+.testimonial article .bottom .c_detail span {
+    color: #222;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 9px;
+    display: block;
+    text-transform: uppercase;
+}
+.testimonial article .bottom .c_detail img {
+    padding: 0.2rem 1rem;
+    background: #fff;
+    width: 100px;
+    height: auto;
+    box-shadow: 0 0 15px rgba(0,0,0,.08);
+    border-radius: 50px;
+}
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    position: static;
+}
+.slick-dots li {
+    list-style-type: none;
+    font-family: "Californian FB", serif;
+}
+.slick-dots li button {
+    background: #f5b40233;
+    width: 12px;
+    height: 12px;
+    border-radius: 26px;
+    margin: 0 5px;
+    transition: .3s;
+    font-family: "Californian FB", serif;
+}
+.slick-dots .slick-active button {
+    background: #f5b402;
+   
+}
+.slick-dots li button:before{
+    font-family: "Californian FB", serif;
+}
+.slick-dots li{
+    position: static !important;
+}
+.slick-dots li button:before {
+    display: none;
+}
+
+.testimonial h2{
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    color: #000;
+    margin: 0;
+}
+.testimonial h4{
+    line-height: 27px;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+@media(max-width: 600px){
+    .testimonial h2{
+        font-weight: 600;
+        font-size: 28px;
+    }
+    .testimonial h4{
+        font-size: 15px;
+    }
+    .testimonial article {
+        padding: 30px 15px;
+    }
+    .testimonial article p{
+        font-size: 15px;
+    }
+    .testimonial article .bottom .c_detail span{
+        font-size: 13px;
+    }
+}
+/* FAQs section */
+.faqSection{
+    background: #fff;
+    padding: 4rem 0;
+}
+.faqSection h2{
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+ .faqSection .accordion {
+    margin: 4rem auto 0;
+}
+ .faqSection .accordion .accordion-item {
+    border: none;
+    border-bottom: solid 1px #dde2e8;
+}
+.faqSection .accordion .accordion-button {
+    text-align: left;
+    border: 0;
+    background: #fff;
+    padding: 1rem 0;
+    box-shadow: none;
+    font-weight: 500;
+    color: #2e3846;
+    font-size: 1.2rem;
+    letter-spacing: .2px;
+    align-items: flex-start;
+}
+ .faqSection .accordion .accordion-body p {
+    color: #323f50;
+    font-size: 18px;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+    margin-bottom: .5rem;
+}
+.faqSection .accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+}    
+.faqSection .accordion .accordion-body p strong {
+    font-weight: 700;
+}
+ .faqSection .accordion .accordion-body p a {
+    color: #f5b402;
+}
+.faqSection .accordion .accordion-button strong {
+    font-weight: 700;
+    margin-right: .5rem;
+}
+ .faqSection .accordion-header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2e3846;
+}
+ .faqSection .accordion .accordion-body ul {
+    padding-left: 20px;
+    margin-top: 0;
+    margin-bottom: 10px 
+}
+ .faqSection .accordion .accordion-body ul li {
+    color: #323f50;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0.5rem 0;
+    font-weight: 500;
+    list-style: disc;
+ }
+ .faqSection .accordion .accordion-body ul li b{
+    font-weight: 700;
+    margin-right: .5rem;
+ }
+ @media(max-width: 600px){
+    .faqSection h2 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 1.4;
+    }
+ }
+ /* thank you */
+ .thank-you-msg {
+    text-align: center;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.thank-you-msg h2 {
+    margin: 1.5rem 0;
+    line-height: 32px;
+    font-size: 38px;
+    font-weight: 700;
+}
+.thank-you-msg p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    line-height: 1.4;
+}
+.thank-you-msg b{
+    font-weight: 700;
+}
+.thank-you-msg a{
+    color: #f5b402;
+}
+
+
+.tableContainer{
+    border: 2px solid red
+}
+.tableContainer tbody td, .tableContainer tbody td{
+    padding: .6rem .5rem;
+}
+.tableContainer tbody th{
+    font-weight: 600;
+}
