@@ -8,24 +8,29 @@
     overflow: hidden;
     margin-top: 6rem;
 }
-.incomeNotice:before {
+.incomeNotice .container{
+    max-width: 1250px;
+}
+.container{
+    max-width: 1100px;
+}
+/* .incomeNotice:before {
     content: "";
     position: absolute;
     left: 0;
     top: 30%;
-    background: url(https://tax2win.in/assets-new/img/it-notices/svgviewer-output.svg);
+    background: url(../images/it-notice.png);
     width: 100px;
     height: 145px;
     background-repeat: no-repeat;
-}
-.incomeNotice .container:before{
+} */
+/* .incomeNotice .container:before{
     display: table;
     content:    " ";
-}
+} */
 .it-notice-banner {
     position: relative;
     z-index: 1;
-    margin-left: 5rem;
 }
 .it-notice-banner .it-notice-content {
     display: flex;
@@ -34,7 +39,6 @@
     padding-right: 25px;
 }
 .it-notice-banner .it-notice-content .it-notice-detail h1 {
-    font-family: Inter;
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
@@ -43,7 +47,6 @@
     margin-bottom: 10px;
 }
 .it-notice-banner .it-notice-content .it-notice-detail p {
-    font-family: Inter;
     font-weight: 500;
     font-size: 16px;
     line-height: 25px;
@@ -62,7 +65,6 @@
 }
 .it-notice-banner .trusted-points ul li {
     padding-right: 25px;
-    font-family: Inter;
     font-weight: 500;
     font-size: 16px;
     text-align: left;
@@ -78,7 +80,14 @@
 }
 .service_inuiryform {
     width: 380px;
-    max-width: 100%
+    max-width: 100%;
+    position: relative;
+}
+.noticeIcon{
+    position: absolute;
+    z-index: 99;
+    top: 60px;
+    right: 390px;
 }
 .service_inuiryform .query_form {
     background: #fff;
@@ -86,6 +95,7 @@
     border-radius: 15px;
     margin-bottom: 1rem;
     position: relative;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .service_inuiryform .query_form h3 {
@@ -193,7 +203,6 @@
     padding: 25px 0;
 }
 .noticeType .it-notice-type-title h2 {
-    font-family: Inter;
     font-weight: 800;
     font-size: 30px;
     text-align: center;
@@ -201,7 +210,6 @@
     margin-bottom: 1.2rem;
 }
 .noticeType .it-notice-type-title p {
-    font-family: Inter;
     font-weight: 400;
     font-size: 16px;
     text-align: center;
@@ -227,12 +235,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .noticeType .it-notice-type-box .it-type-img img {
     position: absolute;
     display: inline-block;
-    bottom: -15px;
-    /* transition: all .3s ease-out; */
+    overflow: hidden;
 }
 .noticeType .it-notice-type-box .it-type-detail {
     background: #fff;
@@ -249,7 +257,6 @@
     position: relative;
 }
 .noticeType .it-notice-type-box .it-type-detail h3 {
-    font-family: Inter;
     font-weight: 600;
     font-size: 16px;
     text-align: center;
@@ -258,18 +265,21 @@
     margin-bottom: 8px;
 }
 .noticeType .it-notice-type-box .it-type-detail p {
-    font-family: Inter;
     font-weight: 500;
     font-size: 12px;
     line-height: 19px;
     text-align: center;
     color: #5c6877;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
 .noticeType .it-notice-type-box .it-type-detail .get-expert{
     background: #fff;
     border: 1px solid rgba(25, 48, 61, .4);
     border-radius: 6px;
-    font-family: Inter;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
@@ -280,16 +290,16 @@
     display: inline-block;
     text-decoration: none;
 }
-.noticeType .it-notice-type-box:hover .it-type-img{
-    transform: translateY(-20px);
-    transition: transform .5s ease-out;
+.noticeType .it-notice-type-box .it-type-img img{
+    transition: transform .5s ease-in-out;
+    overflow: hidden;
 }
-.noticeType .it-notice-type-box:hover{
-    background-color: #f1f2f5;
+.noticeType .it-notice-type-box:hover .it-type-img img{
+    transform: scale(1.15);
+    transition: transform .5s ease-in-out;
+    overflow: hidden;
 }
-.noticeType .it-notice-type-box:hover .it-type-detail{
-    background-color: #f1f2f5;
-}
+
 .noticeType .it-notice-type-box:hover .get-expert{
     background-color: #f5b402;
     color: #fff;
@@ -307,7 +317,6 @@
 }  
   /* Notice Content */
   .noticeContent h2{
-    font-family: Inter;
     font-weight: 600;
     font-size: 22px;
     line-height: 30px;
@@ -316,7 +325,6 @@
     margin-bottom: 10px;
   }
   .noticeContent p{
-    font-family: Inter;
     font-weight: 400;
     font-size: 16px;
     line-height: 25px;
@@ -330,7 +338,6 @@
     margin-bottom: 30px;
   }
   .noticeContent ul li{
-    font-family: Inter;
     font-weight: 400;
     font-size: 16px;
     line-height: 35px;
@@ -370,13 +377,13 @@
     padding: 0rem 0 1rem 0;
 }
 .noticeFormat h2{
-    font-family: Inter;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 30px;
     line-height: 1.4;
     color: #19303d;
     margin-top: 20px;
+    margin-bottom: 2rem;
 }
 @media(max-width:991px){
     .noticeFormat h2{
@@ -393,24 +400,25 @@
     display: flex;
     flex-direction: row;
     background-color: #fff;
+    flex-direction: column;
 }
 .noticeFormat .formatBtn .nav button{
     background: #fff;
-    border: .765513px dashed #000;
-    border-radius: 10px;
-    width: 70px;
-    height: 70px;
+    border-radius: 4px;
     text-align: center;
-    line-height: 76px;
-    padding: 0;
+    padding: .5rem 1rem;
+    width: 200px;
     margin-right: 12px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    color: #000;
+    background-color: #f4f7f9;
+    border: 1px solid #DEE6ED;
+    margin-bottom: 1rem;
 }
 .noticeFormat .formatBtn .nav button.active{
-    background: #f5b4023f;
-    border: .765513px dashed #000;
+    background: #f5b402;
     box-shadow: 0 1.53103px 3.82756px rgba(0,0,0,.4);
     border-radius: 10px;
 }
@@ -428,28 +436,26 @@
     border-radius: 10px;
     position: absolute;
     left: 0;
-    top: 50px;
+    top: 10px;
     z-index: -1;
 }
 .noticeFormat .tax-reasons img {
-    margin-top: 75px;
+    margin-top: 0;
     transition: transform .25s ease;
     vertical-align: middle;
+    object-fit: contain;
+    max-height: 400px;
 }
- .noticeFormat .tax-reasons-detail {
-   margin-top: 1rem;
-}
+
 .noticeFormat .tax-reasons-detail h3 {
-    font-family: Inter;
     font-weight: 600;
     font-size: 25px;
     line-height: 26px;
     color: #19303d;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 1rem;
 }
 .noticeFormat .tax-reasons-detail p {
-    font-family: Inter;
     font-weight: 400;
     font-size: 18px;
     line-height: 26px;

@@ -1,3 +1,6 @@
+.container{
+    max-width: 1200px;
+}
 .banner{
     background: url(https://tax2win.in/assets-new/img/ca-assisted/banner-element.png) left top no-repeat #fafbfd;
     background-size: contain;
@@ -17,8 +20,8 @@
 .bookingBox{
     display: flex;
     align-items: center;
-    justify-content: left;
-    padding: 0 4rem;
+    justify-content: space-between;
+    max-width: 1200px;
     width: 100%;
     margin: auto;
 }
@@ -217,7 +220,7 @@
     box-shadow: 0 4px 20px rgba(0,0,0,.05);
     border-radius: 20px;
     padding: 30px;
-    min-height: 16rem;
+    min-height: 100%;
 }
 .whyHire .hire-wrapper .hireitem img{
     float: left;
@@ -259,8 +262,8 @@
     background: #f2fff7;
 }
 .howItWorks  .small_txt {
-    background: #e7fae4;
-    color: #197e37;
+    background: #f5b40225;
+    color: #f5b402;
     font-weight: 500;
     font-size: 14px;
     display: inline-flex;
@@ -280,7 +283,8 @@
     border-radius: 20px;
     padding: 40px;
     margin-bottom: 25px;
-    min-height: 15rem;
+    min-height: 100%;
+
 }
 .howItWorks .workWrapper  .workBox img {
     float: left;
@@ -331,6 +335,10 @@
     color: #fff;
     font-weight: 700;
     margin: 0;
+    text-align: center;
+}
+.docRequired .doc_img{
+    display: flex;
 }
 .docRequired .docWrapper .doc_list{
     padding-bottom: 5rem;
@@ -341,7 +349,7 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
+    justify-content: center;
 }
 .docRequired .docWrapper .doc_list ul li{
     width: 45%;
@@ -366,6 +374,7 @@
     max-width: 100%;
     object-fit: contain;
     margin: auto;
+    width: 300px;
 }
 @media(max-width: 991px){
     .docRequired .docWrapper .doc_list ul{
@@ -456,7 +465,29 @@
         padding: 20px;
     }
 }
-
+.benitfitWrapper .fileNow a {
+    display: inline-flex
+;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    border: none;
+    box-shadow: none;
+    text-decoration: none;
+    padding: .8rem 2.5rem;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 3rem;
+    background-color: #f5b402;
+}
+.benitfitWrapper .fileNow a img{
+    margin-left: .5rem;
+    transform: rotate(-45deg);
+    transition: .3s ease;
+ }
+ .benitfitWrapper .fileNow a:hover img{
+     transform: rotate(0deg);
+  }
 /* testimonials */
 .testimonial{
     background-color: #f1f5f8;

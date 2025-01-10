@@ -38,16 +38,15 @@ body{
     padding-right: 25px;
 }
 .it-notice-banner .it-notice-content .it-notice-detail h1 {
-    font-family: Inter;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.4;
     color: #092e51;
     margin-top: 0;
     margin-bottom: 10px;
 }
 .it-notice-banner .it-notice-content .it-notice-detail p {
-    font-family: Inter;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 25px;
@@ -66,7 +65,6 @@ body{
 }
 .it-notice-banner .trusted-points ul li {
     padding-right: 25px;
-    font-family: Inter;
     font-weight: 500;
     font-size: 16px;
     text-align: left;
