@@ -1181,3 +1181,81 @@
         margin: 1rem auto;
     }
 }
+
+
+.bookingBox h1{
+    font-weight: 600;
+    font-size: 2rem;
+    text-align:  center;
+    margin-bottom: 1.6rem;
+}
+.bookingBox .dropdownBoxes{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+.bookingBox .dropdownBoxes .form-select{
+   width: 500px;
+   max-width: 100%;
+   box-shadow: none;
+   border-radius: 4px;
+   font-weight: 500;
+}
+.bookingBox{
+    padding-top: 7rem;
+    min-height: fit-content;
+}
+.bookingBox img{
+    max-width: 100%;
+    object-fit: contain;
+}
+.banner{
+    min-height: fit-content;
+}
+.bookingBox .dropdownBoxes .dropdownItems h3{
+   font-weight: 600;
+   margin-bottom: .5rem;
+   font-size: 1rem;
+ }
+ .dropdownItems .popoverbtn{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 0;
+    border-radius: 50%;
+ }
+ .dropdownItems .popoverbtn img{
+   object-fit: contain;
+   border-radius: 50%;
+ }
+ .bookingBox .getcv{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    background-color: #f5b402;
+    padding: .5rem 1rem;
+    color: #000;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-transform: uppercase;
+ }
+ @media(max-width:600px){
+    .bookingBox .dropdownBoxes .form-select{
+       width: 340px;
+       max-width: 100%;
+
+     }
+     .dropdownBoxes{
+        border: 1px solid red;
+     }
+     .bookingBox h1{
+       font-size: 1.4rem;
+    }
+ }

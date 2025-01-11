@@ -843,103 +843,118 @@
         </div>
     </nav>
     <!-- ============Book CA=========== -->
-    <section class="banner" id="banner">
+    <section class="banner">
+       <div class="container">
         <div class="row bookingBox">
-            <div id="plan" class="readyto_file" data-wizard-header="hide">
-                <div class="row">
-                    <div class="col-md-12 col-xs-12 text-center">
-                        <h2> Ready to Hire!</h2>
-                        <p>According to us, the <strong> <span id="plan_name" class="plan_name">Capital Gain</span> Plan</strong> is best suited for your ITR needs.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-7 col-12 planBox">
-                        <div class="best-plan">
-                            <div class="top_panel">
-                            <img data-cfsrc="assets-new/img/price/deluxe.png" alt="" class="plan_img" id="plan_icon" src="https://tax2win.in/assets-new/img/price/premium.png">
-                            <div>
-                            <span id="plan_name" class="plan_name">Capital Gain</span>
-                            <p>Prepared &amp; Filed by your CA</p>
-                            
-                            <strong class="cut-price"> Price:</strong>&nbsp; <strong class="final-price" id="left_panel_price_after_discount"><i class="fa fa-inr" aria-hidden="true"></i> 3999.00</strong><strong class="final-price"> + Taxes <span>(FY 2023-24)</span></strong>
-                            <div class="clearfix"></div>
-                            </div>
-                            </div>
-                            <div id="pricing_plans" class="hidden">
-                            {"basic":{"plan_name":"Standard","plan_desc":"Includes salary income from one employer, single house property income &amp; income from other sources.","price":1199,"discount_amount":240,"discount_coupon":"WELCOME_OFFER","price_after_discount":959,"plan_icon":"https:\/\/tax2win.in\/assets-new\/img\/price\/basic.png"},"form16":{"plan_name":"Multiple Form 16","plan_desc":"Everything in Standard plus salary income from multiple employers.","price":1599,"discount_amount":320,"discount_coupon":"WELCOME_OFFER","price_after_discount":1279,"plan_icon":"https:\/\/tax2win.in\/assets-new\/img\/price\/form16.png"},"delux":{"plan_name":"Business Income","plan_desc":"Everything in Multiple Form 16 plus income from multiple house property and income u\/s 44AD &amp; 44ADA.","price":2499,"discount_amount":500,"discount_coupon":"WELCOME_OFFER","price_after_discount":1999,"plan_icon":"https:\/\/tax2win.in\/assets-new\/img\/price\/deluxe.png"},"premium":{"plan_name":"Capital Gain","plan_desc":"Everything in Business Income plus capital gain income and relief u\/s 89.","price":3999,"discount_amount":800,"discount_coupon":"WELCOME_OFFER","price_after_discount":3199,"plan_icon":"https:\/\/tax2win.in\/assets-new\/img\/price\/premium.png"},"foreign":{"plan_name":"Foreign","plan_desc":"Covers all your foreign income and provides the maximum benefit under DTAA.","price":9999,"discount_amount":2000,"discount_coupon":"WELCOME_OFFER","price_after_discount":7999,"plan_icon":"https:\/\/tax2win.in\/assets-new\/img\/price\/foreign.png"},"nri":{"plan_name":"NRI","plan_desc":"Provides maximum tax benefit on your Indian income.","price":7499,"discount_amount":1500,"discount_coupon":"WELCOME_OFFER","price_after_discount":5999,"plan_icon":"https:\/\/tax2win.in\/assets-new\/img\/price\/nri.png"}}
-                            <input type="hidden" name="payment_trigger" value="done" class="">
-                            <input type="hidden" name="plan" value="" class="">
-                            </div>
-                            <div class="col-md-12 col-xs-12 coupon-code">
-                            <div class="row">
-                            <div class="col-md-12 col-xs-12">
-                            <div class="enter-code" id="discount_coupon_div">
-                            <input type="text" value="" placeholder="Enter Coupon Code" id="discount_coupon" class="text-uppercase" name="discount_coupon" autocomplete="off">
-                            <button type="button" id="get_caassited_discount_coupon" class="apply_discount_coupon" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i>" style="display: none;">Apply</button>
-                            <button type="button" id="get_caassited_discount_coupon_delete" class="remove" style=""><img src="https://tax2win.in/assets-new/img/ca-assisted/remove.svg" alt=""></button>
-                            </div>
-                            <label class="c_success" id="coupon_message" style="display:none;"></label>
-                            </div>
-                            </div>
-                            </div>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            <div class="col-md-12 col-xs-12">
-                            <h3>Bill Details</h3>
-                            <table>
-                            <tbody><tr>
-                            <td>Plan Price</td>
-                            <th class="text-right" id="table_price"><i class="fa fa-inr" aria-hidden="true"></i> 3999.00</th>
-                            </tr>
-                            <tr>
-                            <td>Discount</td>
-                            <th class="text-right dicount" id="discount_amount"><i class="fa fa-inr" aria-hidden="true"></i> 800.00</th>
-                            </tr>
-                            <tr>
-                            <td>Total</td>
-                            <th class="text-right" id="table_price_after_discount"><i class="fa fa-inr" aria-hidden="true"></i> 3199.00</th>
-                            </tr>
-                            <tr>
-                            <td>GST</td>
-                            <th class="text-right" id="tax"><i class="fa fa-inr" aria-hidden="true"></i> 576.00</th>
-                            </tr>
-                            <tr class="gt">
-                            <th class="text-left" style="text-align: left;">Grand Total</th>
-                            <th class="text-right" id="amount_payable"><i class="fa fa-inr" aria-hidden="true"></i> 3775.00</th>
-                            </tr>
-                            </tbody></table>
-                            <button type="button" class="btn green-btn wizard-finish" id="amount_payable_1" data-is_logged_in="true" data-ctid="screen-name-ready-to-file-hire-now-f620170099">PAY <i class="fa fa-inr" aria-hidden="true"></i> 3775.00</button> 
-                            </div>
+            <h1>Answer few questions to hire CA which is best suited  your business</h1>
+            <div class="row p-0">
+                <div class="col-lg-6 p-0 mb-3">
+                    <div class="dropdownBoxes">
+                        <div class="dropdownItems">
+                            <h3>Did you earn income in India or outside? 
+                                <button type="button" class="btn popoverbtn"
+                                    data-bs-toggle="popover" data-bs-placement="right"
+                                    data-bs-custom-class="custom-popover"
+                                    data-bs-content="Select India if you have earned income from India only. If you have received any income from a foreign country, select Both or select NRI if you have non-resident Indian status."
+                                    data-bs-trigger="hover">
+                                    
+                                    <img src="./images/question.svg" alt="question" width="25" height="25">
+                                </button>
+                            </h3>
+                            <select class="form-select">
+                                <option selected>India</option>
+                                <option value="1">Both - India & Outside India</option>
+                                <option value="2">NRI - Non-Resident of India</option>
+                            </select>
+                        </div>
+                        <div class="dropdownItems">
+                            <h3>Do you have a Salary Income?
+                                <button type="button" class="btn popoverbtn"
+                                    data-bs-toggle="popover" data-bs-placement="right"
+                                    data-bs-custom-class="custom-popover"
+                                    data-bs-content="Did you stick to one employer or switched your jobs during the Financial Year, help us guide you in the best way to get your taxes done right."
+                                    data-bs-trigger="hover">
+                                    
+                                    <img src="./images/question.svg" alt="question" width="25" height="25">
+                                </button>
+                            </h3>
+                            <select class="form-select">
+                                <option selected>Select</option>
+                                <option value="1">From one employer</option>
+                                <option value="2">From multiple employers</option>
+                                <option value="3">Not Applicable</option>
+                            </select>
+                        </div>
+                        <div class="dropdownItems">
+                            <h3>Do you have a Business/Professional Income?
+                                <button type="button" class="btn popoverbtn"
+                                    data-bs-toggle="popover" data-bs-placement="right"
+                                    data-bs-custom-class="custom-popover"
+                                    data-bs-content="Are you a small business owner / freelancer / professional? The government gives you a choice to file your taxes without the hassle of maintaining any books of accounts."
+                                    data-bs-trigger="hover">
+                                    
+                                    <img src="./images/question.svg" alt="question" width="25" height="25">
+                                </button>
+                            </h3>
+                            <select class="form-select">
+                                <option selected>Select</option>
+                                <option value="1">Small Business with a turnover
+                                    up to  ₹ 3 crore* </option>
+                                <option value="2">Freelancer/Professional with a
+                                    turnover up to  ₹ 75 lakhs*</option>
+                                <option value="3">Above Both</option>    
+                                <option value="4">Not Applicable</option>
+                            </select>
+                        </div>
+                        <div class="dropdownItems">
+                            <h3>Do you own a house?
+                                <button type="button" class="btn popoverbtn"
+                                    data-bs-toggle="popover" data-bs-placement="right"
+                                    data-bs-custom-class="custom-popover"
+                                    data-bs-content="Owning a house is a matter of Pride! That’s why the government also encourages you by giving deductions under various sections, whether you own or co-own a house. Let us help you get the maximum benefit by claiming maximum deductions."
+                                    data-bs-trigger="hover">
+                                    
+                                    <img src="./images/question.svg" alt="question" width="25" height="25">
+                                </button>
+                            </h3>
+                            <select class="form-select">
+                                <option selected>Select</option>
+                                <option value="1">Own One House</option>
+                                <option value="2">Own Multiple Houses</option>
+                                <option value="3">No, I don't own a house</option>    
+                            </select>
+                        </div>
+                        <div class="dropdownItems">
+                            <h3>Do you have any Income from Capital Gain?
+                                <button type="button" class="btn popoverbtn"
+                                    data-bs-toggle="popover" data-bs-placement="right"
+                                    data-bs-custom-class="custom-popover"
+                                    data-bs-content="Did you sold house, land or shares & mutual fund units during the Financial Year? Did you know some of these are not taxable. Declaring them could help you get the maximum tax benefit."
+                                    data-bs-trigger="hover">
+                                    
+                                    <img src="./images/question.svg" alt="question" width="25" height="25">
+                                </button>
+                            </h3>
+                            <select class="form-select">
+                                <option selected>Select</option>
+                                <option value="1">Sold House, Property, Land, etc</option>
+                                <option value="2">Sold Shares, Mutual Funds, F&O etc.</option>
+                                <option value="3">Others, not specified here</option>
+                                <option value="4">All above 3</option>
+                                <option value="3">Not Applicable</option>    
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <a href="./hire-pricing.html" class="getcv">Get CA</a>
                         </div>
                     </div>
-                    <div class="col-md-5 col-12">
-                        <div class="rightpoint">
-                            <div class="support_bx">
-                            <figure><img src="https://tax2win.in/assets-new/img/ca-assisted/support.svg" alt=""></figure>
-                            <span><small>&nbsp;Get in touch:</small> <strong>
-                            +91 91166 84439</strong></span>
-                            </div>
-                            <div class="afterPayment desktop_view">
-                            <h3>What happens<br>
-                            after payment?</h3>
-                            <i class="note"><strong> Please Note:</strong> A CA dashboard will display in front of you</i>
-                            <ul>
-                            <li>1. Upload the necessary documents and an eCA will reach out to you either through the chat box or a call.</li>
-                            <li>2. eCA verifies your documents.</li>
-                            <li>3. Final computation of income is done and provided to you via the dashboard.</li>
-                            <li>4. After the approval from your end on the computation, the ITR is filed.</li>
-                            </ul>
-                            </div>
-                            </div>
-                    </div>
                 </div>
-            </div> 
+                <div class="col-lg-6 p-0 mb-3">
+                    <img src="./images/hire-ca.svg" alt="hire-ca">
+                </div>
+            </div>
         </div>
+       </div>
     </section>
     <!-- Why Hire -->
     <section class="whyHire">
@@ -1083,7 +1098,7 @@
                 </div>
             </div>
         </div>
-    </section>
+       </section>
     <!-- TESTIMONIALS -->
     <section>
           <div class="testimonial">
@@ -1683,7 +1698,10 @@
     <script src="./js/home.js"></script>
     <!-- *******************Bootstrap Script ***************-->
     <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.bundle.min.js"></script>
-
+<script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+</script>
     <!-- Review Slider -->
     <script>
            $(document).ready(function() {
