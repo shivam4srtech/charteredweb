@@ -1,0 +1,174 @@
+.gstPortal{
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+.container{
+
+    max-width: 1200px;
+}
+.gstPortal img{
+    padding-top: 6rem;
+    max-width: 100%;
+    object-fit: contain;
+}
+.gstPortal .imgBox{
+    position: relative;
+}
+.bubbleBox{
+    background-color: #f5b4024c;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+    animation: smoothFloat 3s infinite ease-in-out;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1
+}
+@keyframes smoothFloat {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  .gstPortal h1{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 1.5;
+    margin-bottom: .5rem;
+  }
+  .gstPortal p{
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4;
+    font-size: 1rem;
+  }
+  .gstPortal .btnBox{
+    margin-top: 1.4rem;
+    display: flex;
+    gap: 10px;
+  }
+  .gstPortal .btnBox a{
+    display: inline-flex;
+    border-radius: 1.76rem;
+    padding: 1rem 1rem;
+    background-color: #f5b402;
+    font-weight: 600;
+    align-items: center;
+    color: #000;
+  }
+  .gstPortal .btnBox a:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .gstPortal .btnBox .fstBtn{
+   min-width: 190px;
+  }
+  .gstPortal .btnBox .fstBtn a{
+    background-color: #000;
+    color: #fff;
+   }
+  .gstPortal .btnBox a svg{
+    width: 16px;
+    height: 16px;
+    margin-left: .5rem;
+    transition: .4s ease-in-out;
+  }
+
+  .gstPortal .btnBox a:hover svg{
+    margin-left: 1rem;
+  }
+  .solutionFor{
+    padding: 2rem 0;
+
+ }
+ .solutionFor h2{
+   text-align: center;
+   font-weight: 600;
+   font-size: 2.4rem;
+   margin-bottom: 2rem;
+ }
+ .solutionFor h2 span{
+   color: #f5b402;
+   text-transform: uppercase;
+   border-bottom: 3px solid #f5b402;
+  }
+ .solutionFor .solutionItem{
+    padding: 35px;
+    box-shadow: 0 .125rem .375rem rgba(0, 0, 0, .05), 0 .5rem 1.2rem rgba(0, 0, 0, .1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100%;
+    transition: transform .3s ease-in-out;
+}
+.solutionFor .solutionItem:hover{
+  transform: translateY(-10px);
+}
+.solutionFor .solutionItem .icon{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: .5rem;
+  background-color: #f5b40226;
+  margin-bottom: 2rem;
+}
+   
+.solutionFor .solutionItem .icon img{
+    width: 60px;
+    height: 60px;
+  }
+  .solutionFor .solutionItem h3{
+    font-weight: 600;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #000;
+}  
+.solutionFor .solutionItem p{
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #495057;
+    line-height: 1.6;
+}  
+.whyUs{
+    padding: 2rem 0;
+}
+.whyUs h2{
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+.whyUs .whyUsItem{
+    box-shadow: rgba(0, 82, 224, 0.12) 0px 2px 4px 0px;
+    border: 2px solid rgb(238, 245, 255);
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    padding: 22px;
+   display: flex;
+   flex-direction: column;
+}
+.whyUs .whyUsItem h3{
+   font-weight: 600;
+   font-size: 1.4rem;
+   margin-bottom: 1rem;
+}
+.whyUs .whyUsItem img{
+    object-fit: contain;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 1rem;
+ }
+ .whyUs .whyUsItem p{
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: left;
+    color: #495057;
+    line-height: 1.6;
+ }
