@@ -172,3 +172,48 @@
     color: #495057;
     line-height: 1.6;
  }
+
+
+ @media(max-width:768px){
+  .bubbleBox{
+    width: 500px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+ }
+ @media(max-width:600px){
+  .gstPortal h1 {
+   font-size: 2rem;
+   text-align: center;
+  }
+  .bubbleBox{
+    width: 500px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+ }
+ @media(max-width:500px){
+  .bubbleBox{
+    width: 300px;
+  }
+ }
+ @media(max-width:300px){
+  .bubbleBox{
+    width: 290px;
+  }
+ }
+ @media(max-width:600px){
+    .gstPortal .btnBox .fstBtn {
+      min-width: fit-content;
+  }
+  .gstPortal .btnBox a {
+   font-size: .8rem;
+   padding: 1rem .5rem;
+}
+  .whyUs h2 {
+    font-size: 2rem;
+  }
+  .btnBox{
+    margin-bottom: 1rem;
+  }
+ }
