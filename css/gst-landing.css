@@ -399,3 +399,36 @@ margin-right: .5rem;
       padding: 0 2rem;
     }
   }
+  /* ========= */
+  .ourSecurity{
+    padding: 0 2rem;
+  }
+  .ourSecurity h2{
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    line-height: 1.4;
+    color: #000;
+  }
+  .ourSecurity h2 span{
+   color: #f5b402;
+   border-bottom: 3px solid #f5b402;
+  }
+  .ourSecurity h2 img{
+  object-fit: contain;
+  }
+  .ourSecurity .isoSecurity{
+   display: flex;
+   justify-content: center;
+  }
+  .ourSecurity .isoSecurity img{
+    width: 600px;
+  }
+   .ourSecurity p{
+    width: 500;
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 1rem;
+   }
