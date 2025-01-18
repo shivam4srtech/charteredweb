@@ -952,12 +952,8 @@
       .clientReview .carousel-inner {
         padding: 0 2rem;
       }
+      .countrySection figure span {
+        right: 25%;
     }
-    @media(max-width:600px){
-        .aos-init{
-            overflow: hidden;
-        }
-        .aos-animate{
-            overflow: hidden;
-        }
-    }
+  }  
+ 
