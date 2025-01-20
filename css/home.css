@@ -1787,3 +1787,152 @@ background: #f0f0f0;
   font-size: .9rem;
  margin-top: 10px;
 }
+/* review */
+.clientReview{
+  padding: 2rem 0;
+}
+.clientReview h2{
+  font-weight: 600;
+ font-size: 2.4rem;
+ margin-bottom: 2.6rem;
+ text-align: center;
+ line-height: 1.4;
+}
+ .clientReview .carousel-inner {
+  padding:  0 4rem;
+}
+.clientReview .carousel-item .reviewContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; 
+  gap: 20px;
+}
+.clientReviewBox{
+  padding: 1rem .65rem;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  min-height: 265px;
+}
+
+.clientReview .reviewContainer > .clientReviewBox{
+  flex: 1;
+}
+
+.carouselControlBtn span svg{
+  width: 32px;
+  height: 32px;
+}
+.carouselControlBtn{
+ display: none;
+}
+.carouselControlBtn{
+  display: none;
+ }
+#clientReview:hover .carouselControlBtn{
+  display: flex;
+} 
+.carouselControlBtn.carousel-control-prev{
+  justify-content: flex-start;
+}
+.carouselControlBtn.carousel-control-next{
+  justify-content: flex-end;
+}
+.clientReview .reviewHead {
+ display: flex;
+ 
+}
+.clientReview .reviewHead .avt span{
+  width: 2rem;
+  height: 2rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 600;
+}
+.clientReview .reviewHead .avt span{
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #fff;
+}
+.clientReview .reviewHead .avt{
+margin-right: .5rem;
+}
+
+.clientReview .reviewHead .name p{
+  font-weight: 600;
+  font-size: .9rem;
+  }
+  .clientReview .reviewHead .name p svg{
+    width: .8rem;
+    fill: #f5b402;
+  }
+  .clientReview .reviewHead .name small{
+    font-weight: 500;
+    font-size: .8rem;
+  }
+  .clientReview .reviewTxt{
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+  }
+  .clientReview .reviewTxt p{
+    font-weight: 500;
+    font-size: .75rem;
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .clientReview .reviewGoogle{
+    display: flex;
+  }
+  .clientReview .reviewGoogle .gglIcon{
+    width: 50px;
+    object-fit: contain;
+  }
+  .clientReview .reviewGoogle .star p{
+   font-weight: 600;
+   font-size: .86rem;
+   margin-bottom: .1rem;
+  }
+  .clientReview .reviewGoogle .star small{
+    color: #f0b612;
+    font-weight: 500;
+    font-size: .8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .clientReview .reviewHead .avt span img{
+    height: 2.5rem;
+    width: 2.5rem;
+    object-fit: contain;
+    border-radius: 50%;
+   }
+   .clientReview .reviewGoogle .star small img{
+   margin-left: .2rem;
+   }
+   @media(max-width:991px){
+    .reviewContainer .clientReviewBox:nth-of-type(3){
+      display: none;
+    }
+   }
+   @media(max-width:768px){
+    .reviewContainer .clientReviewBox:nth-of-type(2){
+      display: none;
+    }
+   }
+   @media(max-width:600px){
+    .clientReview .carousel-inner {
+      padding: 0 2rem;
+    }
+}  

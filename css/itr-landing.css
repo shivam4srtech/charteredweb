@@ -804,7 +804,7 @@
     max-width: 85%;
     height: auto;
 }
-/* review */
+/* Google review */
 .clientReview{
     padding: 2rem 0;
   }
@@ -830,7 +830,7 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    min-height: 250px;
+    min-height: 265px;
   }
   
   .clientReview .reviewContainer > .clientReviewBox{
