@@ -1,6 +1,9 @@
 .gstPortal{
-    padding-top: 6rem;
+    padding-top: 3rem;
     padding-bottom: 2rem;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
 }
 .container{
 
@@ -625,3 +628,38 @@ margin-right: .5rem;
       margin-bottom: 1rem;
   }
 }
+/* Powefull matchong */
+.powerfullMatching{
+  padding: 2rem 0;
+}
+.powerfullMatching h2{
+  font-weight: 600;
+  font-size: 2.4rem;
+  margin-bottom: 2.6rem;
+  text-align: center;
+  line-height: 1.4;
+}
+.powerfullMatching .matchingBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+.powerfullMatching .matchingBox img{
+ max-width: 100%;
+ box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+ border-radius: 50%;
+ transition: all .3s ease-in-out;
+ object-fit: contain;
+ margin-bottom: .8rem;
+}
+.powerfullMatching .matchingBox p{
+ font-weight: 500;
+ font-size: 1rem;
+ color: #000;
+ line-height: 1.4;
+ }
+.powerfullMatching .matchingBox:hover img{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
