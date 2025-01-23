@@ -17,6 +17,32 @@
 .gstPortal .imgBox{
     position: relative;
 }
+ .reviewRating {
+  margin-bottom: 1rem;
+}
+ .reviewRating ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-top: 2rem;
+}
+ .reviewRating ul li {
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding-right: .5rem;
+}
+ .reviewRating ul li strong {
+  font-size: 18px;
+  margin-left: .5rem;
+  font-weight: 700;
+  margin-right: .5rem;
+}
+.reviewRating ul li img {
+  padding-top: 0;
+}
 .bubbleBox{
     background-color: #f5b4024c;
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
@@ -42,6 +68,9 @@
     margin-bottom: .5rem;
     overflow: hidden;
   }
+  .gstPortal h1 span{
+   color: #f5b402;
+}
   .gstPortal p{
     font-weight: 500;
     font-size: 1rem;
@@ -52,6 +81,7 @@
     margin-top: 1.4rem;
     display: flex;
     gap: 10px;
+    margin-bottom: 2rem;
   }
   .gstPortal .btnBox a{
     display: inline-flex;
@@ -668,3 +698,58 @@ margin-right: .5rem;
       font-size: 1.8rem;
   }
  }
+ .getStatrted{
+  padding: 2rem 0;
+ }
+ .getStatrted .startBox{
+  box-shadow: 0px 15px 19px 0px rgba(88, 69, 146, 0.4);
+  border-radius: 15px;
+  padding: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5b402;
+}
+.getStatrted .startBox h2{
+ font-size: 3.2rem;
+ font-weight: 700;
+ line-height: 1.5;
+ text-align: center;
+}
+.getStatrted .startBox span{
+  border-bottom: 2px solid #000;
+  display: inline-flex;
+  width: 200px;
+  margin-bottom: 1.4rem;
+ }
+ .getStatrted .startBox p{
+ font-weight: 500;
+ color: #000;
+ font-size: 1.2rem;
+ text-align: center;
+ margin-bottom: 2rem;
+ }
+ .getStatrted .startBox .demoBtn{
+  box-shadow: 0px 15px 19px 0px rgba(88, 69, 146, 0.4);
+  padding: .8rem 1rem;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #000;
+  background-color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  }
+  @media(min-width:768px){
+    .getStatrted .startBox{
+     min-height: 340px;
+    }
+  }
+  @media(max-width:600px){
+    .getStatrted .startBox h2{
+     font-size: 2.4rem;
+     }
+  }
+
