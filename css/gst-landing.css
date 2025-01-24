@@ -619,7 +619,7 @@ margin-right: .5rem;
 .faq .faqGroup{
   margin-bottom: 3rem;
 }
-.faq .faqGroup h3{
+.faq .faqGroup h6{
   font-weight: 600;
   font-size: 1.4rem;
   margin-bottom: 1rem;
@@ -632,6 +632,17 @@ margin-right: .5rem;
   margin-bottom: 1rem;
   line-height: 1.8;
   color: #ADB1BB;
+}
+.faq .faqGroup ul{
+ padding-left: 25px;
+}
+.faq .faqGroup ul li{
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: .5rem;
+  line-height: 1.4;
+  color: #ADB1BB;
+  list-style-type: disc;
 }
 @media(max-width:600px){
   .faq h2{
