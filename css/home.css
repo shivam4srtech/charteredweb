@@ -1936,3 +1936,90 @@ margin-right: .5rem;
       padding: 0 2rem;
     }
 }  
+.newServices{
+  padding: 3rem 0;
+}
+.newServices h2{
+ font-weight: 600;
+ font-size: 2.4rem;
+ line-height: 1.4;
+ margin-bottom: 2rem;
+ text-align: center;
+}
+.newServices p{
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  text-align: center;
+ }
+ .newServices .btnlist{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+ }
+ .newServices .btnlist a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: .6rem 1rem;
+  font-weight: 500;
+  color: #000;
+  background-color: #f5b402;
+  border-radius: 4px;
+ }
+
+ .regulatoryCompliance{
+  padding: 3rem 0;
+}
+.regulatoryCompliance figure img{
+ max-width: 100%;
+ object-fit: contain;
+ border-radius: 5px;
+
+}
+.regulatoryCompliance figure {
+ display: flex;
+ justify-content: right;
+ }
+.regulatoryCompliance h2{
+ font-weight: 600;
+ font-size: 2.4rem;
+ line-height: 1.4;
+ margin-bottom: 2rem;
+}
+.regulatoryCompliance .tradeAgree{
+  padding: 1.2rem .8rem;
+  border-radius: 5px;
+  background-color: #f5b40229;
+  min-height: 160px;
+}
+.regulatoryCompliance .tradeAgree h3{
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: .5rem;
+}
+.regulatoryCompliance .tradeAgree p{
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.regulatoryCompliance .expl{
+  margin-top: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.regulatoryCompliance .expl a{
+ display: inline-flex;
+ justify-content: center;
+ align-items: center;
+ padding: .6rem 1.2rem;
+ background-color: #f5b402;
+ color: #000;
+ font-weight: 500;
+ border-radius: 4px;
+ min-width: 130px;
+}
