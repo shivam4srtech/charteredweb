@@ -451,6 +451,10 @@ margin-left: .5rem;
         color: #000;
         font-size: .95rem;
         margin-bottom: .2rem;
+        cursor: pointer;
+      }
+      .assetItem .bankName:hover{
+        text-decoration: underline;
       }
       .assetItem .keyValue{
         margin-bottom: .2rem;
@@ -1220,3 +1224,64 @@ margin-left: .5rem;
   .details{
     display: none;
   }
+  .bluryBox table{
+    filter: blur(8px); 
+    pointer-events: none; 
+    user-select: none;
+}
+.bluryBox .chart{
+  filter: blur(8px); 
+  pointer-events: none; 
+  user-select: none;
+}
+.bluryBox .matricsBox{
+  filter: blur(8px); 
+  pointer-events: none; 
+  user-select: none;
+}
+.subscribeBox{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  display: none ;
+  align-items: center;
+  justify-content: center;
+  background-color: #222222;
+  flex-direction: column;
+  gap: 10px;
+  padding: .5rem;
+  z-index: 99;
+}
+.subscribeBox img{
+ width: 60px;
+}
+.subscribeBox p{
+ font-weight: 600;
+ color: #fff;
+ font-size: 1rem;
+ letter-spacing: .5px;
+ text-align: center;
+ }
+ .subscribeBox a{
+ border: none;
+ outline: none;
+ padding: .6rem 1.2rem;
+ background-color: #f5b402;
+ color: #fff;
+ font-weight: 600;
+ border-radius: 4px;
+ text-transform: uppercase;
+  }
+.bluryBox:hover .subscribeBox{
+  display: flex;
+}
+.chart .bluryBox:hover .subscribeBox{
+  display: flex !important;
+}
+.bluryBox .matricsBox:hover .subscribeBox{
+  display: flex;
+}
+.modal-header .btn-close{
+  box-shadow: none;
+}
