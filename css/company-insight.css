@@ -280,6 +280,7 @@ margin-left: .5rem;
      @media(max-width:600px){
         .matricsBox{
             padding: 15px;
+            word-break: break-all;
           }
      }
      .matricsTable{
@@ -978,7 +979,8 @@ margin-left: .5rem;
       border-bottom: none;
   }
   .searchBox{
-      position: relative
+      position: relative;
+      width: 100%;
   }
   .recommendation svg{
     width: 16px;
@@ -1291,4 +1293,10 @@ margin-left: .5rem;
 }
 .chargesPop:hover{
  text-decoration: underline;
+}
+
+@media(max-width:768px){
+  .tabsWrapper{
+    padding-top: 30px;
+  } 
 }

@@ -844,7 +844,7 @@
     </section>
     <section class="companyInsights">
         <nav id="navbar-example2" class="navbar  mb-3 tabsWrapper">
-            <ul class="nav nav-pills">
+            <ul class="nav nav-pills simple-list-example-scrollspy">
               <li class="nav-item">
                 <a class="nav-link" href="#scrollspy1">Tata Steel Limited</a>
               </li>
@@ -4392,6 +4392,26 @@
           });
         });
     </script>
+      <script>
+  document.addEventListener('activate.bs.scrollspy', function (event) {
+  const activeLink = document.querySelector('.simple-list-example-scrollspy a.active');
+
+  if (activeLink) {
+    const container = document.querySelector('.simple-list-example-scrollspy');
+
+    const linkRect = activeLink.getBoundingClientRect();
+    const containerRect = container.getBoundingClientRect();
+
+    if (linkRect.left < containerRect.left || linkRect.right > containerRect.right) {
+      activeLink.scrollIntoView({
+        behavior: 'smooth',
+        inline: 'center',
+        block: 'nearest',
+      });
+    }
+  }
+});
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  
     <script src="./js/chart/sales.js"></script>
     <script src="./js/chart/networth.js"></script>
