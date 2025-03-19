@@ -422,7 +422,7 @@ margin-left: .5rem;
         display: none;
     }
     #displayData1.active, #displayData2.active{
-        display: block;
+        display: flex;
     }
     .chargesOnAsset{
         border-radius: 24px;
@@ -1284,4 +1284,11 @@ margin-left: .5rem;
 }
 .modal-header .btn-close{
   box-shadow: none;
+}
+.chargesPop{
+  cursor: pointer;
+  font-weight: 500;
+}
+.chargesPop:hover{
+ text-decoration: underline;
 }
