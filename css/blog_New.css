@@ -222,6 +222,7 @@ body{
     position: relative;
     overflow: hidden;
     color: #44474c;
+    margin-top: 5rem;
 }
 .blogContent .blog__post_meta{
     display: flex;
@@ -844,5 +845,269 @@ body{
         line-height: 1.4;
     }
  }
+ .mainHeading{
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.4;
+    color: #092e51;
+    margin-top: 0;
+    margin-bottom: 10px;
+ }
 
+    /*polular services  */
+  
+    .popularSearches h3{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+        color: #071437;
+    }
+    .badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        border-radius: .25rem;
+        padding: .5rem .5rem;
+        border: 1px solid #fff0;
+        font-weight: 500;
+        font-size: .6875rem;
+        padding: .3125rem .375rem;
+        color: #4B5675;
+        border-color: #fff0;
+        background-color: #f5b40219;
+    }
+    .link {
+        font-weight: 600;
+        color: #000;
+    }
+    .card-header {
+        display: flex;
+        min-height: 56px;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #F1F1F4;
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        background-color: transparent;
+    }    
+    .listLinks{
+        gap: 10px;
+    }
+    .container{
+        max-width: 1200px;
+    }
+    .fourOfourBox{
+        background-color: #f5b40219;
+        padding: 1.6rem .8rem;
+    }
+    .fourOfourBox .imgBox img{
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        object-fit: contain;
+        max-height: 200px;
+    }
+    .fourOfourBox .imgBox{
+       margin-bottom: 1rem;
+    }
+    .badge.errorBadge{
+        background-color: #eef6ff;
+        color: #1B84FF;
+        border: 1px solid rgba(27, 132, 255, 0.20);
+        font-weight: 500;
+    }
+    .fouroFourHeader h1{
+        color: #071437;
+        font-size: 1.625rem;
+        line-height: 2.125rem;
+        font-weight: 600;
+        margin-bottom: .5rem;
+    }
+    .fouroFourHeader p{
+        font-size: .9375rem;
+        line-height: 1.375rem;
+        color: #4B5675;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+    .fouroFourHeader p a{
+        color: #1B84FF;
+    }
+    /* full-sized banner */
+    .fullSizedbanner{
+        background-color: purple;
+        margin-top: 4rem;
+        padding-top: 3rem;
+        color: #fff;
+        padding-bottom: 1rem;
+    }
+    .fullSizedbanner .container{
+        max-width: 1450px;
+        position: relative;
+        overflow: hidden;
+    }
+    .fullSizedbanner .container .row{
+        position: relative;
+        z-index: 99;
+    }
+    .bannerBg{
+        position: absolute;
+        top: -60%;
+        left: 15%;
+        height: 40px;
+        z-index: 9;
+        max-height: 390px;
+        overflow: hidden;
+    }
+
+    .fullSizedbanner .leftSide h2{
+        margin-bottom: 5px;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 60px;
+       letter-spacing: .5px;
+    }
+    .fullSizedbanner .leftSide p{
+        margin-bottom: 5px;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.4;
+       letter-spacing: .5px;
+       margin-bottom: 1rem;
+    }
+    .fullSizedbanner .leftSide a{
+        background-color: #ffffff;
+        border: none;
+        width: 400px;
+        border-radius: 4px;
+        margin-bottom: 22px;
+        cursor: pointer;
+        display: block;
+        max-width: 100%;
+        padding: .65rem 1rem;
+        text-align: center;
+        color: #1572ED;
+        font-weight: 600;
+        font-size: .9rem;
     
+    }
+    .fullSizedbanner .rightSide{
+       display: flex;
+       justify-content: right;
+    }
+    .fullSizedbanner .rightSide .bannerForm{
+       width: 700px;
+       color: #000;
+       max-width: 100%;
+       background-color: #ffffff;
+        border-radius: 10px;
+        padding: 16px;
+        color: #020518;
+        font-size: 14px;
+        line-height: 16px;
+     }
+     .fullSizedbanner .rightSide .formHeader{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10px;
+        font-weight: 600;
+       font-size: .85rem;
+    }
+    .fullSizedbanner .rightSide .bannerForm form label{
+        padding-bottom: 10px;
+        font-weight: 500;
+       font-size: .8rem;
+       color: #000;
+    }
+    .fullSizedbanner .rightSide .bannerForm form label.submit{
+       visibility: hidden;
+    }
+    .fullSizedbanner .rightSide .bannerForm form label span{
+       color: red;
+    }
+    .fullSizedbanner .rightSide .bannerForm form .form-control{
+       box-shadow: none;
+       height: 2.2rem;
+       font-weight: 500;
+       font-size: .85rem;
+       border-radius: 4px;
+     }
+     input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+.fullSizedbanner .rightSide .bannerForm form .form-control.submit{
+   background-color: #f5b402;
+   color: #000;
+   border: none;
+   outline: none;
+   font-weight: 600;
+   font-size: .9rem;
+   letter-spacing: .5px;
+  }
+  @media(max-width:991px){
+    .fullSizedbanner .rightSide{
+        justify-content: left;
+     }
+  }
+  @media(max-width:560px){
+    .fullSizedbanner .leftSide h2{
+        font-size: 25px;
+        line-height: 1.4;
+    }
+  }
+  /* blog sized banner */
+  .blogSizedBanner{
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eef5ff;
+    align-items: flex-start;
+    margin: 2rem auto;
+  }
+  .blogSizedBanner .left h2{
+    color: #1572ed;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    line-height: 50px;
+  }
+  .blogSizedBanner .left p{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  .blogSizedBanner .right {
+   width: 200px;
+   text-align: right;
+  }
+  .blogSizedBanner .right a{
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    background: #1678fb;
+    border: 1px;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 16px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    font-size: .9rem;
+    white-space: nowrap;
+   }
+   @media(max-width:768px){
+    .blogSizedBanner{
+        flex-direction: column;
+    }
+    .blogSizedBanner .right {
+        text-align: left;
+       }
+   }
