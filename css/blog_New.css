@@ -1,5 +1,9 @@
 body{
     background-color: #f1f5f8;;
+    font-family: 'Montserrat', sans-serif;
+} 
+h1, h2, h3, h4, p, li, span, b, em, div, section{
+    font-family: 'Montserrat', sans-serif;
 }
 .blogHeader {
     background: #fff;
@@ -468,20 +472,27 @@ body{
     margin-top: 1rem;
 }
 .blogItem .blogdata p{
-    font-weight:500;
-    font-size: 16px;
-    line-height: 25px;
-    color: #3c4d5c;
-    margin-bottom: 15px;
+    color: #472515;
+    line-height: 1.4;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    text-align: left;
 }
 .blogItem .blogdata h2{
-    font-size: 28px;
-    line-height: 30px;
-    color: #092e51;
-    font-family: Inter;
+    color: #314259;
+    line-height: 1.6;
     font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+.blogItem .blogdata h3{
+    color: #314259;
+    line-height: 1.6;
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
 }
 .blogItem .blogdata ul {
     margin: 0;
@@ -489,14 +500,25 @@ body{
     list-style: none;
     margin-bottom: 30px;
 }
-.blogItem .blogdata ul li{
+.blogItem .blogdata ol {
+    padding-left: 20px;
+}
+.blogItem .blogdata ol li{
+    color: #472515;
+    line-height: 1.6;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 25px;
-    margin-bottom: .8rem;
-    color: #4e677d;
-    padding-left: 25px;
-    position: relative;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    list-style-type: decimal;
+    padding-left: 10px;
+}
+.blogItem .blogdata ul li{
+    color: #472515;
+    line-height: 1.6;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    padding-left: 10px;
 }
 .blogItem .blogdata ul li a{
     font-style: italic;
