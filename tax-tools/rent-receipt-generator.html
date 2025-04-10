@@ -929,7 +929,10 @@
                                     </div>
                                     <div class="col-md-6 mb-4">
                                         <label for="rentAddress" class="form-label">Rented House Address<span>*</span></label>
-                                        <input class="form-control" type="text"  name="rentAddress" required>
+                                        <div class="d-flex">
+                                            <input class="form-control houseNo" type="text"  name="house Number" placeholder="House No." required>
+                                            <input class="form-control houseAdd" type="text"  name="rentAddress" required placeholder="Full Address">
+                                        </div>
                                         <p class="error hidden">Please fill out this field.</p>
                                     </div>
                                 </div>
