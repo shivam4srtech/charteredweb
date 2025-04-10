@@ -80,4 +80,25 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   }
 
-		
+  //share page
+  document.addEventListener("DOMContentLoaded", function () {
+      const pageUrl = encodeURIComponent(window.location.href);
+      const pageTitle = encodeURIComponent(document.title);
+
+      const platforms = ["facebook", "twitter", "whatsapp", "linkedin"];
+      const shareLinks = {
+          facebook: `https://www.facebook.com/sharer/sharer.php?u=${pageUrl}`,
+          twitter: `https://twitter.com/intent/tweet?url=${pageUrl}&text=${pageTitle}`,
+          whatsapp: `https://wa.me/?text=${pageTitle}%20${pageUrl}`,
+          linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${pageUrl}`
+      };
+
+      document.querySelectorAll(".shareLinks a").forEach((anchor, index) => {
+          let platform = platforms[index];
+          if (platform) {
+              anchor.setAttribute("data-platform", platform);
+              anchor.setAttribute("href", shareLinks[platform]);
+              anchor.setAttribute("target", "_blank");
+          }
+      });
+  });

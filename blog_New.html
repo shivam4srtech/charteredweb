@@ -844,48 +844,99 @@
         </div>
     </nav>
     <!-- full sized banner -->
-     <section class="fullSizedbanner">
+    <section class="fullSizedbanner" style="background: linear-gradient(136.7deg,  #1572ed 68.58%, #59a1ff 12.5%);">
         <div class="container">
-            <img class="bannerBg" src="./images/banner-bg.png" alt="bg">
             <div class="row">
-                <div class="col-lg-5">
+                <div class="col-lg-6">
                     <div class="leftSide">
-                        <h2>70% Taxpayers Miss
-                            Saving Taxes!</h2>
-                         <p>
-                            Plan now to save more taxes!
-                         </p>
-                         <a href="#">Start Tax Planning</a>
+                       <h2>Don't Miss the ITR Deadline! File Now &amp; Avoid Penalties!</h2>
+                       <div class="taxPlans">
+                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path></svg>  Hassle-free filing </span>
+                            <small>|</small>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path></svg>  Max Refunds </span>
+                            <small>|</small>
+                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 48a208 208 0 1 1 0 416 208 208 0 1 1 0-416zm0 464A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-111 111-47-47c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l64 64c9.4 9.4 24.6 9.4 33.9 0L369 209z"></path></svg>  Expert Support
+                            </span>
+                       </div>
+                        <a href="itr">File ITR Today</a>
                     </div>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-6">
                     <div class="rightSide">
-                        <div class="bannerForm">
+                        <div class="bannerForm bookinmsg">
                             <div class="formHeader">Enter details to receive communications from Charteredone</div>
-                            <form class="row">
-                                <div class="col-lg-6 mb-4">
+                            
+                            <form class="row" method="POST" id="enquirid">
+                                <div class="col-md-6 mb-4">
                                     <label for="">Your Name</label>
-                                   <input type="text" class="form-control" placeholder="Enter you name">
+                                  <input type="text" name="name" class="form-control name_itr" placeholder="Enter your name" required="">
                                 </div>
-                                <div class="col-lg-6 mb-4">
+                                <div class="col-md-6 mb-4">
                                     <label for="">Your Email <span>*</span></label>
-                                   <input type="email" class="form-control" placeholder="Enter your email">
+                                <input type="email" name="email" class="form-control email_itr" placeholder="Enter your email" required="">
                                 </div>
-                                <div class="col-lg-6 mb-4">
+                                <div class="col-md-6 mb-4">
                                     <label for="">Phone Number <span>*</span></label>
-                                   <input type="number" class="form-control" placeholder="Enter your phone number">
+                                 <input type="number" name="phone" class="form-control phone_itr" placeholder="Enter your phone number" required="">
                                 </div>
-                                <div class="col-lg-6">
-                                    <label for="" class="submit">submit</label>
-                                   <input type="submit" class="form-control submit">
+                                <div class="col-md-6 mb-4">
+                                    <label for="">Select State</label>
+                                    <select class="form-control" aria-label="Default select example">
+                                        <option selected>Select State</option>
+                                        <option value="andaman_nicobar">Andaman and Nicobar Islands</option>
+                                        <option value="andhra_pradesh">Andhra Pradesh</option>
+                                        <option value="arunachal_pradesh">Arunachal Pradesh</option>
+                                        <option value="assam">Assam</option>
+                                        <option value="bihar">Bihar</option>
+                                        <option value="chandigarh">Chandigarh</option>
+                                        <option value="chhattisgarh">Chhattisgarh</option>
+                                        <option value="dadra_nagar_haveli_daman_diu">Dadra and Nagar Haveli and Daman and Diu</option>
+                                        <option value="delhi">Delhi</option>
+                                        <option value="goa">Goa</option>
+                                        <option value="gujarat">Gujarat</option>
+                                        <option value="haryana">Haryana</option>
+                                        <option value="himachal_pradesh">Himachal Pradesh</option>
+                                        <option value="jammu_kashmir">Jammu and Kashmir</option>
+                                        <option value="jharkhand">Jharkhand</option>
+                                        <option value="karnataka">Karnataka</option>
+                                        <option value="kerala">Kerala</option>
+                                        <option value="ladakh">Ladakh</option>
+                                        <option value="lakshadweep">Lakshadweep</option>
+                                        <option value="madhya_pradesh">Madhya Pradesh</option>
+                                        <option value="maharashtra">Maharashtra</option>
+                                        <option value="manipur">Manipur</option>
+                                        <option value="meghalaya">Meghalaya</option>
+                                        <option value="mizoram">Mizoram</option>
+                                        <option value="nagaland">Nagaland</option>
+                                        <option value="odisha">Odisha</option>
+                                        <option value="puducherry">Puducherry</option>
+                                        <option value="punjab">Punjab</option>
+                                        <option value="rajasthan">Rajasthan</option>
+                                        <option value="sikkim">Sikkim</option>
+                                        <option value="tamil_nadu">Tamil Nadu</option>
+                                        <option value="telangana">Telangana</option>
+                                        <option value="tripura">Tripura</option>
+                                        <option value="uttar_pradesh">Uttar Pradesh</option>
+                                        <option value="uttarakhand">Uttarakhand</option>
+                                        <option value="west_bengal">West Bengal</option>
+                                    </select>  
+                                </div>
+                                <div class="d-flex justify-content-center">
+                                   <input type="button" class="form-control submit submitenquirey" value="submit">
                                 </div>
                             </form>
+                        </div>
+                        <div class="submittedMsg d-none">
+                            <div class="submitBox">
+                                <img src="/imagesweb/submitted.gif" alt="form-submitted">
+                                <p>Your enquiry has been posted, we will get back soon!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-     </section>
+    </section>
     <!-- IT-notice -->
     <section class="blogContent">
         <div class="row">
@@ -1544,6 +1595,15 @@
         const selectedContent = document.getElementById(contentId);
         selectedContent.classList.add('active');
     }
+</script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let path = window.location.pathname; // Get the URL path
+        let slug = path.split("/").filter(Boolean).pop(); // Extract the last part
+        if (slug) {
+            document.body.classList.add(slug.replace(/[^a-zA-Z0-9-]/g, "")); // Add as a class after sanitizing
+        }
+    });
 </script>
 
 </body>

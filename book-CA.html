@@ -2197,6 +2197,15 @@
             });
         }); 
  </script>
+ <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let path = window.location.pathname; // Get the URL path
+        let slug = path.split("/").filter(Boolean).pop(); // Extract the last part
+        if (slug) {
+            document.body.classList.add(slug.replace(/[^a-zA-Z0-9-]/g, "")); // Add as a class after sanitizing
+        }
+    });
+</script>
 
 </body>
 </html>
