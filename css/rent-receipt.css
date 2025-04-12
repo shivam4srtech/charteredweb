@@ -112,4 +112,19 @@
     display: flex;
     justify-content: right;
     margin-bottom: 1rem;
+    align-items: center;
+    gap: 20px;
+  }
+  .printBtn a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: .4rem 1rem;
+    border-radius: 4px;
+  }
+  .printBtn a img{
+    object-fit: contain;
+    width: 25px;
+    height: 25px;
   }
