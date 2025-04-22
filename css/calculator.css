@@ -1696,3 +1696,17 @@ background-color: transparent;
     margin-top: 1rem;
    }
 
+   .multiStepsBox select.form-control {
+    font-weight: 400;
+    border-radius: 0;
+    outline: 0;
+    background: #fff;
+    border-radius: 4px;
+    background-clip: padding-box;
+    font-size: 12px;
+    padding: 0 15px;
+    line-height: 43px;
+    height: 43px;
+    transition: .7s;
+    box-shadow: none;
+}
