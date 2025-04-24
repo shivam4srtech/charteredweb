@@ -1247,6 +1247,8 @@ max-width: 1300px;
 .suknyaCalc{
 background-color: #f8f9fb;
 padding-bottom: 3rem;
+padding-top: 2rem;
+margin-top: 2rem;
 }
 
 .sukanyaBox .suknyaItem p{
