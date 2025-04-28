@@ -1300,3 +1300,92 @@ margin-left: .5rem;
     padding-top: 30px;
   } 
 }
+/* upload pdf */
+.uploadSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 1rem;
+}
+.uploadSection .row{
+  width: 100%;
+}
+
+.uploadSection .uploadBox {
+  background: linear-gradient(135deg, #f0f0f0, #ffffff);
+  border: 2px dashed #bbb;
+  border-radius: 20px;
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+.uploadSection .form-select {
+ margin-bottom: 1rem;
+ box-shadow: none;
+}
+
+.uploadSection .uploadBox:hover {
+  background: #f9f9f9;
+  border-color: #007bff;
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.2);
+}
+#buttonsAfterUpload {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#buttonsAfterUpload button{
+  border: none;
+  outline: none;
+  padding: .5rem 1rem;
+  background-color: #f5b402;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.uploadSection .uploadIcon {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.uploadSection .uploadText {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+}
+
+.uploadSection .uploadText small {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.uploadSection .uploadedFile {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  animation: fadeIn 0.5s ease;
+  margin-bottom: 2rem;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+.uploadedFile .me-2{
+  font-weight: 500;
+  font-size: .8rem;
+}
