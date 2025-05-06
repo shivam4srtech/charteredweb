@@ -175,3 +175,59 @@ body{
    justify-content: space-between;
    margin-bottom: 1rem;
 }
+/* dropdown */
+.signRegister{
+	display: flex;
+	align-items: center;
+}
+.signRegister .dropdown-toggle::after {
+	display: none !important;
+}
+
+.signRegister .dropdown-toggle img{
+	width: 2.5rem;
+	height: 2.5rem;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	object-fit: cover;
+}
+.signRegister .dropdown-menu{
+	padding-top: 0;
+	padding-bottom: 0;
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+	border: none;
+}
+.signRegister .dropdown-menu .dropdown-item{
+	line-height: 3;
+	font-weight: 500;
+	font-size: .9rem;
+}
+.signRegister .dropdown-menu li:first-child .dropdown-item{
+
+border-radius: .375rem .375rem 0 0;
+}
+.signRegister .dropdown-menu li:last-child .dropdown-item{
+	border-radius: 0 0 .375rem .375rem;
+}
+.signRegister .dropdown-menu .dropdown-item:hover{
+	background-color: #f5b4020e;
+}
+.signRegister .dropdown-menu .dropdown-item:focus{
+	background-color: #f5b402;
+	color: #fff;
+}
+.signRegister .dropdown-menu .userName{
+	line-height: 1.4;
+	padding: .8rem;
+}
+.signRegister .dropdown-menu .userName span{
+	font-weight: 500;
+	font-size: .9rem;
+	display: block;
+	color: #000;
+}
+.signRegister .dropdown-menu .userName small{
+	font-weight: 500;
+	font-size: .7rem;
+	display: block;
+}
