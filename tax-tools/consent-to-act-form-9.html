@@ -1942,30 +1942,7 @@
             });
         });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.10.111/pdf.min.js"></script>
-
-    <script>
-            const url = 'https://drive.google.com/file/d/1Dx1qvYLSEkQMoLpWH4byzlinSWorYJTz/view?usp=sharing';
-
-const loadingTask = pdfjsLib.getDocument(url);
-loadingTask.promise.then(function(pdf) {
-  pdf.getPage(1).then(function(page) {
-    const scale = 1.5;
-    const viewport = page.getViewport({ scale });
-
-    const canvas = document.getElementById('pdf-canvas');
-    const context = canvas.getContext('2d');
-    canvas.height = viewport.height;
-    canvas.width = viewport.width;
-
-    page.render({
-      canvasContext: context,
-      viewport: viewport
-    });
-  });
-});
-
-    </script>
+    
 
 </body>
 </html>
