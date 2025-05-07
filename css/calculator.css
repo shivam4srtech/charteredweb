@@ -1712,3 +1712,11 @@ background-color: transparent;
     transition: .7s;
     box-shadow: none;
 }
+/* pdf box */
+.pdfBox div::-webkit-scrollbar{
+display: none;
+}
+.pdfBox{
+  border: 10px solid #000;
+  padding: 0;
+}
