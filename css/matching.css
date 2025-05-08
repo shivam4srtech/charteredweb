@@ -2213,6 +2213,9 @@ letter-spacing: .5px;
         padding-top: 6rem;
         padding-bottom: 2rem;
      }
+     .matchingSection .container{
+       max-width: 1300px;
+     }
      .header-links .matchingTxt {
         color: rgb(130, 137, 153);
         font-size: 12px;
