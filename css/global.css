@@ -75,7 +75,7 @@ nav{
   }
   @media(min-width:991px){
 	nav .wrapper{
-		padding: 0px 80px;
+		max-width: 1350px;
 	  }
   }
   .wrapper .logo a{
@@ -94,7 +94,7 @@ nav{
   .nav-links li a{
 	color: #000;
 	text-decoration: none;
-	font-size: 1rem;
+	font-size: .9rem;
 	font-weight: 500;
 	padding: 5px 15px 5px 15px;
 	border-radius: 5px;
@@ -137,12 +137,13 @@ nav{
   }
   .mega-box{
 	position: absolute;
-	left: 0;
+	left: 30%;
 	width: 100%;
 	padding: 0 0px;
 	top: 85px;
 	opacity: 0;
 	visibility: hidden;
+    max-width: fit-content;
   }
   .mega-box .megaContent{
 	background: #fff;
@@ -153,6 +154,7 @@ nav{
     border-radius: 10px;
     box-shadow: 5px 5px 10px #232323;
 	max-width: fit-content;
+	min-width: fit-content;
   }
   .wrapper .btn{
 	color: #fff;
@@ -1852,6 +1854,52 @@ max-width: 1500px;
 		transform: scale(1, 1);
 	}
   }
+  .breadcrumbBox .breadcrumb ul{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	gap: 5px;
+}
+.breadcrumbBox .breadcrumb ul li{
+	margin-right: .5rem;
+    font-size: .75rem;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.breadcrumbBox .breadcrumb ul li a{
+	color: #1a0dab;
+}
+.breadcrumbBox .breadcrumb ul li svg{
+	width: 14px;
+	fill: #222;
+}
+#enquiryModal .submitBox{
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#enquiryModal .submitBox p{
+	font-weight: 500;
+    font-size: .9rem;
+    line-height: 1.4;
+    color: #000;
+	margin-bottom: 1rem;
+}
+#enquiryModal .submitBox img{
+	width: 100px;
+    height: 100px;
+	border-radius: 50%;
+}
+@media(max-width: 600px){
+	.breadcrumbBox .breadcrumb ul{
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		gap: 2px;
+	}
+}
+
 .signRegister{
 	display: flex;
 	align-items: center;

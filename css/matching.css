@@ -2210,12 +2210,17 @@ letter-spacing: .5px;
 
      /* matching web */
      .matchingSection{
-        padding-top: 6rem;
-        padding-bottom: 2rem;
+        padding: 2rem 0;
      }
-     .matchingSection .container{
-       max-width: 1300px;
+      .container{
+       max-width: 1400px;
      }
+     .calcSingle .container {
+        max-width: 1400px;
+     }
+     .faqs .container {
+        max-width: 1400px;
+    }
      .header-links .matchingTxt {
         color: rgb(130, 137, 153);
         font-size: 12px;
@@ -2315,3 +2320,178 @@ letter-spacing: .5px;
         letter-spacing: .5px;
         font-size: 10px;
     }
+    /* full-sized banner */
+.fullSizedbanner {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+    color: #fff;
+    padding-bottom: 2.5rem;
+  }
+  .fullSizedbanner .container{
+    max-width: 1450px;
+    position: relative;
+    overflow: hidden;
+  }
+  .fullSizedbanner .taxPlans{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 12px;
+  }
+  .fullSizedbanner .taxPlans svg{
+   width: 20px;
+   height: 20px;
+   fill: #fff;
+   margin-right: .5rem;
+  }
+  .fullSizedbanner .taxPlans span{
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  color: #fff;
+  font-size: .9rem;
+  
+  }
+  .fullSizedbanner .taxPlans small{
+   font-size: 1.4rem;
+   font-weight: 600;
+  }
+  
+  .fullSizedbanner .leftSide h2{
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+   letter-spacing: .5px;
+   color: #fff;
+  }
+  .fullSizedbanner .leftSide .bannerTitle{
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+   letter-spacing: .5px;
+   color: #fff;
+  }
+  .fullSizedbanner .leftSide p{
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4;
+   letter-spacing: .5px;
+   margin-bottom: 1rem;
+  }
+  .fullSizedbanner .leftSide a{
+    background-color: #ffffff;
+    border: none;
+    width: 400px;
+    border-radius: 4px;
+    margin-bottom: 22px;
+    cursor: pointer;
+    display: block;
+    max-width: 100%;
+    padding: .65rem 1rem;
+    text-align: center;
+    color: #1572ED;
+    font-weight: 600;
+    font-size: .9rem;
+  
+  }
+  .fullSizedbanner .rightSide{
+   display: flex;
+   justify-content: right;
+  }
+  .fullSizedbanner .rightSide .bannerForm{
+   width: 700px;
+   color: #000;
+   max-width: 100%;
+   background-color: #ffffff;
+    border-radius: 10px;
+    padding: 16px;
+    color: #020518;
+    font-size: 14px;
+    line-height: 16px;
+  }
+  .fullSizedbanner .rightSide .formHeader{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-weight: 600;
+   font-size: .85rem;
+   text-align: center;
+   line-height: 1.4;
+  }
+  .fullSizedbanner .rightSide .bannerForm form label{
+    padding-bottom: 10px;
+    font-weight: 500;
+   font-size: .8rem;
+   color: #000;
+  }
+  .fullSizedbanner .rightSide .bannerForm form label.submit{
+   visibility: hidden;
+  }
+  .fullSizedbanner .rightSide .bannerForm form label span{
+   color: red;
+  }
+  .fullSizedbanner .rightSide .bannerForm form .form-control{
+   box-shadow: none;
+   height: 2.2rem;
+   font-weight: 500;
+   font-size: .85rem;
+   border-radius: 4px;
+  }
+  input[type=number]::-webkit-inner-spin-button, 
+  input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0; 
+  }
+  .fullSizedbanner .rightSide .bannerForm form .form-control.submit{
+  background-color: #f5b402;
+  color: #000;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  font-size: .9rem;
+  letter-spacing: .5px;
+  }
+  @media(max-width:991px){
+  .fullSizedbanner .rightSide{
+    justify-content: center;
+  }
+  .fullSizedbanner .taxPlans{
+    justify-content: center;
+  }
+  .fullSizedbanner .leftSide a{
+    width: 100%;
+  
+  }
+  .fullSizedbanner .rightSide .bannerForm {
+    width: 100%;
+  }
+  }
+  @media(max-width:560px){
+  .fullSizedbanner .leftSide h2{
+    font-size: 25px;
+    line-height: 1.4;
+  }
+  .fullSizedbanner .taxPlans span{
+   font-size: .65rem;
+  }
+  .fullSizedbanner .taxPlans svg {
+    width: 12px;
+    height: 12px;
+  }
+  .fullSizedbanner .container{
+    padding: 0;
+  }
+  .fullSizedbanner .taxPlans{
+    gap: 5px;
+  }
+  }
+  .calcsection{
+    padding-top: 0;
+    padding-bottom: 0;
+  }
