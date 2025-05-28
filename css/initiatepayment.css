@@ -1,0 +1,57 @@
+.completePayment{
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+.completePayment .userInfo{
+    margin-bottom: 1.6rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.completePayment .userInfo span{
+       font-weight: 600;
+    font-size: 16px;
+    margin: 0;
+    line-height: 18px;
+    border-left: solid 3px #f5b402;
+    padding-left: 1rem;
+}
+.completePayment .userInfo small{
+    font-weight: 500;
+    font-size: 1rem;
+}
+.completePayment .userInfo{
+    display: flex;
+    gap: 20px;
+}
+.calcSingle h1 {
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.calcSingle .container {
+    padding: 1rem 4rem;
+    
+}
+@media(max-width:600px){
+    .calcSingle .container {
+    padding: 1rem .5rem;
+}
+.calcSingle h1 {
+    font-size: 1.4rem;
+}
+}
+.totalPayment button{
+    border: none;
+    outline: none;
+    padding: .5rem 1rem;
+    border-radius: 1.7rem;
+    font-weight: 600;
+    background-color: #f5b402;
+    min-width: 300px;
+    min-height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    letter-spacing: .5px;
+}

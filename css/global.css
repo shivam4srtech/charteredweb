@@ -310,13 +310,7 @@ nav{
 	}
   }
   
-  .border_bottom{
-   transition: 2s all ease-in-out;
-   border-radius: 0px !important;
-  }
-  .border_bottom:hover{
-   border-bottom: 2px solid #f5b402;
-  }
+ 
   .megaContent .navRow{
 	width: 20%;
   }
@@ -662,6 +656,7 @@ ul.navbar-nav{
 	border: none;
 	outline: none;
 	border-radius: 4px;
+	font-size: .9rem;
 }
 #enquiryModal .modal-content .btns .sendmsg:active{
 	border: none;
@@ -1819,14 +1814,14 @@ max-width: 1500px;
 	transition: background-color 0.3s;
 	animation: pulse-shadow 1.5s infinite; 
 	font-weight: 600;
-	color: #fff;
+	color: #0f0f0f;
 	font-size: .9rem;
 	padding: 0 .5rem ;
 	letter-spacing: .5px;
 }
 .webFooter .paymentBox a.whatsApp svg{
 	width: 20px;
-	fill: #fff ;
+	fill: #0f0f0f ;
 	margin-left: .5rem;
 }
 
@@ -1899,59 +1894,140 @@ max-width: 1500px;
 		gap: 2px;
 	}
 }
-
 .signRegister{
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 .signRegister .dropdown-toggle::after {
-	display: none !important;
+    display: none !important;
 }
 
 .signRegister .dropdown-toggle img{
-	width: 2.5rem;
-	height: 2.5rem;
-	border: 1px solid #ccc;
-	border-radius: 50%;
-	object-fit: cover;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    object-fit: cover;
 }
 .signRegister .dropdown-menu{
-	padding-top: 0;
-	padding-bottom: 0;
-	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
-	border: none;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border: none;
 }
 .signRegister .dropdown-menu .dropdown-item{
-	line-height: 3;
-	font-weight: 500;
-	font-size: .9rem;
+    line-height: 3;
+    font-weight: 500;
+    font-size: .9rem;
 }
 .signRegister .dropdown-menu li:first-child .dropdown-item{
 
 border-radius: .375rem .375rem 0 0;
 }
 .signRegister .dropdown-menu li:last-child .dropdown-item{
-	border-radius: 0 0 .375rem .375rem;
+    border-radius: 0 0 .375rem .375rem;
 }
 .signRegister .dropdown-menu .dropdown-item:hover{
-	background-color: #f5b4020e;
+    background-color: #f5b4020e;
 }
 .signRegister .dropdown-menu .dropdown-item:focus{
-	background-color: #f5b402;
-	color: #fff;
+    background-color: #f5b402;
+    color: #fff;
 }
 .signRegister .dropdown-menu .userName{
-	line-height: 1.4;
-	padding: .8rem;
+    line-height: 1.4;
+    padding: .8rem;
 }
 .signRegister .dropdown-menu .userName span{
-	font-weight: 500;
-	font-size: .9rem;
-	display: block;
-	color: #000;
+    font-weight: 500;
+    font-size: .9rem;
+    display: block;
+    color: #000;
 }
 .signRegister .dropdown-menu .userName small{
-	font-weight: 500;
-	font-size: .7rem;
-	display: block;
+    font-weight: 500;
+    font-size: .7rem;
+    display: block;
+}
+.nav-links li .navBtn{
+	color: #000;
+    text-decoration: none;
+    font-size: .9rem;
+    font-weight: 500;
+    padding: 5px 15px 5px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	 padding-bottom: none;
+	 border-color: #f5b402;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    padding-top: 0;
+	 border-radius: 0px !important;
+	transition: .3s all ease-in-out;
+}
+.nav-links li .navBtn:hover{
+    border-bottom: 2px solid #f5b402;
+	color: #f5b402;
+}
+@media(max-width: 991px){
+	.signRegister{
+		display: none;
+	}
+}
+.launchCompany .launchHeader h1{
+	font-size: 1rem;
+}
+@media(max-width: 600px){
+	.launchCompany .launchHeader h1{
+		font-size: 2.2rem !important;
+	}
+}
+.cart-button{
+	border: none;
+	outline: none;
+	padding: 0;
+	background-color: transparent;
+}
+.cart-button .cart-icon-wrapper{ 
+    color: #000;
+    border: 1px solid #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: .6rem 1rem !important;
+    font-weight: 600;
+    letter-spacing: .5px;
+	position: relative;
+}
+.cart-button .cart-icon-wrapper .cart-icon{
+	width: 2rem;
+	height: 2rem;
+	object-fit: contain;
+}
+.cart-button .cart-icon-wrapper .cart-badge{
+	position: absolute;
+	    top: -2px;
+	z-index: 99;
+	    font-size: .8rem;
+    position: absolute;
+    top: 0;
+    z-index: 99;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 1rem;
+    padding: .2rem;
+    border-radius: 4px;
+    color: #fff;
+    background: #000;
+	left: 35px;
+}
+.hideenqmodel #mkPayment{
+	background-color: #003b94 !important;
+	color: #fff !important;
 }
