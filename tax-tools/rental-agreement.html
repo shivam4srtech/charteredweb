@@ -953,6 +953,16 @@
                                         </div>
                                         <p class="error hidden">Please fill out this field.</p>
                                     </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="rentAddress" class="form-label">PAN<span>*</span></label>
+                                        <input class="form-control houseAdd" type="text" name="rentAddress" required="" placeholder="PAN">
+                                        <p class="error hidden">Please fill out this field.</p>
+                                    </div>
+                                    <div class="col-md-6 mb-4">
+                                        <label for="rentAddress" class="form-label">Aadhar No.<span>*</span></label>
+                                        <input class="form-control houseAdd" type="text" name="rentAddress" required="" placeholder="Aadhar No">
+                                        <p class="error hidden">Please fill out this field.</p>
+                                    </div>
                                 </div>
                               </div>
                               <!-- step 2 -->
@@ -1165,9 +1175,7 @@ between:
                             </p>
                              
                             <p class="rentalTxt mb-3">
-                                <strong>SHRI RUDRESH DUBEY,</strong> S/o. SURESH CHANDRA DUBEY aged 28 Years residing at Shiv Vihar,
-                                Colony, Behind HRI, near Malkhana Market, Ganga Deep Colony, Little Angel School, Jhusi,
-                                Prayagraj - 211019.
+                                <strong>{Land Owner},</strong>  {SO/ Do/ Wo} aged {DOB} residing at{Land Owner Address}
 
                             </p>
                             <p class="rentalTxt mb-3">
@@ -1180,9 +1188,7 @@ between:
                             </p>
 
                             <p class="rentalTxt mb-3">
-                                <strong>SHRIMATI VISLAVATH SWATHI,</strong> (PAN: NBOPS0449R)  Aadhaar No. 878724578295 aged <strong>25
-                                    years</strong>, D/o. VISLAVATH RAMULU, residing at H NO 00, WADANA, CHRUTHANDA, KOILKONDA,
-                                MANDAL, Ankila, Mahabub Nagar, Andhra Pradesh 509371.
+                                <strong>{Tenant Name},</strong> {PAN}  {Aadhar} aged <strong>{tenant's Age}</strong>, {Tenant's Father, Hasband} residing at {tenats's Address}
                             </p>
                             <p class="rentalTxt mb-3">
                                 Hereinafter called the TENANT which term shall mean and include all his heirs, legal
@@ -1190,7 +1196,7 @@ between:
                             </p>
                             <p class="rentalTxt mb-3">
                                 WHEREAS the LANDLORD is the sole absolute LANDLORD and possessor of the property bearing
-                                3-2/48, Bairagiguda Road, Gandipet, Peeramcheruvu, Rangareddy, Telangana 500091
+                                {Full Address of Property which has be to rented}
                             </p>
                         </div>    
                         <div class="receipt pg-2">
@@ -1200,24 +1206,24 @@ between:
                                 <ol>
                                     <li>
                                         <div>
-                                            That the Tenancy shall be initially for the period of <strong>11 months</strong> with effect from <strong>10-11-2024</strong> and
+                                            That the Tenancy shall be initially for the period of <strong>11 months</strong> with effect from <strong> {Rental Period Start Date}</strong> and
                                             may be renewed from time to time with mutual consent of both the LANDLORD and the TENANT.
                                         </div>
                                     </li>
                                     <li>
                                        <div>
                                         That the rent payable by the TENANT to the LANDLORD or his Authorized person, in respect of
-                                        the said premises, shall be <strong>Rs.8,000</strong> (Eight Thousand only) per month which shall be payable on or
-                                        before the <strong>10th</strong> of every succeeding month.
+                                        the said premises, shall be <strong>{Monthaly Rent}</strong> (Eight Thousand only) per month which shall be payable on or
+                                        before the <strong>{Monthly Rent Payment Cycle}</strong> of every succeeding month.
                                        </div>
                                     </li>
                                     <li>
                                         <div>
-                                            That the TENANT has paid a sum of <strong>Rs.16,000/</strong>- (Sixteen Thousand only) as interest-free rent
+                                            That the TENANT has paid a sum of <strong>{Deposited Amount}</strong>- (Sixteen Thousand only) as interest-free rent
                                             advance, the receipt of which is hereby acknowledged by the LANDLORD by these presents. This
                                             advance amount shall be returned to the TENANT by the LANDLORD at the time of vacating the
                                             said premises after adjusting the dues such as rent, water charges, maintenance charges, and
-                                            electricity dues, apart from the cost of damages if any. That tenant hereby agreed after completion of 11 months the rent will be increased by <strong>05%</strong>
+                                            electricity dues, apart from the cost of damages if any. That tenant hereby agreed after completion of 11 months the rent will be increased by <strong>{Increment of Monthly Rent after one Year}</strong>
                                         </div>
                                     </li>
                                     <li>
@@ -1244,9 +1250,9 @@ between:
                                     </li>
                                     <li>
                                         <div>
-                                            The TENANT has agreed to give two months notice before vacating the scheduled premises. In
-                                            case of shorter notice, the TENANT has agreed to pay two months rent to the LANDLORD. The
-                                            LANDLORD has agreed to give <strong>two months</strong> notice to the TENANT, which period does not consider
+                                            The TENANT has agreed to give {Termination Notice Period} notice before vacating the scheduled premises. In
+                                            case of shorter notice, the TENANT has agreed to pay {Termination Notice Period} rent to the LANDLORD. The
+                                            LANDLORD has agreed to give <strong>{Termination Notice Period}</strong> notice to the TENANT, which period does not consider
                                             the minimum stay period clause.
                                         </div>
                                     </li>
@@ -1279,7 +1285,7 @@ between:
                                 </ol>
                                  <h3>SCHEDULED PREMISES</h3>
                                 <p class="rentalTxt">
-                                    3-2/48, Bairagiguda Road, Gandipet, Peeramcheruvu, Rangareddy, Telangana 500091
+                                    {Full Address of Property}
                                 </p>
                             </div>
                         </div>
