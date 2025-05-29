@@ -1,0 +1,282 @@
+.tradeinsight{
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+.container{
+    max-width: 1000px;
+    
+}
+body{
+    background-color: #f9f9f9;
+}
+.insightHeadr{
+    background-color: #fff3cd;
+    padding: 2rem .8rem;
+    color: #664d03;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.insightHeadr .tradeName{
+    font-weight: 600;
+    font-size: 2rem;
+    position: relative;
+    margin-bottom: .8rem;
+}
+.insightHeadr .tradeName sup{
+    position: absolute;
+    font-size: .9rem;
+    width: 2rem;
+    height: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: .2rem;
+    color: #000;
+    background-color: #f5b402;
+}
+.insightHeadr .ownerName{
+   font-weight: 500;
+   font-size: 1rem;
+}
+/* card */
+ .tradeinsight .tradeCard {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      padding: 30px;
+      transition: transform 0.3s ease;
+      margin: 2rem auto;
+    }
+
+    .tradeinsight .tradeCard:hover {
+      transform: translateY(-4px);
+    }
+
+    .tradeCard .section {
+      margin-bottom: 28px;
+    }
+
+    .tradeinsight .section:last-child {
+      margin-bottom: 0;
+    }
+
+    .tradeinsight .label {
+      font-size: 0.85rem;
+      color: #64748b;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+      letter-spacing: 0.6px;
+    }
+
+    .tradeinsight .value {
+       font-size: 1.1rem;
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    .tradeinsight .highlight {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    .tradeinsight .address {
+      font-weight: 500;
+      color: #475569;
+      font-size: 0.96rem;
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+
+    .tradeinsight .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: white;
+      background-color: #f5b402;
+      border-radius: 999px;
+      margin-top: 5px;
+    }
+
+    .tradeinsight .icon-label {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: .5rem;
+    }
+
+    .tradeinsight .icon-label svg {
+      width: 18px;
+      height: 18px;
+      stroke: #3b82f6;
+    }
+   .tradeinsight .icon-label span{
+      display: block;
+    }
+    .tradeinsight .icon-label .icon{
+      font-size: 2rem
+    }
+    .tradeinsight .desc{
+        font-weight: 500;
+        margin: 1rem auto;
+    }
+     .doc-card {
+      background: #ffffff;
+      padding: 28px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+      margin-bottom: 1rem;
+    }
+
+    .doc-card h2 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 20px;
+    }
+
+    .doc-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      border-bottom: 1px solid #e2e8f0;
+      transition: background 0.2s;
+    }
+
+    .doc-row:last-child {
+      border-bottom: none;
+    }
+
+    .doc-row:hover {
+      background-color: #f1f5f9;
+    }
+
+    .doc-info {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #334155;
+      font-weight: 500;
+    }
+
+    .doc-index {
+      width: 24px;
+      font-weight: 600;
+      color: #475569;
+    }
+
+    .doc-name {
+      font-size: 1rem;
+    }
+
+    .doc-date {
+      font-size: 0.95rem;
+      color: #64748b;
+      font-weight: 500;
+    }
+    .tradeinsight .desc p{
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+@media(max-width:600px){
+    .doc-card {
+        padding: 10px;
+    }
+    .tradeinsight .tradeCard {
+        padding: 10px;
+    }
+}
+   /* FAQs */
+.faqs{
+  padding-bottom: 3rem;
+}
+.faqs h2 {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+   margin-left: 0;
+}
+.faqs .container{
+max-width: 1200px;
+}
+ .about-giftcard-section {
+      margin: 60px auto;
+      padding: 30px 20px;
+      background-color: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+    }
+
+    .faqs .section-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #1f2937;
+    }
+
+    .faqs .intro-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #4b5563;
+    }
+
+    .faqs .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .faqs .feature-item {
+      padding: 15px 20px;
+      background-color: #f3f4f6;
+      border-left: 4px solid #f5b402;
+      border-radius: 4px;
+    }
+
+    .faqs .feature-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #111827;
+    }
+
+    .faqs .feature-description {
+      font-size: 0.95rem;
+      color: #374151;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+   @media(max-width: 991px){
+    .faqs .row{
+      flex-direction: column-reverse;
+    }
+    .faqs .imgBox img{
+      display: block;
+      margin: auto;
+      height: 300px;
+    }
+    .faqs .feature-list .feature-item{
+          margin-top: -2rem;
+    }
+   }
+.container{
+    max-width: 1200px;
+}
+    .faqs .feature-description ul {
+     padding-left: 30px;
+    }
+    
+    .faqs .feature-description ul li{
+     list-style-type: disc;
+     margin-bottom: .5rem;
+    }
