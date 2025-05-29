@@ -1,0 +1,40 @@
+ .pricing-card {
+      border: 2px solid #e0e0e0;
+      border-radius: 15px;
+      padding: 2rem;
+      transition: transform 0.3s;
+      background-color: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+    .pricing-card:hover {
+      transform: translateY(-5px);
+    }
+    .most-popular {
+      border: 2px solid #805ad5;
+      position: relative;
+    }
+    .most-popular::before {
+      content: "MOST POPULAR";
+      position: absolute;
+      top: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #805ad5;
+      color: #fff;
+      padding: 0.25rem 1rem;
+      font-size: 0.8rem;
+      border-radius: 1rem;
+    }
+    .btn-custom {
+      border-radius: 30px;
+      padding: 0.5rem 1.5rem;
+      font-weight: bold;
+    }
+    .plan-single { border-color: #7f9cf5; }
+    .plan-premium { border-color: #805ad5; }
+    .plan-business { border-color: #68d391; }
+    .plan-cloud { border-color: #f6ad55; }
+
+    .pricingPanel{
+        padding: 6rem 0;
+    }
