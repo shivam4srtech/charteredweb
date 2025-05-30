@@ -8,7 +8,7 @@
     flex-wrap: wrap;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     padding: 1rem .5rem;
-    background-color: #caf6de;
+    background-color: #fff1dc;
 }
 .completePayment .userInfo span{
        font-weight: 600;
@@ -129,12 +129,12 @@
 .otherValues .valueItem{
     margin-bottom: .5rem;
 }
-.otherValues.topRoc .valueItem p{
+
+
+.valueItem p{
  min-width: 200px;
 }
-.otherValues.topRoc{
-margin-bottom: .8rem;
-}
+
 .otherValues.topRoc .valueItem{
  justify-content: left;
  margin-bottom: .8rem;
@@ -143,6 +143,7 @@ margin-bottom: .8rem;
     border: 1px solid #ccc;
     max-width: 450px;
     padding: .5rem;
+    padding-top: 0;
 }
 .dtlHead{
     font-weight: 600;
@@ -189,4 +190,11 @@ margin-bottom: .8rem;
 .otherValues .valueItem p .form-control:focus{
     border: 1px solid #ccc;
     padding: .1rem .2rem;
+}
+.otherValues .valueItem p:nth-of-type(1) {
+    color: #000;
+}
+.calcResultAll .accordion-button::after{
+    position: absolute;
+    right: -40px;
 }

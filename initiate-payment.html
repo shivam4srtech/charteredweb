@@ -846,13 +846,13 @@
                     
                     <h1>Hello, MS Dhoni
                     </h1>
-                    <p class="wlmsg">Welcome to charteredone.com</p>
+                    <p class="wlmsg">Welcome to charteredone.com, input required detailes to get complete price view.</p>
                     <div class="userInfo">
                         <div class="dataLabel">
                             <span>Email: </span> <small>msd@gmail.com</small>
                         </div>
                         <div class="dataLabel">
-                            <span>Mobile No.: </span> <small>XXXXXXXX82</small>
+                            <span>Mobile No: </span> <small>XXXXXXXX82</small>
                         </div>
                         <div class="dataLabel">
                             <span>State: </span> <small>Telagana</small>
@@ -866,6 +866,7 @@
                     <div class="calcArea">
                         <div class="row">
                             <div class="col-md-12 calcBox mb-2">
+                                <label for="" class="form-label">Company Type</label>
                                 <select class="form-select" aria-label="Default select example" id="entityType">
                                     <option value="Private Company">Private Company</option>
                                     <option value="LLP">LLP</option>
@@ -878,12 +879,22 @@
                                     <option value="1">Company having share capital</option>
                                     <option value="2">Company not havingshare capital</option>
                                 </select>
+                            </div>
+                            <div class="col-md-12 calcBox mb-2">
+                                <label for="" class="form-label">Share Capital Amount</label>
+                                <input type="number" class="form-control" placeholder="eg. 1000000">
+                            </div>
+                            <div class="col-md-12 calcBox mb-2">
+                                <label for="" class="form-label">No. of Director</label>
+                                <input type="number" class="form-control" placeholder="eg. 2">
+                            </div>
+                            <div class="col-md-12 calcBox mb-2 sharstatus">
                                 <div class="dtlHead col-md-12 calcBox mt-4">
                                     Billing Address
                                 </div>
                             </div>
                             <div class="col-md-6 calcBox mb-2">
-                                <label for="" class="form-label dir">Room No. / Street</label>
+                                <label for="" class="form-label dir">House No. / Street</label>
                                 <input type="text" class="form-control text-right " id="" name="" placeholder="eg. 02 nirmal bhavan station  road">
                             </div>
                             <div class="col-md-6 calcBox mb-2">
@@ -906,37 +917,17 @@
                                 <input type="number" class="form-control text-right " id="" name="">
                             </div>
                             
-                            <div class="calcAll">
+                            <!-- <div class="calcAll">
                                 <button class="btn calculateStampDuty">Proceed to Pay</button>
-                            </div>
+                            </div> -->
                         </div>
                         
                        
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="paymentHeader">
-                        Product Summary
-                    </div>
-                    <div class="borderRadius">
-                        <div class="otherValues rocfees topRoc">
-                            <div class="valueItem">
-                                <p>Company Type</p>
-                                <p>Private</p>
-                            </div>
-                            <div class="valueItem">
-                                <p>Share Capital Status</p>
-                                <p>Company having share capital</p>
-                            </div>
-                            <div class="valueItem">
-                                <p>No. Of Directors <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/></svg></p>
-                                <p><input type="number" class="form-control" value="2"></p>
-                            </div>
-                             <div class="valueItem">
-                                <p>Share Capital <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M362.7 19.3L314.3 67.7 444.3 197.7l48.4-48.4c25-25 25-65.5 0-90.5L453.3 19.3c-25-25-65.5-25-90.5 0zm-71 71L58.6 323.5c-10.4 10.4-18 23.3-22.2 37.4L1 481.2C-1.5 489.7 .8 498.8 7 505s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2L421.7 220.3 291.7 90.3z"/></svg></p>
-                                <p><input type="number" class="form-control" value="1000000"></p>
-                            </div>
-                        </div>    
+                   
+                    <div class="borderRadius">   
                         <div class="dtlHead">
                             Price Detail
                         </div>

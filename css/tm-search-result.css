@@ -1,0 +1,250 @@
+/* serach box */
+  .tradeinsight{
+    padding-top: 6rem;
+  }
+  .recommendations{
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 1000;
+  border-radius: 10px;
+  margin: auto;
+  max-width: 100%;
+  width: 700px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.recommendation{
+    padding: 16px 12px;
+    cursor: pointer;
+    font-weight: 400;
+    color: #2e2e2e;
+    border-bottom: 1px solid #e2e2e2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: .95rem;
+}
+.recommendation:hover{
+   background-color: #f5b4022e;
+}
+.recommendations .recommendation:last-child{
+    border-bottom: none;
+}
+.searchBox{
+    position: relative
+}
+.recommendation svg{
+  width: 16px;
+  height: 16px;
+  display: none;
+}
+.recommendation span {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+.recommendation .active{
+    color: #75ba75;
+    font-size: .75rem;
+    display: inline-flex;
+    align-items: center;
+}
+.recommendation  .badges{
+   height: .4rem;
+   width: .4rem;
+   border-radius: 50%;
+   background-color: #27be69;
+   margin-left: .4rem;
+   margin-right: .4rem;
+}
+.recommendation:hover svg{
+    display: inline-block;
+}
+@media (max-width:600px){
+    .searchSection .logo{
+       display: none;
+     }
+}
+.searchSection .logo img{
+    object-fit: contain;
+    width: 440px;
+    height: 80px;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+.searchSection .logo{
+   margin-bottom: .5rem;
+}
+.searchSection .container{
+   max-width: 1200px;
+   text-align: center;
+ }
+.searchSection {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+.searchSection form{
+    max-width: 100%;
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    height: 60px;
+    padding: 24px 20px;
+    border-radius: 88px;
+    border: 1px solid #f5b402;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0px 0px 0px 6px #f4ebff, 0px 1px 2px 0px rgba(16, 24, 40, .0509803922);
+    margin: 20px 0;
+    background-color: #fff;
+    margin: auto;
+}
+.searchSection form .form-control{
+   box-shadow: none;
+   padding: 0;
+   font-size: 1rem;
+   height: 2.2rem;
+   border: none;
+}
+.searchSection form .form-control::placeholder{
+  color: #999;
+ }
+ .searchSection form button{
+   background-color: transparent;
+   border: none;
+   outline: none;
+ }
+ .searchSection p{
+   color: #6c6a71;
+   font-weight: 500;
+   margin-bottom: 2rem;
+   font-size: 1rem;
+   line-height: 1.4;
+ }
+  @media(max-width: 560px){
+  .searchSection form{
+    height: 40px;
+  }
+    .searchSection form button img{
+    width: 20px;
+  }
+  .mobilePadding{
+    padding: 0;
+  }
+}
+@media(max-width: 720px){
+  .searchSection form{
+    width: 500px;
+  }
+}
+@media(max-width: 500px){
+  .searchSection form{
+    width: 300px;
+  }
+}
+  /* FAQs */
+.faqs{
+  padding-bottom: 3rem;
+}
+.faqs h2 {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+   margin-left: 0;
+}
+.faqs .container{
+max-width: 1200px;
+}
+ .about-giftcard-section {
+      margin: 60px auto;
+      padding: 30px 20px;
+      background-color: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 8px;
+    }
+
+    .faqs .section-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #1f2937;
+    }
+
+    .faqs .intro-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      color: #4b5563;
+    }
+
+    .faqs .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .faqs .feature-item {
+      padding: 15px 20px;
+      background-color: #f3f4f6;
+      border-left: 4px solid #f5b402;
+      border-radius: 4px;
+    }
+
+    .faqs .feature-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #111827;
+    }
+
+    .faqs .feature-description {
+      font-size: 0.95rem;
+      color: #374151;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+   @media(max-width: 991px){
+    .faqs .row{
+      flex-direction: column-reverse;
+    }
+    .faqs .imgBox img{
+      display: block;
+      margin: auto;
+      height: 300px;
+    }
+    .faqs .feature-list {
+      padding-inline: 10px;
+    }
+    .faqs h2{
+      padding-left: 20px;
+    }
+   
+   }
+.container{
+    max-width: 1200px;
+}
+    .faqs .feature-description ul {
+     padding-left: 30px;
+    }
+    
+    .faqs .feature-description ul li{
+     list-style-type: disc;
+     margin-bottom: .5rem;
+    }
