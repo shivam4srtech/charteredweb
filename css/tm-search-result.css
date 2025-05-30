@@ -95,6 +95,7 @@
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   margin-bottom: 2rem;
 }
 .searchSection form{
     max-width: 100%;
@@ -238,7 +239,7 @@ max-width: 1200px;
    
    }
 .container{
-    max-width: 1200px;
+    max-width: 1000px;
 }
     .faqs .feature-description ul {
      padding-left: 30px;
@@ -248,3 +249,243 @@ max-width: 1200px;
      list-style-type: disc;
      margin-bottom: .5rem;
     }
+/* tm search */
+.searchTerm{
+    font-weight: 600;
+    color: #000;
+    font-size: 1.75rem;
+    margin-bottom: .5rem;
+  }
+  .matchCount{
+    color: rgba(33, 37, 41, 0.75);
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+  }
+  .listState{
+    margin-top: 1rem;
+  }
+  .listState p{
+    font-weight: 600;
+    color: #000;
+  }
+  .listState .listBtns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+  .listState .listBtns button{
+   display: inline-flex;
+   align-items: center;
+   border: 1.5px solid #f5b402;
+   background-color: transparent;
+   font-size: .85rem;
+   font-weight: 500;
+   padding: .4rem .85rem;
+   border-radius: 4px;
+   color: #f5b402;
+  }
+  .listState .listBtns button.active{
+   background-color: #f5b402;
+   color: #000;
+   }
+  .listState .listBtns button:hover{
+    background-color: #f5b402;
+    color: #000;
+   }
+ 
+   .listCompanies .cins button{
+    font-weight: 500;
+    color: #000;
+    background-color: #f8f9fb;
+    margin-right: .5rem;
+    padding: .4rem;
+    font-size: .85rem;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+   }
+   .listCompanies .cins{
+   margin-bottom: 1rem;
+   }
+   .listCompanies .cins button:hover{
+   background-color: #f5b40212;
+   }
+   .listCompanies .badgesList span{
+    font-size: .7rem;
+    padding: .2rem;
+    display: inline-flex;
+    border-radius: 2px;
+    margin-right: .2rem;
+    font-weight: 500;
+    border: 1px solid #5b534e;
+   }
+   .listCompanies .badgesList span:hover{
+    background-color: #cecccb;
+    cursor: pointer;
+   }
+   .listCompanies .badgesList span.active{
+    background-color: transparent;
+    color: #198754;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px solid #198754;
+   }
+   .listCompanies .badgesList span.active:hover{
+    background-color: transparent
+   }
+   .listCompanies .badgesList span.NotActive{
+    background-color: transparent;
+    color: #ff0000;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+   }
+   .listCompanies .badgesList span.NotActive:hover{
+    background-color: transparent
+   }
+   .listCompanies .companyInfo .cLogo{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 3rem;
+    border-radius: 4px;
+    background-color: #f5b4020f;
+   }
+   .listCompanies .companyInfo .cLogo svg{
+    width: 1.8rem;
+    height: 1.8rem;
+   }
+   .listCompanies .companyInfo .cLogo img{
+   object-fit: contain;
+   }
+   .listCompanies .companyInfo .cName{
+   margin-bottom: .5rem;
+   }
+   .listCompanies .companyInfo .cName a{
+    color: #f5b402;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+   }
+   .listCompanies .companyInfo .cName a:hover{
+   text-decoration: underline;
+   }
+   .listCompanies .companyInfo .badgesList{
+    margin-bottom: 1rem;
+    gap: 10px;
+  }
+   .listCompanies .dName{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  .listCompanies .dName span{
+    font-weight: 500;
+    color: rgba(33, 37, 41, 0.75);
+    font-size: 1.25rem; 
+    line-height: 1.4;
+  }
+  .listCompanies .address{
+    font-weight: 500;
+    color: #212529;
+    font-size: .95rem; 
+    line-height: 1.6rem;
+  }
+  .badgesList{
+   display: flex;
+   align-items: center;
+  }
+  .badgesList .activeDot{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50% !important;
+    border: none;
+    background-color: #198754;
+    margin-right: .25rem;
+  }
+  .badgesList .notActiveDot{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50% !important;
+    border: none;
+    background-color: #ff0000;
+    margin-right: .25rem;
+  }
+  .badgesList .publicationDate{
+    background-color: #000;
+    color: #fff;
+  }
+  .designImg{
+    width: 8rem;
+  }
+  .designImg img{
+    object-fit: contain;
+  }
+  .companyInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.insightBox {
+    box-shadow: 0px 2px 20px 2px rgba(97, 61, 193, .0392156863);
+    padding: 30px;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 24px;
+    margin-bottom: 2.4rem;
+}
+.insightBox p {
+    color: #000;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+body{
+  background-color: #f9f9f9;
+}
+.trademarkStatus{
+  padding: .5rem;
+  background-color: #fff3cd;
+  border: 1px solid #ffe69c;
+  color: #664d03;
+  font-weight: 500;
+  border-radius: 4px;
+}
+.listCompanies .companyInfo .cName span {
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.5;
+}
+@media(max-width:600px){
+    .listCompanies .companyInfo .cName span {
+    line-height: 1.4;
+    font-size: 1.2rem;
+  }
+   .listCompanies .companyInfo .cName a{
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+  .listCompanies .dName span {
+    font-size: 1rem;
+}
+.insightBox {
+    padding: 15px 10px;
+}
+.searchTerm{
+  font-size: 1.4rem;
+}
+.matchCount {
+    font-size: 1rem;
+}
+
+}
