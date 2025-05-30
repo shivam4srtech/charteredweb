@@ -198,3 +198,6 @@
     position: absolute;
     right: -40px;
 }
+.calcArea .calcResultAll p:nth-of-type(2){
+    text-align: right;
+}
