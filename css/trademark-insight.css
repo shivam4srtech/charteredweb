@@ -13,8 +13,9 @@ body{
     background-color: #fff3cd;
     padding: 2rem .8rem;
     color: #664d03;
-    border-radius: 4px;
+    border-radius: 0;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
 }
 .insightHeadr .tradeName{
     font-weight: 600;
@@ -41,16 +42,9 @@ body{
 }
 /* card */
  .tradeinsight .tradeCard {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-      padding: 30px;
-      transition: transform 0.3s ease;
-      margin: 2rem auto;
-    }
-
-    .tradeinsight .tradeCard:hover {
-      transform: translateY(-4px);
+      background: #fff;
+      border-radius: 0;
+      padding: 15px;
     }
 
     .tradeCard .section {
@@ -127,10 +121,8 @@ body{
     }
      .doc-card {
       background: #ffffff;
-      padding: 28px;
-      border-radius: 16px;
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
-      margin-bottom: 1rem;
+      padding: 15px;
+      border-radius: 0;
     }
 
     .doc-card h2 {
@@ -197,96 +189,6 @@ body{
        margin-bottom: 1rem !important;
     }
 }
-   /* FAQs */
-.faqs{
-  padding-bottom: 3rem;
-}
-.faqs h2 {
-    color: #000;
-    font-weight: 600;
-    font-size: 1.4rem;
-    margin-bottom: 1rem;
-   margin-left: 0;
-}
-.faqs .container{
-max-width: 1200px;
-}
- .about-giftcard-section {
-      margin: 60px auto;
-      padding: 30px 20px;
-      background-color: #ffffff;
-      border: 1px solid #e5e7eb;
-      border-radius: 8px;
-    }
-
-    .faqs .section-title {
-      font-size: 1.8rem;
-      font-weight: 600;
-      margin-bottom: 20px;
-      color: #1f2937;
-    }
-
-    .faqs .intro-text {
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 30px;
-      color: #4b5563;
-    }
-
-    .faqs .feature-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .faqs .feature-item {
-      padding: 15px 20px;
-      background-color: #f3f4f6;
-      border-left: 4px solid #f5b402;
-      border-radius: 4px;
-    }
-
-    .faqs .feature-title {
-      font-size: 1.05rem;
-      font-weight: 600;
-      margin-bottom: 6px;
-      color: #111827;
-    }
-
-    .faqs .feature-description {
-      font-size: 0.95rem;
-      color: #374151;
-      font-weight: 500;
-      margin-bottom: 1rem;
-    }
-   @media(max-width: 991px){
-    .faqs .row{
-      flex-direction: column-reverse;
-    }
-    .faqs .imgBox img{
-      display: block;
-      margin: auto;
-      height: 300px;
-    }
-    .faqs .feature-list {
-      padding-inline: 10px;
-    }
-    .faqs h2{
-      padding-left: 20px;
-    }
-   
-   }
-.container{
-    max-width: 1200px;
-}
-    .faqs .feature-description ul {
-     padding-left: 30px;
-    }
-    
-    .faqs .feature-description ul li{
-     list-style-type: disc;
-     margin-bottom: .5rem;
-    }
 
     /* ----- */
  @media(max-width: 560px){
@@ -453,4 +355,101 @@ max-width: 1200px;
   .searchSection form{
     width: 300px;
   }
+}
+.row{
+  width: 100%;
+  margin: auto;
+}
+.tradeinsight .border_bottom{
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+.border_bottom .col:nth-of-type(1){
+  padding-left: 0;
+}
+  .icon-label div{
+  font-size: 1rem;
+  color: #475569;
+  font-weight: 500;
+}
+@media(max-width:600px){
+  .border_bottom .col{
+    padding: 0;
+  }
+  .icon-label div{
+  font-size: .9rem;
+}
+.doc-card h2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+.doc-name{
+  font-size: .8rem;
+}
+.doc-date{
+  font-size: .8rem;
+}
+}
+/* faqs */
+.faqs .container{
+  max-width: 1000px;
+}
+.faqs{
+  padding-top: 2rem;
+}
+.faqs .accordion {
+    margin: 0;
+}
+.faqs .sectionPara {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+.faqs h2 {
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+/* popular seraches */
+.popularSearches{
+  background-color: #fff;
+}
+.popularSearches h2{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: #071437;
+}
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border-radius: .25rem;
+    padding: .5rem .5rem;
+    border: 1px solid #fff0;
+    font-weight: 500;
+    font-size: .6875rem;
+    padding: .3125rem .375rem;
+    color: #4B5675;
+    border-color: #fff0;
+    background-color: #f5b40219;
+}
+.link {
+    font-weight: 600;
+    color: #000;
+}
+.card-header {
+    display: flex;
+    min-height: 56px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #F1F1F4;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: transparent;
+}    
+.listLinks{
+    gap: 10px;
 }

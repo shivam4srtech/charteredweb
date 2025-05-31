@@ -361,3 +361,66 @@ max-width: 1200px;
         padding: 0;
       }
     }
+/* faqs */
+.faqs .container{
+  max-width: 1000px;
+}
+.faqs{
+  padding-top: 2rem;
+}
+.faqs .accordion {
+    margin: 0;
+}
+.faqs .sectionPara {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 1rem;
+}
+.faqs h2 {
+    margin-bottom: 1rem;
+    margin-left: 0;
+}
+/* popular seraches */
+.popularSearches{
+  background-color: #fff;
+}
+.popularSearches h2{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: #071437;
+}
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    border-radius: .25rem;
+    padding: .5rem .5rem;
+    border: 1px solid #fff0;
+    font-weight: 500;
+    font-size: .6875rem;
+    padding: .3125rem .375rem;
+    color: #4B5675;
+    border-color: #fff0;
+    background-color: #f5b40219;
+}
+.link {
+    font-weight: 600;
+    color: #000;
+}
+.card-header {
+    display: flex;
+    min-height: 56px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #F1F1F4;
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: transparent;
+}    
+.listLinks{
+    gap: 10px;
+}

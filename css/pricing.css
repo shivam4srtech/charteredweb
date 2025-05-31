@@ -38,3 +38,34 @@
     .pricingPanel{
         padding: 6rem 0;
     }
+    .priceTitle{
+      font-weight: 500;
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 1rem;
+    }
+      .priceTitle img{
+      max-width: 40px;
+    }
+     .planPrice {
+     margin-bottom: 1rem;
+    }
+    .planPrice span{
+      font-weight: 600;
+      font-size: 2rem;
+    }
+     .planPrice small{
+      font-weight: 600;
+      font-size: 1rem;
+      color: #6c6a71;
+    }
+    .choosePlan{
+      border-radius: 8px;
+      padding: .5rem 1rem;
+      font-weight: 500;
+      border: 1px solid red;
+      display: inline-block;
+    }
