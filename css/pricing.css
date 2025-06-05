@@ -145,6 +145,7 @@
     .pageHeader h1{
      font-weight: 600;
      font-size: 2rem;
+     line-height: 1.4;
     }
     .gradient-text {
   background: linear-gradient(90deg, #7b2ff7, #f107a3);
@@ -162,4 +163,9 @@
      margin-bottom: .5rem;
      font-weight: 500;
      font-size: .85rem;
+}
+@media(max-width:600px){
+  .pageHeader h1{
+    font-size: 1.6rem;
+  }
 }
