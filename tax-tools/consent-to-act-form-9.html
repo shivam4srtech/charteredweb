@@ -894,15 +894,9 @@
                     <div class="multiStepsBox">
                         <div class="tab-container">
                             <span class="tab" onclick="goToStep(0)">
-                                <small>Land Owner Details</small>
+                                <small>Company Info</small>
                             </span>
-                            <span class="tab" onclick="goToStep(1)">
-                                <small>Tenant Details</small>
-                            </span>
-                            <span class="tab" onclick="goToStep(2)">
-                                
-                                <small>Property Details</small>
-                            </span>
+                       
                             <span class="tab" onclick="goToStep(3)">
                                 <small>Generate Agreement</small>
                             </span>
@@ -914,158 +908,54 @@
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12 col-xs-12 text-center">
                                         <div class="badge">1</div>
-                                        <h2 class="stepHeading">Land Owner Details</h2>
+                                        <h2 class="stepHeading">Company Info</h2>
                                         <div class="hr"></div>
                                     </div>
+                                    
                                     <div class="col-md-6 mb-4">
-                                        <label for="monthalyRent" class="form-label">Land Owner Name<span>*</span></label>
-                                        <div class="d-flex">
-                                            <select id="period" class="form-control houseNo" name="period" required="" style="width: 56px;">
-                                                <option value="">Mr.</option>
-                                                <option value="1">Mrs.</option>
-                                            </select>
-                                            <input class="form-control houseAdd" type="text" name="rentAddress" required="" placeholder="Land Owner">
-                                        </div>
+                                        <label for="rentAddress" class="form-label">Company Name<span>*</span></label>
+                                        <input class="form-control houseAdd" type="text" name="rentAddress" required="" placeholder="don't include LLP">
                                         <p class="error hidden">Please fill out this field.</p>
                                     </div>
                                     <div class="col-md-6 mb-4">
-                                        <label for="rentAddress" class="form-label">S/O , D/O, W/O<span>*</span></label>
-                                        <div class="d-flex">
-                                            <select id="period" class="form-control houseNo" name="period" required="" style="width: 60px;">
-                                                <option value="">S/O</option>
-                                                <option value="1">D/O</option>
-                                                <option value="2">W/O</option>
-                                            </select>
-                                            <input class="form-control houseAdd" type="text" name="rentAddress" required="" placeholder="Full Name">
-                                        </div>
+                                        <label for="rentAddress" class="form-label">DIN<span>*</span></label>
+                                        <input class="form-control houseAdd" type="text" name="rentAddress" required="" placeholder="">
                                         <p class="error hidden">Please fill out this field.</p>
                                     </div>
                                     <div class="col-md-6 mb-4">
-                                        <label for="rentAddress" class="form-label">Owner DOB<span>*</span></label>
-                                        <input class="form-control houseAdd" type="date" name="rentAddress" required="" placeholder="Full Name">
+                                        <label for="rentAddress" class="form-label">Father / Husband's Name<span>*</span></label>
+                                        <input class="form-control houseAdd" type="text" name="rentAddress" required="" placeholder="">
                                         <p class="error hidden">Please fill out this field.</p>
                                     </div>
                                     <div class="col-md-6 mb-4">
-                                        <label for="monthalyRent" class="form-label">Land Owner Address<span>*</span></label>
-                                        <div class="d-flex">
-                                            <input class="form-control houseNo" type="text" name="rentAddress" required="" placeholder="House No" style="width: 90px;">
-                                            <input class="form-control houseAdd" type="text" name="rentAddress" required="" placeholder="Full Address">
-                                        </div>
-                                        <p class="error hidden">Please fill out this field.</p>
-                                    </div>
-                                </div>
-                              </div>
-                              <!-- step 2 -->
-                              <div class="step">
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                                        <div class="badge">1</div>
-                                        <h2 class="stepHeading">Tenant  Details</h2>
-                                        <div class="hr"></div>
-                                    </div>
-                                    <div class="col-md-6 mb-4">
-                                        <label for="monthalyRent" class="form-label">Tenant  Name<span>*</span></label>
-                                        <div class="d-flex">
-                                            <select id="period" class="form-control houseNo" name="period" required="" style="width: 56px;">
-                                                <option value="">Mr.</option>
-                                                <option value="1">Mrs.</option>
-                                            </select>
-                                            <input class="form-control houseAdd" type="text" name="rentAddress" required="" placeholder="Land Owner">
-                                        </div>
+                                        <label for="rentAddress" class="form-label">Present Residential Address:<span>*</span></label>
+                                        <input class="form-control houseAdd" type="text" name="rentAddress" required="" placeholder="">
                                         <p class="error hidden">Please fill out this field.</p>
                                     </div>
                                     <div class="col-md-6 mb-4">
-                                        <label for="rentAddress" class="form-label">S/O , D/O, W/O<span>*</span></label>
-                                        <div class="d-flex">
-                                            <select id="period" class="form-control houseNo" name="period" required="" style="width: 60px;">
-                                                <option value="">S/O</option>
-                                                <option value="1">D/O</option>
-                                                <option value="2">W/O</option>
-                                            </select>
-                                            <input class="form-control houseAdd" type="text" name="rentAddress" required="" placeholder="Full Name">
-                                        </div>
+                                        <label for="rentAddress" class="form-label">E-mail Id:<span>*</span></label>
+                                        <input class="form-control houseAdd" type="email" name="rentAddress" required="" placeholder="">
                                         <p class="error hidden">Please fill out this field.</p>
                                     </div>
                                     <div class="col-md-6 mb-4">
-                                        <label for="rentAddress" class="form-label">Tenant  DOB<span>*</span></label>
-                                        <input class="form-control houseAdd" type="date" name="rentAddress" required="" placeholder="Full Name">
+                                        <label for="rentAddress" class="form-label">Contact Number<span>*</span></label>
+                                        <input class="form-control houseAdd" type="number" name="rentAddress" required="" placeholder="">
                                         <p class="error hidden">Please fill out this field.</p>
                                     </div>
                                     <div class="col-md-6 mb-4">
-                                        <label for="monthalyRent" class="form-label">Tenant  Address<span>*</span></label>
-                                        <div class="d-flex">
-                                            <input class="form-control houseNo" type="text" name="rentAddress" required="" placeholder="House No" style="width: 90px;">
-                                            <input class="form-control houseAdd" type="text" name="rentAddress" required="" placeholder="Full Address">
-                                        </div>
-                                        <p class="error hidden">Please fill out this field.</p>
-                                    </div>
-                                </div>
-                              </div>
-                        
-                              <!-- Step 3 -->
-                              <div class="step">
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-                                        <div class="badge">3</div>
-                                        <h2 class="stepHeading">Property Information</h2>
-                                        <div class="hr"></div>
-                                    </div>
-                                    <div class="col-md-6 mb-4">
-                                        <label for="yourName" class="form-label">Full Address of Property<span>*</span></label>
-                                        <input class="form-control" type="text"  name="yourName" required>
+                                        <label for="rentAddress" class="form-label">PAN<span>*</span></label>
+                                        <input class="form-control houseAdd" type="text" name="rentAddress" required="" placeholder="">
                                         <p class="error hidden">Please fill out this field.</p>
                                     </div>
                                     <div class="col-md-6 mb-4">
-                                        <label for="landLordName" class="form-label">Monthaly Rent<span>*</span></label>
-                                        <input class="form-control" type="number"  name="landLordName" placeholder="2000" required>
-                                        <p class="error hidden">Please fill out this field.</p>
-                                    </div>
-                                    <div class="col-md-6 mb-4">
-                                        <label for="landLordPan" class="form-label">Property Type <span>*</span></label>
-                                        <select id="period" class="form-control" name="period" required="">
-                                            <option value="">Residential</option>
-                                            <option value="1">Commercial</option>
-                                            <option value="2">Industrial</option>
-                                        </select>
-                                        <p class="error hidden">Please fill out this field.</p>
-                                    </div>
-                                    <div class="col-md-6 mb-4">
-                                        <label for="landLordName" class="form-label">Deposited Amount<span>*</span></label>
-                                        <input class="form-control" type="number"  name="landLordName" placeholder="Eg. 20000" required>
-                                        <p class="error hidden">Please fill out this field.</p>
-                                    </div>
-                                    <div class="col-md-12 mb-4">
-                                        <label for="phone" class="form-label">Rental Period<span>*</span></label>
-                                        <div class="row" style="width: 100%;">
-                                            <div class="col-md-6 mb-2">
-                                                <label for="startDate" class="form-label">Start Date</label>
-                                                <input type="date" class="form-control" name="startDate" required="">
-                                            </div>
-                                            <div class="col-md-6 mb-2">
-                                                <label for="endDate" class="form-label">End Date</label>
-                                                <input type="date" class="form-control" name="endDate" required="">
-                                            </div>
-                                            <p class="error hidden">Please fill out this field.</p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mb-4">
-                                        <label for="landLordName" class="form-label">Increment of Monthly Rent after one Year<span>*</span></label>
-                                        <input class="form-control" type="number"  name="landLordName" placeholder="Eg. 5%" required>
-                                        <p class="error hidden">Please fill out this field.</p>
-                                    </div>
-                                    <div class="col-md-6 mb-4">
-                                        <label for="landLordName" class="form-label">Monthly Rent Payment Cycle<span>*</span></label>
-                                        <input class="form-control" type="number"  name="landLordName" placeholder="Eg. 10th of every month" required>
-                                        <p class="error hidden">Please fill out this field.</p>
-                                    </div>
-                                    <div class="col-md-6 mb-4">
-                                        <label for="landLordName" class="form-label">Termination Notice Period<span>*</span></label>
-                                        <input class="form-control" type="text"  name="landLordName" placeholder="Eg. 2 months" required>
+                                        <label for="rentAddress" class="form-label">Date of Birth<span>*</span></label>
+                                        <input class="form-control houseAdd" type="date" name="rentAddress" required="" placeholder="">
                                         <p class="error hidden">Please fill out this field.</p>
                                     </div>
                                     
                                 </div>
                               </div>
+                          
                               <!-- step 4 -->
                               <div class="step">
                                 <div class="row">
@@ -1110,14 +1000,16 @@
                     </div>
                 </div>
                 <div class=" col-lg-6 pdfBox">
-                    <iframe 
+                  <iframe 
+                    class="pdf-iframe"
                     src="https://drive.google.com/file/d/1Dx1qvYLSEkQMoLpWH4byzlinSWorYJTz/preview" 
                     width="100%" 
                     height="600px" 
                     allow="autoplay">
                   </iframe>
-                  
-                  <div class="col-md-12 d-none">
+                </div>
+                <div class="col-lg-12">
+                    <div class="col-md-12">
                     <div class="receiptContainer" style="max-height: fit-content;">
                         <div class="printBtn">
                             <a href="#"><img src="../images/removed-background.png" alt="whatsApp"></a>
@@ -1125,7 +1017,7 @@
                             <a href="#"><img src="../images/word.jpg" alt="ms-word"></a>
                             <button class="btn print">Print Receipt</button>
                         </div>
-                        <div class="receipt pg-1" >
+                        <div class="receipt pg-1 page">
                             <div style="margin-top: 5rem;">
 
                             </div>
@@ -1167,7 +1059,7 @@
                             </div>
                         </div>    
                     </div>
-                </div>
+                  </div>
 
                 </div>
             </div>

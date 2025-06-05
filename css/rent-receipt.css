@@ -15,7 +15,7 @@
 }
 .receipt p {
  font-weight: 500;
- font-size: 1.1rem;
+ font-size: .8rem;
  line-height: 2;
  display: inline;
 }
@@ -179,7 +179,7 @@ text-decoration: underline;
 }
 .receipt h4{
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 1rem;
   line-height: 1.4;
 }
@@ -196,7 +196,7 @@ text-decoration: underline;
   line-height: 1.5;
   margin-bottom: .5rem;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: .9rem;
   line-height: 1.4;
 }
 .rentalReceipt ol li strong{
@@ -237,4 +237,201 @@ display: block;
  .rentaldeclBox p strong{
   font-weight: 600;
  }
+   @page {
+      size: A4;
+      margin: 40px;
+    }
+.receipt{
+  position: relative;
+  z-index: 99;
+  border: 1px solid #333;
+  overflow: hidden;
+ width: 794px;
+      height: 1123px;
+      margin: 10px auto;
+      padding: 80px 60px; /* top/bottom, left/right */
+      margin: auto;
+      box-sizing: border-box;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      position: relative;
+      /* page-break-after: always; */
+}
+.receipt .logo {
+position: absolute;
+object-fit: contain;
+width: 80px;
+height: 80px;
+top: 11%;
+left: 5%;
+z-index: -9;
+opacity: .08;
+}
+.field {
+  font-weight: 600;
+  padding: 0 4px;
+  display: inline-block;
+}
+.receiptContainer{
+  padding: 1.5rem;
+  overflow: auto;
+}
+.receiptContainer::-webkit-scrollbar{
+ display: none;
+}
+.print.btn{
+  background-color: #f5b402;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: .5px;
+  border-radius: 4px;
+}
+.printBtn{
+  display: flex;
+  justify-content: right;
+  margin-bottom: 1rem;
+}
+.alldtl{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  margin-top: .5rem;
+}
+p.sign{
+font-size: 1.1rem;
+margin-top: 2rem;
+}
+.underline{
+text-decoration: underline;
+}
+.printBtn a img {
+  object-fit: contain;
+  width: 25px;
+  height: 25px;
+}
+
+.printBtn a {
+  display: inline-flex
+;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  padding: .4rem 1rem;
+  border-radius: 4px;
+}
+
+.printBtn {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 1rem;
+  align-items: center;
+  gap: 20px;
+}
+/* rental agreement */
+.rentalHeader{
  
+  padding: 10px 80px;
+}
+.receipt .rentalTxt{
+  display: block;
+  line-height: 1.5;
+  margin-bottom: .5rem;
+}
+.receipt .rentalTxt strong{
+  font-weight: 600;
+}
+.custom-li strong{
+  font-weight: 600;
+}
+.receipt h3{
+ font-weight: 600;
+ text-align: center;
+ font-size: 1rem;
+ text-transform: uppercase;
+ text-decoration: underline;
+ margin-bottom: .8rem;
+}
+.receipt .rentaFooterTxt{
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: underline;
+  line-height: 1.5;
+}
+.receipt h4{
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+}
+
+.rentalReceipt ol {
+  list-style: none;
+  counter-reset: item;
+  margin-bottom: 1rem;
+}
+
+.rentalReceipt ol li {
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.5;
+  margin-bottom: .5rem;
+  font-weight: 500;
+  font-size: .9rem;
+  line-height: 1.4;
+}
+.rentalReceipt ol li strong{
+ font-weight: 600;
+}
+
+.rentalReceipt ol li::before {
+  counter-increment: item;
+  content: counter(item) ".";
+  margin-right: 30px; 
+  color: #000;
+  font-weight: 600;
+}
+.rentalReceipt ol.upper-alpha li::before {
+  content: counter(item, upper-alpha) ". ";
+ 
+}
+.rentalReceipt ol.lower-alpha li::before {
+  content: counter(item, lower-alpha) ". ";
+}
+
+.rentalReceipt ol.lower-alpha li::before {
+  content: counter(item, decimal) ". ";
+}
+.rentalReceipt ol .custom-li::before {
+  content: attr(data-marker);
+}
+.rentaldeclBox .boxItem{
+  display: flex;
+  margin-bottom: 1rem;
+}
+.rentaldeclBox .boxItem p:nth-of-type(1){
+  min-width: 300px;
+}
+.rentaldeclBox .boxItem p{
+display: block;
+}
+ .rentaldeclBox p strong{
+  font-weight: 600;
+}
+
+/* .page:not(:last-child) {
+  page-break-after: always;
+} */
+ @media print {
+      body {
+        background: none;
+      }
+
+      .page {
+        margin: 0;
+        box-shadow: none;
+        /* page-break-after: always; */
+      }
+    }
+ .receipt .rentalTxt{
+  font-size: .95rem;
+}
