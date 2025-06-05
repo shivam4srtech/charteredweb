@@ -5,6 +5,7 @@
       transition: transform 0.3s;
       background-color: #fff;
       box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      min-height: 100%;
     }
     .pricing-card:hover {
       transform: translateY(-5px);
@@ -66,11 +67,10 @@
       border-radius: 6px;
       padding: .5rem 1rem;
       font-weight: 600;
-      border: 2px solid red;
       display: inline-block;
+      margin-bottom: 1rem;
     }
     .pricing-card .list-unstyled li{
-      border: 1px solid red;
       display: flex;
       text-align: left;
       font-weight: 500;
@@ -78,6 +78,7 @@
       color: #231f2b;
       line-height: 1.4;
       align-items: flex-start;
+      margin-bottom: .5rem;
 
     }
     .pricing-card .list-unstyled li svg{
@@ -102,9 +103,63 @@
       margin-top: .5rem;
       display: flex;
       height: 26px;
-      border: 1px solid red;
     }
     .pricing-card .list-unstyled li span strong{
      font-weight: 600;
      display: block;
     }
+    .pricing-card.plan-single .choosePlan{
+      border: 2px solid #126dee;
+      color: #126dee;
+    }
+    .pricing-card.plan-premium .choosePlan{
+      border: 2px solid #805ad5;
+      background-color: #805ad5;
+      color: #fff;
+    }
+    .pricing-card.plan-business  .choosePlan{
+      border: 2px solid #68d391;
+      color: #68d391;
+    }
+    .pricing-card.plan-cloud  .choosePlan{
+      border: 2px solid #f6ad55;
+      color: #f6ad55;
+    }
+    .pricing-card .info{
+      font-weight: 500;
+      font-size: .85rem;
+      line-height: 1.4;
+      margin-top: 1rem;
+      border-radius: 4px;
+      padding: .5rem;
+      background-color: #f6f3fa;
+      border: 1px solid #613dc1;
+    }
+    .pricing-card .info strong{
+      font-weight: 600;
+    }
+    .pageHeader{
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    .pageHeader h1{
+     font-weight: 600;
+     font-size: 2rem;
+    }
+    .gradient-text {
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.pageHeader span{
+     border-radius: 1.7rem;
+     padding: .5rem;
+    background-color: #f6f3fa;
+    border: 1px solid #613dc1;
+     display: inline-block;
+     margin-bottom: .5rem;
+     font-weight: 500;
+     font-size: .85rem;
+}
