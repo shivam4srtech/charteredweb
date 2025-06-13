@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Due Diligence Report - Razorpay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+  <style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+    }
+    @page {
+      size: A4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .pdf-page {
+      width: 210mm;
+      height: 297mm;
+      padding: 0 45px;
+      box-sizing: border-box;
+      position: relative;
+      /* page-break-after: always; */
+      border: 1px solid #ddd;
+     
+      border-bottom: none;
+      margin-left: -8px;
+    }
+     .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+        top: 0;
+        font-weight: bold;
+        border-bottom: 2px solid #000;
+     }
+    .header span{
+       font-size: .95rem;
+     }
+    .header img.logo {
+        object-fit: contain;
+        width: 200px;
+        height: auto;
+     }
+    .header, .footer {
+      position: absolute;
+      left: 45px;
+      right: 45px;
+      text-align: center;
+      font-size: 12px;
+    }
+    .footer {
+      bottom: 0;
+      border-top: 2px solid #000;
+      height: 2rem;
+      padding-top: .5rem;
+      display: flex;
+      justify-content: space-between;
+    }
+     .footer span {
+      font-size: .9rem;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .content {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-top: 5rem;
+      padding-top: 1rem;
+
+    }
+
+    h2 {
+      font-size: 16px;
+      color: #2c3e50;
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 15px 0;
+      font-size: 13px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f0f0f0;
+      font-weight: bold;
+    }
+
+    .btn-download {
+      margin: 20px;
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn-download:hover {
+      background: #0056b3;
+    }
+    .overviewbg{
+        background-color: #f5b402;
+        margin : 0 -45px;
+        border: 2px solid #000;
+        margin-top: -1rem;
+        min-height: fit-content;
+        border-right: none;
+        border-left: none;
+        margin-bottom: 2rem;
+        
+    }
+     .overviewbg .overviewContainer{
+       padding: 10px 45px;
+       color: #fff;
+    }
+    .overviewbg .overviewContainer h2{
+       color: #fff;
+       font-weight: 600;
+       font-size: 1.1rem;
+       letter-spacing: .5px;
+       margin-bottom: .2rem;
+    }
+       .overviewbg .overviewContainer span{
+       color: #fff;
+       font-weight: 500;
+       font-size: .8rem;
+       display: block;
+    }
+    .flexHeading {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1rem;
+    }
+    .flexHeading h3 {
+      font-size: 1rem;
+      color: #000;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+      .flexHeading span {
+      font-size: .8rem;
+      color: #000;
+      font-weight: 500;
+      text-transform: capitalize;
+    }
+    .openPara{
+        font-weight: 400;
+        color: #000;
+        margin-bottom: .3rem;
+        font-size: .8rem;
+    }
+    .openPara strong{
+        font-weight: 600;
+    }
+    .paraContainer {
+      margin-bottom: 1rem;
+    }
+    .boxedData{
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #000;
+        border-bottom: 1px solid #000;
+        margin-bottom: 1.5rem;
+    }
+    .boxedData .flexBoxed {
+        flex: 1;
+
+    }
+    .boxedData .flexBoxed .boxItem{
+       display: flex;
+       flex: 1;
+       padding: .5rem;
+       padding-bottom: 0;
+    }
+     .boxedData .flexBoxed .boxItem:last-child{
+       padding-bottom: .5rem;
+    }
+    .boxedData .flexBoxed .boxItem .key{
+       font-weight: 600;
+       font-size: .8rem;
+       min-width: 160px;
+    }
+    .boxedData .flexBoxed .boxItem .value{
+       font-weight: 400;
+       font-size: .75rem;
+       display: flex;
+       justify-self: left;
+    }
+    .boxedData .flexBoxed:nth-of-type(2) .boxItem .value {
+      width: 100%;
+      text-align: right;
+      justify-content: right;
+    }
+
+  </style>
+</head>
+<body>
+
+  <button class="btn-download" onclick="generatePDF()">Download Due Diligence PDF</button>
+
+  <div id="pdf-content">
+
+    <!-- Page 1 -->
+    <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="overviewbg">
+            <div class="overviewContainer">
+                <h2>OVERVIEW</h2>
+                <span>13 June, 2025</span>
+            </div>
+        </div>
+        <div class="flexHeading">
+            <h3>Vitals</h3>
+            <span>13 June, 2025</span>
+
+        </div>
+        <div class="paraContainer">
+           <p class="openPara">
+                RAZORPAY SOFTWARE PRIVATE LIMITED is an unlisted private company incorporated on 24 May, 2013. Its
+                registered office is at 1st Floor, SJR Cyber, 22 Laskar Hosur Road, Adugodi NA, Bangalore, Bangalore, Karnataka -
+                560030 and paid-up capital is INR 7.26 cr.
+            </p>
+            <p class="openPara">
+                Its last reported annual general meeting, per our records, was held on 27 September, 2022. The company has 4
+                directors and key management personnel.
+                Its last reported annual general meeting, per our records, was held on 27 September, 2022. The company has 4
+                directors and key management personnel.
+            </p>
+            <p class="openPara"><strong>Description:</strong> Razorpay Software Private Limited provides online payment services.</p>
+            <p class="openPara"><strong>Services:</strong> Payment Gateway, Route, Subscriptions, Smart Collect, Invoices, Payment Links</p>
+        </div>
+        <div class="boxedData">
+           <div class="flexBoxed" style="border-right: 1px solid #000;">
+                <div class="boxItem">
+                    <div class="key">Status</div>
+                    <div class="value">Active</div>
+                </div>
+                <div class="boxItem">
+                    <div class="key">CIN</div>
+                    <div class="value">U72200KA2013PTC097389</div>
+                </div>
+                <div class="boxItem">
+                    <div class="key">Incorporation Date</div>
+                    <div class="value">24 May, 2013</div>
+                </div>
+                <div class="boxItem">
+                    <div class="key">Category</div>
+                    <div class="value">Company limited by Shares</div>
+                </div>
+                <div class="boxItem">
+                    <div class="key">Sub-category</div>
+                    <div class="value">Non-govt company</div>
+                </div>
+           </div>
+            <div class="flexBoxed">
+                <div class="boxItem">
+                    <div class="key">Authorised share capital</div>
+                    <div class="value">10.00 cr</div>
+                </div>
+                <div class="boxItem">
+                    <div class="key">Paid up share capital</div>
+                    <div class="value"> 7.26 cr</div>
+                </div>
+                <div class="boxItem">
+                    <div class="key">Sum of existing charges</div>
+                    <div class="value">94.10 lac</div>
+                </div>
+                <div class="boxItem">
+                    <div class="key">Last reported AGM date </div>
+                    <div class="value">27 September, 2022</div>
+                </div>
+                <div class="boxItem">
+                    <div class="key">Listing status</div>
+                    <div class="value">Unlisted</div>
+                </div>
+           </div>
+        </div>
+        <div class="flexHeading">
+            <h3>CONTACT DETAILS</h3>
+        </div>
+        <div class="boxedData">
+           <div class="flexBoxed" style="border-right: 1px solid #000;">
+                <div class="boxItem">
+                    <div class="key">Email Address</div>
+                    <div class="value">prabhakar.tiwari@razorpay.com</div>
+                </div>
+                <div class="boxItem">
+                    <div class="key">Website</div>
+                    <div class="value">https://razorpay.com/</div>
+                </div>
+                <div class="boxItem">
+                    <div class="key">Telephone</div>
+                    <div class="value">7042400853</div>
+                </div>
+                
+           </div>
+            <div class="flexBoxed" style="background-color: #ccc;">
+                <div class="boxItem">
+                    <div class="key">Registered Address</div>
+                </div>
+                <div class="boxItem">
+                    <div class="value" style="text-align: left;">
+                        1st Floor, SJR Cyber, 22 Laskar Hosur Road,
+                        Adugodi NA Bangalore Bangalore Karnataka -
+                        560030
+                    </div>
+                </div>
+           </div>
+        </div>
+        <div class="flexHeading">
+            <h3>LATEST FILINGS</h3>
+        </div>
+        <div class="boxedData">
+           <div class="flexBoxed">
+                <div class="boxItem">
+                    <div class="key">Latest Annual Return</div>
+                    <div class="value">31 March, 2022</div>
+                </div>
+                <div class="boxItem">
+                    <div class="key">Latest Balance Sheet</div>
+                    <div class="value">31 March, 2022</div>
+                </div>
+                <div class="boxItem">
+                    <div class="key">Latest Profit & Loss</div>
+                    <div class="value">31 March, 2022</div>
+                </div>
+                
+           </div>
+        </div>
+        <div class="flexHeading">
+            <h3>OLD NAMES OF THIS COMPANY</h3>
+        </div>
+        <div class="boxedData">
+           <div class="flexBoxed">
+                <div class="boxItem">
+                    <div class="value">No previous names were found for this company</div>
+                </div>
+           </div>
+        </div>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 1</span></div>
+    </div>
+
+    <!-- Page 2 -->
+     <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 2</span></div>
+    </div>
+
+    <!-- Page 3 -->
+     <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 3</span></div>
+    </div>
+
+    <!-- Page 4 -->
+     <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 4</span></div>
+    </div>
+
+    <!-- Page 5 -->
+     <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 5</span></div>
+    </div>
+
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script>
+    function generatePDF() {
+      const element = document.getElementById('pdf-content');
+      const options = {
+        margin: 0,
+        filename: 'Due-Diligence-Razorpay.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().set(options).from(element).save();
+    }
+  </script>
+</body>
+</html>
