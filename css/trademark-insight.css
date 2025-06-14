@@ -22,6 +22,14 @@ body{
     font-size: 2rem;
     position: relative;
     margin-bottom: .8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.insightHeadr .tradeName img{
+   width: 150px;
+   height: 60px;
+   aspect-ratio: 150 / 60;
+   object-fit: contain;
 }
 .insightHeadr .tradeName sup{
     position: absolute;
