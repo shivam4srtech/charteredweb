@@ -97,15 +97,27 @@
     }
 
     th, td {
-      border: 1px solid #ddd;
+  
       padding: 8px;
       vertical-align: top;
     }
 
     th {
-      background-color: #f0f0f0;
-      font-weight: bold;
+      font-weight: 600;
+      text-align: left;
     }
+    thead th {
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #ccc;
+    }
+    thead tr {
+      background-color: #e0e2e4;
+
+    }
+     tbody tr {
+      border-bottom: 1px solid #ddd;
+    }
+
 
     .btn-download {
       margin: 20px;
@@ -209,12 +221,178 @@
        display: flex;
        justify-self: left;
     }
+    table tr td:nth-of-type(1) {
+      width: 260px;
+    }
+    table tr th:nth-of-type(1) {
+      width: 260px;
+    }
     .boxedData .flexBoxed:nth-of-type(2) .boxItem .value {
       width: 100%;
       text-align: right;
       justify-content: right;
     }
+   .bgLight{
+    background-color: #f8f7fc;
+    font-weight: 600;
+   }
+   .pr-2{
+    padding-left: 2rem;
+   }
+   .pr-3{
+    padding-left: 3rem;
+   }
+   .bgDark{
+    background-color: #e0e2e4;
+   }
+   .chart{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+   }
+  .row{
+        display: flex;
+        flex-wrap: wrap;
+  }
+  .mb-3{
+    margin-bottom: 1rem;
+  }
+  .assetItem {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.assetItem .count {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    font-weight: 700;
+    margin-right: .8rem;
+    background-color: #f5b402;
+    object-fit: contain;
+}
+.assetItem .bankName {
+    font-weight: 600;
+    color: #000;
+    font-size: .95rem;
+    margin-bottom: .2rem;
+    cursor: pointer;
+}
+.assetItem .keyValue {
+    margin-bottom: .2rem;
+        color: #6c6a71;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+.assetItem .keyValue span {
+    font-weight: 500;
+    color: #6c6a71;
+    font-size: .85rem;
+    margin-right: .5rem;
+    display: inline-block;
+}
+.assetItem .keyValue strong {
+    font-weight: 600;
+    color: #000;
+    font-size: .85rem;
+}
+.assetInfo{
+  max-width: 260px;
+}
+  @media (min-width: 992px) {
+    .col-lg-6 {
+        flex: 0  auto;
+        width: 50%;
+    }
+}
+.title {
+  margin-top: 4rem;
+}
+.title h1{
+  font-weight: 600;
+  font-size: 3rem;
+  letter-spacing: .5px;
+  line-height: 1.4;
+}
+.title h1{
+  font-weight: 600;
+  font-size: 3rem;
+  letter-spacing: .5px;
+  line-height: 1.4;
+  color: #f5b402;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  margin-bottom: 1rem;
+}
+.title span{
+  font-weight: 500;
+  font-size: 1.4rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+.toc-container {
+      max-width: 800px;
+    }
 
+    .toc-title {
+      font-weight: 600;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .toc-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .toc-table td {
+      padding: 4px 0;
+      vertical-align: top;
+    }
+
+    .toc-number {
+      width: 50px;
+    }
+
+    .toc-title-text {
+      position: relative;
+      padding-right: 10px;
+    }
+
+    .toc-title-text::after {
+      content: "............................................................................................................................................................................";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      color: #bbb;
+      white-space: nowrap;
+      overflow: hidden;
+      pointer-events: none;
+      letter-spacing: 3px;
+    }
+
+    .toc-title-text span {
+      background: white;
+      position: relative;
+      z-index: 1;
+      padding-right: 5px;
+    }
+
+    .toc-page {
+      text-align: right;
+      width: 30px;
+    }
+    .toc-container table tr td:nth-of-type(1) {
+    width: 30px;
+}
+.toc-container tbody tr{
+  border-bottom: none;
+}
   </style>
 </head>
 <body>
@@ -224,6 +402,147 @@
   <div id="pdf-content">
 
     <!-- Page 1 -->
+    <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="title">
+            <h1>RAZORPAY SOFTWARE PRIVATE LIMITED</h1>
+            <span>Due Diligence Report</span>
+            <div class="date">21 May, 2025</div>
+        </div>
+        
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 1</span></div>
+    </div>
+    
+    <!-- Page 2 -->
+    <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 1 Overview</span> <span>1</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Vitals</span></td><td class="toc-page">4</td></tr>
+            <tr><td class="toc-number">1.2</td><td class="toc-title-text"><span>Contact Details</span></td><td class="toc-page">4</td></tr>
+            <tr><td class="toc-number">1.3</td><td class="toc-title-text"><span>Latest Filings</span></td><td class="toc-page">4</td></tr>
+            <tr><td class="toc-number">1.4</td><td class="toc-title-text"><span>Old Names Of This Company</span></td><td class="toc-page">4</td></tr>
+            <tr><td class="toc-number">1.5</td><td class="toc-title-text"><span>Old Cins Of This Company</span></td><td class="toc-page">5</td></tr>
+            <tr><td class="toc-number">1.6</td><td class="toc-title-text"><span>Industry</span></td><td class="toc-page">5</td></tr>
+            <tr><td class="toc-number">1.7</td><td class="toc-title-text"><span>Kyc Information</span></td><td class="toc-page">5</td></tr>
+            <tr><td class="toc-number">1.9</td><td class="toc-title-text"><span>Auditors</span></td><td class="toc-page">5</td></tr>
+          </table>
+        </div>
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 2 DIRECTORS AND KMP</span> <span>6</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>CURRENT DIRECTORS</span></td><td class="toc-page">6</td></tr>
+            <tr><td class="toc-number">1.2</td><td class="toc-title-text"><span>OTHER DIRECTORSHIPS</span></td><td class="toc-page">6</td></tr>
+          </table>
+        </div>
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 3 Key Metrics</span> <span>7</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Key Matrics All numbers in INR crores</span></td><td class="toc-page">7</td></tr>
+            
+          </table>
+        </div>
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 4 Companies connected through Directors</span> <span>8</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Companies connected through Directors</span></td><td class="toc-page">8</td></tr>
+          </table>
+        </div>
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 5 FINANCIAL HIGHLIGHT</span> <span>9</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>FINANCIAL HIGHLIGHT</span></td><td class="toc-page">9</td></tr>
+          </table>
+        </div>
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 6 BALANCE SHEET</span> <span>10</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>EQUITY AND LIABILITIES</span></td><td class="toc-page">10</td></tr>
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Non-current liabilities</span></td><td class="toc-page">10</td></tr>
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>ASSETS</span></td><td class="toc-page">10</td></tr>
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Current assets</span></td><td class="toc-page">11</td></tr>
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Total assets</span></td><td class="toc-page">11</td></tr>
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>BALANCE SHEET IN TERMS OF % (Percentage)</span></td><td class="toc-page">12</td></tr>
+          </table>
+        </div>
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 7 Profit & Loss</span> <span>14</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Revenue from operations</span></td><td class="toc-page">14</td></tr>
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Expenses</span></td><td class="toc-page">14</td></tr>
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Profit & Loss IN TERMS OF %</span></td><td class="toc-page">15</td></tr>
+          </table>
+        </div>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 2</span></div>
+    </div>
+     <!-- Page 3 -->
+    <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 8 Ratio</span> <span>18</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Ratio</span></td><td class="toc-page">18</td></tr>
+            <tr><td class="toc-number">1.2</td><td class="toc-title-text"><span>Liquidity</span></td><td class="toc-page">18</td></tr>
+            <tr><td class="toc-number">1.3</td><td class="toc-title-text"><span>Return</span></td><td class="toc-page">18</td></tr>
+            <tr><td class="toc-number">1.4</td><td class="toc-title-text"><span>Efficiency</span></td><td class="toc-page">18</td></tr>
+            <tr><td class="toc-number">1.5</td><td class="toc-title-text"><span>Old Cins Of This Company</span></td><td class="toc-page">18</td></tr>
+            <tr><td class="toc-number">1.6</td><td class="toc-title-text"><span>Working Capital</span></td><td class="toc-page">18</td></tr>
+          </table>
+        </div>
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 9 Charges on assets</span> <span>20</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Charges on assets</span></td><td class="toc-page">20</td></tr>
+          </table>
+        </div>
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 10 Charges on assets (Bank wise data)</span> <span>21</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Charges on assets (Bank wise data)</span></td><td class="toc-page">21</td></tr>
+          </table>
+        </div>
+        
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 12 Subsidiaries, Associate Companies & Join Ventures</span> <span>22</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Subsidiaries, Associate Companies & Join Ventures</span></td><td class="toc-page">22</td></tr>
+          </table>
+        </div>
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 13 Fund Raising Activity</span> <span>23</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Fund Raising Activity</span></td><td class="toc-page">23</td></tr>
+          </table>
+        </div>
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 14 Board Meetings</span> <span>24</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Board Meetings</span></td><td class="toc-page">24</td></tr>
+          </table>
+        </div>
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 15 Outstanding Payments to Micro & Small Enterprises</span> <span>25</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Outstanding Payments to Micro & Small Enterprises</span></td><td class="toc-page">25</td></tr>
+          </table>
+        </div>
+        <div class="toc-container">
+          <div class="toc-title"><span>Chapter 16 Prosecution Details of Tata Steel Limited</span> <span>26</span></div>
+          <table class="toc-table">
+            <tr><td class="toc-number">1.1</td><td class="toc-title-text"><span>Prosecution Details of Tata Steel Limited</span></td><td class="toc-page">26</td></tr>
+          </table>
+        </div>
+        
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 3</span></div>
+    </div>
+    <!-- Page 4 -->
     <div class="pdf-page">
       <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
       <div class="content">
@@ -362,44 +681,2004 @@
            </div>
         </div>
       </div>
-      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 1</span></div>
-    </div>
-
-    <!-- Page 2 -->
-     <div class="pdf-page">
-      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
-      <div class="content">
-        
-      </div>
-      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 2</span></div>
-    </div>
-
-    <!-- Page 3 -->
-     <div class="pdf-page">
-      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
-      <div class="content">
-        
-      </div>
-      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 3</span></div>
-    </div>
-
-    <!-- Page 4 -->
-     <div class="pdf-page">
-      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
-      <div class="content">
-        
-      </div>
       <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 4</span></div>
     </div>
 
     <!-- Page 5 -->
-     <div class="pdf-page">
+    <div class="pdf-page">
       <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
       <div class="content">
-        
+        <div class="flexHeading">
+            <h3>OLD CINS OF THIS COMPANY</h3>
+        </div>
+        <div class="boxedData">
+           <div class="flexBoxed">
+                <div class="boxItem">
+                    <div class="value">U72200RJ2013PTC042641</div>
+                </div>
+           </div>
+        </div>
+        <div class="flexHeading">
+            <h3>INDUSTRY</h3>
+        </div>
+        <div class="boxedData">
+           <div class="flexBoxed">
+                <div class="boxItem">
+                    <div class="value">Computer Related Services</div>
+                </div>
+           </div>
+        </div>
+        <div class="flexHeading">
+            <h3>KYC INFORMATION</h3>
+        </div>
+        <div class="boxedData">
+           <div class="flexBoxed" style="border-right: 1px solid #000;">
+                <div class="boxItem">
+                    <div class="key">Company PAN</div>
+                    <div class="value">AAGCR4375J</div>
+                </div> 
+           </div>
+            <div class="flexBoxed">
+                <div class="boxItem">
+                    <div class="key">No. of Employees</div>
+                    <div class="value">Unknown</div>
+                </div> 
+           </div>
+        </div>
+        <div class="flexHeading">
+            <h3>FINANCIAL HIGHLIGHTS</h3>
+        </div>
+        <div class="boxedData">
+           <div class="flexBoxed" style="border-right: 1px solid #000;">
+                <div class="boxItem">
+                    <div class="key">Revenues</div>
+                    <div class="value">1,485.67 cr</div>
+                </div> 
+                <div class="boxItem">
+                    <div class="key">Profit After Tax</div>
+                    <div class="value">7.38 cr</div>
+                </div> 
+           </div>
+          <div class="flexBoxed">
+                <div class="boxItem">
+                    <div class="key">EBITDA</div>
+                    <div class="value">38.83 cr</div>
+                </div> 
+                <div class="boxItem">
+                    <div class="key">Networth</div>
+                    <div class="value">38.83 cr</div>
+                </div> 
+           </div>
+        </div>
+         <div class="flexHeading">
+            <h3>AUDITORS</h3>
+            <span>as on 18 May, 2023</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Auditor</th>
+              <th>Type</th>
+              <th>Signatory Name</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Deloitte Haskins & Sells LLP</td>
+              <td>Auditor Firm</td>
+              <td>Vikas Bagaria</td>
+              <td>31 March, 2022</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 5</span></div>
     </div>
+    <!-- Page 6 -->
+    <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="overviewbg">
+            <div class="overviewContainer">
+                <h2>DIRECTORS AND KMP</h2>
+                <span>13 June, 2025</span>
+            </div>
+        </div>
+        <div class="flexHeading">
+            <h3>CURRENT DIRECTORS</h3>
+            <span>13 June, 2025</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Director's name</th>
+              <th>Age</th>
+              <th>Date of appointment</th>
+              <th>Email address</th>
+              <th>Designation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>32 yrs</td>
+              <td>24 May, 2013</td>
+              <td>harshit@razorpay.com</td>
+              <td>Director</td>
+            </tr>
+            <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>32 yrs</td>
+              <td>24 May, 2013</td>
+              <td>harshit@razorpay.com</td>
+              <td>Director</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="flexHeading">
+            <h3>OTHER DIRECTORSHIPS</h3>
+            <span>13 June, 2025</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Director's name</th>
+              <th>Company name</th>
+              <th>Designation</th>
+              <th>Date of appointment</th>
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>MARSSHOT VENTURES LLP</td>
+              <td>Director</td>
+              <td>05 December, 2020</td>
+            </tr>
+                        <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>MARSSHOT VENTURES LLP</td>
+              <td>Director</td>
+              <td>05 December, 2020</td>
+            </tr>
+            <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>MARSSHOT VENTURES LLP</td>
+              <td>Director</td>
+              <td>05 December, 2020</td>
+            </tr>
+                        <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>MARSSHOT VENTURES LLP</td>
+              <td>Director</td>
+              <td>05 December, 2020</td>
+            </tr>
+            <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>MARSSHOT VENTURES LLP</td>
+              <td>Director</td>
+              <td>05 December, 2020</td>
+            </tr>
+                        <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>MARSSHOT VENTURES LLP</td>
+              <td>Director</td>
+              <td>05 December, 2020</td>
+            </tr>
+            <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>MARSSHOT VENTURES LLP</td>
+              <td>Director</td>
+              <td>05 December, 2020</td>
+            </tr>
+                        <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>MARSSHOT VENTURES LLP</td>
+              <td>Director</td>
+              <td>05 December, 2020</td>
+            </tr>
+            <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>MARSSHOT VENTURES LLP</td>
+              <td>Director</td>
+              <td>05 December, 2020</td>
+            </tr>
+                        <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>MARSSHOT VENTURES LLP</td>
+              <td>Director</td>
+              <td>05 December, 2020</td>
+            </tr>
+            <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>MARSSHOT VENTURES LLP</td>
+              <td>Director</td>
+              <td>05 December, 2020</td>
+            </tr>
+                        <tr>
+              <td>HARSHIL MATHUR</td>
+              <td>MARSSHOT VENTURES LLP</td>
+              <td>Director</td>
+              <td>05 December, 2020</td>
+            </tr>
+            
+            
+          </tbody>
+        </table>
+       
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 6</span></div>
+    </div>
+
+    <!-- Page 7 -->
+    <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="overviewbg">
+            <div class="overviewContainer">
+                <h2>Key Metrics</h2>
+                <span>13 June, 2025</span>
+            </div>
+        </div>
+        <div class="flexHeading">
+            <h3>All numbers in INR crores</h3>
+        </div>
+  
+        <div class="boxedData">
+           <div class="flexBoxed" style="border-right: 1px solid #000;">
+                <div class="boxItem">
+                    <div class="key">Sales</div>
+                    <div class="value">1,485.67</div>
+                </div> 
+                <div class="boxItem">
+                    <div class="key">EBITDA</div>
+                    <div class="value">7.38 </div>
+                </div> 
+                <div class="boxItem">
+                    <div class="key">Borrowings</div>
+                    <div class="value">7.38 </div>
+                </div> 
+                <div class="boxItem">
+                    <div class="key">Assets</div>
+                    <div class="value">7.38 </div>
+                </div> 
+                <div class="boxItem">
+                    <div class="key">Gross Margin</div>
+                    <div class="value">7.38 </div>
+                </div> 
+                <div class="boxItem">
+                    <div class="key">Operating Margin</div>
+                    <div class="value">7.38 </div>
+                </div> 
+           </div>
+          <div class="flexBoxed">
+                <div class="boxItem">
+                    <div class="key">Net Profit</div>
+                    <div class="value">38.83</div>
+                </div> 
+                <div class="boxItem">
+                    <div class="key">Networth</div>
+                    <div class="value">38.83</div>
+                </div> 
+                <div class="boxItem">
+                    <div class="key">Net Profit Margin</div>
+                    <div class="value">38.83</div>
+                </div> 
+                <div class="boxItem">
+                    <div class="key">Return on Equity</div>
+                    <div class="value">38.83</div>
+                </div> 
+                <div class="boxItem">
+                    <div class="key">ROCE</div>
+                    <div class="value">38.83</div>
+                </div> 
+                <div class="boxItem">
+                    <div class="key">Debt to Equity</div>
+                    <div class="value">38.83</div>
+                </div> 
+           </div>
+        </div>
+        
+       
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 7</span></div>
+    </div>
+
+    <!-- Page 8 -->
+    <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="overviewbg">
+            <div class="overviewContainer">
+                <h2>Companies connected through Directors</h2>
+            </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Status</th>
+              <th>Paid Up Capital</th>
+              <th>Common Directors</th>
+              <th>State</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SHIVAARYA INFRASTRUCTUR PRIVATE LIMITED</td>
+              <td>Active</td>
+              <td>1,003333</td>
+              <td>1</td>
+              <td>Maharastra</td>
+            </tr>
+            <tr>
+              <td>SHIVAARYA INFRASTRUCTUR PRIVATE LIMITED</td>
+              <td>Active</td>
+              <td>1,003333</td>
+              <td>1</td>
+              <td>Maharastra</td>
+            </tr>
+            <tr>
+              <td>SHIVAARYA INFRASTRUCTUR PRIVATE LIMITED</td>
+              <td>Active</td>
+              <td>1,003333</td>
+              <td>1</td>
+              <td>Maharastra</td>
+            </tr>
+            
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 8</span></div>
+    </div>
+     <!-- Page 9 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="overviewbg">
+            <div class="overviewContainer">
+                <h2>FINANCIAL HIGHLIGHT</h2>
+                <span>13 June, 2025</span>
+            </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Particulars</th>
+              <th>March 2021</th>
+              <th>March 2022</th>
+              <th>March 2023</th>
+              <th>March 2024</th>  
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td>Sales</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Operating profit</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Net profit</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Gross margin</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Operating margin</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Net margin</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Networth</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Borrowings</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Assets</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Debt to equity</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>ROE</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Days payable</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>WC days</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="chart">
+          <canvas id="financial" width="100" height="100"></canvas>
+        </div>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 9</span></div>
+   </div>
+
+   <!-- Page 10 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="overviewbg">
+            <div class="overviewContainer">
+                <h2>BALANCE SHEET</h2>
+                <span>13 June, 2025</span>
+            </div>
+        </div>
+        <div class="flexHeading">
+            <h3>BALANCE SHEET IN TERMS OF ₹ (INR) <br> All numbers in INR crores</h3>
+            <span>13 June, 2025</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Particulars</th>
+              <th>March 2021</th>
+              <th>March 2022</th>
+              <th>March 2023</th>
+              <th>March 2024</th>  
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="bgDark">
+              <th>EQUITY AND LIABILITIES</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="pr-2">Equity Share Capital</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Reserves and Surplus</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2"> Money received against share warrants</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr class="bgLight">
+              <td>Share application money pending allotment</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr class="bgLight">
+              <td> Non-current liabilities</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Long-term borrowings</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Deferred tax liabilities (Net)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Other Long-term liabilities</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2"> Long-term provisions</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr class="bgLight">
+              <td>Total</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr class="bgDark">
+              <th>ASSETS</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr class="bgLight">
+              <td>Non-current assets</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">[Property, Plant and Equipment]</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-3">Tangible assets</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-3">Intangible assets</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-3">Capital work-in-progress</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-3">Intangible assets under development</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2"> Non-current investments</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Deferred tax assets (net)</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2"> Long-term loans and advances</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2"> Other non-current assets</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 10</span></div>
+   </div>
+   <!-- Page 11 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <table>
+          <tbody>
+            <tr class="bgLight">
+              <td> Current assets</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Current investments</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Inventories</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Trade receivables</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Cash and cash equivalents</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Short-term loans and advances</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Other current assets</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Cash and Bank balances	</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr class="bgLight">
+               <td>Total assets</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+           
+          </tbody>
+        </table>
+        <div class="chart">
+            <canvas id="assetChart" width="400" height="300"></canvas>
+        </div>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 11</span></div>
+   </div>
+    <!-- Page 12 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+
+        <div class="flexHeading">
+            <h3>BALANCE SHEET IN TERMS OF % (Percentage)  </h3>
+            <span>13 June, 2025</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Particulars</th>
+              <th>March 2021</th>
+              <th>March 2022</th>
+              <th>March 2023</th>
+              <th>March 2024</th>  
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr class="bgDark">
+              <th>EQUITY AND LIABILITIES</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td class="pr-2">Equity Share Capital</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Reserves and Surplus</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2"> Money received against share warrants</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr class="bgLight">
+              <td>Share application money pending allotment</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr class="bgLight">
+              <td> Non-current liabilities</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Long-term borrowings</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Deferred tax liabilities (Net)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Other Long-term liabilities</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2"> Long-term provisions</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr class="bgLight">
+              <td>Total</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr class="bgDark">
+              <th>ASSETS</th>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr class="bgLight">
+              <td>Non-current assets</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">[Property, Plant and Equipment]</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-3">Tangible assets</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-3">Intangible assets</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-3">Capital work-in-progress</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-3">Intangible assets under development</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2"> Non-current investments</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Deferred tax assets (net)</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2"> Long-term loans and advances</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2"> Other non-current assets</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 12</span></div>
+   </div>
+   <!-- Page 13 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <table>
+          <tbody>
+            <tr class="bgLight">
+              <td> Current assets</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Current investments</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Inventories</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Trade receivables</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Cash and cash equivalents</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Short-term loans and advances</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Other current assets</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr>
+               <td class="pr-2">Cash and Bank balances	</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+            <tr class="bgLight">
+               <td>Total assets</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+               <td>0.00</td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 13</span></div>
+   </div>
+   <!-- Page 14 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="overviewbg">
+            <div class="overviewContainer">
+                <h2>Profit & Loss</h2>
+                <span>13 June, 2025</span>
+            </div>
+        </div>
+        <div class="flexHeading">
+            <h3>Profit & Loss IN TERMS OF ₹ (INR) <br> All numbers in INR crores</h3>
+            <span>13 June, 2025</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Particulars</th>
+              <th>March 2021</th>
+              <th>March 2022</th>
+              <th>March 2023</th>
+              <th>March 2024</th>  
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td>Revenue from operations</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Other income</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Total Revenue (I + II)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Expenses</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td class="pr-2">Cost of materials consumed</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Changes in inventories of finished goods work-in-progress and</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Cost of services</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Employee benefits expense</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Finance costs</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Depreciation and amortisation expense</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Other expenses</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Profit before exceptional and extraordinary items and tax (III - IV)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Exceptional items</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Profit before extraordinary items and tax (V - VI)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Extraordinary items</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Profit before tax (VII- VIII)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Tax expense:</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Current tax</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Income tax of earlier years</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Deferred tax</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>   
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 14</span></div>
+   </div>
+   <!-- Page 15 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <table>
+          <tbody>
+             <tr>
+              <td>Profit (Loss) for the period from continuing operations (VII-VIII)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Profit/(loss) from discontinuing operations</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Tax expense of discontinuing operations</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+             <tr>
+              <td>Profit/(loss) from Discontinuing operations (after tax) (XII-XIII)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+             <tr>
+              <td>Profit (Loss) for the period (XI + XIV)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Earnings per equity share:</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+             <tr>
+              <td class="pr-2">Basic</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td class="pr-2">Diluted</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Number Of Shares Used in Calculating Earnings Per Share:</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Number Of Shares Used in Calculating Earnings Per Share:</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td class="pr-2">Basic</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td class="pr-2">Diluted</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>      
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 15</span></div>
+   </div>
+    <!-- Page 16 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="flexHeading">
+            <h3>Profit & Loss IN TERMS OF % (Percentage)</h3>
+            <span>13 June, 2025</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Particulars</th>
+              <th>March 2021</th>
+              <th>March 2022</th>
+              <th>March 2023</th>
+              <th>March 2024</th>  
+            </tr>
+          </thead>
+          <tbody>
+            
+            <tr>
+              <td>Revenue from operations</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Other income</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Total Revenue (I + II)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Expenses</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td class="pr-2">Cost of materials consumed</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Changes in inventories of finished goods work-in-progress and</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Cost of services</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Employee benefits expense</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Finance costs</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Depreciation and amortisation expense</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Other expenses</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Profit before exceptional and extraordinary items and tax (III - IV)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Exceptional items</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Profit before extraordinary items and tax (V - VI)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Extraordinary items</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Profit before tax (VII- VIII)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Tax expense:</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Current tax</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Income tax of earlier years</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Deferred tax</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>   
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 16</span></div>
+   </div>
+   <!-- Page 17 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <table>
+          <tbody>
+             <tr>
+              <td>Profit (Loss) for the period from continuing operations (VII-VIII)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Profit/(loss) from discontinuing operations</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Tax expense of discontinuing operations</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+             <tr>
+              <td>Profit/(loss) from Discontinuing operations (after tax) (XII-XIII)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+             <tr>
+              <td>Profit (Loss) for the period (XI + XIV)</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Earnings per equity share:</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+             <tr>
+              <td class="pr-2">Basic</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td class="pr-2">Diluted</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Number Of Shares Used in Calculating Earnings Per Share:</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Number Of Shares Used in Calculating Earnings Per Share:</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td class="pr-2">Basic</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td class="pr-2">Diluted</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>      
+          </tbody>
+        </table>
+        <div class="chart">
+          <canvas id="revenueChart" width="435" height="326"></canvas>
+        </div>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 17</span></div>
+   </div>
+   <!-- Page 18 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="overviewbg">
+            <div class="overviewContainer">
+                <h2>Ratio </h2>
+                <span>13 June, 2025</span>
+            </div>
+        </div>
+        <div class="flexHeading">
+            <h3>All numbers in INR crores</h3>
+            <span>13 June, 2025</span>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Particulars</th>
+              <th>March 2021</th>
+              <th>March 2022</th>
+              <th>March 2023</th>
+              <th>March 2024</th>  
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>Ratio </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td class="pr-2">Total Debt/Equity </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Net Debt/Equity </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Total Debt/Assets </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td class="pr-2">Total Assets/Equity </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td>Liquidity </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td class="pr-2">Performance </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Gross Margin </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Operating Margin </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Net Margin </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Return </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>  
+            <tr>
+              <td>Return on Equity </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>  
+            <tr>
+              <td>Pre-tax ROCE </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>  
+            <tr>
+              <td>Efficiency </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>  
+            <tr>
+              <td class="pr-2">Days Payable </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Days Inventory </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Days Receivable  </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr> 
+            <tr>
+              <td class="pr-2">Fixed Asset Turnover </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td class="pr-2">Total Asset Turnover </td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Working Capital</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Cash Conversion Cycle</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+            <tr>
+              <td>Working Capital Days</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+              <td>0.00</td>
+            </tr>
+               
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 18</span></div>
+   </div>
+   <!-- Page 19 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+          <div class="chart">
+          <canvas id="ratioChart" width="435" height="326"></canvas>
+          </div>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 19</span></div>
+   </div>
+   <!-- Page 20 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="overviewbg">
+            <div class="overviewContainer">
+                <h2>Charges on assets </h2>
+                <span>13 June, 2025</span>
+            </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Charge Holder</th>
+              <th>Branch</th>
+              <th>Amount</th>
+              <th>Date of creation</th>
+              <th>Modification</th>
+              <th>Satisfaction</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>BARCLAYS BANK PLC </td>
+              <td>LONDON</td>
+              <td>400,000,000</td>
+              <td>	20 Apr, 1992</td>
+              <td>-</td>
+              <td>01 Jul, 2022</td>
+              <td>Closed</td>
+            </tr> 
+            <tr>
+              <td>BARCLAYS BANK PLC </td>
+              <td>LONDON</td>
+              <td>400,000,000</td>
+              <td>	20 Apr, 1992</td>
+              <td>-</td>
+              <td>01 Jul, 2022</td>
+              <td>Closed</td>
+            </tr> 
+               
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 20</span></div>
+   </div>
+   <!-- Page 21 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="overviewbg">
+            <div class="overviewContainer">
+                <h2>Charges on assets (Bank wise data) </h2>
+            </div>
+        </div>
+        <div class="row chargesOnAsset">
+          <div class="col-lg-6 mb-3">
+              <div class="assetItem">
+                  <div class="count">1</div>
+                  <div class="assetInfo">
+                      <p class="bankName" data-bs-toggle="modal" data-bs-target="#chargesOnAsset">INDUSTRAIL DEVELOPMENT BANK OF INDIA</p>
+                      <p class="keyValue"><span>No. of Loans: </span><strong>4</strong></p>
+                      <p class="keyValue"><span>Total Amount :  </span><strong>50,437.4 cr</strong></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 mb-3">
+              <div class="assetItem">
+                  <div class="count">2</div>
+                  <div class="assetInfo">
+                      <p class="bankName" data-bs-toggle="modal" data-bs-target="#chargesOnAsset">State Bank of India</p>
+                      <p class="keyValue"><span>No. of Loans: </span><strong>4</strong></p>
+                      <p class="keyValue"><span>Total Amount :  </span><strong>50,437.4 cr</strong></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 mb-3">
+              <div class="assetItem">
+                  <div class="count">3</div>
+                  <div class="assetInfo">
+                      <p class="bankName" data-bs-toggle="modal" data-bs-target="#chargesOnAsset">Canara Bank</p>
+                      <p class="keyValue"><span>No. of Loans: </span><strong>4</strong></p>
+                      <p class="keyValue"><span>Total Amount :  </span><strong>50,437.4 cr</strong></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 mb-3">
+              <div class="assetItem">
+                  <div class="count">4</div>
+                  <div class="assetInfo">
+                      <p class="bankName" data-bs-toggle="modal" data-bs-target="#chargesOnAsset">JOINT PLANT COMMITTEE</p>
+                      <p class="keyValue"><span>No. of Loans: </span><strong>4</strong></p>
+                      <p class="keyValue"><span>Total Amount :  </span><strong>50,437.4 cr</strong></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 mb-3">
+              <div class="assetItem">
+                  <div class="count">5</div>
+                  <div class="assetInfo">
+                      <p class="bankName" data-bs-toggle="modal" data-bs-target="#chargesOnAsset">
+                          The Central Bank Executor and Trustee Company Limited</p>
+                      <p class="keyValue"><span>No. of Loans: </span><strong>4</strong></p>
+                      <p class="keyValue"><span>Total Amount :  </span><strong>50,437.4 cr</strong></p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-6 mb-3">
+              <div class="assetItem">
+                  <div class="count">6</div>
+                  <div class="assetInfo">
+                      <p class="bankName" data-bs-toggle="modal" data-bs-target="#chargesOnAsset">
+                          IDBI Limited</p>
+                      <p class="keyValue"><span>No. of Loans: </span><strong>4</strong></p>
+                      <p class="keyValue"><span>Total Amount :  </span><strong>50,437.4 cr</strong></p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div class="chart">
+            <canvas id="chargesPieChart" height="696" width="696"></canvas>
+        </div>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 21</span></div>
+   </div>
+    <!-- Page 22 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="flexHeading">
+            <h3>Subsidiaries, Associate Companies & Join Ventures of Altorias Recycle Solutions Private Limited</h3>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Company Identifier</th>
+              <th>Percentage of Shares Held</th> 
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr> 
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 22</span></div>
+   </div>
+   <!-- Page 23 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="flexHeading">
+            <h3>Fund Raising Activity</h3>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Date of Allotment</th>
+              <th>Securities Alloted</th>
+              <th>Premium Amount Due & Payable</th> 
+              <th>Premium Amount Paid</th>
+              <th>Total Discount</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr> 
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 23</span></div>
+   </div>
+   <!-- Page 24 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="flexHeading">
+            <h3>Board Meetings</h3>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Date of Filing</th>
+              <th>Date of Dispatch of Notice	</th>
+              <th>Date of Passing Resolution</th> 
+              <th>Resolution Agreed By</th>
+              <th>Resolution Type</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr> 
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 24</span></div>
+   </div>
+    <!-- Page 25 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="flexHeading">
+            <h3>Outstanding Payments to Micro & Small Enterprises</h3>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Filing Type</th>
+              <th>As On	</th>
+              <th>Amount Due to MSME</th> 
+              <th>Current Liabilities</th>
+              <th>Ratio to Current Liabilities</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr> 
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 25</span></div>
+   </div>
+    <!-- Page 26 -->
+   <div class="pdf-page">
+      <div class="header"><img class="logo" src="./images/charteredOne-com-logo.webp" alt="logo"><span>RAZORPAY SOFTWARE PRIVATE LIMITED</span></div>
+      <div class="content">
+        <div class="flexHeading">
+            <h3>Prosecution Details of Tata Steel Limited</h3>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>Defaulting Entities</th>
+              <th>Court Name	</th>
+              <th>Prosecution Section	</th> 
+              <th>Date of Order</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+              <td>-</td>
+            </tr> 
+          </tbody>
+        </table>
+      </div>
+      <div class="footer"><span>© charteredone softech Pvt. Ltd.</span> <span>Page 26</span></div>
+   </div>
 
   </div>
 
@@ -417,5 +2696,13 @@
       html2pdf().set(options).from(element).save();
     }
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>  
+    <script src="./js/chart/sales.js"></script>
+    <script src="./js/chart/networth.js"></script>
+    <script src="./js/chart/financial.js"></script>
+    <script src="./js/chart/total-asset.js"></script>
+    <script src="./js/chart/revenue.js"></script>
+    <script src="./js/chart/ratio.js"></script>
+    <script src="./js/chart/charges.js"></script>
 </body>
 </html>
