@@ -225,6 +225,11 @@
       color: #333;
       margin: 0;
     }
+    .summary-header h3 svg{
+     margin-left: .5rem;
+     height: 20px;
+     width: 20px;
+    }
 
     .summary-header span {
       color: #0c9c84;
