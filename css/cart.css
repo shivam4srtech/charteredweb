@@ -1,0 +1,299 @@
+ .container {
+      max-width: 1200px;
+
+    }
+    body{
+        background: #f3f6f9;
+    }
+    .cartPage{
+        padding: 6rem 0;
+    }
+
+    .cart-title {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #2e2e2e;
+    }
+    
+    .cart-title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #2e2e2e;
+    }
+      
+    .cart-title img{
+      width: 30px;
+      height: 30px;
+      object-fit: contain;
+    }
+
+    .cart-item {
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+      margin-bottom: 15px;
+      transition: transform 0.2s ease;
+    }
+
+    .cart-item:hover {
+      transform: scale(1.01);
+    }
+
+    .item-info {
+      display: flex;
+      align-items: flex-start;
+      flex: 1;
+    }
+
+    .item-info input[type="checkbox"] {
+      margin-right: 20px;
+      transform: scale(1.2);
+      margin-top: .5rem;
+      width: 1rem;
+      height: 1rem;
+    }
+
+    .item-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item-text .name {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: .5rem;
+    }
+
+    .item-text .desc {
+      font-size: 14px;
+      color: #777;
+      font-weight: 500;
+    }
+
+    .item-price {
+      font-size: 16px;
+      font-weight: 600;
+      margin-right: 20px;
+      color: #444;
+    }
+
+    .delete-icon {
+      font-size: 18px;
+      color: #ff4d4f;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+
+    .delete-icon:hover {
+      color: #d9363e;
+    }
+
+    .delete-all {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+      background-color: #ff4d4f;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      gap: 10px;
+      letter-spacing: .5px;
+    }
+
+    .delete-all:hover {
+      background-color: #d9363e;
+    }
+    .delete-all img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .user-details {
+      background: #fff;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .user-details h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #2d2d2d;
+      font-weight: 600;
+    }
+        .user-details h1 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #2d2d2d;
+      font-weight: 600;
+    }
+
+    .user-details label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      color: #333;
+    }
+    .user-details label small{
+      font-size: .8rem;
+    }
+    .gst-checkbox label{
+        margin-bottom: 0;
+    }
+    .user-details h1 img {
+     width: 28px;
+      height: 28px;
+    }
+
+
+    .user-details input[type="text"],
+    .user-details input[type="email"] {
+      width: 100%;
+      padding: 10px 14px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+
+    .gst-checkbox {
+      display: flex;
+      align-items: center;
+      margin-top: -10px;
+    }
+
+    .gst-checkbox input[type="checkbox"] {
+      margin-right: 10px;
+      transform: scale(1.1);
+      border-radius: 4px;
+    }
+    .delete-icon{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        cursor: pointer;
+    }
+     .delete-icon img{
+        height: 26px;
+        width: 26px;
+        object-fit: contain;
+    }
+    .summary-box {
+      width: 100%;
+      max-width: 360px;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+      padding: 20px 25px;
+      margin: auto;
+      margin-bottom: 1rem;
+    }
+       .summary-box .msg{
+     font-weight: 500;
+     font-size: .9rem;
+     line-height: 1.4;
+     border-top: 1px solid #eee;
+     padding-top: .5rem;
+    }
+
+    .summary-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 16px;
+    }
+    .summary-row span{
+        font-weight: 500;
+    }
+    .summary-header h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #333;
+      margin: 0;
+    }
+
+    .summary-header span {
+      color: #0c9c84;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    .summary-body {
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+      padding: 12px 0;
+      margin-bottom: 20px;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+      color: #555;
+      font-size: 15px;
+    }
+
+    .terms {
+      font-size: 14px;
+      color: #555;
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .terms input[type="checkbox"] {
+      transform: scale(1.1);
+      margin-top: 2px;
+    }
+
+    .terms a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    .terms a:hover {
+      text-decoration: underline;
+    }
+
+    .confirm-button {
+      width: 100%;
+      background-color: #ffb038;
+      color: #333;
+      font-weight: 600;
+      font-size: 16px;
+      padding: 14px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .confirm-button:hover {
+      background-color: #ffaa1a;
+    }
+    .addMore {
+       margin-bottom: 1rem;
+    }
+    .addMore a{
+        font-weight: 500;
+        font-size: .9rem;
+        color: #1a0dab
+    }
+    .addMore a:hover{
+        text-decoration: underline;
+    }
