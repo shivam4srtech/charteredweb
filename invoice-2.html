@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Due Diligence Report - Razorpay</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+  <style>
+  *{
+    padding: 0;
+    margin: 0;
+  }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Poppins', sans-serif;
+    }
+    @page {
+      size: A4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .pdf-page {
+      width: 210mm;
+      height: 297mm;
+      padding: 0 45px;
+      box-sizing: border-box;
+      position: relative;
+      /* page-break-after: always; */
+      border: 1px solid #ddd;
+     
+      border-bottom: none;
+      margin-left: -8px;
+    }
+     .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 4rem;
+        top: 0;
+        font-weight: bold;
+     }
+    .header span{
+       font-size: .95rem;
+     }
+    .header img.logo {
+        object-fit: contain;
+        width: 200px;
+        height: auto;
+     }
+    .header, .footer {
+      position: absolute;
+      left: 45px;
+      right: 45px;
+      text-align: center;
+      font-size: 12px;
+    }
+    .footer {
+      bottom: 0;
+      border-top: 2px solid #000;
+      height: 3.5rem;
+      padding-top: .5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+     .footer span {
+      font-size: .7rem;
+      font-weight: 500;
+      color: #000;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+     .footer span img {
+     object-fit: contain;
+    }
+
+         .footer span a{
+      text-decoration: none;
+    }
+
+    .content {
+      font-size: 14px;
+      line-height: 1.4;
+      margin-top: 3rem;
+      padding-top: 1rem;
+
+    }
+     h2 {
+            text-align: center;
+        }
+
+        .invoice-header, .invoice-footer {
+            padding-bottom: 10px;
+        }
+
+        .invoice-details, .company-details, .customer-details {
+            margin-bottom: 20px;
+        }
+
+        
+
+      strong{
+        font-weight: 600;
+      }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 25px;
+        }
+
+    
+
+        th, td {
+            padding: 10px;
+            text-align: right;
+            font-size: .9rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .total-row {
+            font-weight: bold;
+        }
+
+        .note {
+            font-size: 0.9em;
+            color: #777;
+        }
+        .flexHeder{
+            display: flex;
+            justify-content: space-between;
+        }
+        .flexHeder h2{
+            font-weight: 500;
+            font-size: 2.6rem;
+            text-transform: uppercase;
+        }
+        .flexHeder img{
+            width: 200px;
+            object-fit: contain;
+        }
+        .company-details, .customer-details{
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            font-weight: 500;
+            font-size: .9rem;
+            color: #575757;
+        }
+         .company-details strong, .customer-details strong{
+            color: #000;
+        }
+        .invoice-header{
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+        .invoice-details strong{
+            display: inline-block;
+            min-width: 100px;
+        }
+        thead tr{
+            background-color: #000;
+            color: #fff;
+        }
+          table  thead tr th{
+            font-weight: 600;
+            letter-spacing: .5px;
+            text-align: right;
+
+        }
+           table  thead tr td{
+            text-align: right;
+
+        }
+        table  tbody tr{
+           border-bottom: 1px solid #ddd;
+
+        }
+         table  tbody tr.noborder{
+           border-bottom: none;
+
+        }
+        table  tbody tr:last-child{
+           border-bottom: none;
+
+        }
+        .invoice-header:nth-of-type(1){
+            align-items: flex-start;
+        }
+          .invoice-header:nth-of-type(1) h2{
+           font-weight: 500;
+           font-size: 2rem;
+           text-transform: uppercase;
+        }
+
+  </style>
+</head>
+<body>
+
+  <button class="btn-download" onclick="generatePDF()">Download Due Diligence PDF</button>
+
+  <div id="pdf-content">
+         <!-- Page 1 -->
+    <div class="pdf-page">
+      <div class="header"></div>
+        <div class="content">
+            <div class="invoice-header clearfix">
+                <div class="company-details">
+                    <strong>MCA Company Pvt. Ltd.</strong>
+                    <span>CIN: U12345MH2020PTC000000</span>
+                    <span> GSTIN: 27ABCDE1234F1Z5</span>
+                    <span>123, Corporate Avenue,</span>
+                    <span> Mumbai, Maharashtra - 400001</span>
+                    <span>Email: info@mcacompany.com</span>
+                </div>
+                <div>
+                        <h2>Tax Invoice</h2>
+                </div>
+            </div>
+            <div class="invoice-header">
+                <div class="customer-details">
+                    <strong>Bill To:</strong>
+                    <span>John Doe</span>
+                    <span> johndoe@example.com</span>
+                    <span>CIN: U11111DL2011PTC123456</span>
+                    <span>456, Business Street,</span>
+                <span> New Delhi - 110001</span>
+                </div>
+                <div class="invoice-details">
+                    <p><strong>Invoice No:</strong> <span>MCA2024/001</span></p>
+                    <p><strong>Date:</strong> <span>14-June-2025</span></p>
+                </div>
+            </div>
+
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sr</th>
+                        <th>Description</th>
+                        <th>HSN/SAC</th>
+                        <th>Qty</th>
+                        <th>Rate (₹)</th>
+                        <th>Amount (₹)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Company Financial Report</td>
+                        <td>998314</td>
+                        <td>1</td>
+                        <td>2,500.00</td>
+                        <td>2,500.00</td>
+                    </tr>
+                    <tr class="noborder">
+                        <td colspan="5" class="text-right">CGST @ 9%</td>
+                        <td>225.00</td>
+                    </tr>
+                    <tr class="noborder">
+                        <td colspan="5" class="text-right">SGST @ 9%</td>
+                        <td>225.00</td>
+                    </tr>
+                    <tr class="total-row noborder">
+                        <td colspan="5" class="text-right">Total</td>
+                        <td>2,950.00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="note">
+            <p><strong>Note:</strong> This is a system generated invoice and does not require a physical signature.</p>
+        </div>
+
+    <div class="invoice-footer">
+        <p>Thank you for your business!</p>
+    </div>
+        
+      </div>
+      <div class="footer"> <span>Powered by <img src="./images/charteredOne-com-logo.webp" alt="logo" width="80"></span> <span>Visit <a href="charteredone.com">charteredone.com</a> to create truly professional invoices</span></div>
+    </div>
+    
+   
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script>
+    function generatePDF() {
+      const element = document.getElementById('pdf-content');
+      const options = {
+        margin: 0,
+        filename: 'Due-Diligence-Razorpay.pdf',
+        image: { type: 'jpeg', quality: 0.98 },
+        html2canvas: { scale: 2 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      };
+      html2pdf().set(options).from(element).save();
+    }
+  </script>
+</body>
+</html>

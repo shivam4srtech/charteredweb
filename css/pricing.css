@@ -1,0 +1,171 @@
+ .pricing-card {
+      border: 2px solid #e0e0e0;
+      border-radius: 15px;
+      padding: 1rem;
+      transition: transform 0.3s;
+      background-color: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      min-height: 100%;
+    }
+    .pricing-card:hover {
+      transform: translateY(-5px);
+    }
+    .most-popular {
+      border: 2px solid #805ad5;
+      position: relative;
+    }
+    .most-popular::before {
+      content: "MOST POPULAR";
+      position: absolute;
+      top: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #805ad5;
+      color: #fff;
+      padding: 0.25rem 1rem;
+      font-size: 0.8rem;
+      border-radius: 1rem;
+    }
+    .btn-custom {
+      border-radius: 30px;
+      padding: 0.5rem 1.5rem;
+      font-weight: bold;
+    }
+    .plan-single { border-color: #7f9cf5; }
+    .plan-premium { border-color: #805ad5; }
+    .plan-business { border-color: #68d391; }
+    .plan-cloud { border-color: #f6ad55; }
+
+    .pricingPanel{
+        padding: 6rem 0;
+    }
+    .priceTitle{
+      font-weight: 500;
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 1rem;
+    }
+      .priceTitle img{
+      max-width: 40px;
+    }
+     .planPrice {
+     margin-bottom: 1rem;
+    }
+    .planPrice span{
+      font-weight: 600;
+      font-size: 2rem;
+    }
+     .planPrice small{
+      font-weight: 600;
+      font-size: 1rem;
+      color: #6c6a71;
+    }
+    .choosePlan{
+      border-radius: 6px;
+      padding: .5rem 1rem;
+      font-weight: 600;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .pricing-card .list-unstyled li{
+      display: flex;
+      text-align: left;
+      font-weight: 500;
+      font-size: .9rem;
+      color: #231f2b;
+      line-height: 1.4;
+      align-items: flex-start;
+      margin-bottom: .5rem;
+
+    }
+    .pricing-card .list-unstyled li svg{
+     width: 18px;
+     height: 18px;
+     margin-bottom: .6rem;
+    align-self: flex-start;
+    }
+    .pricing-card .list-unstyled li svg.cross{
+     width: 18px;
+     height: 18px;
+     margin-bottom: .6rem;
+     align-self: flex-start;
+     fill: #ff0000;
+    }
+    .pricing-card .list-unstyled li small{
+     margin-right: .5rem;
+    }
+    .pricing-card .infoInfo{
+      font-weight: 600;
+      text-align: left;
+      margin-top: .5rem;
+      display: flex;
+      height: 26px;
+    }
+    .pricing-card .list-unstyled li span strong{
+     font-weight: 600;
+     display: block;
+    }
+    .pricing-card.plan-single .choosePlan{
+      border: 2px solid #126dee;
+      color: #126dee;
+    }
+    .pricing-card.plan-premium .choosePlan{
+      border: 2px solid #805ad5;
+      background-color: #805ad5;
+      color: #fff;
+    }
+    .pricing-card.plan-business  .choosePlan{
+      border: 2px solid #68d391;
+      color: #68d391;
+    }
+    .pricing-card.plan-cloud  .choosePlan{
+      border: 2px solid #f6ad55;
+      color: #f6ad55;
+    }
+    .pricing-card .info{
+      font-weight: 500;
+      font-size: .85rem;
+      line-height: 1.4;
+      margin-top: 1rem;
+      border-radius: 4px;
+      padding: .5rem;
+      background-color: #f6f3fa;
+      border: 1px solid #613dc1;
+    }
+    .pricing-card .info strong{
+      font-weight: 600;
+    }
+    .pageHeader{
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    .pageHeader h1{
+     font-weight: 600;
+     font-size: 2rem;
+     line-height: 1.4;
+    }
+    .gradient-text {
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  -webkit-background-clip: text;
+  background-clip: none;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.pageHeader span{
+     border-radius: 1.7rem;
+     padding: .5rem;
+    background-color: #f6f3fa;
+    border: 1px solid #613dc1;
+     display: inline-block;
+     margin-bottom: .5rem;
+     font-weight: 500;
+     font-size: .85rem;
+}
+@media(max-width:600px){
+  .pageHeader h1{
+    font-size: 1.6rem;
+  }
+}

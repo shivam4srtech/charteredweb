@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tax Invoice</title>
+    <style>
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            src: url('{{ url("fonts/Poppins-Regular.ttf") }}') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            src: url('{{ url("fonts/Poppins-Bold.ttf") }}') format('truetype');
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-size: 12px;
+            color: #000;
+        }
+
+        .invoice-box {
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .company-details, .customer-details {
+            line-height: 1.6;
+        }
+
+        .invoice-details {
+            text-align: right;
+            line-height: 1.6;
+        }
+
+        .invoice-top {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        table {
+            width: 100%;
+            margin-top: 25px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: right;
+        }
+
+        th {
+            background-color: #000;
+            color: #fff;
+        }
+
+        td.description {
+            text-align: left;
+        }
+
+        .total-row {
+            font-weight: bold;
+        }
+
+        .note {
+            margin-top: 20px;
+            font-size: 10px;
+            color: #555;
+        }
+
+        .footer {
+            margin-top: 30px;
+            border-top: 1px solid #000;
+            padding-top: 10px;
+            text-align: center;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-box">
+        <div class="header">
+            <div style="font-weight: 500;">
+                <strong>MCA Company Pvt. Ltd.</strong><br>
+                CIN: U12345MH2020PTC000000<br>
+                GSTIN: 27ABCDE1234F1Z5<br>
+                123, Corporate Avenue,<br>
+                Mumbai, Maharashtra - 400001<br>
+                Email: info@mcacompany.com
+            </div>
+            <div>
+                <h2 style="margin: 0 0 10px 0;">TAX INVOICE</h2>
+            </div>
+        </div>
+
+        <div class="invoice-top">
+            <div class="customer-details">
+                <strong>Bill To:</strong><br>
+                John Doe<br>
+                johndoe@example.com<br>
+                CIN: U11111DL2011PTC123456<br>
+                456, Business Street,<br>
+                New Delhi - 110001
+            </div>
+            
+            <div class="invoice-details">
+                
+                <p><strong style="
+    min-width: 80px;
+    display: inline-block;
+
+    text-align: left;
+">Invoice No:</strong> MCA2024/001</p>
+                <p><strong style="
+    min-width: 80px;
+    display: inline-block;
+ 
+    text-align: left;
+">Date:</strong> 14-June-2025</p>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Sr</th>
+                    <th class="description">Description</th>
+                    <th>HSN/SAC</th>
+                    <th>Qty</th>
+                    <th>Rate (₹)</th>
+                    <th>Amount (₹)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="description">Company Financial Report</td>
+                    <td>998314</td>
+                    <td>1</td>
+                    <td>2,500.00</td>
+                    <td>2,500.00</td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="description text-right">CGST @ 9%</td>
+                    <td>225.00</td>
+                </tr>
+                <tr>
+                    <td colspan="5" class="description text-right">SGST @ 9%</td>
+                    <td>225.00</td>
+                </tr>
+                <tr class="total-row">
+                    <td colspan="5" class="description text-right">Total</td>
+                    <td>2,950.00</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="note">
+            <p><strong>Note:</strong> This is a system generated invoice and does not require a physical signature.</p>
+        </div>
+
+        <div class="footer">
+            <p>Powered by <strong>CharteredOne</strong></p>
+            <p>Visit <a href="https://charteredone.com">charteredone.com</a> to create professional invoices</p>
+        </div>
+    </div>
+</body>
+</html>

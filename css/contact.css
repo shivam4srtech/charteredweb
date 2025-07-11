@@ -1,0 +1,211 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    max-width: 1200px;
+    width: 96%;
+    margin: 0 auto;
+}
+
+.contact {
+    margin-top: 6rem;
+}
+.contact p {
+  font-weight: 500;
+  letter-spacing: .5px;
+  line-height: 1.4;
+}
+.form {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.form .form-txt {
+    flex-basis: 48%;
+}
+
+.form .form-txt h1 {
+    font-weight: 600;
+    color: #000;
+    font-size: 40px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    color:  rgba(0, 0, 0, 0.89);
+}
+
+.form .form-txt span {
+    color:  rgba(0, 0, 0, 0.89);
+    font-size: 14px;
+}
+
+.form .form-txt h3 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 15px 0;
+    color:  rgba(0, 0, 0, 0.89);
+}
+
+.form .form-txt p {
+    color:  rgba(0, 0, 0, 0.89);
+    font-size: 14px;
+}
+
+.form .form-details {
+    flex-basis: 48%;
+}
+
+.form .form-details input[type="text"],
+.form .form-details input[type="date"],
+.form .form-details input[type="time"],
+.form .form-details input[type="email"] {
+    padding: 13px 18px;
+    border-radius: 4px;
+    color: #000;
+    outline: none;
+    border: 1px solid #e2e2e2;
+    margin: 0 auto 2rem auto;
+    width: 100%;
+    display: block;
+    font-weight: 5000;
+    font-size: .9rem;
+}
+.form .form-details input::placeholder
+ {
+   color: #2e2e2e;
+   font-weight: 500;
+   letter-spacing: .5px;
+}
+.form .form-details textarea::placeholder
+ {
+   color: #2e2e2e;
+   font-weight: 500;
+   letter-spacing: .5px;
+}
+
+.form .form-details textarea {
+    padding: 15px 20px;
+    margin: 1rem auto 1rem auto;
+    color:#000;
+    outline: none;
+    border: 1px solid #e2e2e2;
+    font-size: .9rem;
+    resize: none;
+    width: 100%;
+    display: block;
+}
+
+.form .form-details .sendbtn {
+    padding: 13px 16px;
+    border-radius: 4px;
+    color: #000;
+    font-weight: 500;
+    background: #f5b402;
+    outline: none;
+    border: none;
+    margin: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .5px;
+    cursor: pointer;
+    display: inline-block;
+}
+@media(max-width:768px){
+    .form .form-details {
+       margin-top: 1rem;
+    }
+}
+@media (max-width: 500px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    .form .form-details input[type="text"],
+    .form .form-details input[type="email"],
+    .form .form-details input[type="date"],
+    .form .form-details input[type="time"],
+    .form .form-details textarea {
+        width: 100%;
+    }
+}
+
+@media(min-width: 501px) and (max-width: 768px) {
+    .form {
+        display: flex;
+        flex-direction: column;
+    }
+    .form .form-details button {
+        margin-left: 0;
+    }
+    .form .form-details input[type="text"],
+    .form .form-details input[type="email"],
+    .form .form-details textarea {
+        width: 100%;
+    }
+}
+.form-txt .social{
+	margin-top: 1rem;
+}
+.form-txt .social a{
+	display: inline-flex;
+	height: 40px;
+	width: 40px;
+    justify-content: center;
+    align-items: center;
+	background-color: #000;
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #fff;
+	transition: all .3s ease;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.form-txt .social a:hover{
+	color: #fff;
+}
+
+.social a:nth-of-type(1):hover{
+   background-color: #0000ff;
+}
+.social a:nth-of-type(2):hover{
+    background-color: #2e2e2e;
+ }
+ .social a:nth-of-type(3):hover{
+    background-color: #C13584;
+ }
+ .social a:nth-of-type(4):hover{
+   background-color: #25d366;
+ }
+ .social a:nth-of-type(5):hover{
+    background-color: #0077B5;
+  }
+.addressBox p svg{
+    margin-right: .5rem;
+}
+
+
+@media(max-width:600px){
+    .form .form-txt h1{
+        font-size: 26px;
+    }
+}
+.addressBox img{
+ object-fit: contain;
+ width: 500px;
+ max-width: 100%;
+}
+.form-details label{
+    font-weight: 600;
+    margin-bottom: .5rem;
+    display: block;
+    padding-left: .1rem;
+    font-size: 1rem;
+}
+.form .form-details.appointmentForm input{
+    margin-bottom: 1rem;
+}
+.ourReview{
+    margin-top: 1rem;
+}

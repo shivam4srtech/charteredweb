@@ -1,0 +1,37 @@
+.aboutLLC{
+    background-color: transparent;
+}
+.whyRegistar{
+    background-color: transparent;
+}
+
+.whyRegistar h1 {
+    color: #000;
+}
+.startBussines{
+    background-color: transparent;
+}
+.registrationProcess{
+    background-color: transparent;
+}
+.registrationProcess h2{
+    color: #000;
+}
+.hassleFree{
+    background-color: transparent;
+}
+.hassleFree .hassalHeader h2{
+    color: #000;
+}
+.hassleFree .hassalHeader P{
+    color: #000;
+}
+.hassleFree .hassaleItem p {
+    color: #000;
+}
+.hassleFree .hassaleItem svg {
+    fill: #000;
+}
+.hassleFree .hassaleItem {
+    border-left: 1px solid #000;
+}
