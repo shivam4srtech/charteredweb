@@ -1,0 +1,249 @@
+.inputData .inputHeader{
+    display: flex;
+    justify-content: space-between;
+}
+ body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: #000;
+}
+.inputData{
+    max-width: 800px;
+    margin: auto;
+        min-height: 1100px;
+    padding: 40px 30px;
+    background: #fff;
+    border: 1px solid #bfc8de;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 6rem;
+}
+.inputData input.form-control{
+    border: none;
+    outline: none;
+    border: 1px solid transparent;
+    padding: .5rem;
+    border-radius: 5px;
+    box-shadow: none;
+}
+.inputData .calendar-box:hover{
+   border: 1px solid #b7caef;
+   box-shadow: none;
+}
+.inputData .form-control:focus{
+   border: 1px solid #b7caef;
+   box-shadow: none;
+}
+.flatpickr-calendar{
+    top: 50% !important;
+    left: 50% !important;
+}
+.mainInput{
+    font-weight: 500;
+    font-size: 2.6rem;
+    text-align: right;
+}
+.inputData .inputSet{
+    display: flex;
+    justify-content: space-between;
+}
+.inputData .inputSet .form-control{
+    font-size: .9rem; 
+    padding: .2rem .5rem;
+}
+.inputData .inputSet .form-control.inputdtl{
+    color: #555;
+}
+.inputData .inputSet .inputHead{
+    font-weight: 600;
+}
+.inputData .multiInput{
+    display: flex;
+}
+.listInputs{
+    flex: 1;
+}
+table .adItem{
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+    color: #1a0dab;
+    font-weight: 500;
+}
+table td .flex{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+}
+table td .flex button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+table td .flex svg{
+   width: 10px;
+   fill: #ff0000;
+}
+.invTbl table thead .form-control{
+    padding: 0 ;
+    background-color: transparent;
+    color: #fff;
+    font-size: .8rem;
+    border-radius: 4px;
+}
+.invTbl table tbody .form-control{
+    font-size: .8rem;
+    padding: .5rem 0;
+}
+.invTbl table tbody td{
+    padding: .1rem;
+}
+.invTbl table thead th{
+    padding: .3rem;
+}
+.invTbl table thead .form-control:focus{
+    background-color: #fff;
+    color: #000;
+}
+/* calendar */
+  .calendar-wrapper {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+    }
+
+    .calendar-box {
+      cursor: pointer;
+    }
+
+  .form-control{
+    border: none;
+  }
+
+    .label {
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    .poweredBy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .poweredBy img{
+        width: 80px;
+    }
+    .invTbl{
+        margin-bottom: .5rem;
+        margin-top: 1rem;
+    }
+/* upload */
+.upload-container {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 30px;
+    }
+
+    .upload-wrapper {
+      position: relative;
+      width: 140px;
+      height: 100px;
+    }
+
+    .upload-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      max-width: 160px;
+      border: 1px solid #c4c4c4;
+      border-radius: 12px;
+      cursor: pointer;
+      background-color: #fafafa;
+      transition: border 0.3s;
+      overflow: hidden;
+    }
+    .upload-label img{
+      object-fit: cover;
+    }
+
+    .upload-label:hover {
+      border-color: #4B0082;
+    }
+
+    .upload-label input[type="file"] {
+      display: none;
+    }
+
+    .upload-content {
+      text-align: center;
+      color: #5b9aff;
+    }
+
+ 
+
+    .upload-content span {
+      display: block;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+
+    .upload-preview {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .upload-instructions {
+      font-size: 11px;
+      color: #333;
+    }
+    .upload-instructions strong {
+     font-weight: 600;
+    }
+
+    .action-buttons {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 2;
+    }
+
+    .action-buttons button {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 4px;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .action-buttons button:hover {
+      background: #f0f0f0;
+    }
+
+    .action-buttons svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .icon-pen {
+      color: #4B0082;
+    }
+
+    .icon-trash {
+      color: #e63946;
+    }

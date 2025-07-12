@@ -3,21 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Tax Invoice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="stylesheet" href="./bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<!-- Flatpickr CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/invoice.css">
     <style>
-        @font-face {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 400;
-            src: url('{{ url("fonts/Poppins-Regular.ttf") }}') format('truetype');
-        }
-
-        @font-face {
-            font-family: 'Poppins';
-            font-style: normal;
-            font-weight: 700;
-            src: url('{{ url("fonts/Poppins-Bold.ttf") }}') format('truetype');
-        }
-
         body {
             font-family: 'Poppins', sans-serif;
             font-size: 12px;
@@ -30,26 +24,34 @@
         }
 
         .header {
-            display: flex;
-            justify-content: space-between;
+           overflow: hidden;
             font-size: 14px;
-            font-weight: bold;
+            position: relative;
+            height: 120px;
         }
 
         .company-details, .customer-details {
             line-height: 1.6;
         }
 
-        .invoice-details {
-            text-align: right;
-            line-height: 1.6;
+       
+        .customer-details{
+            position: absolute;
+            float: left;
+            left:0;
+        }
+        .invoice-details{
+            position: absolute;
+            float: right;
+            right: 0;
+            bottom: 0;
         }
 
         .invoice-top {
-            margin-top: 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
+            margin-top: 10px;
+            overflow: hidden;
+            height: 80px;
+            position: relative;
         }
 
         table {
@@ -90,32 +92,615 @@
             text-align: center;
             font-size: 10px;
         }
+        .invoice-details p{
+            margin-top: 0; 
+        }
+          .invoice-details p:last-child{
+            margin-bottom: 0; 
+        }
+        strong{
+            font-weight: 600;
+        }
     </style>
 </head>
 <body>
-    <div class="invoice-box">
-        <div class="header">
-            <div style="font-weight: 500;">
-                <strong>MCA Company Pvt. Ltd.</strong><br>
-                CIN: U12345MH2020PTC000000<br>
-                GSTIN: 27ABCDE1234F1Z5<br>
-                123, Corporate Avenue,<br>
-                Mumbai, Maharashtra - 400001<br>
-                Email: info@mcacompany.com
+     <nav class="autohide customeNav fixed-top">
+        <div class="wrapper">
+          <div class="logo"><a href="/"><img src="./images/charteredOne-com-logo.png" alt=""></a></div>
+          <!-- <input type="radio" name="slider" id="menu-btn">
+          <input type="radio" name="slider" id="close-btn"> -->
+          <ul class="nav-links hideOnMobile">
+            <li><label for="close-btn" class="btn close-btn"><i class="fas fa-times" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"></i></label></li>
+            <li class="toggle-group">
+                <a href="#" class="desktop-item border_bottom">Business Setup</a>
+                <!-- <input type="checkbox" id="showMega"> -->
+                <label for="showMega" class="mobile-item">Business Setup</label>
+                <div class="mega-box">
+                  <div class="megaContent">
+                    <div class="row serviceBox">
+                      <div class="col-md-12">
+                          <div class="tab-content">
+                              <div id="menuItem1" class="toggle-content" style="display: block;">
+                                  <div class="row">
+                                      <div class="col-lg-3 mb-3">
+                                          <h4 class="megaServiceHeading">Bussines Setup in India</h4>
+                                          <div class="serviceAnchors">
+                                              <ul>
+                                                  <li><a href="#">Private Limited Company</a></li>
+                                                  <li><a href="#">Partnership Firm registration</a></li>
+                                                  <li><a href="#">Limited Liability Partnership</a></li>
+                                                  <li><a href="#">One Person Company</a></li>
+                                                  <li><a href="#">NBFC Registration</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">Proprietorship Registration</a></li>
+                                                  <li><a href="#">Section 8 company</a></li>
+                                                  <li><a href="#">Society Registartion</a></li>
+                                                  <li><a href="#">Nidhi Company</a></li>
+                                                  <li><a href="#">IRDA Insurance Marketing Firm</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">NGO Registration</a></li>
+                                                  <li><a href="#">Section 8 Microfinance Company</a></li>
+                                                  <li><a href="#">Public Limited Company</a></li>
+                                                  <li><a href="#">Producer Company</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-3 mb-3">
+                                          <h4 class="megaServiceHeading">Compliance</h4>
+                                          <div class="serviceAnchors">
+                                              <ul>
+                                                  <li><a href="#">Annual Filing</a></li>
+                                                  <li><a href="#">Annual Compliance of PVT. LTD. Company</a></li>
+                                                  <li><a href="#">Annual Compliance LLP</a></li>
+                                                  <li><a href="#">Compliances of section</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">Compliance for Nidhi Company</a></li>
+                                                  <li><a href="#">Compiance for NBFC</a></li>
+                                              </ul>
+                                          </div>
+                                          <h4 class="megaServiceHeading">Event Based Compliance</h4>
+                                          <div class="serviceAnchors">
+                                              <ul>
+                                                  <li><a href="#">Director KYC</a></li>
+                                                  <li><a href="#">Appointment of Auditor</a></li>
+                                                  <li><a href="#">Change in object clause</a></li>
+                                                  <li><a href="#">Change in MOA &amp; AOA</a></li>
+                                              </ul>
+                                              <ul> 
+                                                  <li><a href="#">Change in name Clause</a></li>
+                                                  <li><a href="#">Company Closure</a></li>
+                                                  <li><a href="#">Change in registered office</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-3 mb-3">
+                                          <div class="serviceAnchors">
+                                              <ul>
+                                                  <li><a href="#">Removal of Director</a></li>
+                                                  <li><a href="#">Appointment &amp; Resiganation of Director</a></li>
+                                                  <li><a href="#">Change in Share Capital</a></li>
+                                                  <li><a href="#">Change in Director</a></li>
+                                                  <li><a href="#">Legal Drafting</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">Appointment of Managing Director</a></li>
+                                                  <li><a href="#">Change of Auditor</a></li>
+                                                  <li><a href="#">Change in Authorised Capital</a></li>
+                                                  <li><a href="#">Change in Name of Company</a></li>
+                                                  <li><a href="#">Issue &amp; Transfer of Shares</a></li>
+                                              </ul>
+                                          </div>
+                                          <h4 class="megaServiceHeading">POSH Compliance</h4>
+                                          <div class="serviceAnchors">
+                                              <ul>
+                                                  <li><a href="#">POSH Compliance</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-3 mb-3">
+                                          <h4 class="megaServiceHeading">International Business Setup</h4>
+                                          <div class="serviceAnchors">
+                                              <ul>
+                                                  <li><a href="#">Foreign Company Registration</a></li>
+                                                  <li><a href="#">Foreign Subsidiary Company</a></li>
+                                                  <li><a href="#">Incorporation in USA</a></li>
+                                                  <li><a href="#">Incorporation in UK</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">Incorporation in Singapore</a></li>
+                                                  <li><a href="#">Incorporation in Australia</a></li>
+                                                  <li><a href="#">Incorporation in Switzerland</a></li>
+                                                  <li><a href="#">Incorporation in China</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">Incorporation in Dubai</a></li>
+                                                  <li><a href="#">Incorporation in Hongkong</a></li>
+                                                  <li><a href="#">Incorporation in Malaysia</a></li>
+                                                  <li><a href="#">Incorporation in Netherlands</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>   
+                              </div>
+                              <!-- ============== -->
+                          </div>
+                      </div>
+                   </div>
+                  </div>
+                </div>
+            </li>
+            <li class="toggle-group">
+              <a href="#" class="desktop-item border_bottom">Registration</a>
+              <!-- <input type="checkbox" id="showMega"> -->
+              <label for="showMega" class="mobile-item">Registration</label>
+              <div class="mega-box">
+                <div class="megaContent">
+                  <div class="row serviceBox">
+                    
+                    <div class="col-md-12">
+                        <div class="tab-content">
+                            <!-- ============== -->
+                            <div id="menuItem3" class="toggle-content" style="display: block;">
+                                <div class="row">
+                                    <div class="col-lg-3 mb-3">
+                                        <h4 class="megaServiceHeading">Government Registratons</h4>
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">NSIC Registraton</a></li>
+                                                <li><a href="#">ESI Registraton</a></li>
+                                                <li><a href="#">Barcode Registraton</a></li>
+                                                <li><a href="#">Bed And Breakfast</a></li>
+                                                <li><a href="#">MSME Registraton</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#">Startup India Registraton</a></li>
+                                                <li><a href="#">Drug licence Registraton</a></li>
+                                                <li><a href="#">Shops and Establishment</a></li>
+                                                <li><a href="#">Registraton PAN Card</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#">Applicaton EPF</a></li>
+                                                <li><a href="#">Registraton RERA</a></li>
+                                                <li><a href="#">Registraton Design</a></li>
+                                                <li><a href="#">Registraton ISO</a></li>
+                                                <li><a href="#">Certficaton BEE Registraton</a></li>
+                                            </ul>
+                                            <h4 class="megaServiceHeading">Hospitality Business Setup</h4>
+                                            <ul>
+                                                <li><a href="#">Hotel Registration</a></li>
+                                                <li><a href="#">One Star Hotel</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <ul>
+                                                <li><a href="#">Two Star Hotel</a></li>
+                                                <li><a href="#">Three Star Hotel</a></li>
+                                                <li><a href="#">Four Star Hotel Without Alkohal</a></li>
+                                                <li><a href="#">Four Star Hotel with Alkohal </a></li>
+                                                <li><a href="#">Five Star Hotel without Alkohal</a></li>
+                                                <li><a href="#">Five Star Hotel with Alkohal</a></li>
+                                                <li><a href="#">Five Star Deluxe Hotel</a></li>
+                                                <li><a href="#">Homestay Bed &amp; Breakfast (BnB)</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#">Paying Guest (PG)</a></li>
+                                                <li><a href="#">Guest House</a></li>
+                                                <li><a href="#">Coffee Cafe Restaurant Registration</a></li>
+                                                <li><a href="#">Fine Dinig Restaurant</a></li>
+                                                <li><a href="#">Casual Dining Restaurant</a></li>
+                                            </ul>
+                                            <h4 class="megaServiceHeading">ZED</h4>
+                                            <ul>
+                                                <li><a href="#">ZED Certficaton</a></li>
+                                                <li><a href="#">ZED Gold Certficate</a></li>
+                                                <li><a href="#">ZED Silver Certficate</a></li>
+                                                <li><a href="#">ZED Bronze Certficate</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <h4 class="megaServiceHeading">For NGOs</h4>
+                                            <ul>
+                                                <li><a href="#">80G & 12A Registraton </a></li>
+                                                <li><a href="#">NGO Darpan Registraton</a></li>
+                                                <li><a href="#">CSR Registraton</a></li>
+                                                <li><a href="#">CSR Exchange Registraton</a></li>
+                                                <li><a href="#">FCRA Registraton</a></li>
+                                            </ul>
+                                            <h4 class="megaServiceHeading">Factory License</h4>
+                                            <ul>
+                                                <li><a href="#">Factory License Registraton</a></li>
+                                                <li><a href="#">Consent To Operate</a></li>
+                                                <li><a href="#">Consent To Establish</a></li>
+                                            </ul>
+                                            <h4 class="megaServiceHeading">FSSAI</h4>
+                                            <ul>
+                                                <li><a href="#">FSSAI Registraton</a></li>
+                                                <li><a href="#">FSSAI Basic Registraton</a></li>
+                                                <li><a href="#">FSSAI State Licence</a></li>
+                                                <li><a href="#">FSSAI Central licence</a></li>
+                                                <li><a href="#">FSSAI Returns</a></li>
+                                                <li><a href="#">FSSAI Renewal</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 mb-3">
+                                        <div class="serviceAnchors">
+                                            <h4 class="megaServiceHeading">CDSCO Registraton</h4>
+                                            <ul>
+                                                <li><a href="#">CDSCO Registraton </a></li>
+                                                <li><a href="#">Cosmetcs Cardiovascular</a></li>
+                                                <li><a href="#">Medical Devices</a></li>
+                                                <li><a href="#">Ophthalmic Medical Devices</a></li>
+                                                <li><a href="#">FCRA Registraton</a></li>
+                                            </ul>
+                                            <ul>
+                                                <li><a href="#">Pain Management Medical Devices</a></li>
+                                                <li><a href="#">Dermatology Plastc Surgery Devices</a></li>
+                                                <li><a href="#">Drugs Manufacture In India</a></li>
+                                                <li><a href="#">Oncology Medical Devices</a></li>
+                                                <li><a href="#">Radiotherapy Medical Devices</a></li>
+                                                <li><a href="#">Paediatrics Neonatology Defibrillators</a></li>
+                                                <li><a href="#">Glucometer IVD Lab Kits</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+                </div>
+              </div>
+            </li>
+            <li class="toggle-group">
+                <a href="#" class="desktop-item border_bottom">Import Export</a>
+                <!-- <input type="checkbox" id="showMega"> -->
+                <label for="showMega" class="mobile-item">Import Export</label>
+                <div class="mega-box">
+                  <div class="megaContent">
+                    <div class="row serviceBox">
+                      <div class="col-md-12">
+                          <div class="tab-content">
+                              <div id="menuItem4" class="toggle-content" style="display: block;">
+                                  <div class="row">
+                                      <div class="col-lg-3 mb-3">
+                                          <h4 class="megaServiceHeading">License</h4>
+                                          <div class="serviceAnchors">
+                                              <ul>
+                                                  <li><a href="#">IEC Registraton</a></li>
+                                                  <li><a href="#">IEC Renewal</a></li>
+                                                  <li><a href="#">AD Code Registraton</a></li>
+                                                  <li><a href="#">Merchandise Exports from India</a></li>
+                                                  <li><a href="#">Service Exports from India</a></li>
+                                                  <li><a href="#">FIEO Registraton ICEGATE Registraton</a></li>
+                                                  <li><a href="#">Certficate Of Origin WPC Certficate</a></li>
+                                                  <li><a href="#">Freight Forwarding Services</a></li>
+                                                  <li><a href="#">Halal Certficate</a></li>
+                                                  <li><a href="#">Health Certficate</a></li>
+                                              </ul>
+                                              <h4 class="megaServiceHeading">RCMC</h4>
+                                              <ul>
+                                                  <li><a href="#">Board Registraton</a></li>
+                                                  <li><a href="#">Apeda Registraton</a></li>
+                                                  <li><a href="#">Apeda RCAC Registraton</a></li>
+                                                  <li><a href="#">MPEDA Registraton</a></li>
+                                                  <li><a href="#">WWEPC Registraton</a></li>
+                                                  <li><a href="#">Capexil Certficate</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-3">
+                                          <div class="serviceAnchors">
+                                              <ul>
+                                                  <li><a href="#">Carpet Export Promoton Council</a></li>
+                                                  <li><a href="#">Cashew Export Promoton Council</a></li>
+                                                  <li><a href="#">Chemexcil Registraton</a></li>
+                                                  <li><a href="#">Shefexil Registraton CLE Council of leather export</a></li>
+                                                  <li><a href="#">Electronic and Computer SoŌware ESC-EPC</a></li>
+                                                  <li><a href="#">Apparel Export Promoton Council</a></li>
+                                                  <li><a href="#">SEPC Registraton</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">Indian Silk Export Promoton Council</a></li>
+                                                  <li><a href="#">Texprocil Registraton</a></li>
+                                                  <li><a href="#">Tobacco Board Registraton</a></li>
+                                                  <li><a href="#">Pharmexcil Registraton</a></li>
+                                                  <li><a href="#">Coconut Board Registraton</a></li>
+                                                  <li><a href="#">Coffee Board Registraton</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">Coir Board Registraton</a></li>
+                                                  <li><a href="#">Spice Board Registraton</a></li>
+                                                  <li><a href="#">Tea Board Registraton</a></li>
+                                                  <li><a href="#">Rubber Board Registration</a></li>
+                                                  <li><a href="#">Engineering Export Promoton Council</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-3">
+                                          <div class="serviceAnchors">
+                                              <ul>
+                                                  <li><a href="#">EPCES Membership Registration</a></li>
+                                                  <li><a href="#">EPCH Membership Registraton</a></li>
+                                                  <li><a href="#">GJEPC Registraton</a></li>
+                                                  <li><a href="#">Handloom Export Promoton Council</a></li>
+                                                  <li><a href="#">IOPEPC Membership Registraton</a></li>
+                                                  <li><a href="#">Plastc Export Promoton Council</a></li>
+                                              </ul>
+                                              <h4 class="megaServiceHeading">Trade Agreement</h4>
+                                              <ul>
+                                                  <li><a href="#">APTA Certficate Registraton</a></li>
+                                                  <li><a href="#">SAPTA Registraton</a></li>
+                                                  <li><a href="#">ICPTA Certficate</a></li>
+                                                  <li><a href="#">IJCEPA Certficate</a></li>
+                                                  <li><a href="#">India Australia Free</a></li>
+                                                  <li><a href="#">Trade Agreement</a></li>
+                                              </ul>
+                                              <ul>
+                                                  <li><a href="#">ISCECA Certficate</a></li>
+                                                  <li><a href="#">IUCEPA Certficate</a></li>
+                                                  <li><a href="#">SAFTA license</a></li>
+                                                  <li><a href="#">GSP Registraton</a></li>
+                                                  <li><a href="#">LMPC Registraton</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <div class="col-lg-3">
+                                          <div class="serviceAnchors">
+                                              <ul>
+                                                  <li><a href="#">LMPC for Weight & Measurement</a></li>
+                                                  <li><a href="#">Material Safety Data Sheet (MSDS)</a></li>
+                                                  <li><a href="#">UN IIP Certficate</a></li>
+                                              </ul>
+                                              <h4 class="megaServiceHeading">Import Monitoring System</h4>
+                                              <ul>
+                                                  <li><a href="#">Paper Import Monitoring System</a></li>
+                                                  <li><a href="#">Coal Import Monitoring  System</a></li>
+                                                  <li><a href="#">Steel Import Monitoring System</a></li>
+                                                  <li><a href="#">Aliminium Import Monitoring System</a></li>
+                                                  <li><a href="#">Copper Import  Monitoring System</a></li>
+                                                  <li><a href="#">Chip Import Monitoring System</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>        
+                              </div>
+                              <!-- ============== -->
+                          </div>
+                      </div>
+                   </div>
+                  </div>
+                </div>
+            </li>
+          </ul>
+          <ul class="signRegister">
+            <li class="nav-item">
+                <a class="nav-btn" id="loginBtn" href="https://api.whatsapp.com/send?phone=6300347380&amp;text=Hello I am redirected here form charteredone.com need more info on this" target="_blank">6300347380 <img src="https://www.charteredone.com/public/removed-background.png" height="20px" width="20px"></a>
+            </li>
+            <li class="nav-item dropdown-center">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 <img src="images/female_avatar_efig.svg" alt="">
+                </a>
+                <ul class="dropdown-menu">
+                    <li class="userName">
+                        <span>MS Dhoni</span>
+                        <small>Captain, India</small>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M3 13h2V7H3v6zm4 0h2V3H7v10zm4 0h2V9h-2v4z"/>
+                            </svg>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M6 2a1 1 0 0 0-1 1v3h1V3h7v10H6v-3H5v3a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1H6z"/>
+                                <path d="M.146 8.354a.5.5 0 0 0 0-.708L3.793 4H2.5a.5.5 0 0 0 0 1h1.793L.146 7.646a.5.5 0 1 0 .708.708L4.293 9H2.5a.5.5 0 0 0 0 1h1.793L.146 8.354z"/>
+                            </svg>
+                            <span>Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+          </ul>
+          
+          <label data-bs-toggle="offcanvas" data-bs-target="#webmasterOffcanvas" for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+        </div>
+    </nav>
+    <div class="inputData">
+        <div class="inputHeader">
+            <div class="uploadImage">
+                <div class="upload-container">
+                    <div class="upload-wrapper" id="uploadWrapper">
+                        <label class="upload-label" id="uploadLabel">
+                        <input type="file" id="logoInput" accept="image/*">
+                        <div class="upload-content" id="uploadContent">
+                            <svg data-name="Layer 1" viewBox="0 0 512 512" alt="upload" class="upload-svg"><path d="M340.7061,253.5177a21.0039,21.0039,0,0,1-29.7,0l-37.36-37.37v130.4a21,21,0,1,1-42,0v-130.4l-37.37,37.37a21.0011,21.0011,0,1,1-29.7-29.7l73.22-73.22a21.0035,21.0035,0,0,1,29.7,0l73.21,73.22A21.0041,21.0041,0,0,1,340.7061,253.5177Z" style="fill:#5b9aff"></path><path d="M439.086,400.7277a20.9985,20.9985,0,1,1-33.43-25.42,192.0478,192.0478,0,0,0-17.24-251.77c-74.85-74.87-196.66-74.88-271.53-.03a192.0528,192.0528,0,0,0-17.29,251.76,20.9985,20.9985,0,1,1-33.43,25.42,234.019,234.019,0,0,1,186.47-375.4h.03a234.0221,234.0221,0,0,1,186.42,375.44Z" style="fill:#5b9aff"></path><path d="M485.6461,470.0377a21.0039,21.0039,0,0,1-21,21h-424a21,21,0,0,1,0-42h424A21.004,21.004,0,0,1,485.6461,470.0377Z" style="fill:#5b9aff"></path></svg>
+                            <span>Upload</span>
+                        </div>
+                        </label>
+
+                        <!-- Action buttons (initially hidden) -->
+                        <div class="action-buttons" id="actionButtons" style="display: none;">
+                        <button id="editBtn" type="button">
+                            <svg class="icon-pen" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15.232 5.232l3.536 3.536M9 13h3l9-9a2.121 2.121 0 00-3-3l-9 9v3z" />
+                            </svg>
+                        </button>
+                        <button id="deleteBtn" type="button">
+                            <svg class="icon-trash" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6M1 7h22" />
+                            </svg>
+                        </button>
+                        </div>
+                    </div>
+
+                    <div class="upload-instructions" id="uploadInstructions">
+                        <strong>Upload Logo</strong><br>
+                        240 x 240 pixels @ 72 DPI,<br>
+                        Maximum size of 1MB.
+                    </div>
+                </div>
             </div>
             <div>
-                <h2 style="margin: 0 0 10px 0;">TAX INVOICE</h2>
+                <input type="text" class="mainInput form-control" value="TAX INVOICE">
+            </div>
+        </div>
+        <div class="inputSet">
+            <div class="listInputs">
+                 <input type="text" class="inputdtl form-control" value="" placeholder="Your Company">
+                 <input type="text" class="inputdtl form-control" value="" placeholder="Your Name">
+                 <input type="text" class="inputdtl form-control" value="" placeholder="Company's GSTIN">
+                 <input type="text" class="inputdtl form-control" value="" placeholder="Company's Address">
+                 <input type="text" class="inputdtl form-control" value="" placeholder="City">
+                 <input type="text" class="inputdtl form-control" value="" placeholder="State">
+                 <input type="text" class="inputdtl form-control" value="" placeholder="Country">
+            </div>
+            <div class="listInputs">
+                
+            </div>
+        </div>
+        <div class="inputSet">
+            <div class="listInputs">
+                <input type="text" class="inputHead form-control" value="Bill to:">
+                <input type="text" class="inputdtl form-control" value="" placeholder="Your Client's Company">
+                <input type="text" class="inputdtl form-control" value="" placeholder="Client's GST">
+                <input type="text" class="inputdtl form-control" value="" placeholder="Client's Address">
+                <input type="text" class="inputdtl form-control" value="" placeholder="City">
+                <input type="text" class="inputdtl form-control" value="" placeholder="State">
+                <input type="text" class="inputdtl form-control" value="" placeholder="Country">
+                <input type="text" class="inputdtl form-control" value="" placeholder="Place of Supply">
+            </div>
+            <div class="listInputs">
+                <div class="multiInput">
+                    <input type="text" class="inputHead form-control" value="Invoice#" style="width: 110px;">
+                    <div>
+                        <input type="text" class="inputdtl form-control" value="" placeholder="INV1234">
+                    </div>
+                </div>
+                <div class="multiInput">
+                    <input type="text" class="inputHead form-control" value="Invoice Date" style="width: 110px;">
+                    <div class="form-control inputdtl calendar-box" data-picker-id="date1"></div>
+                </div>
+                <div class="multiInput">
+                    <input type="text" class="inputHead form-control" value="Due Date" style="width: 110px;">
+                    <div class="form-control inputdtl calendar-box" data-picker-id="date2"></div>
+                </div>
+                
+            </div>            
+        </div>
+        <div class="invTbl">
+            <table>
+                <thead>
+                    <tr>
+                        <th><input type="text" class="form-control" value="Item Desc"></th>
+                        <th><input type="text" class="form-control" value="Qty"></th>
+                        <th><input type="text" class="form-control" value="Rate"></th>
+                        <th><input type="text" class="form-control" value="SGST"></th>
+                        <th><input type="text" class="form-control" value="CGST"></th>
+                        <th><input type="text" class="form-control" value="CESS"></th>
+                        <th><input type="text" class="form-control" value="AMT"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td width="200"><input type="text" class="form-control" value="Complete Brochure Design"></td>
+                        <td><input type="number" class="form-control" value="98.00"></td>
+                        <td><input type="number" class="form-control" value="0.00"></td>
+                        <td><input type="number" class="form-control" value="0.00"></td>
+                        <td><input type="number" class="form-control" value="0.00"></td>
+                        <td><input type="number" class="form-control" value="0.00"></td>
+                        <td><div class="flex"><input type="number" class="form-control" value="0.00" disabled> <button title="remove item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button></div></td>
+                    </tr>
+                    <tr>
+                        <td width="200"><input type="text" class="form-control" value="Complete Brochure Design"></td>
+                        <td><input type="number" class="form-control" value="98.00"></td>
+                        <td><input type="number" class="form-control" value="0.00"></td>
+                        <td><input type="number" class="form-control" value="0.00"></td>
+                        <td><input type="number" class="form-control" value="0.00"></td>
+                        <td><input type="number" class="form-control" value="0.00"></td>
+                        <td><div class="flex"><input type="number" class="form-control" value="0.00" disabled> <button title="remove item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button></div></td>
+                    </tr>
+                    <tr>
+                        <td width="200"><input type="text" class="form-control" value="Complete Brochure Design"></td>
+                        <td><input type="number" class="form-control" value="98.00"></td>
+                        <td><input type="number" class="form-control" value="0.00"></td>
+                        <td><input type="number" class="form-control" value="0.00"></td>
+                        <td><input type="number" class="form-control" value="0.00"></td>
+                        <td><input type="number" class="form-control" value="0.00"></td>
+                        <td><div class="flex"><input type="number" class="form-control" value="0.00" disabled> <button title="remove item"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button></div></td>
+                    </tr>
+                    <tr>
+                        <td class="text-left"><button class="adItem">Add Line Item +</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"></td>
+                        <td><input type="text" class="form-control" value="Sub Total"></td>
+                        <td><input type="text" class="form-control" value="100" disabled></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"></td>
+                        <td><input type="text" class="form-control" value="SGST (6%)"></td>
+                        <td><input type="text" class="form-control" value="100" disabled></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"></td>
+                        <td><input type="text" class="form-control" value="CGST (6%)"></td>
+                        <td><input type="text" class="form-control" value="100" disabled></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5"></td>
+                        <td><input type="text" class="form-control" value="Total"></td>
+                        <td><input type="text" class="form-control" value="100" disabled></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="inputSet">
+           <div class="listInputs">
+                <input type="text" class="inputHead form-control" value="Note:">
+                <input type="text" class="inputdtl form-control" value="It was great doing business with you.">
+                 <input type="text" class="inputHead form-control" value="Terms &amp; Conditions">
+                <input type="text" class="inputdtl form-control" value="Please make the payment by due date">
+           </div>
+        </div>
+        <div class="poweredBy">
+            <span>Powered by</span><img src="./images/charteredOne-com-logo.webp" alt="charteredone">
+        </div>
+    </div>
+    <div class="invoice-box d-none">
+        <div class="header">
+            <div style="font-weight: normal; font-size: 12px; line-height: 1.6; float:left; position: absolute; left: 0;">
+                <strong>Chartered ONE Softech Private Limited</strong><br>
+                CIN: U62090TS2024PTC182729<br>
+                <!-- GSTIN: 27ABCDE1234F1Z5<br> -->
+                6-3-650, 405,<br>
+                Khairatabad, Telangana, India-500082<br>
+                Email: info@charteredone.com
+            </div>
+            <div style="float: right; position: absolute; right: 0;">
+                <h2 style="font-size: 2.5rem; font-weight: 500; margin-top: 0; margin-bottom: 0;">TAX INVOICE</h2>
             </div>
         </div>
 
         <div class="invoice-top">
             <div class="customer-details">
                 <strong>Bill To:</strong><br>
-                John Doe<br>
-                johndoe@example.com<br>
-                CIN: U11111DL2011PTC123456<br>
-                456, Business Street,<br>
-                New Delhi - 110001
+                Ms Dhoni<br>
+                msd@gmail.com<br>
+                101 Metro Road, Vikas Bhawan New Delhi India 111111<br>
             </div>
             
             <div class="invoice-details">
@@ -125,13 +710,13 @@
     display: inline-block;
 
     text-align: left;
-">Invoice No:</strong> MCA2024/001</p>
+">Invoice No:</strong> #23456</p>
                 <p><strong style="
     min-width: 80px;
     display: inline-block;
  
     text-align: left;
-">Date:</strong> 14-June-2025</p>
+">Date:</strong> 27 JAN 2024</p>
             </div>
         </div>
 
@@ -140,33 +725,29 @@
                 <tr>
                     <th>Sr</th>
                     <th class="description">Description</th>
-                    <th>HSN/SAC</th>
-                    <th>Qty</th>
-                    <th>Rate (₹)</th>
-                    <th>Amount (₹)</th>
+                   
+                    <th>Rate (&#8377;)</th>
+                    <th>Amount (&#8377;)</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>1</td>
-                    <td class="description">Company Financial Report</td>
-                    <td>998314</td>
-                    <td>1</td>
-                    <td>2,500.00</td>
-                    <td>2,500.00</td>
+                    <td>SR Tech Private Limited</td>
+                    <td>1000</td>
+                  
+                    <td>10201</td>
+
                 </tr>
                 <tr>
-                    <td colspan="5" class="description text-right">CGST @ 9%</td>
-                    <td>225.00</td>
+                    <td colspan="3" class="description text-right">CGST @ 9%</td>
+                    <td>109</td>
                 </tr>
                 <tr>
-                    <td colspan="5" class="description text-right">SGST @ 9%</td>
-                    <td>225.00</td>
+                    <td colspan="3" class="description text-right">SGST @ 9%</td>
+                    <td>100</td>
                 </tr>
-                <tr class="total-row">
-                    <td colspan="5" class="description text-right">Total</td>
-                    <td>2,950.00</td>
-                </tr>
+                
             </tbody>
         </table>
 
@@ -175,9 +756,89 @@
         </div>
 
         <div class="footer">
-            <p>Powered by <strong>CharteredOne</strong></p>
+            <p>Powered by  <img src="./images/charteredOne-com-logo.webp" alt="charteredone" style="width: 80px;
+    object-fit: contain;"></p>
             <p>Visit <a href="https://charteredone.com">charteredone.com</a> to create professional invoices</p>
         </div>
     </div>
+        <script src="./bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+
+<script>
+  const input = document.getElementById('logoInput');
+  const uploadLabel = document.getElementById('uploadLabel');
+  const uploadContent = document.getElementById('uploadContent');
+  const uploadInstructions = document.getElementById('uploadInstructions');
+  const actionButtons = document.getElementById('actionButtons');
+  const editBtn = document.getElementById('editBtn');
+  const deleteBtn = document.getElementById('deleteBtn');
+
+  input.addEventListener('change', function () {
+    const file = this.files[0];
+
+    if (file && file.type.startsWith('image/')) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        const img = document.createElement('img');
+        img.src = e.target.result;
+        img.className = 'upload-preview';
+
+        uploadLabel.innerHTML = ''; // Clear label content
+        uploadLabel.appendChild(input); // Re-insert file input
+        uploadLabel.appendChild(img);
+
+        uploadInstructions.style.display = 'none';
+        actionButtons.style.display = 'flex';
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+
+  editBtn.addEventListener('click', function () {
+    input.click(); // Triggers file re-selection
+  });
+
+  deleteBtn.addEventListener('click', function () {
+    // Reset UI
+    uploadLabel.innerHTML = '';
+    const content = document.createElement('div');
+    content.className = 'upload-content';
+    content.innerHTML = `<svg data-name="Layer 1" viewBox="0 0 512 512" alt="upload" class="upload-svg"><path d="M340.7061,253.5177a21.0039,21.0039,0,0,1-29.7,0l-37.36-37.37v130.4a21,21,0,1,1-42,0v-130.4l-37.37,37.37a21.0011,21.0011,0,1,1-29.7-29.7l73.22-73.22a21.0035,21.0035,0,0,1,29.7,0l73.21,73.22A21.0041,21.0041,0,0,1,340.7061,253.5177Z" style="fill:#5b9aff"></path><path d="M439.086,400.7277a20.9985,20.9985,0,1,1-33.43-25.42,192.0478,192.0478,0,0,0-17.24-251.77c-74.85-74.87-196.66-74.88-271.53-.03a192.0528,192.0528,0,0,0-17.29,251.76,20.9985,20.9985,0,1,1-33.43,25.42,234.019,234.019,0,0,1,186.47-375.4h.03a234.0221,234.0221,0,0,1,186.42,375.44Z" style="fill:#5b9aff"></path><path d="M485.6461,470.0377a21.0039,21.0039,0,0,1-21,21h-424a21,21,0,0,1,0-42h424A21.004,21.004,0,0,1,485.6461,470.0377Z" style="fill:#5b9aff"></path></svg><span>Upload</span>`;
+    uploadLabel.appendChild(input);
+    uploadLabel.appendChild(content);
+
+    input.value = '';
+    uploadInstructions.style.display = 'block';
+    actionButtons.style.display = 'none';
+  });
+</script>
+  <!-- Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+   <script>
+    // Find all calendar boxes
+    const calendarBoxes = document.querySelectorAll('.calendar-box');
+
+    calendarBoxes.forEach(box => {
+      const hiddenInput = document.createElement('input');
+      hiddenInput.type = 'text';
+      hiddenInput.style.display = 'none';
+      document.body.appendChild(hiddenInput);
+
+      const fp = flatpickr(hiddenInput, {
+        dateFormat: "d M Y",
+        defaultDate: new Date(),
+        onChange: function (selectedDates, dateStr) {
+          box.textContent = dateStr;
+        }
+      });
+
+      // Initial display value
+      box.textContent = fp.formatDate(new Date(), "d M Y");
+
+      // Open calendar on click
+      box.addEventListener('click', () => {
+        fp.open();
+      });
+    });
+  </script>
 </body>
 </html>
