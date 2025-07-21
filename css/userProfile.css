@@ -97,3 +97,121 @@ body{
         height: 40px;
         border-radius: 50%;
     }
+    /* upload */
+.upload-container {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 10px;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .upload-wrapper {
+      position: relative;
+      width: 70px;
+      height: 70px;
+
+    }
+
+    .upload-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      max-width: 160px;
+      border: 1px solid #c4c4c4;
+      border-radius: 50%;
+      cursor: pointer;
+      background-color: #fafafa;
+      transition: border 0.3s;
+      overflow: hidden;
+      background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    }
+    .upload-label img{
+      object-fit: cover;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: #fff;
+    }
+
+  
+
+    .upload-label input[type="file"] {
+      display: none;
+    }
+
+    .upload-content {
+      text-align: center;
+      color: #5b9aff;
+    }
+
+ 
+
+    .upload-content span {
+      display: block;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+
+    .upload-preview {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    .upload-instructions {
+      font-size: 11px;
+      color: #333;
+    }
+    .upload-instructions strong {
+     font-weight: 600;
+    }
+
+    .action-buttons {
+      position: absolute;
+      top: 0;
+      right: -40px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      z-index: 2;
+    }
+
+    .action-buttons button {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 4px;
+      cursor: pointer;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .action-buttons button:hover {
+      background: #f0f0f0;
+    }
+
+    .action-buttons svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    .icon-pen {
+      color: #4B0082;
+    }
+
+    .icon-trash {
+      color: #e63946;
+    }
+    .chngImg{
+        font-weight: 500;
+        font-size: .8rem;
+        display: block
+    }
