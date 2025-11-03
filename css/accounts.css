@@ -1,0 +1,651 @@
+.accounting-section {
+      padding: 60px 0;
+      padding-top: 6rem;
+    }
+    p{
+        font-weight: 500;
+    }
+
+    .accounting-section h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+      color: #000033;
+      line-height: 1.2;
+    }
+
+    .accounting-section p {
+      color: #333;
+      font-size: 1.1rem;
+      margin-top: 15px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .btn-primary-custom {
+      background-color: #0d6efd;
+      border: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 14px 26px;
+      border-radius: 8px;
+    }
+
+    .btn-primary-custom:hover {
+      background-color: #0b5ed7;
+    }
+
+    .trust-rating {
+      margin-top: 30px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .trust-rating img {
+      height: 35px;
+    }
+
+    .trust-rating span.rating {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #000;
+    }
+
+    .trust-rating p {
+      margin: 0;
+      font-weight: 600;
+      color: #555;
+    }
+
+    .right-image {
+      position: relative;
+    }
+
+    .right-image img {
+      width: 100%;
+      border-radius: 20px;
+    }
+
+    img.badge-guarantee {
+      position: absolute;
+      bottom: -68px;
+      right: 20px;
+      width: 160px;
+    }
+    .trust-rating{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .trust-rating img{
+       object-fit: contain;
+    }
+    .trust-rating span{
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    @media (max-width: 992px) {
+      .accounting-section h1 {
+        font-size: 2.2rem;
+      }
+    }
+    .accounting-section p strong{
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    .pricing-card .infoInfo{
+        height: auto;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+    .priceTitle{
+        font-weight: 600;  
+        min-height: 6rem;
+    }
+    .planPrice{
+        text-align: left;
+    }
+    .bookCall{
+        background-color: #041d3b;
+        padding:3rem 0;
+    }
+    .bookCall .callBox{
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        gap: 20px;
+    }
+    .bookCall .callBox p{
+       font-weight: 600;
+       font-size: 2rem;
+    }
+    .bookCall .callBox a{
+       padding: .6rem 1rem;
+       display: inline-flex;
+       border-radius: 6px;
+       justify-content: center;
+       align-items: center;
+       min-width: 200px;
+       font-weight: 600;
+       background-color: #106df9;
+       color: #fff;
+       border: none;
+       outline: none;
+       font-size: 1.2rem;
+    }
+    @media(max-width:700px){
+        .callBox{
+            flex-direction: column;
+            text-align: center;
+        }
+    }
+    /* founder */
+    .founderSec {
+     padding: 60px 0;
+    }
+    .founderSec .container{
+        background-color: #f8f8f8;
+      border-radius: 20px;
+      padding: 60px 40px;
+    }
+
+    .founderSec .founder-img {
+      text-align: center;
+    }
+
+    .founderSec .founder-img img {
+      width: 230px;
+      height: 230px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top; 
+    }
+
+    .founderSec blockquote {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #0b0b25;
+      line-height: 1.5;
+      margin-bottom: 25px;
+    }
+
+    .founderSec cite {
+      display: block;
+      font-size: 1.05rem;
+      color: #555;
+      font-style: normal;
+    }
+
+    @media (max-width: 992px) {
+      .founderSec {
+        text-align: center;
+        padding: 40px 20px;
+      }
+
+      .founderSec blockquote {
+        font-size: 1.2rem;
+      }
+
+      .founderSec .founder-img {
+        margin-bottom: 25px;
+      }
+    }
+    /* accounting process */
+    .accountingProcess {
+      background-color: #f1f8fc;
+      padding: 80px 0;
+      font-family: 'Inter', sans-serif;
+      color: #0b0b25;
+    }
+
+    /* ---------- Text Alignment and Typography ---------- */
+    .accountingProcess h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 15px;
+      color: #0b0b25;
+    }
+
+    .accountingProcess p.sub-heading {
+      text-align: center;
+      font-size: 1.15rem;
+      color: #444;
+      margin-bottom: 60px;
+    }
+
+    /* ---------- Card Styling ---------- */
+    .accountingProcess .cardItem {
+      background-color: #fff;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      text-align: center;
+      padding: 15px 25px;
+      height: 100%;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);
+    }
+
+    .accountingProcess .cardItem:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    .accountingProcess .cardItem img {
+      width: 50px;
+      height: 50px;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+
+    .accountingProcess .cardItem h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #0b0b25;
+    }
+
+    .accountingProcess .cardItem p {
+      font-size: 1rem;
+      color: #555;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* ---------- Responsive Adjustments ---------- */
+    @media (max-width: 992px) {
+      .accountingProcess h2 {
+        font-size: 2rem;
+      }
+
+      .accountingProcess p.sub-heading {
+        font-size: 1rem;
+        margin-bottom: 40px;
+      }
+
+      .accountingProcess .cardItem {
+        padding: 30px 20px;
+        margin-bottom: 20px;
+      }
+    }
+    .container{
+        max-width: 1200pxx;
+    }
+    /* accointing steps */
+    .accountingSteps {
+      background-color: #eef8fc;
+      padding: 60px 20px;
+      text-align: center;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .accountingSteps .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .accountingSteps h2 {
+      font-size: 36px;
+      font-weight: 700;
+      color: #0b0c2a;
+      margin-bottom: 50px;
+    }
+
+    .accountingSteps .steps-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .accountingSteps .step-box {
+      position: relative;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+      flex: 1 1 300px;
+      max-width: 360px;
+     padding: 25px 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .accountingSteps .step-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    .accountingSteps .step-badge {
+      position: absolute;
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: #fff;
+      font-weight: 600;
+      padding: 8px 22px;
+      border-radius: 40px;
+      font-size: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    .accountingSteps .step1 {
+      background-color: #2cd5b1;
+    }
+
+    .accountingSteps .step2 {
+      background-color: #7a89ff;
+    }
+
+    .accountingSteps .step3 {
+      background-color: #ff944d;
+    }
+
+    .accountingSteps .icon {
+      background: #f2f8f7;
+      border-radius: 20px;
+      width: 90px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .accountingSteps .icon img {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .accountingSteps h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #0b0c2a;
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 768px) {
+      .accountingSteps h2 {
+        font-size: 28px;
+      }
+      .accountingSteps .steps-wrapper {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+.faqs{
+    padding: 4rem 0;
+    padding-top: 4rem;
+}    
+.faqs .container{
+    max-width: 1200px;
+}
+.faqs .secHeading{
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+/* our expert */
+    .ourExpert {
+      background: #fff;
+      text-align: center;
+      font-family: "Inter", sans-serif;
+    }
+
+    .ourExpert h2 {
+      font-size: 2rem;
+      color: #0d0d26;
+      font-weight: 600;
+    }
+
+    .ourExpert .subtitle {
+      color: #222;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 0 auto 60px;
+    }
+
+    .ourExpert .subtitle a {
+      color: #1a73e8;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .ourExpert .subtitle a:hover {
+      text-decoration: underline;
+    }
+
+    .ourExpert .expertCard {
+      background: #fff;
+      border-radius: 15px;
+     transition: all 0.3s 
+ease-in-out;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, .25);
+      padding: 40px 25px;
+      transition: all 0.3s ease;
+      height: 100%;
+    }
+
+    .ourExpert .expertCard:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .ourExpert .expert-img {
+      width: 180px;
+      height: 180px;
+      border: 8px solid #457ecb;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 25px;
+    }
+
+    .ourExpert .expert-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .ourExpert h3 {
+      font-size: 1.4rem;
+      color: #0d0d26;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .ourExpert .role {
+      font-size: 1rem;
+      color: #1a1a1a;
+      margin-bottom: 6px;
+      line-height: 1.5;
+    }
+
+    .ourExpert .location {
+      font-size: 1rem;
+      color: #444;
+      font-weight: 500;
+    }
+
+    @media (max-width: 767px) {
+      .ourExpert .expert-img {
+        width: 150px;
+        height: 150px;
+      }
+
+      .ourExpert h2 {
+        font-size: 1.7rem;
+      }
+    }
+/* need help */
+    .needHelp {
+      background: linear-gradient(90deg, #f3f7fc 0%, #e9edf2 100%);
+      font-family: "Inter", sans-serif;
+      color: #0d0d26;
+    }
+
+    .needHelp h2 {
+      font-size: 2.3rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    .needHelp .subtitle {
+      font-size: 1.1rem;
+      color: #222;
+      line-height: 1.6;
+      max-width: 500px;
+      margin-bottom: 2rem;
+    }
+
+    .needHelp .contactBtn {
+      background: #1677ff;
+      border: none;
+      padding: 12px 36px;
+      font-weight: 600;
+      font-size: 1.05rem;
+      border-radius: 10px;
+      transition: 0.3s ease;
+    }
+
+    .needHelp .contactBtn:hover {
+      background: #0f5ed1;
+      transform: translateY(-2px);
+    }
+
+    .needHelp .google-review {
+      font-size: 1rem;
+      color: #000;
+    }
+
+    .needHelp .google-logo {
+      width: 85px;
+      height: auto;
+    }
+
+    .needHelp .stars {
+      color: #ffb400;
+      font-size: 1.2rem;
+    }
+
+    .needHelp .review-text {
+      font-size: 1rem;
+      font-weight: 600;
+    }
+
+    .needHelp .advisor-info {
+      position: relative;
+      text-align: left;
+      display: flex;
+      justify-content: left;
+    }
+
+    .needHelp .advisor-img {
+      max-width: 330px;
+      border-radius: 12px;
+      object-fit: cover;
+     
+    }
+
+    .needHelp .advisor-details {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      text-align: right;
+    }
+
+    .needHelp .advisor-details strong {
+      font-size: 1rem;
+      color: #0d0d26;
+    }
+
+    .needHelp .advisor-details span {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    @media (max-width: 767px) {
+      .needHelp h2 {
+        font-size: 1.8rem;
+      }
+
+      .needHelp .advisor-img {
+        max-width: 250px;
+      }
+
+      .needHelp .contactBtn {
+        padding: 10px 28px;
+        font-size: 1rem;
+      }
+
+      .needHelp .advisor-details {
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+      }
+    }
+  .google-review{
+    gap: 10px;
+  }
+/* tech process */
+
+
+    .techProcess {
+      background-color: #f4f9fd;
+    }
+
+    .techProcess .section-title {
+      font-weight: 800;
+      font-size: 2rem;
+      color: #0d0d26;
+      line-height: 1.3;
+    }
+
+    .techProcess .process-card {
+      background-color: #ffffff;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e6ecf2;
+    }
+
+    .techProcess .icon-wrap {
+      background: none;
+    }
+
+    .techProcess .icon-wrap img {
+      width: 65px;
+      height: 65px;
+      object-fit: contain;
+    }
+
+    .techProcess .process-title {
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: #0d0d26;
+      margin-bottom: 8px;
+    }
+
+    .techProcess .process-text {
+      color: #1c1c28;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    @media (max-width: 767px) {
+      .techProcess .section-title {
+        font-size: 1.6rem;
+      }
+
+      .techProcess .process-card {
+        padding: 1.5rem;
+      }
+
+      .techProcess .icon-wrap img {
+        width: 55px;
+        height: 55px;
+      }
+    }
