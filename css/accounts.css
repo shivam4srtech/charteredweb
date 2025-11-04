@@ -649,3 +649,22 @@ ease-in-out;
         height: 55px;
       }
     }
+    .floatingIcon{
+    position: fixed;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 3px;
+    background-color: #25d366;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+.floatingIcon svg{
+   width: 34px;
+   fill: #fff;
+}
