@@ -1,0 +1,29 @@
+1:"$Sreact.fragment"
+2:"/_next/static/chunks/219ogex1-wp81.js"
+3:"/_next/static/chunks/26v6wvrg60wa4.js"
+4:I[43161,["$2","$3"],"IntlProvider"]
+5:I[88840,["$2","$3"],"ToastProvider"]
+6:I[10400,["$2","$3"],"AppShell"]
+7:I[39756,["$2","$3"],"default"]
+8:I[37457,["$2","$3"],"default"]
+9:I[22016,["$2","$3"],""]
+d:"/_next/static/chunks/0hmg1zjb93s-w.js"
+e:I[52734,["$2","$3","$d"],"DocumentsView"]
+f:I[97367,["$2","$3"],"OutletBoundary"]
+10:"$Sreact.suspense"
+12:"ViewportBoundary"
+13:I[97367,["$2","$3"],"$12"]
+15:"MetadataBoundary"
+16:I[97367,["$2","$3"],"$15"]
+18:I[68027,["$2","$3"],"default",1]
+:HL["/_next/static/chunks/3hi7t4ko9m52m.css","style"]
+:HC["/",""]
+b:X
+c:[["children",{"s":"__PAGE__","h":512,"d":{"r":["$","$1","c",{"children":[["$","$Le",null,{}],[["$","script","script-0",{"src":"/_next/static/chunks/0hmg1zjb93s-w.js","async":true,"nonce":"$undefined"}]],["$","$Lf",null,{"children":["$","$10",null,{"name":"Next.MetadataOutlet","children":"$@11"}]}]]}],"p":false,"v":null}}]]
+a:[["children",{"s":"documents","h":512,"d":{"r":["$","$1","c",{"children":[null,["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],"p":false,"v":"$b"},"c":"$Qc"}]]
+0:{"P":null,"c":["","documents"],"q":"","i":false,"t":{"t":{"s":"","h":528,"d":{"r":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3hi7t4ko9m52m.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/_next/static/chunks/219ogex1-wp81.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/_next/static/chunks/26v6wvrg60wa4.js","async":true,"nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":["$","body",null,{"children":["$","$L4",null,{"children":["$","$L5",null,{"children":["$","$L6",null,{"children":["$","$L7",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L8",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[["$","section",null,{"className":"content","children":[["$","div",null,{"className":"page-head","children":[["$","div",null,{"children":[["$","h1",null,{"children":["Page not found","$undefined"]}],["$","p",null,{"children":"The page you were looking for doesn't exist or has moved."}]]}],"$undefined"]}],["$","div",null,{"className":"empty","style":{"marginTop":24},"children":[["$","b",null,{"children":"Let's get you back on track"}],["$","$L9",null,{"className":"link-btn","href":"/dashboard","children":"Go to Dashboard"}],["$","$L9",null,{"className":"link-btn","href":"/explore-services","children":"Explore Services"}]]}]]}],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]}]}]}]}]]}],"p":false,"v":null},"c":"$Qa"},"h":{"r":["$","$1","h",{"children":[null,["$","$L13",null,{"children":"$L14"}],["$","$L16",null,{"children":[["$","div",null,{"hidden":true,"children":["$","$10",null,{"name":"Next.Metadata","children":"$L17"}]}],null]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"p":false,"v":null}},"m":"$undefined","G":["$18",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/3hi7t4ko9m52m.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]]],"S":true,"r":"$undefined","s":"$undefined","a":"$undefined","l":"$undefined","p":"$undefined","d":"$undefined","b":"d_lp32MfQRwrSpYNIYg6o"}
+b:C
+14:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+19:I[27201,["$2","$3"],"IconMark"]
+11:null
+17:[["$","title","0",{"children":"Documents · CharteredONE"}],["$","meta","1",{"name":"description","content":"CharteredONE client app: explore licences, registrations and compliance services, track requests, documents and payments."}],["$","link","2",{"rel":"icon","href":"/favicon.svg"}],["$","$L19","3",{}]]
