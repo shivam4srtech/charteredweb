@@ -1,0 +1,58 @@
+# Builds the CharteredONE app on every push to the `web` branch and publishes the
+# ready-to-serve files to the `web-build` branch. The InMotion server checks
+# `web-build` every few minutes (deploy/deploy.sh) and goes live automatically.
+name: Build app.charteredone.com
+
+on:
+  push:
+    branches: [web]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: build-app
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Build static site
+        run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: "1"
+
+      - name: Check the build
+        run: |
+          for f in index.html 404.html .htaccess dashboard.html my-services.html explore-services.html \
+                   documents.html payments.html messages.html support.html profile.html api/app-services; do
+            test -f "out/$f" || { echo "::error::missing out/$f"; exit 1; }
+          done
+          echo "${GITHUB_SHA}" > out/BUILD_ID.txt
+
+      - name: Publish to web-build branch
+        env:
+          COMMIT_MSG: ${{ github.event.head_commit.message || 'manual run' }}
+        run: |
+          cd out
+          git init -q -b web-build
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A -f
+          git commit -q -m "Build ${GITHUB_SHA::7}: ${COMMIT_MSG%%$'\n'*}"
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" web-build
+          echo "Published build ${GITHUB_SHA::7} to web-build"

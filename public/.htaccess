@@ -1,0 +1,57 @@
+# CharteredONE app (app.charteredone.com) — static Next.js build served by Apache.
+# This file is part of the repo (public/.htaccess) and is deployed automatically.
+
+Options -Indexes -MultiViews
+DirectoryIndex index.html
+ErrorDocument 404 /404.html
+
+# Each page is "page.html" next to a "page/" folder of navigation data,
+# so don't let Apache turn /dashboard into /dashboard/.
+DirectorySlash Off
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Home → Explore Services (the app always opened there)
+  RewriteRule ^$ /explore-services [R=302,L]
+  RewriteRule ^index\.(php|html)$ /explore-services [R=301,L]
+
+  # Old Laravel client-portal addresses → their new pages
+  RewriteRule ^(login|register|logout|home|password)(/.*)?$ /dashboard [R=302,L]
+  RewriteRule ^admin(/.*)?$ /dashboard [R=302,L]
+  RewriteRule ^services/?$ /explore-services [R=301,L]
+  RewriteRule ^services/([A-Za-z0-9_.-]+)/?$ /explore-services#service=$1 [R=301,NE,L]
+
+  # /dashboard/ → /dashboard
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteCond %{REQUEST_URI} ^/(.+)/$
+  RewriteCond %{DOCUMENT_ROOT}/%1.html -f
+  RewriteRule ^ /%1 [R=301,L]
+
+  # Clean URLs: /dashboard → dashboard.html
+  RewriteCond %{REQUEST_FILENAME}.html -f
+  RewriteRule ^(.+)$ $1.html [L]
+</IfModule>
+
+# Services feed keeps its old address and type
+<Files "app-services">
+  ForceType application/json
+</Files>
+
+<IfModule mod_headers.c>
+  # Pages always revalidate so new deploys show up immediately…
+  <FilesMatch "\.(html|txt)$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+  # …while fingerprinted build assets can be cached for a year.
+  <If "%{REQUEST_URI} =~ m#^/_next/static/#">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </If>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Never serve dotfiles (e.g. a stray .git folder)
+<IfModule mod_rewrite.c>
+  RewriteRule (^|/)\.(?!well-known/) - [F,L]
+</IfModule>

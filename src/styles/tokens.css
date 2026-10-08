@@ -1,0 +1,38 @@
+/* Design tokens — copied from the original index.html :root */
+:root {
+  --bg: #f6f8fc;
+  --card: #ffffff;
+  --text: #111827;
+  --muted: #667085;
+  --line: #e7edf5;
+  --blue: #0f6bff;
+  --blue-soft: #eef5ff;
+  --green: #16a34a;
+  --green-soft: #eafaf1;
+  --red: #ef4444;
+  --red-soft: #fff1f2;
+  --orange: #f97316;
+  --orange-soft: #fff4ec;
+  --yellow: #f59e0b;
+  --purple: #8b5cf6;
+  --purple-soft: #f4efff;
+  --gold: #f5b400;
+  --shadow: 0 10px 30px rgba(15, 23, 42, 0.055);
+  --radius: 16px;
+  --sidebar: 296px;
+  --topbar: 80px;
+  --panel: 600px;
+}
+
+@media (max-width: 1250px) {
+  :root {
+    --sidebar: 250px;
+    --panel: 560px;
+  }
+}
+
+@media (max-width: 900px) {
+  :root {
+    --sidebar: 0px;
+  }
+}
